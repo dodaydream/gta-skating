@@ -1,0 +1,70 @@
+{
+  "name": "Gord and Irene Risk Community Centre",
+  "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=642",
+  "timezone": "America/Toronto",
+  "address": "2650 Finch Ave W, Toronto, ON",
+  "coordinates": {
+    "lat": 43.747437,
+    "lon": -79.566545
+  },
+  "schedule": {
+    "updatedAt": "2026-10-31T16:46:08.785Z",
+    "events": [
+      {
+        "date": "2026-10-31",
+        "programs": [
+          {
+            "id": "ice-rink-leisure-skate-15-30",
+            "start": "15:30",
+            "end": "17:30",
+            "name": "Leisure Skate",
+            "notes": "0 years and over"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-04",
+        "programs": [
+          {
+            "id": "ice-rink-shinny-early-years-with-caregiver-16-30",
+            "start": "16:30",
+            "end": "18:15",
+            "name": "Shinny: Early Years with Caregiver",
+            "notes": "0 - 5 years"
+          },
+          {
+            "id": "ice-rink-leisure-skate-18-15",
+            "start": "18:15",
+            "end": "20:15",
+            "name": "Leisure Skate",
+            "notes": "0 years and over"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-05",
+        "programs": [
+          {
+            "id": "ice-rink-leisure-skate-adult-10-00",
+            "start": "10:00",
+            "end": "12:00",
+            "name": "Leisure Skate: Adult",
+            "notes": "19 years and over"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-07",
+        "programs": [
+          {
+            "id": "ice-rink-leisure-skate-15-30",
+            "start": "15:30",
+            "end": "17:30",
+            "name": "Leisure Skate",
+            "notes": "0 years and over"
+          }
+        ]
+      }
+    ]
+  }
+}

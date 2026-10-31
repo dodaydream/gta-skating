@@ -1,0 +1,1252 @@
+{
+  "arenas": [
+    {
+      "id": "agincourt",
+      "name": "Agincourt Recreation Centre",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=523",
+      "address": "31 Glen Watford Dr, Toronto, ON",
+      "locationId": 523,
+      "coordinates": {
+        "lat": 43.788414,
+        "lon": -79.276293
+      },
+      "type": "indoor"
+    },
+    {
+      "id": "albert-campbell-square",
+      "name": "Albert Campbell Square",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=2155",
+      "address": "150 Borough Dr, Toronto, ON",
+      "locationId": 2155,
+      "coordinates": {
+        "lat": 43.772811,
+        "lon": -79.257241
+      },
+      "type": "outdoor"
+    },
+    {
+      "id": "albion",
+      "name": "Albion Arena",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=800",
+      "address": "1501 Albion Rd, Toronto, ON",
+      "locationId": 800,
+      "coordinates": {
+        "lat": 43.739651,
+        "lon": -79.582815
+      },
+      "type": "indoor"
+    },
+    {
+      "id": "alexandra-park",
+      "name": "Alexandra Park",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=31",
+      "address": "275 Bathurst St, Toronto, ON",
+      "locationId": 31,
+      "coordinates": {
+        "lat": 43.6511,
+        "lon": -79.405042
+      },
+      "type": "outdoor"
+    },
+    {
+      "id": "amesbury-sports-complex",
+      "name": "Amesbury Sports Complex",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=480",
+      "address": "155 Culford Rd, Toronto, ON",
+      "locationId": 480,
+      "coordinates": {
+        "lat": 43.705951,
+        "lon": -79.48716
+      },
+      "type": "indoor"
+    },
+    {
+      "id": "angela-james",
+      "name": "Angela James Arena",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=582",
+      "address": "165 Grenoble Dr, Toronto, ON",
+      "locationId": 582,
+      "coordinates": {
+        "lat": 43.713206,
+        "lon": -79.327599
+      },
+      "type": "indoor"
+    },
+    {
+      "id": "baycrest",
+      "name": "Baycrest Arena",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=512",
+      "address": "160 Neptune Dr, Toronto, ON",
+      "locationId": 512,
+      "coordinates": {
+        "lat": 43.728911,
+        "lon": -79.443129
+      },
+      "type": "indoor"
+    },
+    {
+      "id": "bayview",
+      "name": "Bayview Arena",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=515",
+      "address": "3230 Bayview Ave, Toronto, ON",
+      "locationId": 515,
+      "coordinates": {
+        "lat": 43.787938,
+        "lon": -79.393726
+      },
+      "type": "indoor"
+    },
+    {
+      "id": "broadlands",
+      "name": "Broadlands Community Centre",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=7",
+      "address": "19 Castlegrove Blvd, Toronto, ON",
+      "locationId": 7,
+      "coordinates": {
+        "lat": 43.745671,
+        "lon": -79.322758
+      },
+      "type": "outdoor"
+    },
+    {
+      "id": "buttonwood-park",
+      "name": "Buttonwood Park",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=813",
+      "address": "30 Mulham Pl, Toronto, ON",
+      "locationId": 813,
+      "coordinates": {
+        "lat": 43.681967,
+        "lon": -79.518986
+      },
+      "type": "outdoor"
+    },
+    {
+      "id": "campbell-avenue-park",
+      "name": "Campbell Avenue Park",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=1053",
+      "address": "225 Campbell Ave, Toronto, ON",
+      "locationId": 1053,
+      "coordinates": {
+        "lat": 43.662985,
+        "lon": -79.448438
+      },
+      "type": "outdoor"
+    },
+    {
+      "id": "cedarvale-park",
+      "name": "Cedarvale Park",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=629",
+      "address": "443 Arlington Ave, Toronto, ON",
+      "locationId": 629,
+      "coordinates": {
+        "lat": 43.691283,
+        "lon": -79.432609
+      },
+      "type": "outdoor"
+    },
+    {
+      "id": "centennial-park-etobicoke",
+      "name": "Centennial Park Arena - Etobicoke",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=913",
+      "address": "156 Centennial Park Rd, Toronto, ON",
+      "locationId": 913,
+      "coordinates": {
+        "lat": 43.656924,
+        "lon": -79.58633
+      },
+      "type": "indoor"
+    },
+    {
+      "id": "centennial-scarborough",
+      "name": "Centennial Recreation Centre - Scarborough",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=537",
+      "address": "1967 Ellesmere Rd, Toronto, ON",
+      "locationId": 537,
+      "coordinates": {
+        "lat": 43.775532,
+        "lon": -79.235108
+      },
+      "type": "indoor"
+    },
+    {
+      "id": "central",
+      "name": "Central Arena",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=824",
+      "address": "50 Montgomery Rd, Toronto, ON",
+      "locationId": 824,
+      "coordinates": {
+        "lat": 43.648455,
+        "lon": -79.520052
+      },
+      "type": "indoor"
+    },
+    {
+      "id": "chris-tonks",
+      "name": "Chris Tonks Arena",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=476",
+      "address": "95 Black Creek Dr, Toronto, ON",
+      "locationId": 476,
+      "coordinates": {
+        "lat": 43.68702,
+        "lon": -79.48157
+      },
+      "type": "indoor"
+    },
+    {
+      "id": "christie-pits",
+      "name": "Christie Pits",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=196",
+      "address": "750 Bloor St W, Toronto, ON",
+      "locationId": 196,
+      "coordinates": {
+        "lat": 43.663462,
+        "lon": -79.419974
+      },
+      "type": "outdoor"
+    },
+    {
+      "id": "college-park",
+      "name": "College Park",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=223",
+      "address": "420 Yonge St, Toronto, ON",
+      "locationId": 223,
+      "coordinates": {
+        "lat": 43.659914,
+        "lon": -79.383825
+      },
+      "type": "outdoor"
+    },
+    {
+      "id": "colonel-samuel-smith-park",
+      "name": "Colonel Samuel Smith Park",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=466",
+      "address": "3145 Lake Shore Blvd W, Toronto, ON",
+      "locationId": 466,
+      "coordinates": {
+        "lat": 43.593162,
+        "lon": -79.515553
+      },
+      "type": "outdoor"
+    },
+    {
+      "id": "commander",
+      "name": "Commander Recreation Centre",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=558",
+      "address": "140 Commander Blvd, Toronto, ON",
+      "locationId": 558,
+      "coordinates": {
+        "lat": 43.795039,
+        "lon": -79.267814
+      },
+      "type": "indoor"
+    },
+    {
+      "id": "cummer-park",
+      "name": "Cummer Park Community Centre",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=499",
+      "address": "6000 Leslie St, Toronto, ON",
+      "locationId": 499,
+      "coordinates": {
+        "lat": 43.800104,
+        "lon": -79.371262
+      },
+      "type": "indoor"
+    },
+    {
+      "id": "dieppe-park",
+      "name": "Dieppe Park",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=327",
+      "address": "455 Cosburn Ave, Toronto, ON",
+      "locationId": 327,
+      "coordinates": {
+        "lat": 43.691988,
+        "lon": -79.335491
+      },
+      "type": "outdoor"
+    },
+    {
+      "id": "don-mills-civitan",
+      "name": "Don Mills Civitan Arena",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=548",
+      "address": "1030 Don Mills Rd, Toronto, ON",
+      "locationId": 548,
+      "coordinates": {
+        "lat": 43.733023,
+        "lon": -79.343745
+      },
+      "type": "indoor"
+    },
+    {
+      "id": "don-montgomery",
+      "name": "Don Montgomery Community Centre",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=712",
+      "address": "2467 Eglinton Ave E, Toronto, ON",
+      "locationId": 712,
+      "coordinates": {
+        "lat": 43.732663,
+        "lon": -79.261665
+      },
+      "type": "indoor"
+    },
+    {
+      "id": "downsview",
+      "name": "Downsview Arena",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=568",
+      "address": "1633 Wilson Ave, Toronto, ON",
+      "locationId": 568,
+      "coordinates": {
+        "lat": 43.719835,
+        "lon": -79.512771
+      },
+      "type": "indoor"
+    },
+    {
+      "id": "dufferin-grove",
+      "name": "Dufferin Grove",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=87",
+      "address": "875 Dufferin St, Toronto, ON",
+      "locationId": 87,
+      "coordinates": {
+        "lat": 43.657042,
+        "lon": -79.433601
+      },
+      "type": "outdoor"
+    },
+    {
+      "id": "east-york-memorial",
+      "name": "East York Memorial Arena",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=330",
+      "address": "888 Cosburn Ave, Toronto, ON",
+      "locationId": 330,
+      "coordinates": {
+        "lat": 43.697431,
+        "lon": -79.315293
+      },
+      "type": "indoor"
+    },
+    {
+      "id": "ethennonnhawahstihnen-park",
+      "name": "Ethennonnhawahstihnen Park",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=2597",
+      "address": "80 McMahon Dr E, Toronto, ON",
+      "locationId": 2597,
+      "coordinates": {
+        "lat": 43.767405,
+        "lon": -79.372401
+      },
+      "type": "outdoor"
+    },
+    {
+      "id": "fenside",
+      "name": "Fenside Arena",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=303",
+      "address": "30 Slidell Cres, Toronto, ON",
+      "locationId": 303,
+      "coordinates": {
+        "lat": 43.763836,
+        "lon": -79.326824
+      },
+      "type": "indoor"
+    },
+    {
+      "id": "ford-performance-centre",
+      "name": "Ford Performance Centre",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=3782",
+      "address": "400 Kipling Ave, Toronto, ON",
+      "locationId": 3782,
+      "coordinates": {
+        "lat": 43.602865,
+        "lon": -79.519916
+      },
+      "type": "indoor"
+    },
+    {
+      "id": "george-bell",
+      "name": "George Bell Arena",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=3488",
+      "address": "215 Ryding Ave, Toronto, ON",
+      "locationId": 3488,
+      "coordinates": {
+        "lat": 43.668518,
+        "lon": -79.477155
+      },
+      "type": "indoor"
+    },
+    {
+      "id": "giovanni-caboto",
+      "name": "Giovanni Caboto",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=514",
+      "address": "1367 St Clair Ave W, Toronto, ON",
+      "locationId": 514,
+      "coordinates": {
+        "lat": 43.675653,
+        "lon": -79.451657
+      },
+      "type": "outdoor"
+    },
+    {
+      "id": "glen-long",
+      "name": "Glen Long Community Centre",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=638",
+      "address": "35 Glen Long Ave, Toronto, ON",
+      "locationId": 638,
+      "coordinates": {
+        "lat": 43.708626,
+        "lon": -79.455802
+      },
+      "type": "outdoor"
+    },
+    {
+      "id": "gord-and-irene-risk",
+      "name": "Gord and Irene Risk Community Centre",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=642",
+      "address": "2650 Finch Ave W, Toronto, ON",
+      "locationId": 642,
+      "coordinates": {
+        "lat": 43.747437,
+        "lon": -79.566545
+      },
+      "type": "indoor"
+    },
+    {
+      "id": "goulding",
+      "name": "Goulding Community Centre",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=643",
+      "address": "45 Goulding Ave, Toronto, ON",
+      "locationId": 643,
+      "coordinates": {
+        "lat": 43.790912,
+        "lon": -79.422143
+      },
+      "type": "indoor"
+    },
+    {
+      "id": "grandravine-community",
+      "name": "Grandravine Community Recreation Centre",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=647",
+      "address": "23 Grandravine Dr, Toronto, ON",
+      "locationId": 647,
+      "coordinates": {
+        "lat": 43.751753,
+        "lon": -79.489716
+      },
+      "type": "indoor"
+    },
+    {
+      "id": "greenwood-park",
+      "name": "Greenwood Park",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=70",
+      "address": "150 Greenwood Ave, Toronto, ON",
+      "locationId": 70,
+      "coordinates": {
+        "lat": 43.66948,
+        "lon": -79.329218
+      },
+      "type": "outdoor"
+    },
+    {
+      "id": "habitant",
+      "name": "Habitant Arena",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=652",
+      "address": "3383 Weston Rd, Toronto, ON",
+      "locationId": 652,
+      "coordinates": {
+        "lat": 43.747019,
+        "lon": -79.540243
+      },
+      "type": "indoor"
+    },
+    {
+      "id": "herbert-h-carnegie-centennial-centre",
+      "name": "Herbert H. Carnegie Centennial Centre",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=483",
+      "address": "580 Finch Ave W, Toronto, ON",
+      "locationId": 483,
+      "coordinates": {
+        "lat": 43.773357,
+        "lon": -79.450052
+      },
+      "type": "indoor"
+    },
+    {
+      "id": "heron-park-community",
+      "name": "Heron Park Community Recreation Centre",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=633",
+      "address": "292 Manse Rd, Toronto, ON",
+      "locationId": 633,
+      "coordinates": {
+        "lat": 43.768856,
+        "lon": -79.176938
+      },
+      "type": "indoor"
+    },
+    {
+      "id": "high-park",
+      "name": "High Park",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=77",
+      "address": "1873 Bloor St W, Toronto, ON",
+      "locationId": 77,
+      "coordinates": {
+        "lat": 43.649865,
+        "lon": -79.46528
+      },
+      "type": "outdoor"
+    },
+    {
+      "id": "hodgson-leisure-school-grounds",
+      "name": "Hodgson Leisure School Grounds",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=1220",
+      "address": "276 Davisville Ave, Toronto, ON",
+      "locationId": 1220,
+      "coordinates": {
+        "lat": 43.700978,
+        "lon": -79.385376
+      },
+      "type": "outdoor"
+    },
+    {
+      "id": "humber-valley-rink",
+      "name": "Humber Valley Rink",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=1012",
+      "address": "50 Anglesey Blvd, Toronto, ON",
+      "locationId": 1012,
+      "coordinates": {
+        "lat": 43.664191,
+        "lon": -79.524922
+      },
+      "type": "outdoor"
+    },
+    {
+      "id": "irving-w-chapley",
+      "name": "Irving W Chapley Community Centre",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=664",
+      "address": "205 Wilmington Ave, Toronto, ON",
+      "locationId": 664,
+      "coordinates": {
+        "lat": 43.761351,
+        "lon": -79.45575
+      },
+      "type": "outdoor"
+    },
+    {
+      "id": "jimmie-simpson-park",
+      "name": "Jimmie Simpson Park",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=155",
+      "address": "870 Queen St E, Toronto, ON",
+      "locationId": 155,
+      "coordinates": {
+        "lat": 43.660444,
+        "lon": -79.34533
+      },
+      "type": "outdoor"
+    },
+    {
+      "id": "john-booth-memorial",
+      "name": "John Booth Memorial Arena",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=667",
+      "address": "230 Gosford Blvd, Toronto, ON",
+      "locationId": 667,
+      "coordinates": {
+        "lat": 43.7697,
+        "lon": -79.524189
+      },
+      "type": "indoor"
+    },
+    {
+      "id": "joseph-bannon-park",
+      "name": "Joseph Bannon Park",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=2715",
+      "address": "65 Mary Chapman Blvd, Toronto, ON",
+      "locationId": 2715,
+      "coordinates": {
+        "lat": 43.732362,
+        "lon": -79.534949
+      },
+      "type": "outdoor"
+    },
+    {
+      "id": "kew-gardens",
+      "name": "Kew Gardens",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=107",
+      "address": "2075 Queen St E, Toronto, ON",
+      "locationId": 107,
+      "coordinates": {
+        "lat": 43.66999,
+        "lon": -79.299293
+      },
+      "type": "outdoor"
+    },
+    {
+      "id": "lambton",
+      "name": "Lambton Arena",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=479",
+      "address": "4100 Dundas St W, Toronto, ON",
+      "locationId": 479,
+      "coordinates": {
+        "lat": 43.664913,
+        "lon": -79.50588
+      },
+      "type": "indoor"
+    },
+    {
+      "id": "lambton-kingsway-rink",
+      "name": "Lambton-Kingsway Rink",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=847",
+      "address": "37 Marquis Ave, Toronto, ON",
+      "locationId": 847,
+      "coordinates": {
+        "lat": 43.658141,
+        "lon": -79.507339
+      },
+      "type": "outdoor"
+    },
+    {
+      "id": "larry-grossman-forest-hill-memorial",
+      "name": "Larry Grossman Forest Hill Memorial Arena",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=3489",
+      "address": "340 Chaplin Cres, Toronto, ON",
+      "locationId": 3489,
+      "coordinates": {
+        "lat": 43.704191,
+        "lon": -79.420034
+      },
+      "type": "indoor"
+    },
+    {
+      "id": "leaside-memorial-community-gardens",
+      "name": "Leaside Memorial Community Gardens Arena",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=789",
+      "address": "1073 Millwood Rd, Toronto, ON",
+      "locationId": 789,
+      "coordinates": {
+        "lat": 43.701874,
+        "lon": -79.360766
+      },
+      "type": "indoor"
+    },
+    {
+      "id": "ledbury-park",
+      "name": "Ledbury Park",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=678",
+      "address": "160 Ledbury St, Toronto, ON",
+      "locationId": 678,
+      "coordinates": {
+        "lat": 43.727922,
+        "lon": -79.424452
+      },
+      "type": "outdoor"
+    },
+    {
+      "id": "long-branch",
+      "name": "Long Branch Arena",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=803",
+      "address": "75 Arcadian Cir, Toronto, ON",
+      "locationId": 803,
+      "coordinates": {
+        "lat": 43.591779,
+        "lon": -79.527833
+      },
+      "type": "indoor"
+    },
+    {
+      "id": "malvern",
+      "name": "Malvern Recreation Centre",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=702",
+      "address": "30 Sewells Rd, Toronto, ON",
+      "locationId": 702,
+      "coordinates": {
+        "lat": 43.808568,
+        "lon": -79.216386
+      },
+      "type": "indoor"
+    },
+    {
+      "id": "mccormick",
+      "name": "McCormick Arena",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=3490",
+      "address": "179 Brock Ave, Toronto, ON",
+      "locationId": 3490,
+      "coordinates": {
+        "lat": 43.647219,
+        "lon": -79.434101
+      },
+      "type": "indoor"
+    },
+    {
+      "id": "mccowan-district-park",
+      "name": "McCowan District Park",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=1500",
+      "address": "150 Mccowan Rd, Toronto, ON",
+      "locationId": 1500,
+      "coordinates": {
+        "lat": 43.733195,
+        "lon": -79.236554
+      },
+      "type": "outdoor"
+    },
+    {
+      "id": "mcgregor-park",
+      "name": "McGregor Park Community Centre",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=506",
+      "address": "2231 Lawrence Ave E, Toronto, ON",
+      "locationId": 506,
+      "coordinates": {
+        "lat": 43.747629,
+        "lon": -79.280149
+      },
+      "type": "indoor"
+    },
+    {
+      "id": "mel-lastman-square",
+      "name": "Mel Lastman Square",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=956",
+      "address": "5100 Yonge St, Toronto, ON",
+      "locationId": 956,
+      "coordinates": {
+        "lat": 43.767268,
+        "lon": -79.414889
+      },
+      "type": "outdoor"
+    },
+    {
+      "id": "mimico",
+      "name": "Mimico Arena",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=802",
+      "address": "31 Drummond St, Toronto, ON",
+      "locationId": 802,
+      "coordinates": {
+        "lat": 43.612393,
+        "lon": -79.498829
+      },
+      "type": "indoor"
+    },
+    {
+      "id": "mitchell-field",
+      "name": "Mitchell Field Community Centre",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=693",
+      "address": "89 Church Ave, Toronto, ON",
+      "locationId": 693,
+      "coordinates": {
+        "lat": 43.774644,
+        "lon": -79.408537
+      },
+      "type": "indoor"
+    },
+    {
+      "id": "monarch-park",
+      "name": "Monarch Park",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=145",
+      "address": "115 Felstead Ave, Toronto, ON",
+      "locationId": 145,
+      "coordinates": {
+        "lat": 43.67881,
+        "lon": -79.326098
+      },
+      "type": "outdoor"
+    },
+    {
+      "id": "moss-park",
+      "name": "Moss Park Arena",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=3491",
+      "address": "140 Sherbourne St, Toronto, ON",
+      "locationId": 3491,
+      "coordinates": {
+        "lat": 43.655024,
+        "lon": -79.370213
+      },
+      "type": "indoor"
+    },
+    {
+      "id": "nathan-phillips-square",
+      "name": "Nathan Phillips Square",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=1089",
+      "address": "100 Queen St W, Toronto, ON",
+      "locationId": 1089,
+      "coordinates": {
+        "lat": 43.652236,
+        "lon": -79.383405
+      },
+      "type": "outdoor"
+    },
+    {
+      "id": "north-toronto-memorial",
+      "name": "North Toronto Memorial Arena",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=3492",
+      "address": "174 Orchard View Blvd, Toronto, ON",
+      "locationId": 3492,
+      "coordinates": {
+        "lat": 43.707029,
+        "lon": -79.404504
+      },
+      "type": "indoor"
+    },
+    {
+      "id": "north-toronto-memorial-community-eglinton-park",
+      "name": "North Toronto Memorial Community Recreation Centre/Eglinton Park",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=189",
+      "address": "200 Eglinton Ave W, Toronto, ON",
+      "locationId": 189,
+      "coordinates": {
+        "lat": 43.706106,
+        "lon": -79.404623
+      },
+      "type": "outdoor"
+    },
+    {
+      "id": "oriole",
+      "name": "Oriole Community Centre",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=714",
+      "address": "2975 Don Mills Rd W, Toronto, ON",
+      "locationId": 714,
+      "coordinates": {
+        "lat": 43.78181,
+        "lon": -79.351281
+      },
+      "type": "indoor"
+    },
+    {
+      "id": "otter-creek-centre",
+      "name": "Otter Creek Centre",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=251",
+      "address": "140 Cheritan Ave, Toronto, ON",
+      "locationId": 251,
+      "coordinates": {
+        "lat": 43.721407,
+        "lon": -79.409747
+      },
+      "type": "outdoor"
+    },
+    {
+      "id": "park-lawn-bubble-rink",
+      "name": "Park Lawn Bubble Rink",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=858",
+      "address": "340 Park Lawn Rd, Toronto, ON",
+      "locationId": 858,
+      "coordinates": {
+        "lat": 43.638584,
+        "lon": -79.495672
+      },
+      "type": "indoor"
+    },
+    {
+      "id": "phil-white",
+      "name": "Phil White Arena",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=477",
+      "address": "443 Arlington Ave, Toronto, ON",
+      "locationId": 477,
+      "coordinates": {
+        "lat": 43.691283,
+        "lon": -79.432609
+      },
+      "type": "indoor"
+    },
+    {
+      "id": "pine-point",
+      "name": "Pine Point Arena",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=801",
+      "address": "15 Grierson Rd, Toronto, ON",
+      "locationId": 801,
+      "coordinates": {
+        "lat": 43.712827,
+        "lon": -79.542782
+      },
+      "type": "indoor"
+    },
+    {
+      "id": "pleasantview",
+      "name": "Pleasantview Community Centre",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=732",
+      "address": "545 Van Horne Ave, Toronto, ON",
+      "locationId": 732,
+      "coordinates": {
+        "lat": 43.787003,
+        "lon": -79.336705
+      },
+      "type": "indoor"
+    },
+    {
+      "id": "prince-of-wales-rink",
+      "name": "Prince of Wales Rink",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=924",
+      "address": "1 Third St, Toronto, ON",
+      "locationId": 924,
+      "coordinates": {
+        "lat": 43.598919,
+        "lon": -79.499122
+      },
+      "type": "outdoor"
+    },
+    {
+      "id": "queensway-rink",
+      "name": "Queensway Rink",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=861",
+      "address": "8 Avon Park Dr, Toronto, ON",
+      "locationId": 861,
+      "coordinates": {
+        "lat": 43.626576,
+        "lon": -79.505604
+      },
+      "type": "outdoor"
+    },
+    {
+      "id": "ramsden-park",
+      "name": "Ramsden Park",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=167",
+      "address": "1020 Yonge St, Toronto, ON",
+      "locationId": 167,
+      "coordinates": {
+        "lat": 43.676526,
+        "lon": -79.389799
+      },
+      "type": "outdoor"
+    },
+    {
+      "id": "regent-park-athletic-grounds",
+      "name": "Regent Park Athletic Grounds",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=419",
+      "address": "480 Shuter St, Toronto, ON",
+      "locationId": 419,
+      "coordinates": {
+        "lat": 43.65857,
+        "lon": -79.359431
+      },
+      "type": "outdoor"
+    },
+    {
+      "id": "rennie-park",
+      "name": "Rennie Park",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=181",
+      "address": "1 Rennie Ter, Toronto, ON",
+      "locationId": 181,
+      "coordinates": {
+        "lat": 43.644413,
+        "lon": -79.473399
+      },
+      "type": "outdoor"
+    },
+    {
+      "id": "rivercrest-rink",
+      "name": "Rivercrest Rink",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=355",
+      "address": "30 Harefield Dr, Toronto, ON",
+      "locationId": 355,
+      "coordinates": {
+        "lat": 43.729716,
+        "lon": -79.569518
+      },
+      "type": "outdoor"
+    },
+    {
+      "id": "riverdale-park-east",
+      "name": "Riverdale Park East",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=343",
+      "address": "550 Broadview Ave, Toronto, ON",
+      "locationId": 343,
+      "coordinates": {
+        "lat": 43.670821,
+        "lon": -79.354585
+      },
+      "type": "outdoor"
+    },
+    {
+      "id": "roding",
+      "name": "Roding Community Centre",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=744",
+      "address": "600 Roding St, Toronto, ON",
+      "locationId": 744,
+      "coordinates": {
+        "lat": 43.729092,
+        "lon": -79.492501
+      },
+      "type": "indoor"
+    },
+    {
+      "id": "rosedale-park",
+      "name": "Rosedale Park",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=210",
+      "address": "20 Scholfield Ave, Toronto, ON",
+      "locationId": 210,
+      "coordinates": {
+        "lat": 43.683047,
+        "lon": -79.379473
+      },
+      "type": "outdoor"
+    },
+    {
+      "id": "royalcrest-rink",
+      "name": "Royalcrest Rink",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=878",
+      "address": "50 Cabernet Cir, Toronto, ON",
+      "locationId": 878,
+      "coordinates": {
+        "lat": 43.752704,
+        "lon": -79.604747
+      },
+      "type": "outdoor"
+    },
+    {
+      "id": "scarborough-gardens",
+      "name": "Scarborough Arena Gardens",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=3493",
+      "address": "75 Birchmount Rd, Toronto, ON",
+      "locationId": 3493,
+      "coordinates": {
+        "lat": 43.694811,
+        "lon": -79.262009
+      },
+      "type": "indoor"
+    },
+    {
+      "id": "scarborough-village",
+      "name": "Scarborough Village Recreation Centre",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=743",
+      "address": "3600 Kingston Rd, Toronto, ON",
+      "locationId": 743,
+      "coordinates": {
+        "lat": 43.739991,
+        "lon": -79.216758
+      },
+      "type": "indoor"
+    },
+    {
+      "id": "sherbourne-common",
+      "name": "Sherbourne Common",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=1860",
+      "address": "5 Lower Sherbourne St, Toronto, ON",
+      "locationId": 1860,
+      "coordinates": {
+        "lat": 43.645864,
+        "lon": -79.365527
+      },
+      "type": "outdoor"
+    },
+    {
+      "id": "sir-adam-beck-rink",
+      "name": "Sir Adam Beck Rink",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=2065",
+      "address": "55 Eltham Dr, Toronto, ON",
+      "locationId": 2065,
+      "coordinates": {
+        "lat": 43.602303,
+        "lon": -79.54792
+      },
+      "type": "outdoor"
+    },
+    {
+      "id": "summerlea-rink",
+      "name": "Summerlea Rink",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=870",
+      "address": "2 Arcot Blvd, Toronto, ON",
+      "locationId": 870,
+      "coordinates": {
+        "lat": 43.727133,
+        "lon": -79.551907
+      },
+      "type": "outdoor"
+    },
+    {
+      "id": "sunnydale-acres-rink",
+      "name": "Sunnydale Acres Rink",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=871",
+      "address": "50 Amoro Dr, Toronto, ON",
+      "locationId": 871,
+      "coordinates": {
+        "lat": 43.724973,
+        "lon": -79.578025
+      },
+      "type": "outdoor"
+    },
+    {
+      "id": "ted-reeve-community",
+      "name": "Ted Reeve Community Arena",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=3494",
+      "address": "175 Main St, Toronto, ON",
+      "locationId": 3494,
+      "coordinates": {
+        "lat": 43.684435,
+        "lon": -79.299606
+      },
+      "type": "indoor"
+    },
+    {
+      "id": "toronto-metropolitan-university-square",
+      "name": "Toronto Metropolitan University Square",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=240",
+      "address": "50 Gould St, Toronto, ON",
+      "locationId": 240,
+      "coordinates": {
+        "lat": 43.657524,
+        "lon": -79.379745
+      },
+      "type": "outdoor"
+    },
+    {
+      "id": "trinity-bellwoods-park",
+      "name": "Trinity Bellwoods Park",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=241",
+      "address": "790 Queen St W, Toronto, ON",
+      "locationId": 241,
+      "coordinates": {
+        "lat": 43.649125,
+        "lon": -79.413348
+      },
+      "type": "outdoor"
+    },
+    {
+      "id": "valleyfield-park",
+      "name": "Valleyfield Park",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=812",
+      "address": "35 The Westway, Toronto, ON",
+      "locationId": 812,
+      "coordinates": {
+        "lat": 43.695196,
+        "lon": -79.53428
+      },
+      "type": "outdoor"
+    },
+    {
+      "id": "van-horne-park",
+      "name": "Van Horne Park",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=770",
+      "address": "561 Van Horne Ave, Toronto, ON",
+      "locationId": 770,
+      "coordinates": {
+        "lat": 43.787271,
+        "lon": -79.337537
+      },
+      "type": "outdoor"
+    },
+    {
+      "id": "victoria-village",
+      "name": "Victoria Village Arena",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=771",
+      "address": "190 Bermondsey Rd, Toronto, ON",
+      "locationId": 771,
+      "coordinates": {
+        "lat": 43.72309,
+        "lon": -79.31579
+      },
+      "type": "indoor"
+    },
+    {
+      "id": "wallace-emerson-park",
+      "name": "Wallace Emerson Park",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=260",
+      "address": "1260 Dufferin St, Toronto, ON",
+      "locationId": 260,
+      "coordinates": {
+        "lat": 43.667315,
+        "lon": -79.439271
+      },
+      "type": "outdoor"
+    },
+    {
+      "id": "wedgewood-park-etobicoke",
+      "name": "Wedgewood Park - Etobicoke",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=773",
+      "address": "15 Swan Ave, Toronto, ON",
+      "locationId": 773,
+      "coordinates": {
+        "lat": 43.644313,
+        "lon": -79.547462
+      },
+      "type": "outdoor"
+    },
+    {
+      "id": "west-deane-park",
+      "name": "West Deane Park",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=873",
+      "address": "400 Martin Grove Road, Toronto, ON",
+      "locationId": 873,
+      "coordinates": {
+        "lat": 43.663391,
+        "lon": -79.559069
+      },
+      "type": "outdoor"
+    },
+    {
+      "id": "west-mall-outdoor-rink-dennis-flynn-park",
+      "name": "West Mall Outdoor Rink - Dennis Flynn Park",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=2642",
+      "address": "370 The West Mall, Toronto, ON",
+      "locationId": 2642,
+      "coordinates": {
+        "lat": 43.641695,
+        "lon": -79.566014
+      },
+      "type": "outdoor"
+    },
+    {
+      "id": "westgrove-rink",
+      "name": "Westgrove Rink",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=876",
+      "address": "15 Redgrave Dr, Toronto, ON",
+      "locationId": 876,
+      "coordinates": {
+        "lat": 43.682904,
+        "lon": -79.568114
+      },
+      "type": "outdoor"
+    },
+    {
+      "id": "weston-lions",
+      "name": "Weston Lions Recreation Arena",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=2007",
+      "address": "2125 Lawrence Ave W, Toronto, ON",
+      "locationId": 2007,
+      "coordinates": {
+        "lat": 43.698563,
+        "lon": -79.518096
+      },
+      "type": "indoor"
+    },
+    {
+      "id": "westway-outdoor-rink",
+      "name": "Westway - Outdoor Rink",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=874",
+      "address": "175 The Westway, Toronto, ON",
+      "locationId": 874,
+      "coordinates": {
+        "lat": 43.688658,
+        "lon": -79.541722
+      },
+      "type": "outdoor"
+    },
+    {
+      "id": "william-h-bolton",
+      "name": "William H. Bolton Arena",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=3495",
+      "address": "40 Rossmore Rd, Toronto, ON",
+      "locationId": 3495,
+      "coordinates": {
+        "lat": 43.671227,
+        "lon": -79.415168
+      },
+      "type": "indoor"
+    },
+    {
+      "id": "withrow-park",
+      "name": "Withrow Park",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=306",
+      "address": "725 Logan Ave, Toronto, ON",
+      "locationId": 306,
+      "coordinates": {
+        "lat": 43.674583,
+        "lon": -79.34801
+      },
+      "type": "outdoor"
+    },
+    {
+      "id": "york-mills",
+      "name": "York Mills Arena",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=778",
+      "address": "2539 Bayview Ave, Toronto, ON",
+      "locationId": 778,
+      "coordinates": {
+        "lat": 43.747598,
+        "lon": -79.383509
+      },
+      "type": "indoor"
+    }
+  ]
+}

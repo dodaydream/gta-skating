@@ -1,0 +1,111 @@
+{
+  "name": "Amesbury Sports Complex",
+  "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=480",
+  "timezone": "America/Toronto",
+  "address": "155 Culford Rd, Toronto, ON",
+  "coordinates": {
+    "lat": 43.705951,
+    "lon": -79.48716
+  },
+  "schedule": {
+    "updatedAt": "2026-10-31T16:46:07.716Z",
+    "events": [
+      {
+        "date": "2026-10-31",
+        "programs": [
+          {
+            "id": "ice-rink-leisure-skate-19-15",
+            "start": "19:15",
+            "end": "20:45",
+            "name": "Leisure Skate",
+            "notes": "0 years and over"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-01",
+        "programs": [
+          {
+            "id": "ice-rink-leisure-skate-14-15",
+            "start": "14:15",
+            "end": "15:45",
+            "name": "Leisure Skate",
+            "notes": "0 years and over"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-02",
+        "programs": [
+          {
+            "id": "ice-rink-leisure-skate-adult-unsupervised-09-30",
+            "start": "09:30",
+            "end": "11:15",
+            "name": "Leisure Skate: Adult (Unsupervised)",
+            "notes": "19 years and over"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-03",
+        "programs": [
+          {
+            "id": "ice-rink-leisure-skate-child-with-caregiver-19-30",
+            "start": "19:30",
+            "end": "21:00",
+            "name": "Leisure Skate: Child with Caregiver",
+            "notes": "6 - 12 years"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-04",
+        "programs": [
+          {
+            "id": "ice-rink-leisure-skate-adult-unsupervised-09-30",
+            "start": "09:30",
+            "end": "11:15",
+            "name": "Leisure Skate: Adult (Unsupervised)",
+            "notes": "19 years and over"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-06",
+        "programs": [
+          {
+            "id": "ice-rink-leisure-skate-19-15",
+            "start": "19:15",
+            "end": "20:45",
+            "name": "Leisure Skate",
+            "notes": "0 years and over"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-07",
+        "programs": [
+          {
+            "id": "ice-rink-leisure-skate-19-15",
+            "start": "19:15",
+            "end": "20:45",
+            "name": "Leisure Skate",
+            "notes": "0 years and over"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-08",
+        "programs": [
+          {
+            "id": "ice-rink-leisure-skate-14-15",
+            "start": "14:15",
+            "end": "15:45",
+            "name": "Leisure Skate",
+            "notes": "0 years and over"
+          }
+        ]
+      }
+    ]
+  }
+}

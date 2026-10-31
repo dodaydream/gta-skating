@@ -1,0 +1,108 @@
+{
+  "name": "Oriole Community Centre",
+  "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=714",
+  "timezone": "America/Toronto",
+  "address": "2975 Don Mills Rd W, Toronto, ON",
+  "coordinates": {
+    "lat": 43.78181,
+    "lon": -79.351281
+  },
+  "schedule": {
+    "updatedAt": "2026-10-31T16:46:09.971Z",
+    "events": [
+      {
+        "date": "2026-10-31",
+        "programs": [
+          {
+            "id": "ice-rink-leisure-skate-19-00",
+            "start": "19:00",
+            "end": "21:00",
+            "name": "Leisure Skate",
+            "notes": "0 years and over"
+          },
+          {
+            "id": "ice-rink-shinny-adult-21-15",
+            "start": "21:15",
+            "end": "23:00",
+            "name": "Shinny: Adult",
+            "notes": "19 years and over"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-01",
+        "programs": [
+          {
+            "id": "ice-rink-leisure-skate-14-30",
+            "start": "14:30",
+            "end": "16:30",
+            "name": "Leisure Skate",
+            "notes": "0 years and over"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-02",
+        "programs": [
+          {
+            "id": "ice-rink-leisure-skate-19-00",
+            "start": "19:00",
+            "end": "21:00",
+            "name": "Leisure Skate",
+            "notes": "0 years and over"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-05",
+        "programs": [
+          {
+            "id": "ice-rink-shinny-child-16-30",
+            "start": "16:30",
+            "end": "17:15",
+            "name": "Shinny: Child",
+            "notes": "6 - 12 years"
+          },
+          {
+            "id": "ice-rink-shinny-youth-17-15",
+            "start": "17:15",
+            "end": "18:00",
+            "name": "Shinny: Youth",
+            "notes": "13 - 18 years"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-07",
+        "programs": [
+          {
+            "id": "ice-rink-leisure-skate-19-00",
+            "start": "19:00",
+            "end": "21:00",
+            "name": "Leisure Skate",
+            "notes": "0 years and over"
+          },
+          {
+            "id": "ice-rink-shinny-adult-21-15",
+            "start": "21:15",
+            "end": "23:00",
+            "name": "Shinny: Adult",
+            "notes": "19 years and over"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-08",
+        "programs": [
+          {
+            "id": "ice-rink-leisure-skate-14-30",
+            "start": "14:30",
+            "end": "16:30",
+            "name": "Leisure Skate",
+            "notes": "0 years and over"
+          }
+        ]
+      }
+    ]
+  }
+}

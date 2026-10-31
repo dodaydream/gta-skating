@@ -1,0 +1,51 @@
+{
+  "name": "Herbert H. Carnegie Centennial Centre",
+  "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=483",
+  "timezone": "America/Toronto",
+  "address": "580 Finch Ave W, Toronto, ON",
+  "coordinates": {
+    "lat": 43.773357,
+    "lon": -79.450052
+  },
+  "schedule": {
+    "updatedAt": "2026-10-31T16:46:08.979Z",
+    "events": [
+      {
+        "date": "2026-11-01",
+        "programs": [
+          {
+            "id": "ice-rink-leisure-skate-12-00",
+            "start": "12:00",
+            "end": "14:00",
+            "name": "Leisure Skate",
+            "notes": "0 years and over"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-03",
+        "programs": [
+          {
+            "id": "ice-rink-leisure-skate-12-30",
+            "start": "12:30",
+            "end": "14:30",
+            "name": "Leisure Skate",
+            "notes": "0 years and over"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-08",
+        "programs": [
+          {
+            "id": "ice-rink-leisure-skate-12-00",
+            "start": "12:00",
+            "end": "14:00",
+            "name": "Leisure Skate",
+            "notes": "0 years and over"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "name": "Centennial Park Arena - Etobicoke",
+  "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=913",
+  "timezone": "America/Toronto",
+  "address": "156 Centennial Park Rd, Toronto, ON",
+  "coordinates": {
+    "lat": 43.656924,
+    "lon": -79.58633
+  },
+  "schedule": {
+    "updatedAt": "2026-10-31T16:46:07.977Z",
+    "events": [
+      {
+        "date": "2026-11-01",
+        "programs": [
+          {
+            "id": "ice-rink-east-leisure-skate-12-45",
+            "start": "12:45",
+            "end": "14:15",
+            "name": "Leisure Skate",
+            "notes": "0 years and over"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-02",
+        "programs": [
+          {
+            "id": "ice-rink-east-leisure-skate-adult-unsupervised-12-30",
+            "start": "12:30",
+            "end": "14:00",
+            "name": "Leisure Skate: Adult (Unsupervised)",
+            "notes": "19 years and over"
+          },
+          {
+            "id": "ice-rink-west-leisure-skate-adult-unsupervised-12-30",
+            "start": "12:30",
+            "end": "14:00",
+            "name": "Leisure Skate: Adult (Unsupervised)",
+            "notes": "19 years and over"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-04",
+        "programs": [
+          {
+            "id": "ice-rink-west-leisure-skate-adult-unsupervised-12-30",
+            "start": "12:30",
+            "end": "14:00",
+            "name": "Leisure Skate: Adult (Unsupervised)",
+            "notes": "19 years and over"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-08",
+        "programs": [
+          {
+            "id": "ice-rink-east-leisure-skate-12-45",
+            "start": "12:45",
+            "end": "14:15",
+            "name": "Leisure Skate",
+            "notes": "0 years and over"
+          }
+        ]
+      }
+    ]
+  }
+}

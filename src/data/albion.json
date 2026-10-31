@@ -1,0 +1,118 @@
+{
+  "name": "Albion Arena",
+  "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=800",
+  "timezone": "America/Toronto",
+  "address": "1501 Albion Rd, Toronto, ON",
+  "coordinates": {
+    "lat": 43.739651,
+    "lon": -79.582815
+  },
+  "schedule": {
+    "updatedAt": "2026-10-31T16:46:07.637Z",
+    "events": [
+      {
+        "date": "2026-10-31",
+        "programs": [
+          {
+            "id": "ice-rink-leisure-skate-14-15",
+            "start": "14:15",
+            "end": "15:30",
+            "name": "Leisure Skate",
+            "notes": "0 years and over"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-01",
+        "programs": [
+          {
+            "id": "ice-rink-leisure-skate-14-45",
+            "start": "14:45",
+            "end": "16:45",
+            "name": "Leisure Skate",
+            "notes": "0 years and over"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-02",
+        "programs": [
+          {
+            "id": "ice-rink-leisure-skate-adult-10-00",
+            "start": "10:00",
+            "end": "12:00",
+            "name": "Leisure Skate: Adult",
+            "notes": "19 years and over"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-04",
+        "programs": [
+          {
+            "id": "ice-rink-leisure-skate-adult-10-00",
+            "start": "10:00",
+            "end": "12:00",
+            "name": "Leisure Skate: Adult",
+            "notes": "19 years and over"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-05",
+        "programs": [
+          {
+            "id": "ice-rink-leisure-skate-adult-10-00",
+            "start": "10:00",
+            "end": "12:00",
+            "name": "Leisure Skate: Adult",
+            "notes": "19 years and over"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-06",
+        "programs": [
+          {
+            "id": "ice-rink-shinny-child-with-caregiver-10-00",
+            "start": "10:00",
+            "end": "12:00",
+            "name": "Shinny: Child with Caregiver",
+            "notes": "10 - 15 years"
+          },
+          {
+            "id": "ice-rink-leisure-skate-16-30",
+            "start": "16:30",
+            "end": "17:45",
+            "name": "Leisure Skate",
+            "notes": "0 years and over"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-07",
+        "programs": [
+          {
+            "id": "ice-rink-leisure-skate-14-15",
+            "start": "14:15",
+            "end": "15:30",
+            "name": "Leisure Skate",
+            "notes": "0 years and over"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-08",
+        "programs": [
+          {
+            "id": "ice-rink-leisure-skate-14-45",
+            "start": "14:45",
+            "end": "16:45",
+            "name": "Leisure Skate",
+            "notes": "0 years and over"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "name": "Roding Community Centre",
+  "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=744",
+  "timezone": "America/Toronto",
+  "address": "600 Roding St, Toronto, ON",
+  "coordinates": {
+    "lat": 43.729092,
+    "lon": -79.492501
+  },
+  "schedule": {
+    "updatedAt": "2026-10-31T16:46:10.414Z",
+    "events": [
+      {
+        "date": "2026-10-31",
+        "programs": [
+          {
+            "id": "ice-rink-leisure-skate-19-00",
+            "start": "19:00",
+            "end": "21:00",
+            "name": "Leisure Skate",
+            "notes": "0 years and over"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-01",
+        "programs": [
+          {
+            "id": "ice-rink-leisure-skate-14-30",
+            "start": "14:30",
+            "end": "16:30",
+            "name": "Leisure Skate",
+            "notes": "0 years and over"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-02",
+        "programs": [
+          {
+            "id": "ice-rink-shinny-child-16-00",
+            "start": "16:00",
+            "end": "17:00",
+            "name": "Shinny: Child",
+            "notes": "6 - 12 years"
+          },
+          {
+            "id": "ice-rink-shinny-youth-17-00",
+            "start": "17:00",
+            "end": "18:00",
+            "name": "Shinny: Youth",
+            "notes": "13 - 17 years"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-05",
+        "programs": [
+          {
+            "id": "ice-rink-shinny-youth-16-00",
+            "start": "16:00",
+            "end": "17:00",
+            "name": "Shinny: Youth",
+            "notes": "13 - 17 years"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-07",
+        "programs": [
+          {
+            "id": "ice-rink-leisure-skate-19-00",
+            "start": "19:00",
+            "end": "21:00",
+            "name": "Leisure Skate",
+            "notes": "0 years and over"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-08",
+        "programs": [
+          {
+            "id": "ice-rink-leisure-skate-14-30",
+            "start": "14:30",
+            "end": "16:30",
+            "name": "Leisure Skate",
+            "notes": "0 years and over"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,202 @@
+{
+  "name": "Scarborough Village Recreation Centre",
+  "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=743",
+  "timezone": "America/Toronto",
+  "address": "3600 Kingston Rd, Toronto, ON",
+  "coordinates": {
+    "lat": 43.739991,
+    "lon": -79.216758
+  },
+  "schedule": {
+    "updatedAt": "2026-10-31T16:46:10.542Z",
+    "events": [
+      {
+        "date": "2026-10-31",
+        "programs": [
+          {
+            "id": "ice-rink-leisure-skate-18-30",
+            "start": "18:30",
+            "end": "20:00",
+            "name": "Leisure Skate",
+            "notes": "0 years and over"
+          },
+          {
+            "id": "ice-rink-pick-up-hockey-adults-20-00",
+            "start": "20:00",
+            "end": "22:00",
+            "name": "Pick Up Hockey: Adults",
+            "notes": "19 years and over"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-01",
+        "programs": [
+          {
+            "id": "ice-rink-leisure-skate-14-15",
+            "start": "14:15",
+            "end": "15:45",
+            "name": "Leisure Skate",
+            "notes": "0 years and over"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-02",
+        "programs": [
+          {
+            "id": "ice-rink-leisure-skate-child-with-caregiver-unsupervised-09-15",
+            "start": "09:15",
+            "end": "10:00",
+            "name": "Leisure Skate: Child with Caregiver (Unsupervised)",
+            "notes": "0 - 12 years"
+          },
+          {
+            "id": "ice-rink-leisure-skate-older-adult-unsupervised-10-00",
+            "start": "10:00",
+            "end": "12:00",
+            "name": "Leisure Skate: Older Adult (Unsupervised)",
+            "notes": "60 years and over"
+          },
+          {
+            "id": "ice-rink-shinny-older-adult-unsupervised-12-15",
+            "start": "12:15",
+            "end": "13:00",
+            "name": "Shinny: Older Adult (Unsupervised)",
+            "notes": "60 years and over"
+          },
+          {
+            "id": "ice-rink-shinny-adult-unsupervised-13-15",
+            "start": "13:15",
+            "end": "14:45",
+            "name": "Shinny: Adult (Unsupervised)",
+            "notes": "19 years and over"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-04",
+        "programs": [
+          {
+            "id": "ice-rink-leisure-skate-child-with-caregiver-unsupervised-09-15",
+            "start": "09:15",
+            "end": "10:00",
+            "name": "Leisure Skate: Child with Caregiver (Unsupervised)",
+            "notes": "0 - 12 years"
+          },
+          {
+            "id": "ice-rink-leisure-skate-older-adult-unsupervised-10-00",
+            "start": "10:00",
+            "end": "12:00",
+            "name": "Leisure Skate: Older Adult (Unsupervised)",
+            "notes": "60 years and over"
+          },
+          {
+            "id": "ice-rink-shinny-older-adult-unsupervised-12-15",
+            "start": "12:15",
+            "end": "13:00",
+            "name": "Shinny: Older Adult (Unsupervised)",
+            "notes": "60 years and over"
+          },
+          {
+            "id": "ice-rink-shinny-child-with-caregiver-16-00",
+            "start": "16:00",
+            "end": "16:45",
+            "name": "Shinny: Child with Caregiver",
+            "notes": "6 - 8 years"
+          },
+          {
+            "id": "ice-rink-shinny-child-16-45",
+            "start": "16:45",
+            "end": "18:00",
+            "name": "Shinny: Child",
+            "notes": "9 - 12 years"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-05",
+        "programs": [
+          {
+            "id": "ice-rink-leisure-skate-older-adult-unsupervised-10-00",
+            "start": "10:00",
+            "end": "12:00",
+            "name": "Leisure Skate: Older Adult (Unsupervised)",
+            "notes": "60 years and over"
+          },
+          {
+            "id": "ice-rink-shinny-older-adult-unsupervised-12-15",
+            "start": "12:15",
+            "end": "13:00",
+            "name": "Shinny: Older Adult (Unsupervised)",
+            "notes": "60 years and over"
+          },
+          {
+            "id": "ice-rink-shinny-adult-unsupervised-13-15",
+            "start": "13:15",
+            "end": "14:45",
+            "name": "Shinny: Adult (Unsupervised)",
+            "notes": "19 years and over"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-06",
+        "programs": [
+          {
+            "id": "ice-rink-leisure-skate-older-adult-unsupervised-10-00",
+            "start": "10:00",
+            "end": "12:00",
+            "name": "Leisure Skate: Older Adult (Unsupervised)",
+            "notes": "60 years and over"
+          },
+          {
+            "id": "ice-rink-shinny-older-adult-unsupervised-12-15",
+            "start": "12:15",
+            "end": "13:00",
+            "name": "Shinny: Older Adult (Unsupervised)",
+            "notes": "60 years and over"
+          },
+          {
+            "id": "ice-rink-shinny-youth-17-00",
+            "start": "17:00",
+            "end": "18:00",
+            "name": "Shinny: Youth",
+            "notes": "13 - 18 years"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-07",
+        "programs": [
+          {
+            "id": "ice-rink-leisure-skate-18-30",
+            "start": "18:30",
+            "end": "20:00",
+            "name": "Leisure Skate",
+            "notes": "0 years and over"
+          },
+          {
+            "id": "ice-rink-pick-up-hockey-adults-20-00",
+            "start": "20:00",
+            "end": "22:00",
+            "name": "Pick Up Hockey: Adults",
+            "notes": "19 years and over"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-08",
+        "programs": [
+          {
+            "id": "ice-rink-leisure-skate-14-15",
+            "start": "14:15",
+            "end": "15:45",
+            "name": "Leisure Skate",
+            "notes": "0 years and over"
+          }
+        ]
+      }
+    ]
+  }
+}

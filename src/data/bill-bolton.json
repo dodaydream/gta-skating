@@ -1,0 +1,1150 @@
+{
+  "name": "Bill Bolton Arena",
+  "url": "https://www.billboltonarena.ca/public-skating",
+  "timezone": "America/Toronto",
+  "address": "40 Rossmore Road, Toronto, ON M5R 3G7",
+  "coordinates": {
+    "lat": 43.671332,
+    "lon": -79.415243
+  },
+  "schedule": {
+    "updatedAt": "2026-10-31T15:36:42.947Z",
+    "events": [
+      {
+        "date": "2026-09-28",
+        "programs": [
+          {
+            "id": "adults-only-free-skate-monday",
+            "start": "11:40",
+            "end": "13:00",
+            "name": "Adults Only Free Skate",
+            "notes": "No Skate on Stat Holidays"
+          }
+        ]
+      },
+      {
+        "date": "2026-09-29",
+        "programs": [
+          {
+            "id": "parent-tots-4-and-under-free-skate-tuesday",
+            "start": "09:00",
+            "end": "10:00",
+            "name": "Parent & Tots(4 and under) Free Skate"
+          }
+        ]
+      },
+      {
+        "date": "2026-10-02",
+        "programs": [
+          {
+            "id": "general-public-free-skate-friday",
+            "start": "17:40",
+            "end": "19:15",
+            "name": "General Public Free Skate"
+          }
+        ]
+      },
+      {
+        "date": "2026-10-03",
+        "programs": [
+          {
+            "id": "general-public-free-skate-saturday",
+            "start": "19:40",
+            "end": "20:30",
+            "name": "General Public Free Skate"
+          }
+        ]
+      },
+      {
+        "date": "2026-10-05",
+        "programs": [
+          {
+            "id": "adults-only-free-skate-monday",
+            "start": "11:40",
+            "end": "13:00",
+            "name": "Adults Only Free Skate",
+            "notes": "No Skate on Stat Holidays"
+          }
+        ]
+      },
+      {
+        "date": "2026-10-06",
+        "programs": [
+          {
+            "id": "parent-tots-4-and-under-free-skate-tuesday",
+            "start": "09:00",
+            "end": "10:00",
+            "name": "Parent & Tots(4 and under) Free Skate"
+          }
+        ]
+      },
+      {
+        "date": "2026-10-09",
+        "programs": [
+          {
+            "id": "general-public-free-skate-friday",
+            "start": "17:40",
+            "end": "19:15",
+            "name": "General Public Free Skate"
+          }
+        ]
+      },
+      {
+        "date": "2026-10-10",
+        "programs": [
+          {
+            "id": "general-public-free-skate-saturday",
+            "start": "19:40",
+            "end": "20:30",
+            "name": "General Public Free Skate"
+          }
+        ]
+      },
+      {
+        "date": "2026-10-13",
+        "programs": [
+          {
+            "id": "parent-tots-4-and-under-free-skate-tuesday",
+            "start": "09:00",
+            "end": "10:00",
+            "name": "Parent & Tots(4 and under) Free Skate"
+          }
+        ]
+      },
+      {
+        "date": "2026-10-16",
+        "programs": [
+          {
+            "id": "general-public-free-skate-friday",
+            "start": "17:40",
+            "end": "19:15",
+            "name": "General Public Free Skate"
+          }
+        ]
+      },
+      {
+        "date": "2026-10-17",
+        "programs": [
+          {
+            "id": "general-public-free-skate-saturday",
+            "start": "19:40",
+            "end": "20:30",
+            "name": "General Public Free Skate"
+          }
+        ]
+      },
+      {
+        "date": "2026-10-19",
+        "programs": [
+          {
+            "id": "adults-only-free-skate-monday",
+            "start": "11:40",
+            "end": "13:00",
+            "name": "Adults Only Free Skate",
+            "notes": "No Skate on Stat Holidays"
+          }
+        ]
+      },
+      {
+        "date": "2026-10-20",
+        "programs": [
+          {
+            "id": "parent-tots-4-and-under-free-skate-tuesday",
+            "start": "09:00",
+            "end": "10:00",
+            "name": "Parent & Tots(4 and under) Free Skate"
+          }
+        ]
+      },
+      {
+        "date": "2026-10-23",
+        "programs": [
+          {
+            "id": "general-public-free-skate-friday",
+            "start": "17:40",
+            "end": "19:15",
+            "name": "General Public Free Skate"
+          }
+        ]
+      },
+      {
+        "date": "2026-10-24",
+        "programs": [
+          {
+            "id": "general-public-free-skate-saturday",
+            "start": "19:40",
+            "end": "20:30",
+            "name": "General Public Free Skate"
+          }
+        ]
+      },
+      {
+        "date": "2026-10-26",
+        "programs": [
+          {
+            "id": "adults-only-free-skate-monday",
+            "start": "11:40",
+            "end": "13:00",
+            "name": "Adults Only Free Skate",
+            "notes": "No Skate on Stat Holidays"
+          }
+        ]
+      },
+      {
+        "date": "2026-10-27",
+        "programs": [
+          {
+            "id": "parent-tots-4-and-under-free-skate-tuesday",
+            "start": "09:00",
+            "end": "10:00",
+            "name": "Parent & Tots(4 and under) Free Skate"
+          }
+        ]
+      },
+      {
+        "date": "2026-10-30",
+        "programs": [
+          {
+            "id": "general-public-free-skate-friday",
+            "start": "17:40",
+            "end": "19:15",
+            "name": "General Public Free Skate"
+          }
+        ]
+      },
+      {
+        "date": "2026-10-31",
+        "programs": [
+          {
+            "id": "general-public-free-skate-saturday",
+            "start": "19:40",
+            "end": "20:30",
+            "name": "General Public Free Skate"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-02",
+        "programs": [
+          {
+            "id": "adults-only-free-skate-monday",
+            "start": "11:40",
+            "end": "13:00",
+            "name": "Adults Only Free Skate",
+            "notes": "No Skate on Stat Holidays"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-03",
+        "programs": [
+          {
+            "id": "parent-tots-4-and-under-free-skate-tuesday",
+            "start": "09:00",
+            "end": "10:00",
+            "name": "Parent & Tots(4 and under) Free Skate"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-06",
+        "programs": [
+          {
+            "id": "general-public-free-skate-friday",
+            "start": "17:40",
+            "end": "19:15",
+            "name": "General Public Free Skate"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-07",
+        "programs": [
+          {
+            "id": "general-public-free-skate-saturday",
+            "start": "19:40",
+            "end": "20:30",
+            "name": "General Public Free Skate"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-09",
+        "programs": [
+          {
+            "id": "adults-only-free-skate-monday",
+            "start": "11:40",
+            "end": "13:00",
+            "name": "Adults Only Free Skate",
+            "notes": "No Skate on Stat Holidays"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-10",
+        "programs": [
+          {
+            "id": "parent-tots-4-and-under-free-skate-tuesday",
+            "start": "09:00",
+            "end": "10:00",
+            "name": "Parent & Tots(4 and under) Free Skate"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-13",
+        "programs": [
+          {
+            "id": "general-public-free-skate-friday",
+            "start": "17:40",
+            "end": "19:15",
+            "name": "General Public Free Skate"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-14",
+        "programs": [
+          {
+            "id": "general-public-free-skate-saturday",
+            "start": "19:40",
+            "end": "20:30",
+            "name": "General Public Free Skate"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-16",
+        "programs": [
+          {
+            "id": "adults-only-free-skate-monday",
+            "start": "11:40",
+            "end": "13:00",
+            "name": "Adults Only Free Skate",
+            "notes": "No Skate on Stat Holidays"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-17",
+        "programs": [
+          {
+            "id": "parent-tots-4-and-under-free-skate-tuesday",
+            "start": "09:00",
+            "end": "10:00",
+            "name": "Parent & Tots(4 and under) Free Skate"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-20",
+        "programs": [
+          {
+            "id": "general-public-free-skate-friday",
+            "start": "17:40",
+            "end": "19:15",
+            "name": "General Public Free Skate"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-21",
+        "programs": [
+          {
+            "id": "general-public-free-skate-saturday",
+            "start": "19:40",
+            "end": "20:30",
+            "name": "General Public Free Skate"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-23",
+        "programs": [
+          {
+            "id": "adults-only-free-skate-monday",
+            "start": "11:40",
+            "end": "13:00",
+            "name": "Adults Only Free Skate",
+            "notes": "No Skate on Stat Holidays"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-24",
+        "programs": [
+          {
+            "id": "parent-tots-4-and-under-free-skate-tuesday",
+            "start": "09:00",
+            "end": "10:00",
+            "name": "Parent & Tots(4 and under) Free Skate"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-27",
+        "programs": [
+          {
+            "id": "general-public-free-skate-friday",
+            "start": "17:40",
+            "end": "19:15",
+            "name": "General Public Free Skate"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-28",
+        "programs": [
+          {
+            "id": "general-public-free-skate-saturday",
+            "start": "19:40",
+            "end": "20:30",
+            "name": "General Public Free Skate"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-30",
+        "programs": [
+          {
+            "id": "adults-only-free-skate-monday",
+            "start": "11:40",
+            "end": "13:00",
+            "name": "Adults Only Free Skate",
+            "notes": "No Skate on Stat Holidays"
+          }
+        ]
+      },
+      {
+        "date": "2026-12-01",
+        "programs": [
+          {
+            "id": "parent-tots-4-and-under-free-skate-tuesday",
+            "start": "09:00",
+            "end": "10:00",
+            "name": "Parent & Tots(4 and under) Free Skate"
+          }
+        ]
+      },
+      {
+        "date": "2026-12-04",
+        "programs": [
+          {
+            "id": "general-public-free-skate-friday",
+            "start": "17:40",
+            "end": "19:15",
+            "name": "General Public Free Skate"
+          }
+        ]
+      },
+      {
+        "date": "2026-12-05",
+        "programs": [
+          {
+            "id": "general-public-free-skate-saturday",
+            "start": "19:40",
+            "end": "20:30",
+            "name": "General Public Free Skate"
+          }
+        ]
+      },
+      {
+        "date": "2026-12-07",
+        "programs": [
+          {
+            "id": "adults-only-free-skate-monday",
+            "start": "11:40",
+            "end": "13:00",
+            "name": "Adults Only Free Skate",
+            "notes": "No Skate on Stat Holidays"
+          }
+        ]
+      },
+      {
+        "date": "2026-12-08",
+        "programs": [
+          {
+            "id": "parent-tots-4-and-under-free-skate-tuesday",
+            "start": "09:00",
+            "end": "10:00",
+            "name": "Parent & Tots(4 and under) Free Skate"
+          }
+        ]
+      },
+      {
+        "date": "2026-12-11",
+        "programs": [
+          {
+            "id": "general-public-free-skate-friday",
+            "start": "17:40",
+            "end": "19:15",
+            "name": "General Public Free Skate"
+          }
+        ]
+      },
+      {
+        "date": "2026-12-12",
+        "programs": [
+          {
+            "id": "general-public-free-skate-saturday",
+            "start": "19:40",
+            "end": "20:30",
+            "name": "General Public Free Skate"
+          }
+        ]
+      },
+      {
+        "date": "2026-12-14",
+        "programs": [
+          {
+            "id": "adults-only-free-skate-monday",
+            "start": "11:40",
+            "end": "13:00",
+            "name": "Adults Only Free Skate",
+            "notes": "No Skate on Stat Holidays"
+          }
+        ]
+      },
+      {
+        "date": "2026-12-15",
+        "programs": [
+          {
+            "id": "parent-tots-4-and-under-free-skate-tuesday",
+            "start": "09:00",
+            "end": "10:00",
+            "name": "Parent & Tots(4 and under) Free Skate"
+          }
+        ]
+      },
+      {
+        "date": "2026-12-18",
+        "programs": [
+          {
+            "id": "general-public-free-skate-friday",
+            "start": "17:40",
+            "end": "19:15",
+            "name": "General Public Free Skate"
+          }
+        ]
+      },
+      {
+        "date": "2026-12-19",
+        "programs": [
+          {
+            "id": "general-public-free-skate-saturday",
+            "start": "19:40",
+            "end": "20:30",
+            "name": "General Public Free Skate"
+          }
+        ]
+      },
+      {
+        "date": "2026-12-21",
+        "programs": [
+          {
+            "id": "adults-only-free-skate-monday",
+            "start": "11:40",
+            "end": "13:00",
+            "name": "Adults Only Free Skate",
+            "notes": "No Skate on Stat Holidays"
+          }
+        ]
+      },
+      {
+        "date": "2026-12-22",
+        "programs": [
+          {
+            "id": "parent-tots-4-and-under-free-skate-tuesday",
+            "start": "09:00",
+            "end": "10:00",
+            "name": "Parent & Tots(4 and under) Free Skate"
+          }
+        ]
+      },
+      {
+        "date": "2026-12-26",
+        "programs": [
+          {
+            "id": "general-public-free-skate-saturday",
+            "start": "19:40",
+            "end": "20:30",
+            "name": "General Public Free Skate"
+          }
+        ]
+      },
+      {
+        "date": "2026-12-29",
+        "programs": [
+          {
+            "id": "parent-tots-4-and-under-free-skate-tuesday",
+            "start": "09:00",
+            "end": "10:00",
+            "name": "Parent & Tots(4 and under) Free Skate"
+          }
+        ]
+      },
+      {
+        "date": "2027-01-02",
+        "programs": [
+          {
+            "id": "general-public-free-skate-saturday",
+            "start": "19:40",
+            "end": "20:30",
+            "name": "General Public Free Skate"
+          }
+        ]
+      },
+      {
+        "date": "2027-01-04",
+        "programs": [
+          {
+            "id": "adults-only-free-skate-monday",
+            "start": "11:40",
+            "end": "13:00",
+            "name": "Adults Only Free Skate",
+            "notes": "No Skate on Stat Holidays"
+          }
+        ]
+      },
+      {
+        "date": "2027-01-05",
+        "programs": [
+          {
+            "id": "parent-tots-4-and-under-free-skate-tuesday",
+            "start": "09:00",
+            "end": "10:00",
+            "name": "Parent & Tots(4 and under) Free Skate"
+          }
+        ]
+      },
+      {
+        "date": "2027-01-08",
+        "programs": [
+          {
+            "id": "general-public-free-skate-friday",
+            "start": "17:40",
+            "end": "19:15",
+            "name": "General Public Free Skate"
+          }
+        ]
+      },
+      {
+        "date": "2027-01-09",
+        "programs": [
+          {
+            "id": "general-public-free-skate-saturday",
+            "start": "19:40",
+            "end": "20:30",
+            "name": "General Public Free Skate"
+          }
+        ]
+      },
+      {
+        "date": "2027-01-11",
+        "programs": [
+          {
+            "id": "adults-only-free-skate-monday",
+            "start": "11:40",
+            "end": "13:00",
+            "name": "Adults Only Free Skate",
+            "notes": "No Skate on Stat Holidays"
+          }
+        ]
+      },
+      {
+        "date": "2027-01-12",
+        "programs": [
+          {
+            "id": "parent-tots-4-and-under-free-skate-tuesday",
+            "start": "09:00",
+            "end": "10:00",
+            "name": "Parent & Tots(4 and under) Free Skate"
+          }
+        ]
+      },
+      {
+        "date": "2027-01-15",
+        "programs": [
+          {
+            "id": "general-public-free-skate-friday",
+            "start": "17:40",
+            "end": "19:15",
+            "name": "General Public Free Skate"
+          }
+        ]
+      },
+      {
+        "date": "2027-01-16",
+        "programs": [
+          {
+            "id": "general-public-free-skate-saturday",
+            "start": "19:40",
+            "end": "20:30",
+            "name": "General Public Free Skate"
+          }
+        ]
+      },
+      {
+        "date": "2027-01-18",
+        "programs": [
+          {
+            "id": "adults-only-free-skate-monday",
+            "start": "11:40",
+            "end": "13:00",
+            "name": "Adults Only Free Skate",
+            "notes": "No Skate on Stat Holidays"
+          }
+        ]
+      },
+      {
+        "date": "2027-01-19",
+        "programs": [
+          {
+            "id": "parent-tots-4-and-under-free-skate-tuesday",
+            "start": "09:00",
+            "end": "10:00",
+            "name": "Parent & Tots(4 and under) Free Skate"
+          }
+        ]
+      },
+      {
+        "date": "2027-01-22",
+        "programs": [
+          {
+            "id": "general-public-free-skate-friday",
+            "start": "17:40",
+            "end": "19:15",
+            "name": "General Public Free Skate"
+          }
+        ]
+      },
+      {
+        "date": "2027-01-23",
+        "programs": [
+          {
+            "id": "general-public-free-skate-saturday",
+            "start": "19:40",
+            "end": "20:30",
+            "name": "General Public Free Skate"
+          }
+        ]
+      },
+      {
+        "date": "2027-01-25",
+        "programs": [
+          {
+            "id": "adults-only-free-skate-monday",
+            "start": "11:40",
+            "end": "13:00",
+            "name": "Adults Only Free Skate",
+            "notes": "No Skate on Stat Holidays"
+          }
+        ]
+      },
+      {
+        "date": "2027-01-26",
+        "programs": [
+          {
+            "id": "parent-tots-4-and-under-free-skate-tuesday",
+            "start": "09:00",
+            "end": "10:00",
+            "name": "Parent & Tots(4 and under) Free Skate"
+          }
+        ]
+      },
+      {
+        "date": "2027-01-29",
+        "programs": [
+          {
+            "id": "general-public-free-skate-friday",
+            "start": "17:40",
+            "end": "19:15",
+            "name": "General Public Free Skate"
+          }
+        ]
+      },
+      {
+        "date": "2027-01-30",
+        "programs": [
+          {
+            "id": "general-public-free-skate-saturday",
+            "start": "19:40",
+            "end": "20:30",
+            "name": "General Public Free Skate"
+          }
+        ]
+      },
+      {
+        "date": "2027-02-01",
+        "programs": [
+          {
+            "id": "adults-only-free-skate-monday",
+            "start": "11:40",
+            "end": "13:00",
+            "name": "Adults Only Free Skate",
+            "notes": "No Skate on Stat Holidays"
+          }
+        ]
+      },
+      {
+        "date": "2027-02-02",
+        "programs": [
+          {
+            "id": "parent-tots-4-and-under-free-skate-tuesday",
+            "start": "09:00",
+            "end": "10:00",
+            "name": "Parent & Tots(4 and under) Free Skate"
+          }
+        ]
+      },
+      {
+        "date": "2027-02-05",
+        "programs": [
+          {
+            "id": "general-public-free-skate-friday",
+            "start": "17:40",
+            "end": "19:15",
+            "name": "General Public Free Skate"
+          }
+        ]
+      },
+      {
+        "date": "2027-02-06",
+        "programs": [
+          {
+            "id": "general-public-free-skate-saturday",
+            "start": "19:40",
+            "end": "20:30",
+            "name": "General Public Free Skate"
+          }
+        ]
+      },
+      {
+        "date": "2027-02-08",
+        "programs": [
+          {
+            "id": "adults-only-free-skate-monday",
+            "start": "11:40",
+            "end": "13:00",
+            "name": "Adults Only Free Skate",
+            "notes": "No Skate on Stat Holidays"
+          }
+        ]
+      },
+      {
+        "date": "2027-02-09",
+        "programs": [
+          {
+            "id": "parent-tots-4-and-under-free-skate-tuesday",
+            "start": "09:00",
+            "end": "10:00",
+            "name": "Parent & Tots(4 and under) Free Skate"
+          }
+        ]
+      },
+      {
+        "date": "2027-02-12",
+        "programs": [
+          {
+            "id": "general-public-free-skate-friday",
+            "start": "17:40",
+            "end": "19:15",
+            "name": "General Public Free Skate"
+          }
+        ]
+      },
+      {
+        "date": "2027-02-13",
+        "programs": [
+          {
+            "id": "general-public-free-skate-saturday",
+            "start": "19:40",
+            "end": "20:30",
+            "name": "General Public Free Skate"
+          }
+        ]
+      },
+      {
+        "date": "2027-02-16",
+        "programs": [
+          {
+            "id": "parent-tots-4-and-under-free-skate-tuesday",
+            "start": "09:00",
+            "end": "10:00",
+            "name": "Parent & Tots(4 and under) Free Skate"
+          }
+        ]
+      },
+      {
+        "date": "2027-02-19",
+        "programs": [
+          {
+            "id": "general-public-free-skate-friday",
+            "start": "17:40",
+            "end": "19:15",
+            "name": "General Public Free Skate"
+          }
+        ]
+      },
+      {
+        "date": "2027-02-20",
+        "programs": [
+          {
+            "id": "general-public-free-skate-saturday",
+            "start": "19:40",
+            "end": "20:30",
+            "name": "General Public Free Skate"
+          }
+        ]
+      },
+      {
+        "date": "2027-02-22",
+        "programs": [
+          {
+            "id": "adults-only-free-skate-monday",
+            "start": "11:40",
+            "end": "13:00",
+            "name": "Adults Only Free Skate",
+            "notes": "No Skate on Stat Holidays"
+          }
+        ]
+      },
+      {
+        "date": "2027-02-23",
+        "programs": [
+          {
+            "id": "parent-tots-4-and-under-free-skate-tuesday",
+            "start": "09:00",
+            "end": "10:00",
+            "name": "Parent & Tots(4 and under) Free Skate"
+          }
+        ]
+      },
+      {
+        "date": "2027-02-26",
+        "programs": [
+          {
+            "id": "general-public-free-skate-friday",
+            "start": "17:40",
+            "end": "19:15",
+            "name": "General Public Free Skate"
+          }
+        ]
+      },
+      {
+        "date": "2027-02-27",
+        "programs": [
+          {
+            "id": "general-public-free-skate-saturday",
+            "start": "19:40",
+            "end": "20:30",
+            "name": "General Public Free Skate"
+          }
+        ]
+      },
+      {
+        "date": "2027-03-01",
+        "programs": [
+          {
+            "id": "adults-only-free-skate-monday",
+            "start": "11:40",
+            "end": "13:00",
+            "name": "Adults Only Free Skate",
+            "notes": "No Skate on Stat Holidays"
+          }
+        ]
+      },
+      {
+        "date": "2027-03-02",
+        "programs": [
+          {
+            "id": "parent-tots-4-and-under-free-skate-tuesday",
+            "start": "09:00",
+            "end": "10:00",
+            "name": "Parent & Tots(4 and under) Free Skate"
+          }
+        ]
+      },
+      {
+        "date": "2027-03-05",
+        "programs": [
+          {
+            "id": "general-public-free-skate-friday",
+            "start": "17:40",
+            "end": "19:15",
+            "name": "General Public Free Skate"
+          }
+        ]
+      },
+      {
+        "date": "2027-03-06",
+        "programs": [
+          {
+            "id": "general-public-free-skate-saturday",
+            "start": "19:40",
+            "end": "20:30",
+            "name": "General Public Free Skate"
+          }
+        ]
+      },
+      {
+        "date": "2027-03-08",
+        "programs": [
+          {
+            "id": "adults-only-free-skate-monday",
+            "start": "11:40",
+            "end": "13:00",
+            "name": "Adults Only Free Skate",
+            "notes": "No Skate on Stat Holidays"
+          }
+        ]
+      },
+      {
+        "date": "2027-03-09",
+        "programs": [
+          {
+            "id": "parent-tots-4-and-under-free-skate-tuesday",
+            "start": "09:00",
+            "end": "10:00",
+            "name": "Parent & Tots(4 and under) Free Skate"
+          }
+        ]
+      },
+      {
+        "date": "2027-03-12",
+        "programs": [
+          {
+            "id": "general-public-free-skate-friday",
+            "start": "17:40",
+            "end": "19:15",
+            "name": "General Public Free Skate"
+          }
+        ]
+      },
+      {
+        "date": "2027-03-13",
+        "programs": [
+          {
+            "id": "general-public-free-skate-saturday",
+            "start": "19:40",
+            "end": "20:30",
+            "name": "General Public Free Skate"
+          }
+        ]
+      },
+      {
+        "date": "2027-03-15",
+        "programs": [
+          {
+            "id": "adults-only-free-skate-monday",
+            "start": "11:40",
+            "end": "13:00",
+            "name": "Adults Only Free Skate",
+            "notes": "No Skate on Stat Holidays"
+          }
+        ]
+      },
+      {
+        "date": "2027-03-16",
+        "programs": [
+          {
+            "id": "parent-tots-4-and-under-free-skate-tuesday",
+            "start": "09:00",
+            "end": "10:00",
+            "name": "Parent & Tots(4 and under) Free Skate"
+          }
+        ]
+      },
+      {
+        "date": "2027-03-19",
+        "programs": [
+          {
+            "id": "general-public-free-skate-friday",
+            "start": "17:40",
+            "end": "19:15",
+            "name": "General Public Free Skate"
+          }
+        ]
+      },
+      {
+        "date": "2027-03-20",
+        "programs": [
+          {
+            "id": "general-public-free-skate-saturday",
+            "start": "19:40",
+            "end": "20:30",
+            "name": "General Public Free Skate"
+          }
+        ]
+      },
+      {
+        "date": "2027-03-22",
+        "programs": [
+          {
+            "id": "adults-only-free-skate-monday",
+            "start": "11:40",
+            "end": "13:00",
+            "name": "Adults Only Free Skate",
+            "notes": "No Skate on Stat Holidays"
+          }
+        ]
+      },
+      {
+        "date": "2027-03-23",
+        "programs": [
+          {
+            "id": "parent-tots-4-and-under-free-skate-tuesday",
+            "start": "09:00",
+            "end": "10:00",
+            "name": "Parent & Tots(4 and under) Free Skate"
+          }
+        ]
+      },
+      {
+        "date": "2027-03-26",
+        "programs": [
+          {
+            "id": "general-public-free-skate-friday",
+            "start": "17:40",
+            "end": "19:15",
+            "name": "General Public Free Skate"
+          }
+        ]
+      },
+      {
+        "date": "2027-03-27",
+        "programs": [
+          {
+            "id": "general-public-free-skate-saturday",
+            "start": "19:40",
+            "end": "20:30",
+            "name": "General Public Free Skate"
+          }
+        ]
+      },
+      {
+        "date": "2027-03-29",
+        "programs": [
+          {
+            "id": "adults-only-free-skate-monday",
+            "start": "11:40",
+            "end": "13:00",
+            "name": "Adults Only Free Skate",
+            "notes": "No Skate on Stat Holidays"
+          }
+        ]
+      },
+      {
+        "date": "2027-03-30",
+        "programs": [
+          {
+            "id": "parent-tots-4-and-under-free-skate-tuesday",
+            "start": "09:00",
+            "end": "10:00",
+            "name": "Parent & Tots(4 and under) Free Skate"
+          }
+        ]
+      }
+    ]
+  }
+}

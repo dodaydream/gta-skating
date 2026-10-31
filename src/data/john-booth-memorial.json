@@ -1,0 +1,89 @@
+{
+  "name": "John Booth Memorial Arena",
+  "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=667",
+  "timezone": "America/Toronto",
+  "address": "230 Gosford Blvd, Toronto, ON",
+  "coordinates": {
+    "lat": 43.7697,
+    "lon": -79.524189
+  },
+  "schedule": {
+    "updatedAt": "2026-10-31T16:46:09.211Z",
+    "events": [
+      {
+        "date": "2026-10-31",
+        "programs": [
+          {
+            "id": "ice-rink-leisure-skate-19-15",
+            "start": "19:15",
+            "end": "21:00",
+            "name": "Leisure Skate",
+            "notes": "0 years and over"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-01",
+        "programs": [
+          {
+            "id": "ice-rink-leisure-skate-early-years-with-caregiver-13-15",
+            "start": "13:15",
+            "end": "14:15",
+            "name": "Leisure Skate: Early Years with Caregiver",
+            "notes": "0 - 5 years"
+          },
+          {
+            "id": "ice-rink-leisure-skate-14-15",
+            "start": "14:15",
+            "end": "16:15",
+            "name": "Leisure Skate",
+            "notes": "0 years and over"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-06",
+        "programs": [
+          {
+            "id": "ice-rink-leisure-skate-18-00",
+            "start": "18:00",
+            "end": "20:00",
+            "name": "Leisure Skate",
+            "notes": "0 years and over"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-07",
+        "programs": [
+          {
+            "id": "ice-rink-leisure-skate-19-15",
+            "start": "19:15",
+            "end": "21:00",
+            "name": "Leisure Skate",
+            "notes": "0 years and over"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-08",
+        "programs": [
+          {
+            "id": "ice-rink-leisure-skate-early-years-with-caregiver-13-15",
+            "start": "13:15",
+            "end": "14:15",
+            "name": "Leisure Skate: Early Years with Caregiver",
+            "notes": "0 - 5 years"
+          },
+          {
+            "id": "ice-rink-leisure-skate-14-15",
+            "start": "14:15",
+            "end": "16:15",
+            "name": "Leisure Skate",
+            "notes": "0 years and over"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "name": "Mimico Arena",
+  "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=802",
+  "timezone": "America/Toronto",
+  "address": "31 Drummond St, Toronto, ON",
+  "coordinates": {
+    "lat": 43.612393,
+    "lon": -79.498829
+  },
+  "schedule": {
+    "updatedAt": "2026-10-31T16:46:09.683Z",
+    "events": [
+      {
+        "date": "2026-10-31",
+        "programs": [
+          {
+            "id": "ice-rink-leisure-skate-13-00",
+            "start": "13:00",
+            "end": "14:00",
+            "name": "Leisure Skate",
+            "notes": "0 years and over"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-01",
+        "programs": [
+          {
+            "id": "ice-rink-leisure-skate-15-15",
+            "start": "15:15",
+            "end": "16:45",
+            "name": "Leisure Skate",
+            "notes": "0 years and over"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-02",
+        "programs": [
+          {
+            "id": "ice-rink-leisure-skate-adult-unsupervised-10-00",
+            "start": "10:00",
+            "end": "11:30",
+            "name": "Leisure Skate: Adult (Unsupervised)",
+            "notes": "19 years and over"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-04",
+        "programs": [
+          {
+            "id": "ice-rink-leisure-skate-adult-unsupervised-11-45",
+            "start": "11:45",
+            "end": "13:30",
+            "name": "Leisure Skate: Adult (Unsupervised)",
+            "notes": "19 years and over"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-05",
+        "programs": [
+          {
+            "id": "ice-rink-leisure-skate-adult-unsupervised-10-00",
+            "start": "10:00",
+            "end": "11:30",
+            "name": "Leisure Skate: Adult (Unsupervised)",
+            "notes": "19 years and over"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-06",
+        "programs": [
+          {
+            "id": "ice-rink-leisure-skate-adult-unsupervised-10-00",
+            "start": "10:00",
+            "end": "11:30",
+            "name": "Leisure Skate: Adult (Unsupervised)",
+            "notes": "19 years and over"
+          },
+          {
+            "id": "ice-rink-leisure-skate-11-45",
+            "start": "11:45",
+            "end": "12:45",
+            "name": "Leisure Skate",
+            "notes": "0 years and over"
+          },
+          {
+            "id": "ice-rink-leisure-skate-18-15",
+            "start": "18:15",
+            "end": "19:45",
+            "name": "Leisure Skate",
+            "notes": "0 years and over"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-07",
+        "programs": [
+          {
+            "id": "ice-rink-leisure-skate-13-00",
+            "start": "13:00",
+            "end": "14:00",
+            "name": "Leisure Skate",
+            "notes": "0 years and over"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-08",
+        "programs": [
+          {
+            "id": "ice-rink-leisure-skate-15-15",
+            "start": "15:15",
+            "end": "16:45",
+            "name": "Leisure Skate",
+            "notes": "0 years and over"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "name": "GTA Community Ice Arena",
+  "url": "https://example.com/gta-community-ice-arena",
+  "timezone": "America/Toronto",
+  "address": "100 Example Rd, Toronto, ON",
+  "coordinates": {
+    "lat": 43.653226,
+    "lon": -79.383184
+  },
+  "schedule": {
+    "updatedAt": "2026-10-31T00:00:00Z",
+    "events": [
+      {
+        "date": "2026-11-01",
+        "programs": [
+          {
+            "id": "public-am",
+            "start": "09:00",
+            "end": "10:30",
+            "name": "Public Skate",
+            "notes": "Helmets recommended for children"
+          },
+          {
+            "id": "figure-pm",
+            "start": "11:00",
+            "end": "12:00",
+            "name": "Figure Skating"
+          },
+          {
+            "id": "shinny-eve",
+            "start": "19:00",
+            "end": "20:30",
+            "name": "Adult Shinny",
+            "notes": "Full equipment required"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-02",
+        "programs": [
+          {
+            "id": "public-am",
+            "start": "09:00",
+            "end": "10:30",
+            "name": "Public Skate"
+          },
+          {
+            "id": "learn-to-skate",
+            "start": "16:00",
+            "end": "17:00",
+            "name": "Learn to Skate",
+            "notes": "Registration required"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-03",
+        "programs": [
+          {
+            "id": "stick-and-puck",
+            "start": "18:00",
+            "end": "19:00",
+            "name": "Stick and Puck",
+            "notes": "CSA-approved helmet required"
+          }
+        ]
+      }
+    ]
+  }
+}

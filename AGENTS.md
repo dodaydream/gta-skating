@@ -1,3 +1,7 @@
+## Code conventions
+
+- Barrel files (`index.ts` that re-exports from sibling modules) are not allowed. Import directly from the source file.
+
 <!-- BEGIN:nextjs-agent-rules -->
 
 ## This is NOT the Next.js you know

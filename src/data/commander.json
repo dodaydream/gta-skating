@@ -1,0 +1,63 @@
+{
+  "name": "Commander Recreation Centre",
+  "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=558",
+  "timezone": "America/Toronto",
+  "address": "140 Commander Blvd, Toronto, ON",
+  "coordinates": {
+    "lat": 43.795039,
+    "lon": -79.267814
+  },
+  "schedule": {
+    "updatedAt": "2026-10-31T16:46:08.259Z",
+    "events": [
+      {
+        "date": "2026-11-01",
+        "programs": [
+          {
+            "id": "ice-rink-2-adapted-leisure-skate-with-family-15-30",
+            "start": "15:30",
+            "end": "17:00",
+            "name": "Adapted Leisure Skate with Family",
+            "notes": "0 years and over"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-03",
+        "programs": [
+          {
+            "id": "ice-rink-1-leisure-skate-older-adult-unsupervised-10-00",
+            "start": "10:00",
+            "end": "12:00",
+            "name": "Leisure Skate: Older Adult (Unsupervised)",
+            "notes": "60 years and over"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-05",
+        "programs": [
+          {
+            "id": "ice-rink-1-leisure-skate-older-adult-unsupervised-10-00",
+            "start": "10:00",
+            "end": "12:00",
+            "name": "Leisure Skate: Older Adult (Unsupervised)",
+            "notes": "60 years and over"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-08",
+        "programs": [
+          {
+            "id": "ice-rink-2-adapted-leisure-skate-with-family-15-30",
+            "start": "15:30",
+            "end": "17:00",
+            "name": "Adapted Leisure Skate with Family",
+            "notes": "0 years and over"
+          }
+        ]
+      }
+    ]
+  }
+}

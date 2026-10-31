@@ -1,0 +1,89 @@
+{
+  "name": "Don Mills Civitan Arena",
+  "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=548",
+  "timezone": "America/Toronto",
+  "address": "1030 Don Mills Rd, Toronto, ON",
+  "coordinates": {
+    "lat": 43.733023,
+    "lon": -79.343745
+  },
+  "schedule": {
+    "updatedAt": "2026-10-31T16:46:08.378Z",
+    "events": [
+      {
+        "date": "2026-10-31",
+        "programs": [
+          {
+            "id": "ice-rink-leisure-skate-18-00",
+            "start": "18:00",
+            "end": "20:00",
+            "name": "Leisure Skate",
+            "notes": "0 years and over"
+          },
+          {
+            "id": "ice-rink-leisure-skate-older-adult-20-00",
+            "start": "20:00",
+            "end": "21:30",
+            "name": "Leisure Skate: Older Adult",
+            "notes": "60 years and over"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-01",
+        "programs": [
+          {
+            "id": "ice-rink-leisure-skate-15-45",
+            "start": "15:45",
+            "end": "17:45",
+            "name": "Leisure Skate",
+            "notes": "0 years and over"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-06",
+        "programs": [
+          {
+            "id": "ice-rink-leisure-skate-older-adult-09-30",
+            "start": "09:30",
+            "end": "11:30",
+            "name": "Leisure Skate: Older Adult",
+            "notes": "60 years and over"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-07",
+        "programs": [
+          {
+            "id": "ice-rink-leisure-skate-18-00",
+            "start": "18:00",
+            "end": "20:00",
+            "name": "Leisure Skate",
+            "notes": "0 years and over"
+          },
+          {
+            "id": "ice-rink-leisure-skate-older-adult-20-00",
+            "start": "20:00",
+            "end": "21:30",
+            "name": "Leisure Skate: Older Adult",
+            "notes": "60 years and over"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-08",
+        "programs": [
+          {
+            "id": "ice-rink-leisure-skate-15-45",
+            "start": "15:45",
+            "end": "17:45",
+            "name": "Leisure Skate",
+            "notes": "0 years and over"
+          }
+        ]
+      }
+    ]
+  }
+}

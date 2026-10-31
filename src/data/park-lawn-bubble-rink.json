@@ -1,0 +1,75 @@
+{
+  "name": "Park Lawn Bubble Rink",
+  "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=858",
+  "timezone": "America/Toronto",
+  "address": "340 Park Lawn Rd, Toronto, ON",
+  "coordinates": {
+    "lat": 43.638584,
+    "lon": -79.495672
+  },
+  "schedule": {
+    "updatedAt": "2026-10-31T16:46:10.031Z",
+    "events": [
+      {
+        "date": "2026-10-31",
+        "programs": [
+          {
+            "id": "ice-rink-leisure-skate-15-15",
+            "start": "15:15",
+            "end": "16:45",
+            "name": "Leisure Skate",
+            "notes": "0 years and over"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-01",
+        "programs": [
+          {
+            "id": "ice-rink-leisure-skate-16-30",
+            "start": "16:30",
+            "end": "18:00",
+            "name": "Leisure Skate",
+            "notes": "0 years and over"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-06",
+        "programs": [
+          {
+            "id": "ice-rink-leisure-skate-18-45",
+            "start": "18:45",
+            "end": "20:15",
+            "name": "Leisure Skate",
+            "notes": "0 years and over"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-07",
+        "programs": [
+          {
+            "id": "ice-rink-leisure-skate-15-15",
+            "start": "15:15",
+            "end": "16:45",
+            "name": "Leisure Skate",
+            "notes": "0 years and over"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-08",
+        "programs": [
+          {
+            "id": "ice-rink-leisure-skate-16-30",
+            "start": "16:30",
+            "end": "18:00",
+            "name": "Leisure Skate",
+            "notes": "0 years and over"
+          }
+        ]
+      }
+    ]
+  }
+}
