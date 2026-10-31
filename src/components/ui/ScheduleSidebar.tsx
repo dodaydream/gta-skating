@@ -108,7 +108,7 @@ export function ScheduleSidebar({
       <section
         id="drawer-sheet"
         className="fixed inset-x-0 bottom-0 z-[1100] flex flex-col border-t border-black/[.08] bg-white dark:border-white/[.145] dark:bg-zinc-950 lg:hidden"
-        style={{ height: `${heightPercent}vh` }}
+        style={{ height: `${heightPercent}dvh` }}
       >
         <button
           type="button"
