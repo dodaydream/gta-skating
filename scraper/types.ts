@@ -42,20 +42,15 @@ export interface RawProgram {
 
 export interface Program {
   id: string;
-  start: string;
-  end: string;
+  start: string; // ISO datetime
+  end: string; // ISO datetime
   name: string;
   notes?: string;
 }
 
-export interface ArenaEvent {
-  date: string;
-  programs: Program[];
-}
-
 export interface ArenaSchedule {
   updatedAt: string;
-  events: ArenaEvent[];
+  programs: Program[];
 }
 
 export interface Arena {

@@ -24,7 +24,7 @@ import { randomUUID } from "node:crypto";
 import { readFile, writeFile, mkdir } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import type { Arena, ArenaEvent, ArenaMetaList, Program } from "../types.ts";
+import type { Arena, ArenaMetaList, Program } from "../types.ts";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const OUT_DIR = path.resolve(__dirname, "../../src/data");
@@ -95,39 +95,34 @@ function slug(facility: string, category: string, start: string): string {
   return raw.replace(/^-+|-+$/g, "").slice(0, 80);
 }
 
-/** Transform feed rows into dated events with stable program ids. */
-function buildEvents(rows: FeedRow[]): ArenaEvent[] {
-  const byDate = new Map<string, Program[]>();
+/** Transform feed rows into flat programs with ISO datetime starts/ends. */
+function buildPrograms(rows: FeedRow[]): Program[] {
   const seen = new Set<string>();
+  const programs: Program[] = [];
 
   for (const row of rows) {
     const range = parseTimeRange(row.t);
     if (!range) continue;
-    const date = row.d;
     const program: Program = {
       id: randomUUID(),
-      start: range[0],
-      end: range[1],
+      start: `${row.d}T${range[0]}`,
+      end: `${row.d}T${range[1]}`,
       name: row.c,
       notes: row.age || undefined,
     };
-    const dedupeKey = `${date}::${program.id}`;
-    if (seen.has(dedupeKey)) continue;
-    seen.add(dedupeKey);
-    if (!byDate.has(date)) byDate.set(date, []);
-    byDate.get(date)!.push(program);
+    if (seen.has(program.id)) continue;
+    seen.add(program.id);
+    programs.push(program);
   }
 
-  return [...byDate.entries()]
-    .sort(([a], [b]) => a.localeCompare(b))
-    .map(([date, programs]) => ({ date, programs }));
+  return programs.sort((a, b) => a.start.localeCompare(b.start));
 }
 
 // --- Write -------------------------------------------------------------
 
 async function writeSchedule(
   meta: ArenaMetaList["arenas"][number],
-  events: ArenaEvent[]
+  programs: Program[]
 ): Promise<string> {
   const payload: Arena = {
     name: meta.name,
@@ -137,7 +132,7 @@ async function writeSchedule(
     coordinates: meta.coordinates,
     schedule: {
       updatedAt: new Date().toISOString(),
-      events,
+      programs,
     },
   };
   const file = path.join(OUT_DIR, `${meta.id}.json`);
@@ -165,12 +160,12 @@ async function main(): Promise<void> {
       skipped.push(arena.id);
       continue;
     }
-    const events = buildEvents(rows);
-    const file = await writeSchedule(arena, events);
+    const programs = buildPrograms(rows);
+    const file = await writeSchedule(arena, programs);
     written.push(arena.id);
     console.log(
       `[${arena.id}] ${rows.length} program row(s), ` +
-        `${events.length} dated event(s) -> ${path.relative(process.cwd(), file)}`
+        `${programs.length} program(s) -> ${path.relative(process.cwd(), file)}`
     );
   }
 

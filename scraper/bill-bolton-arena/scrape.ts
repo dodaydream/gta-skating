@@ -20,7 +20,6 @@ import { fileURLToPath } from "node:url";
 import type {
   Arena,
   ArenaMeta,
-  ArenaEvent,
   DayName,
   Program,
   RawProgram,
@@ -264,24 +263,21 @@ function expandWeekly(program: RawProgram): string[] {
   return out;
 }
 
-/** Convert parsed recurring programs into dated events with stable ids. */
-function buildEvents(parsed: RawProgram[]): ArenaEvent[] {
-  const byDate = new Map<string, Program[]>();
+/** Convert parsed recurring programs into flat programs with ISO datetimes. */
+function buildPrograms(parsed: RawProgram[]): Program[] {
+  const out: Program[] = [];
   for (const p of parsed) {
     for (const date of expandWeekly(p)) {
-      if (!byDate.has(date)) byDate.set(date, []);
-      byDate.get(date)!.push({
+      out.push({
         id: randomUUID(),
-        start: p.startTime,
-        end: p.endTime,
+        start: `${date}T${p.startTime}`,
+        end: `${date}T${p.endTime}`,
         name: p.name,
         notes: p.notes,
       });
     }
   }
-  return [...byDate.entries()]
-    .sort(([a], [b]) => a.localeCompare(b))
-    .map(([date, programs]) => ({ date, programs }));
+  return out.sort((a, b) => a.start.localeCompare(b.start));
 }
 
 // --- Write -------------------------------------------------------------
@@ -295,7 +291,7 @@ function displayName(id: string): string {
     .join(" ");
 }
 
-async function writeSchedule(meta: ArenaMeta, events: ArenaEvent[]): Promise<string> {
+async function writeSchedule(meta: ArenaMeta, programs: Program[]): Promise<string> {
   const payload: Arena = {
     name: displayName(meta.id),
     url: meta.url,
@@ -304,7 +300,7 @@ async function writeSchedule(meta: ArenaMeta, events: ArenaEvent[]): Promise<str
     coordinates: meta.coordinates,
     schedule: {
       updatedAt: new Date().toISOString(),
-      events,
+      programs,
     },
   };
   await mkdir(OUT_DIR, { recursive: true });
@@ -328,11 +324,11 @@ async function main(): Promise<void> {
     throw new Error(`No schedule entries parsed for ${meta.id}.`);
   }
 
-  const events = buildEvents(parsed);
-  const file = await writeSchedule(meta, events);
+  const programs = buildPrograms(parsed);
+  const file = await writeSchedule(meta, programs);
   console.log(
     `[${meta.id}] ${parsed.length} recurring program(s), ` +
-      `${events.length} dated event(s) -> ${path.relative(process.cwd(), file)}`
+      `${programs.length} program(s) -> ${path.relative(process.cwd(), file)}`
   );
 }
 

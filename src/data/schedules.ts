@@ -1,5 +1,5 @@
 import type { Arena } from "@/types/arena";
-import type { ArenaEvent } from "@/types/schedule";
+import type { Program } from "@/types/schedule";
 import dayjs from "dayjs";
 
 import gta from "./schedule.json";
@@ -108,38 +108,38 @@ export function getUpcomingEvents(
   arena: Arena,
   from?: string,
   to?: string
-): ArenaEvent[] {
+): Program[] {
   const start = from ?? getTodayInArenaTime(arena.timezone);
-  return arena.schedule.events
+  return arena.schedule.programs
     .filter(
-      (event) =>
-        event.date >= start && (to === undefined || event.date <= to)
+      (program) =>
+        program.start >= start && (to === undefined || program.start <= to)
     )
-    .sort((a, b) => a.date.localeCompare(b.date));
+    .sort((a, b) => a.start.localeCompare(b.start));
 }
 
-export function formatEventDate(date: string, timezone: string): string {
+export function formatEventDate(dateStr: string, timezone: string): string {
   return new Intl.DateTimeFormat("en-CA", {
     weekday: "long",
     month: "long",
     day: "numeric",
     timeZone: timezone,
-  }).format(new Date(`${date}T00:00`));
+  }).format(new Date(dateStr));
 }
 
-export function formatHumanDate(date: string, timezone: string): string {
+export function formatHumanDate(dateStr: string, timezone: string): string {
   const today = getTodayInArenaTime(timezone);
-  if (date === today) return "Today";
-  return dayjs(`${date}T00:00`).format("ddd, MMM D");
+  if (dateStr.slice(0, 10) === today) return "Today";
+  return dayjs(dateStr).format("ddd, MMM D");
 }
 
 export function formatTimeRange(start: string, end: string): string {
-  return `${start}\u2013${end}`;
+  return `${start.slice(11, 16)}\u2013${end.slice(11, 16)}`;
 }
 
 export function formatDuration(start: string, end: string): string {
-  const startMin = toMinutes(start);
-  const endMin = toMinutes(end);
+  const startMin = toMinutes(start.slice(11, 16));
+  const endMin = toMinutes(end.slice(11, 16));
   let diff = endMin - startMin;
   if (diff < 0) diff += 24 * 60;
   const hours = Math.floor(diff / 60);

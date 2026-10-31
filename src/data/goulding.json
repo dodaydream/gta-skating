@@ -8,76 +8,56 @@
     "lon": -79.422143
   },
   "schedule": {
-    "updatedAt": "2026-10-31T19:11:21.353Z",
-    "events": [
+    "updatedAt": "2026-10-31T19:34:35.859Z",
+    "programs": [
       {
-        "date": "2026-10-31",
-        "programs": [
-          {
-            "id": "b04c0132-de38-422b-8ab0-5a472235fa80",
-            "start": "20:00",
-            "end": "21:15",
-            "name": "Leisure Skate",
-            "notes": "0 years and over"
-          },
-          {
-            "id": "1c29b9fc-8ce1-4eeb-97f2-fb750af1c417",
-            "start": "21:30",
-            "end": "22:30",
-            "name": "Leisure Skate: Youth",
-            "notes": "13 - 24 years"
-          }
-        ]
+        "id": "c1836d5c-67ff-4634-96c4-60ce28d01726",
+        "start": "2026-10-31T20:00",
+        "end": "2026-10-31T21:15",
+        "name": "Leisure Skate",
+        "notes": "0 years and over"
       },
       {
-        "date": "2026-11-03",
-        "programs": [
-          {
-            "id": "b794891e-f113-4d5f-9724-226535f91e76",
-            "start": "16:00",
-            "end": "18:00",
-            "name": "Figure Skating",
-            "notes": "6 years and over"
-          }
-        ]
+        "id": "79251ad0-6fe1-4a74-a20c-5175172ad88b",
+        "start": "2026-10-31T21:30",
+        "end": "2026-10-31T22:30",
+        "name": "Leisure Skate: Youth",
+        "notes": "13 - 24 years"
       },
       {
-        "date": "2026-11-05",
-        "programs": [
-          {
-            "id": "566b9472-02d4-464a-94f8-6061f08aed40",
-            "start": "09:15",
-            "end": "11:30",
-            "name": "Leisure Skate: Older Adult",
-            "notes": "60 years and over"
-          },
-          {
-            "id": "97272956-8af3-4f42-831b-c23dcdc6bdbd",
-            "start": "16:30",
-            "end": "18:30",
-            "name": "Leisure Skate",
-            "notes": "0 years and over"
-          }
-        ]
+        "id": "68100aca-4277-429e-a998-2b92d851954c",
+        "start": "2026-11-03T16:00",
+        "end": "2026-11-03T18:00",
+        "name": "Figure Skating",
+        "notes": "6 years and over"
       },
       {
-        "date": "2026-11-07",
-        "programs": [
-          {
-            "id": "39b3d4f4-67e5-4447-bdef-4477d9795ac8",
-            "start": "20:00",
-            "end": "21:15",
-            "name": "Leisure Skate",
-            "notes": "0 years and over"
-          },
-          {
-            "id": "3640f685-8644-46a2-be96-b0a692d6dd06",
-            "start": "21:30",
-            "end": "22:30",
-            "name": "Leisure Skate: Youth",
-            "notes": "13 - 24 years"
-          }
-        ]
+        "id": "8b5a74bb-52ba-4bc2-9770-7d04e6c8ff18",
+        "start": "2026-11-05T09:15",
+        "end": "2026-11-05T11:30",
+        "name": "Leisure Skate: Older Adult",
+        "notes": "60 years and over"
+      },
+      {
+        "id": "af69a9f9-fb46-4d4d-b40b-664b689a0ab9",
+        "start": "2026-11-05T16:30",
+        "end": "2026-11-05T18:30",
+        "name": "Leisure Skate",
+        "notes": "0 years and over"
+      },
+      {
+        "id": "584c1001-b8de-47be-92e0-1ad264a599af",
+        "start": "2026-11-07T20:00",
+        "end": "2026-11-07T21:15",
+        "name": "Leisure Skate",
+        "notes": "0 years and over"
+      },
+      {
+        "id": "29614c08-cf98-4363-9b62-459b5e3af11f",
+        "start": "2026-11-07T21:30",
+        "end": "2026-11-07T22:30",
+        "name": "Leisure Skate: Youth",
+        "notes": "13 - 24 years"
       }
     ]
   }

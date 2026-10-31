@@ -8,81 +8,56 @@
     "lon": -79.383509
   },
   "schedule": {
-    "updatedAt": "2026-10-31T19:11:27.035Z",
-    "events": [
+    "updatedAt": "2026-10-31T19:34:40.582Z",
+    "programs": [
       {
-        "date": "2026-10-31",
-        "programs": [
-          {
-            "id": "df170cf8-894b-4a58-ba32-575f4dda8805",
-            "start": "19:30",
-            "end": "21:30",
-            "name": "Leisure Skate",
-            "notes": "0 years and over"
-          }
-        ]
+        "id": "a58486a8-0df5-4066-8733-0d9478534c1e",
+        "start": "2026-10-31T19:30",
+        "end": "2026-10-31T21:30",
+        "name": "Leisure Skate",
+        "notes": "0 years and over"
       },
       {
-        "date": "2026-11-01",
-        "programs": [
-          {
-            "id": "32d0b3f1-ab44-4404-bb2a-20782d826ed5",
-            "start": "13:30",
-            "end": "14:30",
-            "name": "Shinny: Child with Caregiver",
-            "notes": "0 - 8 years"
-          },
-          {
-            "id": "5215b01a-f11f-4a1d-a174-73ba9bfe8131",
-            "start": "14:45",
-            "end": "16:45",
-            "name": "Leisure Skate",
-            "notes": "0 years and over"
-          }
-        ]
+        "id": "4ba0fa2d-66a2-4757-97f2-b0b6b5a0cdfb",
+        "start": "2026-11-01T13:30",
+        "end": "2026-11-01T14:30",
+        "name": "Shinny: Child with Caregiver",
+        "notes": "0 - 8 years"
       },
       {
-        "date": "2026-11-06",
-        "programs": [
-          {
-            "id": "5bed339f-1afe-4cef-83bd-56618ae4a3c9",
-            "start": "18:45",
-            "end": "20:45",
-            "name": "Leisure Skate",
-            "notes": "0 years and over"
-          }
-        ]
+        "id": "c2eb49c8-698d-44d5-a06f-0eb38ab823a3",
+        "start": "2026-11-01T14:45",
+        "end": "2026-11-01T16:45",
+        "name": "Leisure Skate",
+        "notes": "0 years and over"
       },
       {
-        "date": "2026-11-07",
-        "programs": [
-          {
-            "id": "980be37c-3c4c-48d9-a697-bae41846d15d",
-            "start": "19:30",
-            "end": "21:30",
-            "name": "Leisure Skate",
-            "notes": "0 years and over"
-          }
-        ]
+        "id": "20788b42-5091-4e1f-8991-f8832ea298e8",
+        "start": "2026-11-06T18:45",
+        "end": "2026-11-06T20:45",
+        "name": "Leisure Skate",
+        "notes": "0 years and over"
       },
       {
-        "date": "2026-11-08",
-        "programs": [
-          {
-            "id": "f4a45efe-1f42-47ce-b10d-7e214eedc57b",
-            "start": "13:30",
-            "end": "14:30",
-            "name": "Shinny: Child with Caregiver",
-            "notes": "0 - 8 years"
-          },
-          {
-            "id": "77ad9c3b-e8be-4d03-a15c-4fcdab7d9a0a",
-            "start": "14:45",
-            "end": "16:45",
-            "name": "Leisure Skate",
-            "notes": "0 years and over"
-          }
-        ]
+        "id": "85859a8f-4a87-4350-91bc-1ad7e67459ae",
+        "start": "2026-11-07T19:30",
+        "end": "2026-11-07T21:30",
+        "name": "Leisure Skate",
+        "notes": "0 years and over"
+      },
+      {
+        "id": "ae58e4d4-8ab4-47ce-9ccb-9ea61aa84eec",
+        "start": "2026-11-08T13:30",
+        "end": "2026-11-08T14:30",
+        "name": "Shinny: Child with Caregiver",
+        "notes": "0 - 8 years"
+      },
+      {
+        "id": "484b1f0a-e966-4edb-ba5b-b958b03ef473",
+        "start": "2026-11-08T14:45",
+        "end": "2026-11-08T16:45",
+        "name": "Leisure Skate",
+        "notes": "0 years and over"
       }
     ]
   }

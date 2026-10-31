@@ -8,92 +8,67 @@
     "lon": -79.436087
   },
   "schedule": {
-    "updatedAt": "2026-10-31T19:11:16.766Z",
-    "events": [
+    "updatedAt": "2026-10-31T19:34:32.384Z",
+    "programs": [
       {
-        "date": "2026-10-31",
-        "programs": [
-          {
-            "id": "73a1d7bd-5b5d-41d8-abfc-a1455174a94b",
-            "start": "19:15",
-            "end": "20:45",
-            "name": "Public Skate"
-          },
-          {
-            "id": "e341bdd2-7de0-4b3a-877a-cc7ebc518f3a",
-            "start": "20:45",
-            "end": "22:15",
-            "name": "Shinny"
-          }
-        ]
+        "id": "eef9af9e-5ed5-4918-b9df-43daf25d940c",
+        "start": "2026-10-31T19:15",
+        "end": "2026-10-31T20:45",
+        "name": "Public Skate"
       },
       {
-        "date": "2026-11-07",
-        "programs": [
-          {
-            "id": "bf054ceb-81c4-40e0-a65e-7b2429698649",
-            "start": "19:15",
-            "end": "20:45",
-            "name": "Public Skate"
-          },
-          {
-            "id": "b746d0bf-86ab-4c7d-91eb-45ad16e08ee2",
-            "start": "20:45",
-            "end": "22:15",
-            "name": "Shinny"
-          }
-        ]
+        "id": "81b8b908-6fb5-477a-98a6-b907f05da3ee",
+        "start": "2026-10-31T20:45",
+        "end": "2026-10-31T22:15",
+        "name": "Shinny"
       },
       {
-        "date": "2026-11-14",
-        "programs": [
-          {
-            "id": "2d02d39c-f98a-4d5f-9ab6-b56ec35e69a2",
-            "start": "19:15",
-            "end": "20:45",
-            "name": "Public Skate"
-          },
-          {
-            "id": "f5c91fe7-8c34-4ccd-be75-f5cba536a8e3",
-            "start": "20:45",
-            "end": "22:15",
-            "name": "Shinny"
-          }
-        ]
+        "id": "ab15839c-d208-4803-be87-59800d2bcf85",
+        "start": "2026-11-07T19:15",
+        "end": "2026-11-07T20:45",
+        "name": "Public Skate"
       },
       {
-        "date": "2026-11-21",
-        "programs": [
-          {
-            "id": "203ede24-d56c-4061-95a6-4fd3493a1e0f",
-            "start": "19:15",
-            "end": "20:45",
-            "name": "Public Skate"
-          },
-          {
-            "id": "0c080001-2329-4063-b32d-c0a6337a2947",
-            "start": "20:45",
-            "end": "22:15",
-            "name": "Shinny"
-          }
-        ]
+        "id": "bb41ad36-70f0-43bb-90ff-5718ab798cad",
+        "start": "2026-11-07T20:45",
+        "end": "2026-11-07T22:15",
+        "name": "Shinny"
       },
       {
-        "date": "2026-11-28",
-        "programs": [
-          {
-            "id": "0c176c5b-a4e9-43f8-b056-c754b9a656d7",
-            "start": "19:15",
-            "end": "20:45",
-            "name": "Public Skate"
-          },
-          {
-            "id": "1fe8d179-142a-48f4-a07b-070b5d9d0c42",
-            "start": "20:45",
-            "end": "22:15",
-            "name": "Shinny"
-          }
-        ]
+        "id": "d8e23978-da1e-4f89-8541-7f4f2f702c83",
+        "start": "2026-11-14T19:15",
+        "end": "2026-11-14T20:45",
+        "name": "Public Skate"
+      },
+      {
+        "id": "5c19b93a-8bc6-49f9-b9f5-94a70778b42d",
+        "start": "2026-11-14T20:45",
+        "end": "2026-11-14T22:15",
+        "name": "Shinny"
+      },
+      {
+        "id": "c91b2de1-c02f-4532-97dc-a06793b5601c",
+        "start": "2026-11-21T19:15",
+        "end": "2026-11-21T20:45",
+        "name": "Public Skate"
+      },
+      {
+        "id": "d716d6ef-c5a2-458f-b338-90ce3657b562",
+        "start": "2026-11-21T20:45",
+        "end": "2026-11-21T22:15",
+        "name": "Shinny"
+      },
+      {
+        "id": "d4180696-23f4-439e-80a3-abe8a8beea6a",
+        "start": "2026-11-28T19:15",
+        "end": "2026-11-28T20:45",
+        "name": "Public Skate"
+      },
+      {
+        "id": "a3b0fc00-5f6e-4c08-8809-7f7880a44edf",
+        "start": "2026-11-28T20:45",
+        "end": "2026-11-28T22:15",
+        "name": "Shinny"
       }
     ]
   }

@@ -8,154 +8,119 @@
     "lon": -79.216386
   },
   "schedule": {
-    "updatedAt": "2026-10-31T19:11:23.283Z",
-    "events": [
+    "updatedAt": "2026-10-31T19:34:37.218Z",
+    "programs": [
       {
-        "date": "2026-10-31",
-        "programs": [
-          {
-            "id": "60e1bda5-15f5-47ce-9a31-05612aecb4c1",
-            "start": "18:30",
-            "end": "20:30",
-            "name": "Leisure Skate",
-            "notes": "0 years and over"
-          }
-        ]
+        "id": "6605e0a4-a397-4458-a2c9-ae483bdc5309",
+        "start": "2026-10-31T18:30",
+        "end": "2026-10-31T20:30",
+        "name": "Leisure Skate",
+        "notes": "0 years and over"
       },
       {
-        "date": "2026-11-02",
-        "programs": [
-          {
-            "id": "94bd5829-4f37-4bde-97a3-fbf521895e09",
-            "start": "18:00",
-            "end": "18:45",
-            "name": "Shinny: Youth (Girls)",
-            "notes": "13 - 18 years"
-          },
-          {
-            "id": "10a6c78d-619e-4b39-b157-f0537fbd7b4c",
-            "start": "18:45",
-            "end": "19:30",
-            "name": "Shinny: Youth",
-            "notes": "13 - 18 years"
-          }
-        ]
+        "id": "5db32d6d-b994-4c72-b084-63aa37ed9742",
+        "start": "2026-11-02T18:00",
+        "end": "2026-11-02T18:45",
+        "name": "Shinny: Youth (Girls)",
+        "notes": "13 - 18 years"
       },
       {
-        "date": "2026-11-03",
-        "programs": [
-          {
-            "id": "656bab03-5cdc-42e7-aed0-3951bc8f93a6",
-            "start": "10:00",
-            "end": "12:00",
-            "name": "Leisure Skate: Older Adult (Unsupervised)",
-            "notes": "60 years and over"
-          },
-          {
-            "id": "22157ad5-efb0-49cd-b178-942a9a57c3ab",
-            "start": "12:00",
-            "end": "13:00",
-            "name": "Shinny: Older Adult (Unsupervised)",
-            "notes": "60 years and over"
-          },
-          {
-            "id": "6a973316-8ec3-4add-9001-33e68aa188ad",
-            "start": "12:15",
-            "end": "14:15",
-            "name": "Leisure Skate: Child with Caregiver (Unsupervised)",
-            "notes": "0 - 12 years"
-          }
-        ]
+        "id": "602a15c6-009a-48e0-adb0-673e413ffeed",
+        "start": "2026-11-02T18:45",
+        "end": "2026-11-02T19:30",
+        "name": "Shinny: Youth",
+        "notes": "13 - 18 years"
       },
       {
-        "date": "2026-11-04",
-        "programs": [
-          {
-            "id": "d1dd16e8-d760-45d1-8a92-de9317ba6878",
-            "start": "10:00",
-            "end": "12:00",
-            "name": "Leisure Skate: Older Adult (Unsupervised)",
-            "notes": "60 years and over"
-          },
-          {
-            "id": "5004926a-f4ed-4888-bf0b-3dce303067d2",
-            "start": "12:15",
-            "end": "14:15",
-            "name": "Leisure Skate: Child with Caregiver (Unsupervised)",
-            "notes": "0 - 12 years"
-          },
-          {
-            "id": "130d1513-66c6-4c00-8fe2-f0855bb297cf",
-            "start": "16:00",
-            "end": "17:00",
-            "name": "Shinny: Child (Girls)",
-            "notes": "6 - 8 years"
-          },
-          {
-            "id": "878def3f-d238-4e74-8068-6817ea967bd0",
-            "start": "17:00",
-            "end": "18:00",
-            "name": "Shinny: Child (Girls)",
-            "notes": "9 - 12 years"
-          }
-        ]
+        "id": "0ec4c71e-cba4-4bcd-a1b6-15fbb644df17",
+        "start": "2026-11-03T10:00",
+        "end": "2026-11-03T12:00",
+        "name": "Leisure Skate: Older Adult (Unsupervised)",
+        "notes": "60 years and over"
       },
       {
-        "date": "2026-11-05",
-        "programs": [
-          {
-            "id": "b29d7f31-2105-42ca-9343-04f4340c8707",
-            "start": "10:00",
-            "end": "12:00",
-            "name": "Leisure Skate: Older Adult (Unsupervised)",
-            "notes": "60 years and over"
-          },
-          {
-            "id": "eaddb947-bb8a-49b9-8cf4-75c6c0736e7b",
-            "start": "12:00",
-            "end": "13:00",
-            "name": "Shinny: Older Adult (Unsupervised)",
-            "notes": "60 years and over"
-          },
-          {
-            "id": "09a0b85f-a561-4194-abb8-66964af40aa7",
-            "start": "12:15",
-            "end": "14:15",
-            "name": "Leisure Skate: Child with Caregiver (Unsupervised)",
-            "notes": "0 - 12 years"
-          }
-        ]
+        "id": "90e1a37b-9048-42be-b155-fc0b61642d1d",
+        "start": "2026-11-03T12:00",
+        "end": "2026-11-03T13:00",
+        "name": "Shinny: Older Adult (Unsupervised)",
+        "notes": "60 years and over"
       },
       {
-        "date": "2026-11-06",
-        "programs": [
-          {
-            "id": "901c8501-3a8b-4f17-a71c-01e38a038d7e",
-            "start": "10:00",
-            "end": "12:00",
-            "name": "Leisure Skate: Older Adult (Unsupervised)",
-            "notes": "60 years and over"
-          },
-          {
-            "id": "655ba008-51bc-4b2b-aa86-032a15b1e4dd",
-            "start": "12:15",
-            "end": "14:15",
-            "name": "Leisure Skate: Child with Caregiver (Unsupervised)",
-            "notes": "0 - 12 years"
-          }
-        ]
+        "id": "d98eaf14-51a4-490d-9390-3edf4bd0b48f",
+        "start": "2026-11-03T12:15",
+        "end": "2026-11-03T14:15",
+        "name": "Leisure Skate: Child with Caregiver (Unsupervised)",
+        "notes": "0 - 12 years"
       },
       {
-        "date": "2026-11-07",
-        "programs": [
-          {
-            "id": "ccc7ce0f-a6c4-4b0b-a9c2-bf5db7103e79",
-            "start": "18:30",
-            "end": "20:30",
-            "name": "Leisure Skate",
-            "notes": "0 years and over"
-          }
-        ]
+        "id": "8f098d46-86f6-4955-8038-0f3bef3a5230",
+        "start": "2026-11-04T10:00",
+        "end": "2026-11-04T12:00",
+        "name": "Leisure Skate: Older Adult (Unsupervised)",
+        "notes": "60 years and over"
+      },
+      {
+        "id": "5ac31810-4c50-4a96-bb9a-e321ac1b02fb",
+        "start": "2026-11-04T12:15",
+        "end": "2026-11-04T14:15",
+        "name": "Leisure Skate: Child with Caregiver (Unsupervised)",
+        "notes": "0 - 12 years"
+      },
+      {
+        "id": "2e2160d5-8bc6-43e1-8723-7ae39bf7d67e",
+        "start": "2026-11-04T16:00",
+        "end": "2026-11-04T17:00",
+        "name": "Shinny: Child (Girls)",
+        "notes": "6 - 8 years"
+      },
+      {
+        "id": "76138232-d863-45ce-8adb-8768d3059fe8",
+        "start": "2026-11-04T17:00",
+        "end": "2026-11-04T18:00",
+        "name": "Shinny: Child (Girls)",
+        "notes": "9 - 12 years"
+      },
+      {
+        "id": "f4ba3cb3-a862-49d7-aaa4-de3ae60d6882",
+        "start": "2026-11-05T10:00",
+        "end": "2026-11-05T12:00",
+        "name": "Leisure Skate: Older Adult (Unsupervised)",
+        "notes": "60 years and over"
+      },
+      {
+        "id": "0368ed17-5b94-49e1-a6ba-d5df125150b8",
+        "start": "2026-11-05T12:00",
+        "end": "2026-11-05T13:00",
+        "name": "Shinny: Older Adult (Unsupervised)",
+        "notes": "60 years and over"
+      },
+      {
+        "id": "ece97da4-5c4d-4a79-a8c4-f11b21d2d8f6",
+        "start": "2026-11-05T12:15",
+        "end": "2026-11-05T14:15",
+        "name": "Leisure Skate: Child with Caregiver (Unsupervised)",
+        "notes": "0 - 12 years"
+      },
+      {
+        "id": "db6d57db-c519-4cd5-b556-ce49deadf929",
+        "start": "2026-11-06T10:00",
+        "end": "2026-11-06T12:00",
+        "name": "Leisure Skate: Older Adult (Unsupervised)",
+        "notes": "60 years and over"
+      },
+      {
+        "id": "c664986e-7016-4db3-b724-c050d357b767",
+        "start": "2026-11-06T12:15",
+        "end": "2026-11-06T14:15",
+        "name": "Leisure Skate: Child with Caregiver (Unsupervised)",
+        "notes": "0 - 12 years"
+      },
+      {
+        "id": "8451c6a9-f904-4ab5-83b7-940e0bd1f6de",
+        "start": "2026-11-07T18:30",
+        "end": "2026-11-07T20:30",
+        "name": "Leisure Skate",
+        "notes": "0 years and over"
       }
     ]
   }

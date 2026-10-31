@@ -8,19 +8,14 @@
     "lon": -79.50588
   },
   "schedule": {
-    "updatedAt": "2026-10-31T19:11:22.694Z",
-    "events": [
+    "updatedAt": "2026-10-31T19:34:36.852Z",
+    "programs": [
       {
-        "date": "2026-11-03",
-        "programs": [
-          {
-            "id": "e8c851c5-ae8d-4ffd-956c-6dca8e051144",
-            "start": "17:45",
-            "end": "20:15",
-            "name": "Leisure Skate",
-            "notes": "0 years and over"
-          }
-        ]
+        "id": "b37111ef-cb6c-4da5-9621-27b9ce895aba",
+        "start": "2026-11-03T17:45",
+        "end": "2026-11-03T20:15",
+        "name": "Leisure Skate",
+        "notes": "0 years and over"
       }
     ]
   }

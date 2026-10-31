@@ -92,8 +92,8 @@ export default function Home() {
         ...item.arena,
         schedule: {
           ...item.arena.schedule,
-          events: item.arena.schedule.events.filter(
-            (e) => e.date >= today
+          programs: item.arena.schedule.programs.filter(
+            (p) => p.start.slice(0, 10) >= today
           ),
         },
       });

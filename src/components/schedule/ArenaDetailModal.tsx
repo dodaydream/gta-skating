@@ -2,7 +2,7 @@
 
 import { useRef, useState } from "react";
 import type { Arena } from "@/types/arena";
-import type { ArenaEvent } from "@/types/schedule";
+import type { Program } from "@/types/schedule";
 import {
   Dialog,
   DialogClose,
@@ -27,7 +27,7 @@ export function ArenaDetailModal({
   arena: Arena;
   onClose: () => void;
 }) {
-  const events = arena.schedule.events;
+  const programs = arena.schedule.programs;
   const updated = new Date(arena.schedule.updatedAt).toISOString().slice(0, 10);
   const [view, setView] = useState<"day" | "week">("day");
   const weekBodyRef = useRef<HTMLDivElement>(null);
@@ -52,7 +52,7 @@ export function ArenaDetailModal({
           </DialogClose>
         </header>
 
-        <TodayCards events={events} timezone={arena.timezone} />
+        <TodayCards programs={programs} timezone={arena.timezone} />
 
         <div className="px-5">
           <Tabs value={view} onValueChange={(v) => setView(v as "day" | "week")}>
@@ -68,11 +68,11 @@ export function ArenaDetailModal({
           className="flex flex-1 flex-col gap-5 overflow-y-auto px-5"
         >
 {view === "day" ? (
-            <ListView events={events} timezone={arena.timezone} />
-          ) : events.length === 0 ? (
+            <ListView programs={programs} timezone={arena.timezone} />
+          ) : programs.length === 0 ? (
             <p className="text-sm text-zinc-500">No upcoming sessions.</p>
           ) : (
-            <WeekView events={events} bodyRef={weekBodyRef} />
+            <WeekView programs={programs} bodyRef={weekBodyRef} />
           )}
         </div>
 
@@ -109,25 +109,23 @@ export function ArenaDetailModal({
 }
 
 function TodayCards({
-  events,
+  programs,
   timezone,
 }: {
-  events: ArenaEvent[];
+  programs: Program[];
   timezone: string;
 }) {
   const today = getTodayInArenaTime(timezone);
-  const programs = events.flatMap((event) =>
-    event.programs.map((program) => ({ ...program, date: event.date }))
-  );
 
   return (
     <div className="w-full min-w-0 overflow-x-auto overflow-y-hidden px-5 shrink-0">
       <div className="flex gap-3 pb-1">
         {programs.map((program) => {
-          const isToday = program.date === today;
+          const programDate = program.start.slice(0, 10);
+          const isToday = programDate === today;
           return (
             <div
-              key={program.id}
+              key={`${program.id}-${program.start}`}
               className={`flex w-56 shrink-0 flex-col overflow-hidden rounded-xl border p-3 ${
                 isToday
                   ? "border-blue-300 bg-blue-50/70 dark:border-blue-800 dark:bg-blue-950/40"
@@ -142,7 +140,7 @@ function TodayCards({
                       : "text-zinc-700 dark:text-zinc-300"
                   }`}
                 >
-                  {formatEventDate(program.date, timezone)}
+                  {formatEventDate(programDate, timezone)}
                 </h3>
                 {isToday ? (
                   <span className="shrink-0 rounded-full bg-blue-600 px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-white">
@@ -171,28 +169,38 @@ function TodayCards({
 }
 
 function ListView({
-  events,
+  programs,
   timezone,
 }: {
-  events: ArenaEvent[];
+  programs: Program[];
   timezone: string;
 }) {
+  const byDate = new Map<string, Program[]>();
+  for (const p of programs) {
+    const date = p.start.slice(0, 10);
+    if (!byDate.has(date)) byDate.set(date, []);
+    byDate.get(date)!.push(p);
+  }
+
   return (
     <div className="flex flex-col gap-4">
-      {events.map((event) => (
-        <div key={event.date} className="flex flex-col gap-2">
+      {[...byDate.entries()].map(([date, datePrograms]) => (
+        <div key={date} className="flex flex-col gap-2">
           <div className="flex items-center gap-2">
             <h3 className="text-sm font-semibold text-zinc-700 dark:text-zinc-300">
-              {formatEventDate(event.date, timezone)}
+              {formatEventDate(date, timezone)}
             </h3>
             <span className="flex-1 border-t border-dashed border-black/[.08] dark:border-white/[.1]" />
             <span className="text-xs text-zinc-400">
-              {event.programs.length}
+              {datePrograms.length}
             </span>
           </div>
           <ul className="flex flex-col divide-y divide-black/[.06] dark:divide-white/[.08]">
-            {event.programs.map((program) => (
-              <li key={program.id} className="flex flex-col gap-1 py-2">
+            {datePrograms.map((program) => (
+              <li
+                key={`${program.id}-${program.start}`}
+                className="flex flex-col gap-1 py-2"
+              >
                 <div className="flex flex-wrap items-baseline gap-3">
                   <span className="font-mono text-sm tabular-nums text-zinc-500 dark:text-zinc-400">
                     {formatTimeRange(program.start, program.end)}

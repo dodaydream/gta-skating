@@ -89,7 +89,7 @@ export function ScheduleSidebar({
           ) : (
             items.map((item) => (
               <ProgramListItem
-                key={`${item.arena.name}-${item.date}-${item.start}-${item.name}`}
+                key={`${item.arena.name}-${item.start}-${item.name}`}
                 program={item}
                 onSelect={() => onSelectArena(item.arena)}
                 userLocation={userLocation}
@@ -148,7 +148,7 @@ export function ScheduleSidebar({
             ) : (
               items.map((item) => (
                 <ProgramListItem
-                  key={`${item.arena.name}-${item.date}-${item.start}-${item.name}`}
+                  key={`${item.arena.name}-${item.start}-${item.name}`}
                   program={item}
                   onSelect={() => onSelectArena(item.arena)}
                   userLocation={userLocation}

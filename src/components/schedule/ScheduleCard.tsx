@@ -1,6 +1,7 @@
 import { formatEventDate } from "@/data/schedules";
 import { ProgramRow } from "./ProgramRow";
 import type { Arena } from "@/types/arena";
+import type { Program } from "@/types/schedule";
 import {
   Card,
   CardContent,
@@ -21,11 +22,9 @@ export function ScheduleCard({
   arena: Arena;
   onToggle: () => void;
 }) {
-  const events = arena.schedule.events;
-  const programCount = events.reduce(
-    (sum, e) => sum + e.programs.length,
-    0
-  );
+  const programs = arena.schedule.programs;
+  const groupedByDate = groupByDate(programs);
+  const programCount = programs.length;
   const updated = new Date(arena.schedule.updatedAt)
     .toISOString()
     .slice(0, 10);
@@ -57,22 +56,22 @@ export function ScheduleCard({
 
         <CollapsibleContent>
           <CardContent className="flex flex-col gap-5 border-t px-5 pb-5 pt-4">
-            {events.length === 0 ? (
+            {groupedByDate.size === 0 ? (
               <p className="text-sm text-zinc-500">
                 No upcoming sessions.
               </p>
             ) : (
               <div className="flex flex-col gap-5">
-                {events.map((event) => (
-                  <div key={event.date} className="flex flex-col gap-2">
+                {[...groupedByDate.entries()].map(([date, datePrograms]) => (
+                  <div key={date} className="flex flex-col gap-2">
                     <div className="flex items-center gap-2">
                       <h3 className="text-sm font-semibold text-zinc-700 dark:text-zinc-300">
-                        {formatEventDate(event.date, arena.timezone)}
+                        {formatEventDate(date, arena.timezone)}
                       </h3>
                       <span className="flex-1 border-t border-dashed border-black/[.08] dark:border-white/[.1]" />
                     </div>
                     <ul className="flex flex-col divide-y divide-black/[.06] dark:divide-white/[.08]">
-                      {event.programs.map((program) => (
+                      {datePrograms.map((program) => (
                         <ProgramRow key={program.id} program={program} />
                       ))}
                     </ul>
@@ -108,4 +107,14 @@ export function ScheduleCard({
       </Collapsible>
     </Card>
   );
+}
+
+function groupByDate(programs: Program[]): Map<string, Program[]> {
+  const map = new Map<string, Program[]>();
+  for (const p of programs) {
+    const date = p.start.slice(0, 10);
+    if (!map.has(date)) map.set(date, []);
+    map.get(date)!.push(p);
+  }
+  return map;
 }

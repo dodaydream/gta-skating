@@ -16,7 +16,8 @@ export function ProgramListItem({
   userLocation?: { lat: number; lon: number } | null;
 }) {
   const arena = program.arena;
-  const isToday = program.date === getTodayInArenaTime(arena.timezone);
+  const programDate = program.start.slice(0, 10);
+  const isToday = programDate === getTodayInArenaTime(arena.timezone);
   const hasCoords =
     userLocation &&
     arena.coordinates &&
@@ -41,7 +42,7 @@ export function ProgramListItem({
         <span className="font-mono">
   {isToday
     ? `Today·${formatTimeRange(program.start, program.end)}`
-    : `${formatHumanDate(program.date, program.arena.timezone)}·${formatTimeRange(program.start, program.end)}`}
+    : `${formatHumanDate(program.start, program.arena.timezone)}·${formatTimeRange(program.start, program.end)}`}
 </span>
       </div>
       <div className="flex items-baseline justify-between gap-3">

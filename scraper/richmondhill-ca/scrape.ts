@@ -4,7 +4,6 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import type {
   Arena,
-  ArenaEvent,
   ArenaMetaList,
   DayName,
   Program,
@@ -286,65 +285,48 @@ function expandWeekly(
 
 function buildArenaSchedules(
   entries: RawEntry[]
-): Map<string, ArenaEvent[]> {
-  const byArena = new Map<string, Map<string, Program[]>>();
+): Map<string, Program[]> {
+  const byArena = new Map<string, Program[]>();
 
   for (const entry of entries) {
     const dates = expandWeekly(entry);
     for (const date of dates) {
-      if (!byArena.has(entry.arenaId))
-        byArena.set(entry.arenaId, new Map());
-      const byDate = byArena.get(entry.arenaId)!;
-      if (!byDate.has(date)) byDate.set(date, []);
-      byDate.get(date)!.push({
+      if (!byArena.has(entry.arenaId)) byArena.set(entry.arenaId, []);
+      byArena.get(entry.arenaId)!.push({
         id: randomUUID(),
-        start: entry.time.start,
-        end: entry.time.end,
+        start: `${date}T${entry.time.start}`,
+        end: `${date}T${entry.time.end}`,
         name: entry.programName,
       });
     }
   }
 
-  const result = new Map<string, ArenaEvent[]>();
-  for (const [arenaId, byDate] of byArena) {
-    const events = [...byDate.entries()]
-      .sort(([a], [b]) => a.localeCompare(b))
-      .map(([date, programs]) => ({ date, programs }));
-    result.set(arenaId, events);
-  }
-  return result;
+  return byArena;
 }
 
 function addSensorySkate(
   arenaId: string,
-  events: Map<string, ArenaEvent[]>
+  programsByArena: Map<string, Program[]>
 ): void {
-  const sensoryEntry = {
-    id: "sensory-friendly-skate-saturday-16-15",
-    start: "16:15",
-    end: "17:15",
-    name: "Sensory Friendly Skate",
-  };
   const today = new Date();
   const endDate = new Date();
   endDate.setDate(today.getDate() + LOOKAHEAD_DAYS);
   const inRange = (ds: string): boolean => ds >= dateStr(today) && ds <= dateStr(endDate);
   const dates = ["2026-11-07", "2027-01-16"].filter(inRange);
   for (const date of dates) {
-    if (!events.has(arenaId)) events.set(arenaId, []);
-    const byDate = events.get(arenaId)!;
-    const existing = byDate.find((e) => e.date === date);
-    if (existing) {
-      existing.programs.push(sensoryEntry);
-    } else {
-      byDate.push({ date, programs: [sensoryEntry] });
-    }
+    if (!programsByArena.has(arenaId)) programsByArena.set(arenaId, []);
+    programsByArena.get(arenaId)!.push({
+      id: "sensory-friendly-skate-saturday-16-15",
+      start: `${date}T16:15`,
+      end: `${date}T17:15`,
+      name: "Sensory Friendly Skate",
+    });
   }
 }
 
 async function writeArenaSchedule(
   meta: ArenaMetaList["arenas"][number],
-  events: ArenaEvent[]
+  programs: Program[]
 ): Promise<string> {
   const payload: Arena = {
     name: meta.name,
@@ -354,7 +336,7 @@ async function writeArenaSchedule(
     coordinates: meta.coordinates,
     schedule: {
       updatedAt: new Date().toISOString(),
-      events,
+      programs,
     },
   };
   const file = path.join(OUT_DIR, `${meta.id}.json`);
@@ -382,25 +364,24 @@ const html = await fetchHtml(PAGE_URL);
     allEntries.push(...entries);
   }
 
-  const eventsByArena = buildArenaSchedules(allEntries);
+  const programsByArena = buildArenaSchedules(allEntries);
 
-  addSensorySkate("ed-sackfield-arena", eventsByArena);
+  addSensorySkate("ed-sackfield-arena", programsByArena);
 
   const written: string[] = [];
   const skipped: string[] = [];
 
   for (const arena of meta.arenas) {
-    const events = eventsByArena.get(arena.id) ?? [];
-    if (events.length === 0) {
+    let programs = programsByArena.get(arena.id) ?? [];
+    if (programs.length === 0) {
       skipped.push(arena.id);
       continue;
     }
-    events.sort((a, b) => a.date.localeCompare(b.date));
-    const file = await writeArenaSchedule(arena, events);
+    programs = [...programs].sort((a, b) => a.start.localeCompare(b.start));
+    const file = await writeArenaSchedule(arena, programs);
     written.push(arena.id);
     console.log(
-      `[${arena.id}] ${events.reduce((s, e) => s + e.programs.length, 0)} program(s), ` +
-        `${events.length} dated event(s) -> ${path.relative(process.cwd(), file)}`
+      `[${arena.id}] ${programs.length} program(s) -> ${path.relative(process.cwd(), file)}`
     );
   }
 
