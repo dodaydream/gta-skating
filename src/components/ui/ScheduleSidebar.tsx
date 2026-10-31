@@ -1,11 +1,10 @@
 "use client";
 
-import { useCallback, useMemo, useRef, useState } from "react";
+import { useCallback, useRef, useState } from "react";
 import type { PointerEvent as ReactPointerEvent } from "react";
 import type { Arena } from "@/types/arena";
 import type { ProgramItem } from "@/types/schedule";
-import { ProgramListItem } from "@/components/schedule/ProgramListItem";
-import { ScheduleSkeleton } from "@/components/ui/ScheduleSkeleton";
+import { ProgramList } from "@/components/schedule/ProgramList";
 import { Switch } from "@/components/ui/switch";
 
 type ScheduleSidebarProps = {
@@ -32,13 +31,11 @@ export function ScheduleSidebar({
   const startY = useRef(0);
   const startPct = useRef(0.3);
 
-  const arenaCount = useMemo(
-    () => new Set(items.map((item) => item.arena.name)).size,
-    [items]
-  );
-
   const onHandlePointerDown = useCallback(
     (e: ReactPointerEvent) => {
+      if ((e.target as HTMLElement).closest("[data-no-drag]")) {
+        return;
+      }
       dragging.current = true;
       startY.current = e.clientY;
       startPct.current = height;
@@ -83,25 +80,13 @@ export function ScheduleSidebar({
           </div>
         </div>
 
-        <div className="flex flex-col gap-2">
-          {loading ? (
-            <ScheduleSkeleton />
-          ) : (
-            items.map((item) => (
-              <ProgramListItem
-                key={`${item.arena.name}-${item.start}-${item.name}`}
-                program={item}
-                onSelect={() => onSelectArena(item.arena)}
-                userLocation={userLocation}
-              />
-            ))
-          )}
-        </div>
-
-        <footer className="mt-8 text-xs text-zinc-500 dark:text-zinc-400">
-          {arenaCount} arena{arenaCount === 1 ? "" : "s"}. Schedule data may
-          change — check arena websites for the latest.
-        </footer>
+        <ProgramList
+          items={items}
+          loading={loading}
+          userLocation={userLocation}
+          onSelectArena={onSelectArena}
+          listClassName="flex flex-col gap-2"
+        />
       </aside>
 
       {/* Mobile always-visible bottom sheet */}
@@ -122,7 +107,13 @@ export function ScheduleSidebar({
           <span className="h-1.5 w-10 cursor-grab touch-none rounded-full bg-zinc-300 active:cursor-grabbing dark:bg-zinc-700 dark:hover:bg-zinc-500" />
         </button>
 
-        <div className="mb-4 flex items-center justify-between px-6">
+        <div
+          onPointerDown={onHandlePointerDown}
+          onPointerMove={onHandlePointerMove}
+          onPointerUp={onHandlePointerUp}
+          onPointerCancel={onHandlePointerUp}
+          className="mb-4 flex touch-none select-none items-center justify-between px-6"
+        >
           <div className="flex flex-col">
             <h2 className="text-xl font-semibold tracking-tight text-black dark:text-zinc-50">
               GTA Skating Arenas
@@ -131,37 +122,15 @@ export function ScheduleSidebar({
               {items.length} program{items.length === 1 ? "" : "s"} found
             </span>
           </div>
-          <label className="flex items-center gap-2 text-xs text-zinc-500 dark:text-zinc-400">
-            Programs only
-            <Switch
-              checked={hideEmpty}
-              onCheckedChange={onHideEmptyChange}
-              size="sm"
-            />
-          </label>
         </div>
 
-        <div className="min-h-0 flex-1 px-6 pb-8 overflow-y-auto">
-          <div className="flex flex-col gap-2 my-1">
-            {loading ? (
-              <ScheduleSkeleton />
-            ) : (
-              items.map((item) => (
-                <ProgramListItem
-                  key={`${item.arena.name}-${item.start}-${item.name}`}
-                  program={item}
-                  onSelect={() => onSelectArena(item.arena)}
-                  userLocation={userLocation}
-                />
-              ))
-            )}
-          </div>
-
-          <footer className="mt-8 text-xs text-zinc-500 dark:text-zinc-400">
-            {arenaCount} arena{arenaCount === 1 ? "" : "s"}. Schedule data may
-            change — check arena websites for the latest.
-          </footer>
-        </div>
+        <ProgramList
+          className="min-h-0 flex-1 overflow-y-auto px-6 pb-8"
+          items={items}
+          loading={loading}
+          userLocation={userLocation}
+          onSelectArena={onSelectArena}
+        />
       </section>
     </>
   );
