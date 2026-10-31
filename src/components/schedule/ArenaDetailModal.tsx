@@ -144,14 +144,14 @@ function TodayCards({
   );
 
   return (
-    <div className="px-5">
+    <div className="w-full min-w-0 px-5">
       <div className="flex gap-3 overflow-x-auto pb-1">
         {programs.map((program) => {
           const isToday = program.date === today;
           return (
             <div
               key={program.id}
-              className={`flex w-full shrink-0 flex-col gap-1.5 rounded-xl border p-3 md:w-1/3 ${
+              className={`flex w-full shrink-0 flex-col gap-1.5 rounded-xl border p-3 md:w-[calc((100%-1.5rem)/3)] ${
                 isToday
                   ? "border-blue-300 bg-blue-50/70 dark:border-blue-800 dark:bg-blue-950/40"
                   : "border-black/[.08] bg-white dark:border-white/[.145] dark:bg-zinc-950"

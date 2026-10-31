@@ -8,6 +8,7 @@ import { IconLocation } from "@tabler/icons-react";
 import { Button } from "@/components/ui/button";
 import { FilterChips } from "@/components/ui/DateFilter";
 import { ScheduleSidebar } from "@/components/ui/ScheduleSidebar";
+import { ArenaDetailModal } from "@/components/schedule/ArenaDetailModal";
 
 const ArenaMap = dynamic(() => import("@/components/map/ArenaMap"), {
   ssr: false,
