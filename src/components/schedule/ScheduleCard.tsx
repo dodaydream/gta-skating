@@ -1,4 +1,4 @@
-import { formatEventDate } from "@/data/schedules";
+import { formatEventDate } from "@/lib/schedule";
 import { ProgramRow } from "./ProgramRow";
 import type { Arena } from "@/types/arena";
 import type { Program } from "@/types/schedule";

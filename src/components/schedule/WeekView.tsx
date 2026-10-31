@@ -3,7 +3,7 @@
 import { useEffect, useMemo, useState } from "react";
 import type { RefObject } from "react";
 import type { Program } from "@/types/schedule";
-import { toMinutes } from "@/data/schedules";
+import { toMinutes } from "@/lib/schedule";
 import { IconChevronLeft, IconChevronRight } from "@tabler/icons-react";
 import dayjs from "dayjs";
 

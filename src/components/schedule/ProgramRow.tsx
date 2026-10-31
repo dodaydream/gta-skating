@@ -1,5 +1,5 @@
 import type { Program } from "@/types/schedule";
-import { formatTimeRange, formatDuration } from "@/data/schedules";
+import { formatTimeRange, formatDuration } from "@/lib/schedule";
 
 export function ProgramRow({ program }: { program: Program }) {
   return (

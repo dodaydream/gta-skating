@@ -9,7 +9,7 @@ import { Button } from "@/components/ui/button";
 import { FilterChips } from "@/components/ui/DateFilter";
 import { ScheduleSidebar } from "@/components/ui/ScheduleSidebar";
 import { ArenaDetailModal } from "@/components/schedule/ArenaDetailModal";
-import { getTodayInArenaTime } from "@/data/schedules";
+import { getTodayInArenaTime } from "@/lib/schedule";
 
 const ArenaMap = dynamic(() => import("@/components/map/ArenaMap"), {
   ssr: false,
@@ -29,8 +29,7 @@ export default function Home() {
   const locateRef = useRef<(() => void) | null>(null);
   const [fromDate, setFromDate] = useState("");
   const [toDate, setToDate] = useState("");
-  const [loading, setLoading] = useState(true);
-  const [items, setItems] = useState<ProgramItem[]>([]);
+  const [allArenas, setAllArenas] = useState<Arena[] | null>(null);
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
   const [detailArena, setDetailArena] = useState<Arena | null>(null);
   const [hideEmpty, setHideEmpty] = useState(true);
@@ -68,18 +67,29 @@ export default function Home() {
   }, []);
 
   useEffect(() => {
-    if (!fromDate || !toDate) return;
-    const params = new URLSearchParams();
-    params.set("from", fromDate);
-    params.set("to", toDate);
-    if (hideEmpty) params.set("hideEmpty", "1");
-    fetch(`/api/arenas?${params.toString()}`)
-      .then((r) => r.json())
-      .then((data: ProgramItem[]) => {
-        setItems(data);
-        setLoading(false);
-      });
-  }, [fromDate, toDate, hideEmpty]);
+    let cancelled = false;
+    void import("@/data/schedules").then((mod) => {
+      if (!cancelled) setAllArenas(mod.arenas);
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
+  const items = useMemo<ProgramItem[]>(() => {
+    if (!allArenas || !fromDate || !toDate) return [];
+    const matches = allArenas.flatMap((arena) =>
+      arena.schedule.programs
+        .filter(
+          (program) => program.start >= fromDate && program.start <= toDate
+        )
+        .map((program) => ({ ...program, arena }))
+    );
+    matches.sort((a, b) => a.start.localeCompare(b.start));
+    return matches;
+  }, [allArenas, fromDate, toDate]);
+
+  const loading = !allArenas || !fromDate || !toDate;
 
   const arenas = useMemo(() => {
     const seen = new Set<string>();

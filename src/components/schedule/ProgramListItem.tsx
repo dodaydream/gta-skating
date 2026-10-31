@@ -4,7 +4,7 @@ import {
   formatHumanDate,
   formatTimeRange,
   getTodayInArenaTime,
-} from "@/data/schedules";
+} from "@/lib/schedule";
 
 export function ProgramListItem({
   program,

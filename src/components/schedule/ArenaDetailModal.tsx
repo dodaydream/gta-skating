@@ -15,7 +15,7 @@ import {
   formatTimeRange,
   getTodayInArenaTime,
   osmUrl,
-} from "@/data/schedules";
+} from "@/lib/schedule";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { WeekView } from "@/components/schedule/WeekView";
 import { X } from "lucide-react";

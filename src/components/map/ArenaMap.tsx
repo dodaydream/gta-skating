@@ -5,7 +5,8 @@ import * as maplibregl from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
 
 if (typeof window !== "undefined") {
-  maplibregl.setWorkerUrl("/maplibre-gl-worker.mjs");
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+  maplibregl.setWorkerUrl(`${basePath}/maplibre-gl-worker.mjs`);
 }
 import type { Arena } from "@/types/arena";
 

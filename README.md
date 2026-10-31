@@ -29,8 +29,24 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## Deploy on GitHub Pages
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The app builds to a fully static site (`output: "export"`) and is deployed by
+`.github/workflows/deploy.yml`: the `build` job runs `next build` and uploads
+`out/`, and the `deploy` job publishes it with `actions/deploy-pages`.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Enable Pages once under Settings → Pages → Source → **GitHub Actions**. A project
+site is served from `/<repo>/`, which the workflow passes as
+`NEXT_PUBLIC_BASE_PATH`; set the `PAGES_CUSTOM_DOMAIN` repository variable to
+`true` for a custom domain or a user/org site, which are served from the root.
+
+Schedules are refreshed weekly by `.github/workflows/scrape.yml`, which commits
+the scraped data in `src/data/` and then dispatches the deploy workflow.
+
+To preview the production build locally (leave `NEXT_PUBLIC_BASE_PATH` unset, so
+assets resolve from `/`):
+
+```bash
+yarn build
+yarn start
+```
