@@ -8,20 +8,20 @@
     "lon": -79.422143
   },
   "schedule": {
-    "updatedAt": "2026-10-31T16:46:08.823Z",
+    "updatedAt": "2026-10-31T19:11:21.353Z",
     "events": [
       {
         "date": "2026-10-31",
         "programs": [
           {
-            "id": "ice-rink-leisure-skate-20-00",
+            "id": "b04c0132-de38-422b-8ab0-5a472235fa80",
             "start": "20:00",
             "end": "21:15",
             "name": "Leisure Skate",
             "notes": "0 years and over"
           },
           {
-            "id": "ice-rink-leisure-skate-youth-21-30",
+            "id": "1c29b9fc-8ce1-4eeb-97f2-fb750af1c417",
             "start": "21:30",
             "end": "22:30",
             "name": "Leisure Skate: Youth",
@@ -33,7 +33,7 @@
         "date": "2026-11-03",
         "programs": [
           {
-            "id": "ice-rink-figure-skating-16-00",
+            "id": "b794891e-f113-4d5f-9724-226535f91e76",
             "start": "16:00",
             "end": "18:00",
             "name": "Figure Skating",
@@ -45,14 +45,14 @@
         "date": "2026-11-05",
         "programs": [
           {
-            "id": "ice-rink-leisure-skate-older-adult-09-15",
+            "id": "566b9472-02d4-464a-94f8-6061f08aed40",
             "start": "09:15",
             "end": "11:30",
             "name": "Leisure Skate: Older Adult",
             "notes": "60 years and over"
           },
           {
-            "id": "ice-rink-leisure-skate-16-30",
+            "id": "97272956-8af3-4f42-831b-c23dcdc6bdbd",
             "start": "16:30",
             "end": "18:30",
             "name": "Leisure Skate",
@@ -64,14 +64,14 @@
         "date": "2026-11-07",
         "programs": [
           {
-            "id": "ice-rink-leisure-skate-20-00",
+            "id": "39b3d4f4-67e5-4447-bdef-4477d9795ac8",
             "start": "20:00",
             "end": "21:15",
             "name": "Leisure Skate",
             "notes": "0 years and over"
           },
           {
-            "id": "ice-rink-leisure-skate-youth-21-30",
+            "id": "3640f685-8644-46a2-be96-b0a692d6dd06",
             "start": "21:30",
             "end": "22:30",
             "name": "Leisure Skate: Youth",

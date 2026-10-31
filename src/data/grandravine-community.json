@@ -8,13 +8,13 @@
     "lon": -79.489716
   },
   "schedule": {
-    "updatedAt": "2026-10-31T16:46:08.867Z",
+    "updatedAt": "2026-10-31T19:11:21.430Z",
     "events": [
       {
         "date": "2026-10-31",
         "programs": [
           {
-            "id": "ice-rink-leisure-skate-19-00",
+            "id": "22659782-0709-4d0d-a941-5c0db490bb24",
             "start": "19:00",
             "end": "21:00",
             "name": "Leisure Skate",
@@ -26,7 +26,7 @@
         "date": "2026-11-01",
         "programs": [
           {
-            "id": "ice-rink-leisure-skate-15-15",
+            "id": "90907eb0-8edc-44c7-be14-11cc55ef471a",
             "start": "15:15",
             "end": "17:15",
             "name": "Leisure Skate",
@@ -38,7 +38,7 @@
         "date": "2026-11-02",
         "programs": [
           {
-            "id": "ice-rink-leisure-skate-18-30",
+            "id": "3108d0ec-35be-4324-84df-1e9b90ca1e01",
             "start": "18:30",
             "end": "20:00",
             "name": "Leisure Skate",
@@ -50,28 +50,28 @@
         "date": "2026-11-05",
         "programs": [
           {
-            "id": "ice-rink-leisure-skate-older-adult-09-30",
+            "id": "e5463428-cc28-4c1b-9bd0-fb9ec5f2b137",
             "start": "09:30",
             "end": "11:30",
             "name": "Leisure Skate: Older Adult",
             "notes": "60 years and over"
           },
           {
-            "id": "ice-rink-shinny-youth-15-00",
+            "id": "9a283433-d83b-48fc-865e-4d939f8034b2",
             "start": "15:00",
             "end": "16:00",
             "name": "Shinny: Youth",
             "notes": "13 - 17 years"
           },
           {
-            "id": "ice-rink-shinny-child-with-caregiver-16-15",
+            "id": "dbd187cf-8dc3-4772-8f8a-5c96128a246f",
             "start": "16:15",
             "end": "17:00",
             "name": "Shinny: Child with Caregiver",
             "notes": "6 - 12 years"
           },
           {
-            "id": "ice-rink-shinny-child-17-00",
+            "id": "50d7c47b-bfe0-4499-ae6e-949dfacfac41",
             "start": "17:00",
             "end": "17:45",
             "name": "Shinny: Child",
@@ -83,7 +83,7 @@
         "date": "2026-11-07",
         "programs": [
           {
-            "id": "ice-rink-leisure-skate-19-00",
+            "id": "18960ba6-d6f3-47e1-80da-5ac532c9bb3f",
             "start": "19:00",
             "end": "21:00",
             "name": "Leisure Skate",
@@ -95,7 +95,7 @@
         "date": "2026-11-08",
         "programs": [
           {
-            "id": "ice-rink-leisure-skate-15-15",
+            "id": "a5b17f20-3dae-458b-8c4c-a4ccc659832a",
             "start": "15:15",
             "end": "17:15",
             "name": "Leisure Skate",

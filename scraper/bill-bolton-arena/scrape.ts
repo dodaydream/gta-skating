@@ -13,6 +13,7 @@
  * Usage:  node scrape.ts
  */
 
+import { randomUUID } from "node:crypto";
 import { readFile, writeFile, mkdir } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -174,11 +175,6 @@ function parseStartDate(text: string): string | null {
   return `${m[3]}-${String(month).padStart(2, "0")}-${day}`;
 }
 
-function slug(name: string, day: DayName): string {
-  const base = `${name.toLowerCase().replace(/[^a-z0-9]+/g, "-")}-${day}`;
-  return base.replace(/^-+|-+$/g, "").slice(0, 80);
-}
-
 /** Parse one block into zero or more recurring programs. */
 function parseBlock(block: string, meta: ArenaMeta): RawProgram[] {
   const headings = splitHeadings(block);
@@ -195,7 +191,6 @@ function parseBlock(block: string, meta: ArenaMeta): RawProgram[] {
       endTime: "",
       start: "",
       notes: undefined,
-      modelId: slug(name, day as DayName),
     };
     programs.push(entry);
     return entry;
@@ -265,7 +260,7 @@ function buildEvents(parsed: RawProgram[]): ArenaEvent[] {
     for (const date of expandWeekly(p)) {
       if (!byDate.has(date)) byDate.set(date, []);
       byDate.get(date)!.push({
-        id: p.modelId,
+        id: randomUUID(),
         start: p.startTime,
         end: p.endTime,
         name: p.name,

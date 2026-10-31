@@ -8,25 +8,25 @@
     "lon": -79.397721
   },
   "schedule": {
-    "updatedAt": "2026-10-31T17:52:52.854Z",
+    "updatedAt": "2026-10-31T19:11:16.765Z",
     "events": [
       {
         "date": "2026-10-31",
         "programs": [
           {
-            "id": "public-skate-saturday-13-15",
+            "id": "b3acc232-06c5-477d-901d-3b878d929d7e",
             "start": "13:15",
             "end": "14:15",
             "name": "Public Skate"
           },
           {
-            "id": "figure-skating-saturday-14-15",
+            "id": "5238972c-2b35-4d03-8ce7-48f4edc8611e",
             "start": "14:15",
             "end": "15:15",
             "name": "Figure Skating"
           },
           {
-            "id": "figure-skating-saturday-15-15",
+            "id": "703d6754-a38a-460a-a5f6-76e61605829f",
             "start": "15:15",
             "end": "16:15",
             "name": "Figure Skating"
@@ -37,25 +37,25 @@
         "date": "2026-11-01",
         "programs": [
           {
-            "id": "public-skate-sunday-13-45",
+            "id": "85ed2b72-dc81-4ec7-a627-7e97c79bcdfb",
             "start": "13:45",
             "end": "15:15",
             "name": "Public Skate"
           },
           {
-            "id": "stick-and-puck-sunday-15-30",
+            "id": "e524965a-1a48-43f4-81a9-4b5003519b26",
             "start": "15:30",
             "end": "16:30",
             "name": "Stick and Puck"
           },
           {
-            "id": "stick-and-puck-sunday-16-30",
+            "id": "edeff7f6-55d3-419f-ad14-1d825992db87",
             "start": "16:30",
             "end": "17:30",
             "name": "Stick and Puck"
           },
           {
-            "id": "ringette-sunday-17-30",
+            "id": "22372b64-8e29-44f5-a542-f0cc9b5759af",
             "start": "17:30",
             "end": "18:30",
             "name": "Ringette"
@@ -66,13 +66,13 @@
         "date": "2026-11-02",
         "programs": [
           {
-            "id": "public-skate-monday-19-15",
+            "id": "4b5f194c-f5d5-460c-b05c-e635e2b264d7",
             "start": "19:15",
             "end": "20:45",
             "name": "Public Skate"
           },
           {
-            "id": "figure-skating-monday-20-45",
+            "id": "d556e4e8-ea75-4854-94f4-5a2d520eeded",
             "start": "20:45",
             "end": "21:45",
             "name": "Figure Skating"
@@ -83,13 +83,13 @@
         "date": "2026-11-04",
         "programs": [
           {
-            "id": "public-skate-wednesday-11-15",
+            "id": "9d9409e0-df61-499d-b0b3-e5636820d104",
             "start": "11:15",
             "end": "12:15",
             "name": "Public Skate"
           },
           {
-            "id": "co-ed-shinny-wednesday-12-15",
+            "id": "a2933f45-3b5a-4090-b36f-627e4f03ce76",
             "start": "12:15",
             "end": "13:45",
             "name": "Co-ed Shinny"
@@ -100,19 +100,19 @@
         "date": "2026-11-05",
         "programs": [
           {
-            "id": "stick-and-puck-thursday-17-15",
+            "id": "9d9daec8-3c20-42ab-aea0-a973d454ae6f",
             "start": "17:15",
             "end": "18:15",
             "name": "Stick and Puck"
           },
           {
-            "id": "stick-and-puck-thursday-18-15",
+            "id": "96c10931-3514-46c2-84e8-ae8f33da2ee4",
             "start": "18:15",
             "end": "19:15",
             "name": "Stick and Puck"
           },
           {
-            "id": "figure-skating-thursday-16-15",
+            "id": "5b77038d-3b4f-43d9-94cc-174f17c72954",
             "start": "16:15",
             "end": "17:15",
             "name": "Figure Skating"
@@ -123,13 +123,13 @@
         "date": "2026-11-06",
         "programs": [
           {
-            "id": "public-skate-friday-11-15",
+            "id": "2d2e5629-be99-4bce-b08c-1fc378d49fa9",
             "start": "11:15",
             "end": "12:15",
             "name": "Public Skate"
           },
           {
-            "id": "co-ed-shinny-friday-12-15",
+            "id": "2054f350-b720-4be0-9e97-77830cc6e80d",
             "start": "12:15",
             "end": "13:45",
             "name": "Co-ed Shinny"
@@ -140,19 +140,19 @@
         "date": "2026-11-07",
         "programs": [
           {
-            "id": "public-skate-saturday-13-15",
+            "id": "a9871cd9-0857-42e1-a6b7-a5b38317ded6",
             "start": "13:15",
             "end": "14:15",
             "name": "Public Skate"
           },
           {
-            "id": "figure-skating-saturday-14-15",
+            "id": "4014ebd0-7d6d-41f8-beae-b6da70af3816",
             "start": "14:15",
             "end": "15:15",
             "name": "Figure Skating"
           },
           {
-            "id": "figure-skating-saturday-15-15",
+            "id": "f318612c-0ca4-4db4-b5b5-52f6ecf49c76",
             "start": "15:15",
             "end": "16:15",
             "name": "Figure Skating"
@@ -169,25 +169,25 @@
         "date": "2026-11-08",
         "programs": [
           {
-            "id": "public-skate-sunday-13-45",
+            "id": "29809b98-4560-486e-825b-70c28fd46f74",
             "start": "13:45",
             "end": "15:15",
             "name": "Public Skate"
           },
           {
-            "id": "stick-and-puck-sunday-15-30",
+            "id": "2dd52431-5fd4-4669-9827-f8465e87d226",
             "start": "15:30",
             "end": "16:30",
             "name": "Stick and Puck"
           },
           {
-            "id": "stick-and-puck-sunday-16-30",
+            "id": "d136b015-17c1-425e-89b5-6839629f0982",
             "start": "16:30",
             "end": "17:30",
             "name": "Stick and Puck"
           },
           {
-            "id": "ringette-sunday-17-30",
+            "id": "32ddfd97-30c9-45c4-bc0d-63f0b372c6a4",
             "start": "17:30",
             "end": "18:30",
             "name": "Ringette"
@@ -198,13 +198,13 @@
         "date": "2026-11-09",
         "programs": [
           {
-            "id": "public-skate-monday-19-15",
+            "id": "b64d2e50-dcca-4077-907a-993096c9fd12",
             "start": "19:15",
             "end": "20:45",
             "name": "Public Skate"
           },
           {
-            "id": "figure-skating-monday-20-45",
+            "id": "5e2af971-ea2f-4601-bacc-f8c10c4aa1fa",
             "start": "20:45",
             "end": "21:45",
             "name": "Figure Skating"
@@ -215,13 +215,13 @@
         "date": "2026-11-11",
         "programs": [
           {
-            "id": "public-skate-wednesday-11-15",
+            "id": "ffcfc4e1-2ff8-4a09-99cd-352629d562dd",
             "start": "11:15",
             "end": "12:15",
             "name": "Public Skate"
           },
           {
-            "id": "co-ed-shinny-wednesday-12-15",
+            "id": "e74433bc-23ea-43e2-8eee-36969f5653d2",
             "start": "12:15",
             "end": "13:45",
             "name": "Co-ed Shinny"
@@ -232,19 +232,19 @@
         "date": "2026-11-12",
         "programs": [
           {
-            "id": "stick-and-puck-thursday-17-15",
+            "id": "a16bf29b-7711-4d11-844b-ce14e7f9f4eb",
             "start": "17:15",
             "end": "18:15",
             "name": "Stick and Puck"
           },
           {
-            "id": "stick-and-puck-thursday-18-15",
+            "id": "ec3491f2-f81d-4210-b8d9-5355cec7c9e7",
             "start": "18:15",
             "end": "19:15",
             "name": "Stick and Puck"
           },
           {
-            "id": "figure-skating-thursday-16-15",
+            "id": "64e8e8a9-ab1d-49af-ac32-9328da00d3f5",
             "start": "16:15",
             "end": "17:15",
             "name": "Figure Skating"
@@ -255,13 +255,13 @@
         "date": "2026-11-13",
         "programs": [
           {
-            "id": "public-skate-friday-11-15",
+            "id": "ef6d1a35-f921-499a-bc52-5eb59e36c222",
             "start": "11:15",
             "end": "12:15",
             "name": "Public Skate"
           },
           {
-            "id": "co-ed-shinny-friday-12-15",
+            "id": "689df0e9-f212-4527-8265-b8bafc2810ac",
             "start": "12:15",
             "end": "13:45",
             "name": "Co-ed Shinny"
@@ -272,19 +272,19 @@
         "date": "2026-11-14",
         "programs": [
           {
-            "id": "public-skate-saturday-13-15",
+            "id": "5a2cdb4f-68c6-4064-b74c-b96dfed69b5f",
             "start": "13:15",
             "end": "14:15",
             "name": "Public Skate"
           },
           {
-            "id": "figure-skating-saturday-14-15",
+            "id": "0ac04281-0c8e-4110-abec-74ad4c5e2bf5",
             "start": "14:15",
             "end": "15:15",
             "name": "Figure Skating"
           },
           {
-            "id": "figure-skating-saturday-15-15",
+            "id": "3b7f424a-714b-4da0-b029-bddbdc01f0bd",
             "start": "15:15",
             "end": "16:15",
             "name": "Figure Skating"
@@ -295,25 +295,25 @@
         "date": "2026-11-15",
         "programs": [
           {
-            "id": "public-skate-sunday-13-45",
+            "id": "44eb818f-cd4b-46a8-8c82-f3b5a19cd96d",
             "start": "13:45",
             "end": "15:15",
             "name": "Public Skate"
           },
           {
-            "id": "stick-and-puck-sunday-15-30",
+            "id": "3102b4fa-5da6-40d1-85a7-6b0675144656",
             "start": "15:30",
             "end": "16:30",
             "name": "Stick and Puck"
           },
           {
-            "id": "stick-and-puck-sunday-16-30",
+            "id": "0c46c86a-cd92-46a7-9143-c65121067bcf",
             "start": "16:30",
             "end": "17:30",
             "name": "Stick and Puck"
           },
           {
-            "id": "ringette-sunday-17-30",
+            "id": "19befe05-01f7-4917-8e52-78bf635d1bbc",
             "start": "17:30",
             "end": "18:30",
             "name": "Ringette"
@@ -324,13 +324,13 @@
         "date": "2026-11-16",
         "programs": [
           {
-            "id": "public-skate-monday-19-15",
+            "id": "ab47207c-a22c-42cf-a27e-8bce7ebae1af",
             "start": "19:15",
             "end": "20:45",
             "name": "Public Skate"
           },
           {
-            "id": "figure-skating-monday-20-45",
+            "id": "b26cd7a7-6450-4097-9252-ed582a519f49",
             "start": "20:45",
             "end": "21:45",
             "name": "Figure Skating"
@@ -341,13 +341,13 @@
         "date": "2026-11-18",
         "programs": [
           {
-            "id": "public-skate-wednesday-11-15",
+            "id": "138fa2c6-c5cb-4d19-aed3-84695d75d6c2",
             "start": "11:15",
             "end": "12:15",
             "name": "Public Skate"
           },
           {
-            "id": "co-ed-shinny-wednesday-12-15",
+            "id": "1975f678-a72c-43c0-b36a-c6fc3239d660",
             "start": "12:15",
             "end": "13:45",
             "name": "Co-ed Shinny"
@@ -358,19 +358,19 @@
         "date": "2026-11-19",
         "programs": [
           {
-            "id": "stick-and-puck-thursday-17-15",
+            "id": "e492ce44-d012-41f7-b84f-1afea86827cc",
             "start": "17:15",
             "end": "18:15",
             "name": "Stick and Puck"
           },
           {
-            "id": "stick-and-puck-thursday-18-15",
+            "id": "a17526cb-8a11-4498-ae64-9f2a10292f9c",
             "start": "18:15",
             "end": "19:15",
             "name": "Stick and Puck"
           },
           {
-            "id": "figure-skating-thursday-16-15",
+            "id": "040888f3-3161-4baf-b069-ec683afd81ee",
             "start": "16:15",
             "end": "17:15",
             "name": "Figure Skating"
@@ -381,13 +381,13 @@
         "date": "2026-11-20",
         "programs": [
           {
-            "id": "public-skate-friday-11-15",
+            "id": "1c463cd7-09c7-4fe5-8eb9-d50040df78cb",
             "start": "11:15",
             "end": "12:15",
             "name": "Public Skate"
           },
           {
-            "id": "co-ed-shinny-friday-12-15",
+            "id": "c52796bb-0a18-4bd3-994b-272d220a1867",
             "start": "12:15",
             "end": "13:45",
             "name": "Co-ed Shinny"
@@ -398,19 +398,19 @@
         "date": "2026-11-21",
         "programs": [
           {
-            "id": "public-skate-saturday-13-15",
+            "id": "926ff31c-03c5-4061-b1a3-f3f37a1a08ce",
             "start": "13:15",
             "end": "14:15",
             "name": "Public Skate"
           },
           {
-            "id": "figure-skating-saturday-14-15",
+            "id": "5738bd9c-d63c-44ee-a9c6-6c210deb9261",
             "start": "14:15",
             "end": "15:15",
             "name": "Figure Skating"
           },
           {
-            "id": "figure-skating-saturday-15-15",
+            "id": "1aeeaf85-a3a5-4016-a589-acd2834fda68",
             "start": "15:15",
             "end": "16:15",
             "name": "Figure Skating"
@@ -421,25 +421,25 @@
         "date": "2026-11-22",
         "programs": [
           {
-            "id": "public-skate-sunday-13-45",
+            "id": "96bda6ab-04e5-4e6e-b834-879c2c499722",
             "start": "13:45",
             "end": "15:15",
             "name": "Public Skate"
           },
           {
-            "id": "stick-and-puck-sunday-15-30",
+            "id": "dca1a123-a652-42b8-b5fb-63b3fd177a5c",
             "start": "15:30",
             "end": "16:30",
             "name": "Stick and Puck"
           },
           {
-            "id": "stick-and-puck-sunday-16-30",
+            "id": "0b0dc27f-88de-4368-9777-09643f2df349",
             "start": "16:30",
             "end": "17:30",
             "name": "Stick and Puck"
           },
           {
-            "id": "ringette-sunday-17-30",
+            "id": "7c9c8ccd-35e2-40f5-9e1c-380a3c815ae3",
             "start": "17:30",
             "end": "18:30",
             "name": "Ringette"
@@ -450,13 +450,13 @@
         "date": "2026-11-23",
         "programs": [
           {
-            "id": "public-skate-monday-19-15",
+            "id": "79278ae8-5eed-4a60-8942-1402f1d833be",
             "start": "19:15",
             "end": "20:45",
             "name": "Public Skate"
           },
           {
-            "id": "figure-skating-monday-20-45",
+            "id": "5ef487e3-4a6d-4b8d-ad79-666c002b5be4",
             "start": "20:45",
             "end": "21:45",
             "name": "Figure Skating"
@@ -467,13 +467,13 @@
         "date": "2026-11-25",
         "programs": [
           {
-            "id": "public-skate-wednesday-11-15",
+            "id": "3c1a8a55-aeed-409f-8c8e-fb8cdccdf1a0",
             "start": "11:15",
             "end": "12:15",
             "name": "Public Skate"
           },
           {
-            "id": "co-ed-shinny-wednesday-12-15",
+            "id": "faf950d5-e4bf-4047-bb91-91482c3bea90",
             "start": "12:15",
             "end": "13:45",
             "name": "Co-ed Shinny"
@@ -484,19 +484,19 @@
         "date": "2026-11-26",
         "programs": [
           {
-            "id": "stick-and-puck-thursday-17-15",
+            "id": "909a8660-158f-4d82-813e-9f4aaef88903",
             "start": "17:15",
             "end": "18:15",
             "name": "Stick and Puck"
           },
           {
-            "id": "stick-and-puck-thursday-18-15",
+            "id": "2719d018-49fd-414e-9a7f-d85b4423de74",
             "start": "18:15",
             "end": "19:15",
             "name": "Stick and Puck"
           },
           {
-            "id": "figure-skating-thursday-16-15",
+            "id": "84e36061-a962-4871-aede-bbc154cb0ee5",
             "start": "16:15",
             "end": "17:15",
             "name": "Figure Skating"
@@ -507,13 +507,13 @@
         "date": "2026-11-27",
         "programs": [
           {
-            "id": "public-skate-friday-11-15",
+            "id": "a8271d26-f95f-46eb-ac0a-15b2f215dce6",
             "start": "11:15",
             "end": "12:15",
             "name": "Public Skate"
           },
           {
-            "id": "co-ed-shinny-friday-12-15",
+            "id": "7852c209-d265-4038-ae11-994a078c9b21",
             "start": "12:15",
             "end": "13:45",
             "name": "Co-ed Shinny"
@@ -524,19 +524,19 @@
         "date": "2026-11-28",
         "programs": [
           {
-            "id": "public-skate-saturday-13-15",
+            "id": "13e3bdde-419b-4c0e-939b-bacb88625c00",
             "start": "13:15",
             "end": "14:15",
             "name": "Public Skate"
           },
           {
-            "id": "figure-skating-saturday-14-15",
+            "id": "28a1ed53-9fac-4fcd-9e1a-a31f995cc6b9",
             "start": "14:15",
             "end": "15:15",
             "name": "Figure Skating"
           },
           {
-            "id": "figure-skating-saturday-15-15",
+            "id": "189d5c9f-a6d2-4593-844d-2e420b09a069",
             "start": "15:15",
             "end": "16:15",
             "name": "Figure Skating"
@@ -547,25 +547,25 @@
         "date": "2026-11-29",
         "programs": [
           {
-            "id": "public-skate-sunday-13-45",
+            "id": "2ce415e5-df51-4480-81ab-4221b0a8c953",
             "start": "13:45",
             "end": "15:15",
             "name": "Public Skate"
           },
           {
-            "id": "stick-and-puck-sunday-15-30",
+            "id": "5dbda54a-8023-4ff3-a12a-a27924be8dd5",
             "start": "15:30",
             "end": "16:30",
             "name": "Stick and Puck"
           },
           {
-            "id": "stick-and-puck-sunday-16-30",
+            "id": "b8135b4b-5bca-401a-8dad-cce434b75270",
             "start": "16:30",
             "end": "17:30",
             "name": "Stick and Puck"
           },
           {
-            "id": "ringette-sunday-17-30",
+            "id": "4bf812c9-f90c-41b7-aaa6-122d99458033",
             "start": "17:30",
             "end": "18:30",
             "name": "Ringette"
@@ -576,13 +576,13 @@
         "date": "2026-11-30",
         "programs": [
           {
-            "id": "public-skate-monday-19-15",
+            "id": "a9b0bca6-7508-4afb-a129-47d25147677f",
             "start": "19:15",
             "end": "20:45",
             "name": "Public Skate"
           },
           {
-            "id": "figure-skating-monday-20-45",
+            "id": "9fb03c18-0d72-425a-a655-2297f57419db",
             "start": "20:45",
             "end": "21:45",
             "name": "Figure Skating"

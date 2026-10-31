@@ -8,19 +8,19 @@
     "lon": -79.436087
   },
   "schedule": {
-    "updatedAt": "2026-10-31T17:52:52.855Z",
+    "updatedAt": "2026-10-31T19:11:16.766Z",
     "events": [
       {
         "date": "2026-10-31",
         "programs": [
           {
-            "id": "public-skate-saturday-19-15",
+            "id": "73a1d7bd-5b5d-41d8-abfc-a1455174a94b",
             "start": "19:15",
             "end": "20:45",
             "name": "Public Skate"
           },
           {
-            "id": "shinny-saturday-20-45",
+            "id": "e341bdd2-7de0-4b3a-877a-cc7ebc518f3a",
             "start": "20:45",
             "end": "22:15",
             "name": "Shinny"
@@ -31,13 +31,13 @@
         "date": "2026-11-07",
         "programs": [
           {
-            "id": "public-skate-saturday-19-15",
+            "id": "bf054ceb-81c4-40e0-a65e-7b2429698649",
             "start": "19:15",
             "end": "20:45",
             "name": "Public Skate"
           },
           {
-            "id": "shinny-saturday-20-45",
+            "id": "b746d0bf-86ab-4c7d-91eb-45ad16e08ee2",
             "start": "20:45",
             "end": "22:15",
             "name": "Shinny"
@@ -48,13 +48,13 @@
         "date": "2026-11-14",
         "programs": [
           {
-            "id": "public-skate-saturday-19-15",
+            "id": "2d02d39c-f98a-4d5f-9ab6-b56ec35e69a2",
             "start": "19:15",
             "end": "20:45",
             "name": "Public Skate"
           },
           {
-            "id": "shinny-saturday-20-45",
+            "id": "f5c91fe7-8c34-4ccd-be75-f5cba536a8e3",
             "start": "20:45",
             "end": "22:15",
             "name": "Shinny"
@@ -65,13 +65,13 @@
         "date": "2026-11-21",
         "programs": [
           {
-            "id": "public-skate-saturday-19-15",
+            "id": "203ede24-d56c-4061-95a6-4fd3493a1e0f",
             "start": "19:15",
             "end": "20:45",
             "name": "Public Skate"
           },
           {
-            "id": "shinny-saturday-20-45",
+            "id": "0c080001-2329-4063-b32d-c0a6337a2947",
             "start": "20:45",
             "end": "22:15",
             "name": "Shinny"
@@ -82,13 +82,13 @@
         "date": "2026-11-28",
         "programs": [
           {
-            "id": "public-skate-saturday-19-15",
+            "id": "0c176c5b-a4e9-43f8-b056-c754b9a656d7",
             "start": "19:15",
             "end": "20:45",
             "name": "Public Skate"
           },
           {
-            "id": "shinny-saturday-20-45",
+            "id": "1fe8d179-142a-48f4-a07b-070b5d9d0c42",
             "start": "20:45",
             "end": "22:15",
             "name": "Shinny"

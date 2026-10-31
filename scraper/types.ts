@@ -38,7 +38,6 @@ export interface RawProgram {
   endTime: string;
   start: string;
   notes?: string;
-  modelId: string;
 }
 
 export interface Program {

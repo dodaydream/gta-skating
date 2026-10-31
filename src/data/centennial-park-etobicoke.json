@@ -8,13 +8,13 @@
     "lon": -79.58633
   },
   "schedule": {
-    "updatedAt": "2026-10-31T16:46:07.977Z",
+    "updatedAt": "2026-10-31T19:11:19.166Z",
     "events": [
       {
         "date": "2026-11-01",
         "programs": [
           {
-            "id": "ice-rink-east-leisure-skate-12-45",
+            "id": "66f3660d-de54-4be4-a045-9de1ac4a4129",
             "start": "12:45",
             "end": "14:15",
             "name": "Leisure Skate",
@@ -26,14 +26,14 @@
         "date": "2026-11-02",
         "programs": [
           {
-            "id": "ice-rink-east-leisure-skate-adult-unsupervised-12-30",
+            "id": "4fdda60e-34cd-4c8f-9e3d-805459380de6",
             "start": "12:30",
             "end": "14:00",
             "name": "Leisure Skate: Adult (Unsupervised)",
             "notes": "19 years and over"
           },
           {
-            "id": "ice-rink-west-leisure-skate-adult-unsupervised-12-30",
+            "id": "1af8868f-916c-47eb-bfec-8651ab4b48ab",
             "start": "12:30",
             "end": "14:00",
             "name": "Leisure Skate: Adult (Unsupervised)",
@@ -45,7 +45,7 @@
         "date": "2026-11-04",
         "programs": [
           {
-            "id": "ice-rink-west-leisure-skate-adult-unsupervised-12-30",
+            "id": "37e3fa4b-7ddc-4005-84ff-10a1bbe00ffb",
             "start": "12:30",
             "end": "14:00",
             "name": "Leisure Skate: Adult (Unsupervised)",
@@ -57,7 +57,7 @@
         "date": "2026-11-08",
         "programs": [
           {
-            "id": "ice-rink-east-leisure-skate-12-45",
+            "id": "3f0f9b69-8353-4074-aca4-8ee8accac602",
             "start": "12:45",
             "end": "14:15",
             "name": "Leisure Skate",

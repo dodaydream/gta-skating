@@ -8,13 +8,13 @@
     "lon": -79.566545
   },
   "schedule": {
-    "updatedAt": "2026-10-31T16:46:08.785Z",
+    "updatedAt": "2026-10-31T19:11:21.187Z",
     "events": [
       {
         "date": "2026-10-31",
         "programs": [
           {
-            "id": "ice-rink-leisure-skate-15-30",
+            "id": "0bc25e4c-7caa-4dc1-8949-5939f1d7cf8e",
             "start": "15:30",
             "end": "17:30",
             "name": "Leisure Skate",
@@ -26,14 +26,14 @@
         "date": "2026-11-04",
         "programs": [
           {
-            "id": "ice-rink-shinny-early-years-with-caregiver-16-30",
+            "id": "45c945cf-b761-4938-be59-ba64da659ead",
             "start": "16:30",
             "end": "18:15",
             "name": "Shinny: Early Years with Caregiver",
             "notes": "0 - 5 years"
           },
           {
-            "id": "ice-rink-leisure-skate-18-15",
+            "id": "6f68a922-d158-433f-b949-ab0d613f9a86",
             "start": "18:15",
             "end": "20:15",
             "name": "Leisure Skate",
@@ -45,7 +45,7 @@
         "date": "2026-11-05",
         "programs": [
           {
-            "id": "ice-rink-leisure-skate-adult-10-00",
+            "id": "5be40b1a-0019-4043-87c5-320b266e936c",
             "start": "10:00",
             "end": "12:00",
             "name": "Leisure Skate: Adult",
@@ -57,7 +57,7 @@
         "date": "2026-11-07",
         "programs": [
           {
-            "id": "ice-rink-leisure-skate-15-30",
+            "id": "78375fa7-c123-43f2-858e-52fd0c50396c",
             "start": "15:30",
             "end": "17:30",
             "name": "Leisure Skate",

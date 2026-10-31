@@ -8,13 +8,13 @@
     "lon": -79.415243
   },
   "schedule": {
-    "updatedAt": "2026-10-31T15:36:42.947Z",
+    "updatedAt": "2026-10-31T19:11:15.851Z",
     "events": [
       {
         "date": "2026-09-28",
         "programs": [
           {
-            "id": "adults-only-free-skate-monday",
+            "id": "ef1c41d4-e4f3-49bc-bd88-dfdc24f141bf",
             "start": "11:40",
             "end": "13:00",
             "name": "Adults Only Free Skate",
@@ -26,7 +26,7 @@
         "date": "2026-09-29",
         "programs": [
           {
-            "id": "parent-tots-4-and-under-free-skate-tuesday",
+            "id": "c1f56019-0cc1-4e5b-aebd-cb2cec970040",
             "start": "09:00",
             "end": "10:00",
             "name": "Parent & Tots(4 and under) Free Skate"
@@ -37,7 +37,7 @@
         "date": "2026-10-02",
         "programs": [
           {
-            "id": "general-public-free-skate-friday",
+            "id": "e5e98ed8-fa58-44ab-85aa-280747aef1c1",
             "start": "17:40",
             "end": "19:15",
             "name": "General Public Free Skate"
@@ -48,7 +48,7 @@
         "date": "2026-10-03",
         "programs": [
           {
-            "id": "general-public-free-skate-saturday",
+            "id": "41deee78-ba32-4076-ab2b-e5527b7c064b",
             "start": "19:40",
             "end": "20:30",
             "name": "General Public Free Skate"
@@ -59,7 +59,7 @@
         "date": "2026-10-05",
         "programs": [
           {
-            "id": "adults-only-free-skate-monday",
+            "id": "0a4fa6c7-d293-44ba-bce3-c41df5c97d9d",
             "start": "11:40",
             "end": "13:00",
             "name": "Adults Only Free Skate",
@@ -71,7 +71,7 @@
         "date": "2026-10-06",
         "programs": [
           {
-            "id": "parent-tots-4-and-under-free-skate-tuesday",
+            "id": "8854c69d-0d18-45cd-a04c-4e4f6c50c683",
             "start": "09:00",
             "end": "10:00",
             "name": "Parent & Tots(4 and under) Free Skate"
@@ -82,7 +82,7 @@
         "date": "2026-10-09",
         "programs": [
           {
-            "id": "general-public-free-skate-friday",
+            "id": "d0c6cbd1-2502-4c65-b045-62fc758e977a",
             "start": "17:40",
             "end": "19:15",
             "name": "General Public Free Skate"
@@ -93,7 +93,7 @@
         "date": "2026-10-10",
         "programs": [
           {
-            "id": "general-public-free-skate-saturday",
+            "id": "1676eaf0-eb41-4282-9b16-fef9ae412663",
             "start": "19:40",
             "end": "20:30",
             "name": "General Public Free Skate"
@@ -104,7 +104,7 @@
         "date": "2026-10-13",
         "programs": [
           {
-            "id": "parent-tots-4-and-under-free-skate-tuesday",
+            "id": "ba89ae4d-5890-4631-92b0-e049312e28a9",
             "start": "09:00",
             "end": "10:00",
             "name": "Parent & Tots(4 and under) Free Skate"
@@ -115,7 +115,7 @@
         "date": "2026-10-16",
         "programs": [
           {
-            "id": "general-public-free-skate-friday",
+            "id": "762a9965-6442-4033-a7b6-e354e3557e27",
             "start": "17:40",
             "end": "19:15",
             "name": "General Public Free Skate"
@@ -126,7 +126,7 @@
         "date": "2026-10-17",
         "programs": [
           {
-            "id": "general-public-free-skate-saturday",
+            "id": "bffd7006-6f5c-4f3a-bdef-90c856961e28",
             "start": "19:40",
             "end": "20:30",
             "name": "General Public Free Skate"
@@ -137,7 +137,7 @@
         "date": "2026-10-19",
         "programs": [
           {
-            "id": "adults-only-free-skate-monday",
+            "id": "dd8840ea-ad4e-4f56-b308-0dc8604583b7",
             "start": "11:40",
             "end": "13:00",
             "name": "Adults Only Free Skate",
@@ -149,7 +149,7 @@
         "date": "2026-10-20",
         "programs": [
           {
-            "id": "parent-tots-4-and-under-free-skate-tuesday",
+            "id": "15e9d86a-3312-447a-95df-1842ac33cebc",
             "start": "09:00",
             "end": "10:00",
             "name": "Parent & Tots(4 and under) Free Skate"
@@ -160,7 +160,7 @@
         "date": "2026-10-23",
         "programs": [
           {
-            "id": "general-public-free-skate-friday",
+            "id": "05441e43-d14d-4725-a00c-ff5ff82163ae",
             "start": "17:40",
             "end": "19:15",
             "name": "General Public Free Skate"
@@ -171,7 +171,7 @@
         "date": "2026-10-24",
         "programs": [
           {
-            "id": "general-public-free-skate-saturday",
+            "id": "f580a65b-625a-4bee-a5b4-835a50616db2",
             "start": "19:40",
             "end": "20:30",
             "name": "General Public Free Skate"
@@ -182,7 +182,7 @@
         "date": "2026-10-26",
         "programs": [
           {
-            "id": "adults-only-free-skate-monday",
+            "id": "286d8d11-1256-4602-9c3f-fa15070cb440",
             "start": "11:40",
             "end": "13:00",
             "name": "Adults Only Free Skate",
@@ -194,7 +194,7 @@
         "date": "2026-10-27",
         "programs": [
           {
-            "id": "parent-tots-4-and-under-free-skate-tuesday",
+            "id": "863367b8-e37c-477e-840d-e13615239cad",
             "start": "09:00",
             "end": "10:00",
             "name": "Parent & Tots(4 and under) Free Skate"
@@ -205,7 +205,7 @@
         "date": "2026-10-30",
         "programs": [
           {
-            "id": "general-public-free-skate-friday",
+            "id": "8b9a84b6-95ac-46ea-95bf-edf5623c7db1",
             "start": "17:40",
             "end": "19:15",
             "name": "General Public Free Skate"
@@ -216,7 +216,7 @@
         "date": "2026-10-31",
         "programs": [
           {
-            "id": "general-public-free-skate-saturday",
+            "id": "8caa754b-a1b1-4547-b53c-ddc6a49a0a9d",
             "start": "19:40",
             "end": "20:30",
             "name": "General Public Free Skate"
@@ -227,7 +227,7 @@
         "date": "2026-11-02",
         "programs": [
           {
-            "id": "adults-only-free-skate-monday",
+            "id": "4484a036-18be-4c53-9966-4542b574944f",
             "start": "11:40",
             "end": "13:00",
             "name": "Adults Only Free Skate",
@@ -239,7 +239,7 @@
         "date": "2026-11-03",
         "programs": [
           {
-            "id": "parent-tots-4-and-under-free-skate-tuesday",
+            "id": "8201654f-6ad3-460f-a657-f23f0d02542c",
             "start": "09:00",
             "end": "10:00",
             "name": "Parent & Tots(4 and under) Free Skate"
@@ -250,7 +250,7 @@
         "date": "2026-11-06",
         "programs": [
           {
-            "id": "general-public-free-skate-friday",
+            "id": "d2d7ec1c-b7ce-427b-ab6a-2267de88b718",
             "start": "17:40",
             "end": "19:15",
             "name": "General Public Free Skate"
@@ -261,7 +261,7 @@
         "date": "2026-11-07",
         "programs": [
           {
-            "id": "general-public-free-skate-saturday",
+            "id": "48e56646-27f9-4bdd-8e8e-9d56404b12f6",
             "start": "19:40",
             "end": "20:30",
             "name": "General Public Free Skate"
@@ -272,7 +272,7 @@
         "date": "2026-11-09",
         "programs": [
           {
-            "id": "adults-only-free-skate-monday",
+            "id": "ac3a718e-742b-49ec-bda0-50e244c8b9fd",
             "start": "11:40",
             "end": "13:00",
             "name": "Adults Only Free Skate",
@@ -284,7 +284,7 @@
         "date": "2026-11-10",
         "programs": [
           {
-            "id": "parent-tots-4-and-under-free-skate-tuesday",
+            "id": "ba57d3ea-9c43-4150-a97d-e008d74271ed",
             "start": "09:00",
             "end": "10:00",
             "name": "Parent & Tots(4 and under) Free Skate"
@@ -295,7 +295,7 @@
         "date": "2026-11-13",
         "programs": [
           {
-            "id": "general-public-free-skate-friday",
+            "id": "3dbdd0e8-793c-4ae5-a631-0837205d9187",
             "start": "17:40",
             "end": "19:15",
             "name": "General Public Free Skate"
@@ -306,7 +306,7 @@
         "date": "2026-11-14",
         "programs": [
           {
-            "id": "general-public-free-skate-saturday",
+            "id": "4f07e70d-e6da-4db0-a999-2d7943fd44c3",
             "start": "19:40",
             "end": "20:30",
             "name": "General Public Free Skate"
@@ -317,7 +317,7 @@
         "date": "2026-11-16",
         "programs": [
           {
-            "id": "adults-only-free-skate-monday",
+            "id": "520ebb8c-f5cd-4d18-9a64-c4b242f32ef3",
             "start": "11:40",
             "end": "13:00",
             "name": "Adults Only Free Skate",
@@ -329,7 +329,7 @@
         "date": "2026-11-17",
         "programs": [
           {
-            "id": "parent-tots-4-and-under-free-skate-tuesday",
+            "id": "480fa831-80f1-44e9-8a84-0caaffab2589",
             "start": "09:00",
             "end": "10:00",
             "name": "Parent & Tots(4 and under) Free Skate"
@@ -340,7 +340,7 @@
         "date": "2026-11-20",
         "programs": [
           {
-            "id": "general-public-free-skate-friday",
+            "id": "7f026af9-c885-4ae5-94d0-21c21a47a08d",
             "start": "17:40",
             "end": "19:15",
             "name": "General Public Free Skate"
@@ -351,7 +351,7 @@
         "date": "2026-11-21",
         "programs": [
           {
-            "id": "general-public-free-skate-saturday",
+            "id": "e0c823d8-97fb-411a-ab86-3178ffd5ebf8",
             "start": "19:40",
             "end": "20:30",
             "name": "General Public Free Skate"
@@ -362,7 +362,7 @@
         "date": "2026-11-23",
         "programs": [
           {
-            "id": "adults-only-free-skate-monday",
+            "id": "a22c2608-a14d-44f7-bc21-209589632395",
             "start": "11:40",
             "end": "13:00",
             "name": "Adults Only Free Skate",
@@ -374,7 +374,7 @@
         "date": "2026-11-24",
         "programs": [
           {
-            "id": "parent-tots-4-and-under-free-skate-tuesday",
+            "id": "4454fb5b-f081-4c52-9d4b-56f937afb30e",
             "start": "09:00",
             "end": "10:00",
             "name": "Parent & Tots(4 and under) Free Skate"
@@ -385,7 +385,7 @@
         "date": "2026-11-27",
         "programs": [
           {
-            "id": "general-public-free-skate-friday",
+            "id": "fcda5f23-ffbb-40a9-bcdb-a53de56ed991",
             "start": "17:40",
             "end": "19:15",
             "name": "General Public Free Skate"
@@ -396,7 +396,7 @@
         "date": "2026-11-28",
         "programs": [
           {
-            "id": "general-public-free-skate-saturday",
+            "id": "7e873d58-a55f-41dd-a02f-e686ff54e8fe",
             "start": "19:40",
             "end": "20:30",
             "name": "General Public Free Skate"
@@ -407,7 +407,7 @@
         "date": "2026-11-30",
         "programs": [
           {
-            "id": "adults-only-free-skate-monday",
+            "id": "2b8d004d-a062-4a78-8dfa-7d4670f88bca",
             "start": "11:40",
             "end": "13:00",
             "name": "Adults Only Free Skate",
@@ -419,7 +419,7 @@
         "date": "2026-12-01",
         "programs": [
           {
-            "id": "parent-tots-4-and-under-free-skate-tuesday",
+            "id": "0f66d568-edf1-4888-9ce1-b7049dd4e995",
             "start": "09:00",
             "end": "10:00",
             "name": "Parent & Tots(4 and under) Free Skate"
@@ -430,7 +430,7 @@
         "date": "2026-12-04",
         "programs": [
           {
-            "id": "general-public-free-skate-friday",
+            "id": "d7ca0f30-7a0a-4626-9eb2-b27961aa81ae",
             "start": "17:40",
             "end": "19:15",
             "name": "General Public Free Skate"
@@ -441,7 +441,7 @@
         "date": "2026-12-05",
         "programs": [
           {
-            "id": "general-public-free-skate-saturday",
+            "id": "756e7ad2-d308-4905-b899-1bef71506189",
             "start": "19:40",
             "end": "20:30",
             "name": "General Public Free Skate"
@@ -452,7 +452,7 @@
         "date": "2026-12-07",
         "programs": [
           {
-            "id": "adults-only-free-skate-monday",
+            "id": "37c351c0-f19a-4206-98b4-ff3a6aae7da2",
             "start": "11:40",
             "end": "13:00",
             "name": "Adults Only Free Skate",
@@ -464,7 +464,7 @@
         "date": "2026-12-08",
         "programs": [
           {
-            "id": "parent-tots-4-and-under-free-skate-tuesday",
+            "id": "8fd8dda7-70db-4260-93b1-09fdf2dadff8",
             "start": "09:00",
             "end": "10:00",
             "name": "Parent & Tots(4 and under) Free Skate"
@@ -475,7 +475,7 @@
         "date": "2026-12-11",
         "programs": [
           {
-            "id": "general-public-free-skate-friday",
+            "id": "1d08b4c9-d901-4b02-aa9f-4a164761c069",
             "start": "17:40",
             "end": "19:15",
             "name": "General Public Free Skate"
@@ -486,7 +486,7 @@
         "date": "2026-12-12",
         "programs": [
           {
-            "id": "general-public-free-skate-saturday",
+            "id": "ace9e2ab-6f76-46fb-9160-9495aa6da55b",
             "start": "19:40",
             "end": "20:30",
             "name": "General Public Free Skate"
@@ -497,7 +497,7 @@
         "date": "2026-12-14",
         "programs": [
           {
-            "id": "adults-only-free-skate-monday",
+            "id": "5a4fa35a-1464-4802-94b7-2b340b072973",
             "start": "11:40",
             "end": "13:00",
             "name": "Adults Only Free Skate",
@@ -509,7 +509,7 @@
         "date": "2026-12-15",
         "programs": [
           {
-            "id": "parent-tots-4-and-under-free-skate-tuesday",
+            "id": "df27b9d3-1dee-4294-95be-7b08e003c6ea",
             "start": "09:00",
             "end": "10:00",
             "name": "Parent & Tots(4 and under) Free Skate"
@@ -520,7 +520,7 @@
         "date": "2026-12-18",
         "programs": [
           {
-            "id": "general-public-free-skate-friday",
+            "id": "631fa833-fc1b-4fac-a75f-9dd03103b900",
             "start": "17:40",
             "end": "19:15",
             "name": "General Public Free Skate"
@@ -531,7 +531,7 @@
         "date": "2026-12-19",
         "programs": [
           {
-            "id": "general-public-free-skate-saturday",
+            "id": "d91d8cdc-fed6-4611-aa20-2567d9b7e637",
             "start": "19:40",
             "end": "20:30",
             "name": "General Public Free Skate"
@@ -542,7 +542,7 @@
         "date": "2026-12-21",
         "programs": [
           {
-            "id": "adults-only-free-skate-monday",
+            "id": "47a559c0-91bc-4b7b-b32a-25324a395788",
             "start": "11:40",
             "end": "13:00",
             "name": "Adults Only Free Skate",
@@ -554,7 +554,7 @@
         "date": "2026-12-22",
         "programs": [
           {
-            "id": "parent-tots-4-and-under-free-skate-tuesday",
+            "id": "b55b4068-0cfc-418a-9431-1f02ad56f788",
             "start": "09:00",
             "end": "10:00",
             "name": "Parent & Tots(4 and under) Free Skate"
@@ -565,7 +565,7 @@
         "date": "2026-12-26",
         "programs": [
           {
-            "id": "general-public-free-skate-saturday",
+            "id": "cc56095b-2e39-46b7-952c-444b82013269",
             "start": "19:40",
             "end": "20:30",
             "name": "General Public Free Skate"
@@ -576,7 +576,7 @@
         "date": "2026-12-29",
         "programs": [
           {
-            "id": "parent-tots-4-and-under-free-skate-tuesday",
+            "id": "849bd6d1-b125-49e8-b704-cee197230308",
             "start": "09:00",
             "end": "10:00",
             "name": "Parent & Tots(4 and under) Free Skate"
@@ -587,7 +587,7 @@
         "date": "2027-01-02",
         "programs": [
           {
-            "id": "general-public-free-skate-saturday",
+            "id": "b68ac35d-0911-4228-91e6-f2b32b07fae0",
             "start": "19:40",
             "end": "20:30",
             "name": "General Public Free Skate"
@@ -598,7 +598,7 @@
         "date": "2027-01-04",
         "programs": [
           {
-            "id": "adults-only-free-skate-monday",
+            "id": "9e580829-efc7-4a9f-b0c9-f52a47df9c41",
             "start": "11:40",
             "end": "13:00",
             "name": "Adults Only Free Skate",
@@ -610,7 +610,7 @@
         "date": "2027-01-05",
         "programs": [
           {
-            "id": "parent-tots-4-and-under-free-skate-tuesday",
+            "id": "3da9406a-622e-4c14-a1e0-9e79e15711d8",
             "start": "09:00",
             "end": "10:00",
             "name": "Parent & Tots(4 and under) Free Skate"
@@ -621,7 +621,7 @@
         "date": "2027-01-08",
         "programs": [
           {
-            "id": "general-public-free-skate-friday",
+            "id": "9edb5996-d84e-4631-80b6-1b99c1272649",
             "start": "17:40",
             "end": "19:15",
             "name": "General Public Free Skate"
@@ -632,7 +632,7 @@
         "date": "2027-01-09",
         "programs": [
           {
-            "id": "general-public-free-skate-saturday",
+            "id": "bb0dab09-9984-4a3f-afe3-ffe888aefa26",
             "start": "19:40",
             "end": "20:30",
             "name": "General Public Free Skate"
@@ -643,7 +643,7 @@
         "date": "2027-01-11",
         "programs": [
           {
-            "id": "adults-only-free-skate-monday",
+            "id": "56c186b4-1c8e-4daa-85e6-c9405e4d7bd3",
             "start": "11:40",
             "end": "13:00",
             "name": "Adults Only Free Skate",
@@ -655,7 +655,7 @@
         "date": "2027-01-12",
         "programs": [
           {
-            "id": "parent-tots-4-and-under-free-skate-tuesday",
+            "id": "7af8c47d-3386-40bf-9a66-71bf7231421f",
             "start": "09:00",
             "end": "10:00",
             "name": "Parent & Tots(4 and under) Free Skate"
@@ -666,7 +666,7 @@
         "date": "2027-01-15",
         "programs": [
           {
-            "id": "general-public-free-skate-friday",
+            "id": "c0ad16ea-2916-47e0-9728-1826d3f34809",
             "start": "17:40",
             "end": "19:15",
             "name": "General Public Free Skate"
@@ -677,7 +677,7 @@
         "date": "2027-01-16",
         "programs": [
           {
-            "id": "general-public-free-skate-saturday",
+            "id": "d853fa5d-614e-4c1e-9f01-d2bc44605279",
             "start": "19:40",
             "end": "20:30",
             "name": "General Public Free Skate"
@@ -688,7 +688,7 @@
         "date": "2027-01-18",
         "programs": [
           {
-            "id": "adults-only-free-skate-monday",
+            "id": "dca24d36-c852-4239-b6b8-7777423aa16f",
             "start": "11:40",
             "end": "13:00",
             "name": "Adults Only Free Skate",
@@ -700,7 +700,7 @@
         "date": "2027-01-19",
         "programs": [
           {
-            "id": "parent-tots-4-and-under-free-skate-tuesday",
+            "id": "0d0f6dde-80b8-4c3e-8fc6-e4a715cd9601",
             "start": "09:00",
             "end": "10:00",
             "name": "Parent & Tots(4 and under) Free Skate"
@@ -711,7 +711,7 @@
         "date": "2027-01-22",
         "programs": [
           {
-            "id": "general-public-free-skate-friday",
+            "id": "e27e039e-fece-4a8b-ac95-9ff41eeb13fc",
             "start": "17:40",
             "end": "19:15",
             "name": "General Public Free Skate"
@@ -722,7 +722,7 @@
         "date": "2027-01-23",
         "programs": [
           {
-            "id": "general-public-free-skate-saturday",
+            "id": "d4880927-2f76-476b-bc94-67558c8084e8",
             "start": "19:40",
             "end": "20:30",
             "name": "General Public Free Skate"
@@ -733,7 +733,7 @@
         "date": "2027-01-25",
         "programs": [
           {
-            "id": "adults-only-free-skate-monday",
+            "id": "8931e68d-01f3-4013-9822-a1bdbef734f6",
             "start": "11:40",
             "end": "13:00",
             "name": "Adults Only Free Skate",
@@ -745,7 +745,7 @@
         "date": "2027-01-26",
         "programs": [
           {
-            "id": "parent-tots-4-and-under-free-skate-tuesday",
+            "id": "845a0235-3384-4432-8bf9-58e510d913d0",
             "start": "09:00",
             "end": "10:00",
             "name": "Parent & Tots(4 and under) Free Skate"
@@ -756,7 +756,7 @@
         "date": "2027-01-29",
         "programs": [
           {
-            "id": "general-public-free-skate-friday",
+            "id": "726fb7fb-eb7b-4a0b-844a-610792b8bf3a",
             "start": "17:40",
             "end": "19:15",
             "name": "General Public Free Skate"
@@ -767,7 +767,7 @@
         "date": "2027-01-30",
         "programs": [
           {
-            "id": "general-public-free-skate-saturday",
+            "id": "ff3dd934-95f7-4e61-9c90-50661f1b5226",
             "start": "19:40",
             "end": "20:30",
             "name": "General Public Free Skate"
@@ -778,7 +778,7 @@
         "date": "2027-02-01",
         "programs": [
           {
-            "id": "adults-only-free-skate-monday",
+            "id": "df7e9576-fe8a-4a40-a42e-60591ecc5602",
             "start": "11:40",
             "end": "13:00",
             "name": "Adults Only Free Skate",
@@ -790,7 +790,7 @@
         "date": "2027-02-02",
         "programs": [
           {
-            "id": "parent-tots-4-and-under-free-skate-tuesday",
+            "id": "c55d770c-5249-4fc0-a64a-3bd89f764ae5",
             "start": "09:00",
             "end": "10:00",
             "name": "Parent & Tots(4 and under) Free Skate"
@@ -801,7 +801,7 @@
         "date": "2027-02-05",
         "programs": [
           {
-            "id": "general-public-free-skate-friday",
+            "id": "d860b9da-d045-4cf0-9713-2b7c1dccac69",
             "start": "17:40",
             "end": "19:15",
             "name": "General Public Free Skate"
@@ -812,7 +812,7 @@
         "date": "2027-02-06",
         "programs": [
           {
-            "id": "general-public-free-skate-saturday",
+            "id": "71b3fcf1-1158-47aa-9223-1081a89c8abc",
             "start": "19:40",
             "end": "20:30",
             "name": "General Public Free Skate"
@@ -823,7 +823,7 @@
         "date": "2027-02-08",
         "programs": [
           {
-            "id": "adults-only-free-skate-monday",
+            "id": "38cb5087-f0ce-464c-a3a7-298718fa12ac",
             "start": "11:40",
             "end": "13:00",
             "name": "Adults Only Free Skate",
@@ -835,7 +835,7 @@
         "date": "2027-02-09",
         "programs": [
           {
-            "id": "parent-tots-4-and-under-free-skate-tuesday",
+            "id": "2771ae25-2670-45b4-ba43-96f881474c6a",
             "start": "09:00",
             "end": "10:00",
             "name": "Parent & Tots(4 and under) Free Skate"
@@ -846,7 +846,7 @@
         "date": "2027-02-12",
         "programs": [
           {
-            "id": "general-public-free-skate-friday",
+            "id": "7ed9b9b7-f7d8-4c55-9168-dc2fa72cdbef",
             "start": "17:40",
             "end": "19:15",
             "name": "General Public Free Skate"
@@ -857,7 +857,7 @@
         "date": "2027-02-13",
         "programs": [
           {
-            "id": "general-public-free-skate-saturday",
+            "id": "567a3d7c-f019-415b-b7f7-18f26cc535e6",
             "start": "19:40",
             "end": "20:30",
             "name": "General Public Free Skate"
@@ -868,7 +868,7 @@
         "date": "2027-02-16",
         "programs": [
           {
-            "id": "parent-tots-4-and-under-free-skate-tuesday",
+            "id": "454f7c52-fc99-4bbb-8dd2-c9e169cd29c3",
             "start": "09:00",
             "end": "10:00",
             "name": "Parent & Tots(4 and under) Free Skate"
@@ -879,7 +879,7 @@
         "date": "2027-02-19",
         "programs": [
           {
-            "id": "general-public-free-skate-friday",
+            "id": "d9c40427-6547-4376-ae97-91b7e456eeed",
             "start": "17:40",
             "end": "19:15",
             "name": "General Public Free Skate"
@@ -890,7 +890,7 @@
         "date": "2027-02-20",
         "programs": [
           {
-            "id": "general-public-free-skate-saturday",
+            "id": "aa3c86de-9c42-45b9-8a3f-9e38933ea85f",
             "start": "19:40",
             "end": "20:30",
             "name": "General Public Free Skate"
@@ -901,7 +901,7 @@
         "date": "2027-02-22",
         "programs": [
           {
-            "id": "adults-only-free-skate-monday",
+            "id": "865b0f80-0180-463f-872c-b8d6c4e67a9e",
             "start": "11:40",
             "end": "13:00",
             "name": "Adults Only Free Skate",
@@ -913,7 +913,7 @@
         "date": "2027-02-23",
         "programs": [
           {
-            "id": "parent-tots-4-and-under-free-skate-tuesday",
+            "id": "708c7de7-b9c8-4ebe-9e35-b9fca759196d",
             "start": "09:00",
             "end": "10:00",
             "name": "Parent & Tots(4 and under) Free Skate"
@@ -924,7 +924,7 @@
         "date": "2027-02-26",
         "programs": [
           {
-            "id": "general-public-free-skate-friday",
+            "id": "42d444fd-7048-4f1f-b01f-efb8cf97ad3f",
             "start": "17:40",
             "end": "19:15",
             "name": "General Public Free Skate"
@@ -935,7 +935,7 @@
         "date": "2027-02-27",
         "programs": [
           {
-            "id": "general-public-free-skate-saturday",
+            "id": "4870bf2b-879e-442c-9822-2c34a76ee931",
             "start": "19:40",
             "end": "20:30",
             "name": "General Public Free Skate"
@@ -946,7 +946,7 @@
         "date": "2027-03-01",
         "programs": [
           {
-            "id": "adults-only-free-skate-monday",
+            "id": "1d33d47b-c64a-4145-ae97-cbf523d6c787",
             "start": "11:40",
             "end": "13:00",
             "name": "Adults Only Free Skate",
@@ -958,7 +958,7 @@
         "date": "2027-03-02",
         "programs": [
           {
-            "id": "parent-tots-4-and-under-free-skate-tuesday",
+            "id": "e4fffde6-8ec8-4d89-a5cf-57debc704df7",
             "start": "09:00",
             "end": "10:00",
             "name": "Parent & Tots(4 and under) Free Skate"
@@ -969,7 +969,7 @@
         "date": "2027-03-05",
         "programs": [
           {
-            "id": "general-public-free-skate-friday",
+            "id": "616b7fd4-a517-49c0-a19d-aebd50de5cd2",
             "start": "17:40",
             "end": "19:15",
             "name": "General Public Free Skate"
@@ -980,7 +980,7 @@
         "date": "2027-03-06",
         "programs": [
           {
-            "id": "general-public-free-skate-saturday",
+            "id": "85c8dc25-ffc1-42f1-a496-c3ba68ac8967",
             "start": "19:40",
             "end": "20:30",
             "name": "General Public Free Skate"
@@ -991,7 +991,7 @@
         "date": "2027-03-08",
         "programs": [
           {
-            "id": "adults-only-free-skate-monday",
+            "id": "f34f6df0-3045-4fcd-a3d6-10a30136c27b",
             "start": "11:40",
             "end": "13:00",
             "name": "Adults Only Free Skate",
@@ -1003,7 +1003,7 @@
         "date": "2027-03-09",
         "programs": [
           {
-            "id": "parent-tots-4-and-under-free-skate-tuesday",
+            "id": "66a52235-2b7b-4245-a558-c126db52f962",
             "start": "09:00",
             "end": "10:00",
             "name": "Parent & Tots(4 and under) Free Skate"
@@ -1014,7 +1014,7 @@
         "date": "2027-03-12",
         "programs": [
           {
-            "id": "general-public-free-skate-friday",
+            "id": "cc8f6568-7e51-4f5e-a51b-3ba17d780296",
             "start": "17:40",
             "end": "19:15",
             "name": "General Public Free Skate"
@@ -1025,7 +1025,7 @@
         "date": "2027-03-13",
         "programs": [
           {
-            "id": "general-public-free-skate-saturday",
+            "id": "c57a7156-e296-490a-a961-bd057c2a61e2",
             "start": "19:40",
             "end": "20:30",
             "name": "General Public Free Skate"
@@ -1036,7 +1036,7 @@
         "date": "2027-03-15",
         "programs": [
           {
-            "id": "adults-only-free-skate-monday",
+            "id": "2d097ba5-f589-4698-8cf3-f3909b2dc925",
             "start": "11:40",
             "end": "13:00",
             "name": "Adults Only Free Skate",
@@ -1048,7 +1048,7 @@
         "date": "2027-03-16",
         "programs": [
           {
-            "id": "parent-tots-4-and-under-free-skate-tuesday",
+            "id": "e97a0b61-a459-4dfd-8868-8d04d5c03551",
             "start": "09:00",
             "end": "10:00",
             "name": "Parent & Tots(4 and under) Free Skate"
@@ -1059,7 +1059,7 @@
         "date": "2027-03-19",
         "programs": [
           {
-            "id": "general-public-free-skate-friday",
+            "id": "a6ad7bcf-d1bb-4e4d-a3d7-946f22d5e738",
             "start": "17:40",
             "end": "19:15",
             "name": "General Public Free Skate"
@@ -1070,7 +1070,7 @@
         "date": "2027-03-20",
         "programs": [
           {
-            "id": "general-public-free-skate-saturday",
+            "id": "38ba30ea-967e-4ac6-b721-a135addaad17",
             "start": "19:40",
             "end": "20:30",
             "name": "General Public Free Skate"
@@ -1081,7 +1081,7 @@
         "date": "2027-03-22",
         "programs": [
           {
-            "id": "adults-only-free-skate-monday",
+            "id": "0b174858-6e80-4b69-87fd-b97acb0640f1",
             "start": "11:40",
             "end": "13:00",
             "name": "Adults Only Free Skate",
@@ -1093,7 +1093,7 @@
         "date": "2027-03-23",
         "programs": [
           {
-            "id": "parent-tots-4-and-under-free-skate-tuesday",
+            "id": "fe5f4fd6-784f-4549-950c-df9c3f5dc4d0",
             "start": "09:00",
             "end": "10:00",
             "name": "Parent & Tots(4 and under) Free Skate"
@@ -1104,7 +1104,7 @@
         "date": "2027-03-26",
         "programs": [
           {
-            "id": "general-public-free-skate-friday",
+            "id": "838c8c59-84de-42d4-af7f-74bf14422b69",
             "start": "17:40",
             "end": "19:15",
             "name": "General Public Free Skate"
@@ -1115,7 +1115,7 @@
         "date": "2027-03-27",
         "programs": [
           {
-            "id": "general-public-free-skate-saturday",
+            "id": "702e5c01-0031-4561-9f69-9d074425ec1d",
             "start": "19:40",
             "end": "20:30",
             "name": "General Public Free Skate"
@@ -1126,7 +1126,7 @@
         "date": "2027-03-29",
         "programs": [
           {
-            "id": "adults-only-free-skate-monday",
+            "id": "7af03f1d-088d-4d05-892d-346ac885c34d",
             "start": "11:40",
             "end": "13:00",
             "name": "Adults Only Free Skate",
@@ -1138,7 +1138,7 @@
         "date": "2027-03-30",
         "programs": [
           {
-            "id": "parent-tots-4-and-under-free-skate-tuesday",
+            "id": "adf76744-4f08-4ff5-8682-7436a385b906",
             "start": "09:00",
             "end": "10:00",
             "name": "Parent & Tots(4 and under) Free Skate"

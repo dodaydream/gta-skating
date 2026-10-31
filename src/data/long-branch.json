@@ -8,13 +8,13 @@
     "lon": -79.527833
   },
   "schedule": {
-    "updatedAt": "2026-10-31T16:46:09.477Z",
+    "updatedAt": "2026-10-31T19:11:23.197Z",
     "events": [
       {
         "date": "2026-10-31",
         "programs": [
           {
-            "id": "ice-rink-leisure-skate-15-15",
+            "id": "36b36e5a-f0a4-480d-b632-9e060bb92cdf",
             "start": "15:15",
             "end": "16:45",
             "name": "Leisure Skate",
@@ -26,7 +26,7 @@
         "date": "2026-11-01",
         "programs": [
           {
-            "id": "ice-rink-leisure-skate-12-15",
+            "id": "a33ef2d8-8538-4d7d-be2a-74ff5197755d",
             "start": "12:15",
             "end": "13:45",
             "name": "Leisure Skate",
@@ -38,7 +38,7 @@
         "date": "2026-11-07",
         "programs": [
           {
-            "id": "ice-rink-leisure-skate-15-15",
+            "id": "607c4b22-35c1-4dc1-9278-047c8b696c77",
             "start": "15:15",
             "end": "16:45",
             "name": "Leisure Skate",
@@ -50,7 +50,7 @@
         "date": "2026-11-08",
         "programs": [
           {
-            "id": "ice-rink-leisure-skate-12-15",
+            "id": "756615f7-89df-4ba9-a4aa-3d770e595bc6",
             "start": "12:15",
             "end": "13:45",
             "name": "Leisure Skate",

@@ -1,3 +1,4 @@
+import { randomUUID } from "node:crypto";
 import { readFile, writeFile, mkdir } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -296,7 +297,7 @@ function buildArenaSchedules(
       const byDate = byArena.get(entry.arenaId)!;
       if (!byDate.has(date)) byDate.set(date, []);
       byDate.get(date)!.push({
-        id: slug(entry.programName, entry.day, entry.time.start),
+        id: randomUUID(),
         start: entry.time.start,
         end: entry.time.end,
         name: entry.programName,

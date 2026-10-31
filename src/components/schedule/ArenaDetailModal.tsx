@@ -16,10 +16,9 @@ import {
   getTodayInArenaTime,
   osmUrl,
 } from "@/data/schedules";
+import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { WeekView } from "@/components/schedule/WeekView";
 import { X } from "lucide-react";
-
-type ViewMode = "list" | "week";
 
 export function ArenaDetailModal({
   arena,
@@ -30,7 +29,7 @@ export function ArenaDetailModal({
 }) {
   const events = arena.schedule.events;
   const updated = new Date(arena.schedule.updatedAt).toISOString().slice(0, 10);
-  const [view, setView] = useState<ViewMode>("list");
+  const [view, setView] = useState<"day" | "week">("day");
   const weekBodyRef = useRef<HTMLDivElement>(null);
 
   return (
@@ -56,32 +55,12 @@ export function ArenaDetailModal({
         <TodayCards events={events} timezone={arena.timezone} />
 
         <div className="px-5">
-          <div className="inline-flex rounded-lg bg-zinc-100 p-0.5 dark:bg-zinc-800">
-            <button
-              type="button"
-              onClick={() => setView("list")}
-              aria-pressed={view === "list"}
-              className={`rounded-md px-3 py-1 text-xs font-medium transition-colors ${
-                view === "list"
-                  ? "bg-white text-black shadow-sm dark:bg-zinc-950 dark:text-zinc-50"
-                  : "text-zinc-500 hover:text-zinc-700 dark:text-zinc-400 dark:hover:text-zinc-200"
-              }`}
-            >
-              List
-            </button>
-            <button
-              type="button"
-              onClick={() => setView("week")}
-              aria-pressed={view === "week"}
-              className={`rounded-md px-3 py-1 text-xs font-medium transition-colors ${
-                view === "week"
-                  ? "bg-white text-black shadow-sm dark:bg-zinc-950 dark:text-zinc-50"
-                  : "text-zinc-500 hover:text-zinc-700 dark:text-zinc-400 dark:hover:text-zinc-200"
-              }`}
-            >
-              Week
-            </button>
-          </div>
+          <Tabs value={view} onValueChange={(v) => setView(v as "day" | "week")}>
+            <TabsList>
+              <TabsTrigger value="day">Day</TabsTrigger>
+              <TabsTrigger value="week">Week</TabsTrigger>
+            </TabsList>
+          </Tabs>
         </div>
 
         <div
@@ -90,7 +69,7 @@ export function ArenaDetailModal({
         >
           {events.length === 0 ? (
             <p className="text-sm text-zinc-500">No upcoming sessions.</p>
-          ) : view === "list" ? (
+          ) : view === "day" ? (
             <ListView events={events} timezone={arena.timezone} />
 ) : (
             <WeekView events={events} bodyRef={weekBodyRef} />
@@ -142,7 +121,7 @@ function TodayCards({
   );
 
   return (
-    <div className="w-full min-w-0 overflow-x-auto overflow-y-hidden px-5">
+    <div className="w-full min-w-0 overflow-x-auto overflow-y-hidden px-5 shrink-0">
       <div className="flex gap-3 pb-1">
         {programs.map((program) => {
           const isToday = program.date === today;

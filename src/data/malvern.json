@@ -8,13 +8,13 @@
     "lon": -79.216386
   },
   "schedule": {
-    "updatedAt": "2026-10-31T16:46:09.506Z",
+    "updatedAt": "2026-10-31T19:11:23.283Z",
     "events": [
       {
         "date": "2026-10-31",
         "programs": [
           {
-            "id": "ice-rink-2-leisure-skate-18-30",
+            "id": "60e1bda5-15f5-47ce-9a31-05612aecb4c1",
             "start": "18:30",
             "end": "20:30",
             "name": "Leisure Skate",
@@ -26,14 +26,14 @@
         "date": "2026-11-02",
         "programs": [
           {
-            "id": "ice-rink-1-shinny-youth-girls-18-00",
+            "id": "94bd5829-4f37-4bde-97a3-fbf521895e09",
             "start": "18:00",
             "end": "18:45",
             "name": "Shinny: Youth (Girls)",
             "notes": "13 - 18 years"
           },
           {
-            "id": "ice-rink-1-shinny-youth-18-45",
+            "id": "10a6c78d-619e-4b39-b157-f0537fbd7b4c",
             "start": "18:45",
             "end": "19:30",
             "name": "Shinny: Youth",
@@ -45,21 +45,21 @@
         "date": "2026-11-03",
         "programs": [
           {
-            "id": "ice-rink-2-leisure-skate-older-adult-unsupervised-10-00",
+            "id": "656bab03-5cdc-42e7-aed0-3951bc8f93a6",
             "start": "10:00",
             "end": "12:00",
             "name": "Leisure Skate: Older Adult (Unsupervised)",
             "notes": "60 years and over"
           },
           {
-            "id": "ice-rink-1-shinny-older-adult-unsupervised-12-00",
+            "id": "22157ad5-efb0-49cd-b178-942a9a57c3ab",
             "start": "12:00",
             "end": "13:00",
             "name": "Shinny: Older Adult (Unsupervised)",
             "notes": "60 years and over"
           },
           {
-            "id": "ice-rink-2-leisure-skate-child-with-caregiver-unsupervised-12-15",
+            "id": "6a973316-8ec3-4add-9001-33e68aa188ad",
             "start": "12:15",
             "end": "14:15",
             "name": "Leisure Skate: Child with Caregiver (Unsupervised)",
@@ -71,28 +71,28 @@
         "date": "2026-11-04",
         "programs": [
           {
-            "id": "ice-rink-2-leisure-skate-older-adult-unsupervised-10-00",
+            "id": "d1dd16e8-d760-45d1-8a92-de9317ba6878",
             "start": "10:00",
             "end": "12:00",
             "name": "Leisure Skate: Older Adult (Unsupervised)",
             "notes": "60 years and over"
           },
           {
-            "id": "ice-rink-2-leisure-skate-child-with-caregiver-unsupervised-12-15",
+            "id": "5004926a-f4ed-4888-bf0b-3dce303067d2",
             "start": "12:15",
             "end": "14:15",
             "name": "Leisure Skate: Child with Caregiver (Unsupervised)",
             "notes": "0 - 12 years"
           },
           {
-            "id": "ice-rink-2-shinny-child-girls-16-00",
+            "id": "130d1513-66c6-4c00-8fe2-f0855bb297cf",
             "start": "16:00",
             "end": "17:00",
             "name": "Shinny: Child (Girls)",
             "notes": "6 - 8 years"
           },
           {
-            "id": "ice-rink-2-shinny-child-girls-17-00",
+            "id": "878def3f-d238-4e74-8068-6817ea967bd0",
             "start": "17:00",
             "end": "18:00",
             "name": "Shinny: Child (Girls)",
@@ -104,21 +104,21 @@
         "date": "2026-11-05",
         "programs": [
           {
-            "id": "ice-rink-2-leisure-skate-older-adult-unsupervised-10-00",
+            "id": "b29d7f31-2105-42ca-9343-04f4340c8707",
             "start": "10:00",
             "end": "12:00",
             "name": "Leisure Skate: Older Adult (Unsupervised)",
             "notes": "60 years and over"
           },
           {
-            "id": "ice-rink-1-shinny-older-adult-unsupervised-12-00",
+            "id": "eaddb947-bb8a-49b9-8cf4-75c6c0736e7b",
             "start": "12:00",
             "end": "13:00",
             "name": "Shinny: Older Adult (Unsupervised)",
             "notes": "60 years and over"
           },
           {
-            "id": "ice-rink-2-leisure-skate-child-with-caregiver-unsupervised-12-15",
+            "id": "09a0b85f-a561-4194-abb8-66964af40aa7",
             "start": "12:15",
             "end": "14:15",
             "name": "Leisure Skate: Child with Caregiver (Unsupervised)",
@@ -130,14 +130,14 @@
         "date": "2026-11-06",
         "programs": [
           {
-            "id": "ice-rink-2-leisure-skate-older-adult-unsupervised-10-00",
+            "id": "901c8501-3a8b-4f17-a71c-01e38a038d7e",
             "start": "10:00",
             "end": "12:00",
             "name": "Leisure Skate: Older Adult (Unsupervised)",
             "notes": "60 years and over"
           },
           {
-            "id": "ice-rink-2-leisure-skate-child-with-caregiver-unsupervised-12-15",
+            "id": "655ba008-51bc-4b2b-aa86-032a15b1e4dd",
             "start": "12:15",
             "end": "14:15",
             "name": "Leisure Skate: Child with Caregiver (Unsupervised)",
@@ -149,7 +149,7 @@
         "date": "2026-11-07",
         "programs": [
           {
-            "id": "ice-rink-2-leisure-skate-18-30",
+            "id": "ccc7ce0f-a6c4-4b0b-a9c2-bf5db7103e79",
             "start": "18:30",
             "end": "20:30",
             "name": "Leisure Skate",

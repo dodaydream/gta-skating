@@ -8,13 +8,13 @@
     "lon": -79.267814
   },
   "schedule": {
-    "updatedAt": "2026-10-31T16:46:08.259Z",
+    "updatedAt": "2026-10-31T19:11:19.851Z",
     "events": [
       {
         "date": "2026-11-01",
         "programs": [
           {
-            "id": "ice-rink-2-adapted-leisure-skate-with-family-15-30",
+            "id": "be82e9e5-106a-42e9-81fa-c4c94e1bc14c",
             "start": "15:30",
             "end": "17:00",
             "name": "Adapted Leisure Skate with Family",
@@ -26,7 +26,7 @@
         "date": "2026-11-03",
         "programs": [
           {
-            "id": "ice-rink-1-leisure-skate-older-adult-unsupervised-10-00",
+            "id": "da5335ab-5aae-421e-9ea2-e8fc577e2016",
             "start": "10:00",
             "end": "12:00",
             "name": "Leisure Skate: Older Adult (Unsupervised)",
@@ -38,7 +38,7 @@
         "date": "2026-11-05",
         "programs": [
           {
-            "id": "ice-rink-1-leisure-skate-older-adult-unsupervised-10-00",
+            "id": "380fe125-fea7-4bac-807b-31eea547e32d",
             "start": "10:00",
             "end": "12:00",
             "name": "Leisure Skate: Older Adult (Unsupervised)",
@@ -50,7 +50,7 @@
         "date": "2026-11-08",
         "programs": [
           {
-            "id": "ice-rink-2-adapted-leisure-skate-with-family-15-30",
+            "id": "cd656edc-54cf-416d-8caf-58ae401f1cf4",
             "start": "15:30",
             "end": "17:00",
             "name": "Adapted Leisure Skate with Family",

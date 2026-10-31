@@ -8,13 +8,13 @@
     "lon": -79.383509
   },
   "schedule": {
-    "updatedAt": "2026-10-31T16:46:11.232Z",
+    "updatedAt": "2026-10-31T19:11:27.035Z",
     "events": [
       {
         "date": "2026-10-31",
         "programs": [
           {
-            "id": "ice-rink-leisure-skate-19-30",
+            "id": "df170cf8-894b-4a58-ba32-575f4dda8805",
             "start": "19:30",
             "end": "21:30",
             "name": "Leisure Skate",
@@ -26,14 +26,14 @@
         "date": "2026-11-01",
         "programs": [
           {
-            "id": "ice-rink-shinny-child-with-caregiver-13-30",
+            "id": "32d0b3f1-ab44-4404-bb2a-20782d826ed5",
             "start": "13:30",
             "end": "14:30",
             "name": "Shinny: Child with Caregiver",
             "notes": "0 - 8 years"
           },
           {
-            "id": "ice-rink-leisure-skate-14-45",
+            "id": "5215b01a-f11f-4a1d-a174-73ba9bfe8131",
             "start": "14:45",
             "end": "16:45",
             "name": "Leisure Skate",
@@ -45,7 +45,7 @@
         "date": "2026-11-06",
         "programs": [
           {
-            "id": "ice-rink-leisure-skate-18-45",
+            "id": "5bed339f-1afe-4cef-83bd-56618ae4a3c9",
             "start": "18:45",
             "end": "20:45",
             "name": "Leisure Skate",
@@ -57,7 +57,7 @@
         "date": "2026-11-07",
         "programs": [
           {
-            "id": "ice-rink-leisure-skate-19-30",
+            "id": "980be37c-3c4c-48d9-a697-bae41846d15d",
             "start": "19:30",
             "end": "21:30",
             "name": "Leisure Skate",
@@ -69,14 +69,14 @@
         "date": "2026-11-08",
         "programs": [
           {
-            "id": "ice-rink-shinny-child-with-caregiver-13-30",
+            "id": "f4a45efe-1f42-47ce-b10d-7e214eedc57b",
             "start": "13:30",
             "end": "14:30",
             "name": "Shinny: Child with Caregiver",
             "notes": "0 - 8 years"
           },
           {
-            "id": "ice-rink-leisure-skate-14-45",
+            "id": "77ad9c3b-e8be-4d03-a15c-4fcdab7d9a0a",
             "start": "14:45",
             "end": "16:45",
             "name": "Leisure Skate",

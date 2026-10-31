@@ -8,41 +8,41 @@
     "lon": -79.235108
   },
   "schedule": {
-    "updatedAt": "2026-10-31T16:46:08.017Z",
+    "updatedAt": "2026-10-31T19:11:19.272Z",
     "events": [
       {
         "date": "2026-10-31",
         "programs": [
           {
-            "id": "ice-rink-ice-galaxy-leisure-skate-child-with-caregiver-16-00",
+            "id": "67e669a1-f44a-4014-9445-db603e605f3a",
             "start": "16:00",
             "end": "17:00",
             "name": "Leisure Skate: Child with Caregiver",
             "notes": "0 - 12 years"
           },
           {
-            "id": "ice-rink-ice-galaxy-leisure-skate-17-00",
+            "id": "90593be4-1cb3-46d5-aa69-13df1fa9a7a4",
             "start": "17:00",
             "end": "18:00",
             "name": "Leisure Skate",
             "notes": "0 years and over"
           },
           {
-            "id": "ice-rink-ice-galaxy-figure-skating-18-15",
+            "id": "afccd966-3192-4e90-b59d-f1b387b755fa",
             "start": "18:15",
             "end": "19:15",
             "name": "Figure Skating",
             "notes": "6 years and over"
           },
           {
-            "id": "ice-rink-ice-galaxy-leisure-skate-adult-19-15",
+            "id": "540c0a8f-7c85-45b5-9867-11c4a572c418",
             "start": "19:15",
             "end": "20:00",
             "name": "Leisure Skate: Adult",
             "notes": "19 years and over"
           },
           {
-            "id": "ice-rink-ice-galaxy-leisure-skate-pride-skate-20-00",
+            "id": "dfbe0692-2dff-4a61-82ae-9114003d704c",
             "start": "20:00",
             "end": "22:00",
             "name": "Leisure Skate (Pride Skate)",
@@ -54,35 +54,35 @@
         "date": "2026-11-01",
         "programs": [
           {
-            "id": "ice-rink-ice-galaxy-leisure-skate-child-with-caregiver-10-15",
+            "id": "dc06026e-5a83-4d02-9109-037538b436c6",
             "start": "10:15",
             "end": "11:00",
             "name": "Leisure Skate: Child with Caregiver",
             "notes": "0 - 12 years"
           },
           {
-            "id": "ice-rink-ice-galaxy-leisure-skate-11-15",
+            "id": "006be819-7093-4d9e-93c3-3017bef22293",
             "start": "11:15",
             "end": "12:15",
             "name": "Leisure Skate",
             "notes": "0 years and over"
           },
           {
-            "id": "ice-rink-ice-galaxy-leisure-skate-adult-12-30",
+            "id": "74e08f32-cfb9-4b49-8c83-fbf5ad3138e9",
             "start": "12:30",
             "end": "13:30",
             "name": "Leisure Skate: Adult",
             "notes": "19 years and over"
           },
           {
-            "id": "ice-rink-ice-galaxy-leisure-skate-youth-13-45",
+            "id": "a9803d94-1414-415f-a026-26c047a8804f",
             "start": "13:45",
             "end": "14:45",
             "name": "Leisure Skate: Youth",
             "notes": "13 - 17 years"
           },
           {
-            "id": "ice-rink-ice-galaxy-figure-skating-14-45",
+            "id": "87704db4-8920-43db-a96d-179f8712a054",
             "start": "14:45",
             "end": "15:45",
             "name": "Figure Skating",
@@ -94,21 +94,21 @@
         "date": "2026-11-03",
         "programs": [
           {
-            "id": "ice-rink-ice-galaxy-leisure-skate-older-adult-unsupervised-11-45",
+            "id": "bec1c610-2541-423b-9101-af80031302c2",
             "start": "11:45",
             "end": "12:45",
             "name": "Leisure Skate: Older Adult (Unsupervised)",
             "notes": "60 years and over"
           },
           {
-            "id": "ice-rink-leisure-skate-child-with-caregiver-unsupervised-13-00",
+            "id": "9e0d6987-f830-482a-bd59-6d42e8e59602",
             "start": "13:00",
             "end": "14:00",
             "name": "Leisure Skate: Child with Caregiver (Unsupervised)",
             "notes": "0 - 12 years"
           },
           {
-            "id": "ice-rink-ice-galaxy-leisure-skate-adult-unsupervised-13-00",
+            "id": "0b246ed0-5c85-4f0a-8350-8530f727e4d2",
             "start": "13:00",
             "end": "14:15",
             "name": "Leisure Skate: Adult (Unsupervised)",
@@ -120,7 +120,7 @@
         "date": "2026-11-04",
         "programs": [
           {
-            "id": "ice-rink-ice-galaxy-leisure-skate-adult-unsupervised-14-00",
+            "id": "13ed41c0-4a48-4b73-a454-e777423b3f2a",
             "start": "14:00",
             "end": "15:30",
             "name": "Leisure Skate: Adult (Unsupervised)",
@@ -132,21 +132,21 @@
         "date": "2026-11-05",
         "programs": [
           {
-            "id": "ice-rink-ice-galaxy-leisure-skate-older-adult-unsupervised-11-45",
+            "id": "604c9747-6105-4bff-bca8-0aa46234b591",
             "start": "11:45",
             "end": "12:45",
             "name": "Leisure Skate: Older Adult (Unsupervised)",
             "notes": "60 years and over"
           },
           {
-            "id": "ice-rink-leisure-skate-child-with-caregiver-unsupervised-13-00",
+            "id": "af62ad81-da30-4c66-814c-5810aeb358e4",
             "start": "13:00",
             "end": "14:00",
             "name": "Leisure Skate: Child with Caregiver (Unsupervised)",
             "notes": "0 - 12 years"
           },
           {
-            "id": "ice-rink-ice-galaxy-leisure-skate-adult-unsupervised-13-00",
+            "id": "0b414f5e-03f6-4511-b0f9-1b7709c5ddf1",
             "start": "13:00",
             "end": "14:15",
             "name": "Leisure Skate: Adult (Unsupervised)",
@@ -158,28 +158,28 @@
         "date": "2026-11-06",
         "programs": [
           {
-            "id": "ice-rink-ice-galaxy-leisure-skate-older-adult-unsupervised-11-45",
+            "id": "e8c74a64-ba6c-42c9-904f-e4b745b230a1",
             "start": "11:45",
             "end": "12:45",
             "name": "Leisure Skate: Older Adult (Unsupervised)",
             "notes": "60 years and over"
           },
           {
-            "id": "ice-rink-shinny-youth-19-30",
+            "id": "17923b14-8c3f-4f99-ab90-398b038370f2",
             "start": "19:30",
             "end": "20:30",
             "name": "Shinny: Youth",
             "notes": "13 - 18 years"
           },
           {
-            "id": "ice-rink-ice-galaxy-leisure-skate-20-30",
+            "id": "ff972357-5cbf-4a69-8122-e1c6ace78bd0",
             "start": "20:30",
             "end": "22:00",
             "name": "Leisure Skate",
             "notes": "0 years and over"
           },
           {
-            "id": "ice-rink-ice-breakdancing-20-30",
+            "id": "be8aedc2-dec0-4a3d-977b-15187547aac1",
             "start": "20:30",
             "end": "21:45",
             "name": "Ice Breakdancing",
@@ -191,35 +191,35 @@
         "date": "2026-11-07",
         "programs": [
           {
-            "id": "ice-rink-ice-galaxy-leisure-skate-child-with-caregiver-16-00",
+            "id": "c36a2701-5557-43bf-ab8c-f8f17c061104",
             "start": "16:00",
             "end": "17:00",
             "name": "Leisure Skate: Child with Caregiver",
             "notes": "0 - 12 years"
           },
           {
-            "id": "ice-rink-ice-galaxy-leisure-skate-17-00",
+            "id": "77672fec-bd0c-481f-8e7f-3048e2d3a13a",
             "start": "17:00",
             "end": "18:00",
             "name": "Leisure Skate",
             "notes": "0 years and over"
           },
           {
-            "id": "ice-rink-ice-galaxy-figure-skating-18-15",
+            "id": "0d847b48-e193-4d8e-94a0-b195a9959120",
             "start": "18:15",
             "end": "19:15",
             "name": "Figure Skating",
             "notes": "6 years and over"
           },
           {
-            "id": "ice-rink-ice-galaxy-leisure-skate-adult-19-15",
+            "id": "f3f57f60-071f-4b1b-9aff-f4c0b7ba5848",
             "start": "19:15",
             "end": "20:00",
             "name": "Leisure Skate: Adult",
             "notes": "19 years and over"
           },
           {
-            "id": "ice-rink-ice-galaxy-leisure-skate-pride-skate-20-00",
+            "id": "f45cf496-c6cb-4802-b702-f912738d8813",
             "start": "20:00",
             "end": "22:00",
             "name": "Leisure Skate (Pride Skate)",
@@ -231,35 +231,35 @@
         "date": "2026-11-08",
         "programs": [
           {
-            "id": "ice-rink-ice-galaxy-leisure-skate-child-with-caregiver-10-15",
+            "id": "0ad7c993-496c-428a-ac1f-c1629ec8975f",
             "start": "10:15",
             "end": "11:00",
             "name": "Leisure Skate: Child with Caregiver",
             "notes": "0 - 12 years"
           },
           {
-            "id": "ice-rink-ice-galaxy-leisure-skate-11-15",
+            "id": "ab4aca58-75ba-4967-abfc-e7b015360ba3",
             "start": "11:15",
             "end": "12:15",
             "name": "Leisure Skate",
             "notes": "0 years and over"
           },
           {
-            "id": "ice-rink-ice-galaxy-leisure-skate-adult-12-30",
+            "id": "9004953c-bdb4-42d3-8a57-bffd1425a2e2",
             "start": "12:30",
             "end": "13:30",
             "name": "Leisure Skate: Adult",
             "notes": "19 years and over"
           },
           {
-            "id": "ice-rink-ice-galaxy-leisure-skate-youth-13-45",
+            "id": "2b685930-f393-4c43-9afc-fd41d08a6abc",
             "start": "13:45",
             "end": "14:45",
             "name": "Leisure Skate: Youth",
             "notes": "13 - 17 years"
           },
           {
-            "id": "ice-rink-ice-galaxy-figure-skating-14-45",
+            "id": "b946ca9e-356a-466a-acc2-fd87f779de97",
             "start": "14:45",
             "end": "15:45",
             "name": "Figure Skating",

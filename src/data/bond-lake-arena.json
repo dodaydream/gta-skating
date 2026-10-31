@@ -8,19 +8,19 @@
     "lon": -79.450453
   },
   "schedule": {
-    "updatedAt": "2026-10-31T17:52:52.853Z",
+    "updatedAt": "2026-10-31T19:11:16.763Z",
     "events": [
       {
         "date": "2026-10-31",
         "programs": [
           {
-            "id": "public-skate-saturday-18-30",
+            "id": "82f98186-127f-4ae6-bc02-7c3a6724dba8",
             "start": "18:30",
             "end": "20:00",
             "name": "Public Skate"
           },
           {
-            "id": "shinny-saturday-20-00",
+            "id": "0d09a4d7-406e-40cc-9982-01f3dc276c1f",
             "start": "20:00",
             "end": "21:30",
             "name": "Shinny"
@@ -31,7 +31,7 @@
         "date": "2026-11-01",
         "programs": [
           {
-            "id": "public-skate-sunday-14-30",
+            "id": "6cf13a88-307e-49b7-90a5-6524a8a1c1db",
             "start": "14:30",
             "end": "16:00",
             "name": "Public Skate"
@@ -42,13 +42,13 @@
         "date": "2026-11-07",
         "programs": [
           {
-            "id": "public-skate-saturday-18-30",
+            "id": "28d2db60-e771-4c10-af98-7d056eb3f077",
             "start": "18:30",
             "end": "20:00",
             "name": "Public Skate"
           },
           {
-            "id": "shinny-saturday-20-00",
+            "id": "4e30af10-1f29-4470-847b-ba977cc071e1",
             "start": "20:00",
             "end": "21:30",
             "name": "Shinny"
@@ -59,7 +59,7 @@
         "date": "2026-11-08",
         "programs": [
           {
-            "id": "public-skate-sunday-14-30",
+            "id": "86da4c96-7450-448d-bab2-8fd97852e400",
             "start": "14:30",
             "end": "16:00",
             "name": "Public Skate"
@@ -70,13 +70,13 @@
         "date": "2026-11-14",
         "programs": [
           {
-            "id": "public-skate-saturday-18-30",
+            "id": "230feab9-5685-4d93-ae5c-bf76690a50ce",
             "start": "18:30",
             "end": "20:00",
             "name": "Public Skate"
           },
           {
-            "id": "shinny-saturday-20-00",
+            "id": "eceec657-382b-4186-bee5-7ed8217b5cdd",
             "start": "20:00",
             "end": "21:30",
             "name": "Shinny"
@@ -87,7 +87,7 @@
         "date": "2026-11-15",
         "programs": [
           {
-            "id": "public-skate-sunday-14-30",
+            "id": "6cd04085-df5f-4ee3-b9fd-5b68917611f3",
             "start": "14:30",
             "end": "16:00",
             "name": "Public Skate"
@@ -98,13 +98,13 @@
         "date": "2026-11-21",
         "programs": [
           {
-            "id": "public-skate-saturday-18-30",
+            "id": "1e212c59-5d80-44e2-8e43-a528fc4d7c56",
             "start": "18:30",
             "end": "20:00",
             "name": "Public Skate"
           },
           {
-            "id": "shinny-saturday-20-00",
+            "id": "e698d36a-fa90-4adc-9b1f-d624d155c3c6",
             "start": "20:00",
             "end": "21:30",
             "name": "Shinny"
@@ -115,7 +115,7 @@
         "date": "2026-11-22",
         "programs": [
           {
-            "id": "public-skate-sunday-14-30",
+            "id": "596a59a2-5c57-4f03-9ca3-e83608d3873c",
             "start": "14:30",
             "end": "16:00",
             "name": "Public Skate"
@@ -126,13 +126,13 @@
         "date": "2026-11-28",
         "programs": [
           {
-            "id": "public-skate-saturday-18-30",
+            "id": "4b150bb9-6fc5-40ac-b5a4-033c4cfb64ed",
             "start": "18:30",
             "end": "20:00",
             "name": "Public Skate"
           },
           {
-            "id": "shinny-saturday-20-00",
+            "id": "b3f2018d-ef6e-426e-ad69-a96e92b56904",
             "start": "20:00",
             "end": "21:30",
             "name": "Shinny"
@@ -143,7 +143,7 @@
         "date": "2026-11-29",
         "programs": [
           {
-            "id": "public-skate-sunday-14-30",
+            "id": "ed790fb3-bdb9-46cc-a92d-8cc99325457e",
             "start": "14:30",
             "end": "16:00",
             "name": "Public Skate"

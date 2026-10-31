@@ -20,6 +20,7 @@
  * Usage:  node scrape.ts
  */
 
+import { randomUUID } from "node:crypto";
 import { readFile, writeFile, mkdir } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -104,7 +105,7 @@ function buildEvents(rows: FeedRow[]): ArenaEvent[] {
     if (!range) continue;
     const date = row.d;
     const program: Program = {
-      id: slug(row.f, row.c, range[0]),
+      id: randomUUID(),
       start: range[0],
       end: range[1],
       name: row.c,

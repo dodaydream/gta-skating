@@ -8,13 +8,13 @@
     "lon": -79.402495
   },
   "schedule": {
-    "updatedAt": "2026-10-31T17:52:52.856Z",
+    "updatedAt": "2026-10-31T19:11:16.767Z",
     "events": [
       {
         "date": "2026-11-01",
         "programs": [
           {
-            "id": "public-skate-sunday-14-30",
+            "id": "3f4cde91-0fe5-464e-bae1-60d094136138",
             "start": "14:30",
             "end": "16:00",
             "name": "Public Skate"
@@ -25,13 +25,13 @@
         "date": "2026-11-06",
         "programs": [
           {
-            "id": "public-skate-friday-19-00",
+            "id": "e4366f45-f774-4d0a-8698-b64808c416e2",
             "start": "19:00",
             "end": "20:30",
             "name": "Public Skate"
           },
           {
-            "id": "ringette-friday-20-30",
+            "id": "9329b576-7ce9-46b0-8baa-6b929cedfa17",
             "start": "20:30",
             "end": "21:30",
             "name": "Ringette"
@@ -42,7 +42,7 @@
         "date": "2026-11-08",
         "programs": [
           {
-            "id": "public-skate-sunday-14-30",
+            "id": "1112b0be-65a1-41e8-ae7f-844b8ba5cf99",
             "start": "14:30",
             "end": "16:00",
             "name": "Public Skate"
@@ -53,13 +53,13 @@
         "date": "2026-11-13",
         "programs": [
           {
-            "id": "public-skate-friday-19-00",
+            "id": "9bb060ea-f39f-44d8-9af5-5babb3738b28",
             "start": "19:00",
             "end": "20:30",
             "name": "Public Skate"
           },
           {
-            "id": "ringette-friday-20-30",
+            "id": "17ae2cfb-7be0-4b07-973c-bc10a82933c4",
             "start": "20:30",
             "end": "21:30",
             "name": "Ringette"
@@ -70,7 +70,7 @@
         "date": "2026-11-15",
         "programs": [
           {
-            "id": "public-skate-sunday-14-30",
+            "id": "18222527-0e12-4fe4-86af-28dbf8319f30",
             "start": "14:30",
             "end": "16:00",
             "name": "Public Skate"
@@ -81,13 +81,13 @@
         "date": "2026-11-20",
         "programs": [
           {
-            "id": "public-skate-friday-19-00",
+            "id": "4f533d8f-71ce-48e3-b28e-e871f3cc149f",
             "start": "19:00",
             "end": "20:30",
             "name": "Public Skate"
           },
           {
-            "id": "ringette-friday-20-30",
+            "id": "2dff8ad2-4e97-4ad1-92ee-c08f74d7471a",
             "start": "20:30",
             "end": "21:30",
             "name": "Ringette"
@@ -98,7 +98,7 @@
         "date": "2026-11-22",
         "programs": [
           {
-            "id": "public-skate-sunday-14-30",
+            "id": "399190ea-7cc6-416a-b33a-b9802165e8c1",
             "start": "14:30",
             "end": "16:00",
             "name": "Public Skate"
@@ -109,13 +109,13 @@
         "date": "2026-11-27",
         "programs": [
           {
-            "id": "public-skate-friday-19-00",
+            "id": "a54a4bb2-3c16-4f38-bc40-b9af71dc4cfa",
             "start": "19:00",
             "end": "20:30",
             "name": "Public Skate"
           },
           {
-            "id": "ringette-friday-20-30",
+            "id": "70ee1db1-3050-404a-88fa-237ae2b9c7e6",
             "start": "20:30",
             "end": "21:30",
             "name": "Ringette"
@@ -126,7 +126,7 @@
         "date": "2026-11-29",
         "programs": [
           {
-            "id": "public-skate-sunday-14-30",
+            "id": "df4553b8-5872-427c-b410-71b0455b0f47",
             "start": "14:30",
             "end": "16:00",
             "name": "Public Skate"

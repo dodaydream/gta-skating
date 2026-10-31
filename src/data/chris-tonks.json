@@ -8,20 +8,20 @@
     "lon": -79.48157
   },
   "schedule": {
-    "updatedAt": "2026-10-31T16:46:08.110Z",
+    "updatedAt": "2026-10-31T19:11:19.513Z",
     "events": [
       {
         "date": "2026-11-02",
         "programs": [
           {
-            "id": "ice-rink-shinny-child-with-caregiver-17-00",
+            "id": "6d2e7c86-9051-4eb2-82b7-9b52d2e8b491",
             "start": "17:00",
             "end": "18:30",
             "name": "Shinny: Child with Caregiver",
             "notes": "8 - 12 years"
           },
           {
-            "id": "ice-rink-leisure-skate-18-30",
+            "id": "86f67be0-3228-4d36-9eb9-ab2071f6afd2",
             "start": "18:30",
             "end": "20:00",
             "name": "Leisure Skate",
