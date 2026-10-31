@@ -144,14 +144,14 @@ function TodayCards({
   );
 
   return (
-    <div className="w-full min-w-0 px-5">
-      <div className="flex gap-3 overflow-x-auto pb-1">
+    <div className="w-full min-w-0 overflow-x-auto overflow-y-hidden px-5">
+      <div className="flex gap-3 pb-1">
         {programs.map((program) => {
           const isToday = program.date === today;
           return (
             <div
               key={program.id}
-              className={`flex w-full shrink-0 flex-col gap-1.5 rounded-xl border p-3 md:w-[calc((100%-1.5rem)/3)] ${
+              className={`flex w-56 shrink-0 flex-col overflow-hidden rounded-xl border p-3 ${
                 isToday
                   ? "border-blue-300 bg-blue-50/70 dark:border-blue-800 dark:bg-blue-950/40"
                   : "border-black/[.08] bg-white dark:border-white/[.145] dark:bg-zinc-950"
@@ -159,7 +159,7 @@ function TodayCards({
             >
               <div className="flex items-center gap-2">
                 <h3
-                  className={`text-xs font-semibold ${
+                  className={`truncate text-xs font-semibold ${
                     isToday
                       ? "text-blue-700 dark:text-blue-300"
                       : "text-zinc-700 dark:text-zinc-300"
@@ -168,18 +168,18 @@ function TodayCards({
                   {formatEventDate(program.date, timezone)}
                 </h3>
                 {isToday ? (
-                  <span className="rounded-full bg-blue-600 px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-white">
+                  <span className="shrink-0 rounded-full bg-blue-600 px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-white">
                     Today
                   </span>
                 ) : null}
               </div>
               <ul className="flex flex-col divide-y divide-black/[.06] dark:divide-white/[.08]">
-                <li className="flex flex-col gap-0.5 py-1.5">
-                  <div className="flex flex-wrap items-baseline gap-2">
-                    <span className="font-mono text-xs tabular-nums text-zinc-500 dark:text-zinc-400">
+                <li className="flex flex-col py-1.5">
+                  <div className="flex items-baseline gap-2">
+                    <span className="shrink-0 font-mono text-xs tabular-nums text-zinc-500 dark:text-zinc-400">
                       {formatTimeRange(program.start, program.end)}
                     </span>
-                    <span className="text-sm text-black dark:text-zinc-50">
+                    <span className="min-w-0 flex-1 truncate text-sm text-black dark:text-zinc-50">
                       {program.name}
                     </span>
                   </div>
@@ -351,13 +351,13 @@ function WeekView({
         </button>
       </div>
 
-      <div className="min-w-0 overflow-x-auto">
+      <div className="min-w-0 flex-1 overflow-auto" style={{ maxHeight: "55vh" }}>
         <div className="flex">
-          <div className="w-10 flex-shrink-0" />
+          <div className="w-10 flex-shrink-0 border-b border-black/[.08] dark:border-white/[.1]" />
           {columns.map((col) => (
             <div
               key={col.key}
-              className="flex-1 border-b border-black/[.08] px-1 pb-2 text-center text-xs font-medium text-zinc-700 dark:border-white/[.1] dark:text-zinc-300"
+              className="min-w-0 flex-1 border-b border-black/[.08] px-1 pb-2 text-center text-xs font-medium text-zinc-700 dark:border-white/[.1] dark:text-zinc-300"
             >
               {WEEKDAY_LABELS[dayjs(`${col.date}T00:00`).day()]}
               <br />
@@ -368,59 +368,57 @@ function WeekView({
           ))}
         </div>
 
-        <div className="overflow-y-auto" style={{ maxHeight: "55vh" }}>
-          <div className="flex" style={{ height: Math.max(timelineHeight, 300) }}>
-            <div className="relative w-10 flex-shrink-0">
-              {hourPositions.map(({ hour, pct }) => (
-                <div
-                  key={hour}
-                  className="absolute right-2 text-[10px] text-zinc-400 dark:text-zinc-500 -translate-y-1/2"
-                  style={{ top: `${pct}%` }}
-                >
-                  {formatHour(hour)}
-                </div>
-              ))}
-            </div>
-
-            {columns.map((col, ci) => (
+        <div className="flex" style={{ height: Math.max(timelineHeight, 300) }}>
+          <div className="relative w-10 flex-shrink-0">
+            {hourPositions.map(({ hour, pct }) => (
               <div
-                key={col.key}
-                className={`relative flex-1 ${
-                  ci > 0 ? "border-l border-black/[.04] dark:border-white/[.06]" : ""
-                }`}
+                key={hour}
+                className="absolute right-2 text-[10px] text-zinc-400 dark:text-zinc-500 -translate-y-1/2"
+                style={{ top: `${pct}%` }}
               >
-                {hourPositions.map(({ hour, pct }) => (
-                  <div
-                    key={hour}
-                    className="absolute left-0 right-0 border-t border-black/[.04] dark:border-white/[.06]"
-                    style={{ top: `${pct}%` }}
-                  />
-                ))}
-
-                {col.programs.map((p) => {
-                  const startM = toMinutes(p.start);
-                  const endM = toMinutes(p.end);
-                  const topPct = ((startM - rangeStartMinutes) / totalMinutes) * 100;
-                  const heightPct = Math.max(
-                    ((endM - startM) / totalMinutes) * 100,
-                    2.5
-                  );
-                  return (
-                    <div
-                      key={p.id}
-                      className="absolute left-0.5 right-0.5 rounded-md border border-black/[.06] bg-white px-1 py-0.5 text-[11px] leading-tight dark:border-white/[.08] dark:bg-zinc-950 overflow-hidden"
-                      style={{ top: `${topPct}%`, height: `${heightPct}%` }}
-                    >
-                      <div className="tabular-nums text-zinc-500 dark:text-zinc-400">
-                        {p.start}–{p.end}
-                      </div>
-                      <div className="truncate">{p.name}</div>
-                    </div>
-                  );
-                })}
+                {formatHour(hour)}
               </div>
             ))}
           </div>
+
+          {columns.map((col, ci) => (
+            <div
+              key={col.key}
+              className={`relative min-w-0 flex-1 ${
+                ci > 0 ? "border-l border-black/[.04] dark:border-white/[.06]" : ""
+              }`}
+            >
+              {hourPositions.map(({ hour, pct }) => (
+                <div
+                  key={hour}
+                  className="absolute left-0 right-0 border-t border-black/[.04] dark:border-white/[.06]"
+                  style={{ top: `${pct}%` }}
+                />
+              ))}
+
+              {col.programs.map((p) => {
+                const startM = toMinutes(p.start);
+                const endM = toMinutes(p.end);
+                const topPct = ((startM - rangeStartMinutes) / totalMinutes) * 100;
+                const heightPct = Math.max(
+                  ((endM - startM) / totalMinutes) * 100,
+                  2.5
+                );
+                return (
+                  <div
+                    key={p.id}
+                    className="absolute left-0.5 right-0.5 overflow-hidden rounded-md border border-black/[.06] bg-white px-1 py-0.5 text-[11px] leading-tight dark:border-white/[.08] dark:bg-zinc-950"
+                    style={{ top: `${topPct}%`, height: `${heightPct}%` }}
+                  >
+                    <div className="tabular-nums text-zinc-500 dark:text-zinc-400">
+                      {p.start}–{p.end}
+                    </div>
+                    <div className="truncate">{p.name}</div>
+                  </div>
+                );
+              })}
+            </div>
+          ))}
         </div>
       </div>
     </div>
@@ -437,12 +435,9 @@ function formatHour(hour: number): string {
 }
 
 function getWeekStartISO(events: ArenaEvent[]): string {
-  const anchor = new Date(`${events[0].date}T00:00`);
-  const start = new Date(anchor);
-  const startDow = start.getUTCDay();
-  start.setUTCDate(start.getUTCDate() - startDow);
-  start.setUTCHours(0, 0, 0, 0);
-  return start.toISOString().slice(0, 10);
+  return dayjs(`${events[0].date}T00:00`)
+    .startOf("week")
+    .format("YYYY-MM-DD");
 }
 
 type WeekColumn = {

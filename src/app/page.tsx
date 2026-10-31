@@ -31,6 +31,7 @@ export default function Home() {
   const [loading, setLoading] = useState(true);
   const [items, setItems] = useState<ProgramItem[]>([]);
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
+  const [detailArena, setDetailArena] = useState<Arena | null>(null);
   const [hideEmpty, setHideEmpty] = useState(true);
   const [userLocation, setUserLocation] = useState<{
     lat: number;
@@ -90,6 +91,14 @@ export default function Home() {
     return list;
   }, [items]);
 
+  useEffect(() => {
+    if (selectedIndex !== null) {
+      setDetailArena(arenas[selectedIndex] ?? null);
+    } else {
+      setDetailArena(null);
+    }
+  }, [selectedIndex, arenas]);
+
   const handleSelect = useCallback(
     (index: number) =>
       setSelectedIndex((prev) => (prev === index ? null : index)),
@@ -142,8 +151,19 @@ export default function Home() {
           hideEmpty={hideEmpty}
           onHideEmptyChange={setHideEmpty}
           userLocation={userLocation}
+          onSelectArena={setDetailArena}
         />
       </div>
+
+      {detailArena ? (
+        <ArenaDetailModal
+          arena={detailArena}
+          onClose={() => {
+            setDetailArena(null);
+            setSelectedIndex(null);
+          }}
+        />
+      ) : null}
     </div>
   );
 }

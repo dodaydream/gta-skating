@@ -5,7 +5,6 @@ import type { PointerEvent as ReactPointerEvent } from "react";
 import type { Arena } from "@/types/arena";
 import type { ProgramItem } from "@/types/schedule";
 import { ProgramListItem } from "@/components/schedule/ProgramListItem";
-import { ArenaDetailModal } from "@/components/schedule/ArenaDetailModal";
 import { ScheduleSkeleton } from "@/components/ui/ScheduleSkeleton";
 import { Switch } from "@/components/ui/switch";
 
@@ -15,6 +14,7 @@ type ScheduleSidebarProps = {
   hideEmpty: boolean;
   onHideEmptyChange: (value: boolean) => void;
   userLocation?: { lat: number; lon: number } | null;
+  onSelectArena: (arena: Arena) => void;
 };
 
 const SNAP_POINTS = [0.3, 0.6, 0.95];
@@ -25,12 +25,12 @@ export function ScheduleSidebar({
   hideEmpty,
   onHideEmptyChange,
   userLocation,
+  onSelectArena,
 }: ScheduleSidebarProps) {
   const [height, setHeight] = useState(0.3);
   const dragging = useRef(false);
   const startY = useRef(0);
   const startPct = useRef(0.3);
-  const [detailArena, setDetailArena] = useState<Arena | null>(null);
 
   const arenaCount = useMemo(
     () => new Set(items.map((item) => item.arena.name)).size,
@@ -91,7 +91,7 @@ export function ScheduleSidebar({
               <ProgramListItem
                 key={`${item.arena.name}-${item.date}-${item.start}-${item.name}`}
                 program={item}
-                onSelect={() => setDetailArena(item.arena)}
+                onSelect={() => onSelectArena(item.arena)}
                 userLocation={userLocation}
               />
             ))
@@ -150,7 +150,7 @@ export function ScheduleSidebar({
                 <ProgramListItem
                   key={`${item.arena.name}-${item.date}-${item.start}-${item.name}`}
                   program={item}
-                  onSelect={() => setDetailArena(item.arena)}
+                  onSelect={() => onSelectArena(item.arena)}
                   userLocation={userLocation}
                 />
               ))
@@ -163,13 +163,6 @@ export function ScheduleSidebar({
           </footer>
         </div>
       </section>
-
-      {detailArena ? (
-        <ArenaDetailModal
-          arena={detailArena}
-          onClose={() => setDetailArena(null)}
-        />
-      ) : null}
     </>
   );
 }
