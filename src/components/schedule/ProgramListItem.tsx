@@ -40,8 +40,8 @@ export function ProgramListItem({
       <div className="flex items-center justify-between gap-3 text-xs tabular-nums text-zinc-500 dark:text-zinc-400">
         <span className="font-mono">
   {isToday
-    ? `Today at ${formatTimeRange(program.start, program.end)}`
-    : `${formatHumanDate(program.date, program.arena.timezone)} · ${formatTimeRange(program.start, program.end)}`}
+    ? `Today·${formatTimeRange(program.start, program.end)}`
+    : `${formatHumanDate(program.date, program.arena.timezone)}·${formatTimeRange(program.start, program.end)}`}
 </span>
       </div>
       <div className="flex items-baseline justify-between gap-3">
@@ -51,10 +51,10 @@ export function ProgramListItem({
       </div>
       <div className="flex items-center justify-between gap-3 text-xs text-zinc-500 dark:text-zinc-400">
         <span className="min-w-0 truncate">
-          {arena.name}
+          {arena.name}&nbsp;·
           {distance !== null && (
             <span className="ml-1 text-zinc-400">
-              · {distance < 10 ? distance.toFixed(1) : Math.round(distance)} km
+              {distance < 10 ? distance.toFixed(1) : Math.round(distance)} km
             </span>
           )}
         </span>

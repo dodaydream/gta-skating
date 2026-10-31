@@ -1,0 +1,100 @@
+{
+  "name": "Elgin Barrow Arena",
+  "url": "https://www.richmondhill.ca/en/online-services/Arenas.aspx",
+  "timezone": "America/Toronto",
+  "address": "43 Church Street South, Richmond Hill, ON L4C 1W1",
+  "coordinates": {
+    "lat": 43.874834,
+    "lon": -79.436087
+  },
+  "schedule": {
+    "updatedAt": "2026-10-31T17:51:48.032Z",
+    "events": [
+      {
+        "date": "2026-10-31",
+        "programs": [
+          {
+            "id": "public-skate-saturday-19-15",
+            "start": "19:15",
+            "end": "20:45",
+            "name": "Public Skate"
+          },
+          {
+            "id": "shinny-saturday-20-45",
+            "start": "20:45",
+            "end": "22:15",
+            "name": "Shinny"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-07",
+        "programs": [
+          {
+            "id": "public-skate-saturday-19-15",
+            "start": "19:15",
+            "end": "20:45",
+            "name": "Public Skate"
+          },
+          {
+            "id": "shinny-saturday-20-45",
+            "start": "20:45",
+            "end": "22:15",
+            "name": "Shinny"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-14",
+        "programs": [
+          {
+            "id": "public-skate-saturday-19-15",
+            "start": "19:15",
+            "end": "20:45",
+            "name": "Public Skate"
+          },
+          {
+            "id": "shinny-saturday-20-45",
+            "start": "20:45",
+            "end": "22:15",
+            "name": "Shinny"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-21",
+        "programs": [
+          {
+            "id": "public-skate-saturday-19-15",
+            "start": "19:15",
+            "end": "20:45",
+            "name": "Public Skate"
+          },
+          {
+            "id": "shinny-saturday-20-45",
+            "start": "20:45",
+            "end": "22:15",
+            "name": "Shinny"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-28",
+        "programs": [
+          {
+            "id": "public-skate-saturday-19-15",
+            "start": "19:15",
+            "end": "20:45",
+            "name": "Public Skate"
+          },
+          {
+            "id": "shinny-saturday-20-45",
+            "start": "20:45",
+            "end": "22:15",
+            "name": "Shinny"
+          }
+        ]
+      }
+    ]
+  }
+}

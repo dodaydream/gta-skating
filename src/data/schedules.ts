@@ -10,6 +10,7 @@ import amesbury from "./amesbury-sports-complex.json";
 import angelaJames from "./angela-james.json";
 import baycrest from "./baycrest.json";
 import bayview from "./bayview.json";
+import bondLake from "./bond-lake-arena.json";
 import centennialEtobicoke from "./centennial-park-etobicoke.json";
 import centennialScarborough from "./centennial-scarborough.json";
 import central from "./central.json";
@@ -20,6 +21,8 @@ import donMillsCivitan from "./don-mills-civitan.json";
 import donMontgomery from "./don-montgomery.json";
 import downsview from "./downsview.json";
 import eastYorkMemorial from "./east-york-memorial.json";
+import edSackfield from "./ed-sackfield-arena.json";
+import elginBarrow from "./elgin-barrow-arena.json";
 import fenside from "./fenside.json";
 import gordAndIreneRisk from "./gord-and-irene-risk.json";
 import goulding from "./goulding.json";
@@ -141,7 +144,7 @@ export function formatDuration(start: string, end: string): string {
   return `${hours}h ${minutes}m`;
 }
 
-function toMinutes(time: string): number {
+export function toMinutes(time: string): number {
   const [h, m] = time.split(":").map(Number);
   return h * 60 + m;
 }

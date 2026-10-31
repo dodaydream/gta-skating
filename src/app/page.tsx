@@ -4,7 +4,9 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import type { Arena } from "@/types/arena";
 import type { ProgramItem } from "@/types/schedule";
 import dynamic from "next/dynamic";
-import { DateFilter } from "@/components/ui/DateFilter";
+import { IconLocation } from "@tabler/icons-react";
+import { Button } from "@/components/ui/button";
+import { FilterChips } from "@/components/ui/DateFilter";
 import { ScheduleSidebar } from "@/components/ui/ScheduleSidebar";
 
 const ArenaMap = dynamic(() => import("@/components/map/ArenaMap"), {
@@ -63,12 +65,12 @@ export default function Home() {
   }, []);
 
   useEffect(() => {
+    if (!fromDate || !toDate) return;
     const params = new URLSearchParams();
-    if (fromDate) params.set("from", fromDate);
-    if (toDate) params.set("to", toDate);
+    params.set("from", fromDate);
+    params.set("to", toDate);
     if (hideEmpty) params.set("hideEmpty", "1");
-    const qs = params.toString();
-    fetch(`/api/arenas${qs ? `?${qs}` : ""}`)
+    fetch(`/api/arenas?${params.toString()}`)
       .then((r) => r.json())
       .then((data: ProgramItem[]) => {
         setItems(data);
@@ -106,28 +108,17 @@ export default function Home() {
             onSelect={handleSelect}
           />
 
-          <div className="absolute left-0 right-0 top-3 z-[1000] flex items-start px-4 sm:left-4 sm:right-auto sm:px-0">
-            <button
-              className="flex items-center justify-center rounded-l-lg bg-black/70 px-2.5 py-2.5 text-white shadow-lg hover:bg-black/80"
+          <div className="absolute left-0 right-0 top-3 z-[1000] flex items-start gap-2 px-4">
+            <Button
+              variant="secondary"
+              size="icon"
+              className="shadow-xs"
               onClick={() => locateRef.current?.()}
               title="Centre on your location"
             >
-              <svg
-                className="h-4 w-4"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth={2}
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <circle cx="12" cy="12" r="10" />
-                <circle cx="12" cy="12" r="1.5" fill="currentColor" />
-                <path d="M12 2v4M12 18v4M2 12h4M18 12h4" />
-              </svg>
-            </button>
-            <DateFilter
-              className="rounded-r-lg"
+              <IconLocation className="size-4" />
+            </Button>
+            <FilterChips
               from={fromDate}
               to={toDate}
               onFromChange={setFromDate}
@@ -137,6 +128,8 @@ export default function Home() {
                 setFromDate(f);
                 setToDate(t);
               }}
+              hideEmpty={hideEmpty}
+              onHideEmptyChange={setHideEmpty}
             />
           </div>
           <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-transparent" />

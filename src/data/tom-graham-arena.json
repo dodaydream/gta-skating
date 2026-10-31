@@ -1,0 +1,138 @@
+{
+  "name": "Tom Graham Arena",
+  "url": "https://www.richmondhill.ca/en/online-services/Arenas.aspx",
+  "timezone": "America/Toronto",
+  "address": "1300 Elgin Mills Road East, Richmond Hill, ON L4S 1M5",
+  "coordinates": {
+    "lat": 43.898905,
+    "lon": -79.402495
+  },
+  "schedule": {
+    "updatedAt": "2026-10-31T17:51:48.032Z",
+    "events": [
+      {
+        "date": "2026-11-01",
+        "programs": [
+          {
+            "id": "public-skate-sunday-14-30",
+            "start": "14:30",
+            "end": "16:00",
+            "name": "Public Skate"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-06",
+        "programs": [
+          {
+            "id": "public-skate-friday-19-00",
+            "start": "19:00",
+            "end": "20:30",
+            "name": "Public Skate"
+          },
+          {
+            "id": "ringette-friday-20-30",
+            "start": "20:30",
+            "end": "21:30",
+            "name": "Ringette"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-08",
+        "programs": [
+          {
+            "id": "public-skate-sunday-14-30",
+            "start": "14:30",
+            "end": "16:00",
+            "name": "Public Skate"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-13",
+        "programs": [
+          {
+            "id": "public-skate-friday-19-00",
+            "start": "19:00",
+            "end": "20:30",
+            "name": "Public Skate"
+          },
+          {
+            "id": "ringette-friday-20-30",
+            "start": "20:30",
+            "end": "21:30",
+            "name": "Ringette"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-15",
+        "programs": [
+          {
+            "id": "public-skate-sunday-14-30",
+            "start": "14:30",
+            "end": "16:00",
+            "name": "Public Skate"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-20",
+        "programs": [
+          {
+            "id": "public-skate-friday-19-00",
+            "start": "19:00",
+            "end": "20:30",
+            "name": "Public Skate"
+          },
+          {
+            "id": "ringette-friday-20-30",
+            "start": "20:30",
+            "end": "21:30",
+            "name": "Ringette"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-22",
+        "programs": [
+          {
+            "id": "public-skate-sunday-14-30",
+            "start": "14:30",
+            "end": "16:00",
+            "name": "Public Skate"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-27",
+        "programs": [
+          {
+            "id": "public-skate-friday-19-00",
+            "start": "19:00",
+            "end": "20:30",
+            "name": "Public Skate"
+          },
+          {
+            "id": "ringette-friday-20-30",
+            "start": "20:30",
+            "end": "21:30",
+            "name": "Ringette"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-29",
+        "programs": [
+          {
+            "id": "public-skate-sunday-14-30",
+            "start": "14:30",
+            "end": "16:00",
+            "name": "Public Skate"
+          }
+        ]
+      }
+    ]
+  }
+}

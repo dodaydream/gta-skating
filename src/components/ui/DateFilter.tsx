@@ -1,156 +1,204 @@
 "use client";
 
 import { useState } from "react";
+import { Calendar } from "@/components/ui/calendar";
+import { Button } from "@/components/ui/button";
+import { IconCalendarWeek, IconCalendar } from "@tabler/icons-react";
 
-interface DateFilterProps {
+interface FilterChipsProps {
   from: string;
   to: string;
   onFromChange: (v: string) => void;
   onToChange: (v: string) => void;
   onClear: () => void;
+  hideEmpty: boolean;
+  onHideEmptyChange: (v: boolean) => void;
   className?: string;
 }
 
-function toLocalInput(value: string): string {
-  if (!value) return "";
-  // "YYYY-MM-DD" -> "YYYY-MM-DDT00:00"
-  return value.length === 10 ? `${value}T00:00` : value;
+function parseDate(value: string): Date | undefined {
+  if (!value) return undefined;
+  const d = new Date(value);
+  return isNaN(d.getTime()) ? undefined : d;
+}
+
+function todayLocalISO(): string {
+  const d = new Date();
+  const y = d.getFullYear();
+  const m = String(d.getMonth() + 1).padStart(2, "0");
+  const day = String(d.getDate()).padStart(2, "0");
+  const h = String(d.getHours()).padStart(2, "0");
+  const min = String(d.getMinutes()).padStart(2, "0");
+  return `${y}-${m}-${day}T${h}:${min}`;
 }
 
 function displayLabel(from: string, to: string): string {
+  const todayStr = new Date().toISOString().slice(0, 10);
   const isTodayNow =
     !!from &&
     !!to &&
-    from.slice(0, 10) === todayLocal() &&
-    from.slice(11, 16) === nowLocal() &&
+    from.slice(0, 10) === todayStr &&
+    from.slice(11, 16) ===
+      new Date()
+        .toLocaleTimeString("en-CA", { hour: "2-digit", minute: "2-digit", hour12: false })
+        .slice(0, 5) &&
     to.slice(11, 16) === "23:59";
-  if (isTodayNow) return "Today · Now";
-  if (from && to) {
-    const same = from.slice(0, 10) === to.slice(0, 10);
-    if (same) return from.slice(0, 10);
-    return `${from.slice(5, 10)} → ${to.slice(5, 10)}`;
-  }
+  if (isTodayNow) return "Now";
+  if (from && to && from.slice(0, 10) === to.slice(0, 10)) return from.slice(5, 10);
+  if (from && to) return `${from.slice(5, 10)} - ${to.slice(5, 10)}`;
   if (from) return `From ${from.slice(5, 10)}`;
   if (to) return `Until ${to.slice(5, 10)}`;
-  return "Today";
+  return "Anytime";
 }
 
-function todayLocal(): string {
-  const now = new Date();
-  const y = now.getFullYear();
-  const m = String(now.getMonth() + 1).padStart(2, "0");
-  const d = String(now.getDate()).padStart(2, "0");
-  return `${y}-${m}-${d}`;
-}
-
-function nowLocal(): string {
-  const now = new Date();
-  const h = String(now.getHours()).padStart(2, "0");
-  const min = String(now.getMinutes()).padStart(2, "0");
-  return `${h}:${min}`;
-}
-
-export function DateFilter({
+export function FilterChips({
   from,
   to,
   onFromChange,
   onToChange,
   onClear,
+  hideEmpty,
+  onHideEmptyChange,
   className = "",
-}: DateFilterProps) {
+}: FilterChipsProps) {
   const [open, setOpen] = useState(false);
+  const [picker, setPicker] = useState<"from" | "to">("from");
   const active = Boolean(from || to);
 
-  const handleOpen = () => {
-    if (!open) {
-      setOpen(true);
-      if (!from && !to) {
-        const today = todayLocal();
-        onFromChange(`${today}T00:00`);
-        onToChange(`${today}T23:59`);
-      }
+  const fromDate = parseDate(from);
+  const toDate = parseDate(to);
+
+  const handleSelect = (date: Date | undefined) => {
+    if (!date) return;
+    const dateStr = date.toISOString().slice(0, 10);
+    if (picker === "from") {
+      const preservedTime = from ? from.slice(11, 16) : "00:00";
+      onFromChange(`${dateStr}T${preservedTime}`);
+      setPicker("to");
     } else {
-      setOpen(false);
+      const preservedTime = to ? to.slice(11, 16) : "23:59";
+      onToChange(`${dateStr}T${preservedTime}`);
     }
   };
 
   return (
-    <div className={`bg-black/70 text-white shadow-lg ${className}`}>
-      <button
-        className="flex items-center gap-2 px-3 py-2 text-sm font-medium"
-        onClick={handleOpen}
-        aria-expanded={open}
+    <div className={`flex items-start gap-2 ${className}`}>
+      <Button
+        variant="secondary"
+        size="default"
+        className="shadow-xs"
+        onClick={() => setOpen(!open)}
       >
-        <svg
-          className="h-4 w-4 shrink-0 opacity-80"
-          viewBox="0 0 20 20"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth={1.5}
-        >
-          <rect x="3" y="4" width="14" height="14" rx="2" />
-          <path d="M3 8h14M7 2v4M13 2v4" strokeLinecap="round" />
-        </svg>
+        {active ? (
+          <IconCalendarWeek className="size-4 text-blue-500" />
+        ) : (
+          <IconCalendar className="size-4" />
+        )}
         <span>{displayLabel(from, to)}</span>
-        {active && <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-blue-400" />}
-        <svg
-          className={`h-4 w-4 shrink-0 opacity-80 transition-transform ${open ? "rotate-180" : ""}`}
-          viewBox="0 0 20 20"
-          fill="none"
-        >
-          <path d="M5 8l5 5 5-5" fill="none" stroke="currentColor" strokeWidth={1.5} strokeLinecap="round" strokeLinejoin="round" />
-        </svg>
-      </button>
+        {active && <span className="ml-0.5 size-1.5 rounded-full bg-blue-500" />}
+      </Button>
+
+      <Button
+        variant={hideEmpty ? "default" : "secondary"}
+        size="default"
+        className="shadow-xs"
+        onClick={() => onHideEmptyChange(!hideEmpty)}
+      >
+        Programs
+      </Button>
 
       {open && (
-        <div className="flex flex-col gap-2 border-t border-white/10 p-3">
-          <DateInput label="From" value={toLocalInput(from)} onChange={onFromChange} />
-          <DateInput label="To" value={toLocalInput(to)} onChange={onToChange} />
-          <div className="flex gap-2">
-            {active && (
+        <div className="absolute left-0 right-0 top-11 z-50 mx-auto w-fit sm:left-4 sm:right-auto sm:mx-0">
+          <div className="overflow-hidden rounded-xl bg-popover shadow-xl ring-1 ring-foreground/10">
+            <div className="flex gap-1 px-3 pt-2 pb-1">
               <button
-                className="rounded-md bg-white/15 px-2.5 py-1 text-xs font-medium text-white hover:bg-white/25"
-                onClick={onClear}
+                className={`rounded-md px-2.5 py-1 text-xs font-medium transition-colors ${
+                  picker === "from"
+                    ? "bg-primary/20 text-primary"
+                    : "text-muted-foreground hover:text-foreground"
+                }`}
+                onClick={() => setPicker("from")}
               >
-                Clear
+                From
               </button>
-            )}
-            <button
-              className="rounded-md bg-white/15 px-2.5 py-1 text-xs font-medium text-white hover:bg-white/25"
-              onClick={() => {
-                const today = todayLocal();
-                const nowHm = nowLocal();
-                onFromChange(`${today}T${nowHm}`);
-                onToChange(`${today}T23:59`);
-              }}
-            >
-              Today
-            </button>
+              <button
+                className={`rounded-md px-2.5 py-1 text-xs font-medium transition-colors ${
+                  picker === "to"
+                    ? "bg-primary/20 text-primary"
+                    : "text-muted-foreground hover:text-foreground"
+                }`}
+                onClick={() => setPicker("to")}
+              >
+                To
+              </button>
+            </div>
+
+            <Calendar
+              mode="single"
+              selected={picker === "from" ? fromDate : toDate}
+              onSelect={handleSelect}
+              autoFocus
+            />
+
+            <div className="flex items-center gap-2 border-t px-3 py-2">
+              <div className="flex flex-1 items-center gap-1">
+                <label className="w-8 shrink-0 text-[11px] text-muted-foreground">
+                  {picker === "from" ? "From" : "To"}
+                </label>
+                <input
+                  type="time"
+                  value={
+                    picker === "from"
+                      ? from?.slice(11, 16) ?? "00:00"
+                      : to?.slice(11, 16) ?? "23:59"
+                  }
+                  onChange={(e) => {
+                    const time = e.target.value;
+                    const dateStr =
+                      picker === "from"
+                        ? from?.slice(0, 10) ?? todayLocalISO().slice(0, 10)
+                        : to?.slice(0, 10) ?? todayLocalISO().slice(0, 10);
+                    const newVal = `${dateStr}T${time}`;
+                    if (picker === "from") {
+                      onFromChange(newVal);
+                    } else {
+                      onToChange(newVal);
+                    }
+                  }}
+                  className="w-full rounded-md border border-input bg-background px-2 py-1 text-xs [color-scheme:dark]"
+                />
+              </div>
+            </div>
+
+            <div className="flex gap-2 border-t px-3 py-2">
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={() => {
+                  const now = todayLocalISO();
+                  onFromChange(now);
+                  onToChange(`${now.slice(0, 10)}T23:59`);
+                  setOpen(false);
+                }}
+              >
+                Today
+              </Button>
+              {active && (
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={() => {
+                    onClear();
+                    setOpen(false);
+                  }}
+                >
+                  Clear
+                </Button>
+              )}
+            </div>
           </div>
         </div>
       )}
     </div>
-  );
-}
-
-function DateInput({
-  label,
-  value,
-  onChange,
-}: {
-  label: string;
-  value: string;
-  onChange: (v: string) => void;
-}) {
-  return (
-    <label className="flex items-center gap-2 text-xs text-white/70">
-      <span className="w-8 shrink-0">{label}</span>
-      <input
-        type="datetime-local"
-        value={value}
-        onChange={(e) => onChange(e.target.value)}
-        className="w-full rounded-md border border-white/20 bg-black/40 px-2 py-1 text-sm text-white [color-scheme:dark]"
-      />
-    </label>
   );
 }

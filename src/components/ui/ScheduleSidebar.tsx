@@ -81,14 +81,6 @@ export function ScheduleSidebar({
               {items.length} program{items.length === 1 ? "" : "s"} found
             </span>
           </div>
-          <label className="flex items-center gap-2 text-xs text-zinc-500 dark:text-zinc-400">
-            Programs only
-            <Switch
-              checked={hideEmpty}
-              onCheckedChange={onHideEmptyChange}
-              size="sm"
-            />
-          </label>
         </div>
 
         <div className="flex flex-col gap-2">

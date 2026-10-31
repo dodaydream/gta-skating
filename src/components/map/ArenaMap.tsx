@@ -1,8 +1,12 @@
 "use client";
 
-import { useEffect, useRef } from "react";
-import L from "leaflet";
-import "leaflet/dist/leaflet.css";
+import { useEffect, useRef, useState } from "react";
+import * as maplibregl from "maplibre-gl";
+import "maplibre-gl/dist/maplibre-gl.css";
+
+if (typeof window !== "undefined") {
+  maplibregl.setWorkerUrl("/maplibre-gl-worker.mjs");
+}
 import type { Arena } from "@/types/arena";
 
 interface ArenaMapProps {
@@ -12,26 +16,29 @@ interface ArenaMapProps {
   locateRef: React.MutableRefObject<(() => void) | null>;
 }
 
-const TILE_URL =
-  "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png";
-const TILE_ATTRIBUTION =
-  '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors';
+const LIGHT_STYLE = "https://tiles.openfreemap.org/styles/liberty";
+const DARK_STYLE = "https://tiles.openfreemap.org/styles/dark";
 
 const DEFAULT_ZOOM = 12;
-const TORONTO: [number, number] = [43.725518, -79.390531];
+const TORONTO: [number, number] = [-79.390531, 43.725518];
 
-function pinIcon(selected: boolean): L.DivIcon {
-  return L.divIcon({
-    className: "",
-    html: `<div style="
-      width: 20px; height: 20px;
-      border-radius: 50% 50% 50% 0; transform: rotate(-45deg);
-      background: ${selected ? "#2563eb" : "#ef4444"};
-      border: 2px solid #fff; box-shadow: 0 1px 4px rgba(0,0,0,.4);
-    "></div>`,
-    iconSize: [20, 20],
-    iconAnchor: [10, 20],
-  });
+function createMarkerElement(selected: boolean): HTMLDivElement {
+  const el = document.createElement("div");
+  el.innerHTML = `<div style="
+    width:20px;height:20px;
+    border-radius:50% 50% 50% 0;transform:rotate(-45deg);
+    background:${selected ? "#2563eb" : "#ef4444"};
+    border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.4);cursor:pointer;
+  "></div>`;
+  return el;
+}
+
+function isDarkMode(): boolean {
+  if (typeof document === "undefined") return false;
+  return (
+    document.documentElement.classList.contains("dark") ||
+    window.matchMedia("(prefers-color-scheme: dark)").matches
+  );
 }
 
 export default function ArenaMap({
@@ -41,43 +48,84 @@ export default function ArenaMap({
   locateRef,
 }: ArenaMapProps) {
   const containerRef = useRef<HTMLDivElement>(null);
-  const mapRef = useRef<L.Map | null>(null);
-  const markersRef = useRef<L.Marker[]>([]);
+  const mapRef = useRef<maplibregl.Map | null>(null);
+  const markersRef = useRef<maplibregl.Marker[]>([]);
+  const [dark, setDark] = useState(false);
+
+  const arenasRef = useRef(arenas);
+  arenasRef.current = arenas;
+  const onSelectRef = useRef(onSelect);
+  onSelectRef.current = onSelect;
+
+  const syncMarkers = useRef(() => {});
+  syncMarkers.current = () => {
+    const map = mapRef.current;
+    if (!map) return;
+
+    markersRef.current.forEach((m) => m.remove());
+    markersRef.current = [];
+
+    arenasRef.current.forEach((arena, i) => {
+      const { lat, lon } = arena.coordinates ?? {};
+      if (!isFinite(lat) || !isFinite(lon)) return;
+
+      const el = createMarkerElement(i === selectedIndex);
+      el.addEventListener("click", () => onSelectRef.current(i));
+
+      const marker = new maplibregl.Marker({ element: el })
+        .setLngLat([lon, lat])
+        .addTo(map);
+      markersRef.current.push(marker);
+    });
+  };
+
+  const updateSelected = useRef(() => {});
+  updateSelected.current = () => {
+    markersRef.current.forEach((m, i) => {
+      const inner = m.getElement().firstElementChild as HTMLElement | null;
+      if (inner) {
+        inner.style.background = i === selectedIndex ? "#2563eb" : "#ef4444";
+      }
+    });
+    if (selectedIndex !== null && markersRef.current[selectedIndex]) {
+      const m = markersRef.current[selectedIndex];
+      mapRef.current?.flyTo({ center: m.getLngLat(), duration: 400 });
+    }
+  };
 
   useEffect(() => {
     if (!containerRef.current) return;
 
-    const map = L.map(containerRef.current, {
+    const map = new maplibregl.Map({
+      container: containerRef.current,
+      style: dark ? DARK_STYLE : LIGHT_STYLE,
       center: TORONTO,
       zoom: DEFAULT_ZOOM,
-      zoomControl: false,
     });
-    L.control.zoom({ position: "topright" }).addTo(map);
-    L.control.scale({
-      position: "bottomright",
-      metric: true,
-      imperial: false,
-    }).addTo(map);
-    L.tileLayer(TILE_URL, {
-      attribution: TILE_ATTRIBUTION,
-      maxZoom: 20,
-    }).addTo(map);
 
-    mapRef.current = map;
+    map.addControl(new maplibregl.NavigationControl(), "top-right");
+    map.addControl(
+      new maplibregl.ScaleControl({ unit: "metric", maxWidth: 120 }),
+      "bottom-right",
+    );
 
     locateRef.current = () => {
       if (!("geolocation" in navigator)) return;
       navigator.geolocation.getCurrentPosition(
         (pos) => {
-          map.setView(
-            [pos.coords.latitude, pos.coords.longitude],
-            DEFAULT_ZOOM
-          );
+          map.flyTo({
+            center: [pos.coords.longitude, pos.coords.latitude],
+            zoom: DEFAULT_ZOOM,
+          });
         },
         () => {},
-        { timeout: 10000, enableHighAccuracy: false }
+        { timeout: 10000, enableHighAccuracy: false },
       );
     };
+
+    map.on("load", () => syncMarkers.current?.());
+
+    mapRef.current = map;
 
     return () => {
       map.remove();
@@ -85,35 +133,42 @@ export default function ArenaMap({
       markersRef.current = [];
       locateRef.current = null;
     };
-  }, [locateRef]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  useEffect(() => {
+    const mq = window.matchMedia("(prefers-color-scheme: dark)");
+    const observer = new MutationObserver(() => setDark(isDarkMode()));
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ["class"],
+    });
+    mq.addEventListener("change", () => setDark(isDarkMode()));
+    setDark(isDarkMode());
+
+    return () => {
+      observer.disconnect();
+      mq.removeEventListener("change", () => setDark(isDarkMode()));
+    };
+  }, []);
 
   useEffect(() => {
     const map = mapRef.current;
     if (!map) return;
 
-    markersRef.current.forEach((m) => map.removeLayer(m));
-    markersRef.current = arenas
-      .map((arena, i) => {
-        const { lat, lon } = arena.coordinates ?? {};
-        if (!isFinite(lat) || !isFinite(lon)) return null;
-        const marker = L.marker([lat, lon], {
-          icon: pinIcon(false),
-          title: arena.name,
-        }).addTo(map);
-        marker.on("click", () => onSelect(i));
-        return marker;
-      })
-      .filter(Boolean) as L.Marker[];
-  }, [arenas, onSelect]);
+    map.setStyle(dark ? DARK_STYLE : LIGHT_STYLE);
+    map.once("style.load", () => syncMarkers.current?.());
+  }, [dark]);
 
   useEffect(() => {
-    markersRef.current.forEach((marker, i) => {
-      marker.setIcon(pinIcon(i === selectedIndex));
-      if (i === selectedIndex && mapRef.current) {
-        mapRef.current.panTo(marker.getLatLng());
-      }
-    });
+    updateSelected.current?.();
   }, [selectedIndex]);
+
+  useEffect(() => {
+    if (mapRef.current?.loaded()) {
+      syncMarkers.current?.();
+    }
+  }, [arenas]);
 
   return <div ref={containerRef} className="h-full w-full" />;
 }
