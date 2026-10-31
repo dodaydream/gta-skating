@@ -22,14 +22,18 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      # Corepack must be enabled before setup-node: with `cache: yarn` the
+      # action resolves the yarn cache by invoking `yarn` from PATH, and the
+      # runner's pre-installed Yarn 1.x refuses to run against a project
+      # declaring a `packageManager` field.
+      - name: Enable Corepack
+        run: corepack enable
+
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
           node-version: 24
           cache: yarn
-
-      - name: Enable Corepack
-        run: corepack enable
 
       - name: Install dependencies
         run: yarn install --immutable
