@@ -67,11 +67,11 @@ export function ArenaDetailModal({
           ref={weekBodyRef}
           className="flex flex-1 flex-col gap-5 overflow-y-auto px-5"
         >
-          {events.length === 0 ? (
-            <p className="text-sm text-zinc-500">No upcoming sessions.</p>
-          ) : view === "day" ? (
+{view === "day" ? (
             <ListView events={events} timezone={arena.timezone} />
-) : (
+          ) : events.length === 0 ? (
+            <p className="text-sm text-zinc-500">No upcoming sessions.</p>
+          ) : (
             <WeekView events={events} bodyRef={weekBodyRef} />
           )}
         </div>

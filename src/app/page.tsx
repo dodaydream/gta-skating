@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button";
 import { FilterChips } from "@/components/ui/DateFilter";
 import { ScheduleSidebar } from "@/components/ui/ScheduleSidebar";
 import { ArenaDetailModal } from "@/components/schedule/ArenaDetailModal";
+import { getTodayInArenaTime } from "@/data/schedules";
 
 const ArenaMap = dynamic(() => import("@/components/map/ArenaMap"), {
   ssr: false,
@@ -86,7 +87,16 @@ export default function Home() {
     for (const item of items) {
       if (seen.has(item.arena.name)) continue;
       seen.add(item.arena.name);
-      list.push(item.arena);
+      const today = getTodayInArenaTime(item.arena.timezone);
+      list.push({
+        ...item.arena,
+        schedule: {
+          ...item.arena.schedule,
+          events: item.arena.schedule.events.filter(
+            (e) => e.date >= today
+          ),
+        },
+      });
     }
     return list;
   }, [items]);
