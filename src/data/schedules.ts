@@ -45,6 +45,7 @@ import pleasantview from "./pleasantview.json";
 import roding from "./roding.json";
 import scarboroughGardens from "./scarborough-gardens.json";
 import scarboroughVillage from "./scarborough-village.json";
+import tomGraham from "./tom-graham-arena.json";
 import victoriaVillage from "./victoria-village.json";
 import yorkMills from "./york-mills.json";
 
@@ -57,6 +58,7 @@ export const arenas: Arena[] = [
   angelaJames as Arena,
   baycrest as Arena,
   bayview as Arena,
+  bondLake as Arena,
   centennialEtobicoke as Arena,
   centennialScarborough as Arena,
   central as Arena,
@@ -67,6 +69,8 @@ export const arenas: Arena[] = [
   donMontgomery as Arena,
   downsview as Arena,
   eastYorkMemorial as Arena,
+  edSackfield as Arena,
+  elginBarrow as Arena,
   fenside as Arena,
   gordAndIreneRisk as Arena,
   goulding as Arena,
@@ -89,6 +93,7 @@ export const arenas: Arena[] = [
   roding as Arena,
   scarboroughGardens as Arena,
   scarboroughVillage as Arena,
+  tomGraham as Arena,
   victoriaVillage as Arena,
   yorkMills as Arena,
 ];
