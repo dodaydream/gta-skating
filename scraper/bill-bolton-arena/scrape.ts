@@ -61,6 +61,9 @@ const STAT_HOLIDAYS = new Set<string>([
 /** Recurring programs run weekly from their start date through season end. */
 const SEASON = { start: "2026-09-28", end: "2027-03-31" };
 
+/** Only generate events from today through this date (N months ahead). */
+const WINDOW_MONTHS = 1;
+
 const DAYS: DayName[] = [
   "sunday",
   "monday",
@@ -233,19 +236,27 @@ function dateStr(d: Date): string {
   ).padStart(2, "0")}`;
 }
 
-/** Expand a weekly program into explicit dated occurrences. */
+/** Expand a weekly program into explicit dated occurrences within the window. */
 function expandWeekly(program: RawProgram): string[] {
-  const start = new Date(`${program.start}T12:00:00Z`);
-  const end = new Date(`${SEASON.end}T12:00:00Z`);
-  const targetIdx = DAYS.indexOf(program.day);
+  const today = new Date();
+  today.setUTCHours(12, 0, 0, 0);
+  const windowEnd = new Date(today);
+  windowEnd.setUTCMonth(windowEnd.getUTCMonth() + WINDOW_MONTHS);
 
+  let start = new Date(`${program.start}T12:00:00Z`);
+  const end = new Date(`${SEASON.end}T12:00:00Z`);
+
+  if (start < today) start = today;
+  const effectiveEnd = end < windowEnd ? end : windowEnd;
+
+  const targetIdx = DAYS.indexOf(program.day);
   const out: string[] = [];
   const cursor = new Date(start);
   if (cursor.getUTCDay() !== targetIdx) {
     const delta = (targetIdx - cursor.getUTCDay() + 7) % 7;
     cursor.setUTCDate(cursor.getUTCDate() + delta);
   }
-  for (; cursor <= end; cursor.setUTCDate(cursor.getUTCDate() + 7)) {
+  for (; cursor <= effectiveEnd; cursor.setUTCDate(cursor.getUTCDate() + 7)) {
     const ds = dateStr(cursor);
     if (STAT_HOLIDAYS.has(ds)) continue;
     out.push(ds);
