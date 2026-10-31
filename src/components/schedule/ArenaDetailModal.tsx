@@ -351,13 +351,13 @@ function WeekView({
         </button>
       </div>
 
-      <div className="min-w-0 flex-1 overflow-auto" style={{ maxHeight: "55vh" }}>
-        <div className="flex">
-          <div className="w-10 flex-shrink-0 border-b border-black/[.08] dark:border-white/[.1]" />
+      <div className="week-calendar min-w-0 flex-1 overflow-auto" style={{ maxHeight: "55vh" }}>
+        <div className="week-calendar__header grid grid-cols-subgrid col-span-full">
+          <div className="border-b border-black/[.08] dark:border-white/[.1]" />
           {columns.map((col) => (
             <div
               key={col.key}
-              className="min-w-0 flex-1 border-b border-black/[.08] px-1 pb-2 text-center text-xs font-medium text-zinc-700 dark:border-white/[.1] dark:text-zinc-300"
+              className="border-b border-black/[.08] px-1 pb-2 text-center text-xs font-medium text-zinc-700 dark:border-white/[.1] dark:text-zinc-300"
             >
               {WEEKDAY_LABELS[dayjs(`${col.date}T00:00`).day()]}
               <br />
@@ -368,8 +368,8 @@ function WeekView({
           ))}
         </div>
 
-        <div className="flex" style={{ height: Math.max(timelineHeight, 300) }}>
-          <div className="relative w-10 flex-shrink-0">
+        <div className="grid grid-cols-subgrid col-span-full" style={{ height: Math.max(timelineHeight, 300) }}>
+          <div className="relative">
             {hourPositions.map(({ hour, pct }) => (
               <div
                 key={hour}
@@ -384,7 +384,7 @@ function WeekView({
           {columns.map((col, ci) => (
             <div
               key={col.key}
-              className={`relative min-w-0 flex-1 ${
+              className={`relative overflow-hidden ${
                 ci > 0 ? "border-l border-black/[.04] dark:border-white/[.06]" : ""
               }`}
             >

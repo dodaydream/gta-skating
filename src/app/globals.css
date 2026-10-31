@@ -164,3 +164,14 @@
     @apply font-sans;
   }
 }
+
+@layer components {
+  .week-calendar {
+    display: grid;
+    grid-template-columns: 2.5rem repeat(7, 1fr);
+  }
+
+  .week-calendar__header {
+    @apply sticky top-0 z-10 bg-background;
+  }
+}
