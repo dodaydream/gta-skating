@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Calendar } from "@/components/ui/calendar";
 import { Button } from "@/components/ui/button";
 import { IconCalendarWeek, IconCalendar } from "@tabler/icons-react";
@@ -32,14 +32,15 @@ function todayLocalISO(): string {
   return `${y}-${m}-${day}T${h}:${min}`;
 }
 
-function displayLabel(from: string, to: string): string {
-  const todayStr = new Date().toISOString().slice(0, 10);
+function displayLabel(from: string, to: string, now: Date | null): string {
+  const todayStr = now?.toISOString().slice(0, 10);
   const isTodayNow =
+    !!now &&
     !!from &&
     !!to &&
     from.slice(0, 10) === todayStr &&
     from.slice(11, 16) ===
-      new Date()
+      now
         .toLocaleTimeString("en-CA", { hour: "2-digit", minute: "2-digit", hour12: false })
         .slice(0, 5) &&
     to.slice(11, 16) === "23:59";
@@ -63,7 +64,13 @@ export function FilterChips({
 }: FilterChipsProps) {
   const [open, setOpen] = useState(false);
   const [picker, setPicker] = useState<"from" | "to">("from");
+  const [now, setNow] = useState<Date | null>(null);
   const active = Boolean(from || to);
+
+  useEffect(() => {
+    const id = setTimeout(() => setNow(new Date()), 0);
+    return () => clearTimeout(id);
+  }, []);
 
   const fromDate = parseDate(from);
   const toDate = parseDate(to);
@@ -94,7 +101,7 @@ export function FilterChips({
         ) : (
           <IconCalendar className="size-4" />
         )}
-        <span>{displayLabel(from, to)}</span>
+        <span>{displayLabel(from, to, now)}</span>
         {active && <span className="ml-0.5 size-1.5 rounded-full bg-blue-500" />}
       </Button>
 
