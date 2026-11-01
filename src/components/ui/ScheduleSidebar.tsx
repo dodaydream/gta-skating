@@ -110,7 +110,7 @@ export function ScheduleSidebar({
     <>
       {/* Desktop static sidebar */}
       <aside className="hidden flex-col border-t border-black/[.08] bg-card dark:border-white/[.145] lg:static lg:flex lg:w-96 lg:shrink-0 lg:border-t-0">
-        <div className="min-h-0 flex-1 overflow-y-auto px-6 pt-8 pb-8">
+        <div className="min-h-0 flex-1 overflow-y-auto px-6 pt-10 pb-8">
           <div className="mb-4 flex flex-col">
             <h1 className="text-2xl font-semibold tracking-tight text-black dark:text-zinc-50">
               GTA Skating Arenas
@@ -148,7 +148,7 @@ export function ScheduleSidebar({
         <DrawerContent
           className="border-black/[.08] dark:border-white/[.145] lg:hidden"
           header={
-            <div className="flex flex-col px-6 pb-4 pt-4">
+            <div className="flex flex-col px-6 pb-4 pt-6">
               <DrawerTitle className="text-xl font-semibold tracking-tight">
                 GTA Skating Arenas
               </DrawerTitle>

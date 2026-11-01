@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   appleWebApp: {
     capable: true,
     title: "GTA Skating",
-    statusBarStyle: "black-translucent",
+    statusBarStyle: "default",
   },
   icons: {
     apple: [
@@ -82,9 +82,13 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-screen overflow-hidden antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} h-dvh overflow-hidden antialiased`}
     >
       <body className="flex h-full flex-col overflow-hidden">
+        <div
+          aria-hidden="true"
+          className="pointer-events-none inset-x-0 h-px w-full bg-background top-0"
+        />
         <DeviceCornerRadius />
         {children}
         {adsenseClient ? (

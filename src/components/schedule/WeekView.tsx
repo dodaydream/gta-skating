@@ -211,7 +211,7 @@ export function WeekView({
         </button>
       </div>
 
-      <div className="week-calendar min-w-0 flex-1 overflow-auto" style={{ maxHeight: "55vh" }}>
+      <div className="week-calendar min-w-0 flex-1 overflow-auto" style={{ maxHeight: "55dvh" }}>
         <div className="week-calendar__header grid grid-cols-subgrid col-span-full">
           <div className="border-b border-black/[.08] dark:border-white/[.1]" />
           {columns.map((col) => (
