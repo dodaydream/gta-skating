@@ -62,7 +62,10 @@ function buildWeekColumns(
   return cols;
 }
 
-function computeTimeRange(columns: WeekColumn[]): {
+function computeTimeRange(
+  columns: WeekColumn[],
+  nowMinutes: number | null = null
+): {
   startHour: number;
   endHour: number;
 } {
@@ -75,6 +78,10 @@ function computeTimeRange(columns: WeekColumn[]): {
       if (s < min) min = s;
       if (e > max) max = e;
     }
+  }
+  if (nowMinutes !== null) {
+    min = Math.min(min, Math.floor(nowMinutes / 60));
+    max = Math.max(max, Math.ceil(nowMinutes / 60));
   }
   if (min === 24) {
     return { startHour: 8, endHour: 21 };
@@ -103,11 +110,6 @@ export function WeekView({
     [programs, weekOffset]
   );
 
-  const timeRange = useMemo(() => computeTimeRange(columns), [columns]);
-
-  const totalMinutes = (timeRange.endHour - timeRange.startHour) * 60;
-  const rangeStartMinutes = timeRange.startHour * 60;
-
   const [nowMinutes, setNowMinutes] = useState(() =>
     getCurrentMinutesInArenaTime(timezone)
   );
@@ -122,8 +124,20 @@ export function WeekView({
 
   const todayISO = getTodayInArenaTime(timezone);
   const hasToday = columns.some((col) => col.date === todayISO);
-  const nowPct = ((nowMinutes - rangeStartMinutes) / totalMinutes) * 100;
-  const showNow = hasToday && nowPct >= 0 && nowPct <= 100;
+
+  const timeRange = useMemo(
+    () => computeTimeRange(columns, hasToday ? nowMinutes : null),
+    [columns, hasToday, nowMinutes]
+  );
+
+  const totalMinutes = (timeRange.endHour - timeRange.startHour) * 60;
+  const rangeStartMinutes = timeRange.startHour * 60;
+
+  const nowPct = Math.min(
+    100,
+    Math.max(0, ((nowMinutes - rangeStartMinutes) / totalMinutes) * 100)
+  );
+  const showNow = hasToday;
 
   useEffect(() => {
     const el = bodyRef.current;
