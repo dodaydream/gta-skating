@@ -113,7 +113,7 @@ export default function ArenaMap({
         .setLngLat([lon, lat])
         .addTo(map);
       if (isSelected) {
-        marker.getElement().style.zIndex = "9999";
+        marker.getElement().style.zIndex = "2";
       }
       markersRef.current.push(marker);
     });

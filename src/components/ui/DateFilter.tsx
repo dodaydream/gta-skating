@@ -71,43 +71,56 @@ export function FilterChips({
   const [now, setNow] = useState<Date | null>(null);
   const active = Boolean(from || to);
 
+  const fromDate = parseDate(from);
+  const toDate = parseDate(to);
+
+  const [pendingRange, setPendingRange] = useState<DateRange | undefined>(
+    fromDate || toDate ? { from: fromDate, to: toDate } : undefined
+  );
+
+  const [pendingFromTime, setPendingFromTime] = useState(from?.slice(11, 16) ?? "00:00");
+  const [pendingToTime, setPendingToTime] = useState(to?.slice(11, 16) ?? "23:59");
+
   useEffect(() => {
     const id = setTimeout(() => setNow(new Date()), 0);
     return () => clearTimeout(id);
   }, []);
 
-  const fromDate = parseDate(from);
-  const toDate = parseDate(to);
+  useEffect(() => {
+    setPendingRange(fromDate || toDate ? { from: fromDate, to: toDate } : undefined);
+    setPendingFromTime(from?.slice(11, 16) ?? "00:00");
+    setPendingToTime(to?.slice(11, 16) ?? "23:59");
+  }, [from, to]);
 
-  const selectedRange: DateRange | undefined =
-    fromDate || toDate ? { from: fromDate, to: toDate } : undefined;
-
-  const handleSelect = (range: DateRange | undefined) => {
-    if (!range) {
+  const commit = (range: DateRange | undefined, fromTime: string, toTime: string) => {
+    if (!range || !range.from) {
       onClear();
       return;
     }
     const todayStr = todayLocalISO().slice(0, 10);
     const nowTime = todayLocalISO().slice(11, 16);
-    const fromIsToday = !!range.from && toLocalDateStr(range.from) === todayStr;
-    const fromStr = range.from
-      ? `${toLocalDateStr(range.from)}T${
-          fromIsToday ? nowTime : from ? from.slice(11, 16) : "00:00"
-        }`
-      : "";
+    const fromIsToday = toLocalDateStr(range.from) === todayStr;
+    const fromStr = `${toLocalDateStr(range.from)}T${
+      fromIsToday ? nowTime : fromTime
+    }`;
     const toStr = range.to
-      ? `${toLocalDateStr(range.to)}T23:59`
+      ? `${toLocalDateStr(range.to)}T${toTime}`
       : fromIsToday
         ? `${todayStr}T23:59`
         : "";
     if (fromStr !== from) onFromChange(fromStr);
     if (toStr !== to) onToChange(toStr);
+    setOpen(false);
+  };
+
+  const handleSelect = (range: DateRange | undefined) => {
+    setPendingRange(range);
   };
 
   return (
     <div className={`flex items-start gap-2 ${className}`}>
       <DateRangePicker
-        value={selectedRange}
+        value={pendingRange}
         onChange={handleSelect}
         open={open}
         onOpenChange={setOpen}
@@ -124,6 +137,7 @@ export function FilterChips({
             {active && <span className="ml-0.5 size-1.5 rounded-full bg-blue-500" />}
           </>
         }
+        drawerTitle={displayLabel(from, to, now)}
       >
           <div className="flex items-center gap-2 border-t px-3 py-2">
             <div className="flex flex-1 items-center gap-1">
@@ -132,11 +146,8 @@ export function FilterChips({
               </label>
               <input
                 type="time"
-                value={from?.slice(11, 16) ?? "00:00"}
-                onChange={(e) => {
-                  const dateStr = from?.slice(0, 10) ?? todayLocalISO().slice(0, 10);
-                  onFromChange(`${dateStr}T${e.target.value}`);
-                }}
+                value={pendingFromTime}
+                onChange={(e) => setPendingFromTime(e.target.value)}
                 className="w-full rounded-md border border-input bg-background px-2 py-1 text-xs [color-scheme:dark]"
               />
             </div>
@@ -146,41 +157,34 @@ export function FilterChips({
               </label>
               <input
                 type="time"
-                value={to?.slice(11, 16) ?? "23:59"}
-                onChange={(e) => {
-                  const dateStr = to?.slice(0, 10) ?? todayLocalISO().slice(0, 10);
-                  onToChange(`${dateStr}T${e.target.value}`);
-                }}
+                value={pendingToTime}
+                onChange={(e) => setPendingToTime(e.target.value)}
                 className="w-full rounded-md border border-input bg-background px-2 py-1 text-xs [color-scheme:dark]"
               />
             </div>
           </div>
 
-          <div className="flex gap-2 border-t px-3 py-2">
+          <div className="flex gap-2 border-t px-3 py-2 lg:justify-start">
             <Button
               variant="outline"
-              size="sm"
+              size="lg"
+              className="flex-1 lg:flex-none lg:size-sm"
               onClick={() => {
                 const now = todayLocalISO();
-                onFromChange(now);
-                onToChange(`${now.slice(0, 10)}T23:59`);
-                setOpen(false);
+                const fromDate = new Date();
+                commit({ from: fromDate, to: fromDate }, now.slice(11, 16), "23:59");
               }}
             >
               Today
             </Button>
-            {active && (
-              <Button
-                variant="outline"
-                size="sm"
-                onClick={() => {
-                  onClear();
-                  setOpen(false);
-                }}
-              >
-                Clear
-              </Button>
-            )}
+            <Button
+              variant="default"
+              size="lg"
+              className="flex-1 lg:flex-none lg:ml-auto"
+              onClick={() => commit(pendingRange, pendingFromTime, pendingToTime)}
+            >
+              OK
+            </Button>
           </div>
       </DateRangePicker>
 
