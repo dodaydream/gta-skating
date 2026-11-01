@@ -1,6 +1,5 @@
 import type { Arena } from "@/types/arena";
 
-import gta from "./schedule.json";
 import billBolton from "./bill-bolton.json";
 import agincourt from "./agincourt.json";
 import albion from "./albion.json";
@@ -48,7 +47,6 @@ import victoriaVillage from "./victoria-village.json";
 import yorkMills from "./york-mills.json";
 
 export const arenas: Arena[] = [
-  gta as Arena,
   billBolton as Arena,
   agincourt as Arena,
   albion as Arena,
