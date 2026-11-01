@@ -109,7 +109,7 @@ export function ScheduleSidebar({
         <DrawerContent
           className="border-black/[.08] dark:border-white/[.145] lg:hidden"
           header={
-            <div className="flex items-center justify-between px-6 pb-4 pt-1">
+            <div className="flex items-center justify-between px-6 pb-4 pt-4">
               <div className="flex flex-col">
                 <DrawerTitle className="text-xl font-semibold tracking-tight">
                   GTA Skating Arenas

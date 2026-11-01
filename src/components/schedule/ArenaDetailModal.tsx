@@ -83,6 +83,7 @@ function Panel({
   return (
     <Drawer
       open
+      modal={false}
       swipeDirection="down"
       showSwipeHandle
       snapToSequentialPoints
@@ -243,7 +244,7 @@ export function ArenaDetailModal({
       isDesktop={isDesktop}
       onClose={onClose}
       header={
-        <header className="flex items-start justify-between gap-3 px-5 pt-5 pb-5">
+        <header className="flex items-start justify-between gap-3 px-5 py-4">
           <div>
             <PanelTitle isDesktop={isDesktop} className="text-lg">
               {arena.name}
