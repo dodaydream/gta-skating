@@ -1,7 +1,8 @@
 "use client";
 
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import type { Arena } from "@/types/arena";
+import type { MapBounds } from "@/types/map";
 import type { ProgramItem } from "@/types/schedule";
 import dynamic from "next/dynamic";
 import { IconLocation } from "@tabler/icons-react";
@@ -9,6 +10,7 @@ import { Button } from "@/components/ui/button";
 import { FilterChips } from "@/components/ui/DateFilter";
 import { ScheduleSidebar } from "@/components/ui/ScheduleSidebar";
 import { ArenaDetailModal } from "@/components/schedule/ArenaDetailModal";
+import { fetchPrograms } from "@/api/programs";
 
 const ArenaMap = dynamic(() => import("@/components/map/ArenaMap"), {
   ssr: false,
@@ -28,10 +30,13 @@ export default function Home() {
   const locateRef = useRef<(() => void) | null>(null);
   const [fromDate, setFromDate] = useState("");
   const [toDate, setToDate] = useState("");
-  const [allArenas, setAllArenas] = useState<Arena[] | null>(null);
+  const [items, setItems] = useState<ProgramItem[]>([]);
+  const [arenas, setArenas] = useState<Arena[]>([]);
+  const [loading, setLoading] = useState(true);
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
   const [detailArena, setDetailArena] = useState<Arena | null>(null);
   const [hideEmpty, setHideEmpty] = useState(true);
+  const [mapBounds, setMapBounds] = useState<MapBounds | null>(null);
   const [userLocation, setUserLocation] = useState<{
     lat: number;
     lon: number;
@@ -66,53 +71,27 @@ export default function Home() {
   }, []);
 
   useEffect(() => {
+    if (!fromDate || !toDate) return;
     let cancelled = false;
-    void import("@/data/schedules").then((mod) => {
-      if (!cancelled) setAllArenas(mod.arenas);
-    });
+    void fetchPrograms({
+      from: fromDate,
+      to: toDate,
+      hideEmpty,
+      bounds: mapBounds,
+    })
+      .then((result) => {
+        if (cancelled) return;
+        setItems(result.items);
+        setArenas(result.arenas);
+        setLoading(false);
+      })
+      .catch(() => {
+        if (!cancelled) setLoading(false);
+      });
     return () => {
       cancelled = true;
     };
-  }, []);
-
-  const items = useMemo<ProgramItem[]>(() => {
-    if (!allArenas || !fromDate || !toDate) return [];
-    const matches = allArenas.flatMap((arena) =>
-      arena.schedule.programs
-        .filter(
-          (program) => program.start >= fromDate && program.start <= toDate
-        )
-        .map((program) => ({ ...program, arena }))
-    );
-    matches.sort((a, b) => a.start.localeCompare(b.start));
-    return matches;
-  }, [allArenas, fromDate, toDate]);
-
-  const loading = !allArenas || !fromDate || !toDate;
-
-  const arenas = useMemo(() => {
-    if (!allArenas || !fromDate || !toDate) return [];
-    const seen = new Set<string>();
-    const list: Arena[] = [];
-    const add = (arena: Arena) => {
-      if (seen.has(arena.name)) return;
-      seen.add(arena.name);
-      list.push({
-        ...arena,
-        schedule: {
-          ...arena.schedule,
-          programs: arena.schedule.programs.filter(
-            (p) => p.start >= fromDate && p.start <= toDate
-          ),
-        },
-      });
-    };
-    for (const item of items) add(item.arena);
-    if (!hideEmpty) {
-      for (const arena of allArenas) add(arena);
-    }
-    return list;
-  }, [items, allArenas, hideEmpty, fromDate, toDate]);
+  }, [fromDate, toDate, hideEmpty, mapBounds]);
 
   useEffect(() => {
     if (selectedIndex === null) {
@@ -145,6 +124,7 @@ export default function Home() {
             arenas={arenas}
             selectedIndex={visibleIndex}
             onSelect={handleSelect}
+            onBoundsChange={setMapBounds}
           />
 
           <div className="absolute left-0 right-0 top-3 z-[1000] flex items-start gap-2 px-4">

@@ -10,11 +10,13 @@ if (typeof window !== "undefined") {
 }
 
 import type { Arena } from "@/types/arena";
+import type { MapBounds } from "@/types/map";
 
 interface ArenaMapProps {
   arenas: Arena[];
   selectedIndex: number | null;
   onSelect: (index: number) => void;
+  onBoundsChange?: (bounds: MapBounds) => void;
   locateRef: React.MutableRefObject<(() => void) | null>;
 }
 
@@ -47,6 +49,7 @@ export default function ArenaMap({
   arenas,
   selectedIndex,
   onSelect,
+  onBoundsChange,
   locateRef,
 }: ArenaMapProps) {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -58,6 +61,10 @@ export default function ArenaMap({
   arenasRef.current = arenas;
   const onSelectRef = useRef(onSelect);
   onSelectRef.current = onSelect;
+  const onBoundsChangeRef = useRef(onBoundsChange);
+  useEffect(() => {
+    onBoundsChangeRef.current = onBoundsChange;
+  }, [onBoundsChange]);
 
   const syncMarkers = useRef(() => {});
   syncMarkers.current = () => {
@@ -129,6 +136,18 @@ export default function ArenaMap({
     };
 
     map.on("load", () => syncMarkers.current?.());
+
+    const emitBounds = () => {
+      const b = map.getBounds();
+      onBoundsChangeRef.current?.({
+        west: b.getWest(),
+        south: b.getSouth(),
+        east: b.getEast(),
+        north: b.getNorth(),
+      });
+    };
+    map.on("load", emitBounds);
+    map.on("moveend", emitBounds);
 
     mapRef.current = map;
 
