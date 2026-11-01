@@ -147,7 +147,7 @@ export function ScheduleSidebar({
         showSwipeHandle
       >
         <DrawerContent
-          className="border-black/[.08] pb-[calc(var(--drawer-snap-point-offset,0px)_+_var(--drawer-swipe-movement-y,0px))] dark:border-white/[.145] lg:hidden"
+          className="rounded-xl border-black/[.08] pb-[calc(var(--drawer-snap-point-offset,0px)_+_var(--drawer-swipe-movement-y,0px))] dark:border-white/[.145] lg:hidden"
           header={
             <div className="flex flex-col px-6 pb-4 pt-4">
               <DrawerTitle className="text-xl font-semibold tracking-tight">

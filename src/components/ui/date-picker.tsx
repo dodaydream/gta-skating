@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState, type ReactNode } from "react";
+import { useSyncExternalStore, type ReactNode } from "react";
 import { format } from "date-fns";
 import type { DateRange } from "react-day-picker";
 
@@ -20,21 +20,18 @@ import {
 
 const DESKTOP_QUERY = "(min-width: 1024px)";
 
+function subscribeDesktop(onChange: () => void) {
+  const mq = window.matchMedia(DESKTOP_QUERY);
+  mq.addEventListener("change", onChange);
+  return () => mq.removeEventListener("change", onChange);
+}
+
+function getDesktopSnapshot() {
+  return window.matchMedia(DESKTOP_QUERY).matches;
+}
+
 function useIsDesktop() {
-  const [isDesktop, setIsDesktop] = useState(() =>
-    typeof window === "undefined"
-      ? true
-      : window.matchMedia(DESKTOP_QUERY).matches
-  );
-
-  useEffect(() => {
-    const mq = window.matchMedia(DESKTOP_QUERY);
-    const onChange = () => setIsDesktop(mq.matches);
-    mq.addEventListener("change", onChange);
-    return () => mq.removeEventListener("change", onChange);
-  }, []);
-
-  return isDesktop;
+  return useSyncExternalStore(subscribeDesktop, getDesktopSnapshot, () => true);
 }
 
 interface DateRangePickerProps {
