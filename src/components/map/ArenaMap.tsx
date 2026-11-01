@@ -11,6 +11,7 @@ if (typeof window !== "undefined") {
 
 import type { Arena } from "@/types/arena";
 import type { MapBounds } from "@/types/map";
+import { trackEvent } from "@/lib/analytics";
 
 interface ArenaMapProps {
   arenas: Arena[];
@@ -81,6 +82,7 @@ export default function ArenaMap({
   const markersRef = useRef<maplibregl.Marker[]>([]);
   const userMarkerRef = useRef<maplibregl.Marker | null>(null);
   const centeredOnUserRef = useRef(false);
+  const boundsTrackTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const [dark, setDark] = useState(false);
 
   const arenasRef = useRef(arenas);
@@ -106,7 +108,10 @@ export default function ArenaMap({
 
       const hasPrograms = (arenasRef.current[i].schedule.programs?.length ?? 0) > 0;
       const el = createMarkerElement(i === selectedIndex, hasPrograms, arena.name);
-      el.addEventListener("click", () => onSelectRef.current(i));
+      el.addEventListener("click", () => {
+        trackEvent("arena_click", { arena_name: arena.name });
+        onSelectRef.current(i);
+      });
 
       const isSelected = i === selectedIndex;
       const marker = new maplibregl.Marker({ element: el })
@@ -158,12 +163,22 @@ export default function ArenaMap({
 
     const emitBounds = () => {
       const b = map.getBounds();
-      onBoundsChangeRef.current?.({
+      const bounds: MapBounds = {
         west: b.getWest(),
         south: b.getSouth(),
         east: b.getEast(),
         north: b.getNorth(),
-      });
+      };
+      onBoundsChangeRef.current?.(bounds);
+      if (boundsTrackTimerRef.current) clearTimeout(boundsTrackTimerRef.current);
+      boundsTrackTimerRef.current = setTimeout(() => {
+        trackEvent("map_bounds_change", {
+          north: bounds.north,
+          south: bounds.south,
+          east: bounds.east,
+          west: bounds.west,
+        });
+      }, 500);
     };
     map.on("load", emitBounds);
     map.on("moveend", emitBounds);
@@ -171,6 +186,7 @@ export default function ArenaMap({
     mapRef.current = map;
 
     return () => {
+      if (boundsTrackTimerRef.current) clearTimeout(boundsTrackTimerRef.current);
       map.remove();
       mapRef.current = null;
       markersRef.current = [];

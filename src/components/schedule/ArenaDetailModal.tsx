@@ -27,6 +27,7 @@ import {
 } from "@/lib/schedule";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { WeekView } from "@/components/schedule/WeekView";
+import { trackEvent } from "@/lib/analytics";
 import { X } from "lucide-react";
 
 const DESKTOP_QUERY = "(min-width: 1024px)";
@@ -165,19 +166,30 @@ export function ArenaDetailModal({
   const [error, setError] = useState(false);
   const [view, setView] = useState<"day" | "week">("day");
   const weekBodyRef = useRef<HTMLDivElement>(null);
+  const openedRef = useRef(false);
   const isDesktop = useIsDesktop();
 
   useEffect(() => {
     let cancelled = false;
     fetchArenaDetails(arenaName)
       .then((data) => {
-        if (!cancelled) setArena(data);
+        if (cancelled) return;
+        setArena(data);
+        openedRef.current = true;
+        trackEvent("arena_detail_open", {
+          arena_name: arenaName,
+          program_count: data.schedule.programs?.length ?? 0,
+        });
       })
       .catch(() => {
         if (!cancelled) setError(true);
       });
     return () => {
       cancelled = true;
+      if (openedRef.current) {
+        openedRef.current = false;
+        trackEvent("arena_detail_close", { arena_name: arenaName });
+      }
     };
   }, [arenaName]);
 

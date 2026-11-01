@@ -11,6 +11,7 @@ import { FilterChips } from "@/components/ui/DateFilter";
 import { ScheduleSidebar } from "@/components/ui/ScheduleSidebar";
 import { ArenaDetailModal } from "@/components/schedule/ArenaDetailModal";
 import { fetchPrograms } from "@/api/programs";
+import { trackEvent } from "@/lib/analytics";
 
 const ArenaMap = dynamic(() => import("@/components/map/ArenaMap"), {
   ssr: false,
@@ -139,7 +140,10 @@ export default function Home() {
               variant="secondary"
               size="icon"
               className="shadow-xs"
-              onClick={() => locateRef.current?.()}
+              onClick={() => {
+                trackEvent("locate_me");
+                locateRef.current?.();
+              }}
               title="Centre on your location"
             >
               <IconLocation className="size-4" />
@@ -147,15 +151,29 @@ export default function Home() {
             <FilterChips
               from={fromDate}
               to={toDate}
-              onFromChange={setFromDate}
-              onToChange={setToDate}
+              onFromChange={(v) => {
+                setFromDate(v);
+                trackEvent("date_filter_change", { from: v, to: toDate });
+              }}
+              onToChange={(v) => {
+                setToDate(v);
+                trackEvent("date_filter_change", { from: fromDate, to: v });
+              }}
               onClear={() => {
                 const [f, t] = todayRange();
                 setFromDate(f);
                 setToDate(t);
+                trackEvent("date_filter_change", {
+                  from: f,
+                  to: t,
+                  source: "clear",
+                });
               }}
               hideEmpty={hideEmpty}
-              onHideEmptyChange={setHideEmpty}
+              onHideEmptyChange={(v) => {
+                setHideEmpty(v);
+                trackEvent("hide_empty_toggle", { hidden: v });
+              }}
             />
           </div>
           <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-transparent" />
@@ -165,7 +183,10 @@ export default function Home() {
           loading={loading}
           items={items}
           hideEmpty={hideEmpty}
-          onHideEmptyChange={setHideEmpty}
+          onHideEmptyChange={(v) => {
+            setHideEmpty(v);
+            trackEvent("hide_empty_toggle", { hidden: v });
+          }}
           userLocation={userLocation}
           onSelectArena={setDetailArena}
           detailOpen={detailArena !== null}

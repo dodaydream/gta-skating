@@ -51,6 +51,13 @@ jobs:
             echo "NEXT_PUBLIC_BASE_PATH=/${GITHUB_REPOSITORY#*/}" >> "$GITHUB_ENV"
           fi
 
+      - name: Resolve analytics id
+        # GA4 measurement id is a public value; set the NEXT_PUBLIC_GA_ID
+        # repository variable to enable analytics (unset disables it).
+        env:
+          GA_ID: ${{ vars.NEXT_PUBLIC_GA_ID }}
+        run: echo "NEXT_PUBLIC_GA_ID=$GA_ID" >> "$GITHUB_ENV"
+
       - name: Build static export
         run: yarn build
 

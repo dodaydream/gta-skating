@@ -1131,6 +1131,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@next/third-parties@npm:16.4.3":
+  version: 16.4.3
+  resolution: "@next/third-parties@npm:16.4.3"
+  dependencies:
+    third-party-capital: "npm:1.0.20"
+  peerDependencies:
+    next: ^13.0.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
+    react: ^18.2.0 || 19.0.0-rc-de68d2f4-20241204 || ^19.0.0
+  checksum: 10c0/edf11e0ff265a10d6ea8b2a3edb2daae415853cf68d297ade2995de12ba8cbe3ce380fff7c266002992e7702f67dbb4cda157e3facc44cd88e03433262283f89
+  languageName: node
+  linkType: hard
+
 "@nodelib/fs.scandir@npm:2.1.5":
   version: 2.1.5
   resolution: "@nodelib/fs.scandir@npm:2.1.5"
@@ -3493,6 +3505,7 @@ __metadata:
   resolution: "gta-skating@workspace:."
   dependencies:
     "@base-ui/react": "npm:^1.9.0"
+    "@next/third-parties": "npm:16.4.3"
     "@tabler/icons-react": "npm:^3.50.0"
     "@tailwindcss/turbopack": "npm:^4"
     "@types/leaflet": "npm:^1.9.22"
@@ -5874,6 +5887,13 @@ __metadata:
   version: 2.3.3
   resolution: "tapable@npm:2.3.3"
   checksum: 10c0/47992e861053f861154e92fb4a98ac4ab47b6463717e60792dd1e8c755da0c4964cd8bb68c308a9066d6da89000b6310457b4d5d985c30de4ccc29066068cc17
+  languageName: node
+  linkType: hard
+
+"third-party-capital@npm:1.0.20":
+  version: 1.0.20
+  resolution: "third-party-capital@npm:1.0.20"
+  checksum: 10c0/7f45ff156ec9d7e2957a5b39061be22b780ffbd2d93c127252d908e2bff6cdd09f827a95909d457c8096e036f155006a38e355a06ee11cb6d63c7f4b150bbfb0
   languageName: node
   linkType: hard
 
