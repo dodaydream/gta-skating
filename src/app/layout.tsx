@@ -16,12 +16,25 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "GTA Skating Schedule",
   description: "Upcoming skating programs and sessions across GTA arenas.",
+  manifest: "/manifest.json",
+  appleWebApp: {
+    capable: true,
+    title: "GTA Skating",
+    statusBarStyle: "black-translucent",
+  },
+  icons: {
+    apple: [
+      { url: "/icons/icon-192x192.png", sizes: "192x192" },
+      { url: "/icons/icon-512x512.png", sizes: "512x512" },
+    ],
+  },
 };
 
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
   viewportFit: "cover",
+  themeColor: "#0f172a",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
