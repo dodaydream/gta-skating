@@ -185,7 +185,7 @@
 @media (max-width: 1023.98px) {
   .maplibregl-control-container .maplibregl-ctrl-bottom-right,
   .maplibregl-control-container .maplibregl-ctrl-bottom-left {
-    bottom: min(var(--drawer-height, 0px), calc(100dvh - 2.5rem));
+    bottom: min(var(--drawer-height, 0px), calc(100dvh - var(--safe-top, 0px)));
   }
 }
 
@@ -206,3 +206,5 @@
 .maplibregl-control-container .maplibregl-ctrl-bottom-left {
   left: var(--safe-left);
 }
+
+
