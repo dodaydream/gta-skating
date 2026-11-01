@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import type { Arena } from "@/types/arena";
 import type { ProgramItem } from "@/types/schedule";
@@ -24,6 +24,38 @@ type ScheduleSidebarProps = {
 
 const DESKTOP_QUERY = "(min-width: 1024px)";
 const SNAP_POINTS = [0.5, 0.9];
+const REPO_URL = "https://github.com/dodaydream/gta-skating";
+
+function ScheduleFooter({ arenaCount }: { arenaCount: number }) {
+  return (
+    <footer className="shrink-0 px-6 py-2.5 text-[11px] leading-4 text-zinc-400 dark:text-zinc-500">
+      <p>
+        {arenaCount} arena{arenaCount === 1 ? "" : "s"}. Schedule data may
+        change &mdash; check the arena&rsquo;s website to confirm times before
+        you go.
+      </p>
+      <div className="mt-1 flex items-center gap-2">
+        <Link
+          href="/privacy"
+          className="hover:text-blue-600 hover:underline dark:hover:text-blue-400"
+        >
+          Privacy Policy
+        </Link>
+        <span aria-hidden="true" className="text-zinc-300 dark:text-zinc-600">
+          ·
+        </span>
+        <a
+          href={REPO_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-blue-600 hover:underline dark:hover:text-blue-400"
+        >
+          GitHub
+        </a>
+      </div>
+    </footer>
+  );
+}
 
 function useIsDesktop() {
   const [isDesktop, setIsDesktop] = useState(() =>
@@ -69,12 +101,17 @@ export function ScheduleSidebar({
     };
   }, [open, detent]);
 
+  const arenaCount = useMemo(
+    () => new Set(items.map((item) => item.arena.name)).size,
+    [items]
+  );
+
   return (
     <>
       {/* Desktop static sidebar */}
-      <aside className="hidden flex-col overflow-y-auto border-t border-black/[.08] bg-card px-6 py-8 dark:border-white/[.145] lg:static lg:flex lg:w-96 lg:shrink-0 lg:border-t-0">
-        <div className="mb-4 flex items-center justify-between">
-          <div className="flex flex-col">
+      <aside className="hidden flex-col border-t border-black/[.08] bg-card dark:border-white/[.145] lg:static lg:flex lg:w-96 lg:shrink-0 lg:border-t-0">
+        <div className="min-h-0 flex-1 overflow-y-auto px-6 pt-8 pb-8">
+          <div className="mb-4 flex flex-col">
             <h1 className="text-2xl font-semibold tracking-tight text-black dark:text-zinc-50">
               GTA Skating Arenas
             </h1>
@@ -82,21 +119,17 @@ export function ScheduleSidebar({
               {items.length} program{items.length === 1 ? "" : "s"} found
             </span>
           </div>
-          <Link
-            href="/privacy"
-            className="text-xs font-medium text-blue-600 hover:underline dark:text-blue-400"
-          >
-            Privacy
-          </Link>
+
+          <ProgramList
+            items={items}
+            loading={loading}
+            userLocation={userLocation}
+            onSelectArena={onSelectArena}
+            listClassName="flex flex-col gap-2"
+          />
         </div>
 
-        <ProgramList
-          items={items}
-          loading={loading}
-          userLocation={userLocation}
-          onSelectArena={onSelectArena}
-          listClassName="flex flex-col gap-2"
-        />
+        <ScheduleFooter arenaCount={arenaCount} />
       </aside>
 
       {/* Mobile bottom sheet */}
@@ -114,23 +147,15 @@ export function ScheduleSidebar({
         showSwipeHandle
       >
         <DrawerContent
-          className="border-black/[.08] dark:border-white/[.145] lg:hidden"
+          className="border-black/[.08] pb-[calc(var(--drawer-snap-point-offset,0px)_+_var(--drawer-swipe-movement-y,0px))] dark:border-white/[.145] lg:hidden"
           header={
-            <div className="flex items-center justify-between px-6 pb-4 pt-4">
-              <div className="flex flex-col">
-                <DrawerTitle className="text-xl font-semibold tracking-tight">
-                  GTA Skating Arenas
-                </DrawerTitle>
-                <DrawerDescription className="text-left text-sm">
-                  {items.length} program{items.length === 1 ? "" : "s"} found
-                </DrawerDescription>
-              </div>
-              <Link
-                href="/privacy"
-                className="text-xs font-medium text-blue-600 hover:underline dark:text-blue-400"
-              >
-                Privacy
-              </Link>
+            <div className="flex flex-col px-6 pb-4 pt-4">
+              <DrawerTitle className="text-xl font-semibold tracking-tight">
+                GTA Skating Arenas
+              </DrawerTitle>
+              <DrawerDescription className="text-left text-sm">
+                {items.length} program{items.length === 1 ? "" : "s"} found
+              </DrawerDescription>
             </div>
           }
         >
@@ -141,6 +166,7 @@ export function ScheduleSidebar({
             userLocation={userLocation}
             onSelectArena={onSelectArena}
           />
+          <ScheduleFooter arenaCount={arenaCount} />
         </DrawerContent>
       </Drawer>
     </>
