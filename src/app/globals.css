@@ -183,13 +183,18 @@
 @media (max-width: 1023.98px) {
   .maplibregl-control-container .maplibregl-ctrl-bottom-right,
   .maplibregl-control-container .maplibregl-ctrl-bottom-left {
-    bottom: var(--drawer-height, 0px);
+    bottom: min(var(--drawer-height, 0px), calc(100dvh - 2.5rem));
   }
 }
 
-.maplibregl-control-container .maplibregl-ctrl-top-right,
+.maplibregl-control-container .maplibregl-ctrl-top-right {
+  top: var(--safe-top);
+  right: var(--safe-right);
+}
+
 .maplibregl-control-container .maplibregl-ctrl-top-left {
   top: var(--safe-top);
+  left: var(--safe-left);
 }
 
 .maplibregl-control-container .maplibregl-ctrl-bottom-right {

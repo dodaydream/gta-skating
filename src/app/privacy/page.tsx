@@ -34,7 +34,7 @@ function Section({
 
 export default function PrivacyPage() {
   return (
-    <main className="min-h-0 flex-1 overflow-y-auto bg-zinc-50 pt-[var(--safe-top)] pb-[var(--safe-bottom)] pl-[var(--safe-left)] pr-[var(--safe-right)] dark:bg-black">
+    <main className="min-h-0 flex-1 overflow-y-auto bg-zinc-50 dark:bg-black">
       <div className="mx-auto flex w-full max-w-3xl flex-col gap-8 px-6 py-10">
         <header className="flex flex-col gap-3 border-b border-black/[.08] pb-6 dark:border-white/[.145]">
           <Link

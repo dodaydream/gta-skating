@@ -142,7 +142,7 @@ export default function ArenaMap({
     map.addControl(new maplibregl.NavigationControl(), "top-right");
     map.addControl(
       new maplibregl.ScaleControl({ unit: "metric", maxWidth: 120 }),
-      "bottom-right",
+      "bottom-left",
     );
 
     locateRef.current = () => {
