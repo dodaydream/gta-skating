@@ -175,3 +175,10 @@
     @apply sticky top-0 z-10;
   }
 }
+
+@media (max-width: 1023.98px) {
+  .maplibregl-control-container .maplibregl-ctrl-bottom-right,
+  .maplibregl-control-container .maplibregl-ctrl-bottom-left {
+    bottom: var(--drawer-height, 0px);
+  }
+}

@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import type { PointerEvent as ReactPointerEvent } from "react";
 import type { Arena } from "@/types/arena";
 import type { ProgramItem } from "@/types/schedule";
@@ -64,6 +64,14 @@ export function ScheduleSidebar({
   }, []);
 
   const heightPercent = Math.round(height * 100);
+
+  useEffect(() => {
+    const root = document.documentElement;
+    root.style.setProperty("--drawer-height", `${heightPercent}dvh`);
+    return () => {
+      root.style.removeProperty("--drawer-height");
+    };
+  }, [heightPercent]);
 
   return (
     <>
