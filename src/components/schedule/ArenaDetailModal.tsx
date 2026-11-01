@@ -61,7 +61,6 @@ function Panel({
   header?: React.ReactNode;
   children: React.ReactNode;
 }) {
-  const [snapPoint, setSnapPoint] = useState<number>(SNAP_POINTS[0]);
   const body = (
     <div className="flex min-h-0 flex-1 flex-col gap-4">{children}</div>
   );
@@ -86,15 +85,12 @@ function Panel({
       open
       swipeDirection="down"
       showSwipeHandle
+      snapToSequentialPoints
       snapPoints={SNAP_POINTS}
-      snapPoint={snapPoint}
-      onSnapPointChange={(next) => {
-        if (typeof next === "number") setSnapPoint(next);
-      }}
       onOpenChange={(open) => !open && onClose()}
     >
       <DrawerContent
-        className="pb-[calc(var(--drawer-snap-point-offset,0px)+var(--drawer-swipe-movement-y,0px))]"
+        className="pb-[calc(var(--drawer-snap-point-offset,0px)+var(--drawer-swipe-movement-y,0px))] data-expanded:shadow-[0_-4px_24px_rgba(0,0,0,0.12)]"
         header={header}
       >
         {body}

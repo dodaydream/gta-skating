@@ -18,27 +18,55 @@ type ScheduleSidebarProps = {
   onHideEmptyChange: (value: boolean) => void;
   userLocation?: { lat: number; lon: number } | null;
   onSelectArena: (arena: Arena) => void;
+  detailOpen: boolean;
 };
 
-const SNAP_POINTS = [0.3, 0.6, 0.95];
+const DESKTOP_QUERY = "(min-width: 1024px)";
+const SNAP_POINTS = [0.5, 0.95];
+
+function useIsDesktop() {
+  const [isDesktop, setIsDesktop] = useState(() =>
+    typeof window === "undefined"
+      ? true
+      : window.matchMedia(DESKTOP_QUERY).matches
+  );
+
+  useEffect(() => {
+    const mq = window.matchMedia(DESKTOP_QUERY);
+    const onChange = () => setIsDesktop(mq.matches);
+    mq.addEventListener("change", onChange);
+    return () => mq.removeEventListener("change", onChange);
+  }, []);
+
+  return isDesktop;
+}
 
 export function ScheduleSidebar({
   loading,
   items,
   userLocation,
   onSelectArena,
+  detailOpen,
 }: ScheduleSidebarProps) {
-  const [snapPoint, setSnapPoint] = useState<number>(SNAP_POINTS[0]);
+  const [open, setOpen] = useState(true);
+  const [detent, setDetent] = useState<number>(SNAP_POINTS[0]);
+  const isDesktop = useIsDesktop();
 
-  const heightPercent = Math.round((snapPoint ?? SNAP_POINTS[0]) * 100);
+  useEffect(() => {
+    if (!isDesktop) setOpen(!detailOpen);
+  }, [detailOpen, isDesktop]);
 
   useEffect(() => {
     const root = document.documentElement;
-    root.style.setProperty("--drawer-height", `${heightPercent}dvh`);
+    const fraction = open ? detent : 0;
+    root.style.setProperty(
+      "--drawer-height",
+      `${Math.round(fraction * 100)}dvh`
+    );
     return () => {
       root.style.removeProperty("--drawer-height");
     };
-  }, [heightPercent]);
+  }, [open, detent]);
 
   return (
     <>
@@ -64,18 +92,18 @@ export function ScheduleSidebar({
         />
       </aside>
 
-      {/* Mobile always-visible bottom sheet */}
+      {/* Mobile bottom sheet */}
       <Drawer
-        open
+        open={open}
         modal={false}
         disablePointerDismissal
         swipeDirection="down"
+        snapToSequentialPoints
         snapPoints={SNAP_POINTS}
-        snapPoint={snapPoint}
         onSnapPointChange={(next) => {
-          if (typeof next === "number") setSnapPoint(next);
+          if (typeof next === "number") setDetent(next);
         }}
-        onOpenChange={(_open, eventDetails) => eventDetails.cancel()}
+        onOpenChange={(_nextOpen, eventDetails) => eventDetails.cancel()}
         showSwipeHandle
       >
         <DrawerContent

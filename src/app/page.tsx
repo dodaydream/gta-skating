@@ -168,6 +168,7 @@ export default function Home() {
           onHideEmptyChange={setHideEmpty}
           userLocation={userLocation}
           onSelectArena={setDetailArena}
+          detailOpen={detailArena !== null}
         />
       </div>
 
