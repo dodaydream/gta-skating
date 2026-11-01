@@ -108,9 +108,13 @@ export default function ArenaMap({
       const el = createMarkerElement(i === selectedIndex, hasPrograms, arena.name);
       el.addEventListener("click", () => onSelectRef.current(i));
 
+      const isSelected = i === selectedIndex;
       const marker = new maplibregl.Marker({ element: el })
         .setLngLat([lon, lat])
         .addTo(map);
+      if (isSelected) {
+        marker.getElement().style.zIndex = "9999";
+      }
       markersRef.current.push(marker);
     });
   };
