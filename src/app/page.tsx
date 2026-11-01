@@ -92,31 +92,42 @@ export default function Home() {
   const loading = !allArenas || !fromDate || !toDate;
 
   const arenas = useMemo(() => {
+    if (!allArenas) return [];
     const seen = new Set<string>();
     const list: Arena[] = [];
-    for (const item of items) {
-      if (seen.has(item.arena.name)) continue;
-      seen.add(item.arena.name);
-      const today = getTodayInArenaTime(item.arena.timezone);
+    const add = (arena: Arena) => {
+      if (seen.has(arena.name)) return;
+      seen.add(arena.name);
+      const today = getTodayInArenaTime(arena.timezone);
       list.push({
-        ...item.arena,
+        ...arena,
         schedule: {
-          ...item.arena.schedule,
-          programs: item.arena.schedule.programs.filter(
+          ...arena.schedule,
+          programs: arena.schedule.programs.filter(
             (p) => p.start.slice(0, 10) >= today
           ),
         },
       });
+    };
+    for (const item of items) add(item.arena);
+    if (!hideEmpty) {
+      for (const arena of allArenas) add(arena);
     }
     return list;
-  }, [items]);
+  }, [items, allArenas, hideEmpty]);
 
   useEffect(() => {
-    if (selectedIndex !== null) {
-      setDetailArena(arenas[selectedIndex] ?? null);
-    } else {
+    if (selectedIndex === null) {
       setDetailArena(null);
+      return;
     }
+    const arena = arenas[selectedIndex];
+    if (!arena) {
+      setSelectedIndex(null);
+      setDetailArena(null);
+      return;
+    }
+    setDetailArena(arena);
   }, [selectedIndex, arenas]);
 
   const handleSelect = useCallback(
