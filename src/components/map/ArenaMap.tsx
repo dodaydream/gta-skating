@@ -40,10 +40,10 @@ function createMarkerElement(selected: boolean, hasPrograms: boolean): HTMLDivEl
 
 function createUserDotElement(): HTMLDivElement {
   const el = document.createElement("div");
-  el.style.cssText = "position:relative;width:24px;height:24px;";
+  el.style.cssText = "position:relative;width:20px;height:20px;";
   el.innerHTML = `
-    <span style="position:absolute;inset:0;border-radius:9999px;background:rgba(37,99,235,.25);"></span>
-    <span style="position:absolute;left:50%;top:50%;width:14px;height:14px;transform:translate(-50%,-50%);border-radius:9999px;background:#2563eb;border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.4);"></span>`;
+    <span style="position:absolute;inset:0;border-radius:9999px;background:#fff;box-shadow:0 1px 4px rgba(0,0,0,.4);"></span>
+    <span style="position:absolute;left:50%;top:50%;width:16px;height:16px;transform:translate(-50%,-50%);border-radius:9999px;background:#2563eb;"></span>`;
   return el;
 }
 
