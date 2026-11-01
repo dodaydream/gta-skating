@@ -23,12 +23,12 @@ type ScheduleSidebarProps = {
 };
 
 const DESKTOP_QUERY = "(min-width: 1024px)";
-const SNAP_POINTS = [0.5, 0.9];
+const SNAP_POINTS = [0.5, 1];
 const REPO_URL = "https://github.com/dodaydream/gta-skating";
 
 function ScheduleFooter({ arenaCount }: { arenaCount: number }) {
   return (
-    <footer className="shrink-0 px-6 py-2.5 text-[11px] leading-4 text-zinc-400 dark:text-zinc-500">
+    <footer className="py-2.5 text-[11px] leading-4 text-zinc-400 dark:text-zinc-500">
       <p>
         {arenaCount} arena{arenaCount === 1 ? "" : "s"}. Schedule data may
         change &mdash; check the arena&rsquo;s website to confirm times before
@@ -127,9 +127,8 @@ export function ScheduleSidebar({
             onSelectArena={onSelectArena}
             listClassName="flex flex-col gap-2"
           />
+          <ScheduleFooter arenaCount={arenaCount} />
         </div>
-
-        <ScheduleFooter arenaCount={arenaCount} />
       </aside>
 
       {/* Mobile bottom sheet */}
@@ -147,7 +146,7 @@ export function ScheduleSidebar({
         showSwipeHandle
       >
         <DrawerContent
-          className="rounded-xl border-black/[.08] pb-[calc(var(--drawer-snap-point-offset,0px)_+_var(--drawer-swipe-movement-y,0px))] dark:border-white/[.145] lg:hidden"
+          className="border-black/[.08] dark:border-white/[.145] lg:hidden"
           header={
             <div className="flex flex-col px-6 pb-4 pt-4">
               <DrawerTitle className="text-xl font-semibold tracking-tight">
@@ -159,14 +158,15 @@ export function ScheduleSidebar({
             </div>
           }
         >
-          <ProgramList
-            className="min-h-0 flex-1 overflow-y-auto px-6 pb-8"
-            items={items}
-            loading={loading}
-            userLocation={userLocation}
-            onSelectArena={onSelectArena}
-          />
-          <ScheduleFooter arenaCount={arenaCount} />
+          <div className="min-h-0 flex-1 overflow-y-auto px-6 pb-8">
+            <ProgramList
+              items={items}
+              loading={loading}
+              userLocation={userLocation}
+              onSelectArena={onSelectArena}
+            />
+            <ScheduleFooter arenaCount={arenaCount} />
+          </div>
         </DrawerContent>
       </Drawer>
     </>

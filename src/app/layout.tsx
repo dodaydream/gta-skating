@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import Script from "next/script";
 import { Geist, Geist_Mono } from "next/font/google";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import { DeviceCornerRadius } from "@/components/DeviceCornerRadius";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -84,6 +85,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${geistSans.variable} ${geistMono.variable} h-screen overflow-hidden antialiased`}
     >
       <body className="flex h-full flex-col overflow-hidden">
+        <DeviceCornerRadius />
         {children}
         {adsenseClient ? (
           <Script
