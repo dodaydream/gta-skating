@@ -43,7 +43,7 @@ export function ScheduleSidebar({
   return (
     <>
       {/* Desktop static sidebar */}
-      <aside className="hidden flex-col overflow-y-auto border-t border-black/[.08] bg-white px-6 py-8 dark:border-white/[.145] dark:bg-zinc-950 lg:static lg:flex lg:w-96 lg:shrink-0 lg:border-t-0">
+      <aside className="hidden flex-col overflow-y-auto border-t border-black/[.08] px-6 py-8 dark:border-white/[.145] lg:static lg:flex lg:w-96 lg:shrink-0 lg:border-t-0">
         <div className="mb-4 flex items-center justify-between">
           <div className="flex flex-col">
             <h1 className="text-2xl font-semibold tracking-tight text-black dark:text-zinc-50">
@@ -79,14 +79,14 @@ export function ScheduleSidebar({
         showSwipeHandle
       >
         <DrawerContent
-          className="border-black/[.08] bg-white text-black dark:border-white/[.145] dark:bg-zinc-950 dark:text-zinc-50 lg:hidden"
+          className="border-black/[.08] dark:border-white/[.145] lg:hidden"
           header={
             <div className="flex items-center justify-between px-6 pb-4 pt-1">
               <div className="flex flex-col">
-                <DrawerTitle className="text-xl font-semibold tracking-tight text-black dark:text-zinc-50">
+                <DrawerTitle className="text-xl font-semibold tracking-tight">
                   GTA Skating Arenas
                 </DrawerTitle>
-                <DrawerDescription className="text-left text-sm text-zinc-500 dark:text-zinc-400">
+                <DrawerDescription className="text-left text-sm">
                   {items.length} program{items.length === 1 ? "" : "s"} found
                 </DrawerDescription>
               </div>

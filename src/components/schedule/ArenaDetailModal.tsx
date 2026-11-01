@@ -18,6 +18,7 @@ import {
   DrawerTitle,
 } from "@/components/ui/drawer";
 import {
+  distanceKm,
   formatEventDate,
   formatTimeRange,
   getTodayInArenaTime,
@@ -157,9 +158,11 @@ function CloseButton({
 export function ArenaDetailModal({
   arenaName,
   onClose,
+  userLocation,
 }: {
   arenaName: string;
   onClose: () => void;
+  userLocation?: { lat: number; lon: number } | null;
 }) {
   const [arena, setArena] = useState<Arena | null>(null);
   const [error, setError] = useState(false);
@@ -226,6 +229,19 @@ export function ArenaDetailModal({
   );
   const updated = new Date(arena.schedule.updatedAt).toISOString().slice(0, 10);
 
+  const distance =
+    userLocation &&
+    arena.coordinates &&
+    isFinite(arena.coordinates.lat) &&
+    isFinite(arena.coordinates.lon)
+      ? distanceKm(
+          userLocation.lat,
+          userLocation.lon,
+          arena.coordinates.lat,
+          arena.coordinates.lon
+        )
+      : null;
+
   return (
     <Panel
       isDesktop={isDesktop}
@@ -238,6 +254,11 @@ export function ArenaDetailModal({
             </PanelTitle>
             <PanelDescription isDesktop={isDesktop}>
               {arena.address}
+              {distance !== null ? (
+                <span className="ml-2 text-zinc-400">
+                  · {distance < 10 ? distance.toFixed(1) : Math.round(distance)} km
+                </span>
+              ) : null}
             </PanelDescription>
           </div>
           <CloseButton onClick={onClose} />

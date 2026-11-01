@@ -175,6 +175,7 @@ export default function Home() {
         <ArenaDetailModal
           key={detailArena.name}
           arenaName={detailArena.name}
+          userLocation={userLocation}
           onClose={() => {
             setDetailArena(null);
             setSelectedIndex(null);
