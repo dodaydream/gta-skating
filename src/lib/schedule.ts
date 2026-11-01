@@ -13,8 +13,8 @@ export function getTodayInArenaTime(timezone: string): string {
   );
 }
 
-export function isProgramUpcoming(start: string, timezone: string): boolean {
-  return !dayjs.tz(start, timezone).isBefore(dayjs().tz(timezone));
+export function isProgramNotEnded(end: string, timezone: string): boolean {
+  return !dayjs.tz(end, timezone).isBefore(dayjs().tz(timezone));
 }
 
 export function getCurrentMinutesInArenaTime(timezone: string): number {
@@ -31,7 +31,7 @@ export function getUpcomingEvents(
   return arena.schedule.programs
     .filter(
       (program) =>
-        program.start >= start && (to === undefined || program.start <= to)
+        program.end >= start && (to === undefined || program.start <= to)
     )
     .sort((a, b) => a.start.localeCompare(b.start));
 }

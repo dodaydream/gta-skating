@@ -14,8 +14,13 @@ export interface FetchProgramsResult {
   items: ProgramItem[];
 }
 
-function inRange(start: string, from: string, to: string): boolean {
-  return start >= from && start <= to;
+function inRange(
+  start: string,
+  end: string,
+  from: string,
+  to: string
+): boolean {
+  return start <= to && end >= from;
 }
 
 function withinBounds(arena: Arena, bounds: MapBounds): boolean {
@@ -39,7 +44,7 @@ export async function fetchPrograms(
   const matches: ProgramItem[] = [];
   for (const arena of allArenas) {
     for (const program of arena.schedule.programs) {
-      if (inRange(program.start, from, to)) {
+      if (inRange(program.start, program.end, from, to)) {
         matches.push({ ...program, arena });
       }
     }
@@ -56,7 +61,7 @@ export async function fetchPrograms(
       schedule: {
         ...arena.schedule,
         programs: arena.schedule.programs.filter((p) =>
-          inRange(p.start, from, to)
+          inRange(p.start, p.end, from, to)
         ),
       },
     });

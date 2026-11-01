@@ -22,7 +22,7 @@ import {
   formatEventDate,
   formatTimeRange,
   getTodayInArenaTime,
-  isProgramUpcoming,
+  isProgramNotEnded,
   osmUrl,
 } from "@/lib/schedule";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -234,7 +234,7 @@ export function ArenaDetailModal({
   }
 
   const programs = arena.schedule.programs.filter((program) =>
-    isProgramUpcoming(program.start, arena.timezone)
+    isProgramNotEnded(program.end, arena.timezone)
   );
   const updated = new Date(arena.schedule.updatedAt).toISOString().slice(0, 10);
 
