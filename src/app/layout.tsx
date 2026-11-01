@@ -14,10 +14,21 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const description =
+  "Leisure skating, figure skating, shinny, and hockey at rinks across the GTA. Live schedules and an interactive map.";
+
+const ogImage = {
+  url: "/opengraph-image.png",
+  width: 1200,
+  height: 630,
+  alt: "GTA Skating — leisure skating, figure skating, shinny, and hockey at rinks across the GTA",
+  type: "image/png",
+};
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://gtaskating.com"),
   title: "GTA Skating Schedule",
-  description: "Upcoming skating programs and sessions across GTA arenas.",
+  description,
   manifest: "/manifest.json",
   appleWebApp: {
     capable: true,
@@ -29,6 +40,21 @@ export const metadata: Metadata = {
       { url: "/icons/icon-192x192.png", sizes: "192x192" },
       { url: "/icons/icon-512x512.png", sizes: "512x512" },
     ],
+  },
+  openGraph: {
+    type: "website",
+    url: "https://gtaskating.com",
+    siteName: "GTA Skating",
+    title: "GTA Skating Schedule",
+    description,
+    locale: "en_CA",
+    images: [ogImage],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "GTA Skating Schedule",
+    description,
+    images: [ogImage],
   },
 };
 
