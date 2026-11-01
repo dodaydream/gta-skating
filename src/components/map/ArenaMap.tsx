@@ -8,6 +8,7 @@ if (typeof window !== "undefined") {
   const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
   maplibregl.setWorkerUrl(`${basePath}/maplibre-gl-worker.mjs`);
 }
+
 import type { Arena } from "@/types/arena";
 
 interface ArenaMapProps {
