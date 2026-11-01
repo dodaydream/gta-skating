@@ -41,6 +41,9 @@ export default function Home() {
     lat: number;
     lon: number;
   } | null>(null);
+  const [locationResolved, setLocationResolved] = useState(
+    () => typeof navigator === "undefined" || !("geolocation" in navigator)
+  );
   const hasSetDate = useRef(false);
 
   useEffect(() => {
@@ -61,8 +64,11 @@ export default function Home() {
           lat: pos.coords.latitude,
           lon: pos.coords.longitude,
         });
+        setLocationResolved(true);
       },
-      () => {},
+      () => {
+        if (!cancelled) setLocationResolved(true);
+      },
       { timeout: 10000, enableHighAccuracy: false }
     );
     return () => {
@@ -71,7 +77,7 @@ export default function Home() {
   }, []);
 
   useEffect(() => {
-    if (!fromDate || !toDate) return;
+    if (!fromDate || !toDate || !locationResolved) return;
     let cancelled = false;
     void fetchPrograms({
       from: fromDate,
@@ -91,7 +97,7 @@ export default function Home() {
     return () => {
       cancelled = true;
     };
-  }, [fromDate, toDate, hideEmpty, mapBounds]);
+  }, [fromDate, toDate, hideEmpty, mapBounds, locationResolved]);
 
   useEffect(() => {
     if (selectedIndex === null) {
@@ -125,6 +131,7 @@ export default function Home() {
             selectedIndex={visibleIndex}
             onSelect={handleSelect}
             onBoundsChange={setMapBounds}
+            userLocation={userLocation}
           />
 
           <div className="absolute left-0 right-0 top-3 z-[1000] flex items-start gap-2 px-4">
