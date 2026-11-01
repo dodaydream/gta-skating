@@ -3,9 +3,10 @@
   "short_name": "GTA Skating",
   "description": "Upcoming skating programs and sessions across GTA arenas.",
   "start_url": ".",
-  "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#0f172a",
+  "display": "fullscreen",
+  "display_override": ["fullscreen", "standalone"],
+  "background_color": "#fafafa",
+  "theme_color": "#fafafa",
   "icons": [
     {
       "src": "/icons/icon-192x192.png",

@@ -166,6 +166,7 @@
   }
   html {
     @apply font-sans;
+    background-color: var(--background);
   }
 }
 
@@ -188,12 +189,12 @@
 }
 
 .maplibregl-control-container .maplibregl-ctrl-top-right {
-  top: var(--safe-top);
+  top: calc(var(--safe-top) + 0.75rem);
   right: var(--safe-right);
 }
 
 .maplibregl-control-container .maplibregl-ctrl-top-left {
-  top: var(--safe-top);
+  top: calc(var(--safe-top) + 0.75rem);
   left: var(--safe-left);
 }
 

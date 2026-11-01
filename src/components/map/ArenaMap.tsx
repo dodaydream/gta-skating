@@ -132,18 +132,24 @@ export default function ArenaMap({
   useEffect(() => {
     if (!containerRef.current) return;
 
-    const map = new maplibregl.Map({
-      container: containerRef.current,
-      style: dark ? DARK_STYLE : LIGHT_STYLE,
-      center: TORONTO,
-      zoom: DEFAULT_ZOOM,
-    });
+    let map: maplibregl.Map;
+    try {
+      map = new maplibregl.Map({
+        container: containerRef.current,
+        style: dark ? DARK_STYLE : LIGHT_STYLE,
+        center: TORONTO,
+        zoom: DEFAULT_ZOOM,
+      });
 
-    map.addControl(new maplibregl.NavigationControl(), "top-right");
-    map.addControl(
-      new maplibregl.ScaleControl({ unit: "metric", maxWidth: 120 }),
-      "bottom-left",
-    );
+      map.addControl(new maplibregl.NavigationControl(), "top-right");
+      map.addControl(
+        new maplibregl.ScaleControl({ unit: "metric", maxWidth: 120 }),
+        "bottom-left",
+      );
+    } catch {
+      // WebGL2 unsupported/unavailable: skip the map so the rest of the app still works.
+      return;
+    }
 
     locateRef.current = () => {
       if (!("geolocation" in navigator)) return;

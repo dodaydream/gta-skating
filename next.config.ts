@@ -8,6 +8,9 @@ const basePath = "";
 
 const nextConfig: NextConfig = {
   /* config options here */
+  // Allow the dev server to be reached from other hosts on the LAN (e.g. a
+  // phone testing http://172.16.100.139:3000). Dev-only; ignored in production.
+  allowedDevOrigins: ["172.16.100.139"],
   // Static export for GitHub Pages: the build emits plain HTML/CSS/JS into
   // `out/`. Cache Components/PPR require a Node.js server, so they are off.
   output: "export",

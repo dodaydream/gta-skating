@@ -32,13 +32,14 @@ export const metadata: Metadata = {
   title: "GTA Skating Schedule",
   description,
   manifest: "/manifest.json",
-  other: adsenseClient
-    ? { "google-adsense-account": adsenseClient }
-    : undefined,
+  other: {
+    "apple-mobile-web-app-capable": "yes",
+    ...(adsenseClient ? { "google-adsense-account": adsenseClient } : {}),
+  },
   appleWebApp: {
     capable: true,
     title: "GTA Skating",
-    statusBarStyle: "black-translucent",
+    statusBarStyle: "default",
   },
   icons: {
     apple: [
@@ -67,7 +68,10 @@ export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
   viewportFit: "cover",
-  themeColor: "#0f172a",
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#fafafa" },
+    { media: "(prefers-color-scheme: dark)", color: "#000000" },
+  ],
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
