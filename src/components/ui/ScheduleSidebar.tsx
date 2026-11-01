@@ -71,7 +71,7 @@ export function ScheduleSidebar({
   return (
     <>
       {/* Desktop static sidebar */}
-      <aside className="hidden flex-col overflow-y-auto border-t border-black/[.08] px-6 py-8 dark:border-white/[.145] lg:static lg:flex lg:w-96 lg:shrink-0 lg:border-t-0">
+      <aside className="hidden flex-col overflow-y-auto border-t border-black/[.08] bg-card px-6 py-8 dark:border-white/[.145] lg:static lg:flex lg:w-96 lg:shrink-0 lg:border-t-0">
         <div className="mb-4 flex items-center justify-between">
           <div className="flex flex-col">
             <h1 className="text-2xl font-semibold tracking-tight text-black dark:text-zinc-50">
