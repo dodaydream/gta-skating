@@ -3,7 +3,11 @@
 import { useEffect, useMemo, useState } from "react";
 import type { RefObject } from "react";
 import type { Program } from "@/types/schedule";
-import { toMinutes } from "@/lib/schedule";
+import {
+  getCurrentMinutesInArenaTime,
+  getTodayInArenaTime,
+  toMinutes,
+} from "@/lib/schedule";
 import { IconChevronLeft, IconChevronRight } from "@tabler/icons-react";
 import dayjs from "dayjs";
 
@@ -83,9 +87,11 @@ function computeTimeRange(columns: WeekColumn[]): {
 
 export function WeekView({
   programs,
+  timezone,
   bodyRef,
 }: {
   programs: Program[];
+  timezone: string;
   bodyRef: RefObject<HTMLDivElement | null>;
 }) {
   const baseWeekStart = useMemo(() => getWeekStartISO(programs), [programs]);
@@ -101,6 +107,23 @@ export function WeekView({
 
   const totalMinutes = (timeRange.endHour - timeRange.startHour) * 60;
   const rangeStartMinutes = timeRange.startHour * 60;
+
+  const [nowMinutes, setNowMinutes] = useState(() =>
+    getCurrentMinutesInArenaTime(timezone)
+  );
+
+  useEffect(() => {
+    const id = setInterval(
+      () => setNowMinutes(getCurrentMinutesInArenaTime(timezone)),
+      60_000
+    );
+    return () => clearInterval(id);
+  }, [timezone]);
+
+  const todayISO = getTodayInArenaTime(timezone);
+  const hasToday = columns.some((col) => col.date === todayISO);
+  const nowPct = ((nowMinutes - rangeStartMinutes) / totalMinutes) * 100;
+  const showNow = hasToday && nowPct >= 0 && nowPct <= 100;
 
   useEffect(() => {
     const el = bodyRef.current;
@@ -191,7 +214,7 @@ export function WeekView({
           ))}
         </div>
 
-        <div className="grid grid-cols-subgrid col-span-full" style={{ height: Math.max(timelineHeight, 300) }}>
+        <div className="relative grid grid-cols-subgrid col-span-full" style={{ height: Math.max(timelineHeight, 300) }}>
           <div className="relative">
             {hourPositions.map(({ hour, pct }) => (
               <div
@@ -242,6 +265,17 @@ export function WeekView({
               })}
             </div>
           ))}
+
+          {showNow && (
+            <div
+              aria-hidden="true"
+              className="pointer-events-none absolute z-20 -translate-y-1/2 flex items-center"
+              style={{ top: `${nowPct}%`, left: "2.5rem", right: 0 }}
+            >
+              <span className="-ml-1 h-2 w-2 shrink-0 rounded-full bg-red-500 dark:bg-red-400" />
+              <span className="-ml-1 h-px flex-1 bg-red-500 dark:bg-red-400" />
+            </div>
+          )}
         </div>
       </div>
     </div>

@@ -24,12 +24,12 @@ const DARK_STYLE = "https://tiles.openfreemap.org/styles/dark";
 const DEFAULT_ZOOM = 12;
 const TORONTO: [number, number] = [-79.390531, 43.725518];
 
-function createMarkerElement(selected: boolean): HTMLDivElement {
+function createMarkerElement(selected: boolean, hasPrograms: boolean): HTMLDivElement {
   const el = document.createElement("div");
   el.innerHTML = `<div style="
     width:20px;height:20px;
     border-radius:50% 50% 50% 0;transform:rotate(-45deg);
-    background:${selected ? "#2563eb" : "#ef4444"};
+    background:${selected ? "#2563eb" : hasPrograms ? "#22c55e" : "#ef4444"};
     border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.4);cursor:pointer;
   "></div>`;
   return el;
@@ -71,7 +71,8 @@ export default function ArenaMap({
       const { lat, lon } = arena.coordinates ?? {};
       if (!isFinite(lat) || !isFinite(lon)) return;
 
-      const el = createMarkerElement(i === selectedIndex);
+      const hasPrograms = (arenasRef.current[i].schedule.programs?.length ?? 0) > 0;
+      const el = createMarkerElement(i === selectedIndex, hasPrograms);
       el.addEventListener("click", () => onSelectRef.current(i));
 
       const marker = new maplibregl.Marker({ element: el })
@@ -86,7 +87,9 @@ export default function ArenaMap({
     markersRef.current.forEach((m, i) => {
       const inner = m.getElement().firstElementChild as HTMLElement | null;
       if (inner) {
-        inner.style.background = i === selectedIndex ? "#2563eb" : "#ef4444";
+        const arena = arenasRef.current[i];
+        const hasPrograms = (arena.schedule.programs?.length ?? 0) > 0;
+        inner.style.background = i === selectedIndex ? "#2563eb" : hasPrograms ? "#22c55e" : "#ef4444";
       }
     });
     if (selectedIndex !== null && markersRef.current[selectedIndex]) {

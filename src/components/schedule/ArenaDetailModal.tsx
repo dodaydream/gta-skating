@@ -1,8 +1,9 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import type { Arena } from "@/types/arena";
 import type { Program } from "@/types/schedule";
+import { fetchArenaDetails } from "@/api/arenas";
 import {
   Dialog,
   DialogClose,
@@ -14,23 +15,76 @@ import {
   formatEventDate,
   formatTimeRange,
   getTodayInArenaTime,
+  isProgramUpcoming,
   osmUrl,
 } from "@/lib/schedule";
-import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
+import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { WeekView } from "@/components/schedule/WeekView";
 import { X } from "lucide-react";
 
 export function ArenaDetailModal({
-  arena,
+  arenaName,
   onClose,
 }: {
-  arena: Arena;
+  arenaName: string;
   onClose: () => void;
 }) {
-  const programs = arena.schedule.programs;
-  const updated = new Date(arena.schedule.updatedAt).toISOString().slice(0, 10);
+  const [arena, setArena] = useState<Arena | null>(null);
+  const [error, setError] = useState(false);
   const [view, setView] = useState<"day" | "week">("day");
   const weekBodyRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    let cancelled = false;
+    fetchArenaDetails(arenaName)
+      .then((data) => {
+        if (!cancelled) setArena(data);
+      })
+      .catch(() => {
+        if (!cancelled) setError(true);
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [arenaName]);
+
+  if (error) {
+    return (
+      <Dialog open onOpenChange={(open) => !open && onClose()}>
+        <DialogContent showCloseButton={false} className="relative p-6">
+          <DialogTitle className="sr-only">Arena details</DialogTitle>
+          <p className="text-sm text-zinc-500">
+            Failed to load arena details.
+          </p>
+          <DialogClose
+            className="absolute right-4 top-4 rounded-lg p-1.5 text-zinc-500 transition-colors hover:bg-zinc-100 hover:text-black dark:hover:bg-zinc-800 dark:hover:text-zinc-50"
+            aria-label="Close"
+          >
+            <X className="h-5 w-5" />
+          </DialogClose>
+        </DialogContent>
+      </Dialog>
+    );
+  }
+
+  if (!arena) {
+    return (
+      <Dialog open onOpenChange={(open) => !open && onClose()}>
+        <DialogContent
+          showCloseButton={false}
+          className="flex max-h-[85vh] flex-col overflow-hidden gap-4 p-0"
+          style={{ maxWidth: "48rem" }}
+        >
+          <ArenaDetailSkeleton onClose={onClose} />
+        </DialogContent>
+      </Dialog>
+    );
+  }
+
+  const programs = arena.schedule.programs.filter((program) =>
+    isProgramUpcoming(program.start, arena.timezone)
+  );
+  const updated = new Date(arena.schedule.updatedAt).toISOString().slice(0, 10);
 
   return (
     <Dialog open onOpenChange={(open) => !open && onClose()}>
@@ -67,12 +121,16 @@ export function ArenaDetailModal({
           ref={weekBodyRef}
           className="flex flex-1 flex-col gap-5 overflow-y-auto px-5"
         >
-{view === "day" ? (
-            <ListView programs={programs} timezone={arena.timezone} />
-          ) : programs.length === 0 ? (
+          {programs.length === 0 ? (
             <p className="text-sm text-zinc-500">No upcoming sessions.</p>
+          ) : view === "day" ? (
+            <ListView programs={programs} timezone={arena.timezone} />
           ) : (
-            <WeekView programs={programs} bodyRef={weekBodyRef} />
+            <WeekView
+              programs={programs}
+              timezone={arena.timezone}
+              bodyRef={weekBodyRef}
+            />
           )}
         </div>
 
@@ -105,6 +163,66 @@ export function ArenaDetailModal({
         </footer>
       </DialogContent>
     </Dialog>
+  );
+}
+
+function ArenaDetailSkeleton({ onClose }: { onClose: () => void }) {
+  return (
+    <div className="flex flex-col gap-4">
+      <DialogTitle className="sr-only">Loading arena details</DialogTitle>
+      <header className="flex items-start justify-between gap-3 px-5 pt-5">
+        <div className="flex flex-col gap-2">
+          <div className="h-6 w-48 animate-pulse rounded bg-black/[.08] dark:bg-white/[.1]" />
+          <div className="h-4 w-64 animate-pulse rounded bg-black/[.06] dark:bg-white/[.08]" />
+        </div>
+        <button
+          type="button"
+          onClick={onClose}
+          aria-label="Close"
+          className="rounded-lg p-1.5 text-zinc-500 transition-colors hover:bg-zinc-100 hover:text-black dark:hover:bg-zinc-800 dark:hover:text-zinc-50"
+        >
+          <X className="h-5 w-5" />
+        </button>
+      </header>
+
+      <div
+        aria-hidden="true"
+        className="w-full min-w-0 overflow-x-auto overflow-y-hidden px-5 shrink-0"
+      >
+        <div className="flex gap-3 pb-1">
+          {[0, 1, 2].map((i) => (
+            <div
+              key={i}
+              className="flex w-56 shrink-0 flex-col gap-2 rounded-xl border border-black/[.08] p-3 dark:border-white/[.145]"
+            >
+              <div className="h-4 w-28 animate-pulse rounded bg-black/[.08] dark:bg-white/[.1]" />
+              <div className="h-3.5 w-full animate-pulse rounded bg-black/[.06] dark:bg-white/[.08]" />
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div aria-hidden="true" className="px-5">
+        <div className="h-9 w-40 animate-pulse rounded-lg bg-black/[.08] dark:bg-white/[.1]" />
+      </div>
+
+      <div
+        aria-hidden="true"
+        className="flex flex-1 flex-col gap-5 overflow-y-auto px-5"
+      >
+        {[0, 1].map((i) => (
+          <div key={i} className="flex flex-col gap-3">
+            <div className="h-4 w-36 animate-pulse rounded bg-black/[.08] dark:bg-white/[.1]" />
+            {[0, 1, 2].map((j) => (
+              <div key={j} className="flex flex-col gap-2 py-2">
+                <div className="h-4 w-24 animate-pulse rounded bg-black/[.06] dark:bg-white/[.08]" />
+                <div className="h-4 w-56 animate-pulse rounded bg-black/[.06] dark:bg-white/[.08]" />
+              </div>
+            ))}
+          </div>
+        ))}
+      </div>
+    </div>
   );
 }
 

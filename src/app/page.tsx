@@ -9,7 +9,6 @@ import { Button } from "@/components/ui/button";
 import { FilterChips } from "@/components/ui/DateFilter";
 import { ScheduleSidebar } from "@/components/ui/ScheduleSidebar";
 import { ArenaDetailModal } from "@/components/schedule/ArenaDetailModal";
-import { getTodayInArenaTime } from "@/lib/schedule";
 
 const ArenaMap = dynamic(() => import("@/components/map/ArenaMap"), {
   ssr: false,
@@ -92,19 +91,18 @@ export default function Home() {
   const loading = !allArenas || !fromDate || !toDate;
 
   const arenas = useMemo(() => {
-    if (!allArenas) return [];
+    if (!allArenas || !fromDate || !toDate) return [];
     const seen = new Set<string>();
     const list: Arena[] = [];
     const add = (arena: Arena) => {
       if (seen.has(arena.name)) return;
       seen.add(arena.name);
-      const today = getTodayInArenaTime(arena.timezone);
       list.push({
         ...arena,
         schedule: {
           ...arena.schedule,
           programs: arena.schedule.programs.filter(
-            (p) => p.start.slice(0, 10) >= today
+            (p) => p.start >= fromDate && p.start <= toDate
           ),
         },
       });
@@ -114,7 +112,7 @@ export default function Home() {
       for (const arena of allArenas) add(arena);
     }
     return list;
-  }, [items, allArenas, hideEmpty]);
+  }, [items, allArenas, hideEmpty, fromDate, toDate]);
 
   useEffect(() => {
     if (selectedIndex === null) {
@@ -188,7 +186,8 @@ export default function Home() {
 
       {detailArena ? (
         <ArenaDetailModal
-          arena={detailArena}
+          key={detailArena.name}
+          arenaName={detailArena.name}
           onClose={() => {
             setDetailArena(null);
             setSelectedIndex(null);
