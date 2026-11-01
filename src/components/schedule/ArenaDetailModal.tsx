@@ -4,13 +4,19 @@ import { useEffect, useRef, useState } from "react";
 import type { Arena } from "@/types/arena";
 import type { Program } from "@/types/schedule";
 import { fetchArenaDetails } from "@/api/arenas";
+import { cn } from "cn";
 import {
   Dialog,
-  DialogClose,
   DialogContent,
   DialogDescription,
   DialogTitle,
 } from "@/components/ui/dialog";
+import {
+  Drawer,
+  DrawerContent,
+  DrawerDescription,
+  DrawerTitle,
+} from "@/components/ui/drawer";
 import {
   formatEventDate,
   formatTimeRange,
@@ -21,6 +27,132 @@ import {
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { WeekView } from "@/components/schedule/WeekView";
 import { X } from "lucide-react";
+
+const DESKTOP_QUERY = "(min-width: 1024px)";
+
+const SNAP_POINTS = [0.5, 0.9];
+
+function useIsDesktop() {
+  const [isDesktop, setIsDesktop] = useState(() =>
+    typeof window === "undefined"
+      ? true
+      : window.matchMedia(DESKTOP_QUERY).matches
+  );
+
+  useEffect(() => {
+    const mq = window.matchMedia(DESKTOP_QUERY);
+    const onChange = () => setIsDesktop(mq.matches);
+    mq.addEventListener("change", onChange);
+    return () => mq.removeEventListener("change", onChange);
+  }, []);
+
+  return isDesktop;
+}
+
+function Panel({
+  isDesktop,
+  onClose,
+  header,
+  children,
+}: {
+  isDesktop: boolean;
+  onClose: () => void;
+  header?: React.ReactNode;
+  children: React.ReactNode;
+}) {
+  const [snapPoint, setSnapPoint] = useState<number>(SNAP_POINTS[0]);
+  const body = (
+    <div className="flex min-h-0 flex-1 flex-col gap-4">{children}</div>
+  );
+
+  if (isDesktop) {
+    return (
+      <Dialog open onOpenChange={(open) => !open && onClose()}>
+        <DialogContent
+          showCloseButton={false}
+          className="flex max-h-[85vh] flex-col overflow-hidden p-0"
+          style={{ maxWidth: "48rem" }}
+        >
+          {header}
+          {body}
+        </DialogContent>
+      </Dialog>
+    );
+  }
+
+  return (
+    <Drawer
+      open
+      swipeDirection="down"
+      showSwipeHandle
+      snapPoints={SNAP_POINTS}
+      snapPoint={snapPoint}
+      onSnapPointChange={(next) => {
+        if (typeof next === "number") setSnapPoint(next);
+      }}
+      onOpenChange={(open) => !open && onClose()}
+    >
+      <DrawerContent
+        className="pb-[calc(var(--drawer-snap-point-offset,0px)+var(--drawer-swipe-movement-y,0px))]"
+        header={header}
+      >
+        {body}
+      </DrawerContent>
+    </Drawer>
+  );
+}
+
+function PanelTitle({
+  isDesktop,
+  className,
+  children,
+}: {
+  isDesktop: boolean;
+  className?: string;
+  children: React.ReactNode;
+}) {
+  if (isDesktop) {
+    return <DialogTitle className={className}>{children}</DialogTitle>;
+  }
+  return <DrawerTitle className={className}>{children}</DrawerTitle>;
+}
+
+function PanelDescription({
+  isDesktop,
+  className,
+  children,
+}: {
+  isDesktop: boolean;
+  className?: string;
+  children: React.ReactNode;
+}) {
+  if (isDesktop) {
+    return <DialogDescription className={className}>{children}</DialogDescription>;
+  }
+  return <DrawerDescription className={className}>{children}</DrawerDescription>;
+}
+
+function CloseButton({
+  onClick,
+  className,
+}: {
+  onClick: () => void;
+  className?: string;
+}) {
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      aria-label="Close"
+      className={cn(
+        "rounded-lg p-1.5 text-zinc-500 transition-colors hover:bg-zinc-100 hover:text-black dark:hover:bg-zinc-800 dark:hover:text-zinc-50",
+        className
+      )}
+    >
+      <X className="h-5 w-5" />
+    </button>
+  );
+}
 
 export function ArenaDetailModal({
   arenaName,
@@ -33,6 +165,7 @@ export function ArenaDetailModal({
   const [error, setError] = useState(false);
   const [view, setView] = useState<"day" | "week">("day");
   const weekBodyRef = useRef<HTMLDivElement>(null);
+  const isDesktop = useIsDesktop();
 
   useEffect(() => {
     let cancelled = false;
@@ -50,34 +183,41 @@ export function ArenaDetailModal({
 
   if (error) {
     return (
-      <Dialog open onOpenChange={(open) => !open && onClose()}>
-        <DialogContent showCloseButton={false} className="relative p-6">
-          <DialogTitle className="sr-only">Arena details</DialogTitle>
+      <Panel
+        isDesktop={isDesktop}
+        onClose={onClose}
+        header={
+          <div className="flex items-start justify-between gap-3 px-5 pt-5">
+            <PanelTitle isDesktop={isDesktop} className="sr-only">
+              Arena details
+            </PanelTitle>
+            <CloseButton onClick={onClose} />
+          </div>
+        }
+      >
+        <div className="px-5 pb-6">
           <p className="text-sm text-zinc-500">
             Failed to load arena details.
           </p>
-          <DialogClose
-            className="absolute right-4 top-4 rounded-lg p-1.5 text-zinc-500 transition-colors hover:bg-zinc-100 hover:text-black dark:hover:bg-zinc-800 dark:hover:text-zinc-50"
-            aria-label="Close"
-          >
-            <X className="h-5 w-5" />
-          </DialogClose>
-        </DialogContent>
-      </Dialog>
+        </div>
+      </Panel>
     );
   }
 
   if (!arena) {
     return (
-      <Dialog open onOpenChange={(open) => !open && onClose()}>
-        <DialogContent
-          showCloseButton={false}
-          className="flex max-h-[85vh] flex-col overflow-hidden gap-4 p-0"
-          style={{ maxWidth: "48rem" }}
-        >
-          <ArenaDetailSkeleton onClose={onClose} />
-        </DialogContent>
-      </Dialog>
+      <Panel
+        isDesktop={isDesktop}
+        onClose={onClose}
+        header={
+          <ArenaDetailSkeletonHeader
+            isDesktop={isDesktop}
+            onClose={onClose}
+          />
+        }
+      >
+        <ArenaDetailSkeleton />
+      </Panel>
     );
   }
 
@@ -87,107 +227,109 @@ export function ArenaDetailModal({
   const updated = new Date(arena.schedule.updatedAt).toISOString().slice(0, 10);
 
   return (
-    <Dialog open onOpenChange={(open) => !open && onClose()}>
-      <DialogContent
-        showCloseButton={false}
-        className="flex max-h-[85vh] flex-col overflow-hidden gap-4 p-0"
-        style={{ maxWidth: "48rem" }}
-      >
-        <header className="flex items-start justify-between gap-3 px-5 pt-5">
+    <Panel
+      isDesktop={isDesktop}
+      onClose={onClose}
+      header={
+        <header className="flex items-start justify-between gap-3 px-5 pt-5 pb-5">
           <div>
-            <DialogTitle className="text-lg">{arena.name}</DialogTitle>
-            <DialogDescription>{arena.address}</DialogDescription>
+            <PanelTitle isDesktop={isDesktop} className="text-lg">
+              {arena.name}
+            </PanelTitle>
+            <PanelDescription isDesktop={isDesktop}>
+              {arena.address}
+            </PanelDescription>
           </div>
-          <DialogClose
-            className="rounded-lg p-1.5 text-zinc-500 transition-colors hover:bg-zinc-100 hover:text-black dark:hover:bg-zinc-800 dark:hover:text-zinc-50"
-            aria-label="Close"
-          >
-            <X className="h-5 w-5" />
-          </DialogClose>
+          <CloseButton onClick={onClose} />
         </header>
+      }
+    >
+      <TodayCards programs={programs} timezone={arena.timezone} />
 
-        <TodayCards programs={programs} timezone={arena.timezone} />
+      <div className="px-5">
+        <Tabs value={view} onValueChange={(v) => setView(v as "day" | "week")}>
+          <TabsList>
+            <TabsTrigger value="day">Day</TabsTrigger>
+            <TabsTrigger value="week">Week</TabsTrigger>
+          </TabsList>
+        </Tabs>
+      </div>
 
-        <div className="px-5">
-          <Tabs value={view} onValueChange={(v) => setView(v as "day" | "week")}>
-            <TabsList>
-              <TabsTrigger value="day">Day</TabsTrigger>
-              <TabsTrigger value="week">Week</TabsTrigger>
-            </TabsList>
-          </Tabs>
-        </div>
+      <div
+        ref={weekBodyRef}
+        className="flex flex-1 flex-col gap-5 overflow-y-auto px-5"
+      >
+        {programs.length === 0 ? (
+          <p className="text-sm text-zinc-500">No upcoming sessions.</p>
+        ) : view === "day" ? (
+          <ListView programs={programs} timezone={arena.timezone} />
+        ) : (
+          <WeekView
+            programs={programs}
+            timezone={arena.timezone}
+            bodyRef={weekBodyRef}
+          />
+        )}
+      </div>
 
-        <div
-          ref={weekBodyRef}
-          className="flex flex-1 flex-col gap-5 overflow-y-auto px-5"
-        >
-          {programs.length === 0 ? (
-            <p className="text-sm text-zinc-500">No upcoming sessions.</p>
-          ) : view === "day" ? (
-            <ListView programs={programs} timezone={arena.timezone} />
-          ) : (
-            <WeekView
-              programs={programs}
-              timezone={arena.timezone}
-              bodyRef={weekBodyRef}
-            />
-          )}
-        </div>
-
-        <footer className="flex items-center justify-between gap-3 border-t border-black/[.06] px-5 py-3 text-xs text-zinc-500 dark:border-white/[.08] dark:text-zinc-400">
-          {arena.url ? (
+      <footer className="flex items-center justify-between gap-3 border-t border-black/[.06] px-5 py-3 text-xs text-zinc-500 dark:border-white/[.08] dark:text-zinc-400">
+        {arena.url ? (
+          <a
+            className="font-medium text-blue-600 hover:underline dark:text-blue-400"
+            href={arena.url}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Arena website
+          </a>
+        ) : (
+          <span />
+        )}
+        <span className="flex items-center gap-3">
+          {arena.coordinates ? (
             <a
               className="font-medium text-blue-600 hover:underline dark:text-blue-400"
-              href={arena.url}
+              href={osmUrl(arena.coordinates.lat, arena.coordinates.lon)}
               target="_blank"
               rel="noopener noreferrer"
             >
-              Arena website
+              View on map
             </a>
-          ) : (
-            <span />
-          )}
-          <span className="flex items-center gap-3">
-            {arena.coordinates ? (
-              <a
-                className="font-medium text-blue-600 hover:underline dark:text-blue-400"
-                href={osmUrl(arena.coordinates.lat, arena.coordinates.lon)}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                View on map
-              </a>
-            ) : null}
-            <span className="text-zinc-400">Updated {updated}</span>
-          </span>
-        </footer>
-      </DialogContent>
-    </Dialog>
+          ) : null}
+          <span className="text-zinc-400">Updated {updated}</span>
+        </span>
+      </footer>
+    </Panel>
   );
 }
 
-function ArenaDetailSkeleton({ onClose }: { onClose: () => void }) {
+function ArenaDetailSkeletonHeader({
+  isDesktop,
+  onClose,
+}: {
+  isDesktop: boolean;
+  onClose: () => void;
+}) {
   return (
-    <div className="flex flex-col gap-4">
-      <DialogTitle className="sr-only">Loading arena details</DialogTitle>
-      <header className="flex items-start justify-between gap-3 px-5 pt-5">
-        <div className="flex flex-col gap-2">
-          <div className="h-6 w-48 animate-pulse rounded bg-black/[.08] dark:bg-white/[.1]" />
-          <div className="h-4 w-64 animate-pulse rounded bg-black/[.06] dark:bg-white/[.08]" />
-        </div>
-        <button
-          type="button"
-          onClick={onClose}
-          aria-label="Close"
-          className="rounded-lg p-1.5 text-zinc-500 transition-colors hover:bg-zinc-100 hover:text-black dark:hover:bg-zinc-800 dark:hover:text-zinc-50"
-        >
-          <X className="h-5 w-5" />
-        </button>
-      </header>
+    <header className="flex items-start justify-between gap-3 px-5 pt-5">
+      <div className="flex flex-col gap-2">
+        <PanelTitle isDesktop={isDesktop} className="sr-only">
+          Loading arena details
+        </PanelTitle>
+        <div className="h-6 w-48 animate-pulse rounded bg-black/[.08] dark:bg-white/[.1]" />
+        <div className="h-4 w-64 animate-pulse rounded bg-black/[.06] dark:bg-white/[.08]" />
+      </div>
+      <CloseButton onClick={onClose} />
+    </header>
+  );
+}
 
+function ArenaDetailSkeleton() {
+  return (
+    <>
       <div
         aria-hidden="true"
-        className="w-full min-w-0 overflow-x-auto overflow-y-hidden px-5 shrink-0"
+        className="w-full min-w-0 shrink-0 overflow-x-auto overflow-y-hidden px-5"
       >
         <div className="flex gap-3 pb-1">
           {[0, 1, 2].map((i) => (
@@ -222,7 +364,7 @@ function ArenaDetailSkeleton({ onClose }: { onClose: () => void }) {
           </div>
         ))}
       </div>
-    </div>
+    </>
   );
 }
 
@@ -236,7 +378,7 @@ function TodayCards({
   const today = getTodayInArenaTime(timezone);
 
   return (
-    <div className="w-full min-w-0 overflow-x-auto overflow-y-hidden px-5 shrink-0">
+    <div className="w-full min-w-0 shrink-0 overflow-x-auto overflow-y-hidden px-5">
       <div className="flex gap-3 pb-1">
         {programs.map((program) => {
           const programDate = program.start.slice(0, 10);
