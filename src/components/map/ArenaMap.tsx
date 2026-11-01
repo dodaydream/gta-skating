@@ -27,14 +27,27 @@ const DARK_STYLE = "https://tiles.openfreemap.org/styles/dark";
 const DEFAULT_ZOOM = 12;
 const TORONTO: [number, number] = [-79.390531, 43.725518];
 
-function createMarkerElement(selected: boolean, hasPrograms: boolean): HTMLDivElement {
+function createMarkerElement(
+  selected: boolean,
+  hasPrograms: boolean,
+  name: string
+): HTMLDivElement {
   const el = document.createElement("div");
+  const pinSize = selected ? 32 : 20;
+  el.style.cssText = selected
+    ? "display:flex;flex-direction:column;align-items:center;gap:8px;"
+    : "";
   el.innerHTML = `<div style="
-    width:20px;height:20px;
+    width:${pinSize}px;height:${pinSize}px;
     border-radius:50% 50% 50% 0;transform:rotate(-45deg);
     background:${selected ? "#2563eb" : hasPrograms ? "#22c55e" : "#ef4444"};
     border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.4);cursor:pointer;
-  "></div>`;
+    transition:width .2s,height .2s;
+  "></div>${selected ? `<span style="
+    font-size:11px;font-weight:600;line-height:1.2;
+    color:#fff;text-align:center;max-width:160px;
+    text-shadow:0 1px 2px rgba(0,0,0,.6);
+  ">${name}</span>` : ""}`;
   return el;
 }
 
@@ -92,7 +105,7 @@ export default function ArenaMap({
       if (!isFinite(lat) || !isFinite(lon)) return;
 
       const hasPrograms = (arenasRef.current[i].schedule.programs?.length ?? 0) > 0;
-      const el = createMarkerElement(i === selectedIndex, hasPrograms);
+      const el = createMarkerElement(i === selectedIndex, hasPrograms, arena.name);
       el.addEventListener("click", () => onSelectRef.current(i));
 
       const marker = new maplibregl.Marker({ element: el })
@@ -104,18 +117,7 @@ export default function ArenaMap({
 
   const updateSelected = useRef(() => {});
   updateSelected.current = () => {
-    markersRef.current.forEach((m, i) => {
-      const inner = m.getElement().firstElementChild as HTMLElement | null;
-      if (inner) {
-        const arena = arenasRef.current[i];
-        const hasPrograms = (arena.schedule.programs?.length ?? 0) > 0;
-        inner.style.background = i === selectedIndex ? "#2563eb" : hasPrograms ? "#22c55e" : "#ef4444";
-      }
-    });
-    if (selectedIndex !== null && markersRef.current[selectedIndex]) {
-      const m = markersRef.current[selectedIndex];
-      mapRef.current?.flyTo({ center: m.getLngLat(), duration: 400 });
-    }
+    syncMarkers.current();
   };
 
   useEffect(() => {
