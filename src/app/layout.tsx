@@ -25,11 +25,16 @@ const ogImage = {
   type: "image/png",
 };
 
+const adsenseClient = process.env.NEXT_PUBLIC_ADSENSE_CLIENT;
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://gtaskating.com"),
   title: "GTA Skating Schedule",
   description,
   manifest: "/manifest.json",
+  other: adsenseClient
+    ? { "google-adsense-account": adsenseClient }
+    : undefined,
   appleWebApp: {
     capable: true,
     title: "GTA Skating",
@@ -67,7 +72,6 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   const gaId = process.env.NEXT_PUBLIC_GA_ID;
-  const adsenseClient = process.env.NEXT_PUBLIC_ADSENSE_CLIENT;
   return (
     <html
       lang="en"
