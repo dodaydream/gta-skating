@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import Script from "next/script";
 import { Geist, Geist_Mono } from "next/font/google";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
@@ -40,12 +41,21 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   const gaId = process.env.NEXT_PUBLIC_GA_ID;
+  const adsenseClient = process.env.NEXT_PUBLIC_ADSENSE_CLIENT;
   return (
     <html
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full overflow-hidden antialiased`}
     >
       <body className="min-h-full flex flex-col overflow-hidden">{children}</body>
+      {adsenseClient ? (
+        <Script
+          async
+          crossOrigin="anonymous"
+          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adsenseClient}`}
+          strategy="beforeInteractive"
+        />
+      ) : null}
       {gaId ? <GoogleAnalytics gaId={gaId} /> : null}
     </html>
   );

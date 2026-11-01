@@ -42,6 +42,20 @@ no base path is configured. Enable Pages once under Settings → Pages → Sourc
 Schedules are refreshed weekly by `.github/workflows/scrape.yml`, which commits
 the scraped data in `src/data/` and then dispatches the deploy workflow.
 
+Build-time environment variables:
+
+- `NEXT_PUBLIC_GA_ID` — Google Analytics 4 measurement ID; unset disables
+  analytics.
+- `NEXT_PUBLIC_ADSENSE_CLIENT` — AdSense publisher ID (e.g.
+  `ca-pub-0000000000000000`); unset disables the AdSense script.
+- `NEXT_PUBLIC_ADSENSE_SLOT` — AdSense ad unit slot ID for the manual unit shown
+  under the schedule; unset hides the unit.
+
+Set them as repository variables (Settings → Secrets and variables → Actions →
+**Variables**) for deployments, or in `.env.local` for local builds. Only a
+single manual ad unit is rendered; keep **Auto ads** off in the AdSense dashboard
+so no extra ads are injected.
+
 To preview the production build locally:
 
 ```bash

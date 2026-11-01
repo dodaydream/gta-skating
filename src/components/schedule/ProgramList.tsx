@@ -1,9 +1,11 @@
 "use client";
 
 import { useMemo } from "react";
+import Link from "next/link";
 import type { Arena } from "@/types/arena";
 import type { ProgramItem } from "@/types/schedule";
 import { ProgramListItem } from "@/components/schedule/ProgramListItem";
+import { AdUnit } from "@/components/ads/AdUnit";
 import { ScheduleSkeleton } from "@/components/ui/ScheduleSkeleton";
 
 type ProgramListProps = {
@@ -45,9 +47,17 @@ export function ProgramList({
         )}
       </div>
 
+      <AdUnit className="mt-3" />
+
       <footer className="mt-8 text-xs text-zinc-500 dark:text-zinc-400">
         {arenaCount} arena{arenaCount === 1 ? "" : "s"}. Schedule data may change
-        — check arena websites for the latest.
+        — check arena websites for the latest.{" "}
+        <Link
+          href="/privacy"
+          className="font-medium text-blue-600 hover:underline dark:text-blue-400"
+        >
+          Privacy Policy
+        </Link>
       </footer>
     </div>
   );

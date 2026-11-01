@@ -45,6 +45,16 @@ jobs:
           GA_ID: ${{ vars.NEXT_PUBLIC_GA_ID }}
         run: echo "NEXT_PUBLIC_GA_ID=$GA_ID" >> "$GITHUB_ENV"
 
+      - name: Resolve AdSense client
+        # AdSense client id is a public value; set the NEXT_PUBLIC_ADSENSE_CLIENT
+        # repository variable to enable ads (unset disables them).
+        env:
+          ADSENSE_CLIENT: ${{ vars.NEXT_PUBLIC_ADSENSE_CLIENT }}
+          ADSENSE_SLOT: ${{ vars.NEXT_PUBLIC_ADSENSE_SLOT }}
+        run: |
+          echo "NEXT_PUBLIC_ADSENSE_CLIENT=$ADSENSE_CLIENT" >> "$GITHUB_ENV"
+          echo "NEXT_PUBLIC_ADSENSE_SLOT=$ADSENSE_SLOT" >> "$GITHUB_ENV"
+
       - name: Build static export
         run: yarn build
 

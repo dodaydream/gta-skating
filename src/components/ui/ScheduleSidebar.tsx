@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
 import type { Arena } from "@/types/arena";
 import type { ProgramItem } from "@/types/schedule";
 import { ProgramList } from "@/components/schedule/ProgramList";
@@ -81,6 +82,12 @@ export function ScheduleSidebar({
               {items.length} program{items.length === 1 ? "" : "s"} found
             </span>
           </div>
+          <Link
+            href="/privacy"
+            className="text-xs font-medium text-blue-600 hover:underline dark:text-blue-400"
+          >
+            Privacy
+          </Link>
         </div>
 
         <ProgramList
@@ -118,6 +125,12 @@ export function ScheduleSidebar({
                   {items.length} program{items.length === 1 ? "" : "s"} found
                 </DrawerDescription>
               </div>
+              <Link
+                href="/privacy"
+                className="text-xs font-medium text-blue-600 hover:underline dark:text-blue-400"
+              >
+                Privacy
+              </Link>
             </div>
           }
         >
