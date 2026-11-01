@@ -35,16 +35,14 @@ The app builds to a fully static site (`output: "export"`) and is deployed by
 `.github/workflows/deploy.yml`: the `build` job runs `next build` and uploads
 `out/`, and the `deploy` job publishes it with `actions/deploy-pages`.
 
-Enable Pages once under Settings → Pages → Source → **GitHub Actions**. A project
-site is served from `/<repo>/`, which the workflow passes as
-`NEXT_PUBLIC_BASE_PATH`; set the `PAGES_CUSTOM_DOMAIN` repository variable to
-`true` for a custom domain or a user/org site, which are served from the root.
+The site is served from the custom domain `gtaskating.com` at the site root, so
+no base path is configured. Enable Pages once under Settings → Pages → Source →
+**GitHub Actions**.
 
 Schedules are refreshed weekly by `.github/workflows/scrape.yml`, which commits
 the scraped data in `src/data/` and then dispatches the deploy workflow.
 
-To preview the production build locally (leave `NEXT_PUBLIC_BASE_PATH` unset, so
-assets resolve from `/`):
+To preview the production build locally:
 
 ```bash
 yarn build

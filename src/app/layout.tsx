@@ -14,6 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://gtaskating.com"),
   title: "GTA Skating Schedule",
   description: "Upcoming skating programs and sessions across GTA arenas.",
   manifest: "/manifest.json",

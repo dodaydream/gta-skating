@@ -2,10 +2,9 @@ import type { NextConfig } from "next";
 import { dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 
-// The app is exported as a fully static site for GitHub Pages. A project site
-// is served from /<repo>/, so CI passes that prefix (e.g. "/gta-skating").
-// Leave unset for a custom domain / user site (served from /).
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+// The app is deployed to the custom domain gtaskating.com and served from the
+// site root, so no base path is required.
+const basePath = "";
 
 const nextConfig: NextConfig = {
   /* config options here */
