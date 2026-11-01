@@ -135,7 +135,7 @@ export default function Home() {
             userLocation={userLocation}
           />
 
-          <div className="absolute left-0 right-0 top-3 z-40 flex items-start gap-2 px-4">
+          <div className="absolute left-0 right-0 top-[calc(var(--safe-top)_+_0.75rem)] z-40 flex items-start gap-2 pl-[calc(var(--safe-left)_+_1rem)] pr-[calc(var(--safe-right)_+_1rem)]">
             <Button
               variant="secondary"
               size="icon"

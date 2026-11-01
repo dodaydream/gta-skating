@@ -72,7 +72,7 @@ export function ScheduleSidebar({
   return (
     <>
       {/* Desktop static sidebar */}
-      <aside className="hidden flex-col overflow-y-auto border-t border-black/[.08] bg-card px-6 py-8 dark:border-white/[.145] lg:static lg:flex lg:w-96 lg:shrink-0 lg:border-t-0">
+      <aside className="hidden flex-col overflow-y-auto border-t border-black/[.08] bg-card py-8 pl-[calc(var(--safe-left)_+_1.5rem)] pr-[calc(var(--safe-right)_+_1.5rem)] dark:border-white/[.145] lg:static lg:flex lg:w-96 lg:shrink-0 lg:border-t-0">
         <div className="mb-4 flex items-center justify-between">
           <div className="flex flex-col">
             <h1 className="text-2xl font-semibold tracking-tight text-black dark:text-zinc-50">
@@ -116,7 +116,7 @@ export function ScheduleSidebar({
         <DrawerContent
           className="border-black/[.08] dark:border-white/[.145] lg:hidden"
           header={
-            <div className="flex items-center justify-between px-6 pb-4 pt-4">
+            <div className="flex items-center justify-between pb-4 pt-4 pl-[calc(var(--safe-left)_+_1.5rem)] pr-[calc(var(--safe-right)_+_1.5rem)]">
               <div className="flex flex-col">
                 <DrawerTitle className="text-xl font-semibold tracking-tight">
                   GTA Skating Arenas
@@ -135,7 +135,7 @@ export function ScheduleSidebar({
           }
         >
           <ProgramList
-            className="min-h-0 flex-1 overflow-y-auto px-6 pb-8"
+            className="min-h-0 flex-1 overflow-y-auto pl-[calc(var(--safe-left)_+_1.5rem)] pr-[calc(var(--safe-right)_+_1.5rem)] pb-[calc(var(--safe-bottom)_+_2rem)]"
             items={items}
             loading={loading}
             userLocation={userLocation}

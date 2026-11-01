@@ -71,9 +71,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full overflow-hidden antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} h-dvh overflow-hidden antialiased`}
     >
-      <body className="min-h-full flex flex-col overflow-hidden">{children}</body>
+      <body className="flex h-full flex-col overflow-hidden">{children}</body>
       {adsenseClient ? (
         <Script
           async
