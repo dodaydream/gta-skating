@@ -1,6 +1,6 @@
 "use client";
 
-import { Fragment, useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import type { Venue } from "@/types/venue";
 import type { Program } from "@/types/schedule";
 import type { BusyReport } from "@/types/feedback";
@@ -36,7 +36,6 @@ import { TicketBadge } from "@/components/schedule/TicketBadge";
 import { BusyBadge } from "@/components/schedule/BusyBadge";
 import { BusynessInput } from "@/components/schedule/BusynessInput";
 import { trackEvent } from "@/lib/analytics";
-import { AdUnit, adsEnabled } from "@/components/ads/AdUnit";
 import { X } from "lucide-react";
 
 const DESKTOP_QUERY = "(min-width: 1024px)";
@@ -523,10 +522,10 @@ function TodayCards({
   return (
     <div className="no-scrollbar w-full min-w-0 shrink-0 overflow-x-auto overflow-y-hidden px-5">
       <div className="flex gap-3 pb-1">
-        {programs.map((program, index) => {
+        {programs.map((program) => {
           const programDate = program.start.slice(0, 10);
           const isToday = programDate === today;
-          const card = (
+          return (
             <div
               key={`${program.id}-${program.start}`}
               className={`flex w-56 shrink-0 flex-col overflow-hidden rounded-xl border p-3 ${
@@ -571,16 +570,6 @@ function TodayCards({
                 </li>
               </ul>
             </div>
-          );
-          return (
-            <Fragment key={`${program.id}-${program.start}`}>
-              {card}
-              {index === 0 && adsEnabled ? (
-                <div className="flex w-56 shrink-0 flex-col justify-center rounded-xl border border-black/[.08] bg-white p-3 dark:border-white/[.145] dark:bg-zinc-950">
-                  <AdUnit slot="1334014883" />
-                </div>
-              ) : null}
-            </Fragment>
           );
         })}
       </div>
