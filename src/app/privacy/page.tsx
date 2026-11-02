@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     "How the GTA Skating Schedule collects, uses and shares information, including cookies, analytics, location and advertising.",
 };
 
-const LAST_UPDATED = "1 November 2026";
+const LAST_UPDATED = "2 November 2026";
 
 const REPO_URL = "https://github.com/dodaydream/gta-skating";
 
@@ -64,8 +64,11 @@ export default function PrivacyPage() {
         <Section id="summary" title="In short">
           <ul className="list-disc pl-5">
             <li>
-              The Site has no accounts, sign-in, or contact forms, and we do not
-              ask you for your name, email address, or other contact details.
+              The Site has no user accounts or contact forms, and we do not ask
+              you for your name, email address, or other contact details. You
+              may optionally submit an anonymous &ldquo;how busy is it&rdquo;
+              rating, which is the only information you actively provide; doing
+              so creates a random, non-identifying identifier in your browser.
             </li>
             <li>
               We use Google Analytics to understand how the Site is used. This
@@ -74,9 +77,16 @@ export default function PrivacyPage() {
             </li>
             <li>
               With your permission, the Site reads your device&rsquo;s location in
-              your browser to sort arenas by distance and centre the map. It is
-              used only on your device and is not sent to us or to third
-              parties.
+              your browser to sort arenas by distance and centre the map. The
+              coordinates are used only on your device and are not sent to us or
+              to third parties. If you submit a busyness rating, that rating
+              reveals the venue and the time you were looking at, but not your
+              coordinates.
+            </li>
+            <li>
+              Busyness ratings you choose to submit are stored on our behalf and
+              shown to other visitors. They are tied only to a randomly
+              generated, non-identifying browser identifier.
             </li>
             <li>
               The Site displays advertising served by Google AdSense and other
@@ -91,9 +101,12 @@ export default function PrivacyPage() {
           </h3>
           <p>
             The Site does not offer accounts, comments, or forms, so it does not
-            collect personal information that you type in. The only information
-            you actively choose to share is your device location, described
-            below.
+            collect personal information that you type in. The information you
+            actively choose to share is your device location (described below)
+            and, optionally, a busyness rating when a session is in progress.
+            Busyness ratings are anonymous: they record only a busy level (Quiet,
+            Moderate, or Busy), the venue, and the time, and are not linked to
+            your name or contact details.
           </p>
 
           <h3 className="font-medium text-black dark:text-zinc-100">
@@ -127,6 +140,17 @@ export default function PrivacyPage() {
               are not stored or transmitted to us or to third parties. You can
               deny the request or revoke the permission at any time in your
               browser settings; the Site continues to work without it.
+            </li>
+            <li>
+              <span className="font-medium text-black dark:text-zinc-100">
+                Anonymous identifier.
+              </span>{" "}
+              If you submit a busyness rating, Firebase Authentication creates a
+              random identifier that is stored in your browser. It is not derived
+              from your name, email, or any other personal detail, and is used
+              only to cap repeated submissions and to validate writes. A rating
+              reveals only the venue and time you were asked about, not your
+              precise location.
             </li>
             <li>
               <span className="font-medium text-black dark:text-zinc-100">
@@ -247,6 +271,22 @@ export default function PrivacyPage() {
             </li>
             <li>
               <span className="font-medium text-black dark:text-zinc-100">
+                Firebase and Google Cloud
+              </span>{" "}
+              — anonymous busyness ratings are stored in Google Cloud Firestore,
+              a service operated by Google. This processing is governed by{" "}
+              <a
+                className="font-medium text-blue-600 hover:underline dark:text-blue-400"
+                href="https://policies.google.com/privacy"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Google&rsquo;s Privacy Policy
+              </a>
+              .
+            </li>
+            <li>
+              <span className="font-medium text-black dark:text-zinc-100">
                 Our hosting and map providers
               </span>{" "}
               — the Site is hosted on GitHub Pages and map tiles are loaded from
@@ -266,10 +306,11 @@ export default function PrivacyPage() {
 
         <Section id="retention" title="Data retention">
           <p>
-            We do not maintain our own database of personal information. Usage
-            data collected through Google Analytics is retained according to
-            Google&rsquo;s configured retention period (currently up to 14
-            months) and Google&rsquo;s policies.
+            Anonymous busyness ratings are stored in Firebase Firestore and are
+            currently retained indefinitely; they carry no name or contact
+            details. Usage data collected through Google Analytics is retained
+            according to Google&rsquo;s configured retention period (currently up
+            to 14 months) and Google&rsquo;s policies.
           </p>
         </Section>
 
@@ -280,8 +321,11 @@ export default function PrivacyPage() {
             certain processing, and to withdraw consent. Because we do not hold
             personal information ourselves, requests relating to analytics and
             advertising data should be directed to Google using the links above.
-            You always control cookies through your browser and can deny the
-            location permission.
+            Busyness ratings carry no name or contact details, so deletion
+            requests are handled on a best-effort basis through the project
+            repository issue tracker linked in the Contact section. You always
+            control cookies through your browser and can deny the location
+            permission.
           </p>
         </Section>
 
@@ -306,8 +350,12 @@ export default function PrivacyPage() {
 
         <Section id="security" title="Security">
           <p>
-            The Site is served over HTTPS. No method of transmission or storage
-            is completely secure, so we cannot guarantee absolute security.
+            The Site is served over HTTPS. Access to busyness ratings in
+            Firestore is governed by security rules that restrict writes to
+            validated, anonymous submissions (a signed-in, anonymous
+            identifier; a bounded busy level; and a server-assigned timestamp
+            that prevents backdating). No method of transmission or storage is
+            completely secure, so we cannot guarantee absolute security.
           </p>
         </Section>
 

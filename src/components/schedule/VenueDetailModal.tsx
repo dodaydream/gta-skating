@@ -1,9 +1,13 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import type { Venue } from "@/types/venue";
 import type { Program } from "@/types/schedule";
+import type { BusyReport } from "@/types/feedback";
 import { fetchVenueDetails } from "@/api/venues";
+import { loadVenueReports } from "@/api/busyness";
+import { isFirebaseConfigured } from "@/lib/firebase";
+import { predictBusy } from "@/lib/feedback";
 import { cn } from "cn";
 import {
   Dialog,
@@ -21,13 +25,17 @@ import {
   distanceKm,
   formatEventDate,
   formatTimeRange,
+  getCurrentMinutesInVenueTime,
   getTodayInVenueTime,
   isProgramNotEnded,
   osmUrl,
+  toMinutes,
 } from "@/lib/schedule";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { WeekView } from "@/components/schedule/WeekView";
 import { TicketBadge } from "@/components/schedule/TicketBadge";
+import { BusyBadge } from "@/components/schedule/BusyBadge";
+import { BusynessInput } from "@/components/schedule/BusynessInput";
 import { trackEvent } from "@/lib/analytics";
 import { AdUnit } from "@/components/ads/AdUnit";
 import { X } from "lucide-react";
@@ -35,6 +43,8 @@ import { X } from "lucide-react";
 const DESKTOP_QUERY = "(min-width: 1024px)";
 
 const SNAP_POINTS = [0.5, 0.9];
+
+const FIREBASE_CONFIGURED = isFirebaseConfigured();
 
 function useIsDesktop() {
   const [isDesktop, setIsDesktop] = useState(() =>
@@ -155,6 +165,13 @@ function CloseButton({
   );
 }
 
+function isProgramInProgress(program: Program, nowMinutes: number): boolean {
+  const start = toMinutes(program.start.slice(11, 16));
+  const end = toMinutes(program.end.slice(11, 16));
+  if (end <= start) return nowMinutes >= start || nowMinutes < end;
+  return nowMinutes >= start && nowMinutes <= end;
+}
+
 export function VenueDetailModal({
   slug,
   onClose,
@@ -167,9 +184,19 @@ export function VenueDetailModal({
   const [venue, setVenue] = useState<Venue | null>(null);
   const [error, setError] = useState(false);
   const [view, setView] = useState<"day" | "week">("day");
+  const [reports, setReports] = useState<BusyReport[]>([]);
+  const [reportsLoading, setReportsLoading] = useState(FIREBASE_CONFIGURED);
+  const [reportsSlug, setReportsSlug] = useState(slug);
+  const [, setNowTick] = useState(0);
   const weekBodyRef = useRef<HTMLDivElement>(null);
   const openedRef = useRef(false);
   const isDesktop = useIsDesktop();
+
+  if (reportsSlug !== slug) {
+    setReportsSlug(slug);
+    setReports([]);
+    setReportsLoading(FIREBASE_CONFIGURED);
+  }
 
   useEffect(() => {
     let cancelled = false;
@@ -194,6 +221,40 @@ export function VenueDetailModal({
       }
     };
   }, [slug]);
+
+  const reloadReports = useCallback(() => {
+    if (!FIREBASE_CONFIGURED) return;
+    loadVenueReports(slug)
+      .then(setReports)
+      .catch(() => {});
+  }, [slug]);
+
+  useEffect(() => {
+    if (!FIREBASE_CONFIGURED) return;
+    let cancelled = false;
+    loadVenueReports(slug)
+      .then((data) => {
+        if (!cancelled) setReports(data);
+      })
+      .catch(() => {
+        if (!cancelled) setReports([]);
+      })
+      .finally(() => {
+        if (!cancelled) setReportsLoading(false);
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [slug]);
+
+  useEffect(() => {
+    const id = setInterval(() => setNowTick((t) => t + 1), 60_000);
+    return () => clearInterval(id);
+  }, []);
+
+  const nowMinutes = venue
+    ? getCurrentMinutesInVenueTime(venue.timezone)
+    : null;
 
   if (error) {
     return (
@@ -239,6 +300,9 @@ export function VenueDetailModal({
     isProgramNotEnded(program.end, venue.timezone)
   );
   const updated = new Date(venue.schedule.updatedAt).toISOString().slice(0, 10);
+  const inProgress =
+    nowMinutes !== null &&
+    programs.some((program) => isProgramInProgress(program, nowMinutes));
 
   const distance =
     userLocation &&
@@ -276,7 +340,22 @@ export function VenueDetailModal({
         </header>
       }
     >
-      <TodayCards programs={programs} timezone={venue.timezone} />
+      <TodayCards
+        programs={programs}
+        timezone={venue.timezone}
+        reports={reports}
+        reportsLoading={reportsLoading}
+      />
+
+      {inProgress ? (
+        <div className="px-5">
+          <BusynessInput
+            venueSlug={slug}
+            timezone={venue.timezone}
+            onSubmitted={reloadReports}
+          />
+        </div>
+      ) : null}
 
       <div className="px-5">
         <Tabs value={view} onValueChange={(v) => setView(v as "day" | "week")}>
@@ -294,7 +373,12 @@ export function VenueDetailModal({
         {programs.length === 0 ? (
           <p className="text-sm text-zinc-500">No upcoming sessions.</p>
         ) : view === "day" ? (
-          <ListView programs={programs} timezone={venue.timezone} />
+          <ListView
+            programs={programs}
+            timezone={venue.timezone}
+            reports={reports}
+            reportsLoading={reportsLoading}
+          />
         ) : (
           <WeekView
             programs={programs}
@@ -401,12 +485,51 @@ function VenueDetailSkeleton() {
   );
 }
 
+function BusyBadgeSlot({
+  reports,
+  reportsLoading,
+  program,
+  timezone,
+  className,
+}: {
+  reports: BusyReport[];
+  reportsLoading: boolean;
+  program: Program;
+  timezone: string;
+  className?: string;
+}) {
+  if (reportsLoading) {
+    return (
+      <span
+        aria-hidden="true"
+        className={cn(
+          "inline-block h-3 w-16 animate-pulse rounded-full bg-black/[.06] dark:bg-white/[.08]",
+          className
+        )}
+      />
+    );
+  }
+  const prediction = predictBusy(reports, program, timezone);
+  if (!prediction) return null;
+  return (
+    <BusyBadge
+      busy={prediction.busy}
+      n={prediction.n}
+      className={className}
+    />
+  );
+}
+
 function TodayCards({
   programs,
   timezone,
+  reports,
+  reportsLoading,
 }: {
   programs: Program[];
   timezone: string;
+  reports: BusyReport[];
+  reportsLoading: boolean;
 }) {
   const today = getTodayInVenueTime(timezone);
 
@@ -442,7 +565,7 @@ function TodayCards({
                 ) : null}
               </div>
               <ul className="flex flex-col divide-y divide-black/[.06] dark:divide-white/[.08]">
-                <li className="flex flex-col py-1.5">
+                <li className="flex flex-col gap-1 py-1.5">
                   <div className="flex items-baseline gap-2">
                     <span className="shrink-0 font-mono text-xs tabular-nums text-zinc-500 dark:text-zinc-400">
                       {formatTimeRange(program.start, program.end)}
@@ -452,6 +575,12 @@ function TodayCards({
                     </span>
                     <TicketBadge ticket={program.ticket} />
                   </div>
+                  <BusyBadgeSlot
+                    reports={reports}
+                    reportsLoading={reportsLoading}
+                    program={program}
+                    timezone={timezone}
+                  />
                 </li>
               </ul>
             </div>
@@ -465,9 +594,13 @@ function TodayCards({
 function ListView({
   programs,
   timezone,
+  reports,
+  reportsLoading,
 }: {
   programs: Program[];
   timezone: string;
+  reports: BusyReport[];
+  reportsLoading: boolean;
 }) {
   const byDate = new Map<string, Program[]>();
   for (const p of programs) {
@@ -503,6 +636,13 @@ function ListView({
                     {program.name}
                   </span>
                   <TicketBadge ticket={program.ticket} />
+                  <BusyBadgeSlot
+                    reports={reports}
+                    reportsLoading={reportsLoading}
+                    program={program}
+                    timezone={timezone}
+                    className="ml-auto"
+                  />
                 </div>
                 {program.notes ? (
                   <div className="w-full text-sm text-zinc-500 dark:text-zinc-400">

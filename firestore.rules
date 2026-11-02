@@ -1,0 +1,16 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /busyReports/{reportId} {
+      allow read: if true;
+      allow create: if request.auth != null
+        && request.auth.uid == request.resource.data.uid
+        && request.resource.data.venueSlug is string
+        && request.resource.data.venueSlug.size() < 100
+        && request.resource.data.busy is number
+        && request.resource.data.busy >= 1 && request.resource.data.busy <= 3
+        && request.resource.data.reportedAt == request.time; // serverTimestamp only
+      allow update, delete: if false;
+    }
+  }
+}

@@ -1,5 +1,6 @@
 import type { Venue } from "@/types/venue";
 import { slugify } from "@/lib/slug";
+import { createTestVenue } from "./test-venue";
 
 import billBolton from "./bill-bolton-arena.json";
 import agincourt from "./agincourt-recreation-centre.json";
@@ -104,6 +105,12 @@ export const venues: Venue[] = [
   victoriaVillage as Venue,
   yorkMills as Venue,
 ];
+
+// A dev-only venue for exercising the busyness UI; excluded from production
+// builds so it is never generated or listed on the live site.
+if (process.env.NODE_ENV !== "production") {
+  venues.push(createTestVenue());
+}
 
 const bySlug = new Map<string, Venue>();
 for (const venue of venues) {
