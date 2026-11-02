@@ -92,7 +92,7 @@ function Panel({
       onOpenChange={(open) => !open && onClose()}
     >
       <DrawerContent
-        className="pb-[calc(var(--drawer-snap-point-offset,0px)+var(--drawer-swipe-movement-y,0px))] data-expanded:shadow-[0_-4px_24px_rgba(0,0,0,0.12)]"
+        className="pb-[calc(var(--drawer-snap-point-offset,0px)+var(--drawer-swipe-movement-y,0px))] data-expanded:shadow-[0_-4px_24px_rgba(0,0,0,0.12)] [&>[data-slot=drawer-content]]:rounded-none"
         header={header}
       >
         {body}
