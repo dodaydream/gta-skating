@@ -365,6 +365,7 @@ export function VenueDetailModal({
             timezone={venue.timezone}
             reports={reports}
             reportsLoading={reportsLoading}
+            isDesktop={isDesktop}
           />
         ) : (
           <WeekView
@@ -582,11 +583,13 @@ function ListView({
   timezone,
   reports,
   reportsLoading,
+  isDesktop,
 }: {
   programs: Program[];
   timezone: string;
   reports: BusyReport[];
   reportsLoading: boolean;
+  isDesktop: boolean;
 }) {
   const byDate = new Map<string, Program[]>();
   for (const p of programs) {
@@ -622,19 +625,29 @@ function ListView({
                     {program.name}
                   </span>
                   <TicketBadge ticket={program.ticket} />
-                  <BusyBadgeSlot
-                    reports={reports}
-                    reportsLoading={reportsLoading}
-                    program={program}
-                    timezone={timezone}
-                    className="ml-auto"
-                  />
+                  {isDesktop ? (
+                    <BusyBadgeSlot
+                      reports={reports}
+                      reportsLoading={reportsLoading}
+                      program={program}
+                      timezone={timezone}
+                      className="ml-auto"
+                    />
+                  ) : null}
                 </div>
                 {program.notes ? (
                   <div className="w-full text-sm text-zinc-500 dark:text-zinc-400">
                     {program.notes}
                   </div>
                 ) : null}
+                {isDesktop ? null : (
+                  <BusyBadgeSlot
+                    reports={reports}
+                    reportsLoading={reportsLoading}
+                    program={program}
+                    timezone={timezone}
+                  />
+                )}
               </li>
             ))}
           </ul>
