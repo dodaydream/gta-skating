@@ -5,7 +5,7 @@ const en = {
     fr: "Français",
   },
   sidebar: {
-    title: "Skating Programs in GTA",
+    title: "Skating Programs",
     programsFound_one: "{{count}} program found",
     programsFound_other: "{{count}} programs found",
     disclaimer:

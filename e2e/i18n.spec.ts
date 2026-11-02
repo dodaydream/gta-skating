@@ -9,7 +9,7 @@ test.describe("language", () => {
 
     await expect(
       sidebar(page).getByRole("heading", {
-        name: "Skating Programs in GTA",
+        name: "Skating Programs",
       })
     ).toBeVisible();
 
@@ -17,7 +17,7 @@ test.describe("language", () => {
 
     await expect(
       sidebar(page).getByRole("heading", {
-        name: "Programmes de patinage dans le GTA",
+        name: "Programmes de patinage",
       })
     ).toBeVisible();
     await expect(page.locator("html")).toHaveAttribute("lang", "fr");
@@ -31,7 +31,7 @@ test.describe("language", () => {
 
       await expect(
         sidebar(page).getByRole("heading", {
-          name: "Programmes de patinage dans le GTA",
+          name: "Programmes de patinage",
         })
       ).toBeVisible();
       await expect(page.locator("html")).toHaveAttribute("lang", "fr");

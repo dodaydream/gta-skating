@@ -7,7 +7,7 @@ const fr: Messages = {
     fr: "Français",
   },
   sidebar: {
-    title: "Programmes de patinage dans le GTA",
+    title: "Programmes de patinage",
     programsFound_one: "{{count}} programme trouvé",
     programsFound_other: "{{count}} programmes trouvés",
     disclaimer:

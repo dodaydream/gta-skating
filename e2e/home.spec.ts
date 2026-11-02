@@ -15,7 +15,7 @@ test.describe("home schedule", () => {
     await openDensestDay(page);
 
     await expect(
-      sidebar(page).getByRole("heading", { name: "Skating Programs in GTA" })
+      sidebar(page).getByRole("heading", { name: "Skating Programs" })
     ).toBeVisible();
     await expect(sidebar(page).getByText(/\d+ programs? found/)).toBeVisible();
 

@@ -16,7 +16,7 @@ test.describe("privacy policy", () => {
 
     await expect(page).toHaveURL(/\/$/);
     await expect(
-      sidebar(page).getByRole("heading", { name: "Skating Programs in GTA" })
+      sidebar(page).getByRole("heading", { name: "Skating Programs" })
     ).toBeVisible();
   });
 });
