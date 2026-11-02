@@ -53,7 +53,7 @@ export function ProgramList({
         ) : (
           items.map((item) => (
             <ProgramListItem
-              key={`${item.venue.name}-${item.start}-${item.name}`}
+              key={item.id}
               program={item}
               onSelect={() => onSelectVenue(item.venue)}
               userLocation={userLocation}
