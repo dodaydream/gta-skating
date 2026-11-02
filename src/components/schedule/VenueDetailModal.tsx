@@ -29,6 +29,7 @@ import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { WeekView } from "@/components/schedule/WeekView";
 import { TicketBadge } from "@/components/schedule/TicketBadge";
 import { trackEvent } from "@/lib/analytics";
+import { AdUnit } from "@/components/ads/AdUnit";
 import { X } from "lucide-react";
 
 const DESKTOP_QUERY = "(min-width: 1024px)";
@@ -301,6 +302,7 @@ export function VenueDetailModal({
             bodyRef={weekBodyRef}
           />
         )}
+        <AdUnit slot="1334014883" className="pb-4" />
       </div>
 
       <footer className="flex items-center justify-between gap-3 border-t border-black/[.06] px-5 py-3 text-xs text-zinc-500 dark:border-white/[.08] dark:text-zinc-400">
