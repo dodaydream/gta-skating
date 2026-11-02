@@ -745,18 +745,6 @@
       "type": "outdoor"
     },
     {
-      "id": "moss-park",
-      "name": "Moss Park Arena",
-      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=3491",
-      "address": "140 Sherbourne St, Toronto, ON",
-      "locationId": 3491,
-      "coordinates": {
-        "lat": 43.655024,
-        "lon": -79.370213
-      },
-      "type": "indoor"
-    },
-    {
       "id": "nathan-phillips-square",
       "name": "Nathan Phillips Square",
       "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=1089",

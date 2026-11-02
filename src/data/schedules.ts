@@ -40,6 +40,7 @@ import malvern from "./malvern-recreation-centre.json";
 import mcgregorPark from "./mcgregor-park-community-centre.json";
 import mimico from "./mimico-arena.json";
 import mitchellField from "./mitchell-field-community-centre.json";
+import mossPark from "./moss-park-arena.json";
 import oriole from "./oriole-community-centre.json";
 import parkLawnBubble from "./park-lawn-bubble-rink.json";
 import philWhite from "./phil-white-arena.json";
@@ -92,6 +93,7 @@ export const venues: Venue[] = [
   mcgregorPark as Venue,
   mimico as Venue,
   mitchellField as Venue,
+  mossPark as Venue,
   oriole as Venue,
   parkLawnBubble as Venue,
   philWhite as Venue,

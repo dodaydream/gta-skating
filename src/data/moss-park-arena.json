@@ -1,0 +1,96 @@
+{
+  "name": "Moss Park Arena",
+  "url": "https://mossparkarena.com/home/skating/public-skating/",
+  "timezone": "America/Toronto",
+  "address": "140 Sherbourne St, Toronto, ON",
+  "coordinates": {
+    "lat": 43.655024,
+    "lon": -79.370213
+  },
+  "schedule": {
+    "updatedAt": "2026-11-02T04:34:28.423Z",
+    "programs": [
+      {
+        "id": "e6a44181-2fb3-4417-9db7-64244c059811",
+        "start": "2026-11-03T12:00",
+        "end": "2026-11-03T13:00",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "notes": "No Skate on Stat Holidays",
+        "ticket": 0
+      },
+      {
+        "id": "0fd179c8-a7e6-42aa-a7b5-148bba1d849b",
+        "start": "2026-11-05T13:00",
+        "end": "2026-11-05T14:00",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "notes": "No Skate on Stat Holidays",
+        "ticket": 0
+      },
+      {
+        "id": "66b9618b-3efa-4008-a052-792db7eb591f",
+        "start": "2026-11-10T12:00",
+        "end": "2026-11-10T13:00",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "notes": "No Skate on Stat Holidays",
+        "ticket": 0
+      },
+      {
+        "id": "f1cd2ce4-f5bb-4201-9c4c-9fcff0279234",
+        "start": "2026-11-12T13:00",
+        "end": "2026-11-12T14:00",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "notes": "No Skate on Stat Holidays",
+        "ticket": 0
+      },
+      {
+        "id": "85bcd80c-cd14-4e86-83cf-a5a8d24d64c6",
+        "start": "2026-11-17T12:00",
+        "end": "2026-11-17T13:00",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "notes": "No Skate on Stat Holidays",
+        "ticket": 0
+      },
+      {
+        "id": "9a8fefa4-4fdd-4106-a13c-81b69b48949d",
+        "start": "2026-11-19T13:00",
+        "end": "2026-11-19T14:00",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "notes": "No Skate on Stat Holidays",
+        "ticket": 0
+      },
+      {
+        "id": "4bbea6dc-77d7-4e9e-95ca-7318578f2a14",
+        "start": "2026-11-24T12:00",
+        "end": "2026-11-24T13:00",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "notes": "No Skate on Stat Holidays",
+        "ticket": 0
+      },
+      {
+        "id": "6d088fdb-eaeb-4f99-a17f-3227ac769e16",
+        "start": "2026-11-26T13:00",
+        "end": "2026-11-26T14:00",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "notes": "No Skate on Stat Holidays",
+        "ticket": 0
+      },
+      {
+        "id": "f860995e-4a20-4ab4-9ff0-2c9262fbd541",
+        "start": "2026-12-01T12:00",
+        "end": "2026-12-01T13:00",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "notes": "No Skate on Stat Holidays",
+        "ticket": 0
+      }
+    ]
+  }
+}
