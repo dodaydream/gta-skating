@@ -2,6 +2,7 @@
 
 import type { Venue } from "@/types/venue";
 import type { ProgramItem } from "@/types/schedule";
+import { useTranslation } from "react-i18next";
 import { ProgramListItem } from "@/components/schedule/ProgramListItem";
 import { AdUnit } from "@/components/ads/AdUnit";
 import { ScheduleSkeleton } from "@/components/ui/ScheduleSkeleton";
@@ -31,6 +32,7 @@ export function ProgramList({
   className = "",
   listClassName = "flex flex-col gap-2 my-1",
 }: ProgramListProps) {
+  const { t } = useTranslation();
   return (
     <div className={className}>
       <div className={listClassName}>
@@ -42,9 +44,9 @@ export function ProgramList({
               <EmptyMedia variant="icon">
                 <IconSnowflake />
               </EmptyMedia>
-              <EmptyTitle>No programs found</EmptyTitle>
+              <EmptyTitle>{t("programs.emptyTitle")}</EmptyTitle>
               <EmptyDescription>
-                Try a different date range or filters.
+                {t("programs.emptyDescription")}
               </EmptyDescription>
             </EmptyHeader>
           </Empty>

@@ -1,0 +1,86 @@
+const en = {
+  language: {
+    label: "Language",
+    en: "English",
+    fr: "Français",
+  },
+  sidebar: {
+    title: "Skating Programs in GTA",
+    programsFound_one: "{{count}} program found",
+    programsFound_other: "{{count}} programs found",
+    disclaimer:
+      "Schedule data may change — check the venue’s website to confirm times before you go.",
+    privacy: "Privacy Policy",
+  },
+  filters: {
+    locate: "Centre on your location",
+    type: "Type",
+    typeCount: "Type ({{count}})",
+    programType: "Program type",
+    clear: "Clear",
+    showAll: "Show all venues",
+    hideEmpty: "Hide venues without programs",
+    from: "From",
+    to: "To",
+    today: "Today",
+    ok: "OK",
+    anytime: "Anytime",
+    fromDate: "From {{value}}",
+    untilDate: "Until {{value}}",
+    pickDate: "Pick a date",
+    selectDateRange: "Select date range",
+  },
+  programs: {
+    emptyTitle: "No programs found",
+    emptyDescription: "Try a different date range or filters.",
+    noneUpcoming: "No upcoming sessions.",
+    venueWebsite: "Venue website",
+    viewOnMap: "View on map",
+    updated: "Updated {{date}}",
+    today: "Today",
+    sessions_one: "{{count}} session",
+    sessions_other: "{{count}} sessions",
+  },
+  venue: {
+    details: "Venue details",
+    loading: "Loading venue details",
+    loadFailed: "Failed to load venue details.",
+    day: "Day",
+    week: "Week",
+  },
+  week: {
+    previous: "Previous week",
+    next: "Next week",
+    thisWeek: "This week",
+  },
+  busy: {
+    quiet: "Quiet",
+    moderate: "Moderate",
+    busy: "Busy",
+    question: "How busy is it right now?",
+    thanks: "Thanks!",
+    submit: "Submit",
+    sending: "Sending…",
+    submitted: "Submitted",
+    anonymous: "Ratings are anonymous and shared publicly.",
+    usually_one: "Usually {{label}} · {{count}} report",
+    usually_other: "Usually {{label}} · {{count}} reports",
+    errorNetwork:
+      "Couldn't reach the server. Check your connection or disable any ad/privacy blocker, then try again.",
+    errorDisabled: "Reporting isn't enabled right now.",
+    errorRejected: "This report was rejected. Please try again later.",
+    errorGeneric: "Couldn't submit. Please try again.",
+  },
+  ticket: {
+    free: "Free",
+  },
+  duration: {
+    minutes: "{{count}}m",
+    hours: "{{count}}h",
+    hoursMinutes: "{{hours}}h {{minutes}}m",
+  },
+  close: "Close",
+};
+
+export default en;
+export type Messages = typeof en;

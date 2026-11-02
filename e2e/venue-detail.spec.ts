@@ -51,7 +51,9 @@ test.describe("venue detail", () => {
     const { venues } = await openDensestDay(page);
     const names = new Set(venues.map((venue) => venue.name));
 
-    const firstProgram = sidebar(page).locator("button").first();
+    const firstProgram = sidebar(page)
+      .locator('[data-slot="program-item"]')
+      .first();
     await expect(firstProgram).toBeVisible();
     await firstProgram.click();
 

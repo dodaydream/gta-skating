@@ -1,0 +1,87 @@
+import type { Messages } from "@/i18n/en";
+
+const fr: Messages = {
+  language: {
+    label: "Langue",
+    en: "English",
+    fr: "Français",
+  },
+  sidebar: {
+    title: "Programmes de patinage dans le GTA",
+    programsFound_one: "{{count}} programme trouvé",
+    programsFound_other: "{{count}} programmes trouvés",
+    disclaimer:
+      "Les horaires peuvent changer — vérifiez le site Web de l’aréna pour confirmer les heures avant de vous déplacer.",
+    privacy: "Politique de confidentialité",
+  },
+  filters: {
+    locate: "Centrer sur votre position",
+    type: "Type",
+    typeCount: "Type ({{count}})",
+    programType: "Type de programme",
+    clear: "Effacer",
+    showAll: "Afficher tous les arénas",
+    hideEmpty: "Masquer les arénas sans programmes",
+    from: "De",
+    to: "À",
+    today: "Aujourd’hui",
+    ok: "OK",
+    anytime: "N’importe quand",
+    fromDate: "À partir du {{value}}",
+    untilDate: "Jusqu’au {{value}}",
+    pickDate: "Choisir une date",
+    selectDateRange: "Sélectionner une plage de dates",
+  },
+  programs: {
+    emptyTitle: "Aucun programme trouvé",
+    emptyDescription: "Essayez une autre plage de dates ou d’autres filtres.",
+    noneUpcoming: "Aucune séance à venir.",
+    venueWebsite: "Site Web de l’aréna",
+    viewOnMap: "Voir sur la carte",
+    updated: "Mis à jour {{date}}",
+    today: "Aujourd’hui",
+    sessions_one: "{{count}} séance",
+    sessions_other: "{{count}} séances",
+  },
+  venue: {
+    details: "Détails de l’aréna",
+    loading: "Chargement des détails de l’aréna",
+    loadFailed: "Échec du chargement des détails de l’aréna.",
+    day: "Jour",
+    week: "Semaine",
+  },
+  week: {
+    previous: "Semaine précédente",
+    next: "Semaine suivante",
+    thisWeek: "Cette semaine",
+  },
+  busy: {
+    quiet: "Calme",
+    moderate: "Modéré",
+    busy: "Occupé",
+    question: "À quel point est-ce achalandé en ce moment ?",
+    thanks: "Merci !",
+    submit: "Envoyer",
+    sending: "Envoi…",
+    submitted: "Envoyé",
+    anonymous: "Les évaluations sont anonymes et partagées publiquement.",
+    usually_one: "Habituellement {{label}} · {{count}} signalement",
+    usually_other: "Habituellement {{label}} · {{count}} signalements",
+    errorNetwork:
+      "Impossible de joindre le serveur. Vérifiez votre connexion ou désactivez tout bloqueur de publicité ou de confidentialité, puis réessayez.",
+    errorDisabled: "L’évaluation n’est pas disponible pour le moment.",
+    errorRejected: "Cette évaluation a été refusée. Veuillez réessayer plus tard.",
+    errorGeneric: "Échec de l’envoi. Veuillez réessayer.",
+  },
+  ticket: {
+    free: "Gratuit",
+  },
+  duration: {
+    minutes: "{{count}} min",
+    hours: "{{count}} h",
+    hoursMinutes: "{{hours}} h {{minutes}}",
+  },
+  close: "Fermer",
+};
+
+export default fr;

@@ -1,3 +1,6 @@
+"use client";
+
+import { useTranslation } from "react-i18next";
 import { formatEventDate } from "@/lib/schedule";
 import { ProgramRow } from "./ProgramRow";
 import type { Venue } from "@/types/venue";
@@ -14,6 +17,7 @@ import {
   CollapsibleTrigger,
   CollapsibleContent,
 } from "@/components/ui/collapsible";
+import { normalizeLocale } from "@/i18n/config";
 
 export function ScheduleCard({
   venue,
@@ -22,6 +26,8 @@ export function ScheduleCard({
   venue: Venue;
   onToggle: () => void;
 }) {
+  const { t, i18n } = useTranslation();
+  const locale = normalizeLocale(i18n.resolvedLanguage);
   const programs = venue.schedule.programs;
   const groupedByDate = groupByDate(programs);
   const programCount = programs.length;
@@ -48,7 +54,7 @@ export function ScheduleCard({
           <div className="flex shrink-0 flex-col items-end gap-1">
             {programCount > 0 && (
               <span className="rounded-full bg-zinc-100 px-2 py-0.5 text-[11px] font-medium text-zinc-500 dark:bg-zinc-800 dark:text-zinc-400">
-                {programCount} session{programCount === 1 ? "" : "s"}
+                {t("programs.sessions", { count: programCount })}
               </span>
             )}
           </div>
@@ -58,7 +64,7 @@ export function ScheduleCard({
           <CardContent className="flex flex-col gap-5 border-t px-5 pb-5 pt-4">
             {groupedByDate.size === 0 ? (
               <p className="text-sm text-zinc-500">
-                No upcoming sessions.
+                {t("programs.noneUpcoming")}
               </p>
             ) : (
               <div className="flex flex-col gap-5">
@@ -66,7 +72,7 @@ export function ScheduleCard({
                   <div key={date} className="flex flex-col gap-2">
                     <div className="flex items-center gap-2">
                       <h3 className="text-sm font-semibold text-zinc-700 dark:text-zinc-300">
-                        {formatEventDate(date, venue.timezone)}
+                        {formatEventDate(date, venue.timezone, locale)}
                       </h3>
                       <span className="flex-1 border-t border-dashed border-black/[.08] dark:border-white/[.1]" />
                     </div>
@@ -87,7 +93,7 @@ export function ScheduleCard({
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Venue website
+                {t("programs.venueWebsite")}
                 <svg
                   className="h-3.5 w-3.5"
                   viewBox="0 0 24 24"
@@ -100,7 +106,9 @@ export function ScheduleCard({
                   <path d="M7 17 17 7M7 7h10v10" />
                 </svg>
               </a>
-              <span className="text-zinc-400">Updated {updated}</span>
+              <span className="text-zinc-400">
+                {t("programs.updated", { date: updated })}
+              </span>
             </div>
           </CardContent>
         </CollapsibleContent>

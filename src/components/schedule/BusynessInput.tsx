@@ -1,31 +1,32 @@
 "use client";
 
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import type { BusyLevel } from "@/types/feedback";
 import { submitReport } from "@/api/busyness";
 import { trackEvent } from "@/lib/analytics";
 import { cn } from "cn";
 
-const OPTIONS: { level: BusyLevel; label: string }[] = [
-  { level: 1, label: "Quiet" },
-  { level: 2, label: "Moderate" },
-  { level: 3, label: "Busy" },
+const OPTIONS: { level: BusyLevel; labelKey: string }[] = [
+  { level: 1, labelKey: "busy.quiet" },
+  { level: 2, labelKey: "busy.moderate" },
+  { level: 3, labelKey: "busy.busy" },
 ];
 
 type Status = "idle" | "submitting" | "submitted" | "error";
 
-function messageForError(error: unknown): string {
+function errorKeyFor(error: unknown): string {
   const code = (error as { code?: string } | null)?.code ?? "";
   if (code === "auth/network-request-failed" || code === "unavailable") {
-    return "Couldn't reach the server. Check your connection or disable any ad/privacy blocker, then try again.";
+    return "busy.errorNetwork";
   }
   if (code === "auth/operation-not-allowed") {
-    return "Reporting isn't enabled right now.";
+    return "busy.errorDisabled";
   }
   if (code === "permission-denied") {
-    return "This report was rejected. Please try again later.";
+    return "busy.errorRejected";
   }
-  return "Couldn't submit. Please try again.";
+  return "busy.errorGeneric";
 }
 
 /**
@@ -41,16 +42,17 @@ export function BusynessInput({
   timezone: string;
   onSubmitted?: () => void;
 }) {
+  const { t } = useTranslation();
   const [selected, setSelected] = useState<BusyLevel | null>(null);
   const [status, setStatus] = useState<Status>("idle");
-  const [errorMessage, setErrorMessage] = useState<string | null>(null);
+  const [errorKey, setErrorKey] = useState<string | null>(null);
 
   const busy = status === "submitting" || status === "submitted";
 
   async function handleSubmit() {
     if (selected === null || busy) return;
     setStatus("submitting");
-    setErrorMessage(null);
+    setErrorKey(null);
     try {
       await submitReport(venueSlug, selected, timezone);
       setStatus("submitted");
@@ -58,7 +60,7 @@ export function BusynessInput({
       onSubmitted?.();
     } catch (error) {
       console.error("busyness_report_failed", error);
-      setErrorMessage(messageForError(error));
+      setErrorKey(errorKeyFor(error));
       setStatus("error");
     }
   }
@@ -67,11 +69,11 @@ export function BusynessInput({
     <section className="flex flex-col gap-2 rounded-xl border border-black/[.08] bg-white p-3 dark:border-white/[.145] dark:bg-zinc-950">
       <div className="flex items-center justify-between gap-2">
         <h3 className="text-sm font-medium text-black dark:text-zinc-50">
-          How busy is it right now?
+          {t("busy.question")}
         </h3>
         {status === "submitted" ? (
           <span className="text-xs font-medium text-emerald-600 dark:text-emerald-400">
-            Thanks!
+            {t("busy.thanks")}
           </span>
         ) : null}
       </div>
@@ -96,7 +98,7 @@ export function BusynessInput({
                   : "border-black/[.12] text-zinc-700 hover:bg-zinc-100 dark:border-white/[.2] dark:text-zinc-200 dark:hover:bg-zinc-800"
               )}
             >
-              {option.label}
+              {t(option.labelKey)}
             </button>
           );
         })}
@@ -108,20 +110,20 @@ export function BusynessInput({
           className="ml-auto rounded-full bg-black px-3 py-1 text-xs font-semibold text-white transition-opacity disabled:opacity-40 dark:bg-zinc-50 dark:text-black"
         >
           {status === "submitting"
-            ? "Sending\u2026"
+            ? t("busy.sending")
             : status === "submitted"
-              ? "Submitted"
-              : "Submit"}
+              ? t("busy.submitted")
+              : t("busy.submit")}
         </button>
       </div>
 
       {status === "error" ? (
         <p className="text-xs text-red-600 dark:text-red-400">
-          {errorMessage ?? "Couldn\u2019t submit. Please try again."}
+          {errorKey ? t(errorKey) : t("busy.errorGeneric")}
         </p>
       ) : (
         <p className="text-xs text-zinc-500 dark:text-zinc-400">
-          Ratings are anonymous and shared publicly.
+          {t("busy.anonymous")}
         </p>
       )}
     </section>

@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
+import { useTranslation } from "react-i18next";
 import type { Venue } from "@/types/venue";
 import type { Program } from "@/types/schedule";
 import type { BusyReport } from "@/types/feedback";
@@ -37,6 +38,7 @@ import { TicketBadge } from "@/components/schedule/TicketBadge";
 import { BusyBadge } from "@/components/schedule/BusyBadge";
 import { BusynessInput } from "@/components/schedule/BusynessInput";
 import { trackEvent } from "@/lib/analytics";
+import { normalizeLocale } from "@/i18n/config";
 import { X } from "lucide-react";
 
 const DESKTOP_QUERY = "(min-width: 1024px)";
@@ -149,11 +151,12 @@ function CloseButton({
   onClick: () => void;
   className?: string;
 }) {
+  const { t } = useTranslation();
   return (
     <button
       type="button"
       onClick={onClick}
-      aria-label="Close"
+      aria-label={t("close")}
       className={cn(
         "rounded-lg p-1.5 text-zinc-500 transition-colors hover:bg-zinc-100 hover:text-black dark:hover:bg-zinc-800 dark:hover:text-zinc-50",
         className
@@ -173,6 +176,8 @@ export function VenueDetailModal({
   onClose: () => void;
   userLocation?: { lat: number; lon: number } | null;
 }) {
+  const { t, i18n } = useTranslation();
+  const locale = normalizeLocale(i18n.resolvedLanguage);
   const [venue, setVenue] = useState<Venue | null>(null);
   const [error, setError] = useState(false);
   const [view, setView] = useState<"day" | "week">("day");
@@ -252,7 +257,7 @@ export function VenueDetailModal({
         header={
           <div className="flex items-start justify-between gap-3 px-5 pt-5">
             <PanelTitle isDesktop={isDesktop} className="sr-only">
-              Venue details
+              {t("venue.details")}
             </PanelTitle>
             <CloseButton onClick={onClose} />
           </div>
@@ -260,7 +265,7 @@ export function VenueDetailModal({
       >
         <div className="px-5 pb-6">
           <p className="text-sm text-zinc-500">
-            Failed to load venue details.
+            {t("venue.loadFailed")}
           </p>
         </div>
       </Panel>
@@ -287,7 +292,11 @@ export function VenueDetailModal({
   const programs = venue.schedule.programs.filter((program) =>
     isProgramNotEnded(program.end, venue.timezone)
   );
-  const updated = formatUpdatedDate(venue.schedule.updatedAt, venue.timezone);
+  const updated = formatUpdatedDate(
+    venue.schedule.updatedAt,
+    venue.timezone,
+    locale
+  );
   const inProgress = programs.some((program) =>
     isProgramInProgress(program, venue.timezone)
   );
@@ -348,8 +357,8 @@ export function VenueDetailModal({
       <div className="px-5">
         <Tabs value={view} onValueChange={(v) => setView(v as "day" | "week")}>
           <TabsList>
-            <TabsTrigger value="day">Day</TabsTrigger>
-            <TabsTrigger value="week">Week</TabsTrigger>
+            <TabsTrigger value="day">{t("venue.day")}</TabsTrigger>
+            <TabsTrigger value="week">{t("venue.week")}</TabsTrigger>
           </TabsList>
         </Tabs>
       </div>
@@ -359,7 +368,7 @@ export function VenueDetailModal({
         className="flex flex-1 flex-col gap-5 overflow-x-hidden overflow-y-auto px-5"
       >
         {programs.length === 0 ? (
-          <p className="text-sm text-zinc-500">No upcoming sessions.</p>
+          <p className="text-sm text-zinc-500">{t("programs.noneUpcoming")}</p>
         ) : view === "day" ? (
           <ListView
             programs={programs}
@@ -385,7 +394,7 @@ export function VenueDetailModal({
             target="_blank"
             rel="noopener noreferrer"
           >
-            Venue website
+            {t("programs.venueWebsite")}
           </a>
         ) : (
           <span />
@@ -398,10 +407,12 @@ export function VenueDetailModal({
               target="_blank"
               rel="noopener noreferrer"
             >
-              View on map
+              {t("programs.viewOnMap")}
             </a>
           ) : null}
-          <span className="text-zinc-400">Updated {updated}</span>
+          <span className="text-zinc-400">
+            {t("programs.updated", { date: updated })}
+          </span>
         </span>
       </footer>
     </Panel>
@@ -415,11 +426,12 @@ function VenueDetailSkeletonHeader({
   isDesktop: boolean;
   onClose: () => void;
 }) {
+  const { t } = useTranslation();
   return (
     <header className="flex items-start justify-between gap-3 px-5 pt-5">
       <div className="flex flex-col gap-2">
         <PanelTitle isDesktop={isDesktop} className="sr-only">
-          Loading venue details
+          {t("venue.loading")}
         </PanelTitle>
         <div className="h-6 w-48 animate-pulse rounded bg-black/[.08] dark:bg-white/[.1]" />
         <div className="h-4 w-64 animate-pulse rounded bg-black/[.06] dark:bg-white/[.08]" />
@@ -519,6 +531,8 @@ function TodayCards({
   reports: BusyReport[];
   reportsLoading: boolean;
 }) {
+  const { t, i18n } = useTranslation();
+  const locale = normalizeLocale(i18n.resolvedLanguage);
   const today = getTodayInVenueTime(timezone);
 
   return (
@@ -544,11 +558,11 @@ function TodayCards({
                       : "text-zinc-700 dark:text-zinc-300"
                   }`}
                 >
-                  {formatEventDate(programDate, timezone)}
+                  {formatEventDate(programDate, timezone, locale)}
                 </h3>
                 {isToday ? (
                   <span className="shrink-0 rounded-full bg-blue-600 px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-white">
-                    Today
+                    {t("programs.today")}
                   </span>
                 ) : null}
               </div>
@@ -592,6 +606,8 @@ function ListView({
   reportsLoading: boolean;
   isDesktop: boolean;
 }) {
+  const { i18n } = useTranslation();
+  const locale = normalizeLocale(i18n.resolvedLanguage);
   const byDate = new Map<string, Program[]>();
   for (const p of programs) {
     const date = p.start.slice(0, 10);
@@ -605,7 +621,7 @@ function ListView({
         <div key={date} className="flex flex-col gap-2">
           <div className="flex items-center gap-2">
             <h3 className="text-sm font-semibold text-zinc-700 dark:text-zinc-300">
-              {formatEventDate(date, timezone)}
+              {formatEventDate(date, timezone, locale)}
             </h3>
             <span className="flex-1 border-t border-dashed border-black/[.08] dark:border-white/[.1]" />
           </div>

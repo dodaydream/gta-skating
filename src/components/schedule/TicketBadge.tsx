@@ -1,5 +1,7 @@
+"use client";
+
+import { useTranslation } from "react-i18next";
 import { cn } from "cn";
-import { formatTicket } from "@/lib/schedule";
 
 export function TicketBadge({
   ticket,
@@ -8,10 +10,11 @@ export function TicketBadge({
   ticket?: number;
   className?: string;
 }) {
-  const label = formatTicket(ticket);
-  if (label === null) return null;
+  const { t } = useTranslation();
+  if (ticket === undefined) return null;
 
-  const free = label === "Free";
+  const free = ticket <= 0;
+  const label = free ? t("ticket.free") : `$${ticket.toFixed(2)}`;
 
   return (
     <span

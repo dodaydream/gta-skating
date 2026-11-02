@@ -5,6 +5,7 @@ import type { Venue } from "@/types/venue";
 import type { MapBounds } from "@/types/map";
 import type { ProgramItem, ProgramType } from "@/types/schedule";
 import dynamic from "next/dynamic";
+import { useTranslation } from "react-i18next";
 import { IconLocation } from "@tabler/icons-react";
 import { Button } from "@/components/ui/button";
 import { FilterChips } from "@/components/ui/DateFilter";
@@ -49,6 +50,7 @@ function pushUrl(path: string) {
 }
 
 export default function SkatingApp({ initialSlug }: { initialSlug?: string }) {
+  const { t } = useTranslation();
   const locateRef = useRef<(() => void) | null>(null);
   const [fromDate, setFromDate] = useState("");
   const [toDate, setToDate] = useState("");
@@ -211,7 +213,7 @@ export default function SkatingApp({ initialSlug }: { initialSlug?: string }) {
                   trackEvent("locate_me");
                   locateRef.current?.();
                 }}
-                title="Centre on your location"
+                title={t("filters.locate")}
               >
                 <IconLocation className="size-4" />
               </Button>

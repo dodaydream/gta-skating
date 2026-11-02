@@ -2,9 +2,11 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { useTranslation } from "react-i18next";
 import type { Venue } from "@/types/venue";
 import type { ProgramItem } from "@/types/schedule";
 import { ProgramList } from "@/components/schedule/ProgramList";
+import { LanguageToggle } from "@/components/LanguageToggle";
 import {
   Drawer,
   DrawerContent,
@@ -27,18 +29,16 @@ const SNAP_POINTS = [0.5, 1];
 const REPO_URL = "https://github.com/dodaydream/gta-skating";
 
 function ScheduleFooter() {
+  const { t } = useTranslation();
   return (
     <footer className="py-2.5 text-[11px] leading-4 text-zinc-400 dark:text-zinc-500">
-      <p>
-        Schedule data may change &mdash; check the venue&rsquo;s website to
-        confirm times before you go.
-      </p>
+      <p>{t("sidebar.disclaimer")}</p>
       <div className="mt-1 flex items-center gap-2">
         <Link
           href="/privacy"
           className="hover:text-blue-600 hover:underline dark:hover:text-blue-400"
         >
-          Privacy Policy
+          {t("sidebar.privacy")}
         </Link>
         <span aria-hidden="true" className="text-zinc-300 dark:text-zinc-600">
           ·
@@ -80,6 +80,7 @@ export function ScheduleSidebar({
   onSelectVenue,
   detailOpen,
 }: ScheduleSidebarProps) {
+  const { t } = useTranslation();
   const [open, setOpen] = useState(true);
   const [detent, setDetent] = useState<number>(SNAP_POINTS[0]);
   const isDesktop = useIsDesktop();
@@ -88,18 +89,23 @@ export function ScheduleSidebar({
     if (!isDesktop) setOpen(!detailOpen);
   }, [detailOpen, isDesktop]);
 
+  const programCount = t("sidebar.programsFound", { count: items.length });
+
   return (
     <>
       {/* Desktop static sidebar */}
       <aside className="hidden flex-col border-t border-black/[.08] bg-card dark:border-white/[.145] lg:static lg:flex lg:w-96 lg:shrink-0 lg:border-t-0">
         <div className="flex min-h-0 flex-1 flex-col overflow-y-auto p-6">
-          <div className="mb-4 flex flex-col">
-            <h1 className="text-xl font-semibold tracking-tight text-black dark:text-zinc-50">
-              Skating Programs in GTA
-            </h1>
-            <span className="text-sm text-zinc-500 dark:text-zinc-400">
-              {items.length} program{items.length === 1 ? "" : "s"} found
-            </span>
+          <div className="mb-4 flex items-start justify-between gap-2">
+            <div className="flex flex-col">
+              <h1 className="text-xl font-semibold tracking-tight text-black dark:text-zinc-50">
+                {t("sidebar.title")}
+              </h1>
+              <span className="text-sm text-zinc-500 dark:text-zinc-400">
+                {programCount}
+              </span>
+            </div>
+            <LanguageToggle />
           </div>
 
           <ProgramList
@@ -131,13 +137,16 @@ export function ScheduleSidebar({
         <DrawerContent
           className="border-black/[.08] dark:border-white/[.145] lg:hidden"
           header={
-            <div className="flex flex-col px-6 pb-4 pt-6">
-              <DrawerTitle className="text-xl font-semibold tracking-tight">
-                Skating Programs in GTA
-              </DrawerTitle>
-              <DrawerDescription className="text-left text-sm">
-                {items.length} program{items.length === 1 ? "" : "s"} found
-              </DrawerDescription>
+            <div className="flex items-start justify-between gap-2 px-6 pb-4 pt-6">
+              <div className="flex flex-col">
+                <DrawerTitle className="text-xl font-semibold tracking-tight">
+                  {t("sidebar.title")}
+                </DrawerTitle>
+                <DrawerDescription className="text-left text-sm">
+                  {programCount}
+                </DrawerDescription>
+              </div>
+              <LanguageToggle />
             </div>
           }
         >

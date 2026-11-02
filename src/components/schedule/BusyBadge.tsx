@@ -1,9 +1,12 @@
+"use client";
+
+import { useTranslation } from "react-i18next";
 import { cn } from "cn";
 
-const LABELS: Record<number, string> = {
-  1: "Quiet",
-  2: "Moderate",
-  3: "Busy",
+const LABEL_KEYS: Record<number, string> = {
+  1: "busy.quiet",
+  2: "busy.moderate",
+  3: "busy.busy",
 };
 
 const DOT_ACTIVE: Record<number, string> = {
@@ -25,8 +28,9 @@ export function BusyBadge({
   n: number;
   className?: string;
 }) {
+  const { t } = useTranslation();
   const rounded = Math.min(3, Math.max(1, Math.round(busy)));
-  const label = LABELS[rounded];
+  const label = t(LABEL_KEYS[rounded]);
 
   return (
     <span
@@ -34,9 +38,7 @@ export function BusyBadge({
         "inline-flex shrink-0 items-center gap-1.5 text-[10px] font-medium text-zinc-500 dark:text-zinc-400",
         className
       )}
-      aria-label={`Usually ${label.toLowerCase()} · ${n} ${
-        n === 1 ? "report" : "reports"
-      }`}
+      aria-label={t("busy.usually", { label, count: n })}
     >
       <span aria-hidden="true" className="flex items-center gap-0.5">
         {[1, 2, 3].map((i) => (

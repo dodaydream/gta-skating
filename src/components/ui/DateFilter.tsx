@@ -2,11 +2,15 @@
 
 import { useEffect, useState } from "react";
 import dayjs from "dayjs";
+import "dayjs/locale/fr";
+import type { TFunction } from "i18next";
+import { useTranslation } from "react-i18next";
 import type { DateRange } from "react-day-picker";
 import type { ProgramType } from "@/types/schedule";
 import { Button } from "@/components/ui/button";
 import { DateRangePicker } from "@/components/ui/date-picker";
 import { ProgramTypeFilter } from "@/components/ui/ProgramTypeFilter";
+import { normalizeLocale, type Locale } from "@/i18n/config";
 import { IconCalendarWeek, IconCalendar } from "@tabler/icons-react";
 
 interface FilterChipsProps {
@@ -45,20 +49,40 @@ function toLocalDateStr(d: Date): string {
   return `${y}-${m}-${day}`;
 }
 
-function formatDateTime(value: string, now: Date | null): string {
-  const d = dayjs(value);
+function formatDateTime(
+  value: string,
+  now: Date | null,
+  t: TFunction,
+  locale: Locale
+): string {
+  const d = dayjs(value).locale(locale);
   const time = d.format("HH:mm");
-  const isToday = !!now && d.format("YYYY-MM-DD") === dayjs(now).format("YYYY-MM-DD");
-  return isToday ? `Today ${time}` : d.format("MMM D, HH:mm");
+  const isToday =
+    !!now && d.format("YYYY-MM-DD") === dayjs(now).format("YYYY-MM-DD");
+  if (isToday) return `${t("filters.today")} ${time}`;
+  return d.format(locale === "fr" ? "D MMM, HH:mm" : "MMM D, HH:mm");
 }
 
-function displayLabel(from: string, to: string, now: Date | null): string {
+function displayLabel(
+  from: string,
+  to: string,
+  now: Date | null,
+  t: TFunction,
+  locale: Locale
+): string {
   if (from && to && dayjs(from).isSame(dayjs(to), "day"))
-    return `${formatDateTime(from, now)} - ${dayjs(to).format("HH:mm")}`;
-  if (from && to) return `${formatDateTime(from, now)} - ${formatDateTime(to, now)}`;
-  if (from) return `From ${formatDateTime(from, now)}`;
-  if (to) return `Until ${formatDateTime(to, now)}`;
-  return "Anytime";
+    return `${formatDateTime(from, now, t, locale)} - ${dayjs(to).format("HH:mm")}`;
+  if (from && to)
+    return `${formatDateTime(from, now, t, locale)} - ${formatDateTime(to, now, t, locale)}`;
+  if (from)
+    return t("filters.fromDate", {
+      value: formatDateTime(from, now, t, locale),
+    });
+  if (to)
+    return t("filters.untilDate", {
+      value: formatDateTime(to, now, t, locale),
+    });
+  return t("filters.anytime");
 }
 
 export function FilterChips({
@@ -73,6 +97,8 @@ export function FilterChips({
   onTypesChange,
   className = "",
 }: FilterChipsProps) {
+  const { t, i18n } = useTranslation();
+  const locale = normalizeLocale(i18n.resolvedLanguage);
   const [open, setOpen] = useState(false);
   const [now, setNow] = useState<Date | null>(null);
   const active = Boolean(from || to);
@@ -140,16 +166,16 @@ export function FilterChips({
             ) : (
               <IconCalendar className="size-4" />
             )}
-            <span>{displayLabel(from, to, now)}</span>
+            <span>{displayLabel(from, to, now, t, locale)}</span>
             {active && <span className="ml-0.5 size-1.5 rounded-full bg-blue-500" />}
           </>
         }
-        drawerTitle={displayLabel(from, to, now)}
+        drawerTitle={displayLabel(from, to, now, t, locale)}
       >
           <div className="flex items-center gap-2 border-t px-3 py-2">
             <div className="flex flex-1 items-center gap-1">
               <label className="w-8 shrink-0 text-[11px] text-muted-foreground">
-                From
+                {t("filters.from")}
               </label>
               <input
                 type="time"
@@ -160,7 +186,7 @@ export function FilterChips({
             </div>
             <div className="flex flex-1 items-center gap-1">
               <label className="w-4 shrink-0 text-[11px] text-muted-foreground">
-                To
+                {t("filters.to")}
               </label>
               <input
                 type="time"
@@ -182,7 +208,7 @@ export function FilterChips({
                 commit({ from: fromDate, to: fromDate }, now.slice(11, 16), "23:59");
               }}
             >
-              Today
+              {t("filters.today")}
             </Button>
             <Button
               variant="default"
@@ -190,7 +216,7 @@ export function FilterChips({
               className="flex-1 lg:flex-none lg:ml-auto"
               onClick={() => commit(pendingRange, pendingFromTime, pendingToTime)}
             >
-              OK
+              {t("filters.ok")}
             </Button>
           </div>
       </DateRangePicker>
@@ -203,7 +229,7 @@ export function FilterChips({
         className="shadow-xs"
         onClick={() => onHideEmptyChange(!hideEmpty)}
       >
-        {hideEmpty ? "Show all venues" : "Hide venues without programs"}
+        {hideEmpty ? t("filters.showAll") : t("filters.hideEmpty")}
       </Button>
     </div>
   );

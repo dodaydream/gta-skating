@@ -3,6 +3,7 @@ import Script from "next/script";
 import { Geist, Geist_Mono } from "next/font/google";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { DeviceCornerRadius } from "@/components/DeviceCornerRadius";
+import { I18nProvider } from "@/components/I18nProvider";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -90,7 +91,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           className="pointer-events-none inset-x-0 h-px w-full bg-background top-0"
         />
         <DeviceCornerRadius />
-        {children}
+        <I18nProvider>{children}</I18nProvider>
         {adsenseClient ? (
           <Script
             async

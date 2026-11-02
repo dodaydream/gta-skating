@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useSyncExternalStore } from "react";
+import { useTranslation } from "react-i18next";
 import { ProgramType } from "@/types/schedule";
 import { Button } from "@/components/ui/button";
 import { Drawer, DrawerContent, DrawerTitle } from "@/components/ui/drawer";
@@ -40,6 +41,7 @@ export function ProgramTypeFilter({
   onChange,
   className = "",
 }: ProgramTypeFilterProps) {
+  const { t } = useTranslation();
   const [open, setOpen] = useState(false);
   const isDesktop = useIsDesktop();
   const active = types.length > 0;
@@ -77,7 +79,7 @@ export function ProgramTypeFilter({
           className="justify-start font-normal text-muted-foreground"
           onClick={() => onChange([])}
         >
-          Clear
+          {t("filters.clear")}
         </Button>
       ) : null}
     </div>
@@ -86,7 +88,11 @@ export function ProgramTypeFilter({
   const trigger = (
     <>
       <IconFilter className={`size-4 ${active ? "text-blue-500" : ""}`} />
-      <span>Type{active ? ` (${types.length})` : ""}</span>
+      <span>
+        {active
+          ? t("filters.typeCount", { count: types.length })
+          : t("filters.type")}
+      </span>
     </>
   );
 
@@ -127,7 +133,7 @@ export function ProgramTypeFilter({
           className="lg:hidden [--drawer-height:auto]"
           header={
             <DrawerTitle className="px-6 pb-2 pt-1 text-center text-base">
-              Program type
+              {t("filters.programType")}
             </DrawerTitle>
           }
         >

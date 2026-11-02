@@ -42,7 +42,9 @@ test.describe("home schedule", () => {
     expect(expected).toBeGreaterThan(0);
 
     await expect.poll(() => programCount(page)).toBe(expected);
-    await expect(sidebar(page).locator("button")).toHaveCount(expected);
+    await expect(sidebar(page).locator('[data-slot="program-item"]')).toHaveCount(
+      expected
+    );
   });
 
   test("shows the empty state when no program falls in the range", async ({ page }) => {

@@ -2,18 +2,25 @@
 
 import { useEffect, useMemo, useState } from "react";
 import type { RefObject } from "react";
+import { useTranslation } from "react-i18next";
 import type { Program } from "@/types/schedule";
 import {
   getCurrentMinutesInVenueTime,
   getTodayInVenueTime,
   toMinutes,
 } from "@/lib/schedule";
+import { normalizeLocale, type Locale } from "@/i18n/config";
 import { IconChevronLeft, IconChevronRight } from "@tabler/icons-react";
 import dayjs from "dayjs";
+import "dayjs/locale/fr";
 
-const WEEKDAY_LABELS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+const SHORT_DATE_FORMAT: Record<Locale, string> = {
+  en: "MMM D",
+  fr: "D MMM",
+};
 
-function formatHour(hour: number): string {
+function formatHour(hour: number, locale: Locale): string {
+  if (locale === "fr") return `${hour} h`;
   if (hour === 0) return "12am";
   if (hour < 12) return `${hour}am`;
   if (hour === 12) return "12pm";
@@ -101,6 +108,8 @@ export function WeekView({
   timezone: string;
   bodyRef: RefObject<HTMLDivElement | null>;
 }) {
+  const { t, i18n } = useTranslation();
+  const locale = normalizeLocale(i18n.resolvedLanguage);
   const baseWeekStart = useMemo(() => getWeekStartISO(programs), [programs]);
   const [weekOffset, setWeekOffset] = useState(0);
   const [bodyHeight, setBodyHeight] = useState(0);
@@ -171,8 +180,12 @@ export function WeekView({
   const weekEnd = weekStart.add(6, "day");
   const label =
     weekStart.month() === weekEnd.month()
-      ? weekStart.format("MMM D") + " – " + weekEnd.format("MMM D")
-      : weekStart.format("MMM D") + " – " + weekEnd.format("MMM D, YYYY");
+      ? weekStart.locale(locale).format(SHORT_DATE_FORMAT[locale]) +
+        " – " +
+        weekEnd.locale(locale).format(SHORT_DATE_FORMAT[locale])
+      : weekStart.locale(locale).format(SHORT_DATE_FORMAT[locale]) +
+        " – " +
+        weekEnd.locale(locale).format(`${SHORT_DATE_FORMAT[locale]}, YYYY`);
 
   return (
     <div className="flex flex-col gap-2">
@@ -180,7 +193,7 @@ export function WeekView({
         <button
           type="button"
           onClick={() => setWeekOffset((o) => o - 1)}
-          aria-label="Previous week"
+          aria-label={t("week.previous")}
           className="rounded-lg p-1.5 text-zinc-500 transition-colors hover:bg-zinc-100 hover:text-black dark:hover:bg-zinc-800 dark:hover:text-zinc-50"
         >
           <IconChevronLeft className="h-4 w-4" />
@@ -196,7 +209,7 @@ export function WeekView({
               onClick={() => setWeekOffset(0)}
               className="rounded-md px-2 py-0.5 text-xs font-medium text-blue-600 hover:underline dark:text-blue-400"
             >
-              This week
+              {t("week.thisWeek")}
             </button>
           )}
         </div>
@@ -204,7 +217,7 @@ export function WeekView({
         <button
           type="button"
           onClick={() => setWeekOffset((o) => o + 1)}
-          aria-label="Next week"
+          aria-label={t("week.next")}
           className="rounded-lg p-1.5 text-zinc-500 transition-colors hover:bg-zinc-100 hover:text-black dark:hover:bg-zinc-800 dark:hover:text-zinc-50"
         >
           <IconChevronRight className="h-4 w-4" />
@@ -219,10 +232,12 @@ export function WeekView({
               key={col.key}
               className="border-b border-black/[.08] px-1 pb-2 text-center text-xs font-medium text-zinc-700 dark:border-white/[.1] dark:text-zinc-300"
             >
-              {WEEKDAY_LABELS[dayjs(`${col.date}T00:00`).day()]}
+              {dayjs(`${col.date}T00:00`).locale(locale).format("ddd")}
               <br />
               <span className="text-[10px] text-zinc-400 dark:text-zinc-500">
-                {dayjs(`${col.date}T00:00`).format("MMM D")}
+                {dayjs(`${col.date}T00:00`)
+                  .locale(locale)
+                  .format(SHORT_DATE_FORMAT[locale])}
               </span>
             </div>
           ))}
@@ -236,7 +251,7 @@ export function WeekView({
                 className="absolute right-2 text-[10px] text-zinc-400 dark:text-zinc-500 -translate-y-1/2"
                 style={{ top: `${pct}%` }}
               >
-                {formatHour(hour)}
+                {formatHour(hour, locale)}
               </div>
             ))}
           </div>

@@ -3,9 +3,22 @@ import type { Program } from "@/types/schedule";
 import dayjs from "dayjs";
 import utc from "dayjs/plugin/utc";
 import timezonePlugin from "dayjs/plugin/timezone";
+import "dayjs/locale/fr";
 
 dayjs.extend(utc);
 dayjs.extend(timezonePlugin);
+
+/** Collapse any BCP-47 tag (e.g. "fr-CA") to a supported UI locale. */
+function uiLocale(locale: string | undefined): "en" | "fr" {
+  return (locale ?? "").toLowerCase().startsWith("fr") ? "fr" : "en";
+}
+
+const DATE_FORMATS = {
+  event: { en: "dddd, MMMM D", fr: "dddd D MMMM" },
+  human: { en: "ddd, MMM D", fr: "ddd D MMM" },
+  updated: { en: "MMM D, YYYY h:mm A", fr: "D MMM YYYY HH:mm" },
+} as const;
+
 
 export function getTodayInVenueTime(timezone: string): string {
   return new Intl.DateTimeFormat("en-CA", { timeZone: timezone }).format(
@@ -48,14 +61,22 @@ export function getUpcomingEvents(
     .sort((a, b) => a.start.localeCompare(b.start));
 }
 
-export function formatEventDate(dateStr: string, timezone: string): string {
-  return dayjs.tz(dateStr, timezone).format("dddd, MMMM D");
+export function formatEventDate(
+  dateStr: string,
+  timezone: string,
+  locale?: string
+): string {
+  const l = uiLocale(locale);
+  return dayjs.tz(dateStr, timezone).locale(l).format(DATE_FORMATS.event[l]);
 }
 
-export function formatHumanDate(dateStr: string, timezone: string): string {
-  const today = getTodayInVenueTime(timezone);
-  if (dateStr.slice(0, 10) === today) return "Today";
-  return dayjs.tz(dateStr, timezone).format("ddd, MMM D");
+export function formatHumanDate(
+  dateStr: string,
+  timezone: string,
+  locale?: string
+): string {
+  const l = uiLocale(locale);
+  return dayjs.tz(dateStr, timezone).locale(l).format(DATE_FORMATS.human[l]);
 }
 
 export function formatTimeRange(start: string, end: string): string {
@@ -63,27 +84,28 @@ export function formatTimeRange(start: string, end: string): string {
 }
 
 /** Format an ISO UTC timestamp (e.g. schedule.updatedAt) in the venue's timezone. */
-export function formatUpdatedDate(updatedAt: string, timezone: string): string {
-  return dayjs(updatedAt).tz(timezone).format("MMM D, YYYY h:mm A");
+export function formatUpdatedDate(
+  updatedAt: string,
+  timezone: string,
+  locale?: string
+): string {
+  const l = uiLocale(locale);
+  return dayjs(updatedAt)
+    .tz(timezone)
+    .locale(l)
+    .format(DATE_FORMATS.updated[l]);
 }
 
-/** Human label for a program's drop-in price: "Free", "$5.90", or null when unknown. */
-export function formatTicket(ticket: number | undefined): string | null {
-  if (ticket === undefined) return null;
-  if (ticket <= 0) return "Free";
-  return `$${ticket.toFixed(2)}`;
-}
-
-export function formatDuration(start: string, end: string): string {
+/** Whole hours and remaining minutes between two "HH:mm" times. */
+export function durationParts(
+  start: string,
+  end: string
+): { hours: number; minutes: number } {
   const startMin = toMinutes(start.slice(11, 16));
   const endMin = toMinutes(end.slice(11, 16));
   let diff = endMin - startMin;
   if (diff < 0) diff += 24 * 60;
-  const hours = Math.floor(diff / 60);
-  const minutes = diff % 60;
-  if (hours === 0) return `${minutes}m`;
-  if (minutes === 0) return `${hours}h`;
-  return `${hours}h ${minutes}m`;
+  return { hours: Math.floor(diff / 60), minutes: diff % 60 };
 }
 
 export function toMinutes(time: string): number {

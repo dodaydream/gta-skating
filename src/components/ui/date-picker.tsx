@@ -2,11 +2,14 @@
 
 import { useSyncExternalStore, type ReactNode } from "react";
 import { format } from "date-fns";
+import { useTranslation } from "react-i18next";
 import type { DateRange } from "react-day-picker";
+import { enCA, frCA } from "react-day-picker/locale";
 
 import { cn } from "cn";
 import { Button } from "@/components/ui/button";
 import { Calendar } from "@/components/ui/calendar";
+import { normalizeLocale } from "@/i18n/config";
 import {
   Drawer,
   DrawerContent,
@@ -63,6 +66,10 @@ function DateRangePicker({
     drawerTitle,
     children,
   }: DateRangePickerProps) {
+    const { t, i18n } = useTranslation();
+    const locale = normalizeLocale(i18n.resolvedLanguage);
+    const dateLocale = locale === "fr" ? frCA : enCA;
+    const valueFormat = locale === "fr" ? "d LLL y" : "LLL dd, y";
     const isDesktop = useIsDesktop();
 
     const triggerContent = trigger ?? (
@@ -70,13 +77,14 @@ function DateRangePicker({
         {value?.from ? (
           value.to ? (
             <>
-              {format(value.from, "LLL dd, y")} - {format(value.to, "LLL dd, y")}
+              {format(value.from, valueFormat, { locale: dateLocale })} -{" "}
+              {format(value.to, valueFormat, { locale: dateLocale })}
             </>
           ) : (
-            format(value.from, "LLL dd, y")
+            format(value.from, valueFormat, { locale: dateLocale })
           )
         ) : (
-          <span>Pick a date</span>
+          <span>{t("filters.pickDate")}</span>
         )}
       </>
     );
@@ -84,12 +92,15 @@ function DateRangePicker({
     const title = drawerTitle ?? trigger ?? (
       value?.from ? (
         value.to ? (
-          <>{format(value.from, "LLL dd, y")} - {format(value.to, "LLL dd, y")}</>
+          <>
+            {format(value.from, valueFormat, { locale: dateLocale })} -{" "}
+            {format(value.to, valueFormat, { locale: dateLocale })}
+          </>
         ) : (
-          format(value.from, "LLL dd, y")
+          format(value.from, valueFormat, { locale: dateLocale })
         )
       ) : (
-        "Select date range"
+        t("filters.selectDateRange")
       )
     );
 
@@ -100,6 +111,7 @@ function DateRangePicker({
       selected={value}
       onSelect={onChange}
       numberOfMonths={isDesktop ? numberOfMonths : 1}
+      locale={dateLocale}
       resetOnSelect
     />
   );
