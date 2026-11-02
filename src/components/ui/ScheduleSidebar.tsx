@@ -95,7 +95,7 @@ export function ScheduleSidebar({
         <div className="flex min-h-0 flex-1 flex-col overflow-y-auto p-6">
           <div className="mb-4 flex flex-col">
             <h1 className="text-xl font-semibold tracking-tight text-black dark:text-zinc-50">
-              GTA Skating Venues
+              Skating Programs in GTA
             </h1>
             <span className="text-sm text-zinc-500 dark:text-zinc-400">
               {items.length} program{items.length === 1 ? "" : "s"} found
@@ -133,7 +133,7 @@ export function ScheduleSidebar({
           header={
             <div className="flex flex-col px-6 pb-4 pt-6">
               <DrawerTitle className="text-xl font-semibold tracking-tight">
-                GTA Skating Venues
+                Skating Programs in GTA
               </DrawerTitle>
               <DrawerDescription className="text-left text-sm">
                 {items.length} program{items.length === 1 ? "" : "s"} found
