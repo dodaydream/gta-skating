@@ -30,6 +30,14 @@ const en = {
     pickDate: "Pick a date",
     selectDateRange: "Select date range",
   },
+  programTypes: {
+    publicSkate: "Public Skate",
+    pickupHockey: "Pickup Hockey",
+    figureSkating: "Figure Skating",
+    stickAndPuck: "Stick and Puck",
+    ringette: "Ringette",
+    iceBreakdancing: "Ice Breakdancing",
+  },
   programs: {
     emptyTitle: "No programs found",
     emptyDescription: "Try a different date range or filters.",

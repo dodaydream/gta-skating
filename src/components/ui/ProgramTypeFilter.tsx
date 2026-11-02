@@ -16,6 +16,15 @@ const DESKTOP_QUERY = "(min-width: 1024px)";
 
 const PROGRAM_TYPES = Object.values(ProgramType);
 
+const PROGRAM_TYPE_KEYS: Record<ProgramType, string> = {
+  [ProgramType.PublicSkate]: "programTypes.publicSkate",
+  [ProgramType.PickupHockey]: "programTypes.pickupHockey",
+  [ProgramType.FigureSkating]: "programTypes.figureSkating",
+  [ProgramType.StickAndPuck]: "programTypes.stickAndPuck",
+  [ProgramType.Ringette]: "programTypes.ringette",
+  [ProgramType.IceBreakdancing]: "programTypes.iceBreakdancing",
+};
+
 function subscribeDesktop(onChange: () => void) {
   const mq = window.matchMedia(DESKTOP_QUERY);
   mq.addEventListener("change", onChange);
@@ -67,7 +76,9 @@ export function ProgramTypeFilter({
             aria-pressed={checked}
             onClick={() => toggle(type)}
           >
-            <span className="flex-1 text-left">{type}</span>
+            <span className="flex-1 text-left">
+              {t(PROGRAM_TYPE_KEYS[type])}
+            </span>
             {checked ? <IconCheck className="size-4 text-blue-500" /> : null}
           </Button>
         );

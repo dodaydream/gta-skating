@@ -32,6 +32,14 @@ const fr: Messages = {
     pickDate: "Choisir une date",
     selectDateRange: "Sélectionner une plage de dates",
   },
+  programTypes: {
+    publicSkate: "Patinage libre",
+    pickupHockey: "Hockey récréatif",
+    figureSkating: "Patinage artistique",
+    stickAndPuck: "Bâton et rondelle",
+    ringette: "Ringette",
+    iceBreakdancing: "Breakdance sur glace",
+  },
   programs: {
     emptyTitle: "Aucun programme trouvé",
     emptyDescription: "Essayez une autre plage de dates ou d’autres filtres.",
