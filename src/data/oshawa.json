@@ -8,10 +8,10 @@
     "lon": -78.8791328
   },
   "schedule": {
-    "updatedAt": "2026-11-02T01:49:09.777Z",
+    "updatedAt": "2026-11-02T06:08:52.544Z",
     "programs": [
       {
-        "id": "05cad2ab-0b2f-4dbe-877f-bffa0443782d",
+        "id": "197d77c9-55e0-4c08-b1cb-72594abdf2a3",
         "start": "2026-11-02T07:30",
         "end": "2026-11-02T08:20",
         "name": "Stick & Puck",
@@ -19,7 +19,7 @@
         "ticket": 10
       },
       {
-        "id": "e5e85e1e-6c66-4bc4-b13b-7a21198366cb",
+        "id": "c442e661-e643-4831-a8f7-21f57dee58d0",
         "start": "2026-11-02T15:15",
         "end": "2026-11-02T16:05",
         "name": "Stick & Puck",
@@ -27,7 +27,7 @@
         "ticket": 10
       },
       {
-        "id": "e5a7b528-b952-4642-8d71-bf6a65a92aad",
+        "id": "a5f4dddb-43d5-47e0-9262-ed878e84f1cf",
         "start": "2026-11-02T23:15",
         "end": "2026-11-03T00:05",
         "name": "Shinny",
@@ -35,7 +35,7 @@
         "ticket": 10
       },
       {
-        "id": "600c9dd3-852f-474f-a33d-6e919d294e06",
+        "id": "6b629889-ce3b-4063-a161-9e6d067785bf",
         "start": "2026-11-03T15:15",
         "end": "2026-11-03T16:05",
         "name": "Stick & Puck",
@@ -43,7 +43,7 @@
         "ticket": 10
       },
       {
-        "id": "78a1236b-fa35-4368-9fa3-842195b1e77d",
+        "id": "9dc2377e-96b6-4218-8959-474241cf6461",
         "start": "2026-11-04T15:30",
         "end": "2026-11-04T16:20",
         "name": "Stick & Puck",
@@ -51,7 +51,7 @@
         "ticket": 10
       },
       {
-        "id": "1b6df48b-ec91-4950-b37a-8e61bf6fedd4",
+        "id": "59c9a2da-931d-4ef8-8a71-236583c90ad3",
         "start": "2026-11-05T15:15",
         "end": "2026-11-05T16:05",
         "name": "Stick & Puck",
@@ -59,7 +59,7 @@
         "ticket": 10
       },
       {
-        "id": "f7ba36a1-87c4-427f-b738-efef54bcb803",
+        "id": "9b4b46bc-f9db-46b7-b433-e4b02eff37db",
         "start": "2026-11-09T07:30",
         "end": "2026-11-09T08:20",
         "name": "Stick & Puck",
@@ -67,7 +67,7 @@
         "ticket": 10
       },
       {
-        "id": "cf87a415-73e8-4dfc-9d0b-547d7e2dd3b6",
+        "id": "12d32fda-1019-4b5f-8e0b-0cdce7c578ce",
         "start": "2026-11-09T15:15",
         "end": "2026-11-09T16:05",
         "name": "Stick & Puck",
@@ -75,7 +75,7 @@
         "ticket": 10
       },
       {
-        "id": "44683201-4f73-4419-847c-94d6e7964744",
+        "id": "fcb204eb-98a9-4a99-8813-1cca48537c14",
         "start": "2026-11-09T23:15",
         "end": "2026-11-10T00:05",
         "name": "Shinny",
@@ -83,7 +83,7 @@
         "ticket": 10
       },
       {
-        "id": "2cc803ba-3553-47b1-9768-bbe0f2c4317c",
+        "id": "a96a5557-80b5-4e3e-b4a4-644c18611d2b",
         "start": "2026-11-10T15:15",
         "end": "2026-11-10T16:05",
         "name": "Stick & Puck",
@@ -91,7 +91,7 @@
         "ticket": 10
       },
       {
-        "id": "875980c6-885f-43c4-bc77-00a9d09e43ba",
+        "id": "6b1dc33d-8a3d-4c19-aac0-e84c6028e8fa",
         "start": "2026-11-11T15:15",
         "end": "2026-11-11T16:05",
         "name": "Stick & Puck",
@@ -99,7 +99,7 @@
         "ticket": 10
       },
       {
-        "id": "78b93c30-0287-4c55-808d-8939d10f08ee",
+        "id": "8e3cc804-a511-45e5-832a-d12309797727",
         "start": "2026-11-12T15:15",
         "end": "2026-11-12T16:05",
         "name": "Stick & Puck",
@@ -107,7 +107,7 @@
         "ticket": 10
       },
       {
-        "id": "191cfd00-2865-4fa5-ac53-27a63da1a412",
+        "id": "d167ca19-f182-4ef7-99ae-71e68935897a",
         "start": "2026-11-13T09:15",
         "end": "2026-11-13T10:05",
         "name": "Junior Stick & Puck",
@@ -115,7 +115,7 @@
         "ticket": 10
       },
       {
-        "id": "7bcbfae7-e473-4c2e-ab98-7739cccf01bd",
+        "id": "7d43e30d-216a-497d-952f-935b9073dd53",
         "start": "2026-11-13T10:15",
         "end": "2026-11-13T11:05",
         "name": "Teen Stick & Puck",
@@ -123,7 +123,7 @@
         "ticket": 10
       },
       {
-        "id": "18ef5dd4-e992-4229-9baa-a3d70aea8a0e",
+        "id": "f42f02b9-72bc-48c1-9dbe-38243817c502",
         "start": "2026-11-13T11:15",
         "end": "2026-11-13T12:05",
         "name": "Junior Stick & Puck",
@@ -131,7 +131,7 @@
         "ticket": 10
       },
       {
-        "id": "9d628c8b-4ee3-4a47-8397-3eee8fc0b07d",
+        "id": "0ef00e7b-4d58-4268-9888-960ad8c7659c",
         "start": "2026-11-13T13:15",
         "end": "2026-11-13T14:35",
         "name": "Stick & Puck",
@@ -139,7 +139,7 @@
         "ticket": 10
       },
       {
-        "id": "000de19f-16a7-4c81-aaf0-3542429f2614",
+        "id": "e2765592-611d-42f2-ad00-38d5c3f3d90d",
         "start": "2026-11-13T15:30",
         "end": "2026-11-13T16:20",
         "name": "Junior Stick & Puck",
@@ -147,7 +147,7 @@
         "ticket": 10
       },
       {
-        "id": "7ae8aa59-59e2-4843-ab19-1e0861750b8b",
+        "id": "fcc5c0e6-e0d5-49f1-8e62-e232e7fe26ad",
         "start": "2026-11-16T07:30",
         "end": "2026-11-16T08:20",
         "name": "Stick & Puck",
@@ -155,7 +155,7 @@
         "ticket": 10
       },
       {
-        "id": "8fe1f5a4-ec7d-452e-a274-7713b90a02fa",
+        "id": "a6c06144-f5e0-4ad3-a52a-84b689faad3e",
         "start": "2026-11-16T15:15",
         "end": "2026-11-16T16:05",
         "name": "Stick & Puck",
@@ -163,7 +163,7 @@
         "ticket": 10
       },
       {
-        "id": "16737b59-3bf5-4fa0-8baf-5272018e2800",
+        "id": "eda6f8d1-40b4-4f77-94c8-435e1a151eb2",
         "start": "2026-11-16T23:15",
         "end": "2026-11-17T00:05",
         "name": "Shinny",
@@ -171,7 +171,7 @@
         "ticket": 10
       },
       {
-        "id": "c4149f83-c388-4477-9cc3-ef252f922dcd",
+        "id": "a7cbc92a-cf71-4a94-bb5e-bbbd91e2911f",
         "start": "2026-11-18T15:15",
         "end": "2026-11-18T16:05",
         "name": "Stick & Puck",
@@ -179,7 +179,7 @@
         "ticket": 10
       },
       {
-        "id": "5c847470-0adc-4c48-951f-d7849691af0d",
+        "id": "d6ca25f7-e484-489d-809b-b74eb76a2596",
         "start": "2026-11-23T07:30",
         "end": "2026-11-23T08:20",
         "name": "Stick & Puck",
@@ -187,7 +187,7 @@
         "ticket": 10
       },
       {
-        "id": "deaf663a-3450-4222-824d-935b09b30696",
+        "id": "cf19b9fa-e298-4422-a547-d38c57312c1d",
         "start": "2026-11-23T23:15",
         "end": "2026-11-24T00:05",
         "name": "Shinny",
@@ -195,7 +195,7 @@
         "ticket": 10
       },
       {
-        "id": "c865b580-934e-47b3-b4e8-c23c7790becf",
+        "id": "b731b623-ffb1-460a-b67e-c4e3ff84d8b4",
         "start": "2026-11-25T15:15",
         "end": "2026-11-25T16:05",
         "name": "Stick & Puck",
@@ -203,7 +203,7 @@
         "ticket": 10
       },
       {
-        "id": "eeddf4c3-fef0-4281-891d-8b2acfdae32e",
+        "id": "522cd59e-815f-4f0f-8dc9-156b216202b6",
         "start": "2026-11-30T07:30",
         "end": "2026-11-30T08:20",
         "name": "Stick & Puck",
@@ -211,7 +211,7 @@
         "ticket": 10
       },
       {
-        "id": "edd7efba-e020-4a67-b41a-efa17f13b94c",
+        "id": "7e504f6d-275c-4a60-a9ca-cf81214cc68d",
         "start": "2026-11-30T15:15",
         "end": "2026-11-30T16:05",
         "name": "Stick & Puck",
@@ -219,7 +219,7 @@
         "ticket": 10
       },
       {
-        "id": "3107eea4-e02f-4139-996f-4bad4a461e64",
+        "id": "07494948-542b-470a-b684-b0446036ef04",
         "start": "2026-11-30T23:15",
         "end": "2026-12-01T00:05",
         "name": "Shinny",
@@ -227,7 +227,7 @@
         "ticket": 10
       },
       {
-        "id": "5d72bcb3-f7f2-4b9f-8999-165fee1e33b1",
+        "id": "52666a65-3ad1-41b4-8ace-a20068bc006b",
         "start": "2026-12-02T08:15",
         "end": "2026-12-02T09:05",
         "name": "Stick & Puck",
@@ -235,9 +235,17 @@
         "ticket": 10
       },
       {
-        "id": "bef450cf-6096-42e5-aef0-76588ef539d3",
+        "id": "f176b4dd-e019-43fd-8d2d-62d38c9d6bee",
         "start": "2026-12-02T15:15",
         "end": "2026-12-02T16:05",
+        "name": "Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 10
+      },
+      {
+        "id": "4976c68d-a157-4c8b-8214-bdba455c23f5",
+        "start": "2026-12-03T15:15",
+        "end": "2026-12-03T16:05",
         "name": "Stick & Puck",
         "type": "Stick and Puck",
         "ticket": 10

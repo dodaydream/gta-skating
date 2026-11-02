@@ -8,19 +8,10 @@
     "lon": -79.542782
   },
   "schedule": {
-    "updatedAt": "2026-11-02T01:41:26.811Z",
+    "updatedAt": "2026-11-02T06:09:06.410Z",
     "programs": [
       {
-        "id": "b2382a96-1ee3-42ef-89e4-4e6afeb97f01",
-        "start": "2026-11-01T13:45",
-        "end": "2026-11-01T15:45",
-        "name": "Leisure Skate",
-        "type": "Public Skate",
-        "notes": "0 years and over",
-        "ticket": 0
-      },
-      {
-        "id": "1ad7369e-0eac-4d98-84e3-97f6892b4615",
+        "id": "df131a6b-5628-4c3e-8151-320873137a98",
         "start": "2026-11-02T16:15",
         "end": "2026-11-02T18:00",
         "name": "Leisure Skate",
@@ -29,7 +20,7 @@
         "ticket": 0
       },
       {
-        "id": "14df56ab-b209-4571-802f-21b2cb7c4215",
+        "id": "9b071f7c-7eb5-4f12-b4d6-89911ef5cf83",
         "start": "2026-11-05T16:15",
         "end": "2026-11-05T18:00",
         "name": "Leisure Skate",
@@ -38,7 +29,7 @@
         "ticket": 0
       },
       {
-        "id": "02b0a68d-be7a-4943-8d43-1360bbf64bf4",
+        "id": "69192bf9-2d4e-4195-a8a9-c746ebbb3894",
         "start": "2026-11-06T16:00",
         "end": "2026-11-06T16:45",
         "name": "Shinny: Early Years with Caregiver",
@@ -47,7 +38,7 @@
         "ticket": 0
       },
       {
-        "id": "eda624f1-9d25-4d84-bbe2-f0cfe8c78102",
+        "id": "de7ddefc-401b-409a-92ac-cba6bf851b53",
         "start": "2026-11-06T16:45",
         "end": "2026-11-06T17:45",
         "name": "Shinny: Child with Caregiver",
@@ -56,7 +47,7 @@
         "ticket": 0
       },
       {
-        "id": "0f09e467-c86a-42c3-9299-5832f21f1044",
+        "id": "d1f224f3-95a9-45c2-b24a-1bbaee838941",
         "start": "2026-11-07T13:45",
         "end": "2026-11-07T15:45",
         "name": "Leisure Skate",
@@ -65,7 +56,7 @@
         "ticket": 0
       },
       {
-        "id": "6d86ce7e-1279-423c-b22b-5e1dc66875f9",
+        "id": "fb1af46c-227b-4a70-9148-e663767395da",
         "start": "2026-11-08T13:45",
         "end": "2026-11-08T15:45",
         "name": "Leisure Skate",

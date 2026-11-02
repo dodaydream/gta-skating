@@ -8,10 +8,10 @@
     "lon": -79.370213
   },
   "schedule": {
-    "updatedAt": "2026-11-02T04:34:28.423Z",
+    "updatedAt": "2026-11-02T06:09:00.468Z",
     "programs": [
       {
-        "id": "e6a44181-2fb3-4417-9db7-64244c059811",
+        "id": "f107c796-1795-4a8c-908b-23ea8c5212a9",
         "start": "2026-11-03T12:00",
         "end": "2026-11-03T13:00",
         "name": "Public Skate",
@@ -20,7 +20,7 @@
         "ticket": 0
       },
       {
-        "id": "0fd179c8-a7e6-42aa-a7b5-148bba1d849b",
+        "id": "b8538d6b-ca35-4493-b38a-b975df309141",
         "start": "2026-11-05T13:00",
         "end": "2026-11-05T14:00",
         "name": "Public Skate",
@@ -29,7 +29,7 @@
         "ticket": 0
       },
       {
-        "id": "66b9618b-3efa-4008-a052-792db7eb591f",
+        "id": "45870812-ecbc-44b2-8451-37247d5587b8",
         "start": "2026-11-10T12:00",
         "end": "2026-11-10T13:00",
         "name": "Public Skate",
@@ -38,7 +38,7 @@
         "ticket": 0
       },
       {
-        "id": "f1cd2ce4-f5bb-4201-9c4c-9fcff0279234",
+        "id": "c3172b1d-9c0e-4b06-a0dc-325078891b1a",
         "start": "2026-11-12T13:00",
         "end": "2026-11-12T14:00",
         "name": "Public Skate",
@@ -47,7 +47,7 @@
         "ticket": 0
       },
       {
-        "id": "85bcd80c-cd14-4e86-83cf-a5a8d24d64c6",
+        "id": "945f0e6e-a05d-45b9-89ba-dc3f709ccc93",
         "start": "2026-11-17T12:00",
         "end": "2026-11-17T13:00",
         "name": "Public Skate",
@@ -56,7 +56,7 @@
         "ticket": 0
       },
       {
-        "id": "9a8fefa4-4fdd-4106-a13c-81b69b48949d",
+        "id": "4542848f-d2b2-4d4d-a1c6-d4e9ed4ab686",
         "start": "2026-11-19T13:00",
         "end": "2026-11-19T14:00",
         "name": "Public Skate",
@@ -65,7 +65,7 @@
         "ticket": 0
       },
       {
-        "id": "4bbea6dc-77d7-4e9e-95ca-7318578f2a14",
+        "id": "bd841aff-4f20-43a6-b08f-3d1679440873",
         "start": "2026-11-24T12:00",
         "end": "2026-11-24T13:00",
         "name": "Public Skate",
@@ -74,7 +74,7 @@
         "ticket": 0
       },
       {
-        "id": "6d088fdb-eaeb-4f99-a17f-3227ac769e16",
+        "id": "554d6579-ad6f-4056-90ad-ce9ad81bdf2f",
         "start": "2026-11-26T13:00",
         "end": "2026-11-26T14:00",
         "name": "Public Skate",
@@ -83,7 +83,7 @@
         "ticket": 0
       },
       {
-        "id": "f860995e-4a20-4ab4-9ff0-2c9262fbd541",
+        "id": "32db0c88-5595-4b72-bf16-c1597070c9c2",
         "start": "2026-12-01T12:00",
         "end": "2026-12-01T13:00",
         "name": "Public Skate",

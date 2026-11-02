@@ -8,19 +8,10 @@
     "lon": -79.351281
   },
   "schedule": {
-    "updatedAt": "2026-11-02T01:41:26.623Z",
+    "updatedAt": "2026-11-02T06:09:06.139Z",
     "programs": [
       {
-        "id": "4b980088-db1d-4884-bdd2-fa8c2196b6d3",
-        "start": "2026-11-01T14:30",
-        "end": "2026-11-01T16:30",
-        "name": "Leisure Skate",
-        "type": "Public Skate",
-        "notes": "0 years and over",
-        "ticket": 0
-      },
-      {
-        "id": "4ed02262-6d31-46fa-949b-5177b5a36312",
+        "id": "bfa5a47f-4ba0-4440-9bc0-d9b8825a1d3f",
         "start": "2026-11-02T19:00",
         "end": "2026-11-02T21:00",
         "name": "Leisure Skate",
@@ -29,7 +20,7 @@
         "ticket": 0
       },
       {
-        "id": "fcf3856d-40c1-4e85-b96c-930b643e186b",
+        "id": "41a60eae-90e9-4980-8ab4-c488944a2109",
         "start": "2026-11-05T16:30",
         "end": "2026-11-05T17:15",
         "name": "Shinny: Child",
@@ -38,7 +29,7 @@
         "ticket": 0
       },
       {
-        "id": "d5b539c6-8b42-4d9c-aa9b-048f1c30089c",
+        "id": "763feb38-8416-4157-b437-5af3c420efad",
         "start": "2026-11-05T17:15",
         "end": "2026-11-05T18:00",
         "name": "Shinny: Youth",
@@ -47,7 +38,7 @@
         "ticket": 0
       },
       {
-        "id": "900f595a-bc9b-4d87-b098-07788858b80d",
+        "id": "89435e45-948c-42f8-ab03-47166d5047e6",
         "start": "2026-11-07T19:00",
         "end": "2026-11-07T21:00",
         "name": "Leisure Skate",
@@ -56,7 +47,7 @@
         "ticket": 0
       },
       {
-        "id": "6c69a545-58c5-4154-af56-528c73d3c32c",
+        "id": "6959b91f-476f-44a1-b994-cad53357e6d7",
         "start": "2026-11-07T21:15",
         "end": "2026-11-07T23:00",
         "name": "Shinny: Adult",
@@ -65,7 +56,7 @@
         "ticket": 0
       },
       {
-        "id": "bc9f8256-4e05-4dff-a23d-5137579a6788",
+        "id": "dcf542cb-9a3c-491d-bf9b-125353b47dd4",
         "start": "2026-11-08T14:30",
         "end": "2026-11-08T16:30",
         "name": "Leisure Skate",

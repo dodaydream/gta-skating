@@ -8,28 +8,10 @@
     "lon": -79.383509
   },
   "schedule": {
-    "updatedAt": "2026-11-02T01:41:28.243Z",
+    "updatedAt": "2026-11-02T06:09:08.825Z",
     "programs": [
       {
-        "id": "f672e9b2-b22b-46ee-a088-9fc7a1033ab8",
-        "start": "2026-11-01T13:30",
-        "end": "2026-11-01T14:30",
-        "name": "Shinny: Child with Caregiver",
-        "type": "Pickup Hockey",
-        "notes": "0 - 8 years",
-        "ticket": 0
-      },
-      {
-        "id": "00c7a219-05d6-439a-a526-960894592c4c",
-        "start": "2026-11-01T14:45",
-        "end": "2026-11-01T16:45",
-        "name": "Leisure Skate",
-        "type": "Public Skate",
-        "notes": "0 years and over",
-        "ticket": 0
-      },
-      {
-        "id": "1f01efa6-9639-41f5-9dd5-3a0a0c967d48",
+        "id": "55365308-4b14-4c52-b32f-d2220bbc1a50",
         "start": "2026-11-06T18:45",
         "end": "2026-11-06T20:45",
         "name": "Leisure Skate",
@@ -38,7 +20,7 @@
         "ticket": 0
       },
       {
-        "id": "a0df1f85-28c0-492f-9a56-74e0e53c98b5",
+        "id": "c0decf64-568b-43f8-a66b-eccee0b4cd50",
         "start": "2026-11-07T19:30",
         "end": "2026-11-07T21:30",
         "name": "Leisure Skate",
@@ -47,7 +29,7 @@
         "ticket": 0
       },
       {
-        "id": "6ad6e9ce-0ee4-4340-b50a-d69a35233f73",
+        "id": "9c787629-2634-42bc-9fc7-46da5c0e0c2c",
         "start": "2026-11-08T13:30",
         "end": "2026-11-08T14:30",
         "name": "Shinny: Child with Caregiver",
@@ -56,7 +38,7 @@
         "ticket": 0
       },
       {
-        "id": "e047b66b-7467-4f6a-a5e4-4849360e74a0",
+        "id": "5cfc0d21-6fee-438b-859d-c3639d2d058c",
         "start": "2026-11-08T14:45",
         "end": "2026-11-08T16:45",
         "name": "Leisure Skate",

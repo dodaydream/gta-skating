@@ -8,10 +8,10 @@
     "lon": -79.48157
   },
   "schedule": {
-    "updatedAt": "2026-11-02T01:41:24.359Z",
+    "updatedAt": "2026-11-02T06:09:02.816Z",
     "programs": [
       {
-        "id": "c5d655fb-c297-4479-ad06-15b94b51b04e",
+        "id": "5daf69bc-4208-4698-95de-ca5b47390dc0",
         "start": "2026-11-02T17:00",
         "end": "2026-11-02T18:30",
         "name": "Shinny: Child with Caregiver",
@@ -20,7 +20,7 @@
         "ticket": 0
       },
       {
-        "id": "30cb8362-954a-49ba-8107-7eb36ad66a93",
+        "id": "2e664368-613e-4e60-8f4d-6f7a404d2f83",
         "start": "2026-11-02T18:30",
         "end": "2026-11-02T20:00",
         "name": "Leisure Skate",
