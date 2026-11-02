@@ -1,0 +1,42 @@
+{
+  "name": "Long Branch Arena",
+  "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=803",
+  "timezone": "America/Toronto",
+  "address": "75 Arcadian Cir, Toronto, ON",
+  "coordinates": {
+    "lat": 43.591779,
+    "lon": -79.527833
+  },
+  "schedule": {
+    "updatedAt": "2026-11-02T01:41:26.044Z",
+    "programs": [
+      {
+        "id": "6daf35b2-a539-422f-a0a3-a2173b52d100",
+        "start": "2026-11-01T12:15",
+        "end": "2026-11-01T13:45",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "42557895-b231-498e-a237-bd2a2d4b19e8",
+        "start": "2026-11-07T15:15",
+        "end": "2026-11-07T16:45",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "f27586b0-8d19-4ce6-8673-3a5bf7a33609",
+        "start": "2026-11-08T12:15",
+        "end": "2026-11-08T13:45",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      }
+    ]
+  }
+}

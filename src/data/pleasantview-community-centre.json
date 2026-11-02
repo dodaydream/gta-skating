@@ -1,0 +1,51 @@
+{
+  "name": "Pleasantview Community Centre",
+  "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=732",
+  "timezone": "America/Toronto",
+  "address": "545 Van Horne Ave, Toronto, ON",
+  "coordinates": {
+    "lat": 43.787003,
+    "lon": -79.336705
+  },
+  "schedule": {
+    "updatedAt": "2026-11-02T01:41:26.860Z",
+    "programs": [
+      {
+        "id": "0762b63c-fd16-4d13-aa8d-2529cc50b43d",
+        "start": "2026-11-01T14:30",
+        "end": "2026-11-01T16:30",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "115d62ae-b99a-43f5-904e-a6d9af56777b",
+        "start": "2026-11-03T19:00",
+        "end": "2026-11-03T21:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "d2029670-3159-4fd1-b854-ad3f07c64333",
+        "start": "2026-11-07T19:00",
+        "end": "2026-11-07T21:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "7eddd79f-86b5-4493-bcab-d57823506a86",
+        "start": "2026-11-08T14:30",
+        "end": "2026-11-08T16:30",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      }
+    ]
+  }
+}

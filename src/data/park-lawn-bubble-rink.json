@@ -8,10 +8,10 @@
     "lon": -79.495672
   },
   "schedule": {
-    "updatedAt": "2026-11-02T00:43:12.183Z",
+    "updatedAt": "2026-11-02T01:41:26.708Z",
     "programs": [
       {
-        "id": "5c8dd99f-71f2-41d6-bd15-11705da25f82",
+        "id": "c8247d77-6205-4079-94ab-524482d833e4",
         "start": "2026-11-01T16:30",
         "end": "2026-11-01T18:00",
         "name": "Leisure Skate",
@@ -20,7 +20,7 @@
         "ticket": 0
       },
       {
-        "id": "f725af04-bdd7-4f29-ab00-ab510b4dc381",
+        "id": "8fe664f2-3cb6-4e86-8fbe-2bdf2c88de85",
         "start": "2026-11-06T18:45",
         "end": "2026-11-06T20:15",
         "name": "Leisure Skate",
@@ -29,7 +29,7 @@
         "ticket": 0
       },
       {
-        "id": "5505894e-3b97-4701-b347-d8aab33f9ce3",
+        "id": "7d3d49d6-4cd6-4505-a484-4c8bc7b08b37",
         "start": "2026-11-07T15:15",
         "end": "2026-11-07T16:45",
         "name": "Leisure Skate",
@@ -38,7 +38,7 @@
         "ticket": 0
       },
       {
-        "id": "14a3c25d-6d54-4aa1-acee-4107265c665a",
+        "id": "6b4dc01e-46f2-4efd-9812-c0cbd8f722fd",
         "start": "2026-11-08T16:30",
         "end": "2026-11-08T18:00",
         "name": "Leisure Skate",

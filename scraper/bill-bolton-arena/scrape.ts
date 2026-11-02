@@ -3,7 +3,7 @@
  *
  * Fetches the venue's public-skating page, extracts the recurring weekly
  * programs, expands them into explicit dated events for the season, and writes
- * the result to src/data/bill-bolton.json in the shape consumed by
+ * the result to src/data/bill-bolton-arena.json in the shape consumed by
  * src/data/schedule.ts.
  *
  * Venue metadata lives in ./meta.json (generic, reusable). Anything specific to
@@ -28,7 +28,6 @@ import { classifyProgram } from "../classify.ts";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const OUT_DIR = path.resolve(__dirname, "../../src/data");
-const OUT_FILE = path.join(OUT_DIR, "bill-bolton.json");
 
 // --- Crawl settings (specific to this venue) ----------------------------
 
@@ -307,9 +306,10 @@ async function writeSchedule(meta: VenueMeta, programs: Program[]): Promise<stri
       programs,
     },
   };
+  const file = path.join(OUT_DIR, `${meta.id}.json`);
   await mkdir(OUT_DIR, { recursive: true });
-  await writeFile(OUT_FILE, JSON.stringify(payload, null, 2) + "\n", "utf8");
-  return OUT_FILE;
+  await writeFile(file, JSON.stringify(payload, null, 2) + "\n", "utf8");
+  return file;
 }
 
 // --- Runner -------------------------------------------------------------

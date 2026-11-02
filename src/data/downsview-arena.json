@@ -1,0 +1,69 @@
+{
+  "name": "Downsview Arena",
+  "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=568",
+  "timezone": "America/Toronto",
+  "address": "1633 Wilson Ave, Toronto, ON",
+  "coordinates": {
+    "lat": 43.719835,
+    "lon": -79.512771
+  },
+  "schedule": {
+    "updatedAt": "2026-11-02T01:41:24.760Z",
+    "programs": [
+      {
+        "id": "77b35a6f-bc9f-40d8-ae88-328ee8ff211d",
+        "start": "2026-11-01T14:45",
+        "end": "2026-11-01T15:30",
+        "name": "Leisure Skate: Child with Caregiver",
+        "type": "Public Skate",
+        "notes": "6 - 12 years",
+        "ticket": 0
+      },
+      {
+        "id": "81ecd536-daf1-4c39-928d-29940c66d5fd",
+        "start": "2026-11-01T15:30",
+        "end": "2026-11-01T17:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "7c160c40-837d-4adf-80af-3dcf686bdcb5",
+        "start": "2026-11-04T19:15",
+        "end": "2026-11-04T21:15",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "b683be3d-43b5-4f80-bebc-79662b0f1f87",
+        "start": "2026-11-07T19:00",
+        "end": "2026-11-07T21:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "19d7733b-e219-4895-b0d7-8caa7e9cec54",
+        "start": "2026-11-08T14:45",
+        "end": "2026-11-08T15:30",
+        "name": "Leisure Skate: Child with Caregiver",
+        "type": "Public Skate",
+        "notes": "6 - 12 years",
+        "ticket": 0
+      },
+      {
+        "id": "18fdd4bb-c8b0-4eb4-a8db-6ba5bd701963",
+        "start": "2026-11-08T15:30",
+        "end": "2026-11-08T17:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      }
+    ]
+  }
+}

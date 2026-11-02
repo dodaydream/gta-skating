@@ -1,0 +1,60 @@
+{
+  "name": "Habitant Arena",
+  "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=652",
+  "timezone": "America/Toronto",
+  "address": "3383 Weston Rd, Toronto, ON",
+  "coordinates": {
+    "lat": 43.747019,
+    "lon": -79.540243
+  },
+  "schedule": {
+    "updatedAt": "2026-11-02T01:41:25.357Z",
+    "programs": [
+      {
+        "id": "dd7123ce-0e58-405b-8873-4382600b8a19",
+        "start": "2026-11-01T12:15",
+        "end": "2026-11-01T14:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "363a1b18-3fa6-4634-85ec-c1501b0c752a",
+        "start": "2026-11-02T18:15",
+        "end": "2026-11-02T20:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "3b373d47-1ff0-490f-ae3b-078a99a52b86",
+        "start": "2026-11-03T13:30",
+        "end": "2026-11-03T15:15",
+        "name": "Leisure Skate: Adult",
+        "type": "Public Skate",
+        "notes": "19 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "c90570e6-9745-4130-ac21-480c5c543ef6",
+        "start": "2026-11-07T17:30",
+        "end": "2026-11-07T19:30",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "473dadd5-0f0a-412b-97bd-11a910d4334e",
+        "start": "2026-11-08T12:15",
+        "end": "2026-11-08T14:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      }
+    ]
+  }
+}

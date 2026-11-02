@@ -1,0 +1,51 @@
+{
+  "name": "Cummer Park Community Centre",
+  "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=499",
+  "timezone": "America/Toronto",
+  "address": "6000 Leslie St, Toronto, ON",
+  "coordinates": {
+    "lat": 43.800104,
+    "lon": -79.371262
+  },
+  "schedule": {
+    "updatedAt": "2026-11-02T01:41:24.575Z",
+    "programs": [
+      {
+        "id": "1c542984-a212-4a14-a2e5-f414c3585d7c",
+        "start": "2026-11-01T13:00",
+        "end": "2026-11-01T15:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "ae6b2d46-8211-435f-b234-aea613dc0915",
+        "start": "2026-11-03T16:00",
+        "end": "2026-11-03T18:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "9ca9d946-9276-419f-a541-ff02401ab13e",
+        "start": "2026-11-07T19:00",
+        "end": "2026-11-07T21:30",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "df78bd20-3e69-46ce-8c11-1c05cc330425",
+        "start": "2026-11-08T13:00",
+        "end": "2026-11-08T15:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      }
+    ]
+  }
+}

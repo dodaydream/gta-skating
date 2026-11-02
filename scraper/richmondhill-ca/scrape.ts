@@ -10,6 +10,7 @@ import type {
 } from "../types.ts";
 import { ProgramType } from "../types.ts";
 import { classifyProgram } from "../classify.ts";
+import { slugify } from "../../src/lib/slug.ts";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const OUT_DIR = path.resolve(__dirname, "../../src/data");
@@ -361,7 +362,7 @@ async function writeVenueSchedule(
       programs,
     },
   };
-  const file = path.join(OUT_DIR, `${meta.id}.json`);
+  const file = path.join(OUT_DIR, `${slugify(meta.name)}.json`);
   await mkdir(OUT_DIR, { recursive: true });
   await writeFile(file, JSON.stringify(payload, null, 2) + "\n", "utf8");
   return file;

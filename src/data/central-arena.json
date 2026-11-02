@@ -1,0 +1,69 @@
+{
+  "name": "Central Arena",
+  "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=824",
+  "timezone": "America/Toronto",
+  "address": "50 Montgomery Rd, Toronto, ON",
+  "coordinates": {
+    "lat": 43.648455,
+    "lon": -79.520052
+  },
+  "schedule": {
+    "updatedAt": "2026-11-02T01:41:24.311Z",
+    "programs": [
+      {
+        "id": "5fd62352-0722-4203-9d2e-7c39c916c6eb",
+        "start": "2026-11-01T14:30",
+        "end": "2026-11-01T16:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "b61855fd-b6a9-4695-a5b9-893652571623",
+        "start": "2026-11-02T10:00",
+        "end": "2026-11-02T11:30",
+        "name": "Leisure Skate: Adult (Unsupervised)",
+        "type": "Public Skate",
+        "notes": "19 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "a90af6a1-f9b2-49e5-ab69-aa8003557586",
+        "start": "2026-11-04T10:00",
+        "end": "2026-11-04T11:30",
+        "name": "Leisure Skate: Adult (Unsupervised)",
+        "type": "Public Skate",
+        "notes": "19 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "a78b5c37-7af3-48d2-a1ec-1f6de11af487",
+        "start": "2026-11-06T10:00",
+        "end": "2026-11-06T11:30",
+        "name": "Leisure Skate: Adult (Unsupervised)",
+        "type": "Public Skate",
+        "notes": "19 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "57f57e7f-e13b-49db-a888-2371e625e241",
+        "start": "2026-11-07T14:30",
+        "end": "2026-11-07T16:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "c07caa51-c95c-4b38-a0f1-a1cde3d7c2c4",
+        "start": "2026-11-08T14:30",
+        "end": "2026-11-08T16:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      }
+    ]
+  }
+}

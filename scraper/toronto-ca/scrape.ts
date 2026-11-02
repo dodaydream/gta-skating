@@ -13,9 +13,9 @@
  *
  * The feed is an array of grouped blocks; only the `r` rows hold program
  * entries (facility, category, date, time, age).  Each venue with data is
- * written to its own output file at src/data/<id>.json in the shape consumed
- * by src/data/schedules.ts.  Venues with no feed (or an empty one) are skipped
- * so we never emit an empty schedule.
+ * written to its own output file at src/data/<slug>.json (the full slug of the
+ * venue name) in the shape consumed by src/data/schedules.ts.  Venues with no
+ * feed (or an empty one) are skipped so we never emit an empty schedule.
  *
  * Usage:  node scrape.ts
  */
@@ -26,6 +26,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import type { Venue, VenueMetaList, Program } from "../types.ts";
 import { classifyProgram } from "../classify.ts";
+import { slugify } from "../../src/lib/slug.ts";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const OUT_DIR = path.resolve(__dirname, "../../src/data");
@@ -139,7 +140,7 @@ async function writeSchedule(
       programs,
     },
   };
-  const file = path.join(OUT_DIR, `${meta.id}.json`);
+  const file = path.join(OUT_DIR, `${slugify(meta.name)}.json`);
   await mkdir(OUT_DIR, { recursive: true });
   await writeFile(file, JSON.stringify(payload, null, 2) + "\n", "utf8");
   return file;

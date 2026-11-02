@@ -1,0 +1,60 @@
+{
+  "name": "Centennial Park Arena - Etobicoke",
+  "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=913",
+  "timezone": "America/Toronto",
+  "address": "156 Centennial Park Rd, Toronto, ON",
+  "coordinates": {
+    "lat": 43.656924,
+    "lon": -79.58633
+  },
+  "schedule": {
+    "updatedAt": "2026-11-02T01:41:24.205Z",
+    "programs": [
+      {
+        "id": "b8713168-e77e-44d9-9b00-9704cde422fe",
+        "start": "2026-11-01T12:45",
+        "end": "2026-11-01T14:15",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "b1e5f70b-f70a-4fa0-ae6c-4c602eae1891",
+        "start": "2026-11-02T12:30",
+        "end": "2026-11-02T14:00",
+        "name": "Leisure Skate: Adult (Unsupervised)",
+        "type": "Public Skate",
+        "notes": "19 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "4d8ce1ab-a8b9-40a4-a6b8-0c9c17a9cd94",
+        "start": "2026-11-02T12:30",
+        "end": "2026-11-02T14:00",
+        "name": "Leisure Skate: Adult (Unsupervised)",
+        "type": "Public Skate",
+        "notes": "19 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "88debd31-fb3a-42ca-9ff1-f3e63b00907c",
+        "start": "2026-11-04T12:30",
+        "end": "2026-11-04T14:00",
+        "name": "Leisure Skate: Adult (Unsupervised)",
+        "type": "Public Skate",
+        "notes": "19 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "bbe70e7d-40b1-4102-87ab-18eb9eedcf9b",
+        "start": "2026-11-08T12:45",
+        "end": "2026-11-08T14:15",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      }
+    ]
+  }
+}

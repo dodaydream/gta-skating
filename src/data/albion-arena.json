@@ -1,0 +1,87 @@
+{
+  "name": "Albion Arena",
+  "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=800",
+  "timezone": "America/Toronto",
+  "address": "1501 Albion Rd, Toronto, ON",
+  "coordinates": {
+    "lat": 43.739651,
+    "lon": -79.582815
+  },
+  "schedule": {
+    "updatedAt": "2026-11-02T01:41:23.677Z",
+    "programs": [
+      {
+        "id": "d75546b0-8c6f-48ba-bcab-4e2ef9c1c415",
+        "start": "2026-11-01T14:45",
+        "end": "2026-11-01T16:45",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "179b1b34-40e0-4312-a9f2-432ac95d9e85",
+        "start": "2026-11-02T10:00",
+        "end": "2026-11-02T12:00",
+        "name": "Leisure Skate: Adult",
+        "type": "Public Skate",
+        "notes": "19 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "0077dd74-3f3b-4670-9cb5-c1c673651173",
+        "start": "2026-11-04T10:00",
+        "end": "2026-11-04T12:00",
+        "name": "Leisure Skate: Adult",
+        "type": "Public Skate",
+        "notes": "19 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "a9958652-aafc-44d9-80bc-ab40a051d213",
+        "start": "2026-11-05T10:00",
+        "end": "2026-11-05T12:00",
+        "name": "Leisure Skate: Adult",
+        "type": "Public Skate",
+        "notes": "19 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "253108bb-3ca0-4fb4-8af4-6ad3e4ec6fe7",
+        "start": "2026-11-06T10:00",
+        "end": "2026-11-06T12:00",
+        "name": "Shinny: Child with Caregiver",
+        "type": "Pickup Hockey",
+        "notes": "10 - 15 years",
+        "ticket": 0
+      },
+      {
+        "id": "6097d342-3c4b-48e3-ac0e-864f36909f31",
+        "start": "2026-11-06T16:30",
+        "end": "2026-11-06T17:45",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "606334b5-e2d0-4e8e-b1ee-bd8943c9466f",
+        "start": "2026-11-07T14:15",
+        "end": "2026-11-07T15:30",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "ca7fd4f8-b37a-4058-b308-8aeb252b6e5d",
+        "start": "2026-11-08T14:45",
+        "end": "2026-11-08T16:45",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      }
+    ]
+  }
+}

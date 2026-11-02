@@ -1,0 +1,51 @@
+{
+  "name": "Angela James Arena",
+  "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=582",
+  "timezone": "America/Toronto",
+  "address": "165 Grenoble Dr, Toronto, ON",
+  "coordinates": {
+    "lat": 43.713206,
+    "lon": -79.327599
+  },
+  "schedule": {
+    "updatedAt": "2026-11-02T01:41:23.851Z",
+    "programs": [
+      {
+        "id": "1bef54a3-dd1d-4838-a169-cf2f26f828f1",
+        "start": "2026-11-01T13:00",
+        "end": "2026-11-01T15:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "defb90a6-8ef8-4408-9e5f-de93af5e3370",
+        "start": "2026-11-02T16:00",
+        "end": "2026-11-02T17:30",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "ea68bae9-2527-4799-b86d-681f850454a9",
+        "start": "2026-11-07T17:00",
+        "end": "2026-11-07T19:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "1e417775-893d-4eba-bbf0-d9f7fb1cb9d0",
+        "start": "2026-11-08T13:00",
+        "end": "2026-11-08T15:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      }
+    ]
+  }
+}

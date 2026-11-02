@@ -1,0 +1,87 @@
+{
+  "name": "Grandravine Community Recreation Centre",
+  "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=647",
+  "timezone": "America/Toronto",
+  "address": "23 Grandravine Dr, Toronto, ON",
+  "coordinates": {
+    "lat": 43.751753,
+    "lon": -79.489716
+  },
+  "schedule": {
+    "updatedAt": "2026-11-02T01:41:25.264Z",
+    "programs": [
+      {
+        "id": "0b91661f-d481-4bb6-bedc-7a88ab79c80a",
+        "start": "2026-11-01T15:15",
+        "end": "2026-11-01T17:15",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "57689b28-2549-4a4c-9cc1-6b8c9b243b07",
+        "start": "2026-11-02T18:30",
+        "end": "2026-11-02T20:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "2ec04917-609a-4763-a664-74afab32fcfc",
+        "start": "2026-11-05T09:30",
+        "end": "2026-11-05T11:30",
+        "name": "Leisure Skate: Older Adult",
+        "type": "Public Skate",
+        "notes": "60 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "17249e21-aada-432b-8555-f84eb35ac0c3",
+        "start": "2026-11-05T15:00",
+        "end": "2026-11-05T16:00",
+        "name": "Shinny: Youth",
+        "type": "Pickup Hockey",
+        "notes": "13 - 17 years",
+        "ticket": 0
+      },
+      {
+        "id": "2452e17f-83e4-4115-8d5c-c249d0540cc5",
+        "start": "2026-11-05T16:15",
+        "end": "2026-11-05T17:00",
+        "name": "Shinny: Child with Caregiver",
+        "type": "Pickup Hockey",
+        "notes": "6 - 12 years",
+        "ticket": 0
+      },
+      {
+        "id": "79c7d22b-1514-4727-8425-ecc172189571",
+        "start": "2026-11-05T17:00",
+        "end": "2026-11-05T17:45",
+        "name": "Shinny: Child",
+        "type": "Pickup Hockey",
+        "notes": "6 - 12 years",
+        "ticket": 0
+      },
+      {
+        "id": "ad50361c-31d3-4023-8cb5-ef84b97a964e",
+        "start": "2026-11-07T19:00",
+        "end": "2026-11-07T21:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "c614a5d2-0cc6-4bd5-a348-30dbaaa22699",
+        "start": "2026-11-08T15:15",
+        "end": "2026-11-08T17:15",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      }
+    ]
+  }
+}

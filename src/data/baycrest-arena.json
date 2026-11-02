@@ -1,0 +1,42 @@
+{
+  "name": "Baycrest Arena",
+  "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=512",
+  "timezone": "America/Toronto",
+  "address": "160 Neptune Dr, Toronto, ON",
+  "coordinates": {
+    "lat": 43.728911,
+    "lon": -79.443129
+  },
+  "schedule": {
+    "updatedAt": "2026-11-02T01:41:23.902Z",
+    "programs": [
+      {
+        "id": "e3c71f90-3be3-4907-9390-c8d57c72da20",
+        "start": "2026-11-01T14:30",
+        "end": "2026-11-01T16:30",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "948825a2-b89f-485e-8694-6bbe7b127917",
+        "start": "2026-11-07T19:00",
+        "end": "2026-11-07T21:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "9d9d0890-8268-43b6-977c-79ee31322bae",
+        "start": "2026-11-08T14:30",
+        "end": "2026-11-08T16:30",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      }
+    ]
+  }
+}

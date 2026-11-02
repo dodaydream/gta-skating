@@ -1,0 +1,33 @@
+{
+  "name": "Chris Tonks Arena",
+  "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=476",
+  "timezone": "America/Toronto",
+  "address": "95 Black Creek Dr, Toronto, ON",
+  "coordinates": {
+    "lat": 43.68702,
+    "lon": -79.48157
+  },
+  "schedule": {
+    "updatedAt": "2026-11-02T01:41:24.359Z",
+    "programs": [
+      {
+        "id": "c5d655fb-c297-4479-ad06-15b94b51b04e",
+        "start": "2026-11-02T17:00",
+        "end": "2026-11-02T18:30",
+        "name": "Shinny: Child with Caregiver",
+        "type": "Pickup Hockey",
+        "notes": "8 - 12 years",
+        "ticket": 0
+      },
+      {
+        "id": "30cb8362-954a-49ba-8107-7eb36ad66a93",
+        "start": "2026-11-02T18:30",
+        "end": "2026-11-02T20:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      }
+    ]
+  }
+}

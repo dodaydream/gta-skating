@@ -1,0 +1,33 @@
+{
+  "name": "Phil White Arena",
+  "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=477",
+  "timezone": "America/Toronto",
+  "address": "443 Arlington Ave, Toronto, ON",
+  "coordinates": {
+    "lat": 43.691283,
+    "lon": -79.432609
+  },
+  "schedule": {
+    "updatedAt": "2026-11-02T01:41:26.757Z",
+    "programs": [
+      {
+        "id": "dc2e2098-e4fc-41b1-8923-68fbe3cca3b6",
+        "start": "2026-11-01T13:15",
+        "end": "2026-11-01T15:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "b8da79a7-f7d1-489c-bf5d-41e305545b99",
+        "start": "2026-11-08T13:15",
+        "end": "2026-11-08T15:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      }
+    ]
+  }
+}

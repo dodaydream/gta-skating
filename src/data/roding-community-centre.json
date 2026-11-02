@@ -1,0 +1,69 @@
+{
+  "name": "Roding Community Centre",
+  "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=744",
+  "timezone": "America/Toronto",
+  "address": "600 Roding St, Toronto, ON",
+  "coordinates": {
+    "lat": 43.729092,
+    "lon": -79.492501
+  },
+  "schedule": {
+    "updatedAt": "2026-11-02T01:41:27.185Z",
+    "programs": [
+      {
+        "id": "35aa7ddb-7b09-4a5f-8bf0-ff0caef14973",
+        "start": "2026-11-01T14:30",
+        "end": "2026-11-01T16:30",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "714318d7-bc5b-415e-a85b-0f5478ac52c9",
+        "start": "2026-11-02T16:00",
+        "end": "2026-11-02T17:00",
+        "name": "Shinny: Child",
+        "type": "Pickup Hockey",
+        "notes": "6 - 12 years",
+        "ticket": 0
+      },
+      {
+        "id": "745c5d91-553c-4d8a-8b68-002a0188c817",
+        "start": "2026-11-02T17:00",
+        "end": "2026-11-02T18:00",
+        "name": "Shinny: Youth",
+        "type": "Pickup Hockey",
+        "notes": "13 - 17 years",
+        "ticket": 0
+      },
+      {
+        "id": "caf4a6d6-b271-42f6-adf7-07011946cf13",
+        "start": "2026-11-05T16:00",
+        "end": "2026-11-05T17:00",
+        "name": "Shinny: Youth",
+        "type": "Pickup Hockey",
+        "notes": "13 - 17 years",
+        "ticket": 0
+      },
+      {
+        "id": "f9c7855e-c9ea-4fce-a5d2-0b7949a1c9ad",
+        "start": "2026-11-07T19:00",
+        "end": "2026-11-07T21:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "fdee00f7-0a9c-4fa9-baa1-5b42cd4f6612",
+        "start": "2026-11-08T14:30",
+        "end": "2026-11-08T16:30",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      }
+    ]
+  }
+}
