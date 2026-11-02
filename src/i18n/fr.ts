@@ -74,6 +74,8 @@ const fr: Messages = {
     moderate: "Modéré",
     busy: "Occupé",
     question: "À quel point est-ce achalandé en ce moment ?",
+    inProgress: "En cours",
+    endsIn: "Se termine dans {{minutes}} min",
     thanks: "Merci !",
     submit: "Envoyer",
     sending: "Envoi…",

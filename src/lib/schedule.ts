@@ -42,6 +42,12 @@ export function isProgramInProgress(
   );
 }
 
+/** Whole minutes from now until the program's end (venue-local), floored at 0. */
+export function minutesUntilEnd(end: string, timezone: string): number {
+  const now = dayjs().tz(timezone);
+  return Math.max(0, Math.ceil(dayjs.tz(end, timezone).diff(now, "minute", true)));
+}
+
 export function getCurrentMinutesInVenueTime(timezone: string): number {
   const now = dayjs().tz(timezone);
   return now.hour() * 60 + now.minute();

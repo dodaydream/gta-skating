@@ -25,9 +25,9 @@ import {
 import {
   distanceKm,
   formatEventDate,
+  formatHumanDate,
   formatTimeRange,
   formatUpdatedDate,
-  getTodayInVenueTime,
   isProgramInProgress,
   isProgramNotEnded,
   geoUrl,
@@ -367,7 +367,7 @@ export function VenueDetailModal({
     venue.timezone,
     locale
   );
-  const inProgress = programs.some((program) =>
+  const currentProgram = programs.find((program) =>
     isProgramInProgress(program, venue.timezone)
   );
 
@@ -416,11 +416,12 @@ export function VenueDetailModal({
             reportsLoading={reportsLoading}
           />
 
-          {inProgress ? (
+          {currentProgram ? (
             <div className="px-5">
               <BusynessInput
                 venueSlug={slug}
                 timezone={venue.timezone}
+                program={currentProgram}
                 onSubmitted={reloadReports}
               />
             </div>
@@ -631,58 +632,52 @@ function TodayCards({
   reports: BusyReport[];
   reportsLoading: boolean;
 }) {
-  const { t, i18n } = useTranslation();
+  const { i18n } = useTranslation();
   const locale = normalizeLocale(i18n.resolvedLanguage);
-  const today = getTodayInVenueTime(timezone);
 
   return (
     <div className="no-scrollbar w-full min-w-0 shrink-0 overflow-x-auto overflow-y-hidden px-5">
       <div className="flex gap-3 pb-1">
         {programs.map((program) => {
           const programDate = program.start.slice(0, 10);
-          const isToday = programDate === today;
+          const isCurrent = isProgramInProgress(program, timezone);
           return (
             <div
               key={`${program.id}-${program.start}`}
               className={`flex w-56 shrink-0 flex-col overflow-hidden rounded-xl border p-3 ${
-                isToday
+                isCurrent
                   ? "border-blue-300 bg-blue-50/70 dark:border-blue-800 dark:bg-blue-950/40"
                   : "border-black/[.08] bg-white dark:border-white/[.145] dark:bg-zinc-950"
               }`}
             >
-              <div className="flex items-center gap-2">
+              <div className="flex items-baseline gap-2">
                 <h3
-                  className={`truncate text-xs font-semibold ${
-                    isToday
+                  className={`min-w-0 truncate text-xs font-semibold ${
+                    isCurrent
                       ? "text-blue-700 dark:text-blue-300"
                       : "text-zinc-700 dark:text-zinc-300"
                   }`}
                 >
-                  {formatEventDate(programDate, timezone, locale)}
+                  {formatHumanDate(programDate, timezone, locale)}
                 </h3>
-                {isToday ? (
-                  <span className="shrink-0 rounded-full bg-blue-600 px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-white">
-                    {t("programs.today")}
-                  </span>
-                ) : null}
+                <span className="ml-auto shrink-0 font-mono text-xs tabular-nums text-zinc-500 dark:text-zinc-400">
+                  {formatTimeRange(program.start, program.end)}
+                </span>
               </div>
               <ul className="flex flex-col divide-y divide-black/[.06] dark:divide-white/[.08]">
                 <li className="flex flex-col gap-1 py-1.5">
-                  <div className="flex items-baseline gap-2">
-                    <span className="shrink-0 font-mono text-xs tabular-nums text-zinc-500 dark:text-zinc-400">
-                      {formatTimeRange(program.start, program.end)}
-                    </span>
-                    <span className="min-w-0 flex-1 truncate text-sm text-black dark:text-zinc-50">
-                      {program.name}
-                    </span>
+                  <span className="truncate text-sm text-black dark:text-zinc-50">
+                    {program.name}
+                  </span>
+                  <div className="flex items-center gap-2 empty:hidden">
                     <TicketBadge ticket={program.ticket} />
+                    <BusyBadgeSlot
+                      reports={reports}
+                      reportsLoading={reportsLoading}
+                      program={program}
+                      timezone={timezone}
+                    />
                   </div>
-                  <BusyBadgeSlot
-                    reports={reports}
-                    reportsLoading={reportsLoading}
-                    program={program}
-                    timezone={timezone}
-                  />
                 </li>
               </ul>
             </div>

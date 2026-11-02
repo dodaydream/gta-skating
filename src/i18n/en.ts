@@ -72,6 +72,8 @@ const en = {
     moderate: "Moderate",
     busy: "Busy",
     question: "How busy is it right now?",
+    inProgress: "In progress",
+    endsIn: "Ends in {{minutes}}m",
     thanks: "Thanks!",
     submit: "Submit",
     sending: "Sending…",
