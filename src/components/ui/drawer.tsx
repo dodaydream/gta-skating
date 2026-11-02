@@ -28,15 +28,26 @@ function Drawer({
   showSwipeHandle = false,
   snapPoints,
   swipeDirection = "down",
+  onSnapPointChange,
   ...props
 }: DrawerPrimitive.Root.Props & {
   showSwipeHandle?: boolean
 }) {
   const hasSnapPoints = snapPoints != null && snapPoints.length > 0
+  const [detent, setDetent] = React.useState<number | null>(null)
   const contextValue = React.useMemo(
     () => ({ hasSnapPoints, modal, showSwipeHandle, swipeDirection }),
     [hasSnapPoints, modal, showSwipeHandle, swipeDirection]
   )
+
+  React.useEffect(() => {
+    const root = document.documentElement
+    const fraction = detent ?? (snapPoints?.[0] as number | undefined) ?? 0.5
+    root.style.setProperty("--drawer-height", `${Math.round(fraction * 100)}dvh`)
+    return () => {
+      root.style.removeProperty("--drawer-height")
+    }
+  }, [detent, snapPoints])
 
   return (
     <DrawerContext.Provider value={contextValue}>
@@ -45,6 +56,10 @@ function Drawer({
         modal={modal}
         snapPoints={snapPoints}
         swipeDirection={swipeDirection}
+        onSnapPointChange={(next, ...rest) => {
+          if (typeof next === "number") setDetent(next)
+          onSnapPointChange?.(next, ...rest)
+        }}
         {...props}
       />
     </DrawerContext.Provider>

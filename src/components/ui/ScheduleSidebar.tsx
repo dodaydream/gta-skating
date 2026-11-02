@@ -89,18 +89,6 @@ export function ScheduleSidebar({
     if (!isDesktop) setOpen(!detailOpen);
   }, [detailOpen, isDesktop]);
 
-  useEffect(() => {
-    const root = document.documentElement;
-    const fraction = open ? detent : 0;
-    root.style.setProperty(
-      "--drawer-height",
-      `${Math.round(fraction * 100)}dvh`
-    );
-    return () => {
-      root.style.removeProperty("--drawer-height");
-    };
-  }, [open, detent]);
-
   const arenaCount = useMemo(
     () => new Set(items.map((item) => item.arena.name)).size,
     [items]
