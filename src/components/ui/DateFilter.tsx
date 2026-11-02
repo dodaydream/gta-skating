@@ -202,7 +202,7 @@ export function FilterChips({
         className="shadow-xs"
         onClick={() => onHideEmptyChange(!hideEmpty)}
       >
-        Hide empty arenas
+        Hide arenas without programs
       </Button>
     </div>
   );
