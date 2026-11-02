@@ -141,14 +141,12 @@ export function ScheduleSidebar({
             </div>
           }
         >
-          <div className="flex min-h-0 flex-1 flex-col overflow-y-auto px-6 pb-8">
+          <div className="min-h-0 flex-1 overflow-y-auto px-6 pb-8">
             <ProgramList
               items={items}
               loading={loading}
               userLocation={userLocation}
               onSelectArena={onSelectArena}
-              className="flex min-h-0 flex-1 flex-col"
-              listClassName="flex flex-1 flex-col gap-2"
             />
             <ScheduleFooter />
           </div>
