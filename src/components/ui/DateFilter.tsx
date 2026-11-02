@@ -131,6 +131,7 @@ export function FilterChips({
         open={open}
         onOpenChange={setOpen}
         variant="secondary"
+        size="lg"
         className="shadow-xs"
         trigger={
           <>

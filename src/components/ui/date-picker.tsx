@@ -42,6 +42,7 @@ value?: DateRange;
     numberOfMonths?: number;
     align?: "start" | "center" | "end";
     variant?: React.ComponentProps<typeof Button>["variant"];
+    size?: React.ComponentProps<typeof Button>["size"];
     className?: string;
     trigger?: ReactNode;
     drawerTitle?: ReactNode;
@@ -56,6 +57,7 @@ function DateRangePicker({
     numberOfMonths = 2,
     align = "start",
     variant = "outline",
+    size = "default",
     className,
     trigger,
     drawerTitle,
@@ -109,6 +111,7 @@ function DateRangePicker({
           render={
             <Button
               variant={variant}
+              size={size}
               data-empty={!value?.from}
               className={cn(
                 "justify-start text-left font-normal data-[empty=true]:text-muted-foreground",
@@ -131,6 +134,7 @@ function DateRangePicker({
     <>
       <Button
         variant={variant}
+        size={size}
         data-empty={!value?.from}
         className={cn(
           "justify-start text-left font-normal data-[empty=true]:text-muted-foreground",
