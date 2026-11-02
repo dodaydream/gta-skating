@@ -5,18 +5,28 @@ import { useEffect, useRef } from "react";
 const AD_CLIENT = process.env.NEXT_PUBLIC_ADSENSE_CLIENT;
 const AD_SLOT = process.env.NEXT_PUBLIC_ADSENSE_SLOT;
 
+export const adsEnabled = Boolean(AD_CLIENT);
+
 declare global {
   interface Window {
     adsbygoogle?: unknown[];
   }
 }
 
+type AdFormat = "auto" | "horizontal" | "rectangle" | "vertical";
+
 type AdUnitProps = {
   className?: string;
   slot?: string;
+  /** AdSense size hint; "auto" is full-width responsive. */
+  format?: AdFormat;
 };
 
-export function AdUnit({ className = "", slot = AD_SLOT }: AdUnitProps) {
+export function AdUnit({
+  className = "",
+  slot = AD_SLOT,
+  format = "auto",
+}: AdUnitProps) {
   const pushed = useRef(false);
 
   useEffect(() => {
@@ -37,8 +47,10 @@ export function AdUnit({ className = "", slot = AD_SLOT }: AdUnitProps) {
       style={{ display: "block" }}
       data-ad-client={AD_CLIENT}
       data-ad-slot={slot}
-      data-ad-format="auto"
-      data-full-width-responsive="true"
+      data-ad-format={format}
+      {...(format === "auto"
+        ? { "data-full-width-responsive": "true" }
+        : {})}
     />
   );
 }

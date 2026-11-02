@@ -174,7 +174,7 @@
 @layer components {
   .week-calendar {
     display: grid;
-    grid-template-columns: 2.5rem repeat(7, 1fr);
+    grid-template-columns: 2.5rem repeat(7, minmax(0, 1fr));
   }
 
   .week-calendar__header {

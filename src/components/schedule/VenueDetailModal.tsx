@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useRef, useState } from "react";
+import { Fragment, useCallback, useEffect, useRef, useState } from "react";
 import type { Venue } from "@/types/venue";
 import type { Program } from "@/types/schedule";
 import type { BusyReport } from "@/types/feedback";
@@ -36,7 +36,7 @@ import { TicketBadge } from "@/components/schedule/TicketBadge";
 import { BusyBadge } from "@/components/schedule/BusyBadge";
 import { BusynessInput } from "@/components/schedule/BusynessInput";
 import { trackEvent } from "@/lib/analytics";
-import { AdUnit } from "@/components/ads/AdUnit";
+import { AdUnit, adsEnabled } from "@/components/ads/AdUnit";
 import { X } from "lucide-react";
 
 const DESKTOP_QUERY = "(min-width: 1024px)";
@@ -356,7 +356,7 @@ export function VenueDetailModal({
 
       <div
         ref={weekBodyRef}
-        className="flex flex-1 flex-col gap-5 overflow-y-auto px-5"
+        className="flex flex-1 flex-col gap-5 overflow-x-hidden overflow-y-auto px-5"
       >
         {programs.length === 0 ? (
           <p className="text-sm text-zinc-500">No upcoming sessions.</p>
@@ -374,7 +374,6 @@ export function VenueDetailModal({
             bodyRef={weekBodyRef}
           />
         )}
-        <AdUnit slot="1334014883" className="pb-4" />
       </div>
 
       <footer className="flex items-center justify-between gap-3 border-t border-black/[.06] px-5 py-3 text-xs text-zinc-500 dark:border-white/[.08] dark:text-zinc-400">
@@ -524,10 +523,10 @@ function TodayCards({
   return (
     <div className="no-scrollbar w-full min-w-0 shrink-0 overflow-x-auto overflow-y-hidden px-5">
       <div className="flex gap-3 pb-1">
-        {programs.map((program) => {
+        {programs.map((program, index) => {
           const programDate = program.start.slice(0, 10);
           const isToday = programDate === today;
-          return (
+          const card = (
             <div
               key={`${program.id}-${program.start}`}
               className={`flex w-56 shrink-0 flex-col overflow-hidden rounded-xl border p-3 ${
@@ -572,6 +571,16 @@ function TodayCards({
                 </li>
               </ul>
             </div>
+          );
+          return (
+            <Fragment key={`${program.id}-${program.start}`}>
+              {card}
+              {index === 0 && adsEnabled ? (
+                <div className="flex w-56 shrink-0 flex-col justify-center rounded-xl border border-black/[.08] bg-white p-3 dark:border-white/[.145] dark:bg-zinc-950">
+                  <AdUnit slot="1334014883" />
+                </div>
+              ) : null}
+            </Fragment>
           );
         })}
       </div>
