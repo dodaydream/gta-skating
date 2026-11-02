@@ -1,0 +1,271 @@
+{
+  "name": "Larry Grossman Forest Hill Arena",
+  "url": "https://larrygrossmanforesthillarena.com/recreational-skating-hours/",
+  "timezone": "America/Toronto",
+  "address": "340 Chaplin Crescent, Toronto, ON M5N 2N3",
+  "coordinates": {
+    "lat": 43.704191,
+    "lon": -79.420034
+  },
+  "schedule": {
+    "updatedAt": "2026-11-02T04:40:23.035Z",
+    "programs": [
+      {
+        "id": "febf3389-de10-4f9e-a506-aaac6d046210",
+        "start": "2026-11-02T14:00",
+        "end": "2026-11-02T15:50",
+        "name": "Pleasure Skate",
+        "type": "Public Skate",
+        "ticket": 3
+      },
+      {
+        "id": "989d6657-a11b-48bf-b04b-9b333ced2f64",
+        "start": "2026-11-03T14:00",
+        "end": "2026-11-03T15:50",
+        "name": "Pleasure Skate",
+        "type": "Public Skate",
+        "ticket": 3
+      },
+      {
+        "id": "fc43df2e-5cb3-43bf-84b0-972b5060b2c8",
+        "start": "2026-11-04T14:00",
+        "end": "2026-11-04T15:50",
+        "name": "Pleasure Skate",
+        "type": "Public Skate",
+        "ticket": 3
+      },
+      {
+        "id": "8cdac2dd-0b5f-41d4-83c5-c85ca4a9fa61",
+        "start": "2026-11-05T14:00",
+        "end": "2026-11-05T15:50",
+        "name": "Pleasure Skate",
+        "type": "Public Skate",
+        "ticket": 3
+      },
+      {
+        "id": "1dfab411-5d2b-4997-aada-a1a118969386",
+        "start": "2026-11-06T14:00",
+        "end": "2026-11-06T15:50",
+        "name": "Pleasure Skate",
+        "type": "Public Skate",
+        "ticket": 3
+      },
+      {
+        "id": "1838703d-9880-406b-a069-8aa2f1b6157e",
+        "start": "2026-11-07T19:30",
+        "end": "2026-11-07T22:00",
+        "name": "Pleasure Skate",
+        "type": "Public Skate",
+        "ticket": 3
+      },
+      {
+        "id": "0ac8f67b-0260-420e-8c52-0d004a6ee42d",
+        "start": "2026-11-08T14:15",
+        "end": "2026-11-08T16:15",
+        "name": "Pleasure Skate",
+        "type": "Public Skate",
+        "ticket": 3
+      },
+      {
+        "id": "77006e05-3017-4dd3-93e2-d9b9dabc71f9",
+        "start": "2026-11-09T14:00",
+        "end": "2026-11-09T15:50",
+        "name": "Pleasure Skate",
+        "type": "Public Skate",
+        "ticket": 3
+      },
+      {
+        "id": "047912ac-455e-41ce-a21e-b210ab3094de",
+        "start": "2026-11-10T14:00",
+        "end": "2026-11-10T15:50",
+        "name": "Pleasure Skate",
+        "type": "Public Skate",
+        "ticket": 3
+      },
+      {
+        "id": "8b6f1ea8-75d5-4178-84a0-eeb7258cd97a",
+        "start": "2026-11-11T14:00",
+        "end": "2026-11-11T15:50",
+        "name": "Pleasure Skate",
+        "type": "Public Skate",
+        "ticket": 3
+      },
+      {
+        "id": "f95a4a9d-a5c4-49f0-961a-a218ef3c4e43",
+        "start": "2026-11-12T14:00",
+        "end": "2026-11-12T15:50",
+        "name": "Pleasure Skate",
+        "type": "Public Skate",
+        "ticket": 3
+      },
+      {
+        "id": "9bcdf489-b50c-44b4-882a-ba0226bd9fc4",
+        "start": "2026-11-13T14:00",
+        "end": "2026-11-13T15:50",
+        "name": "Pleasure Skate",
+        "type": "Public Skate",
+        "ticket": 3
+      },
+      {
+        "id": "dd63e1bf-d768-4d90-8a14-b49e3bf1f042",
+        "start": "2026-11-14T19:30",
+        "end": "2026-11-14T22:00",
+        "name": "Pleasure Skate",
+        "type": "Public Skate",
+        "ticket": 3
+      },
+      {
+        "id": "a9bb9982-5d90-4b98-ad63-c67ee1f0cd4d",
+        "start": "2026-11-15T14:15",
+        "end": "2026-11-15T16:15",
+        "name": "Pleasure Skate",
+        "type": "Public Skate",
+        "ticket": 3
+      },
+      {
+        "id": "be433fe4-555d-45e7-b462-d9784888f1c7",
+        "start": "2026-11-16T14:00",
+        "end": "2026-11-16T15:50",
+        "name": "Pleasure Skate",
+        "type": "Public Skate",
+        "ticket": 3
+      },
+      {
+        "id": "6ce7a927-5757-49ef-9515-300c85363e91",
+        "start": "2026-11-17T14:00",
+        "end": "2026-11-17T15:50",
+        "name": "Pleasure Skate",
+        "type": "Public Skate",
+        "ticket": 3
+      },
+      {
+        "id": "2b89ac77-26f5-4e98-844c-5f03fa8147e0",
+        "start": "2026-11-18T14:00",
+        "end": "2026-11-18T15:50",
+        "name": "Pleasure Skate",
+        "type": "Public Skate",
+        "ticket": 3
+      },
+      {
+        "id": "e55932bb-1485-4614-895a-cf0f569e35af",
+        "start": "2026-11-19T14:00",
+        "end": "2026-11-19T15:50",
+        "name": "Pleasure Skate",
+        "type": "Public Skate",
+        "ticket": 3
+      },
+      {
+        "id": "78b5fa69-f9df-4a9a-8f5f-0d8d28cf9a80",
+        "start": "2026-11-20T14:00",
+        "end": "2026-11-20T15:50",
+        "name": "Pleasure Skate",
+        "type": "Public Skate",
+        "ticket": 3
+      },
+      {
+        "id": "2f0fa79b-2d37-46a3-94b4-811fef50e7bb",
+        "start": "2026-11-21T19:30",
+        "end": "2026-11-21T22:00",
+        "name": "Pleasure Skate",
+        "type": "Public Skate",
+        "ticket": 3
+      },
+      {
+        "id": "7fd7c881-2f34-4f5f-bab3-45727b5b2bcb",
+        "start": "2026-11-22T14:15",
+        "end": "2026-11-22T16:15",
+        "name": "Pleasure Skate",
+        "type": "Public Skate",
+        "ticket": 3
+      },
+      {
+        "id": "7879a813-597c-457f-94ec-7a51660093b1",
+        "start": "2026-11-23T14:00",
+        "end": "2026-11-23T15:50",
+        "name": "Pleasure Skate",
+        "type": "Public Skate",
+        "ticket": 3
+      },
+      {
+        "id": "8ad58c1a-bbfd-41c3-8b66-78d1a9fd429c",
+        "start": "2026-11-24T14:00",
+        "end": "2026-11-24T15:50",
+        "name": "Pleasure Skate",
+        "type": "Public Skate",
+        "ticket": 3
+      },
+      {
+        "id": "1d0cca02-815b-4687-8de9-d29999d89e97",
+        "start": "2026-11-25T14:00",
+        "end": "2026-11-25T15:50",
+        "name": "Pleasure Skate",
+        "type": "Public Skate",
+        "ticket": 3
+      },
+      {
+        "id": "d9e71795-ac2b-4e11-8635-7ea5ff3e44b3",
+        "start": "2026-11-26T14:00",
+        "end": "2026-11-26T15:50",
+        "name": "Pleasure Skate",
+        "type": "Public Skate",
+        "ticket": 3
+      },
+      {
+        "id": "272af698-0015-4d48-a0d2-dcbab13c023f",
+        "start": "2026-11-27T14:00",
+        "end": "2026-11-27T15:50",
+        "name": "Pleasure Skate",
+        "type": "Public Skate",
+        "ticket": 3
+      },
+      {
+        "id": "e9dbe799-2727-415e-a9a6-094c48e429ad",
+        "start": "2026-11-28T19:30",
+        "end": "2026-11-28T22:00",
+        "name": "Pleasure Skate",
+        "type": "Public Skate",
+        "ticket": 3
+      },
+      {
+        "id": "7d764c37-8c0b-48f3-8da2-d25671083a10",
+        "start": "2026-11-29T14:15",
+        "end": "2026-11-29T16:15",
+        "name": "Pleasure Skate",
+        "type": "Public Skate",
+        "ticket": 3
+      },
+      {
+        "id": "5e73525e-bfa3-4c8b-b7c4-4a03d827e60c",
+        "start": "2026-11-30T14:00",
+        "end": "2026-11-30T15:50",
+        "name": "Pleasure Skate",
+        "type": "Public Skate",
+        "ticket": 3
+      },
+      {
+        "id": "76c7a706-1b65-4f34-90f4-edfd360d68f9",
+        "start": "2026-12-01T14:00",
+        "end": "2026-12-01T15:50",
+        "name": "Pleasure Skate",
+        "type": "Public Skate",
+        "ticket": 3
+      },
+      {
+        "id": "88996c73-9325-4599-a92a-d49f0b193688",
+        "start": "2026-12-02T14:00",
+        "end": "2026-12-02T15:50",
+        "name": "Pleasure Skate",
+        "type": "Public Skate",
+        "ticket": 3
+      },
+      {
+        "id": "15c2e427-5415-4573-816c-3f36845cc7ad",
+        "start": "2026-12-03T14:00",
+        "end": "2026-12-03T15:50",
+        "name": "Pleasure Skate",
+        "type": "Public Skate",
+        "ticket": 3
+      }
+    ]
+  }
+}

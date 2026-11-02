@@ -601,18 +601,6 @@
       "type": "outdoor"
     },
     {
-      "id": "larry-grossman-forest-hill-memorial",
-      "name": "Larry Grossman Forest Hill Memorial Arena",
-      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=3489",
-      "address": "340 Chaplin Cres, Toronto, ON",
-      "locationId": 3489,
-      "coordinates": {
-        "lat": 43.704191,
-        "lon": -79.420034
-      },
-      "type": "indoor"
-    },
-    {
       "id": "ledbury-park",
       "name": "Ledbury Park",
       "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=678",
