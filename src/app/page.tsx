@@ -8,6 +8,7 @@ import dynamic from "next/dynamic";
 import { IconLocation } from "@tabler/icons-react";
 import { Button } from "@/components/ui/button";
 import { FilterChips } from "@/components/ui/DateFilter";
+import { FilterBar } from "@/components/ui/FilterBar";
 import { ScheduleSidebar } from "@/components/ui/ScheduleSidebar";
 import { ArenaDetailModal } from "@/components/schedule/ArenaDetailModal";
 import { fetchPrograms } from "@/api/programs";
@@ -159,51 +160,53 @@ export default function Home() {
             userLocation={userLocation}
           />
 
-          <div className="absolute left-0 right-0 top-[calc(var(--safe-top)_+_0.75rem)] z-40 flex items-start gap-2 pl-[calc(var(--safe-left)_+_1rem)] pr-[calc(var(--safe-right)_+_1rem)] lg:top-[calc(var(--safe-top)_+_1.5rem)] lg:pl-[calc(var(--safe-left)_+_1.5rem)] lg:pr-[calc(var(--safe-right)_+_1.5rem)]">
-            <Button
-              variant="secondary"
-              size="icon-lg"
-              className="shadow-xs"
-              onClick={() => {
-                trackEvent("locate_me");
-                locateRef.current?.();
-              }}
-              title="Centre on your location"
-            >
-              <IconLocation className="size-4" />
-            </Button>
-            <FilterChips
-              from={fromDate}
-              to={toDate}
-              onFromChange={(v) => {
-                setFromDate(v);
-                trackEvent("date_filter_change", { from: v, to: toDate });
-              }}
-              onToChange={(v) => {
-                setToDate(v);
-                trackEvent("date_filter_change", { from: fromDate, to: v });
-              }}
-              onClear={() => {
-                const [f, t] = todayRange();
-                setFromDate(f);
-                setToDate(t);
-                trackEvent("date_filter_change", {
-                  from: f,
-                  to: t,
-                  source: "clear",
-                });
-              }}
-              hideEmpty={hideEmpty}
-              onHideEmptyChange={(v) => {
-                setHideEmpty(v);
-                trackEvent("hide_empty_toggle", { hidden: v });
-              }}
-              types={types}
-              onTypesChange={(next) => {
-                setTypes(next);
-                trackEvent("type_filter_change", { types: next.join(",") });
-              }}
-            />
+          <div className="absolute left-0 right-0 top-[calc(var(--safe-top)_+_0.75rem)] z-40 pl-[calc(var(--safe-left)_+_1rem)] pr-[calc(var(--safe-right)_+_1rem)] lg:top-[calc(var(--safe-top)_+_1.5rem)] lg:pl-[calc(var(--safe-left)_+_1.5rem)] lg:pr-[calc(var(--safe-right)_+_1.5rem)]">
+            <FilterBar>
+              <Button
+                variant="secondary"
+                size="icon-lg"
+                className="shadow-xs"
+                onClick={() => {
+                  trackEvent("locate_me");
+                  locateRef.current?.();
+                }}
+                title="Centre on your location"
+              >
+                <IconLocation className="size-4" />
+              </Button>
+              <FilterChips
+                from={fromDate}
+                to={toDate}
+                onFromChange={(v) => {
+                  setFromDate(v);
+                  trackEvent("date_filter_change", { from: v, to: toDate });
+                }}
+                onToChange={(v) => {
+                  setToDate(v);
+                  trackEvent("date_filter_change", { from: fromDate, to: v });
+                }}
+                onClear={() => {
+                  const [f, t] = todayRange();
+                  setFromDate(f);
+                  setToDate(t);
+                  trackEvent("date_filter_change", {
+                    from: f,
+                    to: t,
+                    source: "clear",
+                  });
+                }}
+                hideEmpty={hideEmpty}
+                onHideEmptyChange={(v) => {
+                  setHideEmpty(v);
+                  trackEvent("hide_empty_toggle", { hidden: v });
+                }}
+                types={types}
+                onTypesChange={(next) => {
+                  setTypes(next);
+                  trackEvent("type_filter_change", { types: next.join(",") });
+                }}
+              />
+            </FilterBar>
           </div>
           <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-transparent" />
         </div>

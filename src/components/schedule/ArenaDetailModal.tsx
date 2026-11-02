@@ -360,7 +360,7 @@ function ArenaDetailSkeleton() {
     <>
       <div
         aria-hidden="true"
-        className="w-full min-w-0 shrink-0 overflow-x-auto overflow-y-hidden px-5"
+        className="no-scrollbar w-full min-w-0 shrink-0 overflow-x-auto overflow-y-hidden px-5"
       >
         <div className="flex gap-3 pb-1">
           {[0, 1, 2].map((i) => (
@@ -409,7 +409,7 @@ function TodayCards({
   const today = getTodayInArenaTime(timezone);
 
   return (
-    <div className="w-full min-w-0 shrink-0 overflow-x-auto overflow-y-hidden px-5">
+    <div className="no-scrollbar w-full min-w-0 shrink-0 overflow-x-auto overflow-y-hidden px-5">
       <div className="flex gap-3 pb-1">
         {programs.map((program) => {
           const programDate = program.start.slice(0, 10);
