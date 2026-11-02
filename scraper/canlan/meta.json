@@ -2,7 +2,7 @@
   "venues": [
     {
       "id": "canlan-etobicoke",
-      "name": "Canlan CWENCH Centre (Etobicoke)",
+      "name": "Canlan - CWENCH Centre (Etobicoke)",
       "url": "https://apps.daysmartrecreation.com/dash/x/canlan/event-registration?facility_ids=3",
       "address": "1120 Martin Grove Rd, Etobicoke, ON M9W 4W1",
       "coordinates": { "lat": 43.7002961, "lon": -79.5750312 },
@@ -11,7 +11,7 @@
     },
     {
       "id": "canlan-oakville",
-      "name": "Canlan Entripy Centre (Oakville)",
+      "name": "Canlan - Entripy Centre (Oakville)",
       "url": "https://apps.daysmartrecreation.com/dash/x/canlan/event-registration?facility_ids=13",
       "address": "2300 Cornwall Rd, Oakville, ON L6J 7T9",
       "coordinates": { "lat": 43.488218, "lon": -79.650145 },
@@ -20,7 +20,7 @@
     },
     {
       "id": "canlan-oshawa",
-      "name": "Canlan Oshawa",
+      "name": "Canlan - Oshawa",
       "url": "https://apps.daysmartrecreation.com/dash/x/canlan/event-registration?facility_ids=14",
       "address": "1401 Phillip Murray Ave, Oshawa, ON L1J 8C4",
       "coordinates": { "lat": 43.854682, "lon": -78.880942 },
@@ -29,7 +29,7 @@
     },
     {
       "id": "canlan-scarborough",
-      "name": "Canlan Scarborough",
+      "name": "Canlan - Scarborough",
       "url": "https://apps.daysmartrecreation.com/dash/x/canlan/event-registration?facility_ids=15",
       "address": "159 Dynamic Dr, Scarborough, ON M1V 5L8",
       "coordinates": { "lat": 43.829787, "lon": -79.253267 },
@@ -38,7 +38,7 @@
     },
     {
       "id": "canlan-york",
-      "name": "Canlan NFP Athletic Centre (York)",
+      "name": "Canlan - NFP Athletic Centre (York)",
       "url": "https://apps.daysmartrecreation.com/dash/x/canlan/event-registration?facility_ids=5",
       "address": "989 Murray Ross Pkwy, North York, ON M3J 3M4",
       "coordinates": { "lat": 43.776161, "lon": -79.516738 },

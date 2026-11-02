@@ -1,17 +1,17 @@
 {
-  "name": "Scarborough",
+  "name": "Canlan - Scarborough",
   "url": "https://apps.daysmartrecreation.com/dash/x/canlan/event-registration?facility_ids=15",
   "timezone": "America/Toronto",
   "address": "159 Dynamic Dr, Scarborough, ON M1V 5L8",
   "coordinates": {
-    "lat": 43.8055913,
-    "lon": -79.4083341
+    "lat": 43.829787,
+    "lon": -79.253267
   },
   "schedule": {
-    "updatedAt": "2026-11-02T06:08:52.544Z",
+    "updatedAt": "2026-11-02T06:20:13.877Z",
     "programs": [
       {
-        "id": "343b464b-d342-487a-9b13-a93d2978200b",
+        "id": "0beba74e-a6d1-4284-9d50-06c8d58f3d64",
         "start": "2026-11-02T10:15",
         "end": "2026-11-02T11:05",
         "name": "Stick & Puck",
@@ -19,7 +19,7 @@
         "ticket": 10
       },
       {
-        "id": "16e24288-f33e-46cd-a93e-0743a9c0dbe8",
+        "id": "d8e74bbc-6028-4816-9b6b-91962623856f",
         "start": "2026-11-02T12:15",
         "end": "2026-11-02T13:05",
         "name": "Daytime ADULT Shinny",
@@ -27,7 +27,7 @@
         "ticket": 10
       },
       {
-        "id": "c1415c51-0956-42dc-9a84-fe93a564dc58",
+        "id": "4212b00a-f9ff-4fbf-9257-f32d49871b1a",
         "start": "2026-11-02T12:15",
         "end": "2026-11-02T13:05",
         "name": "Goalies Only",
@@ -35,7 +35,7 @@
         "ticket": 19.05
       },
       {
-        "id": "8103e476-646b-47b0-b9b8-8f31ce7f9d51",
+        "id": "dc96f796-b302-447d-bd56-ecd96a94963d",
         "start": "2026-11-02T16:30",
         "end": "2026-11-02T17:20",
         "name": "Stick & Puck",
@@ -43,7 +43,7 @@
         "ticket": 10
       },
       {
-        "id": "3920b80e-b19d-42b5-8c04-63154ab5de9b",
+        "id": "eea3323a-ff80-4216-81d2-9a69f1f840de",
         "start": "2026-11-03T10:15",
         "end": "2026-11-03T11:05",
         "name": "Stick & Puck",
@@ -51,7 +51,7 @@
         "ticket": 10
       },
       {
-        "id": "77349d13-8424-47ad-9498-d99e74cf205e",
+        "id": "7a43b981-9c96-40cc-96d5-a2a983123834",
         "start": "2026-11-03T12:15",
         "end": "2026-11-03T14:05",
         "name": "Daytime ADULT Shinny",
@@ -59,7 +59,7 @@
         "ticket": 10
       },
       {
-        "id": "b6f78342-7036-445e-aa89-187fe6203bbd",
+        "id": "1c279f59-6c72-462e-8a9d-cd65a39d7e14",
         "start": "2026-11-03T12:15",
         "end": "2026-11-03T14:05",
         "name": "Goalies Only",
@@ -67,7 +67,7 @@
         "ticket": 19.05
       },
       {
-        "id": "a5e40806-fa90-4cda-8633-e07f204226eb",
+        "id": "e41ec058-7aaa-4b96-b42a-45440771af64",
         "start": "2026-11-03T15:30",
         "end": "2026-11-03T16:20",
         "name": "Stick & Puck",
@@ -75,7 +75,7 @@
         "ticket": 10
       },
       {
-        "id": "c7369847-be45-44d9-848f-083f24f04788",
+        "id": "d9cd5d39-d806-4847-b64a-5efe4b01e855",
         "start": "2026-11-03T16:00",
         "end": "2026-11-03T16:50",
         "name": "Stick & Puck (TRAINING)",
@@ -83,7 +83,7 @@
         "ticket": 20
       },
       {
-        "id": "f066a742-591d-4ea5-89b8-3b9e5a84c5f5",
+        "id": "8d717c3a-d03c-4bfd-a61d-c03db8d38aa7",
         "start": "2026-11-04T10:00",
         "end": "2026-11-04T10:50",
         "name": "Stick & Puck",
@@ -91,7 +91,7 @@
         "ticket": 10
       },
       {
-        "id": "f5890a43-a4f7-4c9b-a77a-f09585e4eac4",
+        "id": "33d970d4-158d-4115-adb8-fb3903600271",
         "start": "2026-11-04T12:15",
         "end": "2026-11-04T13:05",
         "name": "Daytime ADULT Shinny",
@@ -99,7 +99,7 @@
         "ticket": 10
       },
       {
-        "id": "5b20edc9-d88c-4a9b-a087-939828151bdb",
+        "id": "f48014b9-51a5-4f9a-b7f9-b5029b164b06",
         "start": "2026-11-04T12:15",
         "end": "2026-11-04T13:05",
         "name": "Goalies Only",
@@ -107,7 +107,7 @@
         "ticket": 19.05
       },
       {
-        "id": "40f20bd5-3f2f-4450-ad19-6088472edd41",
+        "id": "dd80d19b-1601-44c4-a4a4-d95ae8fc4008",
         "start": "2026-11-04T16:00",
         "end": "2026-11-04T16:50",
         "name": "Stick & Puck",
@@ -115,7 +115,7 @@
         "ticket": 10
       },
       {
-        "id": "2d09905a-922a-4deb-b024-57ca325ad18f",
+        "id": "dd68cf63-dfe9-4547-a356-965b81824934",
         "start": "2026-11-05T10:15",
         "end": "2026-11-05T11:05",
         "name": "Stick & Puck",
@@ -123,7 +123,7 @@
         "ticket": 10
       },
       {
-        "id": "8fe34ff5-bae6-47a7-ae57-f6f19add5789",
+        "id": "8c1dee30-33c2-4b5e-93bb-afda30418734",
         "start": "2026-11-05T12:15",
         "end": "2026-11-05T14:05",
         "name": "Daytime ADULT Shinny",
@@ -131,7 +131,7 @@
         "ticket": 10
       },
       {
-        "id": "ee694dba-7df2-497e-95f0-7853c5646326",
+        "id": "4bfe0614-21d7-4f29-b5f2-e8542a241092",
         "start": "2026-11-05T12:15",
         "end": "2026-11-05T14:05",
         "name": "Goalies Only",
@@ -139,7 +139,7 @@
         "ticket": 19.05
       },
       {
-        "id": "7c739415-cc12-4637-897a-cfd883ca6b0e",
+        "id": "5cb843cc-96d5-4733-9e33-6ca982338f4e",
         "start": "2026-11-05T16:00",
         "end": "2026-11-05T16:50",
         "name": "Stick & Puck",
@@ -147,7 +147,7 @@
         "ticket": 10
       },
       {
-        "id": "15fd91a8-be0b-4df6-b421-dff4b66dce3c",
+        "id": "c2b9f869-2429-4572-b247-b9502560499a",
         "start": "2026-11-05T16:15",
         "end": "2026-11-05T17:05",
         "name": "Stick & Puck (TRAINING)",
@@ -155,7 +155,7 @@
         "ticket": 20
       },
       {
-        "id": "f19496a0-9ca4-47cf-b9ec-d2562c811d85",
+        "id": "bca2b9ec-068b-419d-9526-b9c5ceefa880",
         "start": "2026-11-06T10:00",
         "end": "2026-11-06T10:50",
         "name": "Stick & Puck",
@@ -163,7 +163,7 @@
         "ticket": 10
       },
       {
-        "id": "3874d88c-6df2-446f-aec1-e4480d9e0590",
+        "id": "7faf44c5-a723-4289-bb4f-0ff0d93d4c6e",
         "start": "2026-11-06T12:15",
         "end": "2026-11-06T13:05",
         "name": "Daytime ADULT Shinny",
@@ -171,7 +171,7 @@
         "ticket": 10
       },
       {
-        "id": "dbb5b00c-7080-4072-808c-6192f8f2f782",
+        "id": "3749e326-6838-44a0-97c3-095833b1f941",
         "start": "2026-11-06T12:15",
         "end": "2026-11-06T13:05",
         "name": "Goalies Only",
@@ -179,7 +179,7 @@
         "ticket": 19.05
       },
       {
-        "id": "3c691a62-e534-4e2f-82bf-1708d7ea145d",
+        "id": "28258d9e-6663-4cb2-9714-cfa10dd06635",
         "start": "2026-11-06T16:30",
         "end": "2026-11-06T17:20",
         "name": "Stick & Puck",
@@ -187,7 +187,7 @@
         "ticket": 10
       },
       {
-        "id": "aa9b4c44-b2cb-4b86-9695-e2084a6b8bd9",
+        "id": "6b669045-392b-4850-85e6-125fdadf7691",
         "start": "2026-11-09T10:15",
         "end": "2026-11-09T11:05",
         "name": "Stick & Puck",
@@ -195,7 +195,7 @@
         "ticket": 10
       },
       {
-        "id": "296441be-4f52-4e38-bfdf-c2549dc04ee0",
+        "id": "ca3521d4-b422-4b66-b8d5-c5ec1f3bab6b",
         "start": "2026-11-09T12:15",
         "end": "2026-11-09T13:05",
         "name": "Daytime ADULT Shinny",
@@ -203,7 +203,7 @@
         "ticket": 10
       },
       {
-        "id": "6996255f-99c5-4a9b-9733-a9b619459295",
+        "id": "0772d518-88d1-4baa-baec-e5e5be29fa87",
         "start": "2026-11-09T12:15",
         "end": "2026-11-09T13:05",
         "name": "Goalies Only",
@@ -211,7 +211,7 @@
         "ticket": 19.05
       },
       {
-        "id": "a5efc1ce-e5b7-47da-8a47-c051367ff68c",
+        "id": "bb28036e-e39e-4c46-9527-04b08efc5149",
         "start": "2026-11-09T16:30",
         "end": "2026-11-09T17:20",
         "name": "Stick & Puck",
@@ -219,7 +219,7 @@
         "ticket": 10
       },
       {
-        "id": "32b40729-6a57-46e2-81ca-f7640c2300d2",
+        "id": "9013a9a0-ebbf-4148-aa97-ca1392d621e9",
         "start": "2026-11-10T10:15",
         "end": "2026-11-10T11:05",
         "name": "Stick & Puck",
@@ -227,7 +227,7 @@
         "ticket": 10
       },
       {
-        "id": "6ec76cac-6cfd-49c8-adeb-f9734538a1a8",
+        "id": "969abe97-4169-449f-8fb6-37c10b6c709b",
         "start": "2026-11-10T12:15",
         "end": "2026-11-10T14:05",
         "name": "Daytime ADULT Shinny",
@@ -235,7 +235,7 @@
         "ticket": 10
       },
       {
-        "id": "f2e96f20-45ae-4347-9706-60c9c25a8449",
+        "id": "d8c6f491-86d3-4d5f-a5cd-1bff307224bf",
         "start": "2026-11-10T12:15",
         "end": "2026-11-10T14:05",
         "name": "Goalies Only",
@@ -243,7 +243,7 @@
         "ticket": 19.05
       },
       {
-        "id": "a464efc3-b8d4-4c73-bf7c-ffdf0ced3157",
+        "id": "f0ebde0b-d12c-4efe-9174-ba2e0ce8bbf3",
         "start": "2026-11-10T15:30",
         "end": "2026-11-10T16:20",
         "name": "Stick & Puck",
@@ -251,7 +251,7 @@
         "ticket": 10
       },
       {
-        "id": "ab4dfdf7-8dee-406e-8376-d43899b48bf2",
+        "id": "686e665c-385f-4e2c-9cef-3933fa67f0de",
         "start": "2026-11-10T16:00",
         "end": "2026-11-10T16:50",
         "name": "Stick & Puck (TRAINING)",
@@ -259,7 +259,7 @@
         "ticket": 20
       },
       {
-        "id": "9c88fc26-f88a-4868-b784-122c81bb0348",
+        "id": "4450dfbf-900b-4d28-a3b0-a8cea691eee1",
         "start": "2026-11-11T10:00",
         "end": "2026-11-11T10:50",
         "name": "Stick & Puck",
@@ -267,7 +267,7 @@
         "ticket": 10
       },
       {
-        "id": "1d4e7bcc-8b14-415f-b117-65cf2c867d53",
+        "id": "0d233df6-d841-43d0-8c35-89de7e288863",
         "start": "2026-11-11T12:15",
         "end": "2026-11-11T13:05",
         "name": "Daytime ADULT Shinny",
@@ -275,7 +275,7 @@
         "ticket": 10
       },
       {
-        "id": "7264be6e-b405-45e8-8926-c6972d64a56b",
+        "id": "4286f7cd-9d6b-4b0b-b73d-1bafa45115db",
         "start": "2026-11-11T12:15",
         "end": "2026-11-11T13:05",
         "name": "Goalies Only",
@@ -283,7 +283,7 @@
         "ticket": 19.05
       },
       {
-        "id": "2093787f-3d18-4346-9a34-5d6b11ea7dbb",
+        "id": "3d2b35ac-7fa2-482a-b30a-87f13d44df01",
         "start": "2026-11-11T16:00",
         "end": "2026-11-11T16:50",
         "name": "Stick & Puck",
@@ -291,7 +291,7 @@
         "ticket": 10
       },
       {
-        "id": "4a0296aa-2344-409e-a14c-ed27d26950ae",
+        "id": "f05ff68f-0431-4f34-b51f-dde8ec1e545f",
         "start": "2026-11-12T10:15",
         "end": "2026-11-12T11:05",
         "name": "Stick & Puck",
@@ -299,7 +299,7 @@
         "ticket": 10
       },
       {
-        "id": "92c512e1-3339-4c25-9ade-b3503e49d338",
+        "id": "23b06bb8-bbaa-4e6d-9553-cb8c68e9a761",
         "start": "2026-11-12T12:15",
         "end": "2026-11-12T14:05",
         "name": "Daytime ADULT Shinny",
@@ -307,7 +307,7 @@
         "ticket": 10
       },
       {
-        "id": "9aea5432-d99c-42be-9c01-ac184c403b21",
+        "id": "b29b45d8-72b2-427a-9dd1-2cbd3112d148",
         "start": "2026-11-12T12:15",
         "end": "2026-11-12T14:05",
         "name": "Goalies Only",
@@ -315,7 +315,7 @@
         "ticket": 19.05
       },
       {
-        "id": "2cc22f3f-bfb5-44d7-9f65-c550b63974e2",
+        "id": "192a8abf-3502-4d1e-9c91-6a5142ec50a3",
         "start": "2026-11-12T16:00",
         "end": "2026-11-12T16:50",
         "name": "Stick & Puck",
@@ -323,7 +323,7 @@
         "ticket": 10
       },
       {
-        "id": "5ba8fe49-3eb8-4a43-bfa0-ffaad3de87fc",
+        "id": "262b855b-49d5-4d7b-a818-f0b6ac7b1beb",
         "start": "2026-11-12T16:15",
         "end": "2026-11-12T17:05",
         "name": "Stick & Puck (TRAINING)",
@@ -331,7 +331,7 @@
         "ticket": 20
       },
       {
-        "id": "2958782c-1cfe-40c8-90d8-549c9fc20405",
+        "id": "860466ee-670a-42dc-a6f4-769b0eda4b2d",
         "start": "2026-11-13T10:00",
         "end": "2026-11-13T10:50",
         "name": "Stick & Puck",
@@ -339,7 +339,7 @@
         "ticket": 10
       },
       {
-        "id": "047e96e6-bfc2-4792-9f8c-291cb6ab58bf",
+        "id": "e670d95c-c5eb-4c34-a834-d63bb11c2f1d",
         "start": "2026-11-13T12:15",
         "end": "2026-11-13T13:05",
         "name": "Daytime ADULT Shinny",
@@ -347,7 +347,7 @@
         "ticket": 10
       },
       {
-        "id": "ba5112a0-d3a5-40ff-bf52-c42f87464965",
+        "id": "563e877e-434b-4ea1-a988-c787a5f74c07",
         "start": "2026-11-13T12:15",
         "end": "2026-11-13T13:05",
         "name": "Goalies Only",
@@ -355,7 +355,7 @@
         "ticket": 19.05
       },
       {
-        "id": "c7700c39-6acf-4499-8228-e289d89427be",
+        "id": "bfdeede4-3cce-47d9-9526-03f08ea3bc2f",
         "start": "2026-11-13T16:30",
         "end": "2026-11-13T17:20",
         "name": "Stick & Puck",
@@ -363,7 +363,7 @@
         "ticket": 10
       },
       {
-        "id": "644ea587-74e1-4547-87e2-232a89df2725",
+        "id": "c56a7e86-a244-4b9f-b941-37ef4390fe63",
         "start": "2026-11-16T10:15",
         "end": "2026-11-16T11:05",
         "name": "Stick & Puck",
@@ -371,7 +371,7 @@
         "ticket": 10
       },
       {
-        "id": "44f5f5e3-4ec3-4c62-9685-3ef3c291a475",
+        "id": "2a184d90-d5c0-4197-bdc7-7b6d79e6f157",
         "start": "2026-11-16T12:15",
         "end": "2026-11-16T13:05",
         "name": "Daytime ADULT Shinny",
@@ -379,7 +379,7 @@
         "ticket": 10
       },
       {
-        "id": "6ae1cc7e-3679-457f-8fb1-5c20023af8bf",
+        "id": "3db32f22-ef63-4fdc-a6c3-7e881ae5f706",
         "start": "2026-11-16T12:15",
         "end": "2026-11-16T13:05",
         "name": "Goalies Only",
@@ -387,7 +387,7 @@
         "ticket": 19.05
       },
       {
-        "id": "17e8a8d6-8289-48e0-9341-42d32b15d374",
+        "id": "df91c962-4a5d-45e4-883f-b1c440a08ca9",
         "start": "2026-11-16T15:30",
         "end": "2026-11-16T16:20",
         "name": "Stick & Puck",
@@ -395,7 +395,7 @@
         "ticket": 10
       },
       {
-        "id": "8be8c231-bd77-4e7a-adc9-0bbb845e6b15",
+        "id": "e0e6e50c-e20f-4a3f-88a5-9d49141c2d26",
         "start": "2026-11-17T10:15",
         "end": "2026-11-17T11:05",
         "name": "Stick & Puck",
@@ -403,7 +403,7 @@
         "ticket": 10
       },
       {
-        "id": "56750e44-86bb-49b5-ae17-d8b4f976a7e6",
+        "id": "71d8b345-7e63-4630-b5e8-ae2e7d07facf",
         "start": "2026-11-17T12:15",
         "end": "2026-11-17T14:05",
         "name": "Daytime ADULT Shinny",
@@ -411,7 +411,7 @@
         "ticket": 10
       },
       {
-        "id": "a32d858c-c4d5-46e8-aae0-15bd62b6641b",
+        "id": "c0b1e1c9-f9df-4b8c-86df-f7b8eac18c55",
         "start": "2026-11-17T12:15",
         "end": "2026-11-17T14:05",
         "name": "Goalies Only",
@@ -419,7 +419,7 @@
         "ticket": 19.05
       },
       {
-        "id": "99ec32ac-0a21-4407-998c-720c22f46ca2",
+        "id": "a74cfa2e-7108-49af-87e3-cd23d21594b9",
         "start": "2026-11-17T15:30",
         "end": "2026-11-17T16:20",
         "name": "Stick & Puck",
@@ -427,7 +427,7 @@
         "ticket": 10
       },
       {
-        "id": "c4a46167-dccc-44b8-bd95-02b6cd00b1dd",
+        "id": "b634a833-7c1d-483a-a140-743c32d09014",
         "start": "2026-11-17T16:00",
         "end": "2026-11-17T16:50",
         "name": "Stick & Puck (TRAINING)",
@@ -435,7 +435,7 @@
         "ticket": 20
       },
       {
-        "id": "fe1fde99-bd9e-4de1-a91d-c06e32ebba08",
+        "id": "69dc3e64-2fbe-46f4-a900-204faf6a995a",
         "start": "2026-11-18T10:00",
         "end": "2026-11-18T10:50",
         "name": "Stick & Puck",
@@ -443,7 +443,7 @@
         "ticket": 10
       },
       {
-        "id": "30f35a67-00a8-4d58-bacd-36a4f71697d5",
+        "id": "ac38b9b9-dd88-4444-b0ff-6bfbb9516599",
         "start": "2026-11-18T12:15",
         "end": "2026-11-18T13:05",
         "name": "Daytime ADULT Shinny",
@@ -451,7 +451,7 @@
         "ticket": 10
       },
       {
-        "id": "4bd03518-b614-4eb6-86d3-cb5d974f1b8a",
+        "id": "184effb9-36fd-4a5e-8314-7dc6006fc5f3",
         "start": "2026-11-18T12:15",
         "end": "2026-11-18T13:05",
         "name": "Goalies Only",
@@ -459,7 +459,7 @@
         "ticket": 19.05
       },
       {
-        "id": "87551856-c549-485c-9ecf-e92b4735dcd3",
+        "id": "ce44f2c7-a874-46d4-8e4e-6e4e759c0c1b",
         "start": "2026-11-18T15:30",
         "end": "2026-11-18T16:20",
         "name": "Stick & Puck",
@@ -467,7 +467,7 @@
         "ticket": 10
       },
       {
-        "id": "a510969d-2e5a-4a3a-95f2-21576d4310f0",
+        "id": "f73ddb19-7058-4fdd-b7b3-fa66665dc450",
         "start": "2026-11-19T10:15",
         "end": "2026-11-19T11:05",
         "name": "Stick & Puck",
@@ -475,7 +475,7 @@
         "ticket": 10
       },
       {
-        "id": "cc4fcd2f-ce14-4837-bf77-00967497c506",
+        "id": "ee613a02-6769-44f6-b361-bf701b8a3b99",
         "start": "2026-11-19T12:15",
         "end": "2026-11-19T14:05",
         "name": "Daytime ADULT Shinny",
@@ -483,7 +483,7 @@
         "ticket": 10
       },
       {
-        "id": "f3f13c01-f5af-417f-a7df-058051263472",
+        "id": "d50be46e-36e1-4725-a709-e1c6ae49b085",
         "start": "2026-11-19T12:15",
         "end": "2026-11-19T14:05",
         "name": "Goalies Only",
@@ -491,7 +491,7 @@
         "ticket": 19.05
       },
       {
-        "id": "a6bf81d9-8773-43cc-a37a-ff9a8d7e6a96",
+        "id": "d7469908-da0c-40c0-b68f-8144ec2ab783",
         "start": "2026-11-19T15:30",
         "end": "2026-11-19T16:20",
         "name": "Stick & Puck",
@@ -499,7 +499,7 @@
         "ticket": 10
       },
       {
-        "id": "102f0885-beb3-498c-a600-749505834ae2",
+        "id": "e250f511-f1e5-4165-8646-d908d4ad76f5",
         "start": "2026-11-19T16:15",
         "end": "2026-11-19T17:05",
         "name": "Stick & Puck (TRAINING)",
@@ -507,7 +507,7 @@
         "ticket": 20
       },
       {
-        "id": "2bcbe37a-8224-4d95-b899-9647ec4c7041",
+        "id": "6f2b6254-9227-484b-b330-4b49c9b728b6",
         "start": "2026-11-20T10:00",
         "end": "2026-11-20T10:50",
         "name": "Stick & Puck",
@@ -515,7 +515,7 @@
         "ticket": 10
       },
       {
-        "id": "3d35f347-29f8-4ea3-8fbd-d8041361d62d",
+        "id": "a48cbd96-df0d-4b7f-ae93-8c614fe33398",
         "start": "2026-11-20T12:15",
         "end": "2026-11-20T13:05",
         "name": "Goalies Only",
@@ -523,7 +523,7 @@
         "ticket": 19.05
       },
       {
-        "id": "9b58f52f-10cc-40c2-a65e-f73b5e143bfc",
+        "id": "7a70e1a0-74c1-4700-80a7-c231081e2bde",
         "start": "2026-11-20T12:30",
         "end": "2026-11-20T13:20",
         "name": "Daytime ADULT Shinny",
@@ -531,7 +531,7 @@
         "ticket": 10
       },
       {
-        "id": "65df0f47-eefd-4e54-8b07-6840b7d6e0aa",
+        "id": "1dd12c99-3171-43bc-8803-8aee844035d1",
         "start": "2026-11-20T13:30",
         "end": "2026-11-20T14:20",
         "name": "Stick & Puck",
@@ -539,7 +539,7 @@
         "ticket": 10
       },
       {
-        "id": "b0b40c70-9f88-45f1-8ae0-dd78a186ecf6",
+        "id": "1d1f929a-1102-47ce-981b-f3c65a88445a",
         "start": "2026-11-20T17:00",
         "end": "2026-11-20T17:50",
         "name": "Stick & Puck",
@@ -547,7 +547,7 @@
         "ticket": 10
       },
       {
-        "id": "4d7aeb27-7f74-4122-96df-9939577ab717",
+        "id": "5ae7e46c-2a61-44ae-9dbc-0de4d93d48cf",
         "start": "2026-11-23T10:15",
         "end": "2026-11-23T11:05",
         "name": "Stick & Puck",
@@ -555,7 +555,7 @@
         "ticket": 10
       },
       {
-        "id": "1bd906af-2ce8-40da-bd63-ba1e97376a64",
+        "id": "2402e707-e60f-43a2-a67a-b5a35fab73b9",
         "start": "2026-11-23T12:15",
         "end": "2026-11-23T13:05",
         "name": "Daytime ADULT Shinny",
@@ -563,7 +563,7 @@
         "ticket": 10
       },
       {
-        "id": "0bb076ee-8d35-49e9-8359-61f37514e21d",
+        "id": "876a3069-be01-44b6-bc02-3bda72f1f393",
         "start": "2026-11-23T12:15",
         "end": "2026-11-23T13:05",
         "name": "Goalies Only",
@@ -571,7 +571,7 @@
         "ticket": 19.05
       },
       {
-        "id": "3309c2be-52a3-44b5-9b9d-f2da56d72887",
+        "id": "d7377774-67dc-474f-9ae0-e08b1ca2d85f",
         "start": "2026-11-23T15:30",
         "end": "2026-11-23T16:20",
         "name": "Stick & Puck",
@@ -579,7 +579,7 @@
         "ticket": 10
       },
       {
-        "id": "569b71d0-ba53-4f9a-9ba8-ee89de835644",
+        "id": "acee8d37-49e8-4301-ba3b-1883a3a55426",
         "start": "2026-11-24T10:15",
         "end": "2026-11-24T11:05",
         "name": "Stick & Puck",
@@ -587,7 +587,7 @@
         "ticket": 10
       },
       {
-        "id": "21e258f0-1962-40a2-90fb-a9f6c7a4a462",
+        "id": "87f26aab-9d08-4315-873c-810cfce3f619",
         "start": "2026-11-24T12:15",
         "end": "2026-11-24T14:05",
         "name": "Daytime ADULT Shinny",
@@ -595,7 +595,7 @@
         "ticket": 10
       },
       {
-        "id": "89281f0b-cbf8-4bfc-9e8e-2be156337465",
+        "id": "392ed0d3-0a60-4bf3-a527-f0bde0ffc575",
         "start": "2026-11-24T12:15",
         "end": "2026-11-24T14:05",
         "name": "Goalies Only",
@@ -603,7 +603,7 @@
         "ticket": 19.05
       },
       {
-        "id": "cfaf2996-08e3-4bc2-8eca-e9400a8e1cf8",
+        "id": "ebeb8fad-ff32-4192-aaaa-46ca9230f190",
         "start": "2026-11-24T15:30",
         "end": "2026-11-24T16:20",
         "name": "Stick & Puck",
@@ -611,7 +611,7 @@
         "ticket": 10
       },
       {
-        "id": "a5056831-ade3-4d8a-b7cb-b9ced043b194",
+        "id": "2baa7fd9-9c08-4623-b2d9-726def951dc4",
         "start": "2026-11-24T16:00",
         "end": "2026-11-24T16:50",
         "name": "Stick & Puck (TRAINING)",
@@ -619,7 +619,7 @@
         "ticket": 20
       },
       {
-        "id": "8f3d125b-faa7-4365-b31f-c59e4d7a52d6",
+        "id": "2540b493-c7de-441b-8ba1-cd108342fa63",
         "start": "2026-11-25T10:00",
         "end": "2026-11-25T10:50",
         "name": "Stick & Puck",
@@ -627,7 +627,7 @@
         "ticket": 10
       },
       {
-        "id": "a4ba14b8-3712-4d6f-b264-837d727a8218",
+        "id": "363ec96b-0878-4252-9429-5e1af58dd7e5",
         "start": "2026-11-25T12:15",
         "end": "2026-11-25T13:05",
         "name": "Daytime ADULT Shinny",
@@ -635,7 +635,7 @@
         "ticket": 10
       },
       {
-        "id": "d4c8b419-da10-4f4c-a477-3d5c909c4b49",
+        "id": "52a0f0ea-def6-4704-af5a-cb0f04d7736f",
         "start": "2026-11-25T12:15",
         "end": "2026-11-25T13:05",
         "name": "Goalies Only",
@@ -643,7 +643,7 @@
         "ticket": 19.05
       },
       {
-        "id": "faa84e56-40f2-45a1-95f2-db4f75eb5d3b",
+        "id": "f30b8416-2d22-41e0-a69c-eecf5c1312e9",
         "start": "2026-11-25T15:30",
         "end": "2026-11-25T16:20",
         "name": "Stick & Puck",
@@ -651,7 +651,7 @@
         "ticket": 10
       },
       {
-        "id": "11fc88c9-02a7-40c5-bc69-3eecd154fcb3",
+        "id": "02735457-fa28-4a73-b991-f5361707a00d",
         "start": "2026-11-26T10:15",
         "end": "2026-11-26T11:05",
         "name": "Stick & Puck",
@@ -659,7 +659,7 @@
         "ticket": 10
       },
       {
-        "id": "f900e954-4e5a-4230-9b6a-23dd0d12b801",
+        "id": "a85d0e82-8d44-496c-ac71-2484cf6b56eb",
         "start": "2026-11-26T12:15",
         "end": "2026-11-26T14:05",
         "name": "Goalies Only",
@@ -667,7 +667,7 @@
         "ticket": 19.05
       },
       {
-        "id": "65f24420-df66-467b-b08d-b20774a6f809",
+        "id": "de91a53b-4ba4-4c95-952a-4060ff27edf9",
         "start": "2026-11-26T12:15",
         "end": "2026-11-26T14:05",
         "name": "Daytime ADULT Shinny",
@@ -675,7 +675,7 @@
         "ticket": 10
       },
       {
-        "id": "bc356c3e-e12a-4794-88cb-fc2f10e7d497",
+        "id": "9b7c3940-6717-4ba0-959e-278af22d5c06",
         "start": "2026-11-26T15:30",
         "end": "2026-11-26T16:20",
         "name": "Stick & Puck",
@@ -683,7 +683,7 @@
         "ticket": 10
       },
       {
-        "id": "030c0d10-8ee4-4b57-9469-f2206c3dabe6",
+        "id": "897e90b3-7d9f-4639-8201-fc748693b7ee",
         "start": "2026-11-26T16:15",
         "end": "2026-11-26T17:05",
         "name": "Stick & Puck (TRAINING)",
@@ -691,7 +691,7 @@
         "ticket": 20
       },
       {
-        "id": "c8f04123-b3fb-435b-b87d-e0cd5bb3f155",
+        "id": "779a6288-4212-41cb-96be-cfb70384dc1e",
         "start": "2026-11-27T10:00",
         "end": "2026-11-27T10:50",
         "name": "Stick & Puck",
@@ -699,7 +699,7 @@
         "ticket": 10
       },
       {
-        "id": "70ed1795-18b9-4fec-b7a6-14655c58d18c",
+        "id": "8cfcb297-0bf7-499f-83c4-887c84fa23e7",
         "start": "2026-11-27T12:15",
         "end": "2026-11-27T13:05",
         "name": "Daytime ADULT Shinny",
@@ -707,7 +707,7 @@
         "ticket": 10
       },
       {
-        "id": "34528fe2-0a20-4033-9def-e060a424eb73",
+        "id": "a6fe32da-db33-4079-a1c8-d479c83f2b5e",
         "start": "2026-11-27T12:15",
         "end": "2026-11-27T13:05",
         "name": "Goalies Only",
@@ -715,7 +715,7 @@
         "ticket": 19.05
       },
       {
-        "id": "b6e29362-3652-440b-ae3a-53a4b533f133",
+        "id": "c3e2595b-bd0c-492b-b992-f8e51e701da4",
         "start": "2026-11-27T15:30",
         "end": "2026-11-27T16:20",
         "name": "Stick & Puck",
@@ -723,7 +723,7 @@
         "ticket": 10
       },
       {
-        "id": "48d3e3ec-0e72-42b2-86d9-0e848ed8e9b6",
+        "id": "135e2ece-a318-43b7-835a-2290cdc442b5",
         "start": "2026-11-30T10:15",
         "end": "2026-11-30T11:05",
         "name": "Stick & Puck",
@@ -731,7 +731,7 @@
         "ticket": 10
       },
       {
-        "id": "9c0edc4d-ad5e-4faf-be54-0ba6d2a0202c",
+        "id": "0f6e9fc1-33ca-4313-833a-ee6f0b268980",
         "start": "2026-11-30T12:15",
         "end": "2026-11-30T13:05",
         "name": "Daytime ADULT Shinny",
@@ -739,7 +739,7 @@
         "ticket": 10
       },
       {
-        "id": "7914e4e5-13d6-4563-98e6-6e1fe2ec5555",
+        "id": "6980a586-2931-4969-a460-f95875b2b82b",
         "start": "2026-11-30T12:15",
         "end": "2026-11-30T13:05",
         "name": "Goalies Only",
@@ -747,7 +747,7 @@
         "ticket": 19.05
       },
       {
-        "id": "11317e5d-f99e-4394-965e-d0c761fd049c",
+        "id": "938ce9bf-f897-45fc-8087-07b08398abee",
         "start": "2026-11-30T15:30",
         "end": "2026-11-30T16:20",
         "name": "Stick & Puck",
@@ -755,7 +755,7 @@
         "ticket": 10
       },
       {
-        "id": "d38e795a-e143-487c-9308-cd2a38d82e29",
+        "id": "ecddebcc-75c1-4e49-9f55-d9afb5c8f24c",
         "start": "2026-12-01T10:15",
         "end": "2026-12-01T11:05",
         "name": "Stick & Puck",
@@ -763,7 +763,7 @@
         "ticket": 10
       },
       {
-        "id": "34a27f55-65d7-4734-8727-c33b278ca9a6",
+        "id": "4e08bff0-3a20-4d75-a365-fcb4a8a71f2f",
         "start": "2026-12-01T12:15",
         "end": "2026-12-01T14:05",
         "name": "Daytime ADULT Shinny",
@@ -771,7 +771,7 @@
         "ticket": 10
       },
       {
-        "id": "00b4c79a-ab98-4b56-ac85-a3e291b853a2",
+        "id": "ac772822-cae7-4c92-a3db-232fd6e6f771",
         "start": "2026-12-01T12:15",
         "end": "2026-12-01T14:05",
         "name": "Goalies Only",
@@ -779,7 +779,7 @@
         "ticket": 19.05
       },
       {
-        "id": "37d8cd8e-317d-430b-8b21-dc017e039837",
+        "id": "546133cd-f1fe-4d0a-a487-08d5cb153790",
         "start": "2026-12-01T15:30",
         "end": "2026-12-01T16:20",
         "name": "Stick & Puck",
@@ -787,7 +787,7 @@
         "ticket": 10
       },
       {
-        "id": "e0a1e221-16da-4757-a3b9-783d5fa6a07b",
+        "id": "abb23936-3bf2-48f6-a066-c688b428d907",
         "start": "2026-12-01T16:15",
         "end": "2026-12-01T17:05",
         "name": "Stick & Puck (TRAINING)",
@@ -795,7 +795,7 @@
         "ticket": 20
       },
       {
-        "id": "5bade5f8-7e77-4c8b-b6a9-83152b41b492",
+        "id": "45b5e224-a916-45b2-b6e0-9409a8129f11",
         "start": "2026-12-02T12:15",
         "end": "2026-12-02T13:05",
         "name": "Daytime ADULT Shinny",
@@ -803,7 +803,7 @@
         "ticket": 10
       },
       {
-        "id": "d9c34eee-2fb7-4509-933d-24c96bd2e1ba",
+        "id": "609ee900-e99b-4f01-8294-24256ccf7877",
         "start": "2026-12-02T12:15",
         "end": "2026-12-02T13:05",
         "name": "Goalies Only",
@@ -811,7 +811,7 @@
         "ticket": 19.05
       },
       {
-        "id": "24a229bb-969f-45a5-9e38-478c8857e8c7",
+        "id": "2180b54d-a89b-418c-976e-3bbba7fc9c40",
         "start": "2026-12-02T15:30",
         "end": "2026-12-02T16:20",
         "name": "Stick & Puck",
@@ -819,7 +819,7 @@
         "ticket": 10
       },
       {
-        "id": "79de8ce5-b04b-4630-a280-489345df7879",
+        "id": "99d5d979-bae7-4a3c-aedf-c9eee3d16974",
         "start": "2026-12-03T10:15",
         "end": "2026-12-03T11:05",
         "name": "Stick & Puck",
@@ -827,7 +827,7 @@
         "ticket": 10
       },
       {
-        "id": "e19fbbb6-9384-436c-8977-e57533bc237e",
+        "id": "a506da0d-2205-4498-9207-d0b52e814975",
         "start": "2026-12-03T12:15",
         "end": "2026-12-03T14:05",
         "name": "Daytime ADULT Shinny",
@@ -835,7 +835,7 @@
         "ticket": 10
       },
       {
-        "id": "eb2874b3-f04c-4355-9ebe-1b0fb0d888c7",
+        "id": "d2ec5886-4282-486f-b797-28de11cc0133",
         "start": "2026-12-03T12:15",
         "end": "2026-12-03T14:05",
         "name": "Goalies Only",
@@ -843,7 +843,7 @@
         "ticket": 19.05
       },
       {
-        "id": "be217e30-112f-41a1-a939-76d6504bbeb8",
+        "id": "3583501f-2682-4c70-b191-916dcdfbe6d8",
         "start": "2026-12-03T15:30",
         "end": "2026-12-03T16:20",
         "name": "Stick & Puck",
@@ -851,7 +851,7 @@
         "ticket": 10
       },
       {
-        "id": "4d381d3a-d991-4e45-8a2c-8739a1861236",
+        "id": "161ff724-70dd-41a9-bfef-3468cd77c2df",
         "start": "2026-12-03T16:15",
         "end": "2026-12-03T17:05",
         "name": "Stick & Puck (TRAINING)",
