@@ -1,6 +1,6 @@
 "use client";
 
-import type { Arena } from "@/types/arena";
+import type { Venue } from "@/types/venue";
 import type { ProgramItem } from "@/types/schedule";
 import { ProgramListItem } from "@/components/schedule/ProgramListItem";
 import { AdUnit } from "@/components/ads/AdUnit";
@@ -18,7 +18,7 @@ type ProgramListProps = {
   loading: boolean;
   items: ProgramItem[];
   userLocation?: { lat: number; lon: number } | null;
-  onSelectArena: (arena: Arena) => void;
+  onSelectVenue: (venue: Venue) => void;
   className?: string;
   listClassName?: string;
 };
@@ -27,7 +27,7 @@ export function ProgramList({
   loading,
   items,
   userLocation,
-  onSelectArena,
+  onSelectVenue,
   className = "",
   listClassName = "flex flex-col gap-2 my-1",
 }: ProgramListProps) {
@@ -51,9 +51,9 @@ export function ProgramList({
         ) : (
           items.map((item) => (
             <ProgramListItem
-              key={`${item.arena.name}-${item.start}-${item.name}`}
+              key={`${item.venue.name}-${item.start}-${item.name}`}
               program={item}
-              onSelect={() => onSelectArena(item.arena)}
+              onSelect={() => onSelectVenue(item.venue)}
               userLocation={userLocation}
             />
           ))

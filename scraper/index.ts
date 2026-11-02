@@ -1,8 +1,8 @@
 /**
- * Driver that runs every per-arena scraper found under ./scraper (each arena is
+ * Driver that runs every per-venue scraper found under ./scraper (each venue is
  * a sub-folder containing a scrape.ts entry that runs on import).
  *
- * Usage:  node scraper/index.ts [arenaId]
+ * Usage:  node scraper/index.ts [venueId]
  */
 
 import { spawn } from "node:child_process";
@@ -18,10 +18,10 @@ interface Result {
   code: number | null;
 }
 
-/** Discover arena folders: immediate subfolders that contain a scrape.ts. */
-async function discoverArenas(): Promise<string[]> {
+/** Discover venue folders: immediate subfolders that contain a scrape.ts. */
+async function discoverVenues(): Promise<string[]> {
   const entries = await readdir(HERE, { withFileTypes: true });
-  const arenas: string[] = [];
+  const venues: string[] = [];
   for (const entry of entries) {
     if (!entry.isDirectory()) continue;
     const scrapeFile = path.join(HERE, entry.name, "scrape.ts");
@@ -30,13 +30,13 @@ async function discoverArenas(): Promise<string[]> {
     } catch {
       continue; // folder exists but has no scrape.ts entry — skip it.
     }
-    arenas.push(entry.name);
+    venues.push(entry.name);
   }
-  return arenas.sort();
+  return venues.sort();
 }
 
-/** Run one arena scraper as a child process. */
-function runArena(id: string): Promise<Result> {
+/** Run one venue scraper as a child process. */
+function runVenue(id: string): Promise<Result> {
   const file = path.join(HERE, id, "scrape.ts");
   return new Promise((resolve) => {
     const child = spawn(process.execPath, [file], {
@@ -54,20 +54,20 @@ function runArena(id: string): Promise<Result> {
 
 async function main(): Promise<void> {
   const want = process.argv[2];
-  let arenas = await discoverArenas();
+  let venues = await discoverVenues();
   if (want) {
-    const filtered = arenas.filter((a) => a.includes(want));
+    const filtered = venues.filter((a) => a.includes(want));
     if (filtered.length === 0) {
-      console.error(`No scraper matches "${want}". Known: ${arenas.join(", ")}`);
+      console.error(`No scraper matches "${want}". Known: ${venues.join(", ")}`);
       process.exitCode = 1;
       return;
     }
-    arenas = filtered;
+    venues = filtered;
   }
 
   const results: Result[] = [];
-  for (const id of arenas) {
-    results.push(await runArena(id));
+  for (const id of venues) {
+    results.push(await runVenue(id));
   }
 
   const failures = results.filter((r) => r.code !== 0);
@@ -76,10 +76,10 @@ async function main(): Promise<void> {
     console.log(`[${r.id}] ${ok}`);
   }
   if (failures.length > 0) {
-    console.error(`Scraped ${results.length} arena(s); ${failures.length} failed.`);
+    console.error(`Scraped ${results.length} venue(s); ${failures.length} failed.`);
     process.exitCode = 1;
   } else {
-    console.log(`Done. Scraped ${results.length} arena(s).`);
+    console.log(`Done. Scraped ${results.length} venue(s).`);
   }
 }
 

@@ -1,7 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
-import type { Arena } from "@/types/arena";
+import type { Venue } from "@/types/venue";
 import type { MapBounds } from "@/types/map";
 import type { ProgramItem, ProgramType } from "@/types/schedule";
 import dynamic from "next/dynamic";
@@ -10,12 +10,12 @@ import { Button } from "@/components/ui/button";
 import { FilterChips } from "@/components/ui/DateFilter";
 import { FilterBar } from "@/components/ui/FilterBar";
 import { ScheduleSidebar } from "@/components/ui/ScheduleSidebar";
-import { ArenaDetailModal } from "@/components/schedule/ArenaDetailModal";
+import { VenueDetailModal } from "@/components/schedule/VenueDetailModal";
 import { fetchPrograms } from "@/api/programs";
 import { trackEvent } from "@/lib/analytics";
-import { getArenaBySlug, getSlugForArena } from "@/data/schedules";
+import { getVenueBySlug, getSlugForVenue } from "@/data/schedules";
 
-const ArenaMap = dynamic(() => import("@/components/map/ArenaMap"), {
+const VenueMap = dynamic(() => import("@/components/map/VenueMap"), {
   ssr: false,
 });
 
@@ -37,7 +37,7 @@ function todayRange(): [string, string] {
 const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
 function getSlugFromPath(): string | null {
-  const prefix = `${BASE_PATH}/arena/`;
+  const prefix = `${BASE_PATH}/venue/`;
   const { pathname } = window.location;
   if (!pathname.startsWith(prefix)) return null;
   const slug = pathname.slice(prefix.length);
@@ -53,7 +53,7 @@ export default function SkatingApp({ initialSlug }: { initialSlug?: string }) {
   const [fromDate, setFromDate] = useState("");
   const [toDate, setToDate] = useState("");
   const [items, setItems] = useState<ProgramItem[]>([]);
-  const [arenas, setArenas] = useState<Arena[]>([]);
+  const [venues, setVenues] = useState<Venue[]>([]);
   const [loading, setLoading] = useState(true);
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
   const [detailSlug, setDetailSlug] = useState<string | null>(initialSlug ?? null);
@@ -78,8 +78,8 @@ export default function SkatingApp({ initialSlug }: { initialSlug?: string }) {
     const onPopState = () => {
       const slug = getSlugFromPath();
       if (slug) {
-        const arena = getArenaBySlug(slug);
-        if (arena) {
+        const venue = getVenueBySlug(slug);
+        if (venue) {
           setDetailSlug(slug);
         }
       } else {
@@ -144,7 +144,7 @@ export default function SkatingApp({ initialSlug }: { initialSlug?: string }) {
       .then((result) => {
         if (cancelled) return;
         setItems(result.items);
-        setArenas(result.arenas);
+        setVenues(result.venues);
         setLoading(false);
       })
       .catch(() => {
@@ -159,25 +159,25 @@ export default function SkatingApp({ initialSlug }: { initialSlug?: string }) {
     (index: number) => {
       const next = selectedIndex === index ? null : index;
       setSelectedIndex(next);
-      const arena = next === null ? null : arenas[next];
-      const slug = arena ? getSlugForArena(arena.name) : null;
+      const venue = next === null ? null : venues[next];
+      const slug = venue ? getSlugForVenue(venue.name) : null;
       if (slug) {
-        pushUrl(`/arena/${slug}`);
+        pushUrl(`/venue/${slug}`);
         setDetailSlug(slug);
       } else {
         pushUrl("/");
         setDetailSlug(null);
       }
     },
-    [arenas, selectedIndex]
+    [venues, selectedIndex]
   );
 
   const visibleIndex = selectedIndex;
 
-  const handleOpenArena = useCallback((arena: Arena) => {
-    const slug = getSlugForArena(arena.name);
+  const handleOpenVenue = useCallback((venue: Venue) => {
+    const slug = getSlugForVenue(venue.name);
     if (slug) {
-      pushUrl(`/arena/${slug}`);
+      pushUrl(`/venue/${slug}`);
       setDetailSlug(slug);
     }
   }, []);
@@ -192,9 +192,9 @@ export default function SkatingApp({ initialSlug }: { initialSlug?: string }) {
     <div className="flex h-screen flex-col bg-zinc-50 font-sans dark:bg-black">
       <div className="flex flex-1 flex-col overflow-hidden lg:flex-row">
         <div className="relative flex-1 shrink-0 overflow-hidden lg:h-auto lg:flex-1">
-          <ArenaMap
+          <VenueMap
             locateRef={locateRef}
-            arenas={arenas}
+            venues={venues}
             selectedIndex={visibleIndex}
             onSelect={handleSelect}
             onBoundsChange={setMapBounds}
@@ -261,13 +261,13 @@ export default function SkatingApp({ initialSlug }: { initialSlug?: string }) {
             trackEvent("hide_empty_toggle", { hidden: v });
           }}
           userLocation={userLocation}
-          onSelectArena={handleOpenArena}
+          onSelectVenue={handleOpenVenue}
           detailOpen={detailSlug !== null}
         />
       </div>
 
       {detailSlug ? (
-        <ArenaDetailModal
+        <VenueDetailModal
           key={detailSlug}
           slug={detailSlug}
           userLocation={userLocation}

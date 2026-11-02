@@ -1,4 +1,5 @@
-import type { Arena } from "@/types/arena";
+import type { Venue } from "@/types/venue";
+import { slugify } from "@/lib/slug";
 
 import billBolton from "./bill-bolton.json";
 import agincourt from "./agincourt.json";
@@ -46,65 +47,63 @@ import tomGraham from "./tom-graham-arena.json";
 import victoriaVillage from "./victoria-village.json";
 import yorkMills from "./york-mills.json";
 
-const entries: [string, Arena][] = [
-  ["bill-bolton", billBolton as Arena],
-  ["agincourt", agincourt as Arena],
-  ["albion", albion as Arena],
-  ["amesbury-sports-complex", amesbury as Arena],
-  ["angela-james", angelaJames as Arena],
-  ["baycrest", baycrest as Arena],
-  ["bayview", bayview as Arena],
-  ["bond-lake-arena", bondLake as Arena],
-  ["centennial-park-etobicoke", centennialEtobicoke as Arena],
-  ["centennial-scarborough", centennialScarborough as Arena],
-  ["central", central as Arena],
-  ["chris-tonks", chrisTonks as Arena],
-  ["commander", commander as Arena],
-  ["cummer-park", cummerPark as Arena],
-  ["don-mills-civitan", donMillsCivitan as Arena],
-  ["don-montgomery", donMontgomery as Arena],
-  ["downsview", downsview as Arena],
-  ["east-york-memorial", eastYorkMemorial as Arena],
-  ["ed-sackfield-arena", edSackfield as Arena],
-  ["elgin-barrow-arena", elginBarrow as Arena],
-  ["fenside", fenside as Arena],
-  ["gord-and-irene-risk", gordAndIreneRisk as Arena],
-  ["goulding", goulding as Arena],
-  ["grandravine-community", grandravine as Arena],
-  ["habitant", habitant as Arena],
-  ["herbert-h-carnegie-centennial-centre", carnegie as Arena],
-  ["heron-park-community", heronPark as Arena],
-  ["john-booth-memorial", johnBoothMemorial as Arena],
-  ["lambton", lambton as Arena],
-  ["long-branch", longBranch as Arena],
-  ["malvern", malvern as Arena],
-  ["mcgregor-park", mcgregorPark as Arena],
-  ["mimico", mimico as Arena],
-  ["mitchell-field", mitchellField as Arena],
-  ["oriole", oriole as Arena],
-  ["park-lawn-bubble-rink", parkLawnBubble as Arena],
-  ["phil-white", philWhite as Arena],
-  ["pine-point", pinePoint as Arena],
-  ["pleasantview", pleasantview as Arena],
-  ["roding", roding as Arena],
-  ["scarborough-gardens", scarboroughGardens as Arena],
-  ["scarborough-village", scarboroughVillage as Arena],
-  ["tom-graham-arena", tomGraham as Arena],
-  ["victoria-village", victoriaVillage as Arena],
-  ["york-mills", yorkMills as Arena],
+export const venues: Venue[] = [
+  billBolton as Venue,
+  agincourt as Venue,
+  albion as Venue,
+  amesbury as Venue,
+  angelaJames as Venue,
+  baycrest as Venue,
+  bayview as Venue,
+  bondLake as Venue,
+  centennialEtobicoke as Venue,
+  centennialScarborough as Venue,
+  central as Venue,
+  chrisTonks as Venue,
+  commander as Venue,
+  cummerPark as Venue,
+  donMillsCivitan as Venue,
+  donMontgomery as Venue,
+  downsview as Venue,
+  eastYorkMemorial as Venue,
+  edSackfield as Venue,
+  elginBarrow as Venue,
+  fenside as Venue,
+  gordAndIreneRisk as Venue,
+  goulding as Venue,
+  grandravine as Venue,
+  habitant as Venue,
+  carnegie as Venue,
+  heronPark as Venue,
+  johnBoothMemorial as Venue,
+  lambton as Venue,
+  longBranch as Venue,
+  malvern as Venue,
+  mcgregorPark as Venue,
+  mimico as Venue,
+  mitchellField as Venue,
+  oriole as Venue,
+  parkLawnBubble as Venue,
+  philWhite as Venue,
+  pinePoint as Venue,
+  pleasantview as Venue,
+  roding as Venue,
+  scarboroughGardens as Venue,
+  scarboroughVillage as Venue,
+  tomGraham as Venue,
+  victoriaVillage as Venue,
+  yorkMills as Venue,
 ];
 
-const slugMap = new Map(entries);
-
-export const arenas = entries.map(([, a]) => a);
-
-export function getArenaBySlug(slug: string): Arena | undefined {
-  return slugMap.get(slug);
+const bySlug = new Map<string, Venue>();
+for (const venue of venues) {
+  bySlug.set(slugify(venue.name), venue);
 }
 
-export function getSlugForArena(name: string): string | undefined {
-  for (const [slug, arena] of entries) {
-    if (arena.name === name) return slug;
-  }
-  return undefined;
+export function getVenueBySlug(slug: string): Venue | undefined {
+  return bySlug.get(slug);
+}
+
+export function getSlugForVenue(name: string): string {
+  return slugify(name);
 }

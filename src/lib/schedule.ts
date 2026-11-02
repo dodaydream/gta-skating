@@ -1,4 +1,4 @@
-import type { Arena } from "@/types/arena";
+import type { Venue } from "@/types/venue";
 import type { Program } from "@/types/schedule";
 import dayjs from "dayjs";
 import utc from "dayjs/plugin/utc";
@@ -7,7 +7,7 @@ import timezonePlugin from "dayjs/plugin/timezone";
 dayjs.extend(utc);
 dayjs.extend(timezonePlugin);
 
-export function getTodayInArenaTime(timezone: string): string {
+export function getTodayInVenueTime(timezone: string): string {
   return new Intl.DateTimeFormat("en-CA", { timeZone: timezone }).format(
     new Date()
   );
@@ -17,18 +17,18 @@ export function isProgramNotEnded(end: string, timezone: string): boolean {
   return !dayjs.tz(end, timezone).isBefore(dayjs().tz(timezone));
 }
 
-export function getCurrentMinutesInArenaTime(timezone: string): number {
+export function getCurrentMinutesInVenueTime(timezone: string): number {
   const now = dayjs().tz(timezone);
   return now.hour() * 60 + now.minute();
 }
 
 export function getUpcomingEvents(
-  arena: Arena,
+  venue: Venue,
   from?: string,
   to?: string
 ): Program[] {
-  const start = from ?? getTodayInArenaTime(arena.timezone);
-  return arena.schedule.programs
+  const start = from ?? getTodayInVenueTime(venue.timezone);
+  return venue.schedule.programs
     .filter(
       (program) =>
         program.end >= start && (to === undefined || program.start <= to)
@@ -41,7 +41,7 @@ export function formatEventDate(dateStr: string, timezone: string): string {
 }
 
 export function formatHumanDate(dateStr: string, timezone: string): string {
-  const today = getTodayInArenaTime(timezone);
+  const today = getTodayInVenueTime(timezone);
   if (dateStr.slice(0, 10) === today) return "Today";
   return dayjs.tz(dateStr, timezone).format("ddd, MMM D");
 }

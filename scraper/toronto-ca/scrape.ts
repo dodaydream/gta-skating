@@ -1,20 +1,20 @@
 /**
- * Scraper for City of Toronto drop-in skating arenas.
+ * Scraper for City of Toronto drop-in skating venues.
  *
- * Unlike scraper/bill-bolton-arena (a single-arena scraper with one meta
- * object), this scraper supports many arenas at once.  The arena list lives in
+ * Unlike scraper/bill-bolton-arena (a single-venue scraper with one meta
+ * object), this scraper supports many venues at once.  The venue list lives in
  * ./meta.json as an array of entries, each tagged indoor/outdoor and carrying
  * the Toronto `locationId` used to fetch its drop-in schedule feed.
  *
  * Toronto publishes drop-in skate programs as dated events (not recurring
- * weekly blocks), one JSON feed per arena:
+ * weekly blocks), one JSON feed per venue:
  *
  *   https://www.toronto.ca/data/parks/live/dropin/skate/<locationId>.json
  *
  * The feed is an array of grouped blocks; only the `r` rows hold program
- * entries (facility, category, date, time, age).  Each arena with data is
+ * entries (facility, category, date, time, age).  Each venue with data is
  * written to its own output file at src/data/<id>.json in the shape consumed
- * by src/data/schedules.ts.  Arenas with no feed (or an empty one) are skipped
+ * by src/data/schedules.ts.  Venues with no feed (or an empty one) are skipped
  * so we never emit an empty schedule.
  *
  * Usage:  node scrape.ts
@@ -24,7 +24,7 @@ import { randomUUID } from "node:crypto";
 import { readFile, writeFile, mkdir } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import type { Arena, ArenaMetaList, Program } from "../types.ts";
+import type { Venue, VenueMetaList, Program } from "../types.ts";
 import { classifyProgram } from "../classify.ts";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -42,7 +42,7 @@ async function fetchJson<T>(url: string): Promise<T | null> {
     headers: { "User-Agent": "gta-skating-scraper/0.1 (+local dev)" },
     signal: AbortSignal.timeout(15_000),
   });
-  if (!res.ok) return null; // 404 -> no schedule feed for this arena
+  if (!res.ok) return null; // 404 -> no schedule feed for this venue
   const text = await res.text();
   try {
     return JSON.parse(text) as T;
@@ -125,10 +125,10 @@ function buildPrograms(rows: FeedRow[]): Program[] {
 // --- Write -------------------------------------------------------------
 
 async function writeSchedule(
-  meta: ArenaMetaList["arenas"][number],
+  meta: VenueMetaList["venues"][number],
   programs: Program[]
 ): Promise<string> {
-  const payload: Arena = {
+  const payload: Venue = {
     name: meta.name,
     url: meta.url,
     timezone: TIMEZONE,
@@ -150,35 +150,35 @@ async function writeSchedule(
 async function main(): Promise<void> {
   const meta = JSON.parse(
     await readFile(path.join(__dirname, "meta.json"), "utf8")
-  ) as ArenaMetaList;
+  ) as VenueMetaList;
 
   const written: string[] = [];
   const skipped: string[] = [];
 
-  for (const arena of meta.arenas) {
+  for (const venue of meta.venues) {
     const feed = await fetchJson<FeedBlock[]>(
-      `${FEED_BASE}${arena.locationId}.json`
+      `${FEED_BASE}${venue.locationId}.json`
     );
     const rows = (feed ?? []).flatMap((b) => b.r ?? []);
     if (rows.length === 0) {
-      skipped.push(arena.id);
+      skipped.push(venue.id);
       continue;
     }
     const programs = buildPrograms(rows);
-    const file = await writeSchedule(arena, programs);
-    written.push(arena.id);
+    const file = await writeSchedule(venue, programs);
+    written.push(venue.id);
     console.log(
-      `[${arena.id}] ${rows.length} program row(s), ` +
+      `[${venue.id}] ${rows.length} program row(s), ` +
         `${programs.length} program(s) -> ${path.relative(process.cwd(), file)}`
     );
   }
 
   console.log(
-    `[toronto-ca] wrote ${written.length} arena(s): ${written.join(", ")}`
+    `[toronto-ca] wrote ${written.length} venue(s): ${written.join(", ")}`
   );
   if (skipped.length > 0) {
     console.log(
-      `[toronto-ca] skipped ${skipped.length} arena(s) with no data: ${skipped.join(", ")}`
+      `[toronto-ca] skipped ${skipped.length} venue(s) with no data: ${skipped.join(", ")}`
     );
   }
 }

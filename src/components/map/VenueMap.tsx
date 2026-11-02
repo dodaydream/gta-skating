@@ -9,12 +9,12 @@ if (typeof window !== "undefined") {
   maplibregl.setWorkerUrl(`${basePath}/maplibre-gl-worker.mjs`);
 }
 
-import type { Arena } from "@/types/arena";
+import type { Venue } from "@/types/venue";
 import type { MapBounds } from "@/types/map";
 import { trackEvent } from "@/lib/analytics";
 
-interface ArenaMapProps {
-  arenas: Arena[];
+interface VenueMapProps {
+  venues: Venue[];
   selectedIndex: number | null;
   onSelect: (index: number) => void;
   onBoundsChange?: (bounds: MapBounds) => void;
@@ -245,14 +245,14 @@ function isDarkMode(): boolean {
   );
 }
 
-export default function ArenaMap({
-  arenas,
+export default function VenueMap({
+  venues,
   selectedIndex,
   onSelect,
   onBoundsChange,
   userLocation,
   locateRef,
-}: ArenaMapProps) {
+}: VenueMapProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<maplibregl.Map | null>(null);
   const markersRef = useRef<maplibregl.Marker[]>([]);
@@ -261,8 +261,8 @@ export default function ArenaMap({
   const boundsTrackTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const [dark, setDark] = useState(false);
 
-  const arenasRef = useRef(arenas);
-  arenasRef.current = arenas;
+  const venuesRef = useRef(venues);
+  venuesRef.current = venues;
   const onSelectRef = useRef(onSelect);
   onSelectRef.current = onSelect;
   const onBoundsChangeRef = useRef(onBoundsChange);
@@ -278,14 +278,14 @@ export default function ArenaMap({
     markersRef.current.forEach((m) => m.remove());
     markersRef.current = [];
 
-    arenasRef.current.forEach((arena, i) => {
-      const { lat, lon } = arena.coordinates ?? {};
+    venuesRef.current.forEach((venue, i) => {
+      const { lat, lon } = venue.coordinates ?? {};
       if (!isFinite(lat) || !isFinite(lon)) return;
 
-      const hasPrograms = (arenasRef.current[i].schedule.programs?.length ?? 0) > 0;
-      const el = createMarkerElement(i === selectedIndex, hasPrograms, arena.name);
+      const hasPrograms = (venuesRef.current[i].schedule.programs?.length ?? 0) > 0;
+      const el = createMarkerElement(i === selectedIndex, hasPrograms, venue.name);
       el.addEventListener("click", () => {
-        trackEvent("arena_click", { arena_name: arena.name });
+        trackEvent("arena_click", { arena_name: venue.name });
         onSelectRef.current(i);
       });
 
@@ -415,7 +415,7 @@ export default function ArenaMap({
     if (mapRef.current?.loaded()) {
       syncMarkers.current?.();
     }
-  }, [arenas]);
+  }, [venues]);
 
   useEffect(() => {
     const map = mapRef.current;

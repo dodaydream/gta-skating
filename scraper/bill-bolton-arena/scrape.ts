@@ -1,12 +1,12 @@
 /**
- * Scraper for Bill Bolton Arena.
+ * Scraper for Bill Bolton Venue.
  *
- * Fetches the arena's public-skating page, extracts the recurring weekly
+ * Fetches the venue's public-skating page, extracts the recurring weekly
  * programs, expands them into explicit dated events for the season, and writes
  * the result to src/data/bill-bolton.json in the shape consumed by
  * src/data/schedule.ts.
  *
- * Arena metadata lives in ./meta.json (generic, reusable). Anything specific to
+ * Venue metadata lives in ./meta.json (generic, reusable). Anything specific to
  * this crawl (season window, timezone) is kept here so meta.json
  * stays metadata only.
  *
@@ -18,8 +18,8 @@ import { readFile, writeFile, mkdir } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import type {
-  Arena,
-  ArenaMeta,
+  Venue,
+  VenueMeta,
   DayName,
   Program,
   RawProgram,
@@ -30,11 +30,11 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const OUT_DIR = path.resolve(__dirname, "../../src/data");
 const OUT_FILE = path.join(OUT_DIR, "bill-bolton.json");
 
-// --- Crawl settings (specific to this arena) ----------------------------
+// --- Crawl settings (specific to this venue) ----------------------------
 
 const TIMEZONE = "America/Toronto";
 
-/** Ontario statutory holidays the arena closes on. */
+/** Ontario statutory holidays the venue closes on. */
 const STAT_HOLIDAYS = new Set<string>([
   "2026-01-01",
   "2026-02-16",
@@ -179,7 +179,7 @@ function parseStartDate(text: string): string | null {
 }
 
 /** Parse one block into zero or more recurring programs. */
-function parseBlock(block: string, meta: ArenaMeta): RawProgram[] {
+function parseBlock(block: string, meta: VenueMeta): RawProgram[] {
   const headings = splitHeadings(block);
   const programs: RawProgram[] = [];
   let title: string | null = null;
@@ -295,8 +295,8 @@ function displayName(id: string): string {
     .join(" ");
 }
 
-async function writeSchedule(meta: ArenaMeta, programs: Program[]): Promise<string> {
-  const payload: Arena = {
+async function writeSchedule(meta: VenueMeta, programs: Program[]): Promise<string> {
+  const payload: Venue = {
     name: displayName(meta.id),
     url: meta.url,
     timezone: TIMEZONE,
@@ -317,7 +317,7 @@ async function writeSchedule(meta: ArenaMeta, programs: Program[]): Promise<stri
 async function main(): Promise<void> {
   const meta = JSON.parse(
     await readFile(path.join(__dirname, "meta.json"), "utf8")
-  ) as ArenaMeta;
+  ) as VenueMeta;
 
   const html = await fetchHtml(meta.url);
   const blocks = extractBlocks(html);

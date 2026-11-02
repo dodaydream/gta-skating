@@ -24,7 +24,7 @@ export interface Program {
 }
 
 export interface ProgramItem extends Program {
-  arena: import("./arena").Arena;
+  venue: import("./venue").Venue;
 }
 
 export interface Schedule {

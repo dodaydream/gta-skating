@@ -4,8 +4,8 @@ import { useEffect, useMemo, useState } from "react";
 import type { RefObject } from "react";
 import type { Program } from "@/types/schedule";
 import {
-  getCurrentMinutesInArenaTime,
-  getTodayInArenaTime,
+  getCurrentMinutesInVenueTime,
+  getTodayInVenueTime,
   toMinutes,
 } from "@/lib/schedule";
 import { IconChevronLeft, IconChevronRight } from "@tabler/icons-react";
@@ -111,18 +111,18 @@ export function WeekView({
   );
 
   const [nowMinutes, setNowMinutes] = useState(() =>
-    getCurrentMinutesInArenaTime(timezone)
+    getCurrentMinutesInVenueTime(timezone)
   );
 
   useEffect(() => {
     const id = setInterval(
-      () => setNowMinutes(getCurrentMinutesInArenaTime(timezone)),
+      () => setNowMinutes(getCurrentMinutesInVenueTime(timezone)),
       60_000
     );
     return () => clearInterval(id);
   }, [timezone]);
 
-  const todayISO = getTodayInArenaTime(timezone);
+  const todayISO = getTodayInVenueTime(timezone);
   const hasToday = columns.some((col) => col.date === todayISO);
 
   const timeRange = useMemo(

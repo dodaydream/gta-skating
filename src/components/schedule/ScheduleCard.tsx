@@ -1,6 +1,6 @@
 import { formatEventDate } from "@/lib/schedule";
 import { ProgramRow } from "./ProgramRow";
-import type { Arena } from "@/types/arena";
+import type { Venue } from "@/types/venue";
 import type { Program } from "@/types/schedule";
 import {
   Card,
@@ -16,16 +16,16 @@ import {
 } from "@/components/ui/collapsible";
 
 export function ScheduleCard({
-  arena,
+  venue,
   onToggle,
 }: {
-  arena: Arena;
+  venue: Venue;
   onToggle: () => void;
 }) {
-  const programs = arena.schedule.programs;
+  const programs = venue.schedule.programs;
   const groupedByDate = groupByDate(programs);
   const programCount = programs.length;
-  const updated = new Date(arena.schedule.updatedAt)
+  const updated = new Date(venue.schedule.updatedAt)
     .toISOString()
     .slice(0, 10);
 
@@ -38,10 +38,10 @@ export function ScheduleCard({
         >
           <CardHeader className="w-full gap-0.5 p-0">
             <CardTitle aria-level={2} className="truncate">
-              {arena.name}
+              {venue.name}
             </CardTitle>
             <CardDescription className="truncate">
-              {arena.address}
+              {venue.address}
             </CardDescription>
           </CardHeader>
 
@@ -66,7 +66,7 @@ export function ScheduleCard({
                   <div key={date} className="flex flex-col gap-2">
                     <div className="flex items-center gap-2">
                       <h3 className="text-sm font-semibold text-zinc-700 dark:text-zinc-300">
-                        {formatEventDate(date, arena.timezone)}
+                        {formatEventDate(date, venue.timezone)}
                       </h3>
                       <span className="flex-1 border-t border-dashed border-black/[.08] dark:border-white/[.1]" />
                     </div>
@@ -83,11 +83,11 @@ export function ScheduleCard({
             <div className="flex items-center justify-between border-t border-black/[.06] pt-3 text-xs dark:border-white/[.08]">
               <a
                 className="inline-flex items-center gap-1 font-medium text-blue-600 hover:underline dark:text-blue-400"
-                href={arena.url}
+                href={venue.url}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Arena website
+                Venue website
                 <svg
                   className="h-3.5 w-3.5"
                   viewBox="0 0 24 24"

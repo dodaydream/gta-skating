@@ -203,7 +203,7 @@ export function FilterChips({
         className="shadow-xs"
         onClick={() => onHideEmptyChange(!hideEmpty)}
       >
-        {hideEmpty ? "Show all arenas" : "Hide arenas without programs"}
+        {hideEmpty ? "Show all venues" : "Hide venues without programs"}
       </Button>
     </div>
   );

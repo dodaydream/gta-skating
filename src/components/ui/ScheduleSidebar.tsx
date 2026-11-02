@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import type { Arena } from "@/types/arena";
+import type { Venue } from "@/types/venue";
 import type { ProgramItem } from "@/types/schedule";
 import { ProgramList } from "@/components/schedule/ProgramList";
 import {
@@ -18,7 +18,7 @@ type ScheduleSidebarProps = {
   hideEmpty: boolean;
   onHideEmptyChange: (value: boolean) => void;
   userLocation?: { lat: number; lon: number } | null;
-  onSelectArena: (arena: Arena) => void;
+  onSelectVenue: (venue: Venue) => void;
   detailOpen: boolean;
 };
 
@@ -30,7 +30,7 @@ function ScheduleFooter() {
   return (
     <footer className="py-2.5 text-[11px] leading-4 text-zinc-400 dark:text-zinc-500">
       <p>
-        Schedule data may change &mdash; check the arena&rsquo;s website to
+        Schedule data may change &mdash; check the venue&rsquo;s website to
         confirm times before you go.
       </p>
       <div className="mt-1 flex items-center gap-2">
@@ -77,7 +77,7 @@ export function ScheduleSidebar({
   loading,
   items,
   userLocation,
-  onSelectArena,
+  onSelectVenue,
   detailOpen,
 }: ScheduleSidebarProps) {
   const [open, setOpen] = useState(true);
@@ -95,7 +95,7 @@ export function ScheduleSidebar({
         <div className="flex min-h-0 flex-1 flex-col overflow-y-auto p-6">
           <div className="mb-4 flex flex-col">
             <h1 className="text-xl font-semibold tracking-tight text-black dark:text-zinc-50">
-              GTA Skating Arenas
+              GTA Skating Venues
             </h1>
             <span className="text-sm text-zinc-500 dark:text-zinc-400">
               {items.length} program{items.length === 1 ? "" : "s"} found
@@ -106,7 +106,7 @@ export function ScheduleSidebar({
             items={items}
             loading={loading}
             userLocation={userLocation}
-            onSelectArena={onSelectArena}
+            onSelectVenue={onSelectVenue}
             className="flex min-h-0 flex-1 flex-col"
             listClassName="flex flex-1 flex-col gap-2"
           />
@@ -133,7 +133,7 @@ export function ScheduleSidebar({
           header={
             <div className="flex flex-col px-6 pb-4 pt-6">
               <DrawerTitle className="text-xl font-semibold tracking-tight">
-                GTA Skating Arenas
+                GTA Skating Venues
               </DrawerTitle>
               <DrawerDescription className="text-left text-sm">
                 {items.length} program{items.length === 1 ? "" : "s"} found
@@ -146,7 +146,7 @@ export function ScheduleSidebar({
               items={items}
               loading={loading}
               userLocation={userLocation}
-              onSelectArena={onSelectArena}
+              onSelectVenue={onSelectVenue}
             />
             <ScheduleFooter />
           </div>

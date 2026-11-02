@@ -3,8 +3,8 @@ import { readFile, writeFile, mkdir } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import type {
-  Arena,
-  ArenaMetaList,
+  Venue,
+  VenueMetaList,
   DayName,
   Program,
 } from "../types.ts";
@@ -33,7 +33,7 @@ const DAYS: DayName[] = [
 const LOOKAHEAD_DAYS = 31;
 
 /**
- * Published single-visit drop-in fees (CAD) from the arena's skating page.
+ * Published single-visit drop-in fees (CAD) from the venue's skating page.
  * Public skating is priced by age; the adult single-visit rate ($5.90) is used.
  * Figure skating, shinny, stick & puck and ringette are a flat $8.70.
  */
@@ -45,12 +45,12 @@ function ticketFor(type: ProgramType): number {
   return type === ProgramType.PublicSkate ? PUBLIC_SKATE_FEE : PROGRAM_FEE;
 }
 
-interface ArenaMeta {
+interface VenueMeta {
   id: string;
   name: string;
 }
 
-const ARENA_MAP = new Map<string, ArenaMeta>([
+const VENUE_MAP = new Map<string, VenueMeta>([
   ["tom graham", { id: "tom-graham-arena", name: "Tom Graham Arena" }],
   ["ed sackfield", { id: "ed-sackfield-arena", name: "Ed Sackfield Arena" }],
   ["bond lake", { id: "bond-lake-arena", name: "Bond Lake Arena" }],
@@ -63,8 +63,8 @@ interface TimeSlot {
 }
 
 interface RawEntry {
-  arenaId: string;
-  arenaName: string;
+  venueId: string;
+  venueName: string;
   day: DayName;
   programName: string;
   type: ProgramType;
@@ -121,10 +121,10 @@ function parseTimeRange(text: string): TimeSlot | null {
   };
 }
 
-function findArena(text: string): ArenaMeta | null {
+function findVenue(text: string): VenueMeta | null {
   const lower = text.toLowerCase().trim();
-  for (const [key, arena] of ARENA_MAP) {
-    if (lower.includes(key)) return arena;
+  for (const [key, venue] of VENUE_MAP) {
+    if (lower.includes(key)) return venue;
   }
   return null;
 }
@@ -244,8 +244,8 @@ function parseScheduleTable(
     const cells = parseCell(rows[ri]);
     if (cells.length < 2) continue;
 
-    const arena = findArena(cells[0]);
-    if (!arena) continue;
+    const venue = findVenue(cells[0]);
+    if (!venue) continue;
 
     for (let di = 1; di < Math.min(cells.length, 8); di++) {
       const cellText = cells[di];
@@ -255,8 +255,8 @@ function parseScheduleTable(
       for (const pc of programCells) {
         if (!pc.time) continue;
         entries.push({
-          arenaId: arena.id,
-          arenaName: arena.name,
+          venueId: venue.id,
+          venueName: venue.name,
           day: days[dayIndex],
           programName: pc.programName,
           type,
@@ -301,16 +301,16 @@ function expandWeekly(
   return out;
 }
 
-function buildArenaSchedules(
+function buildVenueSchedules(
   entries: RawEntry[]
 ): Map<string, Program[]> {
-  const byArena = new Map<string, Program[]>();
+  const byVenue = new Map<string, Program[]>();
 
   for (const entry of entries) {
     const dates = expandWeekly(entry);
     for (const date of dates) {
-      if (!byArena.has(entry.arenaId)) byArena.set(entry.arenaId, []);
-      byArena.get(entry.arenaId)!.push({
+      if (!byVenue.has(entry.venueId)) byVenue.set(entry.venueId, []);
+      byVenue.get(entry.venueId)!.push({
         id: randomUUID(),
         start: `${date}T${entry.time.start}`,
         end: `${date}T${entry.time.end}`,
@@ -321,12 +321,12 @@ function buildArenaSchedules(
     }
   }
 
-  return byArena;
+  return byVenue;
 }
 
 function addSensorySkate(
-  arenaId: string,
-  programsByArena: Map<string, Program[]>
+  venueId: string,
+  programsByVenue: Map<string, Program[]>
 ): void {
   const today = new Date();
   const endDate = new Date();
@@ -334,8 +334,8 @@ function addSensorySkate(
   const inRange = (ds: string): boolean => ds >= dateStr(today) && ds <= dateStr(endDate);
   const dates = ["2026-11-07", "2027-01-16"].filter(inRange);
   for (const date of dates) {
-    if (!programsByArena.has(arenaId)) programsByArena.set(arenaId, []);
-    programsByArena.get(arenaId)!.push({
+    if (!programsByVenue.has(venueId)) programsByVenue.set(venueId, []);
+    programsByVenue.get(venueId)!.push({
       id: "sensory-friendly-skate-saturday-16-15",
       start: `${date}T16:15`,
       end: `${date}T17:15`,
@@ -346,11 +346,11 @@ function addSensorySkate(
   }
 }
 
-async function writeArenaSchedule(
-  meta: ArenaMetaList["arenas"][number],
+async function writeVenueSchedule(
+  meta: VenueMetaList["venues"][number],
   programs: Program[]
 ): Promise<string> {
-  const payload: Arena = {
+  const payload: Venue = {
     name: meta.name,
     url: meta.url,
     timezone: TIMEZONE,
@@ -370,7 +370,7 @@ async function writeArenaSchedule(
 async function main(): Promise<void> {
   const meta = JSON.parse(
     await readFile(path.join(__dirname, "meta.json"), "utf8")
-  ) as ArenaMetaList;
+  ) as VenueMetaList;
 
 const html = await fetchHtml(PAGE_URL);
   const sections = extractScheduleSections(html);
@@ -386,33 +386,33 @@ const html = await fetchHtml(PAGE_URL);
     allEntries.push(...entries);
   }
 
-  const programsByArena = buildArenaSchedules(allEntries);
+  const programsByVenue = buildVenueSchedules(allEntries);
 
-  addSensorySkate("ed-sackfield-arena", programsByArena);
+  addSensorySkate("ed-sackfield-arena", programsByVenue);
 
   const written: string[] = [];
   const skipped: string[] = [];
 
-  for (const arena of meta.arenas) {
-    let programs = programsByArena.get(arena.id) ?? [];
+  for (const venue of meta.venues) {
+    let programs = programsByVenue.get(venue.id) ?? [];
     if (programs.length === 0) {
-      skipped.push(arena.id);
+      skipped.push(venue.id);
       continue;
     }
     programs = [...programs].sort((a, b) => a.start.localeCompare(b.start));
-    const file = await writeArenaSchedule(arena, programs);
-    written.push(arena.id);
+    const file = await writeVenueSchedule(venue, programs);
+    written.push(venue.id);
     console.log(
-      `[${arena.id}] ${programs.length} program(s) -> ${path.relative(process.cwd(), file)}`
+      `[${venue.id}] ${programs.length} program(s) -> ${path.relative(process.cwd(), file)}`
     );
   }
 
   console.log(
-    `[richmondhill-ca] wrote ${written.length} arena(s): ${written.join(", ")}`
+    `[richmondhill-ca] wrote ${written.length} venue(s): ${written.join(", ")}`
   );
   if (skipped.length > 0) {
     console.log(
-      `[richmondhill-ca] skipped ${skipped.length} arena(s) with no data: ${skipped.join(", ")}`
+      `[richmondhill-ca] skipped ${skipped.length} venue(s) with no data: ${skipped.join(", ")}`
     );
   }
 }

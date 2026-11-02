@@ -1,9 +1,9 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import type { Arena } from "@/types/arena";
+import type { Venue } from "@/types/venue";
 import type { Program } from "@/types/schedule";
-import { fetchArenaDetails } from "@/api/arenas";
+import { fetchVenueDetails } from "@/api/venues";
 import { cn } from "cn";
 import {
   Dialog,
@@ -21,7 +21,7 @@ import {
   distanceKm,
   formatEventDate,
   formatTimeRange,
-  getTodayInArenaTime,
+  getTodayInVenueTime,
   isProgramNotEnded,
   osmUrl,
 } from "@/lib/schedule";
@@ -154,7 +154,7 @@ function CloseButton({
   );
 }
 
-export function ArenaDetailModal({
+export function VenueDetailModal({
   slug,
   onClose,
   userLocation,
@@ -163,7 +163,7 @@ export function ArenaDetailModal({
   onClose: () => void;
   userLocation?: { lat: number; lon: number } | null;
 }) {
-  const [arena, setArena] = useState<Arena | null>(null);
+  const [venue, setVenue] = useState<Venue | null>(null);
   const [error, setError] = useState(false);
   const [view, setView] = useState<"day" | "week">("day");
   const weekBodyRef = useRef<HTMLDivElement>(null);
@@ -172,10 +172,10 @@ export function ArenaDetailModal({
 
   useEffect(() => {
     let cancelled = false;
-    fetchArenaDetails(slug)
+    fetchVenueDetails(slug)
       .then((data) => {
         if (cancelled) return;
-        setArena(data);
+        setVenue(data);
         openedRef.current = true;
         trackEvent("arena_detail_open", {
           arena_name: data.name,
@@ -202,7 +202,7 @@ export function ArenaDetailModal({
         header={
           <div className="flex items-start justify-between gap-3 px-5 pt-5">
             <PanelTitle isDesktop={isDesktop} className="sr-only">
-              Arena details
+              Venue details
             </PanelTitle>
             <CloseButton onClick={onClose} />
           </div>
@@ -210,45 +210,45 @@ export function ArenaDetailModal({
       >
         <div className="px-5 pb-6">
           <p className="text-sm text-zinc-500">
-            Failed to load arena details.
+            Failed to load venue details.
           </p>
         </div>
       </Panel>
     );
   }
 
-  if (!arena) {
+  if (!venue) {
     return (
       <Panel
         isDesktop={isDesktop}
         onClose={onClose}
         header={
-          <ArenaDetailSkeletonHeader
+          <VenueDetailSkeletonHeader
             isDesktop={isDesktop}
             onClose={onClose}
           />
         }
       >
-        <ArenaDetailSkeleton />
+        <VenueDetailSkeleton />
       </Panel>
     );
   }
 
-  const programs = arena.schedule.programs.filter((program) =>
-    isProgramNotEnded(program.end, arena.timezone)
+  const programs = venue.schedule.programs.filter((program) =>
+    isProgramNotEnded(program.end, venue.timezone)
   );
-  const updated = new Date(arena.schedule.updatedAt).toISOString().slice(0, 10);
+  const updated = new Date(venue.schedule.updatedAt).toISOString().slice(0, 10);
 
   const distance =
     userLocation &&
-    arena.coordinates &&
-    isFinite(arena.coordinates.lat) &&
-    isFinite(arena.coordinates.lon)
+    venue.coordinates &&
+    isFinite(venue.coordinates.lat) &&
+    isFinite(venue.coordinates.lon)
       ? distanceKm(
           userLocation.lat,
           userLocation.lon,
-          arena.coordinates.lat,
-          arena.coordinates.lon
+          venue.coordinates.lat,
+          venue.coordinates.lon
         )
       : null;
 
@@ -260,10 +260,10 @@ export function ArenaDetailModal({
         <header className="flex items-start justify-between gap-3 px-5 py-4">
           <div>
             <PanelTitle isDesktop={isDesktop} className="text-lg">
-              {arena.name}
+              {venue.name}
             </PanelTitle>
             <PanelDescription isDesktop={isDesktop}>
-              {arena.address}
+              {venue.address}
               {distance !== null ? (
                 <span className="ml-2 text-zinc-400">
                   · {distance < 10 ? distance.toFixed(1) : Math.round(distance)} km
@@ -275,7 +275,7 @@ export function ArenaDetailModal({
         </header>
       }
     >
-      <TodayCards programs={programs} timezone={arena.timezone} />
+      <TodayCards programs={programs} timezone={venue.timezone} />
 
       <div className="px-5">
         <Tabs value={view} onValueChange={(v) => setView(v as "day" | "week")}>
@@ -293,34 +293,34 @@ export function ArenaDetailModal({
         {programs.length === 0 ? (
           <p className="text-sm text-zinc-500">No upcoming sessions.</p>
         ) : view === "day" ? (
-          <ListView programs={programs} timezone={arena.timezone} />
+          <ListView programs={programs} timezone={venue.timezone} />
         ) : (
           <WeekView
             programs={programs}
-            timezone={arena.timezone}
+            timezone={venue.timezone}
             bodyRef={weekBodyRef}
           />
         )}
       </div>
 
       <footer className="flex items-center justify-between gap-3 border-t border-black/[.06] px-5 py-3 text-xs text-zinc-500 dark:border-white/[.08] dark:text-zinc-400">
-        {arena.url ? (
+        {venue.url ? (
           <a
             className="font-medium text-blue-600 hover:underline dark:text-blue-400"
-            href={arena.url}
+            href={venue.url}
             target="_blank"
             rel="noopener noreferrer"
           >
-            Arena website
+            Venue website
           </a>
         ) : (
           <span />
         )}
         <span className="flex items-center gap-3">
-          {arena.coordinates ? (
+          {venue.coordinates ? (
             <a
               className="font-medium text-blue-600 hover:underline dark:text-blue-400"
-              href={osmUrl(arena.coordinates.lat, arena.coordinates.lon)}
+              href={osmUrl(venue.coordinates.lat, venue.coordinates.lon)}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -334,7 +334,7 @@ export function ArenaDetailModal({
   );
 }
 
-function ArenaDetailSkeletonHeader({
+function VenueDetailSkeletonHeader({
   isDesktop,
   onClose,
 }: {
@@ -345,7 +345,7 @@ function ArenaDetailSkeletonHeader({
     <header className="flex items-start justify-between gap-3 px-5 pt-5">
       <div className="flex flex-col gap-2">
         <PanelTitle isDesktop={isDesktop} className="sr-only">
-          Loading arena details
+          Loading venue details
         </PanelTitle>
         <div className="h-6 w-48 animate-pulse rounded bg-black/[.08] dark:bg-white/[.1]" />
         <div className="h-4 w-64 animate-pulse rounded bg-black/[.06] dark:bg-white/[.08]" />
@@ -355,7 +355,7 @@ function ArenaDetailSkeletonHeader({
   );
 }
 
-function ArenaDetailSkeleton() {
+function VenueDetailSkeleton() {
   return (
     <>
       <div
@@ -406,7 +406,7 @@ function TodayCards({
   programs: Program[];
   timezone: string;
 }) {
-  const today = getTodayInArenaTime(timezone);
+  const today = getTodayInVenueTime(timezone);
 
   return (
     <div className="no-scrollbar w-full min-w-0 shrink-0 overflow-x-auto overflow-y-hidden px-5">

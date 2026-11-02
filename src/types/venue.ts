@@ -1,6 +1,6 @@
 import type { Coordinates, Schedule } from "./schedule";
 
-export interface Arena {
+export interface Venue {
   name: string;
   url: string;
   timezone: string;

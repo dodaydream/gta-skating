@@ -1,20 +1,20 @@
-export interface ArenaMeta {
+export interface VenueMeta {
   id: string;
   url: string;
   address: string;
   coordinates: { lat: number; lon: number };
 }
 
-/** Single-arena entry inside a multi-arena scraper's meta.json. */
-export interface ArenaMetaEntry extends ArenaMeta {
+/** Single-venue entry inside a multi-venue scraper's meta.json. */
+export interface VenueMetaEntry extends VenueMeta {
   name: string;
   locationId: number;
   type: "indoor" | "outdoor";
 }
 
-/** Top-level shape of a multi-arena scraper's meta.json (a list of arenas). */
-export interface ArenaMetaList {
-  arenas: ArenaMetaEntry[];
+/** Top-level shape of a multi-venue scraper's meta.json (a list of venues). */
+export interface VenueMetaList {
+  venues: VenueMetaEntry[];
 }
 
 export type DayName =
@@ -67,16 +67,16 @@ export interface Program {
   ticket: number;
 }
 
-export interface ArenaSchedule {
+export interface VenueSchedule {
   updatedAt: string;
   programs: Program[];
 }
 
-export interface Arena {
+export interface Venue {
   name: string;
   url: string;
   timezone: string;
   address: string;
   coordinates: Coordinates;
-  schedule: ArenaSchedule;
+  schedule: VenueSchedule;
 }

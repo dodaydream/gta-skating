@@ -3,7 +3,7 @@ import {
   distanceKm,
   formatHumanDate,
   formatTimeRange,
-  getTodayInArenaTime,
+  getTodayInVenueTime,
 } from "@/lib/schedule";
 import { TicketBadge } from "@/components/schedule/TicketBadge";
 
@@ -16,20 +16,20 @@ export function ProgramListItem({
   onSelect: () => void;
   userLocation?: { lat: number; lon: number } | null;
 }) {
-  const arena = program.arena;
+  const venue = program.venue;
   const programDate = program.start.slice(0, 10);
-  const isToday = programDate === getTodayInArenaTime(arena.timezone);
+  const isToday = programDate === getTodayInVenueTime(venue.timezone);
   const hasCoords =
     userLocation &&
-    arena.coordinates &&
-    isFinite(arena.coordinates.lat) &&
-    isFinite(arena.coordinates.lon);
+    venue.coordinates &&
+    isFinite(venue.coordinates.lat) &&
+    isFinite(venue.coordinates.lon);
   const distance = hasCoords
     ? distanceKm(
         userLocation.lat,
         userLocation.lon,
-        arena.coordinates.lat,
-        arena.coordinates.lon
+        venue.coordinates.lat,
+        venue.coordinates.lon
       )
     : null;
 
@@ -43,7 +43,7 @@ export function ProgramListItem({
         <span className="font-mono">
   {isToday
     ? `Today·${formatTimeRange(program.start, program.end)}`
-    : `${formatHumanDate(program.start, program.arena.timezone)}·${formatTimeRange(program.start, program.end)}`}
+    : `${formatHumanDate(program.start, program.venue.timezone)}·${formatTimeRange(program.start, program.end)}`}
 </span>
       </div>
       <div className="flex items-baseline justify-between gap-3">
@@ -54,7 +54,7 @@ export function ProgramListItem({
       </div>
       <div className="flex items-center justify-between gap-3 text-xs text-zinc-500 dark:text-zinc-400">
         <span className="min-w-0 truncate">
-          {arena.name}&nbsp;·
+          {venue.name}&nbsp;·
           {distance !== null && (
             <span className="ml-1 text-zinc-400">
               {distance < 10 ? distance.toFixed(1) : Math.round(distance)} km
