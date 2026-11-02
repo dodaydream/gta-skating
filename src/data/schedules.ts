@@ -9,6 +9,11 @@ import angelaJames from "./angela-james-arena.json";
 import baycrest from "./baycrest-arena.json";
 import bayview from "./bayview-arena.json";
 import bondLake from "./bond-lake-arena.json";
+import cwenchCentreEtobicoke from "./cwench-centre-etobicoke.json";
+import entripyCentreOakville from "./entripy-centre-oakville.json";
+import nfpAthleticCentreYork from "./nfp-athletic-centre-york.json";
+import oshawa from "./oshawa.json";
+import scarborough from "./scarborough.json";
 import centennialEtobicoke from "./centennial-park-arena-etobicoke.json";
 import centennialScarborough from "./centennial-recreation-centre-scarborough.json";
 import central from "./central-arena.json";
@@ -56,6 +61,11 @@ export const venues: Venue[] = [
   baycrest as Venue,
   bayview as Venue,
   bondLake as Venue,
+  cwenchCentreEtobicoke as Venue,
+  entripyCentreOakville as Venue,
+  nfpAthleticCentreYork as Venue,
+  oshawa as Venue,
+  scarborough as Venue,
   centennialEtobicoke as Venue,
   centennialScarborough as Venue,
   central as Venue,

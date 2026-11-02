@@ -8,7 +8,10 @@ export interface VenueMeta {
 /** Single-venue entry inside a multi-venue scraper's meta.json. */
 export interface VenueMetaEntry extends VenueMeta {
   name: string;
-  locationId: number;
+  /** City of Toronto location id used by the toronto-ca feed. */
+  locationId?: number;
+  /** Daysmart Recreation facility id used by the canlan scraper. */
+  facilityId?: number;
   type: "indoor" | "outdoor";
 }
 

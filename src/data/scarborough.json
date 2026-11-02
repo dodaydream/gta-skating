@@ -1,0 +1,823 @@
+{
+  "name": "Scarborough",
+  "url": "https://apps.daysmartrecreation.com/dash/x/canlan/event-registration?facility_ids=15",
+  "timezone": "America/Toronto",
+  "address": "159 Dynamic Dr, Scarborough, ON M1V 5L8",
+  "coordinates": {
+    "lat": 43.8055913,
+    "lon": -79.4083341
+  },
+  "schedule": {
+    "updatedAt": "2026-11-02T01:49:09.778Z",
+    "programs": [
+      {
+        "id": "b68bb65d-8300-472b-8e45-56fb9ee8d6a3",
+        "start": "2026-11-02T10:15",
+        "end": "2026-11-02T11:05",
+        "name": "Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 10
+      },
+      {
+        "id": "14161b81-b3aa-4930-b4e3-3e69137a9304",
+        "start": "2026-11-02T12:15",
+        "end": "2026-11-02T13:05",
+        "name": "Daytime ADULT Shinny",
+        "type": "Pickup Hockey",
+        "ticket": 10
+      },
+      {
+        "id": "b695f052-f4e7-495e-a2c8-bd46c821c110",
+        "start": "2026-11-02T12:15",
+        "end": "2026-11-02T13:05",
+        "name": "Goalies Only",
+        "type": "Pickup Hockey",
+        "ticket": 19.05
+      },
+      {
+        "id": "73add179-66c0-4205-85fe-29bb818a5257",
+        "start": "2026-11-02T16:30",
+        "end": "2026-11-02T17:20",
+        "name": "Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 10
+      },
+      {
+        "id": "e31162c0-891d-4da1-be11-65e2f721763d",
+        "start": "2026-11-03T10:15",
+        "end": "2026-11-03T11:05",
+        "name": "Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 10
+      },
+      {
+        "id": "5ebe7368-0173-415a-8f2c-8a207ed82945",
+        "start": "2026-11-03T12:15",
+        "end": "2026-11-03T14:05",
+        "name": "Daytime ADULT Shinny",
+        "type": "Pickup Hockey",
+        "ticket": 10
+      },
+      {
+        "id": "a97c45d9-bfa6-4c01-8cf2-839b08641c0a",
+        "start": "2026-11-03T12:15",
+        "end": "2026-11-03T14:05",
+        "name": "Goalies Only",
+        "type": "Pickup Hockey",
+        "ticket": 19.05
+      },
+      {
+        "id": "450313c5-8f61-4d26-b97f-bb929e7a0837",
+        "start": "2026-11-03T15:30",
+        "end": "2026-11-03T16:20",
+        "name": "Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 10
+      },
+      {
+        "id": "0665d964-4494-46de-a35e-6d5277629622",
+        "start": "2026-11-03T16:00",
+        "end": "2026-11-03T16:50",
+        "name": "Stick & Puck (TRAINING)",
+        "type": "Stick and Puck",
+        "ticket": 20
+      },
+      {
+        "id": "6e4ac230-776c-4393-9a10-b3638aa062cc",
+        "start": "2026-11-04T10:00",
+        "end": "2026-11-04T10:50",
+        "name": "Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 10
+      },
+      {
+        "id": "98861d73-da86-4b08-a230-67cba6cb1ceb",
+        "start": "2026-11-04T12:15",
+        "end": "2026-11-04T13:05",
+        "name": "Daytime ADULT Shinny",
+        "type": "Pickup Hockey",
+        "ticket": 10
+      },
+      {
+        "id": "2aa01396-da41-4f60-80af-f861a243f7bf",
+        "start": "2026-11-04T12:15",
+        "end": "2026-11-04T13:05",
+        "name": "Goalies Only",
+        "type": "Pickup Hockey",
+        "ticket": 19.05
+      },
+      {
+        "id": "dd4eb2b5-9a92-43a0-9242-f8d9413ef0bf",
+        "start": "2026-11-04T16:00",
+        "end": "2026-11-04T16:50",
+        "name": "Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 10
+      },
+      {
+        "id": "e2ffe993-9876-4a3f-a0f2-b172efe5454a",
+        "start": "2026-11-05T10:15",
+        "end": "2026-11-05T11:05",
+        "name": "Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 10
+      },
+      {
+        "id": "454977d4-2789-4a12-9537-2df3f8db90e5",
+        "start": "2026-11-05T12:15",
+        "end": "2026-11-05T14:05",
+        "name": "Daytime ADULT Shinny",
+        "type": "Pickup Hockey",
+        "ticket": 10
+      },
+      {
+        "id": "78d601d1-27ac-453b-b20b-825463da9acd",
+        "start": "2026-11-05T12:15",
+        "end": "2026-11-05T14:05",
+        "name": "Goalies Only",
+        "type": "Pickup Hockey",
+        "ticket": 19.05
+      },
+      {
+        "id": "2b3f46c4-4b22-466b-88e5-5eb3fa1cddfd",
+        "start": "2026-11-05T16:00",
+        "end": "2026-11-05T16:50",
+        "name": "Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 10
+      },
+      {
+        "id": "41c2f62f-1cd9-4be9-a1a3-0512d74b7155",
+        "start": "2026-11-05T16:15",
+        "end": "2026-11-05T17:05",
+        "name": "Stick & Puck (TRAINING)",
+        "type": "Stick and Puck",
+        "ticket": 20
+      },
+      {
+        "id": "9b8a0863-3f62-475d-af8e-7cc2cd57d7c3",
+        "start": "2026-11-06T10:00",
+        "end": "2026-11-06T10:50",
+        "name": "Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 10
+      },
+      {
+        "id": "deabc2e3-0719-478d-8323-7f286ab87518",
+        "start": "2026-11-06T12:15",
+        "end": "2026-11-06T13:05",
+        "name": "Daytime ADULT Shinny",
+        "type": "Pickup Hockey",
+        "ticket": 10
+      },
+      {
+        "id": "f4fa247a-e739-4174-87d9-ad1e407a0fa0",
+        "start": "2026-11-06T12:15",
+        "end": "2026-11-06T13:05",
+        "name": "Goalies Only",
+        "type": "Pickup Hockey",
+        "ticket": 19.05
+      },
+      {
+        "id": "8e511885-e3c9-49f1-b8c2-8fc202385c3f",
+        "start": "2026-11-06T16:30",
+        "end": "2026-11-06T17:20",
+        "name": "Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 10
+      },
+      {
+        "id": "2c867802-d14f-44ca-928f-5f36f79fb998",
+        "start": "2026-11-09T10:15",
+        "end": "2026-11-09T11:05",
+        "name": "Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 10
+      },
+      {
+        "id": "27aa95af-ffeb-464c-8f5b-621c6d101d88",
+        "start": "2026-11-09T12:15",
+        "end": "2026-11-09T13:05",
+        "name": "Daytime ADULT Shinny",
+        "type": "Pickup Hockey",
+        "ticket": 10
+      },
+      {
+        "id": "842ee9a0-2801-454c-98ba-ccf549a54dde",
+        "start": "2026-11-09T12:15",
+        "end": "2026-11-09T13:05",
+        "name": "Goalies Only",
+        "type": "Pickup Hockey",
+        "ticket": 19.05
+      },
+      {
+        "id": "f62c140d-5958-4192-8106-1eabff5b2412",
+        "start": "2026-11-09T16:30",
+        "end": "2026-11-09T17:20",
+        "name": "Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 10
+      },
+      {
+        "id": "2c29eb94-1dfe-44b7-88fc-f62c356bdfc2",
+        "start": "2026-11-10T10:15",
+        "end": "2026-11-10T11:05",
+        "name": "Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 10
+      },
+      {
+        "id": "2b75f0c3-21d6-4b51-93c1-38f477a09c78",
+        "start": "2026-11-10T12:15",
+        "end": "2026-11-10T14:05",
+        "name": "Daytime ADULT Shinny",
+        "type": "Pickup Hockey",
+        "ticket": 10
+      },
+      {
+        "id": "e6c986bb-743b-45b1-9722-cac302f45911",
+        "start": "2026-11-10T12:15",
+        "end": "2026-11-10T14:05",
+        "name": "Goalies Only",
+        "type": "Pickup Hockey",
+        "ticket": 19.05
+      },
+      {
+        "id": "587ced91-9f07-40df-ad79-a7309f0d6b7e",
+        "start": "2026-11-10T15:30",
+        "end": "2026-11-10T16:20",
+        "name": "Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 10
+      },
+      {
+        "id": "75de8288-16d8-40d7-a248-d5c93bdd3bce",
+        "start": "2026-11-10T16:00",
+        "end": "2026-11-10T16:50",
+        "name": "Stick & Puck (TRAINING)",
+        "type": "Stick and Puck",
+        "ticket": 20
+      },
+      {
+        "id": "5e5cd0a4-c458-4ff6-8289-89ccf9c9aea3",
+        "start": "2026-11-11T10:00",
+        "end": "2026-11-11T10:50",
+        "name": "Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 10
+      },
+      {
+        "id": "8f3c7580-6eaf-40df-b1f6-46ed0ae0fcb7",
+        "start": "2026-11-11T12:15",
+        "end": "2026-11-11T13:05",
+        "name": "Daytime ADULT Shinny",
+        "type": "Pickup Hockey",
+        "ticket": 10
+      },
+      {
+        "id": "6dad4ba6-b092-4aac-9000-17ceb7120670",
+        "start": "2026-11-11T12:15",
+        "end": "2026-11-11T13:05",
+        "name": "Goalies Only",
+        "type": "Pickup Hockey",
+        "ticket": 19.05
+      },
+      {
+        "id": "e9ce6a13-153f-443a-b9c8-53c6721b53ff",
+        "start": "2026-11-11T16:00",
+        "end": "2026-11-11T16:50",
+        "name": "Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 10
+      },
+      {
+        "id": "4b07cf3c-505c-4d8e-889c-6ff83f92df7e",
+        "start": "2026-11-12T10:15",
+        "end": "2026-11-12T11:05",
+        "name": "Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 10
+      },
+      {
+        "id": "33ed468e-6260-4703-accc-0dec5c788e48",
+        "start": "2026-11-12T12:15",
+        "end": "2026-11-12T14:05",
+        "name": "Daytime ADULT Shinny",
+        "type": "Pickup Hockey",
+        "ticket": 10
+      },
+      {
+        "id": "a2bb58fa-a203-4a4f-a4df-ea1caf2ad7cf",
+        "start": "2026-11-12T12:15",
+        "end": "2026-11-12T14:05",
+        "name": "Goalies Only",
+        "type": "Pickup Hockey",
+        "ticket": 19.05
+      },
+      {
+        "id": "3d64f102-700f-484f-ab71-2892d876ed17",
+        "start": "2026-11-12T16:00",
+        "end": "2026-11-12T16:50",
+        "name": "Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 10
+      },
+      {
+        "id": "a61d2186-662d-4f6f-bab1-f2627c3b8909",
+        "start": "2026-11-12T16:15",
+        "end": "2026-11-12T17:05",
+        "name": "Stick & Puck (TRAINING)",
+        "type": "Stick and Puck",
+        "ticket": 20
+      },
+      {
+        "id": "b0d076f8-80a7-488d-acf5-9b14cc28ac06",
+        "start": "2026-11-13T10:00",
+        "end": "2026-11-13T10:50",
+        "name": "Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 10
+      },
+      {
+        "id": "9987a4eb-5771-46ec-a826-1b95ee7a226b",
+        "start": "2026-11-13T12:15",
+        "end": "2026-11-13T13:05",
+        "name": "Daytime ADULT Shinny",
+        "type": "Pickup Hockey",
+        "ticket": 10
+      },
+      {
+        "id": "8c35938f-580a-4728-9cea-ae3b4e4c398d",
+        "start": "2026-11-13T12:15",
+        "end": "2026-11-13T13:05",
+        "name": "Goalies Only",
+        "type": "Pickup Hockey",
+        "ticket": 19.05
+      },
+      {
+        "id": "c2458f0d-ce93-4ea9-a1b9-399f7ecf5307",
+        "start": "2026-11-13T16:30",
+        "end": "2026-11-13T17:20",
+        "name": "Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 10
+      },
+      {
+        "id": "3733e49d-5717-41d9-be3b-cf86d971222d",
+        "start": "2026-11-16T10:15",
+        "end": "2026-11-16T11:05",
+        "name": "Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 10
+      },
+      {
+        "id": "b26cb2c2-7439-4a74-a7be-fd252d6afc79",
+        "start": "2026-11-16T12:15",
+        "end": "2026-11-16T13:05",
+        "name": "Daytime ADULT Shinny",
+        "type": "Pickup Hockey",
+        "ticket": 10
+      },
+      {
+        "id": "840973e9-c203-481a-a8b9-d7b3075a46bf",
+        "start": "2026-11-16T12:15",
+        "end": "2026-11-16T13:05",
+        "name": "Goalies Only",
+        "type": "Pickup Hockey",
+        "ticket": 19.05
+      },
+      {
+        "id": "bd4daf1c-155f-4a58-accd-f74a3e0d3332",
+        "start": "2026-11-16T15:30",
+        "end": "2026-11-16T16:20",
+        "name": "Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 10
+      },
+      {
+        "id": "414a5c82-7a29-46f9-80cb-b0480e91a1dc",
+        "start": "2026-11-17T10:15",
+        "end": "2026-11-17T11:05",
+        "name": "Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 10
+      },
+      {
+        "id": "375c06b2-74ab-434f-a50e-5f0173a6c6de",
+        "start": "2026-11-17T12:15",
+        "end": "2026-11-17T14:05",
+        "name": "Daytime ADULT Shinny",
+        "type": "Pickup Hockey",
+        "ticket": 10
+      },
+      {
+        "id": "73ecede1-2aa9-4240-96aa-90e4cc7db96e",
+        "start": "2026-11-17T12:15",
+        "end": "2026-11-17T14:05",
+        "name": "Goalies Only",
+        "type": "Pickup Hockey",
+        "ticket": 19.05
+      },
+      {
+        "id": "75c7dd8d-aaf1-4954-bca8-0a165881b3bb",
+        "start": "2026-11-17T15:30",
+        "end": "2026-11-17T16:20",
+        "name": "Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 10
+      },
+      {
+        "id": "061608be-c89f-4346-bac3-832e3ffbfb74",
+        "start": "2026-11-17T16:00",
+        "end": "2026-11-17T16:50",
+        "name": "Stick & Puck (TRAINING)",
+        "type": "Stick and Puck",
+        "ticket": 20
+      },
+      {
+        "id": "b6e5c18c-4f80-4c92-ab64-2902d91a145c",
+        "start": "2026-11-18T10:00",
+        "end": "2026-11-18T10:50",
+        "name": "Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 10
+      },
+      {
+        "id": "6f08d2d6-be20-4c0c-95be-f811aab61ce4",
+        "start": "2026-11-18T12:15",
+        "end": "2026-11-18T13:05",
+        "name": "Daytime ADULT Shinny",
+        "type": "Pickup Hockey",
+        "ticket": 10
+      },
+      {
+        "id": "e34f1e03-1167-4166-95d1-e5a66b09b13c",
+        "start": "2026-11-18T12:15",
+        "end": "2026-11-18T13:05",
+        "name": "Goalies Only",
+        "type": "Pickup Hockey",
+        "ticket": 19.05
+      },
+      {
+        "id": "63f68755-91ca-488a-95a7-fec5c08657dd",
+        "start": "2026-11-18T15:30",
+        "end": "2026-11-18T16:20",
+        "name": "Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 10
+      },
+      {
+        "id": "7c0f77b3-4cc5-4960-ad3c-ef9d50185fdc",
+        "start": "2026-11-19T10:15",
+        "end": "2026-11-19T11:05",
+        "name": "Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 10
+      },
+      {
+        "id": "c093b5b1-144b-4a48-b935-34e8e66ddec9",
+        "start": "2026-11-19T12:15",
+        "end": "2026-11-19T14:05",
+        "name": "Daytime ADULT Shinny",
+        "type": "Pickup Hockey",
+        "ticket": 10
+      },
+      {
+        "id": "86a21689-16ef-46bb-8db4-44fef9fdd9c2",
+        "start": "2026-11-19T12:15",
+        "end": "2026-11-19T14:05",
+        "name": "Goalies Only",
+        "type": "Pickup Hockey",
+        "ticket": 19.05
+      },
+      {
+        "id": "d6314fcb-ae8f-42b6-81e4-abcc8dcbb6e3",
+        "start": "2026-11-19T15:30",
+        "end": "2026-11-19T16:20",
+        "name": "Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 10
+      },
+      {
+        "id": "3284a5ad-c83a-4a52-ba5e-cf30d1b32b28",
+        "start": "2026-11-19T16:15",
+        "end": "2026-11-19T17:05",
+        "name": "Stick & Puck (TRAINING)",
+        "type": "Stick and Puck",
+        "ticket": 20
+      },
+      {
+        "id": "5ef7e3f1-a755-4350-827f-a7fc331ed64d",
+        "start": "2026-11-20T10:00",
+        "end": "2026-11-20T10:50",
+        "name": "Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 10
+      },
+      {
+        "id": "7b333d9d-99e6-4484-9949-151ae773caa0",
+        "start": "2026-11-20T12:15",
+        "end": "2026-11-20T13:05",
+        "name": "Goalies Only",
+        "type": "Pickup Hockey",
+        "ticket": 19.05
+      },
+      {
+        "id": "a557d3bb-f43a-44c6-9b2a-14cb0d470f25",
+        "start": "2026-11-20T12:30",
+        "end": "2026-11-20T13:20",
+        "name": "Daytime ADULT Shinny",
+        "type": "Pickup Hockey",
+        "ticket": 10
+      },
+      {
+        "id": "b8292190-85da-4d4c-85f4-d684388bd0e2",
+        "start": "2026-11-20T13:30",
+        "end": "2026-11-20T14:20",
+        "name": "Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 10
+      },
+      {
+        "id": "ced1cd61-a858-4e58-9a4f-fb9511d7e7d4",
+        "start": "2026-11-20T17:00",
+        "end": "2026-11-20T17:50",
+        "name": "Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 10
+      },
+      {
+        "id": "78750e82-564e-4841-bd2f-74ac4d4178af",
+        "start": "2026-11-23T10:15",
+        "end": "2026-11-23T11:05",
+        "name": "Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 10
+      },
+      {
+        "id": "98ee46d6-0005-42ba-89b9-b4ef2b94d039",
+        "start": "2026-11-23T12:15",
+        "end": "2026-11-23T13:05",
+        "name": "Daytime ADULT Shinny",
+        "type": "Pickup Hockey",
+        "ticket": 10
+      },
+      {
+        "id": "47af7353-b660-46a2-84ab-3131748aa3a0",
+        "start": "2026-11-23T12:15",
+        "end": "2026-11-23T13:05",
+        "name": "Goalies Only",
+        "type": "Pickup Hockey",
+        "ticket": 19.05
+      },
+      {
+        "id": "9c097255-c550-4802-b69e-7fa0b8aa20e1",
+        "start": "2026-11-23T15:30",
+        "end": "2026-11-23T16:20",
+        "name": "Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 10
+      },
+      {
+        "id": "e50329ad-bb59-4756-96a9-2bbdfc21e994",
+        "start": "2026-11-24T10:15",
+        "end": "2026-11-24T11:05",
+        "name": "Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 10
+      },
+      {
+        "id": "e7ae2468-8fd0-4406-b4b6-579d7fdb59c0",
+        "start": "2026-11-24T12:15",
+        "end": "2026-11-24T14:05",
+        "name": "Daytime ADULT Shinny",
+        "type": "Pickup Hockey",
+        "ticket": 10
+      },
+      {
+        "id": "cd35ed2c-b675-413c-953a-791e6277b076",
+        "start": "2026-11-24T12:15",
+        "end": "2026-11-24T14:05",
+        "name": "Goalies Only",
+        "type": "Pickup Hockey",
+        "ticket": 19.05
+      },
+      {
+        "id": "0467c95c-6306-406f-aad1-ce812d40e4c4",
+        "start": "2026-11-24T15:30",
+        "end": "2026-11-24T16:20",
+        "name": "Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 10
+      },
+      {
+        "id": "8ac7c20c-1d74-42a0-a4ee-43e9e8459b97",
+        "start": "2026-11-24T16:00",
+        "end": "2026-11-24T16:50",
+        "name": "Stick & Puck (TRAINING)",
+        "type": "Stick and Puck",
+        "ticket": 20
+      },
+      {
+        "id": "f5600c16-3c23-402c-b2ea-3934e980bba6",
+        "start": "2026-11-25T10:00",
+        "end": "2026-11-25T10:50",
+        "name": "Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 10
+      },
+      {
+        "id": "0e151675-4040-4a19-bbcb-f6cbf4b918c7",
+        "start": "2026-11-25T12:15",
+        "end": "2026-11-25T13:05",
+        "name": "Daytime ADULT Shinny",
+        "type": "Pickup Hockey",
+        "ticket": 10
+      },
+      {
+        "id": "b9970660-1c10-46a1-a7b4-486bd4899389",
+        "start": "2026-11-25T12:15",
+        "end": "2026-11-25T13:05",
+        "name": "Goalies Only",
+        "type": "Pickup Hockey",
+        "ticket": 19.05
+      },
+      {
+        "id": "0ad40deb-cbda-4748-9fb7-fd69ae55070f",
+        "start": "2026-11-25T15:30",
+        "end": "2026-11-25T16:20",
+        "name": "Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 10
+      },
+      {
+        "id": "b60fd8c4-c4d6-4379-9ead-4f0b6e8be9f6",
+        "start": "2026-11-26T10:15",
+        "end": "2026-11-26T11:05",
+        "name": "Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 10
+      },
+      {
+        "id": "eaf7a93f-c72a-4bf5-a0fd-6bf8429c0b0a",
+        "start": "2026-11-26T12:15",
+        "end": "2026-11-26T14:05",
+        "name": "Daytime ADULT Shinny",
+        "type": "Pickup Hockey",
+        "ticket": 10
+      },
+      {
+        "id": "294976d0-1a46-456c-830a-c42dac4bf40b",
+        "start": "2026-11-26T12:15",
+        "end": "2026-11-26T14:05",
+        "name": "Goalies Only",
+        "type": "Pickup Hockey",
+        "ticket": 19.05
+      },
+      {
+        "id": "a01bf4ab-052a-431a-bd79-431e279d56b7",
+        "start": "2026-11-26T15:30",
+        "end": "2026-11-26T16:20",
+        "name": "Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 10
+      },
+      {
+        "id": "ffefc8ea-03b0-4c58-8baf-eddb7d9fed1a",
+        "start": "2026-11-26T16:15",
+        "end": "2026-11-26T17:05",
+        "name": "Stick & Puck (TRAINING)",
+        "type": "Stick and Puck",
+        "ticket": 20
+      },
+      {
+        "id": "fc9e88cc-c1eb-4bcc-ae82-b6f77d75eeae",
+        "start": "2026-11-27T10:00",
+        "end": "2026-11-27T10:50",
+        "name": "Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 10
+      },
+      {
+        "id": "e69e4eb4-8a72-4a4f-b565-79fc76e82c60",
+        "start": "2026-11-27T12:15",
+        "end": "2026-11-27T13:05",
+        "name": "Daytime ADULT Shinny",
+        "type": "Pickup Hockey",
+        "ticket": 10
+      },
+      {
+        "id": "0b91e56a-8862-4669-ac10-84bc3f131ebf",
+        "start": "2026-11-27T12:15",
+        "end": "2026-11-27T13:05",
+        "name": "Goalies Only",
+        "type": "Pickup Hockey",
+        "ticket": 19.05
+      },
+      {
+        "id": "98606459-9b1f-4e1f-9841-eeec37e3d5f4",
+        "start": "2026-11-27T15:30",
+        "end": "2026-11-27T16:20",
+        "name": "Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 10
+      },
+      {
+        "id": "789f57e0-e3da-4ec0-b3b6-b9f9d1c9531b",
+        "start": "2026-11-30T10:15",
+        "end": "2026-11-30T11:05",
+        "name": "Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 10
+      },
+      {
+        "id": "05c0f2c1-400c-432f-99bc-2a57c723336e",
+        "start": "2026-11-30T12:15",
+        "end": "2026-11-30T13:05",
+        "name": "Daytime ADULT Shinny",
+        "type": "Pickup Hockey",
+        "ticket": 10
+      },
+      {
+        "id": "222c1ae3-8f99-4436-8ca1-d11ed1496747",
+        "start": "2026-11-30T12:15",
+        "end": "2026-11-30T13:05",
+        "name": "Goalies Only",
+        "type": "Pickup Hockey",
+        "ticket": 19.05
+      },
+      {
+        "id": "19dc1c51-c35c-4f58-b32c-929ad51aa59f",
+        "start": "2026-11-30T15:30",
+        "end": "2026-11-30T16:20",
+        "name": "Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 10
+      },
+      {
+        "id": "b0910e3f-6382-48fa-8e88-600a791b2529",
+        "start": "2026-12-01T10:15",
+        "end": "2026-12-01T11:05",
+        "name": "Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 10
+      },
+      {
+        "id": "3558137a-5792-4cf6-b4e2-3f271d33d93f",
+        "start": "2026-12-01T12:15",
+        "end": "2026-12-01T14:05",
+        "name": "Daytime ADULT Shinny",
+        "type": "Pickup Hockey",
+        "ticket": 10
+      },
+      {
+        "id": "725960b2-78fc-4bc1-a083-7224f32ac837",
+        "start": "2026-12-01T12:15",
+        "end": "2026-12-01T14:05",
+        "name": "Goalies Only",
+        "type": "Pickup Hockey",
+        "ticket": 19.05
+      },
+      {
+        "id": "37f48b70-57c0-4a49-bc19-8ad44d32cdbe",
+        "start": "2026-12-01T15:30",
+        "end": "2026-12-01T16:20",
+        "name": "Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 10
+      },
+      {
+        "id": "359d5e9e-116f-4b09-a8ec-cc25e63bfd4d",
+        "start": "2026-12-01T16:15",
+        "end": "2026-12-01T17:05",
+        "name": "Stick & Puck (TRAINING)",
+        "type": "Stick and Puck",
+        "ticket": 20
+      },
+      {
+        "id": "9c3c9149-6eca-4ad8-b864-26aac4db4658",
+        "start": "2026-12-02T12:15",
+        "end": "2026-12-02T13:05",
+        "name": "Daytime ADULT Shinny",
+        "type": "Pickup Hockey",
+        "ticket": 10
+      },
+      {
+        "id": "ee694483-88a2-4ac1-b013-754152cdf999",
+        "start": "2026-12-02T12:15",
+        "end": "2026-12-02T13:05",
+        "name": "Goalies Only",
+        "type": "Pickup Hockey",
+        "ticket": 19.05
+      },
+      {
+        "id": "0474fb48-efd8-47b5-8db6-fc3a3283a9df",
+        "start": "2026-12-02T15:30",
+        "end": "2026-12-02T16:20",
+        "name": "Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 10
+      }
+    ]
+  }
+}
