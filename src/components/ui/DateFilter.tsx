@@ -197,12 +197,12 @@ export function FilterChips({
       <ProgramTypeFilter types={types} onChange={onTypesChange} />
 
       <Button
-        variant={hideEmpty ? "default" : "secondary"}
+        variant="secondary"
         size="default"
         className="shadow-xs"
         onClick={() => onHideEmptyChange(!hideEmpty)}
       >
-        Hide arenas without programs
+        {hideEmpty ? "Show all arenas" : "Hide arenas without programs"}
       </Button>
     </div>
   );

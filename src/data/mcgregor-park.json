@@ -8,127 +8,142 @@
     "lon": -79.280149
   },
   "schedule": {
-    "updatedAt": "2026-11-02T00:32:49.325Z",
+    "updatedAt": "2026-11-02T00:43:11.481Z",
     "programs": [
       {
-        "id": "9e46f0d0-b0a4-4b05-80f6-3d4bd3913b79",
+        "id": "e4190e90-d18d-44e6-b70f-0dd9b6737017",
         "start": "2026-11-02T09:00",
         "end": "2026-11-02T10:00",
         "name": "Leisure Skate: Older Adult (Unsupervised)",
         "type": "Public Skate",
-        "notes": "60 years and over"
+        "notes": "60 years and over",
+        "ticket": 0
       },
       {
-        "id": "fdae5899-58c6-445f-b06c-1e64505b94d4",
+        "id": "f45693b2-3162-4371-a46e-e23b73b5a8c6",
         "start": "2026-11-02T10:00",
         "end": "2026-11-02T11:00",
         "name": "Leisure Skate: Child with Caregiver (Unsupervised)",
         "type": "Public Skate",
-        "notes": "0 - 12 years"
+        "notes": "0 - 12 years",
+        "ticket": 0
       },
       {
-        "id": "eff6a44b-0bf9-4709-8b52-802bb2e70212",
+        "id": "f6ef666d-23b3-4b89-80f5-3be9726e68e1",
         "start": "2026-11-02T11:00",
         "end": "2026-11-02T11:45",
         "name": "Shinny: Child with Caregiver (Unsupervised)",
         "type": "Pickup Hockey",
-        "notes": "0 - 12 years"
+        "notes": "0 - 12 years",
+        "ticket": 0
       },
       {
-        "id": "db832c46-28f5-4ce4-8e6c-f4189f0186a9",
+        "id": "36d9f218-1820-4385-9f0e-d550c986a2a9",
         "start": "2026-11-03T09:00",
         "end": "2026-11-03T09:45",
         "name": "Leisure Skate: Older Adult (Unsupervised)",
         "type": "Public Skate",
-        "notes": "60 years and over"
+        "notes": "60 years and over",
+        "ticket": 0
       },
       {
-        "id": "41f75c83-0175-4db8-9eb9-7b5d46d7b44b",
+        "id": "bbf9ae4c-0058-4a64-af76-094d80c927ac",
         "start": "2026-11-03T09:45",
         "end": "2026-11-03T11:00",
         "name": "Shinny: Older Adult (Unsupervised)",
         "type": "Pickup Hockey",
-        "notes": "60 years and over"
+        "notes": "60 years and over",
+        "ticket": 0
       },
       {
-        "id": "594bc8e6-e1d6-4326-a92c-f8e51d32f0b6",
+        "id": "e83ccaa8-ef8e-49d1-bcc2-ea88eaf00227",
         "start": "2026-11-03T11:45",
         "end": "2026-11-03T13:15",
         "name": "Leisure Skate: Child with Caregiver (Unsupervised)",
         "type": "Public Skate",
-        "notes": "0 - 12 years"
+        "notes": "0 - 12 years",
+        "ticket": 0
       },
       {
-        "id": "e81cc640-28fe-4bdf-a8db-fa96dd1f3110",
+        "id": "786c7a99-5786-49c9-a79a-572bfb583a3f",
         "start": "2026-11-04T09:00",
         "end": "2026-11-04T10:00",
         "name": "Leisure Skate: Older Adult (Unsupervised)",
         "type": "Public Skate",
-        "notes": "60 years and over"
+        "notes": "60 years and over",
+        "ticket": 0
       },
       {
-        "id": "e247c67e-c211-4800-8dcb-f3564e967062",
+        "id": "b7ba45ab-5b0b-447e-b575-53e3fa841e98",
         "start": "2026-11-05T09:00",
         "end": "2026-11-05T10:00",
         "name": "Leisure Skate: Older Adult (Unsupervised)",
         "type": "Public Skate",
-        "notes": "60 years and over"
+        "notes": "60 years and over",
+        "ticket": 0
       },
       {
-        "id": "4392f8e3-cabd-49ed-9bb6-99e34b7e5664",
+        "id": "49a7d0f7-65a5-4d73-b9ef-5336f52888b1",
         "start": "2026-11-05T10:00",
         "end": "2026-11-05T11:00",
         "name": "Leisure Skate: Child with Caregiver (Unsupervised)",
         "type": "Public Skate",
-        "notes": "0 - 12 years"
+        "notes": "0 - 12 years",
+        "ticket": 0
       },
       {
-        "id": "e843f6ab-584b-4917-8a95-7b7f7a8cd52d",
+        "id": "644cac3f-dc38-4b90-bce4-b34816522ded",
         "start": "2026-11-05T11:00",
         "end": "2026-11-05T11:45",
         "name": "Shinny: Child with Caregiver (Unsupervised)",
         "type": "Pickup Hockey",
-        "notes": "0 - 12 years"
+        "notes": "0 - 12 years",
+        "ticket": 0
       },
       {
-        "id": "e9c2b1e0-8bca-4261-b225-4f5b8bc939ff",
+        "id": "18589fdf-f4d5-418c-b125-6c734e705d5e",
         "start": "2026-11-06T09:00",
         "end": "2026-11-06T10:00",
         "name": "Leisure Skate: Older Adult (Unsupervised)",
         "type": "Public Skate",
-        "notes": "60 years and over"
+        "notes": "60 years and over",
+        "ticket": 0
       },
       {
-        "id": "0a40d8cd-ff66-4abf-8b49-ca6c2da83ad4",
+        "id": "524fbcc1-2ee1-4bf8-808d-05cf1fafb70c",
         "start": "2026-11-06T11:00",
         "end": "2026-11-06T12:00",
         "name": "Shinny: Older Adult (Women) (Unsupervised)",
         "type": "Pickup Hockey",
-        "notes": "60 years and over"
+        "notes": "60 years and over",
+        "ticket": 0
       },
       {
-        "id": "da1c24f9-376c-414b-a023-f07addfad06c",
+        "id": "e1d69185-e713-4651-a277-729ada48eae6",
         "start": "2026-11-06T16:30",
         "end": "2026-11-06T19:00",
         "name": "Leisure Skate",
         "type": "Public Skate",
-        "notes": "0 years and over"
+        "notes": "0 years and over",
+        "ticket": 0
       },
       {
-        "id": "a1ccc581-271c-420a-a6b3-8f4dbd307dd2",
+        "id": "bdcc3cea-5ba8-4598-a606-22a3ca98250c",
         "start": "2026-11-07T19:30",
         "end": "2026-11-07T21:00",
         "name": "Shinny: Adult (Women)",
         "type": "Pickup Hockey",
-        "notes": "19 years and over"
+        "notes": "19 years and over",
+        "ticket": 0
       },
       {
-        "id": "a74405ad-e4fd-4804-aeec-fcb5e9f81e94",
+        "id": "76299a8e-68c4-4b69-a404-d4ca281cb795",
         "start": "2026-11-07T20:00",
         "end": "2026-11-07T21:30",
         "name": "Leisure Skate",
         "type": "Public Skate",
-        "notes": "0 years and over"
+        "notes": "0 years and over",
+        "ticket": 0
       }
     ]
   }

@@ -27,6 +27,7 @@ import {
 } from "@/lib/schedule";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { WeekView } from "@/components/schedule/WeekView";
+import { TicketBadge } from "@/components/schedule/TicketBadge";
 import { trackEvent } from "@/lib/analytics";
 import { X } from "lucide-react";
 
@@ -447,6 +448,7 @@ function TodayCards({
                     <span className="min-w-0 flex-1 truncate text-sm text-black dark:text-zinc-50">
                       {program.name}
                     </span>
+                    <TicketBadge ticket={program.ticket} />
                   </div>
                 </li>
               </ul>
@@ -498,6 +500,7 @@ function ListView({
                   <span className="text-black dark:text-zinc-50">
                     {program.name}
                   </span>
+                  <TicketBadge ticket={program.ticket} />
                 </div>
                 {program.notes ? (
                   <div className="w-full text-sm text-zinc-500 dark:text-zinc-400">

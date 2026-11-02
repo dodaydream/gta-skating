@@ -50,6 +50,13 @@ export function formatTimeRange(start: string, end: string): string {
   return `${start.slice(11, 16)}\u2013${end.slice(11, 16)}`;
 }
 
+/** Human label for a program's drop-in price: "Free", "$5.90", or null when unknown. */
+export function formatTicket(ticket: number | undefined): string | null {
+  if (ticket === undefined) return null;
+  if (ticket <= 0) return "Free";
+  return `$${ticket.toFixed(2)}`;
+}
+
 export function formatDuration(start: string, end: string): string {
   const startMin = toMinutes(start.slice(11, 16));
   const endMin = toMinutes(end.slice(11, 16));

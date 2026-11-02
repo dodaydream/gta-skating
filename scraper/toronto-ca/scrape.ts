@@ -111,6 +111,8 @@ function buildPrograms(rows: FeedRow[]): Program[] {
       name: row.c,
       type: classifyProgram(row.c),
       notes: row.age || undefined,
+      // City of Toronto drop-in skating is free.
+      ticket: 0,
     };
     if (seen.has(program.id)) continue;
     seen.add(program.id);

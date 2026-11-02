@@ -8,23 +8,25 @@
     "lon": -79.48157
   },
   "schedule": {
-    "updatedAt": "2026-11-02T00:32:47.407Z",
+    "updatedAt": "2026-11-02T00:43:08.430Z",
     "programs": [
       {
-        "id": "be1a0f0e-5117-4b54-8153-e45e7feb76cf",
+        "id": "4cc19e5e-d57d-43db-9490-c3ddd409132d",
         "start": "2026-11-02T17:00",
         "end": "2026-11-02T18:30",
         "name": "Shinny: Child with Caregiver",
         "type": "Pickup Hockey",
-        "notes": "8 - 12 years"
+        "notes": "8 - 12 years",
+        "ticket": 0
       },
       {
-        "id": "7ac25486-1a54-4c26-b09f-f2b43e48a968",
+        "id": "983ac54d-87ce-4d2a-8174-f5959365b061",
         "start": "2026-11-02T18:30",
         "end": "2026-11-02T20:00",
         "name": "Leisure Skate",
         "type": "Public Skate",
-        "notes": "0 years and over"
+        "notes": "0 years and over",
+        "ticket": 0
       }
     ]
   }

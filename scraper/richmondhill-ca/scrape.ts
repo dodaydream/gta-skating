@@ -32,6 +32,19 @@ const DAYS: DayName[] = [
 /** Only emit events from today through this many days out. */
 const LOOKAHEAD_DAYS = 31;
 
+/**
+ * Published single-visit drop-in fees (CAD) from the arena's skating page.
+ * Public skating is priced by age; the adult single-visit rate ($5.90) is used.
+ * Figure skating, shinny, stick & puck and ringette are a flat $8.70.
+ */
+const PUBLIC_SKATE_FEE = 5.9;
+const PROGRAM_FEE = 8.7;
+
+/** Drop-in price for a program, from its canonical type. */
+function ticketFor(type: ProgramType): number {
+  return type === ProgramType.PublicSkate ? PUBLIC_SKATE_FEE : PROGRAM_FEE;
+}
+
 interface ArenaMeta {
   id: string;
   name: string;
@@ -303,6 +316,7 @@ function buildArenaSchedules(
         end: `${date}T${entry.time.end}`,
         name: entry.programName,
         type: entry.type,
+        ticket: ticketFor(entry.type),
       });
     }
   }
@@ -327,6 +341,7 @@ function addSensorySkate(
       end: `${date}T17:15`,
       name: "Sensory Friendly Skate",
       type: ProgramType.PublicSkate,
+      ticket: ticketFor(ProgramType.PublicSkate),
     });
   }
 }

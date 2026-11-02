@@ -19,6 +19,8 @@ export interface Program {
   name: string;
   type: ProgramType;
   notes?: string;
+  /** Drop-in ticket price in CAD; 0 means the program is free. */
+  ticket: number;
 }
 
 export interface ProgramItem extends Program {

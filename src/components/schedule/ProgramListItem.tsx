@@ -5,6 +5,7 @@ import {
   formatTimeRange,
   getTodayInArenaTime,
 } from "@/lib/schedule";
+import { TicketBadge } from "@/components/schedule/TicketBadge";
 
 export function ProgramListItem({
   program,
@@ -49,6 +50,7 @@ export function ProgramListItem({
         <span className="min-w-0 truncate text-sm font-medium text-black dark:text-zinc-50">
           {program.name}
         </span>
+        <TicketBadge ticket={program.ticket} />
       </div>
       <div className="flex items-center justify-between gap-3 text-xs text-zinc-500 dark:text-zinc-400">
         <span className="min-w-0 truncate">

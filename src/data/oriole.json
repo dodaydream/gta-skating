@@ -8,63 +8,70 @@
     "lon": -79.351281
   },
   "schedule": {
-    "updatedAt": "2026-11-02T00:32:49.725Z",
+    "updatedAt": "2026-11-02T00:43:12.100Z",
     "programs": [
       {
-        "id": "d4329c62-db3a-4d78-8f5a-35245a217906",
+        "id": "c6dd14ac-2963-46df-893c-3d3ce5e8e879",
         "start": "2026-11-01T14:30",
         "end": "2026-11-01T16:30",
         "name": "Leisure Skate",
         "type": "Public Skate",
-        "notes": "0 years and over"
+        "notes": "0 years and over",
+        "ticket": 0
       },
       {
-        "id": "cb580f03-8d27-4dca-80d8-d1968ad4c695",
+        "id": "dfa29214-d4e0-4c8b-a71f-4147f097cf59",
         "start": "2026-11-02T19:00",
         "end": "2026-11-02T21:00",
         "name": "Leisure Skate",
         "type": "Public Skate",
-        "notes": "0 years and over"
+        "notes": "0 years and over",
+        "ticket": 0
       },
       {
-        "id": "7e57cfcb-e181-437b-8228-35d9714fc6dd",
+        "id": "5971dff0-0a24-4b15-b9e1-742dd68987b0",
         "start": "2026-11-05T16:30",
         "end": "2026-11-05T17:15",
         "name": "Shinny: Child",
         "type": "Pickup Hockey",
-        "notes": "6 - 12 years"
+        "notes": "6 - 12 years",
+        "ticket": 0
       },
       {
-        "id": "8614691b-19c7-4ade-867e-25fb3cd5550c",
+        "id": "9d38bdc0-1c92-4795-907c-f629f2c79176",
         "start": "2026-11-05T17:15",
         "end": "2026-11-05T18:00",
         "name": "Shinny: Youth",
         "type": "Pickup Hockey",
-        "notes": "13 - 18 years"
+        "notes": "13 - 18 years",
+        "ticket": 0
       },
       {
-        "id": "51b7d049-1851-41ba-bfc7-423399d819d8",
+        "id": "e5a5bf15-d7e1-4026-afea-149b77329fed",
         "start": "2026-11-07T19:00",
         "end": "2026-11-07T21:00",
         "name": "Leisure Skate",
         "type": "Public Skate",
-        "notes": "0 years and over"
+        "notes": "0 years and over",
+        "ticket": 0
       },
       {
-        "id": "011540db-b807-4e70-ba70-8b8b9caa5db0",
+        "id": "bf32d031-75c5-497d-8293-16b419d0b636",
         "start": "2026-11-07T21:15",
         "end": "2026-11-07T23:00",
         "name": "Shinny: Adult",
         "type": "Pickup Hockey",
-        "notes": "19 years and over"
+        "notes": "19 years and over",
+        "ticket": 0
       },
       {
-        "id": "6bd19016-87e3-4f23-8c02-e259031372d7",
+        "id": "8c2a10a8-6540-45f9-928f-1c62e9df4318",
         "start": "2026-11-08T14:30",
         "end": "2026-11-08T16:30",
         "name": "Leisure Skate",
         "type": "Public Skate",
-        "notes": "0 years and over"
+        "notes": "0 years and over",
+        "ticket": 0
       }
     ]
   }

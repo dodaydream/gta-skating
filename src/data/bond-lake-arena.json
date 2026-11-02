@@ -8,91 +8,103 @@
     "lon": -79.450453
   },
   "schedule": {
-    "updatedAt": "2026-11-02T00:32:46.056Z",
+    "updatedAt": "2026-11-02T00:43:06.046Z",
     "programs": [
       {
-        "id": "ef8a9da9-9148-4a58-b8bd-c02ef4b2db07",
+        "id": "cc77ea36-8ec6-4771-89ce-7a1ea332f76f",
         "start": "2026-11-07T18:30",
         "end": "2026-11-07T20:00",
         "name": "Public Skate",
-        "type": "Public Skate"
+        "type": "Public Skate",
+        "ticket": 5.9
       },
       {
-        "id": "57931eca-3a72-4a5a-8e62-31a22dbe0141",
+        "id": "edfc31ed-5fde-4b08-8a87-e7f01e1144ef",
         "start": "2026-11-07T20:00",
         "end": "2026-11-07T21:30",
         "name": "Shinny",
-        "type": "Pickup Hockey"
+        "type": "Pickup Hockey",
+        "ticket": 8.7
       },
       {
-        "id": "b1d13785-8c58-4db6-b4bf-e8d3935f0189",
+        "id": "89c709e2-365c-41e7-83c9-14ddddf8e223",
         "start": "2026-11-08T14:30",
         "end": "2026-11-08T16:00",
         "name": "Public Skate",
-        "type": "Public Skate"
+        "type": "Public Skate",
+        "ticket": 5.9
       },
       {
-        "id": "a2f41490-0b21-4d39-9798-d935387dd112",
+        "id": "4cb2a815-dc4b-4b52-81f9-168f6b22437b",
         "start": "2026-11-14T18:30",
         "end": "2026-11-14T20:00",
         "name": "Public Skate",
-        "type": "Public Skate"
+        "type": "Public Skate",
+        "ticket": 5.9
       },
       {
-        "id": "f6dabb91-7d8f-4b91-ac74-5beb5df0da50",
+        "id": "9e451574-1b74-4db2-bf40-fda857562471",
         "start": "2026-11-14T20:00",
         "end": "2026-11-14T21:30",
         "name": "Shinny",
-        "type": "Pickup Hockey"
+        "type": "Pickup Hockey",
+        "ticket": 8.7
       },
       {
-        "id": "96332a24-53f8-4f38-a8f4-72b1c5ffe3b8",
+        "id": "68ba4d6c-b498-42bb-8cbd-ddc8f7bdacad",
         "start": "2026-11-15T14:30",
         "end": "2026-11-15T16:00",
         "name": "Public Skate",
-        "type": "Public Skate"
+        "type": "Public Skate",
+        "ticket": 5.9
       },
       {
-        "id": "fcf149b9-379f-4ac5-81f3-ae1ed117395c",
+        "id": "ac6f2f70-ddd9-4a8b-b1b3-dcdbf8bf374b",
         "start": "2026-11-21T18:30",
         "end": "2026-11-21T20:00",
         "name": "Public Skate",
-        "type": "Public Skate"
+        "type": "Public Skate",
+        "ticket": 5.9
       },
       {
-        "id": "5822a579-40e7-4b9c-abac-ff43f0de99a1",
+        "id": "3e5663c4-ea39-4e49-a6f1-87d3beb4200a",
         "start": "2026-11-21T20:00",
         "end": "2026-11-21T21:30",
         "name": "Shinny",
-        "type": "Pickup Hockey"
+        "type": "Pickup Hockey",
+        "ticket": 8.7
       },
       {
-        "id": "2704d3c2-7ada-467b-b102-87ef07a36d89",
+        "id": "c35008bc-549e-4edc-9311-849400025e47",
         "start": "2026-11-22T14:30",
         "end": "2026-11-22T16:00",
         "name": "Public Skate",
-        "type": "Public Skate"
+        "type": "Public Skate",
+        "ticket": 5.9
       },
       {
-        "id": "112142f2-4e97-4e71-9763-10a9046fea16",
+        "id": "8714e89c-eec4-44f5-b821-b4f76b8992d2",
         "start": "2026-11-28T18:30",
         "end": "2026-11-28T20:00",
         "name": "Public Skate",
-        "type": "Public Skate"
+        "type": "Public Skate",
+        "ticket": 5.9
       },
       {
-        "id": "06df502e-0a6f-4fd2-8e23-dbd0b1493daf",
+        "id": "11025bae-ee59-4604-b692-b25e69eef681",
         "start": "2026-11-28T20:00",
         "end": "2026-11-28T21:30",
         "name": "Shinny",
-        "type": "Pickup Hockey"
+        "type": "Pickup Hockey",
+        "ticket": 8.7
       },
       {
-        "id": "bf9bb1c8-fe31-4c40-965c-6eb76e283c57",
+        "id": "f80fdef7-fe25-4be4-abca-0ec59a223781",
         "start": "2026-11-29T14:30",
         "end": "2026-11-29T16:00",
         "name": "Public Skate",
-        "type": "Public Skate"
+        "type": "Public Skate",
+        "ticket": 5.9
       }
     ]
   }

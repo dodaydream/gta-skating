@@ -1,5 +1,6 @@
 import type { Program } from "@/types/schedule";
 import { formatTimeRange, formatDuration } from "@/lib/schedule";
+import { TicketBadge } from "@/components/schedule/TicketBadge";
 
 export function ProgramRow({ program }: { program: Program }) {
   return (
@@ -12,6 +13,7 @@ export function ProgramRow({ program }: { program: Program }) {
           {formatDuration(program.start, program.end)}
         </span>
         <span className="text-black dark:text-zinc-50">{program.name}</span>
+        <TicketBadge ticket={program.ticket} />
       </div>
       <div className="w-full text-sm text-zinc-500 dark:text-zinc-400">
         {program.notes ? <span>{program.notes}</span> : null}

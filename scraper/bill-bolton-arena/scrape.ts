@@ -276,6 +276,8 @@ function buildPrograms(parsed: RawProgram[]): Program[] {
         name: p.name,
         type: classifyProgram(p.name),
         notes: p.notes,
+        // Bill Bolton public skating is free.
+        ticket: 0,
       });
     }
   }
