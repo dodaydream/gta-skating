@@ -116,7 +116,7 @@ function DrawerContent({
       <DrawerPrimitive.Viewport
         data-slot="drawer-viewport"
         data-modal={modal}
-        className="pointer-events-none fixed inset-0 z-50 m-1.5 select-none overflow-clip rounded-b-[max(32px,calc(var(--safe-bottom,0px)*1.2),var(--device-corner-radius,0px))] [corner-shape:squircle] data-[modal=true]:pointer-events-auto"
+        className="pointer-events-none fixed inset-0 z-50 m-1.5 select-none overflow-clip rounded-b-[max(32px,calc(var(--safe-bottom,0px)*1.2),calc(var(--device-corner-radius,0px)-8px))] [corner-shape:squircle] data-[modal=true]:pointer-events-auto"
       >
         <DrawerPrimitive.Popup
           data-slot="drawer-popup"
@@ -124,7 +124,7 @@ function DrawerContent({
           data-snap-points={hasSnapPoints ? "" : undefined}
           className={cn(
             // Base.
-            "group/drawer-popup pointer-events-auto absolute z-50 flex h-(--drawer-content-height) max-h-(--drawer-content-max-height,none) min-h-0 w-(--drawer-content-width,auto) transform-[translate3d(var(--translate-x,0px),var(--translate-y,0px),0)_scale(var(--stack-scale))] flex-col bg-popover text-sm text-popover-foreground transition-[transform,height,opacity,filter] duration-450 ease-[cubic-bezier(0.32,0.72,0,1)] will-change-transform outline-none select-none [interpolate-size:allow-keywords] [corner-shape:squircle] data-[swipe-direction=down]:rounded-t-[max(32px,calc(var(--safe-bottom,0px)*1.2),calc(var(--device-corner-radius,0px)/2))] data-[swipe-direction=down]:border-t data-[swipe-direction=left]:rounded-r-xl data-[swipe-direction=left]:border-r data-[swipe-direction=right]:rounded-l-xl data-[swipe-direction=right]:border-l data-[swipe-direction=up]:rounded-b-xl data-[swipe-direction=up]:border-b",
+            "group/drawer-popup pointer-events-auto absolute z-50 flex h-(--drawer-content-height) max-h-(--drawer-content-max-height,none) min-h-0 w-(--drawer-content-width,auto) transform-[translate3d(var(--translate-x,0px),var(--translate-y,0px),0)_scale(var(--stack-scale))] flex-col bg-popover text-sm text-popover-foreground transition-[transform,height,opacity,filter] duration-450 ease-[cubic-bezier(0.32,0.72,0,1)] will-change-transform outline-none select-none [interpolate-size:allow-keywords] [corner-shape:squircle] data-[swipe-direction=down]:rounded-t-[max(32px,calc(var(--safe-bottom,0px)*1.2),calc(var(--device-corner-radius,0px)-8px))] data-[swipe-direction=down]:border-t data-[swipe-direction=left]:rounded-r-xl data-[swipe-direction=left]:border-r data-[swipe-direction=right]:rounded-l-xl data-[swipe-direction=right]:border-l data-[swipe-direction=up]:rounded-b-xl data-[swipe-direction=up]:border-b",
             // Nested.
             "data-nested-drawer-open:overflow-hidden data-nested-drawer-open:brightness-95",
             // Bleed.
