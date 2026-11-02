@@ -3,7 +3,7 @@ import type { Program } from "@/types/schedule";
 import dayjs from "dayjs";
 import utc from "dayjs/plugin/utc";
 import timezonePlugin from "dayjs/plugin/timezone";
-import "dayjs/locale/fr";
+import "dayjs/locale/fr-ca";
 
 dayjs.extend(utc);
 dayjs.extend(timezonePlugin);
@@ -11,6 +11,14 @@ dayjs.extend(timezonePlugin);
 /** Collapse any BCP-47 tag (e.g. "fr-CA") to a supported UI locale. */
 function uiLocale(locale: string | undefined): "en" | "fr" {
   return (locale ?? "").toLowerCase().startsWith("fr") ? "fr" : "en";
+}
+
+/** dayjs locale per UI locale; French uses the Quebec (Canada) locale. */
+const DAYJS_LOCALE = { en: "en", fr: "fr-ca" } as const;
+
+/** The dayjs locale that matches a UI locale or BCP-47 tag. */
+export function dayjsLocale(locale: string | undefined): string {
+  return DAYJS_LOCALE[uiLocale(locale)];
 }
 
 const DATE_FORMATS = {
@@ -73,7 +81,7 @@ export function formatEventDate(
   locale?: string
 ): string {
   const l = uiLocale(locale);
-  return dayjs.tz(dateStr, timezone).locale(l).format(DATE_FORMATS.event[l]);
+  return dayjs.tz(dateStr, timezone).locale(DAYJS_LOCALE[l]).format(DATE_FORMATS.event[l]);
 }
 
 export function formatHumanDate(
@@ -82,7 +90,7 @@ export function formatHumanDate(
   locale?: string
 ): string {
   const l = uiLocale(locale);
-  return dayjs.tz(dateStr, timezone).locale(l).format(DATE_FORMATS.human[l]);
+  return dayjs.tz(dateStr, timezone).locale(DAYJS_LOCALE[l]).format(DATE_FORMATS.human[l]);
 }
 
 /** Whether the browser's locale uses a 12-hour clock (respecting OS/browser settings). */
@@ -124,7 +132,7 @@ export function formatUpdatedDate(
   locale?: string
 ): string {
   const l = uiLocale(locale);
-  const d = dayjs(updatedAt).tz(timezone).locale(l);
+  const d = dayjs(updatedAt).tz(timezone).locale(DAYJS_LOCALE[l]);
   const time = d.format(BROWSER_HOUR12 ? "h:mm A" : "HH:mm");
   return `${d.format(DATE_FORMATS.updated[l])} ${time}`;
 }

@@ -13,6 +13,7 @@ const fr: Messages = {
     disclaimer:
       "Les horaires peuvent changer — vérifiez le site Web de l’aréna pour confirmer les heures avant de vous déplacer.",
     privacy: "Politique de confidentialité",
+    dataSources: "Sources des données",
   },
   filters: {
     locate: "Centrer sur votre position",
@@ -26,11 +27,11 @@ const fr: Messages = {
     to: "À",
     today: "Aujourd’hui",
     ok: "OK",
-    anytime: "N’importe quand",
+    anytime: "En tout temps",
     fromDate: "À partir du {{value}}",
     untilDate: "Jusqu’au {{value}}",
     pickDate: "Choisir une date",
-    selectDateRange: "Sélectionner une plage de dates",
+    selectDateRange: "Sélectionner une période",
   },
   programTypes: {
     publicSkate: "Patinage libre",
@@ -42,7 +43,7 @@ const fr: Messages = {
   },
   programs: {
     emptyTitle: "Aucun programme trouvé",
-    emptyDescription: "Essayez une autre plage de dates ou d’autres filtres.",
+    emptyDescription: "Essayez une autre période ou d’autres filtres.",
     noneUpcoming: "Aucune séance à venir.",
     venueWebsite: "Site Web de l’aréna",
     viewOnMap: "Voir sur la carte",

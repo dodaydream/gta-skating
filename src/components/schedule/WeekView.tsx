@@ -5,6 +5,7 @@ import type { RefObject } from "react";
 import { useTranslation } from "react-i18next";
 import type { Program } from "@/types/schedule";
 import {
+  dayjsLocale,
   formatHourLabel,
   formatTimeRange,
   getCurrentMinutesInVenueTime,
@@ -14,7 +15,7 @@ import {
 import { normalizeLocale, type Locale } from "@/i18n/config";
 import { IconChevronLeft, IconChevronRight } from "@tabler/icons-react";
 import dayjs from "dayjs";
-import "dayjs/locale/fr";
+import "dayjs/locale/fr-ca";
 
 const SHORT_DATE_FORMAT: Record<Locale, string> = {
   en: "MMM D",
@@ -174,12 +175,14 @@ export function WeekView({
   const weekEnd = weekStart.add(6, "day");
   const label =
     weekStart.month() === weekEnd.month()
-      ? weekStart.locale(locale).format(SHORT_DATE_FORMAT[locale]) +
+      ? weekStart.locale(dayjsLocale(locale)).format(SHORT_DATE_FORMAT[locale]) +
         " – " +
-        weekEnd.locale(locale).format(SHORT_DATE_FORMAT[locale])
-      : weekStart.locale(locale).format(SHORT_DATE_FORMAT[locale]) +
+        weekEnd.locale(dayjsLocale(locale)).format(SHORT_DATE_FORMAT[locale])
+      : weekStart.locale(dayjsLocale(locale)).format(SHORT_DATE_FORMAT[locale]) +
         " – " +
-        weekEnd.locale(locale).format(`${SHORT_DATE_FORMAT[locale]}, YYYY`);
+        weekEnd
+          .locale(dayjsLocale(locale))
+          .format(`${SHORT_DATE_FORMAT[locale]}, YYYY`);
 
   return (
     <div className="flex flex-col">
@@ -226,11 +229,11 @@ export function WeekView({
               key={col.key}
               className="border-b border-black/[.08] px-1 pb-2 text-center text-xs font-medium text-zinc-700 dark:border-white/[.1] dark:text-zinc-300"
             >
-              {dayjs(`${col.date}T00:00`).locale(locale).format("ddd")}
+              {dayjs(`${col.date}T00:00`).locale(dayjsLocale(locale)).format("ddd")}
               <br />
               <span className="text-[10px] text-zinc-400 dark:text-zinc-500">
                 {dayjs(`${col.date}T00:00`)
-                  .locale(locale)
+                  .locale(dayjsLocale(locale))
                   .format(SHORT_DATE_FORMAT[locale])}
               </span>
             </div>

@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import dayjs from "dayjs";
-import "dayjs/locale/fr";
+import "dayjs/locale/fr-ca";
 import type { TFunction } from "i18next";
 import { useTranslation } from "react-i18next";
 import type { DateRange } from "react-day-picker";
@@ -11,7 +11,7 @@ import { Button } from "@/components/ui/button";
 import { DateRangePicker } from "@/components/ui/date-picker";
 import { ProgramTypeFilter } from "@/components/ui/ProgramTypeFilter";
 import { normalizeLocale, type Locale } from "@/i18n/config";
-import { formatTime } from "@/lib/schedule";
+import { dayjsLocale, formatTime } from "@/lib/schedule";
 import { IconCalendarWeek, IconCalendar } from "@tabler/icons-react";
 
 interface FilterChipsProps {
@@ -26,6 +26,13 @@ interface FilterChipsProps {
   onTypesChange: (types: ProgramType[]) => void;
   className?: string;
 }
+
+/**
+ * Longest selectable date range: one week (7 days inclusive).
+ * react-day-picker's `max` counts the calendar-day difference between the two
+ * endpoints, so seven inclusive days corresponds to a difference of six.
+ */
+const MAX_RANGE_DAYS = 7;
 
 function parseDate(value: string): Date | undefined {
   if (!value) return undefined;
@@ -56,7 +63,7 @@ function formatDateTime(
   t: TFunction,
   locale: Locale
 ): string {
-  const d = dayjs(value).locale(locale);
+  const d = dayjs(value).locale(dayjsLocale(locale));
   const time = formatTime(value);
   const isToday =
     !!now && d.format("YYYY-MM-DD") === dayjs(now).format("YYYY-MM-DD");
@@ -159,13 +166,14 @@ export function FilterChips({
         onChange={handleSelect}
         open={open}
         onOpenChange={setOpen}
+        max={MAX_RANGE_DAYS - 1}
         variant="secondary"
         size="lg"
         className="shadow-xs"
         trigger={
           <>
             {active ? (
-              <IconCalendarWeek className="size-4 text-blue-500" />
+              <IconCalendarWeek className="size-4" />
             ) : (
               <IconCalendar className="size-4" />
             )}

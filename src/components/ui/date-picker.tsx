@@ -43,6 +43,7 @@ value?: DateRange;
     open?: boolean;
     onOpenChange?: (open: boolean) => void;
     numberOfMonths?: number;
+    max?: number;
     align?: "start" | "center" | "end";
     variant?: React.ComponentProps<typeof Button>["variant"];
     size?: React.ComponentProps<typeof Button>["size"];
@@ -58,6 +59,7 @@ function DateRangePicker({
     open = false,
     onOpenChange,
     numberOfMonths = 2,
+    max,
     align = "start",
     variant = "outline",
     size = "default",
@@ -111,6 +113,7 @@ function DateRangePicker({
       selected={value}
       onSelect={onChange}
       numberOfMonths={isDesktop ? numberOfMonths : 1}
+      max={max}
       locale={dateLocale}
       resetOnSelect
     />

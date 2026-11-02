@@ -11,6 +11,7 @@ const en = {
     disclaimer:
       "Schedule data may change — check the venue’s website to confirm times before you go.",
     privacy: "Privacy Policy",
+    dataSources: "Data Sources",
   },
   filters: {
     locate: "Centre on your location",

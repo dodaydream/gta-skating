@@ -55,6 +55,13 @@ jobs:
           echo "NEXT_PUBLIC_ADSENSE_CLIENT=$ADSENSE_CLIENT" >> "$GITHUB_ENV"
           echo "NEXT_PUBLIC_ADSENSE_SLOT=$ADSENSE_SLOT" >> "$GITHUB_ENV"
 
+      - name: Resolve Buy Me a Coffee URL
+        # Public support link; set the NEXT_PUBLIC_BUYMEACOFFEE_URL repository
+        # variable to show the link in the sidebar footer.
+        env:
+          BUYMEACOFFEE_URL: ${{ vars.NEXT_PUBLIC_BUYMEACOFFEE_URL }}
+        run: echo "NEXT_PUBLIC_BUYMEACOFFEE_URL=$BUYMEACOFFEE_URL" >> "$GITHUB_ENV"
+
       - name: Resolve Firebase config
         # Firebase web config values are public; set the NEXT_PUBLIC_FIREBASE_*
         # repository variables to enable busyness reports (unset disables them).

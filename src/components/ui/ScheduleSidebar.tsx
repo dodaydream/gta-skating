@@ -27,27 +27,53 @@ type ScheduleSidebarProps = {
 const DESKTOP_QUERY = "(min-width: 1024px)";
 const SNAP_POINTS = [0.5, 1];
 const REPO_URL = "https://github.com/dodaydream/gta-skating";
+const SUPPORT_URL = process.env.NEXT_PUBLIC_BUYMEACOFFEE_URL;
 
 function ScheduleFooter() {
   const { t } = useTranslation();
   return (
     <footer className="py-2.5 text-[11px] leading-4 text-zinc-400 dark:text-zinc-500">
-      <p>{t("sidebar.disclaimer")}</p>
-      <div className="mt-1 flex items-center gap-2">
+      <p className="mb-3">{t("sidebar.disclaimer")}</p>
+      <p className="mb-1">© {new Date().getFullYear()} GTA Skating</p>
+      <div className="flex flex-wrap items-center gap-x-2 gap-y-1">
         <Link
           href="/privacy"
-          className="hover:text-blue-600 hover:underline dark:hover:text-blue-400"
+          className="whitespace-nowrap hover:text-blue-600 dark:hover:text-blue-400"
         >
           {t("sidebar.privacy")}
         </Link>
         <span aria-hidden="true" className="text-zinc-300 dark:text-zinc-600">
           ·
         </span>
+        <Link
+          href="/data-sources"
+          className="whitespace-nowrap hover:text-blue-600 dark:hover:text-blue-400"
+        >
+          {t("sidebar.dataSources")}
+        </Link>
+        <span aria-hidden="true" className="text-zinc-300 dark:text-zinc-600">
+          ·
+        </span>
+        {SUPPORT_URL ? (
+          <>
+            <a
+              href={SUPPORT_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="whitespace-nowrap bg-clip-text transition-colors hover:bg-gradient-to-r hover:from-[#FFDD00] hover:to-[#FF813F] hover:text-transparent"
+            >
+              Buy Me a Coffee
+            </a>
+            <span aria-hidden="true" className="text-zinc-300 dark:text-zinc-600">
+              ·
+            </span>
+          </>
+        ) : null}
         <a
           href={REPO_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:text-blue-600 hover:underline dark:hover:text-blue-400"
+          className="whitespace-nowrap hover:text-blue-600 dark:hover:text-blue-400"
         >
           GitHub
         </a>
