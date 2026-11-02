@@ -5,6 +5,14 @@ import type { ProgramItem } from "@/types/schedule";
 import { ProgramListItem } from "@/components/schedule/ProgramListItem";
 import { AdUnit } from "@/components/ads/AdUnit";
 import { ScheduleSkeleton } from "@/components/ui/ScheduleSkeleton";
+import {
+  Empty,
+  EmptyDescription,
+  EmptyHeader,
+  EmptyMedia,
+  EmptyTitle,
+} from "@/components/ui/empty";
+import { IconSnowflake } from "@tabler/icons-react";
 
 type ProgramListProps = {
   loading: boolean;
@@ -28,6 +36,18 @@ export function ProgramList({
       <div className={listClassName}>
         {loading ? (
           <ScheduleSkeleton />
+        ) : items.length === 0 ? (
+          <Empty className="my-6">
+            <EmptyHeader>
+              <EmptyMedia variant="icon">
+                <IconSnowflake />
+              </EmptyMedia>
+              <EmptyTitle>No programs found</EmptyTitle>
+              <EmptyDescription>
+                Try a different date range or filters.
+              </EmptyDescription>
+            </EmptyHeader>
+          </Empty>
         ) : (
           items.map((item) => (
             <ProgramListItem

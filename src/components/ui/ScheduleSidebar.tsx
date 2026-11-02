@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import type { Arena } from "@/types/arena";
 import type { ProgramItem } from "@/types/schedule";
@@ -26,13 +26,12 @@ const DESKTOP_QUERY = "(min-width: 1024px)";
 const SNAP_POINTS = [0.5, 1];
 const REPO_URL = "https://github.com/dodaydream/gta-skating";
 
-function ScheduleFooter({ arenaCount }: { arenaCount: number }) {
+function ScheduleFooter() {
   return (
     <footer className="py-2.5 text-[11px] leading-4 text-zinc-400 dark:text-zinc-500">
       <p>
-        {arenaCount} arena{arenaCount === 1 ? "" : "s"}. Schedule data may
-        change &mdash; check the arena&rsquo;s website to confirm times before
-        you go.
+        Schedule data may change &mdash; check the arena&rsquo;s website to
+        confirm times before you go.
       </p>
       <div className="mt-1 flex items-center gap-2">
         <Link
@@ -89,18 +88,13 @@ export function ScheduleSidebar({
     if (!isDesktop) setOpen(!detailOpen);
   }, [detailOpen, isDesktop]);
 
-  const arenaCount = useMemo(
-    () => new Set(items.map((item) => item.arena.name)).size,
-    [items]
-  );
-
   return (
     <>
       {/* Desktop static sidebar */}
       <aside className="hidden flex-col border-t border-black/[.08] bg-card dark:border-white/[.145] lg:static lg:flex lg:w-96 lg:shrink-0 lg:border-t-0">
-        <div className="min-h-0 flex-1 overflow-y-auto px-6 pt-10 pb-8">
+        <div className="flex min-h-0 flex-1 flex-col overflow-y-auto p-6">
           <div className="mb-4 flex flex-col">
-            <h1 className="text-2xl font-semibold tracking-tight text-black dark:text-zinc-50">
+            <h1 className="text-xl font-semibold tracking-tight text-black dark:text-zinc-50">
               GTA Skating Arenas
             </h1>
             <span className="text-sm text-zinc-500 dark:text-zinc-400">
@@ -113,9 +107,10 @@ export function ScheduleSidebar({
             loading={loading}
             userLocation={userLocation}
             onSelectArena={onSelectArena}
-            listClassName="flex flex-col gap-2"
+            className="flex min-h-0 flex-1 flex-col"
+            listClassName="flex flex-1 flex-col gap-2"
           />
-          <ScheduleFooter arenaCount={arenaCount} />
+          <ScheduleFooter />
         </div>
       </aside>
 
@@ -146,14 +141,16 @@ export function ScheduleSidebar({
             </div>
           }
         >
-          <div className="min-h-0 flex-1 overflow-y-auto px-6 pb-8">
+          <div className="flex min-h-0 flex-1 flex-col overflow-y-auto px-6 pb-8">
             <ProgramList
               items={items}
               loading={loading}
               userLocation={userLocation}
               onSelectArena={onSelectArena}
+              className="flex min-h-0 flex-1 flex-col"
+              listClassName="flex flex-1 flex-col gap-2"
             />
-            <ScheduleFooter arenaCount={arenaCount} />
+            <ScheduleFooter />
           </div>
         </DrawerContent>
       </Drawer>

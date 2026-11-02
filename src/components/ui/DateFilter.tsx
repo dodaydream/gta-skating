@@ -198,7 +198,7 @@ export function FilterChips({
 
       <Button
         variant="secondary"
-        size="default"
+        size="lg"
         className="shadow-xs"
         onClick={() => onHideEmptyChange(!hideEmpty)}
       >

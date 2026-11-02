@@ -159,10 +159,10 @@ export default function Home() {
             userLocation={userLocation}
           />
 
-          <div className="absolute left-0 right-0 top-[calc(var(--safe-top)_+_0.75rem)] z-40 flex items-start gap-2 pl-[calc(var(--safe-left)_+_1rem)] pr-[calc(var(--safe-right)_+_1rem)]">
+          <div className="absolute left-0 right-0 top-[calc(var(--safe-top)_+_0.75rem)] z-40 flex items-start gap-2 pl-[calc(var(--safe-left)_+_1rem)] pr-[calc(var(--safe-right)_+_1rem)] lg:top-[calc(var(--safe-top)_+_1.5rem)] lg:pl-[calc(var(--safe-left)_+_1.5rem)] lg:pr-[calc(var(--safe-right)_+_1.5rem)]">
             <Button
               variant="secondary"
-              size="icon"
+              size="icon-lg"
               className="shadow-xs"
               onClick={() => {
                 trackEvent("locate_me");

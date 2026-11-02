@@ -97,6 +97,7 @@ export function ProgramTypeFilter({
           render={
             <Button
               variant={active ? "default" : "secondary"}
+              size="lg"
               className={`shadow-xs ${className}`}
             />
           }
@@ -114,6 +115,7 @@ export function ProgramTypeFilter({
     <>
       <Button
         variant={active ? "default" : "secondary"}
+        size="lg"
         className={`shadow-xs ${className}`}
         onClick={() => setOpen(true)}
       >

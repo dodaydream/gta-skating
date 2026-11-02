@@ -207,4 +207,31 @@
   left: var(--safe-left);
 }
 
+/* Desktop: unify map-control insets with the app's 1.5rem padding so the
+   top/bottom controls line up with the sidebar title and footer. */
+@media (min-width: 1024px) {
+  .maplibregl-control-container .maplibregl-ctrl-top-right {
+    top: calc(var(--safe-top) + 1.5rem);
+    right: calc(var(--safe-right) + 1.5rem);
+  }
+
+  .maplibregl-control-container .maplibregl-ctrl-bottom-left {
+    bottom: calc(var(--safe-bottom) + 1.5rem);
+    left: calc(var(--safe-left) + 1.5rem);
+  }
+
+  .maplibregl-control-container .maplibregl-ctrl-bottom-right {
+    bottom: calc(var(--safe-bottom) + 1.5rem);
+    right: calc(var(--safe-right) + 1.5rem);
+  }
+
+  /* Drop MapLibre's own 10px control margins so the container offsets above
+     are the only inset. */
+  .maplibregl-control-container .maplibregl-ctrl-top-right > .maplibregl-ctrl,
+  .maplibregl-control-container .maplibregl-ctrl-bottom-left > .maplibregl-ctrl,
+  .maplibregl-control-container .maplibregl-ctrl-bottom-right > .maplibregl-ctrl {
+    margin: 0;
+  }
+}
+
 
