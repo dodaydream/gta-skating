@@ -62,6 +62,9 @@ const en = {
     emptyProgramsAll: "This venue has no upcoming programs scheduled.",
     emptyProgramsFiltered: "No upcoming programs match your current filters.",
     showAllPrograms: "Show all programs",
+    share: "Share venue",
+    shareText: "Skating schedule for {{name}}",
+    shareCopied: "Link copied",
   },
   week: {
     previous: "Previous week",

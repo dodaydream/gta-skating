@@ -40,8 +40,7 @@ import { BusyBadge } from "@/components/schedule/BusyBadge";
 import { BusynessInput } from "@/components/schedule/BusynessInput";
 import { trackEvent } from "@/lib/analytics";
 import { normalizeLocale } from "@/i18n/config";
-import { X } from "lucide-react";
-import { IconSnowflake } from "@tabler/icons-react";
+import { IconCheck, IconShare2, IconSnowflake, IconX } from "@tabler/icons-react";
 import {
   Empty,
   EmptyContent,
@@ -52,6 +51,8 @@ import {
 } from "@/components/ui/empty";
 
 const DESKTOP_QUERY = "(min-width: 1024px)";
+
+const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
 const SNAP_POINTS = [0.5, 0.9];
 
@@ -221,7 +222,67 @@ function CloseButton({
         className
       )}
     >
-      <X className="h-5 w-5" />
+      <IconX className="h-5 w-5" />
+    </button>
+  );
+}
+
+function ShareButton({
+  slug,
+  name,
+  className,
+}: {
+  slug: string;
+  name: string;
+  className?: string;
+}) {
+  const { t } = useTranslation();
+  const [copied, setCopied] = useState(false);
+
+  const handleClick = async () => {
+    const url = `${window.location.origin}${BASE_PATH}/venue/${slug}`;
+    const shareData = {
+      title: name,
+      text: t("venue.shareText", { name }),
+      url,
+    };
+
+    if (typeof navigator.share === "function") {
+      try {
+        await navigator.share(shareData);
+        trackEvent("venue_share", { venue: slug });
+        return;
+      } catch (err) {
+        if (err instanceof DOMException && err.name === "AbortError") return;
+      }
+    }
+
+    try {
+      await navigator.clipboard.writeText(url);
+      trackEvent("venue_share_copy", { venue: slug });
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    } catch {
+      window.prompt(t("venue.share"), url);
+    }
+  };
+
+  return (
+    <button
+      type="button"
+      onClick={handleClick}
+      aria-label={copied ? t("venue.shareCopied") : t("venue.share")}
+      title={t("venue.share")}
+      className={cn(
+        "rounded-lg p-1.5 text-zinc-500 transition-colors hover:bg-zinc-100 hover:text-black dark:hover:bg-zinc-800 dark:hover:text-zinc-50",
+        className
+      )}
+    >
+      {copied ? (
+        <IconCheck className="h-5 w-5 text-green-600 dark:text-green-400" />
+      ) : (
+        <IconShare2 className="h-5 w-5" />
+      )}
     </button>
   );
 }
@@ -411,7 +472,10 @@ export function VenueDetailModal({
               ) : null}
             </PanelDescription>
           </div>
-          <CloseButton onClick={onClose} />
+          <div className="flex items-center gap-1">
+            <ShareButton slug={slug} name={venue.name} />
+            <CloseButton onClick={onClose} />
+          </div>
         </header>
       }
     >
