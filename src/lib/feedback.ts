@@ -7,15 +7,11 @@ import timezonePlugin from "dayjs/plugin/timezone";
 dayjs.extend(utc);
 dayjs.extend(timezonePlugin);
 
-// Minimum reports before a busyness badge is shown. Defaults to 3; can be
-// lowered locally via NEXT_PUBLIC_BUSY_MIN_REPORTS for testing.
-const MIN_REPORTS = Number(process.env.NEXT_PUBLIC_BUSY_MIN_REPORTS) || 3;
-
 /**
  * Bucket historical reports onto the program they most likely describe, using
  * the report's day-of-week and minute-of-day in the venue's timezone. Returns
  * the average busy level and the number of matching reports, or `null` when
- * there are fewer than the confidence floor.
+ * there are fewer than 3 reports (confidence floor).
  */
 export function predictBusy(
   reports: BusyReport[],
@@ -42,6 +38,6 @@ export function predictBusy(
     n += 1;
   }
 
-  if (n < MIN_REPORTS) return null;
+  if (n < 3) return null;
   return { busy: total / n, n };
 }

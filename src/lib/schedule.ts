@@ -17,6 +17,18 @@ export function isProgramNotEnded(end: string, timezone: string): boolean {
   return !dayjs.tz(end, timezone).isBefore(dayjs().tz(timezone));
 }
 
+/** True when the program is running right now (venue-local), inclusive of its end. */
+export function isProgramInProgress(
+  program: Program,
+  timezone: string
+): boolean {
+  const now = dayjs().tz(timezone);
+  return (
+    !dayjs.tz(program.start, timezone).isAfter(now) &&
+    !dayjs.tz(program.end, timezone).isBefore(now)
+  );
+}
+
 export function getCurrentMinutesInVenueTime(timezone: string): number {
   const now = dayjs().tz(timezone);
   return now.hour() * 60 + now.minute();

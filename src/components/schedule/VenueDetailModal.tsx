@@ -25,11 +25,10 @@ import {
   distanceKm,
   formatEventDate,
   formatTimeRange,
-  getCurrentMinutesInVenueTime,
   getTodayInVenueTime,
+  isProgramInProgress,
   isProgramNotEnded,
   osmUrl,
-  toMinutes,
 } from "@/lib/schedule";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { WeekView } from "@/components/schedule/WeekView";
@@ -165,13 +164,6 @@ function CloseButton({
   );
 }
 
-function isProgramInProgress(program: Program, nowMinutes: number): boolean {
-  const start = toMinutes(program.start.slice(11, 16));
-  const end = toMinutes(program.end.slice(11, 16));
-  if (end <= start) return nowMinutes >= start || nowMinutes < end;
-  return nowMinutes >= start && nowMinutes <= end;
-}
-
 export function VenueDetailModal({
   slug,
   onClose,
@@ -252,10 +244,6 @@ export function VenueDetailModal({
     return () => clearInterval(id);
   }, []);
 
-  const nowMinutes = venue
-    ? getCurrentMinutesInVenueTime(venue.timezone)
-    : null;
-
   if (error) {
     return (
       <Panel
@@ -300,9 +288,9 @@ export function VenueDetailModal({
     isProgramNotEnded(program.end, venue.timezone)
   );
   const updated = new Date(venue.schedule.updatedAt).toISOString().slice(0, 10);
-  const inProgress =
-    nowMinutes !== null &&
-    programs.some((program) => isProgramInProgress(program, nowMinutes));
+  const inProgress = programs.some((program) =>
+    isProgramInProgress(program, venue.timezone)
+  );
 
   const distance =
     userLocation &&
