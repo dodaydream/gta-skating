@@ -361,18 +361,6 @@
       "type": "indoor"
     },
     {
-      "id": "george-bell",
-      "name": "George Bell Arena",
-      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=3488",
-      "address": "215 Ryding Ave, Toronto, ON",
-      "locationId": 3488,
-      "coordinates": {
-        "lat": 43.668518,
-        "lon": -79.477155
-      },
-      "type": "indoor"
-    },
-    {
       "id": "giovanni-caboto",
       "name": "Giovanni Caboto",
       "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=514",

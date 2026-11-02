@@ -27,6 +27,7 @@ import eastYorkMemorial from "./east-york-memorial-arena.json";
 import edSackfield from "./ed-sackfield-arena.json";
 import elginBarrow from "./elgin-barrow-arena.json";
 import fenside from "./fenside-arena.json";
+import georgeBell from "./george-bell-arena.json";
 import gordAndIreneRisk from "./gord-and-irene-risk-community-centre.json";
 import goulding from "./goulding-community-centre.json";
 import grandravine from "./grandravine-community-recreation-centre.json";
@@ -82,6 +83,7 @@ export const venues: Venue[] = [
   edSackfield as Venue,
   elginBarrow as Venue,
   fenside as Venue,
+  georgeBell as Venue,
   gordAndIreneRisk as Venue,
   goulding as Venue,
   grandravine as Venue,

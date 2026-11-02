@@ -1,0 +1,127 @@
+{
+  "name": "George Bell Arena",
+  "url": "https://georgebellarena.com/public-skating",
+  "timezone": "America/Toronto",
+  "address": "215 Ryding Ave, Toronto, ON",
+  "coordinates": {
+    "lat": 43.668518,
+    "lon": -79.477155
+  },
+  "schedule": {
+    "updatedAt": "2026-11-02T04:41:04.076Z",
+    "programs": [
+      {
+        "id": "980d2dd9-6bb3-446c-9933-9adf4b68fdce",
+        "start": "2026-11-03T15:00",
+        "end": "2026-11-03T16:00",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "81ac7ce5-f0f7-4ad7-9500-65d1016ae4d4",
+        "start": "2026-11-05T15:00",
+        "end": "2026-11-05T17:00",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "8f92711a-69ff-45c4-b9a9-c2e6d594c1a1",
+        "start": "2026-11-07T19:00",
+        "end": "2026-11-07T20:00",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "fbcd5abf-38ab-4e9b-9d58-36d616fe05fa",
+        "start": "2026-11-10T15:00",
+        "end": "2026-11-10T16:00",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "56385457-d18a-4607-96dd-293394688413",
+        "start": "2026-11-12T15:00",
+        "end": "2026-11-12T17:00",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "bfd0e959-e844-4068-9910-f8939988d94b",
+        "start": "2026-11-14T19:00",
+        "end": "2026-11-14T20:00",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "0627fa9b-3da4-46ed-8e50-34fe13bba5d1",
+        "start": "2026-11-17T15:00",
+        "end": "2026-11-17T16:00",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "02d8a041-3915-43aa-87b6-ea52badcf0c9",
+        "start": "2026-11-19T15:00",
+        "end": "2026-11-19T17:00",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "ec276f1e-b322-439c-8d58-84a9ba39c1e3",
+        "start": "2026-11-21T19:00",
+        "end": "2026-11-21T20:00",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "ac38dd83-1ac8-4b86-8655-4fab3d6a253f",
+        "start": "2026-11-24T15:00",
+        "end": "2026-11-24T16:00",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "40c4aa81-f845-4603-ab81-5656e9221354",
+        "start": "2026-11-26T15:00",
+        "end": "2026-11-26T17:00",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "78a63ea7-fca9-4fc8-9c3b-254201e1a8f3",
+        "start": "2026-11-28T19:00",
+        "end": "2026-11-28T20:00",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "a4d8f868-df21-4aea-bbaf-94ee8bed10f4",
+        "start": "2026-12-01T15:00",
+        "end": "2026-12-01T16:00",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "6a6cfc00-29a8-4ee5-be13-21ba57db9785",
+        "start": "2026-12-03T15:00",
+        "end": "2026-12-03T17:00",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      }
+    ]
+  }
+}
