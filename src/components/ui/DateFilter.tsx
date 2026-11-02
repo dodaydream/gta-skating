@@ -3,8 +3,10 @@
 import { useEffect, useState } from "react";
 import dayjs from "dayjs";
 import type { DateRange } from "react-day-picker";
+import type { ProgramType } from "@/types/schedule";
 import { Button } from "@/components/ui/button";
 import { DateRangePicker } from "@/components/ui/date-picker";
+import { ProgramTypeFilter } from "@/components/ui/ProgramTypeFilter";
 import { IconCalendarWeek, IconCalendar } from "@tabler/icons-react";
 
 interface FilterChipsProps {
@@ -15,6 +17,8 @@ interface FilterChipsProps {
   onClear: () => void;
   hideEmpty: boolean;
   onHideEmptyChange: (v: boolean) => void;
+  types: ProgramType[];
+  onTypesChange: (types: ProgramType[]) => void;
   className?: string;
 }
 
@@ -65,6 +69,8 @@ export function FilterChips({
   onClear,
   hideEmpty,
   onHideEmptyChange,
+  types,
+  onTypesChange,
   className = "",
 }: FilterChipsProps) {
   const [open, setOpen] = useState(false);
@@ -188,13 +194,15 @@ export function FilterChips({
           </div>
       </DateRangePicker>
 
+      <ProgramTypeFilter types={types} onChange={onTypesChange} />
+
       <Button
         variant={hideEmpty ? "default" : "secondary"}
         size="default"
         className="shadow-xs"
         onClick={() => onHideEmptyChange(!hideEmpty)}
       >
-        Programs
+        Has programs
       </Button>
     </div>
   );
