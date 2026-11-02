@@ -62,6 +62,11 @@ export function formatTimeRange(start: string, end: string): string {
   return `${start.slice(11, 16)}\u2013${end.slice(11, 16)}`;
 }
 
+/** Format an ISO UTC timestamp (e.g. schedule.updatedAt) in the venue's timezone. */
+export function formatUpdatedDate(updatedAt: string, timezone: string): string {
+  return dayjs(updatedAt).tz(timezone).format("MMM D, YYYY h:mm A");
+}
+
 /** Human label for a program's drop-in price: "Free", "$5.90", or null when unknown. */
 export function formatTicket(ticket: number | undefined): string | null {
   if (ticket === undefined) return null;

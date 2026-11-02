@@ -25,6 +25,7 @@ import {
   distanceKm,
   formatEventDate,
   formatTimeRange,
+  formatUpdatedDate,
   getTodayInVenueTime,
   isProgramInProgress,
   isProgramNotEnded,
@@ -286,7 +287,7 @@ export function VenueDetailModal({
   const programs = venue.schedule.programs.filter((program) =>
     isProgramNotEnded(program.end, venue.timezone)
   );
-  const updated = new Date(venue.schedule.updatedAt).toISOString().slice(0, 10);
+  const updated = formatUpdatedDate(venue.schedule.updatedAt, venue.timezone);
   const inProgress = programs.some((program) =>
     isProgramInProgress(program, venue.timezone)
   );
@@ -607,9 +608,6 @@ function ListView({
               {formatEventDate(date, timezone)}
             </h3>
             <span className="flex-1 border-t border-dashed border-black/[.08] dark:border-white/[.1]" />
-            <span className="text-xs text-zinc-400">
-              {datePrograms.length}
-            </span>
           </div>
           <ul className="flex flex-col divide-y divide-black/[.06] dark:divide-white/[.08]">
             {datePrograms.map((program) => (
