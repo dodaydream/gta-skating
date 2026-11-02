@@ -1,11 +1,12 @@
 import type { Arena } from "@/types/arena";
 import type { MapBounds } from "@/types/map";
-import type { ProgramItem } from "@/types/schedule";
+import type { Program, ProgramItem, ProgramType } from "@/types/schedule";
 
 export interface FetchProgramsQuery {
   from: string;
   to: string;
   hideEmpty: boolean;
+  types?: ProgramType[];
   bounds?: MapBounds | null;
 }
 
@@ -39,12 +40,16 @@ export async function fetchPrograms(
   query: FetchProgramsQuery
 ): Promise<FetchProgramsResult> {
   const { from, to, hideEmpty, bounds } = query;
+  const types = query.types ?? [];
+  const typeFilter = types.length > 0 ? new Set(types) : null;
+  const matchesType = (program: Program) =>
+    !typeFilter || typeFilter.has(program.type);
   const { arenas: allArenas } = await import("@/data/schedules");
 
   const matches: ProgramItem[] = [];
   for (const arena of allArenas) {
     for (const program of arena.schedule.programs) {
-      if (inRange(program.start, program.end, from, to)) {
+      if (matchesType(program) && inRange(program.start, program.end, from, to)) {
         matches.push({ ...program, arena });
       }
     }
@@ -60,8 +65,8 @@ export async function fetchPrograms(
       ...arena,
       schedule: {
         ...arena.schedule,
-        programs: arena.schedule.programs.filter((p) =>
-          inRange(p.start, p.end, from, to)
+        programs: arena.schedule.programs.filter(
+          (p) => matchesType(p) && inRange(p.start, p.end, from, to)
         ),
       },
     });

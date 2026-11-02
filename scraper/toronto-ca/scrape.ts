@@ -25,6 +25,7 @@ import { readFile, writeFile, mkdir } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import type { Arena, ArenaMetaList, Program } from "../types.ts";
+import { classifyProgram } from "../classify.ts";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const OUT_DIR = path.resolve(__dirname, "../../src/data");
@@ -108,6 +109,7 @@ function buildPrograms(rows: FeedRow[]): Program[] {
       start: `${row.d}T${range[0]}`,
       end: `${row.d}T${range[1]}`,
       name: row.c,
+      type: classifyProgram(row.c),
       notes: row.age || undefined,
     };
     if (seen.has(program.id)) continue;

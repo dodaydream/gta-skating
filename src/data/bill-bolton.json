@@ -8,126 +8,138 @@
     "lon": -79.415243
   },
   "schedule": {
-    "updatedAt": "2026-10-31T19:34:31.434Z",
+    "updatedAt": "2026-11-02T00:32:45.516Z",
     "programs": [
       {
-        "id": "24d2806f-f388-4133-b6ac-bc7665456e75",
-        "start": "2026-10-31T19:40",
-        "end": "2026-10-31T20:30",
-        "name": "General Public Free Skate"
-      },
-      {
-        "id": "b0008497-192c-4da6-b68d-7ef14f8fef46",
+        "id": "f14a7497-d2f1-4747-aca6-fe5b5401f59f",
         "start": "2026-11-02T11:40",
         "end": "2026-11-02T13:00",
         "name": "Adults Only Free Skate",
+        "type": "Public Skate",
         "notes": "No Skate on Stat Holidays"
       },
       {
-        "id": "31dd1bd1-0637-43c8-a46e-cbeb79ec0680",
+        "id": "9676df90-72f6-420b-91f0-31727f36893d",
         "start": "2026-11-03T09:00",
         "end": "2026-11-03T10:00",
-        "name": "Parent & Tots(4 and under) Free Skate"
+        "name": "Parent & Tots(4 and under) Free Skate",
+        "type": "Public Skate"
       },
       {
-        "id": "0d43cd10-b421-4894-b1d6-ebecfa361d94",
+        "id": "f2ec32b6-fc31-4f51-88c0-b208d7b5feb8",
         "start": "2026-11-06T17:40",
         "end": "2026-11-06T19:15",
-        "name": "General Public Free Skate"
+        "name": "General Public Free Skate",
+        "type": "Public Skate"
       },
       {
-        "id": "d32ee0cf-cc07-447b-a6ec-30ead9f662de",
+        "id": "2545614a-61db-400c-8699-aa52578605c5",
         "start": "2026-11-07T19:40",
         "end": "2026-11-07T20:30",
-        "name": "General Public Free Skate"
+        "name": "General Public Free Skate",
+        "type": "Public Skate"
       },
       {
-        "id": "8262fccc-7a20-4d0f-a07b-a040f6750a97",
+        "id": "244888a0-047e-49e1-81de-47b1aebd8f59",
         "start": "2026-11-09T11:40",
         "end": "2026-11-09T13:00",
         "name": "Adults Only Free Skate",
+        "type": "Public Skate",
         "notes": "No Skate on Stat Holidays"
       },
       {
-        "id": "963fbe85-d908-4f1d-8c43-01bac52614a3",
+        "id": "fd2a0362-714d-4221-8378-12531c49697b",
         "start": "2026-11-10T09:00",
         "end": "2026-11-10T10:00",
-        "name": "Parent & Tots(4 and under) Free Skate"
+        "name": "Parent & Tots(4 and under) Free Skate",
+        "type": "Public Skate"
       },
       {
-        "id": "2f5c5497-7fcf-4bb8-9955-e7f244373de9",
+        "id": "5b1f0b4e-25b5-40b9-a22c-3796790e6bbe",
         "start": "2026-11-13T17:40",
         "end": "2026-11-13T19:15",
-        "name": "General Public Free Skate"
+        "name": "General Public Free Skate",
+        "type": "Public Skate"
       },
       {
-        "id": "b8d24fb8-a952-4920-8249-e1deec0f81de",
+        "id": "94e68315-3690-4734-9b31-c93e274ec368",
         "start": "2026-11-14T19:40",
         "end": "2026-11-14T20:30",
-        "name": "General Public Free Skate"
+        "name": "General Public Free Skate",
+        "type": "Public Skate"
       },
       {
-        "id": "f2b4c06e-1f40-4de8-abd0-ecaec8731058",
+        "id": "3d00ea39-a255-481c-8933-42bde27fa195",
         "start": "2026-11-16T11:40",
         "end": "2026-11-16T13:00",
         "name": "Adults Only Free Skate",
+        "type": "Public Skate",
         "notes": "No Skate on Stat Holidays"
       },
       {
-        "id": "179e6cf0-2c69-416d-8d9e-f01bea00bc1a",
+        "id": "bcf1f728-2d1e-478d-852b-e475bf09b919",
         "start": "2026-11-17T09:00",
         "end": "2026-11-17T10:00",
-        "name": "Parent & Tots(4 and under) Free Skate"
+        "name": "Parent & Tots(4 and under) Free Skate",
+        "type": "Public Skate"
       },
       {
-        "id": "ffcb475d-c983-459c-95c8-55d52b1751df",
+        "id": "5d97be3a-fa1d-4f91-8d81-93ca2397bf53",
         "start": "2026-11-20T17:40",
         "end": "2026-11-20T19:15",
-        "name": "General Public Free Skate"
+        "name": "General Public Free Skate",
+        "type": "Public Skate"
       },
       {
-        "id": "308c2a93-814d-446c-9adc-ce62e78790b8",
+        "id": "a23f71e1-38ec-4c24-85af-23c7ac1a7ed0",
         "start": "2026-11-21T19:40",
         "end": "2026-11-21T20:30",
-        "name": "General Public Free Skate"
+        "name": "General Public Free Skate",
+        "type": "Public Skate"
       },
       {
-        "id": "d12d1b51-01b2-46ff-9103-cae8a6d7e869",
+        "id": "dc361d29-b060-4c84-9382-44a2c06d571b",
         "start": "2026-11-23T11:40",
         "end": "2026-11-23T13:00",
         "name": "Adults Only Free Skate",
+        "type": "Public Skate",
         "notes": "No Skate on Stat Holidays"
       },
       {
-        "id": "7f509a55-7b05-48c0-8bc2-5e5d12b2916f",
+        "id": "59b00d52-4f82-44d1-bf5b-25a8f4572c0b",
         "start": "2026-11-24T09:00",
         "end": "2026-11-24T10:00",
-        "name": "Parent & Tots(4 and under) Free Skate"
+        "name": "Parent & Tots(4 and under) Free Skate",
+        "type": "Public Skate"
       },
       {
-        "id": "56c09044-25de-4596-ad2f-5bd61a91e273",
+        "id": "912243e8-5f6e-4ac5-879c-9aea449df18b",
         "start": "2026-11-27T17:40",
         "end": "2026-11-27T19:15",
-        "name": "General Public Free Skate"
+        "name": "General Public Free Skate",
+        "type": "Public Skate"
       },
       {
-        "id": "abd1e3dd-8f31-4042-a406-b22c558e2000",
+        "id": "dd719ea9-2060-41c9-8b25-90837ae805ea",
         "start": "2026-11-28T19:40",
         "end": "2026-11-28T20:30",
-        "name": "General Public Free Skate"
+        "name": "General Public Free Skate",
+        "type": "Public Skate"
       },
       {
-        "id": "679bc009-40a2-41bd-942c-c75c31149e6f",
+        "id": "1a5dda29-aec8-4d34-832e-1f64cf0b96c7",
         "start": "2026-11-30T11:40",
         "end": "2026-11-30T13:00",
         "name": "Adults Only Free Skate",
+        "type": "Public Skate",
         "notes": "No Skate on Stat Holidays"
       },
       {
-        "id": "f5b35aa6-3a18-4346-ac86-00e402fc3834",
+        "id": "75337307-3b1a-433a-8e2a-821c0c1ec636",
         "start": "2026-12-01T09:00",
         "end": "2026-12-01T10:00",
-        "name": "Parent & Tots(4 and under) Free Skate"
+        "name": "Parent & Tots(4 and under) Free Skate",
+        "type": "Public Skate"
       }
     ]
   }

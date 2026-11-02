@@ -24,6 +24,7 @@ import type {
   Program,
   RawProgram,
 } from "../types.ts";
+import { classifyProgram } from "../classify.ts";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const OUT_DIR = path.resolve(__dirname, "../../src/data");
@@ -273,6 +274,7 @@ function buildPrograms(parsed: RawProgram[]): Program[] {
         start: `${date}T${p.startTime}`,
         end: `${date}T${p.endTime}`,
         name: p.name,
+        type: classifyProgram(p.name),
         notes: p.notes,
       });
     }

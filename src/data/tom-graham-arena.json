@@ -8,85 +8,91 @@
     "lon": -79.402495
   },
   "schedule": {
-    "updatedAt": "2026-10-31T19:34:32.385Z",
+    "updatedAt": "2026-11-02T00:32:46.059Z",
     "programs": [
       {
-        "id": "e6e0593a-8596-4385-860e-b88539a11252",
-        "start": "2026-11-01T14:30",
-        "end": "2026-11-01T16:00",
-        "name": "Public Skate"
-      },
-      {
-        "id": "67e7e52e-6f31-41c1-a89c-7b745e1a01cc",
+        "id": "64218d6a-c647-44e9-a709-a853940f08a7",
         "start": "2026-11-06T19:00",
         "end": "2026-11-06T20:30",
-        "name": "Public Skate"
+        "name": "Public Skate",
+        "type": "Public Skate"
       },
       {
-        "id": "fb2cb130-0dcf-4cbb-8c33-4c2b8ef98fb6",
+        "id": "654e4c39-09d2-4dae-85b7-b30bd87e97a1",
         "start": "2026-11-06T20:30",
         "end": "2026-11-06T21:30",
-        "name": "Ringette"
+        "name": "Ringette",
+        "type": "Ringette"
       },
       {
-        "id": "d18485cd-6c29-4bf3-b7f1-a6415916b75e",
+        "id": "7ea6c602-a2f4-4032-9c09-b8a626943653",
         "start": "2026-11-08T14:30",
         "end": "2026-11-08T16:00",
-        "name": "Public Skate"
+        "name": "Public Skate",
+        "type": "Public Skate"
       },
       {
-        "id": "3579d656-4cf5-42fd-9f1e-fb5f8f65120f",
+        "id": "b1452909-a26a-499a-a60d-06651c7312b7",
         "start": "2026-11-13T19:00",
         "end": "2026-11-13T20:30",
-        "name": "Public Skate"
+        "name": "Public Skate",
+        "type": "Public Skate"
       },
       {
-        "id": "4f3d52ee-17d4-4054-bd64-edb0c2a1b5a4",
+        "id": "e3023847-ae0a-424e-b2e7-9a58607d0427",
         "start": "2026-11-13T20:30",
         "end": "2026-11-13T21:30",
-        "name": "Ringette"
+        "name": "Ringette",
+        "type": "Ringette"
       },
       {
-        "id": "db46b1e9-06bc-4989-b38c-475cd5453f3b",
+        "id": "b8c2fde2-e5df-4b6f-91f1-2a068695a6c0",
         "start": "2026-11-15T14:30",
         "end": "2026-11-15T16:00",
-        "name": "Public Skate"
+        "name": "Public Skate",
+        "type": "Public Skate"
       },
       {
-        "id": "54844846-ece4-4651-846a-004d336f032c",
+        "id": "862bfd86-2a8b-4015-8a9a-a518878b869c",
         "start": "2026-11-20T19:00",
         "end": "2026-11-20T20:30",
-        "name": "Public Skate"
+        "name": "Public Skate",
+        "type": "Public Skate"
       },
       {
-        "id": "870ae99c-b537-44ec-b177-b4240006e0ea",
+        "id": "4485c98a-bc0f-41e3-8375-48bb96055f1e",
         "start": "2026-11-20T20:30",
         "end": "2026-11-20T21:30",
-        "name": "Ringette"
+        "name": "Ringette",
+        "type": "Ringette"
       },
       {
-        "id": "d5bec1d2-7fd8-4103-81da-b4e17690ee27",
+        "id": "480a8b1f-4117-4644-92bf-eb5c28ab884c",
         "start": "2026-11-22T14:30",
         "end": "2026-11-22T16:00",
-        "name": "Public Skate"
+        "name": "Public Skate",
+        "type": "Public Skate"
       },
       {
-        "id": "d8dc3252-5ef6-488c-b18f-1f7b092abbb7",
+        "id": "e9a13222-ca95-4e32-910d-9936dcb6c381",
         "start": "2026-11-27T19:00",
         "end": "2026-11-27T20:30",
-        "name": "Public Skate"
+        "name": "Public Skate",
+        "type": "Public Skate"
       },
       {
-        "id": "ff78f2fa-28df-46b5-928e-f72e131954ec",
+        "id": "bc9cd57e-1cbb-487a-b09e-050fc6c0cae7",
         "start": "2026-11-27T20:30",
         "end": "2026-11-27T21:30",
-        "name": "Ringette"
+        "name": "Ringette",
+        "type": "Ringette"
       },
       {
-        "id": "a897e256-f020-420b-97bc-c53d8fddcceb",
+        "id": "c5f57963-18ff-4544-8764-3a732fae4dd1",
         "start": "2026-11-29T14:30",
         "end": "2026-11-29T16:00",
-        "name": "Public Skate"
+        "name": "Public Skate",
+        "type": "Public Skate"
       }
     ]
   }

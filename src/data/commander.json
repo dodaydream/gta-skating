@@ -8,34 +8,38 @@
     "lon": -79.267814
   },
   "schedule": {
-    "updatedAt": "2026-10-31T19:34:34.735Z",
+    "updatedAt": "2026-11-02T00:32:47.567Z",
     "programs": [
       {
-        "id": "0ea79aea-ecd0-4862-a5c8-38c2093e1515",
+        "id": "05bf4d78-fbd9-4c2b-9f22-5317c3410d9a",
         "start": "2026-11-01T15:30",
         "end": "2026-11-01T17:00",
         "name": "Adapted Leisure Skate with Family",
+        "type": "Public Skate",
         "notes": "0 years and over"
       },
       {
-        "id": "92688352-5a7f-478b-9b4a-3c7a4e1238a9",
+        "id": "c522a979-c346-4321-93ad-877e05c6340d",
         "start": "2026-11-03T10:00",
         "end": "2026-11-03T12:00",
         "name": "Leisure Skate: Older Adult (Unsupervised)",
+        "type": "Public Skate",
         "notes": "60 years and over"
       },
       {
-        "id": "6aee6448-643d-4cbc-93f1-ea208f092b1d",
+        "id": "daf1a1bf-b944-4e86-8dab-c5d96f916110",
         "start": "2026-11-05T10:00",
         "end": "2026-11-05T12:00",
         "name": "Leisure Skate: Older Adult (Unsupervised)",
+        "type": "Public Skate",
         "notes": "60 years and over"
       },
       {
-        "id": "24e15f5f-4807-4b9e-ba42-602be25522e1",
+        "id": "25dda4a0-bd44-4d97-9340-54de802d0457",
         "start": "2026-11-08T15:30",
         "end": "2026-11-08T17:00",
         "name": "Adapted Leisure Skate with Family",
+        "type": "Public Skate",
         "notes": "0 years and over"
       }
     ]

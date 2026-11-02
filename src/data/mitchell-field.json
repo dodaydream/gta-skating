@@ -8,104 +8,94 @@
     "lon": -79.408537
   },
   "schedule": {
-    "updatedAt": "2026-10-31T19:34:37.636Z",
+    "updatedAt": "2026-11-02T00:32:49.467Z",
     "programs": [
       {
-        "id": "13ec45c3-b4fe-437b-a9cd-3b7412a872cc",
-        "start": "2026-10-31T19:00",
-        "end": "2026-10-31T21:00",
-        "name": "Leisure Skate",
-        "notes": "0 years and over"
-      },
-      {
-        "id": "53abb91c-f3df-448f-91c0-c23b1012c557",
-        "start": "2026-10-31T21:30",
-        "end": "2026-10-31T22:30",
-        "name": "Shinny: Child",
-        "notes": "6 - 12 years"
-      },
-      {
-        "id": "8c83b4c8-df1a-4824-8562-1d8d2e85d67d",
-        "start": "2026-10-31T22:30",
-        "end": "2026-10-31T23:30",
-        "name": "Shinny: Youth",
-        "notes": "13 - 17 years"
-      },
-      {
-        "id": "0b57dfd2-954e-4c6c-9c73-05b216908a73",
+        "id": "c8004ace-6615-4f57-bbec-4109b2e5ca42",
         "start": "2026-11-01T16:00",
         "end": "2026-11-01T18:00",
         "name": "Leisure Skate",
+        "type": "Public Skate",
         "notes": "0 years and over"
       },
       {
-        "id": "abf02ad3-44d4-48d8-99ff-10a7fa1e9e5a",
+        "id": "28113173-1612-4110-ab26-c61a562d79cf",
         "start": "2026-11-02T09:30",
         "end": "2026-11-02T11:30",
         "name": "Leisure Skate: Older Adult",
+        "type": "Public Skate",
         "notes": "60 years and over"
       },
       {
-        "id": "57be2cfa-0e35-46fb-a9bd-58d5ab602a8f",
+        "id": "a8607625-4fd9-4e43-bcae-dad7a6df684b",
         "start": "2026-11-03T09:30",
         "end": "2026-11-03T11:30",
         "name": "Leisure Skate: Older Adult",
+        "type": "Public Skate",
         "notes": "60 years and over"
       },
       {
-        "id": "0194f679-57b1-469b-a53b-2f0b73501800",
+        "id": "a8c1a47c-38ff-47c1-84f4-4144ac6f2dbd",
         "start": "2026-11-03T15:45",
         "end": "2026-11-03T16:45",
         "name": "Shinny: Child",
+        "type": "Pickup Hockey",
         "notes": "6 - 12 years"
       },
       {
-        "id": "4e656a8b-a2c8-4a31-9ca3-4fd80f986d00",
+        "id": "28e4127a-8919-4219-8d8b-8cb88b29f5eb",
         "start": "2026-11-04T09:30",
         "end": "2026-11-04T11:30",
         "name": "Leisure Skate: Older Adult",
+        "type": "Public Skate",
         "notes": "60 years and over"
       },
       {
-        "id": "36b742d4-bd04-4f61-8288-6fa40e6f5152",
+        "id": "7b6ccd32-c1d3-4752-9bcc-7cc5a9735fca",
         "start": "2026-11-05T16:00",
         "end": "2026-11-05T17:00",
         "name": "Shinny: Youth",
+        "type": "Pickup Hockey",
         "notes": "13 - 17 years"
       },
       {
-        "id": "98b837f2-7642-43e0-8695-807c4824a525",
+        "id": "3a72ec62-6403-4fbf-b8b6-47e9ae3b3960",
         "start": "2026-11-06T09:30",
         "end": "2026-11-06T11:30",
         "name": "Leisure Skate: Older Adult",
+        "type": "Public Skate",
         "notes": "60 years and over"
       },
       {
-        "id": "01be18ad-b283-4bc1-a989-d38c3ad80314",
+        "id": "f91baf7b-6112-479d-a368-017342e27ce5",
         "start": "2026-11-07T19:00",
         "end": "2026-11-07T21:00",
         "name": "Leisure Skate",
+        "type": "Public Skate",
         "notes": "0 years and over"
       },
       {
-        "id": "b9c930d1-ac40-4621-b725-6b12de60ddf4",
+        "id": "e532546c-4b0c-4e83-9dfa-c077c42d3967",
         "start": "2026-11-07T21:30",
         "end": "2026-11-07T22:30",
         "name": "Shinny: Child",
+        "type": "Pickup Hockey",
         "notes": "6 - 12 years"
       },
       {
-        "id": "e4a1d8b4-95dc-4fe4-b0c6-f37c5cbac6cd",
+        "id": "1c6c3abb-ea5b-4639-9f5d-2151d6819e60",
         "start": "2026-11-07T22:30",
         "end": "2026-11-07T23:30",
         "name": "Shinny: Youth",
+        "type": "Pickup Hockey",
         "notes": "13 - 17 years"
       },
       {
-        "id": "cde6f794-01aa-4b14-b7ab-c072df1795b6",
+        "id": "7897bc19-2075-40b2-8cae-b59d4e5c222b",
         "start": "2026-11-08T16:00",
         "end": "2026-11-08T18:00",
         "name": "Leisure Skate",
+        "type": "Public Skate",
         "notes": "0 years and over"
       }
     ]

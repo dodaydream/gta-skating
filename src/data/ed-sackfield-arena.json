@@ -8,451 +8,490 @@
     "lon": -79.397721
   },
   "schedule": {
-    "updatedAt": "2026-10-31T19:34:32.383Z",
+    "updatedAt": "2026-11-02T00:32:46.058Z",
     "programs": [
       {
-        "id": "6dbd29de-9a7e-4e48-8af2-df2d53da6993",
-        "start": "2026-10-31T13:15",
-        "end": "2026-10-31T14:15",
-        "name": "Public Skate"
-      },
-      {
-        "id": "1b159317-2068-40a5-ba82-a7df9b9969ee",
-        "start": "2026-10-31T14:15",
-        "end": "2026-10-31T15:15",
-        "name": "Figure Skating"
-      },
-      {
-        "id": "61a37b9e-da51-4c93-a387-1171d631b4a9",
-        "start": "2026-10-31T15:15",
-        "end": "2026-10-31T16:15",
-        "name": "Figure Skating"
-      },
-      {
-        "id": "355d3dba-5241-4926-b1a5-0515b345d2af",
-        "start": "2026-11-01T13:45",
-        "end": "2026-11-01T15:15",
-        "name": "Public Skate"
-      },
-      {
-        "id": "acd192d6-a1cd-43c4-bec4-34dda9f70b11",
-        "start": "2026-11-01T15:30",
-        "end": "2026-11-01T16:30",
-        "name": "Stick and Puck"
-      },
-      {
-        "id": "baf19d2b-9886-4eed-b2ec-83494c4c3911",
-        "start": "2026-11-01T16:30",
-        "end": "2026-11-01T17:30",
-        "name": "Stick and Puck"
-      },
-      {
-        "id": "c0127ed2-ace3-42b0-a706-59b9f681b280",
-        "start": "2026-11-01T17:30",
-        "end": "2026-11-01T18:30",
-        "name": "Ringette"
-      },
-      {
-        "id": "b02e6621-008b-4dac-b341-667a23b9d454",
+        "id": "71aeeab4-b447-4401-ac65-bdb68543ef75",
         "start": "2026-11-02T19:15",
         "end": "2026-11-02T20:45",
-        "name": "Public Skate"
+        "name": "Public Skate",
+        "type": "Public Skate"
       },
       {
-        "id": "925f968d-c0ee-42ee-9951-db68d5be74b4",
+        "id": "977544a0-9438-42a2-bfa8-e8c9f57be000",
         "start": "2026-11-02T20:45",
         "end": "2026-11-02T21:45",
-        "name": "Figure Skating"
+        "name": "Figure Skating",
+        "type": "Figure Skating"
       },
       {
-        "id": "e51a6c12-d1b5-427e-9db3-abf15d55e8e4",
+        "id": "ead525d2-c908-4367-b54f-f006a331d1bf",
         "start": "2026-11-04T11:15",
         "end": "2026-11-04T12:15",
-        "name": "Public Skate"
+        "name": "Public Skate",
+        "type": "Public Skate"
       },
       {
-        "id": "86381a1c-db6d-4576-8349-bf4ef4c4396c",
+        "id": "1580f432-5d76-4e19-b645-a693c0bb2ee3",
         "start": "2026-11-04T12:15",
         "end": "2026-11-04T13:45",
-        "name": "Co-ed Shinny"
+        "name": "Co-ed Shinny",
+        "type": "Pickup Hockey"
       },
       {
-        "id": "62e32aaa-50e8-4c5b-858e-f85044fa1f14",
+        "id": "6007dd2b-9c7a-4f92-babe-0ca3046c2d49",
         "start": "2026-11-05T16:15",
         "end": "2026-11-05T17:15",
-        "name": "Figure Skating"
+        "name": "Figure Skating",
+        "type": "Figure Skating"
       },
       {
-        "id": "831ffbb2-d8e8-46b4-984c-77fa91a43362",
+        "id": "55d8219d-db50-411f-9f7a-e5c5a7d84d7f",
         "start": "2026-11-05T17:15",
         "end": "2026-11-05T18:15",
-        "name": "Stick and Puck"
+        "name": "Stick and Puck",
+        "type": "Stick and Puck"
       },
       {
-        "id": "2ad37048-9171-4712-9b87-4dbd04c51f3c",
+        "id": "78f1c091-e755-4b5d-baa6-f6f67065d1d0",
         "start": "2026-11-05T18:15",
         "end": "2026-11-05T19:15",
-        "name": "Stick and Puck"
+        "name": "Stick and Puck",
+        "type": "Stick and Puck"
       },
       {
-        "id": "237dac81-a3ee-45eb-affe-4f79beedcc46",
+        "id": "b70a9033-8494-449d-b2cd-68054246f0c3",
         "start": "2026-11-06T11:15",
         "end": "2026-11-06T12:15",
-        "name": "Public Skate"
+        "name": "Public Skate",
+        "type": "Public Skate"
       },
       {
-        "id": "09d33c6f-e2a5-403e-b90d-3d0c4cd83c6d",
+        "id": "5c98ca2b-7b66-472d-84c9-83fc94ad489a",
         "start": "2026-11-06T12:15",
         "end": "2026-11-06T13:45",
-        "name": "Co-ed Shinny"
+        "name": "Co-ed Shinny",
+        "type": "Pickup Hockey"
       },
       {
-        "id": "6ab4eb73-2663-42a2-aee4-cae3f204e5e1",
+        "id": "bf2a8533-ce26-42a5-8dfc-1f06fd4986b6",
         "start": "2026-11-07T13:15",
         "end": "2026-11-07T14:15",
-        "name": "Public Skate"
+        "name": "Public Skate",
+        "type": "Public Skate"
       },
       {
-        "id": "007c52b3-9b87-4597-9475-b0de09641651",
+        "id": "0069ab73-f1be-4625-93a3-7ac6533968a0",
         "start": "2026-11-07T14:15",
         "end": "2026-11-07T15:15",
-        "name": "Figure Skating"
+        "name": "Figure Skating",
+        "type": "Figure Skating"
       },
       {
-        "id": "fc33e746-9fe0-4e69-bbd7-333460c2be8c",
+        "id": "4e9745d3-0433-477f-b500-8316154eb9e7",
         "start": "2026-11-07T15:15",
         "end": "2026-11-07T16:15",
-        "name": "Figure Skating"
+        "name": "Figure Skating",
+        "type": "Figure Skating"
       },
       {
         "id": "sensory-friendly-skate-saturday-16-15",
         "start": "2026-11-07T16:15",
         "end": "2026-11-07T17:15",
-        "name": "Sensory Friendly Skate"
+        "name": "Sensory Friendly Skate",
+        "type": "Public Skate"
       },
       {
-        "id": "c1b8c21e-1c86-473d-98bb-105579c3c9c0",
+        "id": "7dae02d5-b738-4a14-8680-9c1bf3c6d828",
         "start": "2026-11-08T13:45",
         "end": "2026-11-08T15:15",
-        "name": "Public Skate"
+        "name": "Public Skate",
+        "type": "Public Skate"
       },
       {
-        "id": "629cc604-00d8-4ca7-9b07-9a389de62d68",
+        "id": "68b25683-8720-494b-93f2-41e8fe249324",
         "start": "2026-11-08T15:30",
         "end": "2026-11-08T16:30",
-        "name": "Stick and Puck"
+        "name": "Stick and Puck",
+        "type": "Stick and Puck"
       },
       {
-        "id": "ffe5305c-bda5-4710-a120-b40886292549",
+        "id": "a4d43b10-9fa8-4e5e-b8e8-dac6bf434840",
         "start": "2026-11-08T16:30",
         "end": "2026-11-08T17:30",
-        "name": "Stick and Puck"
+        "name": "Stick and Puck",
+        "type": "Stick and Puck"
       },
       {
-        "id": "d48c645b-7eee-4f7e-906f-fff80c728ca9",
+        "id": "bda4e7f7-2820-42c0-bdf0-5d444936ad67",
         "start": "2026-11-08T17:30",
         "end": "2026-11-08T18:30",
-        "name": "Ringette"
+        "name": "Ringette",
+        "type": "Ringette"
       },
       {
-        "id": "340fac8b-ea3a-4c45-8900-c9537392a881",
+        "id": "96403589-9be8-4197-97ba-0bfbb3dbd748",
         "start": "2026-11-09T19:15",
         "end": "2026-11-09T20:45",
-        "name": "Public Skate"
+        "name": "Public Skate",
+        "type": "Public Skate"
       },
       {
-        "id": "f82f9f61-569d-4e5e-9444-00b78d14ca62",
+        "id": "93e08d40-8451-4542-93c7-b7fa9d9b5b4b",
         "start": "2026-11-09T20:45",
         "end": "2026-11-09T21:45",
-        "name": "Figure Skating"
+        "name": "Figure Skating",
+        "type": "Figure Skating"
       },
       {
-        "id": "e3bad7bf-2f82-4e3d-8e36-f831f965ae1a",
+        "id": "48dbf137-3879-43f4-b9dd-0b0f351db3ca",
         "start": "2026-11-11T11:15",
         "end": "2026-11-11T12:15",
-        "name": "Public Skate"
+        "name": "Public Skate",
+        "type": "Public Skate"
       },
       {
-        "id": "95487243-b6f8-4962-bcf6-3a1364588dc3",
+        "id": "1c18df82-bede-406a-9c60-9b0138124980",
         "start": "2026-11-11T12:15",
         "end": "2026-11-11T13:45",
-        "name": "Co-ed Shinny"
+        "name": "Co-ed Shinny",
+        "type": "Pickup Hockey"
       },
       {
-        "id": "06c77c4e-fbe6-4da5-8fa7-8d464e8d7fa1",
+        "id": "7a1c7b78-76d7-4fc6-82c5-59bc1573d1f8",
         "start": "2026-11-12T16:15",
         "end": "2026-11-12T17:15",
-        "name": "Figure Skating"
+        "name": "Figure Skating",
+        "type": "Figure Skating"
       },
       {
-        "id": "e361f3aa-d140-4ae0-b638-65d60ce6a174",
+        "id": "0512c59c-6b55-4283-8680-078f6851f10a",
         "start": "2026-11-12T17:15",
         "end": "2026-11-12T18:15",
-        "name": "Stick and Puck"
+        "name": "Stick and Puck",
+        "type": "Stick and Puck"
       },
       {
-        "id": "73679045-62da-48d9-9ba9-9b53be10d84c",
+        "id": "51eb325a-cf5a-40ac-a4c2-f06e38ab177a",
         "start": "2026-11-12T18:15",
         "end": "2026-11-12T19:15",
-        "name": "Stick and Puck"
+        "name": "Stick and Puck",
+        "type": "Stick and Puck"
       },
       {
-        "id": "9678d938-3ead-4b83-b99c-92d54a73d965",
+        "id": "329d9027-580b-419d-bd25-d312e4c4d673",
         "start": "2026-11-13T11:15",
         "end": "2026-11-13T12:15",
-        "name": "Public Skate"
+        "name": "Public Skate",
+        "type": "Public Skate"
       },
       {
-        "id": "852f0ed2-061a-4493-b97b-091c3e8fd73e",
+        "id": "83fff3f5-3284-4618-985d-c1ddd59f7940",
         "start": "2026-11-13T12:15",
         "end": "2026-11-13T13:45",
-        "name": "Co-ed Shinny"
+        "name": "Co-ed Shinny",
+        "type": "Pickup Hockey"
       },
       {
-        "id": "12acd977-1cae-481c-b914-69b0e74c2b31",
+        "id": "4812c7dc-db8a-4518-9fba-fbb15fa0baea",
         "start": "2026-11-14T13:15",
         "end": "2026-11-14T14:15",
-        "name": "Public Skate"
+        "name": "Public Skate",
+        "type": "Public Skate"
       },
       {
-        "id": "a1a085f4-3800-4c25-b51d-242586e6c545",
+        "id": "b8f0b065-f68c-4575-88f2-8db0a7afd790",
         "start": "2026-11-14T14:15",
         "end": "2026-11-14T15:15",
-        "name": "Figure Skating"
+        "name": "Figure Skating",
+        "type": "Figure Skating"
       },
       {
-        "id": "40924c75-6b0b-479c-9a8b-0d390eff3aa5",
+        "id": "dcc544f1-30ea-4b62-bb3c-e9fb72aa6843",
         "start": "2026-11-14T15:15",
         "end": "2026-11-14T16:15",
-        "name": "Figure Skating"
+        "name": "Figure Skating",
+        "type": "Figure Skating"
       },
       {
-        "id": "da468963-c60e-496f-866a-6a9ef62deb79",
+        "id": "7de906f9-2314-4dac-b4c3-701722504b2a",
         "start": "2026-11-15T13:45",
         "end": "2026-11-15T15:15",
-        "name": "Public Skate"
+        "name": "Public Skate",
+        "type": "Public Skate"
       },
       {
-        "id": "a7439166-23d6-472e-90a6-e3ce9189c6a2",
+        "id": "2fd09639-4083-4560-a376-b1b15be91e2f",
         "start": "2026-11-15T15:30",
         "end": "2026-11-15T16:30",
-        "name": "Stick and Puck"
+        "name": "Stick and Puck",
+        "type": "Stick and Puck"
       },
       {
-        "id": "233754d1-dfa3-4378-9960-b3ff46bd5708",
+        "id": "23e1acf1-8c47-449b-bbd6-c5c6c723ccc2",
         "start": "2026-11-15T16:30",
         "end": "2026-11-15T17:30",
-        "name": "Stick and Puck"
+        "name": "Stick and Puck",
+        "type": "Stick and Puck"
       },
       {
-        "id": "73222b26-a064-423f-9f4a-f06911bf92f8",
+        "id": "a4e0b9f3-19c9-46a8-b2a6-e43e6469c978",
         "start": "2026-11-15T17:30",
         "end": "2026-11-15T18:30",
-        "name": "Ringette"
+        "name": "Ringette",
+        "type": "Ringette"
       },
       {
-        "id": "42d60c95-f77b-40ec-ac83-6874a38228b7",
+        "id": "8481c578-9709-41c3-9c3b-7ba2cbec3201",
         "start": "2026-11-16T19:15",
         "end": "2026-11-16T20:45",
-        "name": "Public Skate"
+        "name": "Public Skate",
+        "type": "Public Skate"
       },
       {
-        "id": "9b25753f-49f1-4e0f-9e96-5c78d7931c11",
+        "id": "2cb7369c-ee60-4dca-bc31-dec21480f992",
         "start": "2026-11-16T20:45",
         "end": "2026-11-16T21:45",
-        "name": "Figure Skating"
+        "name": "Figure Skating",
+        "type": "Figure Skating"
       },
       {
-        "id": "9581a640-d232-4a39-bc7f-af1865a54313",
+        "id": "03aa72b3-9961-408d-aaaf-745ce917ccf6",
         "start": "2026-11-18T11:15",
         "end": "2026-11-18T12:15",
-        "name": "Public Skate"
+        "name": "Public Skate",
+        "type": "Public Skate"
       },
       {
-        "id": "539f2571-89ae-48dc-93f2-15441fc0b871",
+        "id": "611766b3-d3d4-4a57-ad48-0fef1347dabb",
         "start": "2026-11-18T12:15",
         "end": "2026-11-18T13:45",
-        "name": "Co-ed Shinny"
+        "name": "Co-ed Shinny",
+        "type": "Pickup Hockey"
       },
       {
-        "id": "367a15a4-3090-4a80-a471-8c97e21b3adc",
+        "id": "e381a7c5-133c-49ad-8f05-48531199c29f",
         "start": "2026-11-19T16:15",
         "end": "2026-11-19T17:15",
-        "name": "Figure Skating"
+        "name": "Figure Skating",
+        "type": "Figure Skating"
       },
       {
-        "id": "96ecf539-88d1-423a-bb5f-3180f9c9e2da",
+        "id": "f6efbef3-df8b-49ad-9be5-bec9a0a2ba91",
         "start": "2026-11-19T17:15",
         "end": "2026-11-19T18:15",
-        "name": "Stick and Puck"
+        "name": "Stick and Puck",
+        "type": "Stick and Puck"
       },
       {
-        "id": "18495ebe-972a-4c08-aba4-2eb8f7ab16fa",
+        "id": "898d240f-8c77-46f6-8704-b6381c1dc496",
         "start": "2026-11-19T18:15",
         "end": "2026-11-19T19:15",
-        "name": "Stick and Puck"
+        "name": "Stick and Puck",
+        "type": "Stick and Puck"
       },
       {
-        "id": "36dffb02-04c6-4b7e-a692-980ea1769cc9",
+        "id": "7fee48d4-13fa-40e8-b343-e3e9e3cbbfd7",
         "start": "2026-11-20T11:15",
         "end": "2026-11-20T12:15",
-        "name": "Public Skate"
+        "name": "Public Skate",
+        "type": "Public Skate"
       },
       {
-        "id": "07de1e80-0f90-44fe-9803-0c355bf2e905",
+        "id": "423dca99-9d8e-46d4-8d05-83f63e2ef791",
         "start": "2026-11-20T12:15",
         "end": "2026-11-20T13:45",
-        "name": "Co-ed Shinny"
+        "name": "Co-ed Shinny",
+        "type": "Pickup Hockey"
       },
       {
-        "id": "a46b5959-ddb2-4fdb-baf8-6ba353ac56b9",
+        "id": "b2dec711-1420-4169-81aa-d978fb555104",
         "start": "2026-11-21T13:15",
         "end": "2026-11-21T14:15",
-        "name": "Public Skate"
+        "name": "Public Skate",
+        "type": "Public Skate"
       },
       {
-        "id": "7283b559-f156-4816-9ecb-1725fb205df6",
+        "id": "319decdb-b7dc-43bd-8729-816406ad59de",
         "start": "2026-11-21T14:15",
         "end": "2026-11-21T15:15",
-        "name": "Figure Skating"
+        "name": "Figure Skating",
+        "type": "Figure Skating"
       },
       {
-        "id": "8c582b81-0303-4685-871e-10d7006691ce",
+        "id": "695e5c3b-a821-4751-94ee-47098794e5dc",
         "start": "2026-11-21T15:15",
         "end": "2026-11-21T16:15",
-        "name": "Figure Skating"
+        "name": "Figure Skating",
+        "type": "Figure Skating"
       },
       {
-        "id": "29a9c2b6-5bd9-4bf1-824d-02f1dbb58f2a",
+        "id": "f1e96627-4187-4ddb-84c0-324c48341472",
         "start": "2026-11-22T13:45",
         "end": "2026-11-22T15:15",
-        "name": "Public Skate"
+        "name": "Public Skate",
+        "type": "Public Skate"
       },
       {
-        "id": "f0e9293d-c4ef-47ab-b482-1d95d92728a3",
+        "id": "19f1d744-d267-4a3d-819b-f6a65bc9ac9e",
         "start": "2026-11-22T15:30",
         "end": "2026-11-22T16:30",
-        "name": "Stick and Puck"
+        "name": "Stick and Puck",
+        "type": "Stick and Puck"
       },
       {
-        "id": "c32d767d-ab59-437f-93dc-cd5ce495e4cc",
+        "id": "940a39f7-7f78-475c-b27e-40ddf61849ed",
         "start": "2026-11-22T16:30",
         "end": "2026-11-22T17:30",
-        "name": "Stick and Puck"
+        "name": "Stick and Puck",
+        "type": "Stick and Puck"
       },
       {
-        "id": "9edd0d86-1d7d-41c6-871b-683affddd5b8",
+        "id": "cb4c37d9-6078-404b-9cd9-fd7db896ee0c",
         "start": "2026-11-22T17:30",
         "end": "2026-11-22T18:30",
-        "name": "Ringette"
+        "name": "Ringette",
+        "type": "Ringette"
       },
       {
-        "id": "0bf3d4a6-096b-4624-b04d-118540c11332",
+        "id": "96cf9ea9-0adf-42d0-be3c-f57cf6db4cd5",
         "start": "2026-11-23T19:15",
         "end": "2026-11-23T20:45",
-        "name": "Public Skate"
+        "name": "Public Skate",
+        "type": "Public Skate"
       },
       {
-        "id": "83435d91-2f91-4a3e-95c0-9a71726f4f3c",
+        "id": "819171ca-40de-4e9f-989b-7dcc2114334b",
         "start": "2026-11-23T20:45",
         "end": "2026-11-23T21:45",
-        "name": "Figure Skating"
+        "name": "Figure Skating",
+        "type": "Figure Skating"
       },
       {
-        "id": "6dd25908-6c19-445d-8bb5-60061ccdccf2",
+        "id": "524569b2-7dbf-4127-bae9-a9aa25233a11",
         "start": "2026-11-25T11:15",
         "end": "2026-11-25T12:15",
-        "name": "Public Skate"
+        "name": "Public Skate",
+        "type": "Public Skate"
       },
       {
-        "id": "07cacd55-2922-4064-9edd-eadb5c323f88",
+        "id": "8b76e0b7-f24c-4ec2-8254-c6662d592c91",
         "start": "2026-11-25T12:15",
         "end": "2026-11-25T13:45",
-        "name": "Co-ed Shinny"
+        "name": "Co-ed Shinny",
+        "type": "Pickup Hockey"
       },
       {
-        "id": "6784b518-0843-473d-a2b3-935cab71ae40",
+        "id": "82f6a2dc-ea51-47cb-ac3c-1f7de67feb71",
         "start": "2026-11-26T16:15",
         "end": "2026-11-26T17:15",
-        "name": "Figure Skating"
+        "name": "Figure Skating",
+        "type": "Figure Skating"
       },
       {
-        "id": "812fe90a-2268-4e01-b71f-5e9a978620b3",
+        "id": "99b9ca88-5f8d-44dd-8480-8cb4d8a6a2c3",
         "start": "2026-11-26T17:15",
         "end": "2026-11-26T18:15",
-        "name": "Stick and Puck"
+        "name": "Stick and Puck",
+        "type": "Stick and Puck"
       },
       {
-        "id": "438ce5f9-52e7-44ed-8e29-dd2090ac4fab",
+        "id": "07809951-f320-4f11-9db4-a879cff10eef",
         "start": "2026-11-26T18:15",
         "end": "2026-11-26T19:15",
-        "name": "Stick and Puck"
+        "name": "Stick and Puck",
+        "type": "Stick and Puck"
       },
       {
-        "id": "10298c55-fba3-429f-aedd-313da8d1d27e",
+        "id": "a8d6b179-0d89-409d-b5c5-f755956b1001",
         "start": "2026-11-27T11:15",
         "end": "2026-11-27T12:15",
-        "name": "Public Skate"
+        "name": "Public Skate",
+        "type": "Public Skate"
       },
       {
-        "id": "685d9a76-8ce0-4d3a-9d7e-0255da27c617",
+        "id": "82a50310-21d4-497f-bec6-1d61d9288347",
         "start": "2026-11-27T12:15",
         "end": "2026-11-27T13:45",
-        "name": "Co-ed Shinny"
+        "name": "Co-ed Shinny",
+        "type": "Pickup Hockey"
       },
       {
-        "id": "24bc95fe-c2d6-40c6-8374-32b35d8803b0",
+        "id": "023deca4-bd58-4d1f-b8c4-516785e4d909",
         "start": "2026-11-28T13:15",
         "end": "2026-11-28T14:15",
-        "name": "Public Skate"
+        "name": "Public Skate",
+        "type": "Public Skate"
       },
       {
-        "id": "fb2d69a3-6863-4eeb-8990-f4afc4b38ad3",
+        "id": "5adce08d-717a-4486-ab0e-4ad9c2670dc1",
         "start": "2026-11-28T14:15",
         "end": "2026-11-28T15:15",
-        "name": "Figure Skating"
+        "name": "Figure Skating",
+        "type": "Figure Skating"
       },
       {
-        "id": "70b3063d-cfc8-488e-a955-1e6925960b64",
+        "id": "49055c97-a691-47ad-a489-b72ed3d8a5b7",
         "start": "2026-11-28T15:15",
         "end": "2026-11-28T16:15",
-        "name": "Figure Skating"
+        "name": "Figure Skating",
+        "type": "Figure Skating"
       },
       {
-        "id": "c679d84f-3aa7-4c22-ad2f-7062a2a98022",
+        "id": "6d689c92-2ea3-4764-90fd-6b8ae97fc970",
         "start": "2026-11-29T13:45",
         "end": "2026-11-29T15:15",
-        "name": "Public Skate"
+        "name": "Public Skate",
+        "type": "Public Skate"
       },
       {
-        "id": "ddbdb017-e328-43b5-8e3d-826e266e5a08",
+        "id": "edddb9ed-5931-4786-82e5-80fc319ddaad",
         "start": "2026-11-29T15:30",
         "end": "2026-11-29T16:30",
-        "name": "Stick and Puck"
+        "name": "Stick and Puck",
+        "type": "Stick and Puck"
       },
       {
-        "id": "a5e5219b-89bc-4d78-a142-0151d9416620",
+        "id": "9d0a3397-4753-461e-b997-39455f0b6cd7",
         "start": "2026-11-29T16:30",
         "end": "2026-11-29T17:30",
-        "name": "Stick and Puck"
+        "name": "Stick and Puck",
+        "type": "Stick and Puck"
       },
       {
-        "id": "dba466d4-f6cf-43e9-8f5c-859f8c0f788e",
+        "id": "944fa52c-c2f1-4d9d-843a-103dcea6cd7e",
         "start": "2026-11-29T17:30",
         "end": "2026-11-29T18:30",
-        "name": "Ringette"
+        "name": "Ringette",
+        "type": "Ringette"
       },
       {
-        "id": "65ee2b52-9889-4c4f-a899-15d0ff18031a",
+        "id": "b29880de-3c74-4e7d-81a4-d8965dc83d30",
         "start": "2026-11-30T19:15",
         "end": "2026-11-30T20:45",
-        "name": "Public Skate"
+        "name": "Public Skate",
+        "type": "Public Skate"
       },
       {
-        "id": "604dfa80-c42b-49de-82c1-ea65841b240f",
+        "id": "406a77ac-372b-4f09-9628-3f412bd0f7ca",
         "start": "2026-11-30T20:45",
         "end": "2026-11-30T21:45",
-        "name": "Figure Skating"
+        "name": "Figure Skating",
+        "type": "Figure Skating"
+      },
+      {
+        "id": "61d6de7c-27e7-4557-89b9-12c77f9d9aa9",
+        "start": "2026-12-02T11:15",
+        "end": "2026-12-02T12:15",
+        "name": "Public Skate",
+        "type": "Public Skate"
+      },
+      {
+        "id": "7a1ffb4f-4d77-478b-a0cc-796461ade956",
+        "start": "2026-12-02T12:15",
+        "end": "2026-12-02T13:45",
+        "name": "Co-ed Shinny",
+        "type": "Pickup Hockey"
       }
     ]
   }

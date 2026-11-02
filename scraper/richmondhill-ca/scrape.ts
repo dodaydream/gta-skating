@@ -8,6 +8,8 @@ import type {
   DayName,
   Program,
 } from "../types.ts";
+import { ProgramType } from "../types.ts";
+import { classifyProgram } from "../classify.ts";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const OUT_DIR = path.resolve(__dirname, "../../src/data");
@@ -52,6 +54,7 @@ interface RawEntry {
   arenaName: string;
   day: DayName;
   programName: string;
+  type: ProgramType;
   time: TimeSlot;
 }
 
@@ -208,6 +211,7 @@ function parseScheduleTable(
   section: ScheduleSection
 ): RawEntry[] {
   const programType = identifyProgramType(section.programType);
+  const type = classifyProgram(programType);
   const entries: RawEntry[] = [];
 
   const tbodyRe = /<tbody>([\s\S]*?)<\/tbody>/i;
@@ -242,6 +246,7 @@ function parseScheduleTable(
           arenaName: arena.name,
           day: days[dayIndex],
           programName: pc.programName,
+          type,
           time: pc.time,
         });
       }
@@ -297,6 +302,7 @@ function buildArenaSchedules(
         start: `${date}T${entry.time.start}`,
         end: `${date}T${entry.time.end}`,
         name: entry.programName,
+        type: entry.type,
       });
     }
   }
@@ -320,6 +326,7 @@ function addSensorySkate(
       start: `${date}T16:15`,
       end: `${date}T17:15`,
       name: "Sensory Friendly Skate",
+      type: ProgramType.PublicSkate,
     });
   }
 }

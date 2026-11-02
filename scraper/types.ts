@@ -31,6 +31,22 @@ export interface Coordinates {
   lon: number;
 }
 
+/**
+ * Canonical program categories. Mirrors src/types/schedule.ts (which uses a TS
+ * enum); the scraper runs under Node's strip-only type mode, which rejects
+ * `enum`, so this is a const object with a derived union type instead.
+ */
+export const ProgramType = {
+  PublicSkate: "Public Skate",
+  PickupHockey: "Pickup Hockey",
+  FigureSkating: "Figure Skating",
+  StickAndPuck: "Stick and Puck",
+  Ringette: "Ringette",
+  IceBreakdancing: "Ice Breakdancing",
+} as const;
+
+export type ProgramType = (typeof ProgramType)[keyof typeof ProgramType];
+
 export interface RawProgram {
   name: string;
   day: DayName;
@@ -45,6 +61,7 @@ export interface Program {
   start: string; // ISO datetime
   end: string; // ISO datetime
   name: string;
+  type: ProgramType;
   notes?: string;
 }
 

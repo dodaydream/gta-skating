@@ -8,41 +8,38 @@
     "lon": -79.495672
   },
   "schedule": {
-    "updatedAt": "2026-10-31T19:34:38.133Z",
+    "updatedAt": "2026-11-02T00:32:49.805Z",
     "programs": [
       {
-        "id": "8ce28c02-adf2-40d9-95a9-a3b2f075612a",
-        "start": "2026-10-31T15:15",
-        "end": "2026-10-31T16:45",
-        "name": "Leisure Skate",
-        "notes": "0 years and over"
-      },
-      {
-        "id": "37c9d511-b277-437d-9a7c-895f1ae9183e",
+        "id": "29d28d56-970b-4f30-9b34-f2189744d871",
         "start": "2026-11-01T16:30",
         "end": "2026-11-01T18:00",
         "name": "Leisure Skate",
+        "type": "Public Skate",
         "notes": "0 years and over"
       },
       {
-        "id": "caf058da-821d-4832-aaeb-0f68a4bc6c73",
+        "id": "6b0842ba-1eac-4efe-9121-c389bf3ef808",
         "start": "2026-11-06T18:45",
         "end": "2026-11-06T20:15",
         "name": "Leisure Skate",
+        "type": "Public Skate",
         "notes": "0 years and over"
       },
       {
-        "id": "08bee586-9d3f-4428-b643-cb4f4864309c",
+        "id": "20dab1c0-40d6-465b-94aa-664a2a5eb1e7",
         "start": "2026-11-07T15:15",
         "end": "2026-11-07T16:45",
         "name": "Leisure Skate",
+        "type": "Public Skate",
         "notes": "0 years and over"
       },
       {
-        "id": "3209910d-6e47-46b4-9ec0-ea5e91a955b5",
+        "id": "03fb11a9-3a45-4c04-91f4-bd7f306ff6dd",
         "start": "2026-11-08T16:30",
         "end": "2026-11-08T18:00",
         "name": "Leisure Skate",
+        "type": "Public Skate",
         "notes": "0 years and over"
       }
     ]

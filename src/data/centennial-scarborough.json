@@ -8,223 +8,214 @@
     "lon": -79.235108
   },
   "schedule": {
-    "updatedAt": "2026-10-31T19:34:34.299Z",
+    "updatedAt": "2026-11-02T00:32:47.310Z",
     "programs": [
       {
-        "id": "dfe413ee-ed6a-40cb-b800-f7ee70832e19",
-        "start": "2026-10-31T16:00",
-        "end": "2026-10-31T17:00",
-        "name": "Leisure Skate: Child with Caregiver",
-        "notes": "0 - 12 years"
-      },
-      {
-        "id": "c07a13d7-172b-4806-a7cb-2461c795efd6",
-        "start": "2026-10-31T17:00",
-        "end": "2026-10-31T18:00",
-        "name": "Leisure Skate",
-        "notes": "0 years and over"
-      },
-      {
-        "id": "7935f173-a7a2-4773-8374-b98b22a8e620",
-        "start": "2026-10-31T18:15",
-        "end": "2026-10-31T19:15",
-        "name": "Figure Skating",
-        "notes": "6 years and over"
-      },
-      {
-        "id": "84947168-6245-4b3e-975a-668f6314d913",
-        "start": "2026-10-31T19:15",
-        "end": "2026-10-31T20:00",
-        "name": "Leisure Skate: Adult",
-        "notes": "19 years and over"
-      },
-      {
-        "id": "f1ed8cec-0054-4ad7-b2af-d357a62f023c",
-        "start": "2026-10-31T20:00",
-        "end": "2026-10-31T22:00",
-        "name": "Leisure Skate (Pride Skate)",
-        "notes": "0 years and over"
-      },
-      {
-        "id": "8b490540-4a65-4245-a9ef-a10d7af9ba19",
+        "id": "557fc048-c59b-491c-aefa-85fa1b8028b7",
         "start": "2026-11-01T10:15",
         "end": "2026-11-01T11:00",
         "name": "Leisure Skate: Child with Caregiver",
+        "type": "Public Skate",
         "notes": "0 - 12 years"
       },
       {
-        "id": "ccec6d22-4132-415d-898b-ad8478b57f5e",
+        "id": "ae9af249-8884-494c-935b-8cc48063592e",
         "start": "2026-11-01T11:15",
         "end": "2026-11-01T12:15",
         "name": "Leisure Skate",
+        "type": "Public Skate",
         "notes": "0 years and over"
       },
       {
-        "id": "b4a7e8b7-0014-4b8a-b5f2-23c07b0223a4",
+        "id": "51b8cd07-e1c7-4d39-9d7b-d965ff79357c",
         "start": "2026-11-01T12:30",
         "end": "2026-11-01T13:30",
         "name": "Leisure Skate: Adult",
+        "type": "Public Skate",
         "notes": "19 years and over"
       },
       {
-        "id": "6b186650-6362-4a10-89d0-8c8215820418",
+        "id": "34784b81-2a64-42d3-b18d-e41add54b986",
         "start": "2026-11-01T13:45",
         "end": "2026-11-01T14:45",
         "name": "Leisure Skate: Youth",
+        "type": "Public Skate",
         "notes": "13 - 17 years"
       },
       {
-        "id": "36b0b1a8-c1aa-44b9-8e2b-be820da5d62d",
+        "id": "203afbfb-a47e-4805-8aac-a0deb1e30f95",
         "start": "2026-11-01T14:45",
         "end": "2026-11-01T15:45",
         "name": "Figure Skating",
+        "type": "Figure Skating",
         "notes": "6 years and over"
       },
       {
-        "id": "02300946-1f7b-41d9-950c-988b246593e5",
+        "id": "fe9c26f1-6eab-4f00-ad39-f26aea42fd29",
         "start": "2026-11-03T11:45",
         "end": "2026-11-03T12:45",
         "name": "Leisure Skate: Older Adult (Unsupervised)",
+        "type": "Public Skate",
         "notes": "60 years and over"
       },
       {
-        "id": "6c40a8c1-46b6-4427-8288-280204fe47ff",
+        "id": "9ce4e33f-452f-4bd2-8de7-4138666e06a8",
         "start": "2026-11-03T13:00",
         "end": "2026-11-03T14:00",
         "name": "Leisure Skate: Child with Caregiver (Unsupervised)",
+        "type": "Public Skate",
         "notes": "0 - 12 years"
       },
       {
-        "id": "b7cc6201-ab89-458f-90fc-bca7bfb1a807",
+        "id": "04d2bb20-1b08-4632-b3a5-78411870adc6",
         "start": "2026-11-03T13:00",
         "end": "2026-11-03T14:15",
         "name": "Leisure Skate: Adult (Unsupervised)",
+        "type": "Public Skate",
         "notes": "19 years and over"
       },
       {
-        "id": "123a35d8-1903-4745-8f68-7e07a46cfa90",
+        "id": "d3278ee4-2a51-4190-9d46-63dc0ad04852",
         "start": "2026-11-04T14:00",
         "end": "2026-11-04T15:30",
         "name": "Leisure Skate: Adult (Unsupervised)",
+        "type": "Public Skate",
         "notes": "19 years and over"
       },
       {
-        "id": "ba53bc9b-6886-438b-966f-1cfdc2c37d6e",
+        "id": "162b2dc7-ece3-42ea-8474-b01cfdfdd7f2",
         "start": "2026-11-05T11:45",
         "end": "2026-11-05T12:45",
         "name": "Leisure Skate: Older Adult (Unsupervised)",
+        "type": "Public Skate",
         "notes": "60 years and over"
       },
       {
-        "id": "f9aed68e-7f98-4b56-b3cc-03880f23968c",
+        "id": "c029b3ca-ce10-4146-a670-083ec528c768",
         "start": "2026-11-05T13:00",
         "end": "2026-11-05T14:00",
         "name": "Leisure Skate: Child with Caregiver (Unsupervised)",
+        "type": "Public Skate",
         "notes": "0 - 12 years"
       },
       {
-        "id": "797fbb7c-36d9-4ae2-b92f-353e9ee2a5d9",
+        "id": "d2787e0d-1dfa-453b-9149-85df3bbdec3b",
         "start": "2026-11-05T13:00",
         "end": "2026-11-05T14:15",
         "name": "Leisure Skate: Adult (Unsupervised)",
+        "type": "Public Skate",
         "notes": "19 years and over"
       },
       {
-        "id": "2509d57b-bb3c-4301-a236-0ae8a27575ff",
+        "id": "2afaa46d-f6b7-4afa-942d-8a2595312e22",
         "start": "2026-11-06T11:45",
         "end": "2026-11-06T12:45",
         "name": "Leisure Skate: Older Adult (Unsupervised)",
+        "type": "Public Skate",
         "notes": "60 years and over"
       },
       {
-        "id": "b490fd83-249b-45ec-9629-d90596402a00",
+        "id": "bd8aa003-08d0-4644-a5c1-2ed3c877afd9",
         "start": "2026-11-06T19:30",
         "end": "2026-11-06T20:30",
         "name": "Shinny: Youth",
+        "type": "Pickup Hockey",
         "notes": "13 - 18 years"
       },
       {
-        "id": "f2b2267f-57f0-41f8-a2a3-d0e04d96afad",
+        "id": "59196acd-4343-431e-8073-3b45493a3a51",
         "start": "2026-11-06T20:30",
         "end": "2026-11-06T22:00",
         "name": "Leisure Skate",
+        "type": "Public Skate",
         "notes": "0 years and over"
       },
       {
-        "id": "cb4d6e36-e4bf-42e2-852e-5ce9ffaeb5b2",
+        "id": "167183e4-aad3-454a-ab06-b033d3a2afb0",
         "start": "2026-11-06T20:30",
         "end": "2026-11-06T21:45",
         "name": "Ice Breakdancing",
+        "type": "Ice Breakdancing",
         "notes": "6 years and over"
       },
       {
-        "id": "b2c2aa3c-c04b-4b8c-87d9-d3db80eb19a1",
+        "id": "9748ad4f-f2f9-417f-8a56-8ea42d1df6df",
         "start": "2026-11-07T16:00",
         "end": "2026-11-07T17:00",
         "name": "Leisure Skate: Child with Caregiver",
+        "type": "Public Skate",
         "notes": "0 - 12 years"
       },
       {
-        "id": "a0a617cd-e859-40d7-b2b3-a79e73f6b0a4",
+        "id": "1792e0fd-4308-4bc8-96cf-de9eca8d4722",
         "start": "2026-11-07T17:00",
         "end": "2026-11-07T18:00",
         "name": "Leisure Skate",
+        "type": "Public Skate",
         "notes": "0 years and over"
       },
       {
-        "id": "649c708c-ef6f-449a-aa0e-75cfc5b961a6",
+        "id": "065f2e2e-4e24-418d-86c0-6874257aa837",
         "start": "2026-11-07T18:15",
         "end": "2026-11-07T19:15",
         "name": "Figure Skating",
+        "type": "Figure Skating",
         "notes": "6 years and over"
       },
       {
-        "id": "ea869e8e-4b2d-471c-8d9b-d308464c037b",
+        "id": "ae4b0185-a955-447b-acfd-49d98e6eb953",
         "start": "2026-11-07T19:15",
         "end": "2026-11-07T20:00",
         "name": "Leisure Skate: Adult",
+        "type": "Public Skate",
         "notes": "19 years and over"
       },
       {
-        "id": "ce37abec-815a-4435-9f19-df0f381c9f64",
+        "id": "91f3fbe5-1e7e-4b7e-b536-d3c1a1af1c94",
         "start": "2026-11-07T20:00",
         "end": "2026-11-07T22:00",
         "name": "Leisure Skate (Pride Skate)",
+        "type": "Public Skate",
         "notes": "0 years and over"
       },
       {
-        "id": "e748972b-5eae-43d0-a73a-d286f29c4408",
+        "id": "4c6ac81e-ad59-47d4-980f-51ea78bf3dd9",
         "start": "2026-11-08T10:15",
         "end": "2026-11-08T11:00",
         "name": "Leisure Skate: Child with Caregiver",
+        "type": "Public Skate",
         "notes": "0 - 12 years"
       },
       {
-        "id": "af7370c0-516a-4f4c-b48c-ebda3f1d35a7",
+        "id": "0edfc5fe-31da-4549-b6ac-759fa692c645",
         "start": "2026-11-08T11:15",
         "end": "2026-11-08T12:15",
         "name": "Leisure Skate",
+        "type": "Public Skate",
         "notes": "0 years and over"
       },
       {
-        "id": "cceab69c-b0e9-4b94-a6a5-ecae6fa43b62",
+        "id": "1b5f55be-b78a-4a13-9e19-85a1e607ea71",
         "start": "2026-11-08T12:30",
         "end": "2026-11-08T13:30",
         "name": "Leisure Skate: Adult",
+        "type": "Public Skate",
         "notes": "19 years and over"
       },
       {
-        "id": "2cbf02ed-63ae-44b6-9a49-4ccf1a9136a5",
+        "id": "5e884d31-028c-43e5-abe4-64500fe7d5b7",
         "start": "2026-11-08T13:45",
         "end": "2026-11-08T14:45",
         "name": "Leisure Skate: Youth",
+        "type": "Public Skate",
         "notes": "13 - 17 years"
       },
       {
-        "id": "a651f35a-3429-40a8-a548-95cf37522d97",
+        "id": "46c8aaef-3057-431e-a40f-0551e28bb78b",
         "start": "2026-11-08T14:45",
         "end": "2026-11-08T15:45",
         "name": "Figure Skating",
+        "type": "Figure Skating",
         "notes": "6 years and over"
       }
     ]

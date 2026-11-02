@@ -3,7 +3,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import type { Arena } from "@/types/arena";
 import type { MapBounds } from "@/types/map";
-import type { ProgramItem } from "@/types/schedule";
+import type { ProgramItem, ProgramType } from "@/types/schedule";
 import dynamic from "next/dynamic";
 import { IconLocation } from "@tabler/icons-react";
 import { Button } from "@/components/ui/button";
@@ -42,6 +42,7 @@ export default function Home() {
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
   const [detailArena, setDetailArena] = useState<Arena | null>(null);
   const [hideEmpty, setHideEmpty] = useState(true);
+  const [types, setTypes] = useState<ProgramType[]>([]);
   const [mapBounds, setMapBounds] = useState<MapBounds | null>(null);
   const [userLocation, setUserLocation] = useState<{
     lat: number;
@@ -106,6 +107,7 @@ export default function Home() {
       from: fromDate,
       to: toDate,
       hideEmpty,
+      types,
       bounds: mapBounds,
     })
       .then((result) => {
@@ -120,7 +122,7 @@ export default function Home() {
     return () => {
       cancelled = true;
     };
-  }, [fromDate, toDate, hideEmpty, mapBounds]);
+  }, [fromDate, toDate, hideEmpty, types, mapBounds]);
 
   useEffect(() => {
     if (selectedIndex === null) {
@@ -195,6 +197,11 @@ export default function Home() {
               onHideEmptyChange={(v) => {
                 setHideEmpty(v);
                 trackEvent("hide_empty_toggle", { hidden: v });
+              }}
+              types={types}
+              onTypesChange={(next) => {
+                setTypes(next);
+                trackEvent("type_filter_change", { types: next.join(",") });
               }}
             />
           </div>
