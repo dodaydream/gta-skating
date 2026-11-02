@@ -28,6 +28,75 @@ const DARK_STYLE = "https://tiles.openfreemap.org/styles/dark";
 const DEFAULT_ZOOM = 12;
 const TORONTO: [number, number] = [-79.390531, 43.725518];
 
+const DESKTOP_WIDTH = 1024;
+// Fallback fraction of the viewport the bottom drawer covers when it can't be
+// measured (e.g. not mounted yet).
+const DRAWER_RATIO_FALLBACK = 0.5;
+
+// Height (in map-canvas pixels) of the strip left visible above the bottom
+// drawer. The drawer's height comes from `--drawer-height` (set by the drawer
+// from its snap detent), so this is correct without waiting for the open
+// animation to settle. Falls back to measuring the drawer's top edge.
+function visibleMapHeight(map: maplibregl.Map): number {
+  const canvasHeight = map.getCanvas().clientHeight;
+
+  const raw = getComputedStyle(document.documentElement)
+    .getPropertyValue("--drawer-height")
+    .trim();
+  const match = /^([\d.]+)(dvh|vh|%)$/.exec(raw);
+  if (match) {
+    const fraction = parseFloat(match[1]) / 100;
+    const basis =
+      match[2] === "%" ? document.documentElement.clientHeight : window.innerHeight;
+    return Math.max(1, canvasHeight - fraction * basis);
+  }
+
+  let visibleBottom = canvasHeight;
+  const mapTop = map.getCanvas().getBoundingClientRect().top;
+  for (const drawer of document.querySelectorAll<HTMLElement>(
+    '[data-slot="drawer-popup"]',
+  )) {
+    const top = drawer.getBoundingClientRect().top - mapTop;
+    if (top > 0 && top < visibleBottom) visibleBottom = top;
+  }
+  if (visibleBottom >= canvasHeight) {
+    visibleBottom = canvasHeight * (1 - DRAWER_RATIO_FALLBACK);
+  }
+  return Math.max(1, visibleBottom);
+}
+
+// Returns the map center to use so that `lngLat` renders in the middle of the
+// area left visible above the drawer. The drawer covers the bottom of the map,
+// so the center must move *south* of the target (larger mercator y), which
+// pushes the target upward on screen into the visible region.
+function offsetForDrawer(
+  map: maplibregl.Map,
+  lngLat: [number, number],
+): [number, number] {
+  if (!isMobileViewport()) return lngLat;
+
+  const height = map.getCanvas().clientHeight;
+  const targetY = visibleMapHeight(map) / 2;
+  const worldSize = 512 * 2 ** DEFAULT_ZOOM;
+  const mercator = maplibregl.MercatorCoordinate.fromLngLat({
+    lng: lngLat[0],
+    lat: lngLat[1],
+  });
+  // Solve screenY(target) = targetY for the center's mercator y:
+  //   screenY = (mercator.y - center.y) * worldSize + height / 2
+  const centerY = mercator.y - (targetY - height / 2) / worldSize;
+  const shifted = new maplibregl.MercatorCoordinate(
+    mercator.x,
+    centerY,
+    mercator.z,
+  ).toLngLat();
+  return [shifted.lng, shifted.lat];
+}
+
+function isMobileViewport(): boolean {
+  return typeof window !== "undefined" && window.innerWidth < DESKTOP_WIDTH;
+}
+
 function createMarkerElement(
   selected: boolean,
   hasPrograms: boolean,
@@ -59,6 +128,113 @@ function createUserDotElement(): HTMLDivElement {
     <span style="position:absolute;inset:0;border-radius:9999px;background:#fff;box-shadow:0 1px 4px rgba(0,0,0,.4);"></span>
     <span style="position:absolute;left:50%;top:50%;width:16px;height:16px;transform:translate(-50%,-50%);border-radius:9999px;background:#2563eb;"></span>`;
   return el;
+}
+
+const SCALE_MAX_WIDTH = 120;
+
+function roundScaleDistance(value: number): number {
+  const magnitude = Math.pow(10, `${Math.floor(value)}`.length - 1);
+  const fraction = value / magnitude;
+  const nice =
+    fraction >= 10
+      ? 10
+      : fraction >= 5
+        ? 5
+        : fraction >= 3
+          ? 3
+          : fraction >= 2
+            ? 2
+            : fraction >= 1
+              ? 1
+              : fraction;
+  return magnitude * nice;
+}
+
+function formatMetric(meters: number): string {
+  return meters >= 1000
+    ? `${Math.round(meters / 1000)} km`
+    : `${Math.round(meters)} m`;
+}
+
+class ScaleLegend implements maplibregl.IControl {
+  private map: maplibregl.Map | null = null;
+  private container: HTMLDivElement | null = null;
+  private bar: HTMLElement | null = null;
+  private label: HTMLElement | null = null;
+
+  constructor(private readonly maxWidth = SCALE_MAX_WIDTH) {}
+
+  getDefaultPosition(): maplibregl.ControlPosition {
+    return "bottom-left";
+  }
+
+  onAdd(map: maplibregl.Map): HTMLElement {
+    this.map = map;
+
+    const container = document.createElement("div");
+    container.className =
+      "maplibregl-ctrl inline-flex flex-col items-center gap-1 rounded-full border border-black/10 bg-white/80 px-2.5 py-1 text-[10px] leading-none shadow-sm backdrop-blur-sm dark:border-white/15 dark:bg-black/60";
+    container.innerHTML = `
+      <span data-slot="label" class="whitespace-nowrap font-semibold tracking-tight tabular-nums text-zinc-800 dark:text-zinc-100"></span>
+      <span data-slot="bar" class="relative block h-1.5">
+        <span class="absolute inset-y-0 left-0 w-0.5 rounded-full bg-blue-600 dark:bg-blue-400"></span>
+        <span class="absolute inset-y-0 right-0 w-0.5 rounded-full bg-blue-600 dark:bg-blue-400"></span>
+        <span class="absolute inset-x-1 top-1/2 h-px -translate-y-1/2 bg-blue-600/40 dark:bg-blue-400/40"></span>
+      </span>
+    `;
+
+    this.bar = container.querySelector<HTMLElement>('[data-slot="bar"]');
+    this.label = container.querySelector<HTMLElement>('[data-slot="label"]');
+
+    map.on("move", this.update);
+    map.on("projectiontransition", this.update);
+    map.on("resize", this.update);
+    this.update();
+
+    this.container = container;
+    return container;
+  }
+
+  onRemove(): void {
+    const map = this.map;
+    if (map) {
+      map.off("move", this.update);
+      map.off("projectiontransition", this.update);
+      map.off("resize", this.update);
+    }
+    this.container?.remove();
+    this.container = null;
+    this.bar = null;
+    this.label = null;
+    this.map = null;
+  }
+
+  private update = (): void => {
+    const map = this.map;
+    const bar = this.bar;
+    if (!map || !bar) return;
+
+    const { clientWidth, clientHeight } = map.getCanvas();
+    if (!clientWidth || !clientHeight) return;
+
+    const centerX = clientWidth / 2;
+    const centerY = clientHeight / 2;
+    const left = map.unproject([centerX - this.maxWidth / 2, centerY]);
+    const right = map.unproject([centerX + this.maxWidth / 2, centerY]);
+    if (!left || !right) return;
+
+    const maxMeters = left.distanceTo(right);
+    if (!Number.isFinite(maxMeters) || maxMeters <= 0) return;
+
+    const meters = roundScaleDistance(maxMeters);
+    const width = Math.max(
+      28,
+      Math.round(((meters / maxMeters) * this.maxWidth) / 0.5) * 0.5,
+    );
+
+    bar.style.width = `${width}px`;
+    if (this.label) this.label.textContent = formatMetric(meters);
+  };
 }
 
 function isDarkMode(): boolean {
@@ -142,21 +318,27 @@ export default function ArenaMap({
       });
 
       map.addControl(new maplibregl.NavigationControl(), "top-right");
-      map.addControl(
-        new maplibregl.ScaleControl({ unit: "metric", maxWidth: 120 }),
-        "bottom-left",
-      );
+      map.addControl(new ScaleLegend(), "bottom-left");
     } catch {
       // WebGL2 unsupported/unavailable: skip the map so the rest of the app still works.
       return;
     }
 
+    map.on("load", () => {
+      // Don't override a user-location centering that already happened.
+      if (!centeredOnUserRef.current) {
+        map.setCenter(offsetForDrawer(map, TORONTO));
+      }
+      syncMarkers.current?.();
+    });
+
     locateRef.current = () => {
       if (!("geolocation" in navigator)) return;
       navigator.geolocation.getCurrentPosition(
         (pos) => {
+          const center: [number, number] = [pos.coords.longitude, pos.coords.latitude];
           map.flyTo({
-            center: [pos.coords.longitude, pos.coords.latitude],
+            center: offsetForDrawer(map, center),
             zoom: DEFAULT_ZOOM,
           });
         },
@@ -164,8 +346,6 @@ export default function ArenaMap({
         { timeout: 10000, enableHighAccuracy: false },
       );
     };
-
-    map.on("load", () => syncMarkers.current?.());
 
     const emitBounds = () => {
       const b = map.getBounds();
@@ -253,7 +433,11 @@ export default function ArenaMap({
       .addTo(map);
     if (!centeredOnUserRef.current) {
       centeredOnUserRef.current = true;
-      map.jumpTo({ center: [lon, lat], zoom: DEFAULT_ZOOM });
+      const center: [number, number] = [lon, lat];
+      map.jumpTo({
+        center: offsetForDrawer(map, center),
+        zoom: DEFAULT_ZOOM,
+      });
     }
   }, [userLocation]);
 
