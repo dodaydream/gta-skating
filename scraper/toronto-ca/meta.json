@@ -613,18 +613,6 @@
       "type": "indoor"
     },
     {
-      "id": "leaside-memorial-community-gardens",
-      "name": "Leaside Memorial Community Gardens Arena",
-      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=789",
-      "address": "1073 Millwood Rd, Toronto, ON",
-      "locationId": 789,
-      "coordinates": {
-        "lat": 43.701874,
-        "lon": -79.360766
-      },
-      "type": "indoor"
-    },
-    {
       "id": "ledbury-park",
       "name": "Ledbury Park",
       "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=678",

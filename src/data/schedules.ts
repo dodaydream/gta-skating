@@ -35,6 +35,7 @@ import carnegie from "./herbert-h-carnegie-centennial-centre.json";
 import heronPark from "./heron-park-community-recreation-centre.json";
 import johnBoothMemorial from "./john-booth-memorial-arena.json";
 import lambton from "./lambton-arena.json";
+import leasideGardens from "./leaside-gardens.json";
 import longBranch from "./long-branch-arena.json";
 import malvern from "./malvern-recreation-centre.json";
 import mcgregorPark from "./mcgregor-park-community-centre.json";
@@ -88,6 +89,7 @@ export const venues: Venue[] = [
   heronPark as Venue,
   johnBoothMemorial as Venue,
   lambton as Venue,
+  leasideGardens as Venue,
   longBranch as Venue,
   malvern as Venue,
   mcgregorPark as Venue,
