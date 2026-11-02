@@ -30,7 +30,7 @@ import {
   getTodayInVenueTime,
   isProgramInProgress,
   isProgramNotEnded,
-  osmUrl,
+  geoUrl,
 } from "@/lib/schedule";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -56,6 +56,48 @@ const DESKTOP_QUERY = "(min-width: 1024px)";
 const SNAP_POINTS = [0.5, 0.9];
 
 const FIREBASE_CONFIGURED = isFirebaseConfigured();
+
+const GEO_SCHEME_SUPPORTED =
+  /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i;
+
+function MapLink({
+  name,
+  coordinates,
+  address,
+  className,
+  children,
+}: {
+  name?: string;
+  coordinates: { lat: number; lon: number };
+  address?: string;
+  className?: string;
+  children: React.ReactNode;
+}) {
+  const { lat, lon } = coordinates;
+  const label = [name, address].filter(Boolean).join(", ");
+  const query = label
+    ? encodeURIComponent(label).replace(/%20/g, "+")
+    : `${lat},${lon}`;
+  const geoHref = geoUrl(lat, lon);
+  const fallbackHref = `https://www.google.com/maps/search/?api=1&query=${query}`;
+
+  const handleClick = (e: React.MouseEvent) => {
+    if (GEO_SCHEME_SUPPORTED.test(navigator.userAgent)) return;
+    e.preventDefault();
+    window.open(fallbackHref, "_blank", "noopener,noreferrer");
+  };
+
+  return (
+    <a
+      className={className}
+      href={geoHref}
+      rel="noopener noreferrer"
+      onClick={handleClick}
+    >
+      {children}
+    </a>
+  );
+}
 
 function useIsDesktop() {
   const [isDesktop, setIsDesktop] = useState(() =>
@@ -86,7 +128,7 @@ function Panel({
   children: React.ReactNode;
 }) {
   const body = (
-    <div className="flex min-h-0 flex-1 flex-col gap-4">{children}</div>
+    <div className="flex min-h-0 flex-1 flex-col gap-3 md:gap-4">{children}</div>
   );
 
   if (isDesktop) {
@@ -366,38 +408,59 @@ export function VenueDetailModal({
       }
     >
       {programs.length > 0 ? (
-        <TodayCards
-          programs={programs}
-          timezone={venue.timezone}
-          reports={reports}
-          reportsLoading={reportsLoading}
-        />
-      ) : null}
-
-      {inProgress ? (
-        <div className="px-5">
-          <BusynessInput
-            venueSlug={slug}
+        <>
+          <TodayCards
+            programs={programs}
             timezone={venue.timezone}
-            onSubmitted={reloadReports}
+            reports={reports}
+            reportsLoading={reportsLoading}
           />
-        </div>
-      ) : null}
 
-      <div className="px-5">
-        <Tabs value={view} onValueChange={(v) => setView(v as "day" | "week")}>
-          <TabsList>
-            <TabsTrigger value="day">{t("venue.day")}</TabsTrigger>
-            <TabsTrigger value="week">{t("venue.week")}</TabsTrigger>
-          </TabsList>
-        </Tabs>
-      </div>
+          {inProgress ? (
+            <div className="px-5">
+              <BusynessInput
+                venueSlug={slug}
+                timezone={venue.timezone}
+                onSubmitted={reloadReports}
+              />
+            </div>
+          ) : null}
 
-      <div
-        ref={weekBodyRef}
-        className="flex flex-1 flex-col gap-5 overflow-x-hidden overflow-y-auto px-5"
-      >
-        {programs.length === 0 ? (
+          <div className="px-5">
+            <Tabs
+              value={view}
+              onValueChange={(v) => setView(v as "day" | "week")}
+            >
+              <TabsList>
+                <TabsTrigger value="day">{t("venue.day")}</TabsTrigger>
+                <TabsTrigger value="week">{t("venue.week")}</TabsTrigger>
+              </TabsList>
+            </Tabs>
+          </div>
+
+          <div
+            ref={weekBodyRef}
+            className="flex flex-1 flex-col gap-3 overflow-x-hidden overflow-y-auto px-5 md:gap-5"
+          >
+            {view === "day" ? (
+              <ListView
+                programs={programs}
+                timezone={venue.timezone}
+                reports={reports}
+                reportsLoading={reportsLoading}
+                isDesktop={isDesktop}
+              />
+            ) : (
+              <WeekView
+                programs={programs}
+                timezone={venue.timezone}
+                bodyRef={weekBodyRef}
+              />
+            )}
+          </div>
+        </>
+      ) : (
+        <div className="flex flex-1 flex-col items-center justify-center px-5">
           <Empty className="my-6">
             <EmptyHeader>
               <EmptyMedia variant="icon">
@@ -422,50 +485,34 @@ export function VenueDetailModal({
               </EmptyContent>
             ) : null}
           </Empty>
-        ) : view === "day" ? (
-          <ListView
-            programs={programs}
-            timezone={venue.timezone}
-            reports={reports}
-            reportsLoading={reportsLoading}
-            isDesktop={isDesktop}
-          />
-        ) : (
-          <WeekView
-            programs={programs}
-            timezone={venue.timezone}
-            bodyRef={weekBodyRef}
-          />
-        )}
-      </div>
+        </div>
+      )}
 
-      <footer className="flex items-center justify-between gap-3 border-t border-black/[.06] px-5 py-3 text-xs text-zinc-500 dark:border-white/[.08] dark:text-zinc-400">
-        {venue.url ? (
-          <a
-            className="font-medium text-blue-600 hover:underline dark:text-blue-400"
-            href={venue.url}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {t("programs.venueWebsite")}
-          </a>
-        ) : (
-          <span />
-        )}
+      <footer className="flex flex-col items-center gap-2 border-t border-black/[.06] px-5 py-3 text-xs text-zinc-500 dark:border-white/[.08] dark:text-zinc-400 md:flex-row md:justify-between md:gap-3">
         <span className="flex items-center gap-3">
-          {venue.coordinates ? (
+          {venue.url ? (
             <a
               className="font-medium text-blue-600 hover:underline dark:text-blue-400"
-              href={osmUrl(venue.coordinates.lat, venue.coordinates.lon)}
+              href={venue.url}
               target="_blank"
               rel="noopener noreferrer"
             >
-              {t("programs.viewOnMap")}
+              {t("programs.venueWebsite")}
             </a>
           ) : null}
-          <span className="text-zinc-400">
-            {t("programs.updated", { date: updated })}
-          </span>
+          {venue.coordinates ? (
+            <MapLink
+              className="font-medium text-blue-600 hover:underline dark:text-blue-400"
+              name={venue.name}
+              coordinates={venue.coordinates}
+              address={venue.address}
+            >
+              {t("programs.viewOnMap")}
+            </MapLink>
+          ) : null}
+        </span>
+        <span className="text-center text-zinc-400 md:text-right">
+          {t("programs.updated", { date: updated })}
         </span>
       </footer>
     </Panel>

@@ -113,12 +113,8 @@ export function toMinutes(time: string): number {
   return h * 60 + m;
 }
 
-export function osmUrl(
-  lat: number,
-  lon: number,
-  zoom: number = 17
-): string {
-  return `https://www.openstreetmap.org/?mlat=${lat}&mlon=${lon}#map=${zoom}/${lat}/${lon}`;
+export function geoUrl(lat: number, lon: number): string {
+  return `geo:${lat},${lon}`;
 }
 
 export function distanceKm(

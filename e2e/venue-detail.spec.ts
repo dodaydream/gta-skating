@@ -40,7 +40,7 @@ test.describe("venue detail", () => {
         venue.url
       );
     }
-    await expect(dialog.getByRole("link", { name: "View on map" })).toBeVisible();
+    await expect(dialog.getByRole("link", { name: "View on map" })).toHaveAttribute("href", /^geo:/);
 
     await dialog.getByRole("button", { name: "Close" }).click();
     await expect(page).toHaveURL(/\/$/);
