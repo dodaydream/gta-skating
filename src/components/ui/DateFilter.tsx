@@ -112,6 +112,7 @@ export function FilterChips({
 
   const [pendingFromTime, setPendingFromTime] = useState(from?.slice(11, 16) ?? "00:00");
   const [pendingToTime, setPendingToTime] = useState(to?.slice(11, 16) ?? "23:59");
+  const [fromTimeTouched, setFromTimeTouched] = useState(false);
 
   useEffect(() => {
     const id = setTimeout(() => setNow(new Date()), 0);
@@ -122,6 +123,7 @@ export function FilterChips({
     setPendingRange(fromDate || toDate ? { from: fromDate, to: toDate } : undefined);
     setPendingFromTime(from?.slice(11, 16) ?? "00:00");
     setPendingToTime(to?.slice(11, 16) ?? "23:59");
+    setFromTimeTouched(false);
   }, [from, to]);
 
   const commit = (range: DateRange | undefined, fromTime: string, toTime: string) => {
@@ -133,7 +135,7 @@ export function FilterChips({
     const nowTime = todayLocalISO().slice(11, 16);
     const fromIsToday = toLocalDateStr(range.from) === todayStr;
     const fromStr = `${toLocalDateStr(range.from)}T${
-      fromIsToday ? nowTime : fromTime
+      fromIsToday && !fromTimeTouched ? nowTime : fromTime
     }`;
     const toStr = range.to
       ? `${toLocalDateStr(range.to)}T${toTime}`
@@ -180,7 +182,10 @@ export function FilterChips({
               <input
                 type="time"
                 value={pendingFromTime}
-                onChange={(e) => setPendingFromTime(e.target.value)}
+                onChange={(e) => {
+                  setPendingFromTime(e.target.value);
+                  setFromTimeTouched(true);
+                }}
                 className="w-full rounded-md border border-input bg-background px-2 py-1 text-xs [color-scheme:dark]"
               />
             </div>

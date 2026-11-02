@@ -38,6 +38,23 @@ test.describe("schedule filters", () => {
     await expect.poll(() => programCount(page)).toBe(expected);
   });
 
+  test("editing only the time updates the applied range", async ({ page }) => {
+    await openDensestDay(page);
+
+    const trigger = page.locator('[data-slot="popover-trigger"]').first();
+    await expect(trigger).toHaveText(/^Today \d\d:\d\d - \d\d:\d\d$/);
+
+    await trigger.click();
+    const popover = page.locator('[data-slot="popover-content"]');
+    await expect(popover).toBeVisible();
+
+    await popover.locator('input[type="time"]').first().fill("08:00");
+    await popover.getByRole("button", { name: "OK", exact: true }).click();
+    await expect(popover).toBeHidden();
+
+    await expect(trigger).toHaveText(/^Today 08:00 - \d\d:\d\d$/);
+  });
+
   test("program type filter narrows the results", async ({ page }) => {
     const { venues, day } = await openDensestDay(page);
 
