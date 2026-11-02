@@ -11,6 +11,7 @@ import { Button } from "@/components/ui/button";
 import { DateRangePicker } from "@/components/ui/date-picker";
 import { ProgramTypeFilter } from "@/components/ui/ProgramTypeFilter";
 import { normalizeLocale, type Locale } from "@/i18n/config";
+import { formatTime } from "@/lib/schedule";
 import { IconCalendarWeek, IconCalendar } from "@tabler/icons-react";
 
 interface FilterChipsProps {
@@ -56,11 +57,11 @@ function formatDateTime(
   locale: Locale
 ): string {
   const d = dayjs(value).locale(locale);
-  const time = d.format("HH:mm");
+  const time = formatTime(value);
   const isToday =
     !!now && d.format("YYYY-MM-DD") === dayjs(now).format("YYYY-MM-DD");
   if (isToday) return `${t("filters.today")} ${time}`;
-  return d.format(locale === "fr" ? "D MMM, HH:mm" : "MMM D, HH:mm");
+  return `${d.format(locale === "fr" ? "D MMM" : "MMM D")}, ${time}`;
 }
 
 function displayLabel(
@@ -71,7 +72,7 @@ function displayLabel(
   locale: Locale
 ): string {
   if (from && to && dayjs(from).isSame(dayjs(to), "day"))
-    return `${formatDateTime(from, now, t, locale)} - ${dayjs(to).format("HH:mm")}`;
+    return `${formatDateTime(from, now, t, locale)} - ${formatTime(to)}`;
   if (from && to)
     return `${formatDateTime(from, now, t, locale)} - ${formatDateTime(to, now, t, locale)}`;
   if (from)

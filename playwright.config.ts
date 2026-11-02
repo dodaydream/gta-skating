@@ -17,6 +17,7 @@ export default defineConfig({
   use: {
     baseURL,
     timezoneId: "America/Toronto",
+    locale: "en-US",
     trace: "on-first-retry",
     screenshot: "only-on-failure",
   },

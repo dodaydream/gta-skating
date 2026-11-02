@@ -5,6 +5,8 @@ import type { RefObject } from "react";
 import { useTranslation } from "react-i18next";
 import type { Program } from "@/types/schedule";
 import {
+  formatHourLabel,
+  formatTimeRange,
   getCurrentMinutesInVenueTime,
   getTodayInVenueTime,
   toMinutes,
@@ -18,14 +20,6 @@ const SHORT_DATE_FORMAT: Record<Locale, string> = {
   en: "MMM D",
   fr: "D MMM",
 };
-
-function formatHour(hour: number, locale: Locale): string {
-  if (locale === "fr") return `${hour} h`;
-  if (hour === 0) return "12am";
-  if (hour < 12) return `${hour}am`;
-  if (hour === 12) return "12pm";
-  return `${hour - 12}pm`;
-}
 
 function getWeekStartISO(programs: Program[]): string {
   return dayjs(programs[0].start)
@@ -251,7 +245,7 @@ export function WeekView({
                 className="absolute right-2 text-[10px] text-zinc-400 dark:text-zinc-500 -translate-y-1/2"
                 style={{ top: `${pct}%` }}
               >
-                {formatHour(hour, locale)}
+                {formatHourLabel(hour)}
               </div>
             ))}
           </div>
@@ -286,7 +280,7 @@ export function WeekView({
                     style={{ top: `${topPct}%`, height: `${heightPct}%` }}
                   >
                     <div className="tabular-nums text-zinc-500 dark:text-zinc-400">
-                      {p.start.slice(11, 16)}–{p.end.slice(11, 16)}
+                      {formatTimeRange(p.start, p.end)}
                     </div>
                     <div className="truncate">{p.name}</div>
                   </div>

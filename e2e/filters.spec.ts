@@ -18,7 +18,7 @@ test.describe("schedule filters", () => {
     const rangeEnd = addDays(day, 3);
 
     await page
-      .getByRole("button", { name: /^Today \d\d:\d\d - \d\d:\d\d$/ })
+      .getByRole("button", {       name: /^Today \d{1,2}:\d\d [AP]M - \d{1,2}:\d\d [AP]M$/ })
       .click();
 
     const popover = page.locator('[data-slot="popover-content"]');
@@ -31,7 +31,7 @@ test.describe("schedule filters", () => {
     await expect(popover).toBeHidden();
     // The trigger no longer reads "Today ...".
     await expect(
-      page.getByRole("button", { name: /^Today \d\d:\d\d - \d\d:\d\d$/ })
+      page.getByRole("button", {       name: /^Today \d{1,2}:\d\d [AP]M - \d{1,2}:\d\d [AP]M$/ })
     ).toHaveCount(0);
 
     const expected = countInRange(venues, `${rangeStart}T00:00`, `${rangeEnd}T23:59`);
@@ -42,7 +42,7 @@ test.describe("schedule filters", () => {
     await openDensestDay(page);
 
     const trigger = page.locator('[data-slot="popover-trigger"]').first();
-    await expect(trigger).toHaveText(/^Today \d\d:\d\d - \d\d:\d\d$/);
+    await expect(trigger).toHaveText(/^Today \d{1,2}:\d\d [AP]M - \d{1,2}:\d\d [AP]M$/);
 
     await trigger.click();
     const popover = page.locator('[data-slot="popover-content"]');
@@ -52,7 +52,7 @@ test.describe("schedule filters", () => {
     await popover.getByRole("button", { name: "OK", exact: true }).click();
     await expect(popover).toBeHidden();
 
-    await expect(trigger).toHaveText(/^Today 08:00 - \d\d:\d\d$/);
+    await expect(trigger).toHaveText(/^Today 8:00 AM - \d{1,2}:\d\d [AP]M$/);
   });
 
   test("program type filter narrows the results", async ({ page }) => {

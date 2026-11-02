@@ -16,7 +16,7 @@ function uiLocale(locale: string | undefined): "en" | "fr" {
 const DATE_FORMATS = {
   event: { en: "dddd, MMMM D", fr: "dddd D MMMM" },
   human: { en: "ddd, MMM D", fr: "ddd D MMM" },
-  updated: { en: "MMM D, YYYY h:mm A", fr: "D MMM YYYY HH:mm" },
+  updated: { en: "MMM D, YYYY", fr: "D MMM YYYY" },
 } as const;
 
 
@@ -85,8 +85,36 @@ export function formatHumanDate(
   return dayjs.tz(dateStr, timezone).locale(l).format(DATE_FORMATS.human[l]);
 }
 
+/** Whether the browser's locale uses a 12-hour clock (respecting OS/browser settings). */
+const BROWSER_HOUR12 = (() => {
+  try {
+    const resolved = new Intl.DateTimeFormat(undefined, {
+      hour: "numeric",
+    }).resolvedOptions();
+    return (
+      resolved.hour12 ??
+      (resolved.hourCycle === "h11" || resolved.hourCycle === "h12")
+    );
+  } catch {
+    return true;
+  }
+})();
+
 export function formatTimeRange(start: string, end: string): string {
-  return `${start.slice(11, 16)}\u2013${end.slice(11, 16)}`;
+  return `${formatTime(start)}\u2013${formatTime(end)}`;
+}
+
+/**
+ * Format a schedule time ("YYYY-MM-DDTHH:mm") using the browser's locale clock,
+ * so the hour follows the user's 12- or 24-hour preference (with AM/PM as needed).
+ */
+export function formatTime(value: string): string {
+  return dayjs(value).format(BROWSER_HOUR12 ? "h:mm A" : "HH:mm");
+}
+
+/** Short hour label for a timeline axis, e.g. "2pm" or "14". */
+export function formatHourLabel(hour: number): string {
+  return dayjs().hour(hour).minute(0).format(BROWSER_HOUR12 ? "ha" : "HH");
 }
 
 /** Format an ISO UTC timestamp (e.g. schedule.updatedAt) in the venue's timezone. */
@@ -96,10 +124,9 @@ export function formatUpdatedDate(
   locale?: string
 ): string {
   const l = uiLocale(locale);
-  return dayjs(updatedAt)
-    .tz(timezone)
-    .locale(l)
-    .format(DATE_FORMATS.updated[l]);
+  const d = dayjs(updatedAt).tz(timezone).locale(l);
+  const time = d.format(BROWSER_HOUR12 ? "h:mm A" : "HH:mm");
+  return `${d.format(DATE_FORMATS.updated[l])} ${time}`;
 }
 
 /** Whole hours and remaining minutes between two "HH:mm" times. */

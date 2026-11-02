@@ -24,7 +24,7 @@ test.describe("home schedule", () => {
       page.getByRole("button", { name: "Centre on your location" })
     ).toBeVisible();
     await expect(
-      page.getByRole("button", { name: /^Today \d\d:\d\d - \d\d:\d\d$/ })
+      page.getByRole("button", { name: /^Today \d{1,2}:\d\d [AP]M - \d{1,2}:\d\d [AP]M$/ })
     ).toBeVisible();
     await expect(page.getByRole("button", { name: "Type", exact: true })).toBeVisible();
     await expect(
