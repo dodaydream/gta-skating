@@ -53,6 +53,7 @@ import roding from "./roding-community-centre.json";
 import scarboroughGardens from "./scarborough-arena-gardens.json";
 import scarboroughVillage from "./scarborough-village-recreation-centre.json";
 import tomGraham from "./tom-graham-arena.json";
+import varsityCentreArena from "./varsity-centre-arena.json";
 import victoriaVillage from "./victoria-village-arena.json";
 import yorkMills from "./york-mills-arena.json";
 
@@ -109,6 +110,7 @@ export const venues: Venue[] = [
   scarboroughGardens as Venue,
   scarboroughVillage as Venue,
   tomGraham as Venue,
+  varsityCentreArena as Venue,
   victoriaVillage as Venue,
   yorkMills as Venue,
 ];

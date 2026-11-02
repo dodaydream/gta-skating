@@ -1,0 +1,474 @@
+{
+  "name": "Varsity Centre Arena",
+  "url": "https://kpe.utoronto.ca/sport-recreationrecreational-fitness-drop-sportsdrop-sports-activities/drop-ice-skate-ice-sports",
+  "timezone": "America/Toronto",
+  "address": "299 Bloor St W, Toronto, ON M5S 1W2",
+  "coordinates": {
+    "lat": 43.6670621,
+    "lon": -79.3961168
+  },
+  "schedule": {
+    "updatedAt": "2026-11-02T04:47:06.571Z",
+    "programs": [
+      {
+        "id": "833b9379-31ec-4ecf-94ee-7b210317803d",
+        "start": "2026-11-02T13:00",
+        "end": "2026-11-02T15:55",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "notes": "Day pass required for non-members and non-U of T students",
+        "ticket": 0
+      },
+      {
+        "id": "eb141488-4d5e-409d-9efe-50182fa84ce0",
+        "start": "2026-11-02T16:00",
+        "end": "2026-11-02T16:50",
+        "name": "Hockey",
+        "type": "Pickup Hockey",
+        "notes": "Day pass required for non-members and non-U of T students",
+        "ticket": 0
+      },
+      {
+        "id": "bc0346f1-afe9-4599-9622-ce0ab04ff73c",
+        "start": "2026-11-03T11:00",
+        "end": "2026-11-03T12:50",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "notes": "Day pass required for non-members and non-U of T students",
+        "ticket": 0
+      },
+      {
+        "id": "81699a57-9dad-4079-b23c-3cca1f7660dd",
+        "start": "2026-11-05T11:00",
+        "end": "2026-11-05T12:25",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "notes": "Day pass required for non-members and non-U of T students",
+        "ticket": 0
+      },
+      {
+        "id": "4513833b-2955-416b-beb6-78fc9f2f27d3",
+        "start": "2026-11-05T12:30",
+        "end": "2026-11-05T13:25",
+        "name": "Stick and Puck",
+        "type": "Stick and Puck",
+        "notes": "Day pass required for non-members and non-U of T students",
+        "ticket": 0
+      },
+      {
+        "id": "7523de58-c0c0-4f53-a9ab-f520a46c6b6f",
+        "start": "2026-11-05T13:30",
+        "end": "2026-11-05T14:25",
+        "name": "Shinny",
+        "type": "Pickup Hockey",
+        "notes": "Day pass required for non-members and non-U of T students",
+        "ticket": 0
+      },
+      {
+        "id": "0d87fb7f-ab45-4a6e-8a2a-b4c31e946b7b",
+        "start": "2026-11-05T14:30",
+        "end": "2026-11-05T15:50",
+        "name": "Figure Skating",
+        "type": "Figure Skating",
+        "notes": "Day pass required for non-members and non-U of T students",
+        "ticket": 0
+      },
+      {
+        "id": "cb8d6422-3bfe-46ea-bfa4-2cadb77720be",
+        "start": "2026-11-06T10:00",
+        "end": "2026-11-06T11:55",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "notes": "Day pass required for non-members and non-U of T students",
+        "ticket": 0
+      },
+      {
+        "id": "df56cc8a-34ab-4ff7-8076-404c6735c0a5",
+        "start": "2026-11-06T12:00",
+        "end": "2026-11-06T12:55",
+        "name": "Stick and Puck",
+        "type": "Stick and Puck",
+        "notes": "Day pass required for non-members and non-U of T students",
+        "ticket": 0
+      },
+      {
+        "id": "8f74b0ec-88ed-4259-8635-12c2e82d56af",
+        "start": "2026-11-06T13:00",
+        "end": "2026-11-06T13:50",
+        "name": "Hockey",
+        "type": "Pickup Hockey",
+        "notes": "Day pass required for non-members and non-U of T students",
+        "ticket": 0
+      },
+      {
+        "id": "550b5c30-7b4a-4262-b314-a1eb507960e7",
+        "start": "2026-11-08T17:15",
+        "end": "2026-11-08T18:50",
+        "name": "Family Skate",
+        "type": "Public Skate",
+        "notes": "Day pass required for non-members and non-U of T students",
+        "ticket": 0
+      },
+      {
+        "id": "73a890e6-36fc-4655-a7e6-a714278e75ef",
+        "start": "2026-11-09T13:00",
+        "end": "2026-11-09T15:55",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "notes": "Day pass required for non-members and non-U of T students",
+        "ticket": 0
+      },
+      {
+        "id": "bd516ea2-72d2-443f-ab61-ac57a25df62b",
+        "start": "2026-11-09T16:00",
+        "end": "2026-11-09T16:50",
+        "name": "Hockey",
+        "type": "Pickup Hockey",
+        "notes": "Day pass required for non-members and non-U of T students",
+        "ticket": 0
+      },
+      {
+        "id": "9db4e4ab-63f6-436f-861f-2d7dc2cd0a35",
+        "start": "2026-11-10T11:00",
+        "end": "2026-11-10T12:50",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "notes": "Day pass required for non-members and non-U of T students",
+        "ticket": 0
+      },
+      {
+        "id": "434a2481-beff-4ee7-8129-f93e2a14f5a1",
+        "start": "2026-11-12T11:00",
+        "end": "2026-11-12T12:25",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "notes": "Day pass required for non-members and non-U of T students",
+        "ticket": 0
+      },
+      {
+        "id": "ad524679-5818-4bcc-90c9-c7661f1ba951",
+        "start": "2026-11-12T12:30",
+        "end": "2026-11-12T13:25",
+        "name": "Stick and Puck",
+        "type": "Stick and Puck",
+        "notes": "Day pass required for non-members and non-U of T students",
+        "ticket": 0
+      },
+      {
+        "id": "919d8559-594b-4633-a862-6721c33035de",
+        "start": "2026-11-12T13:30",
+        "end": "2026-11-12T14:25",
+        "name": "Shinny",
+        "type": "Pickup Hockey",
+        "notes": "Day pass required for non-members and non-U of T students",
+        "ticket": 0
+      },
+      {
+        "id": "55e84f0e-965e-4b2a-b755-6e59edc6421d",
+        "start": "2026-11-12T14:30",
+        "end": "2026-11-12T15:50",
+        "name": "Figure Skating",
+        "type": "Figure Skating",
+        "notes": "Day pass required for non-members and non-U of T students",
+        "ticket": 0
+      },
+      {
+        "id": "435151a3-aba4-473a-917d-cccf53b80f6d",
+        "start": "2026-11-13T10:00",
+        "end": "2026-11-13T11:55",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "notes": "Day pass required for non-members and non-U of T students",
+        "ticket": 0
+      },
+      {
+        "id": "26f4bf42-dce2-411c-8006-f4e778ba7b24",
+        "start": "2026-11-13T12:00",
+        "end": "2026-11-13T12:55",
+        "name": "Stick and Puck",
+        "type": "Stick and Puck",
+        "notes": "Day pass required for non-members and non-U of T students",
+        "ticket": 0
+      },
+      {
+        "id": "b5f0b5ec-fdaa-4b27-9107-8d3abdc3f2f2",
+        "start": "2026-11-13T13:00",
+        "end": "2026-11-13T13:50",
+        "name": "Hockey",
+        "type": "Pickup Hockey",
+        "notes": "Day pass required for non-members and non-U of T students",
+        "ticket": 0
+      },
+      {
+        "id": "99a94ef1-d4d6-433f-8433-c60fe32bc794",
+        "start": "2026-11-15T17:15",
+        "end": "2026-11-15T18:50",
+        "name": "Family Skate",
+        "type": "Public Skate",
+        "notes": "Day pass required for non-members and non-U of T students",
+        "ticket": 0
+      },
+      {
+        "id": "f041ccd4-4930-424f-b52b-b6f9be6b1f7c",
+        "start": "2026-11-16T13:00",
+        "end": "2026-11-16T15:55",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "notes": "Day pass required for non-members and non-U of T students",
+        "ticket": 0
+      },
+      {
+        "id": "0ccabd57-2ca3-4dc4-8001-5a85da278720",
+        "start": "2026-11-16T16:00",
+        "end": "2026-11-16T16:50",
+        "name": "Hockey",
+        "type": "Pickup Hockey",
+        "notes": "Day pass required for non-members and non-U of T students",
+        "ticket": 0
+      },
+      {
+        "id": "fe92a188-38b8-4b83-95d6-e0ea29764ee3",
+        "start": "2026-11-17T11:00",
+        "end": "2026-11-17T12:50",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "notes": "Day pass required for non-members and non-U of T students",
+        "ticket": 0
+      },
+      {
+        "id": "c45a0433-1e21-4f4b-8049-9b5ca33dd079",
+        "start": "2026-11-19T11:00",
+        "end": "2026-11-19T12:25",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "notes": "Day pass required for non-members and non-U of T students",
+        "ticket": 0
+      },
+      {
+        "id": "402ff2f2-0473-487d-92db-f173584c9b44",
+        "start": "2026-11-19T12:30",
+        "end": "2026-11-19T13:25",
+        "name": "Stick and Puck",
+        "type": "Stick and Puck",
+        "notes": "Day pass required for non-members and non-U of T students",
+        "ticket": 0
+      },
+      {
+        "id": "2f3da549-e023-49c8-aeed-827dd7d49cab",
+        "start": "2026-11-19T13:30",
+        "end": "2026-11-19T14:25",
+        "name": "Shinny",
+        "type": "Pickup Hockey",
+        "notes": "Day pass required for non-members and non-U of T students",
+        "ticket": 0
+      },
+      {
+        "id": "3e972d8d-a452-409b-93af-8a537b442b23",
+        "start": "2026-11-19T14:30",
+        "end": "2026-11-19T15:50",
+        "name": "Figure Skating",
+        "type": "Figure Skating",
+        "notes": "Day pass required for non-members and non-U of T students",
+        "ticket": 0
+      },
+      {
+        "id": "ad36eb9b-3bc2-4415-b8e2-c8a2a041ef34",
+        "start": "2026-11-20T10:00",
+        "end": "2026-11-20T11:55",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "notes": "Day pass required for non-members and non-U of T students",
+        "ticket": 0
+      },
+      {
+        "id": "c14b0d73-464e-40fb-93eb-8fd0c88aba09",
+        "start": "2026-11-20T12:00",
+        "end": "2026-11-20T12:55",
+        "name": "Stick and Puck",
+        "type": "Stick and Puck",
+        "notes": "Day pass required for non-members and non-U of T students",
+        "ticket": 0
+      },
+      {
+        "id": "8f5e5bb8-85ca-45d3-ac0a-7724c9891a14",
+        "start": "2026-11-20T13:00",
+        "end": "2026-11-20T13:50",
+        "name": "Hockey",
+        "type": "Pickup Hockey",
+        "notes": "Day pass required for non-members and non-U of T students",
+        "ticket": 0
+      },
+      {
+        "id": "097583d8-6aa9-4191-ba85-7763de2c2204",
+        "start": "2026-11-22T17:15",
+        "end": "2026-11-22T18:50",
+        "name": "Family Skate",
+        "type": "Public Skate",
+        "notes": "Day pass required for non-members and non-U of T students",
+        "ticket": 0
+      },
+      {
+        "id": "aedc2ca8-a7dc-458b-89fd-00dab01c8043",
+        "start": "2026-11-23T13:00",
+        "end": "2026-11-23T15:55",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "notes": "Day pass required for non-members and non-U of T students",
+        "ticket": 0
+      },
+      {
+        "id": "a429cc8e-d642-4025-bb05-bce80942beed",
+        "start": "2026-11-23T16:00",
+        "end": "2026-11-23T16:50",
+        "name": "Hockey",
+        "type": "Pickup Hockey",
+        "notes": "Day pass required for non-members and non-U of T students",
+        "ticket": 0
+      },
+      {
+        "id": "eb9e97dd-29fb-4d58-aa62-c8b812a4589a",
+        "start": "2026-11-24T11:00",
+        "end": "2026-11-24T12:50",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "notes": "Day pass required for non-members and non-U of T students",
+        "ticket": 0
+      },
+      {
+        "id": "a2edc6be-8c97-49ef-9da1-825caef3a9bb",
+        "start": "2026-11-26T11:00",
+        "end": "2026-11-26T12:25",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "notes": "Day pass required for non-members and non-U of T students",
+        "ticket": 0
+      },
+      {
+        "id": "1a11b2c3-2ffc-409e-9bc6-ead7e4dac317",
+        "start": "2026-11-26T12:30",
+        "end": "2026-11-26T13:25",
+        "name": "Stick and Puck",
+        "type": "Stick and Puck",
+        "notes": "Day pass required for non-members and non-U of T students",
+        "ticket": 0
+      },
+      {
+        "id": "76f37fcb-5f65-42be-b399-144ced502230",
+        "start": "2026-11-26T13:30",
+        "end": "2026-11-26T14:25",
+        "name": "Shinny",
+        "type": "Pickup Hockey",
+        "notes": "Day pass required for non-members and non-U of T students",
+        "ticket": 0
+      },
+      {
+        "id": "9041d024-c78f-4213-b4e7-3acd611a18b3",
+        "start": "2026-11-26T14:30",
+        "end": "2026-11-26T15:50",
+        "name": "Figure Skating",
+        "type": "Figure Skating",
+        "notes": "Day pass required for non-members and non-U of T students",
+        "ticket": 0
+      },
+      {
+        "id": "51559001-b9b0-404b-a009-d7f8dc203524",
+        "start": "2026-11-27T10:00",
+        "end": "2026-11-27T11:55",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "notes": "Day pass required for non-members and non-U of T students",
+        "ticket": 0
+      },
+      {
+        "id": "c95c1854-77d4-45e2-807c-e964eaea7fc8",
+        "start": "2026-11-27T12:00",
+        "end": "2026-11-27T12:55",
+        "name": "Stick and Puck",
+        "type": "Stick and Puck",
+        "notes": "Day pass required for non-members and non-U of T students",
+        "ticket": 0
+      },
+      {
+        "id": "46c6ec86-df11-4f53-bf1b-8a5878a67b2f",
+        "start": "2026-11-27T13:00",
+        "end": "2026-11-27T13:50",
+        "name": "Hockey",
+        "type": "Pickup Hockey",
+        "notes": "Day pass required for non-members and non-U of T students",
+        "ticket": 0
+      },
+      {
+        "id": "8a462769-b2cf-4e2a-a5da-5ff2e682402b",
+        "start": "2026-11-29T17:15",
+        "end": "2026-11-29T18:50",
+        "name": "Family Skate",
+        "type": "Public Skate",
+        "notes": "Day pass required for non-members and non-U of T students",
+        "ticket": 0
+      },
+      {
+        "id": "9036616b-ecc4-4275-b5fb-c69b75c562c9",
+        "start": "2026-11-30T13:00",
+        "end": "2026-11-30T15:55",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "notes": "Day pass required for non-members and non-U of T students",
+        "ticket": 0
+      },
+      {
+        "id": "006bd745-1b45-493a-a94c-76103cf5ec65",
+        "start": "2026-11-30T16:00",
+        "end": "2026-11-30T16:50",
+        "name": "Hockey",
+        "type": "Pickup Hockey",
+        "notes": "Day pass required for non-members and non-U of T students",
+        "ticket": 0
+      },
+      {
+        "id": "63e2d041-4b47-4af5-9b13-cfd5a6d44d0f",
+        "start": "2026-12-01T11:00",
+        "end": "2026-12-01T12:50",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "notes": "Day pass required for non-members and non-U of T students",
+        "ticket": 0
+      },
+      {
+        "id": "f0975c26-9a79-451f-95a1-ffe4eb5b7b34",
+        "start": "2026-12-03T11:00",
+        "end": "2026-12-03T12:25",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "notes": "Day pass required for non-members and non-U of T students",
+        "ticket": 0
+      },
+      {
+        "id": "26479577-282b-423a-a8be-b1015452cd41",
+        "start": "2026-12-03T12:30",
+        "end": "2026-12-03T13:25",
+        "name": "Stick and Puck",
+        "type": "Stick and Puck",
+        "notes": "Day pass required for non-members and non-U of T students",
+        "ticket": 0
+      },
+      {
+        "id": "839dacfe-055d-49b3-ab52-1360685c472d",
+        "start": "2026-12-03T13:30",
+        "end": "2026-12-03T14:25",
+        "name": "Shinny",
+        "type": "Pickup Hockey",
+        "notes": "Day pass required for non-members and non-U of T students",
+        "ticket": 0
+      },
+      {
+        "id": "f07d57e3-790d-4612-82d8-0a3f5f6e6838",
+        "start": "2026-12-03T14:30",
+        "end": "2026-12-03T15:50",
+        "name": "Figure Skating",
+        "type": "Figure Skating",
+        "notes": "Day pass required for non-members and non-U of T students",
+        "ticket": 0
+      }
+    ]
+  }
+}
