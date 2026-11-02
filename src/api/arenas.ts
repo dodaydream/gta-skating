@@ -1,10 +1,10 @@
 import type { Arena } from "@/types/arena";
+import { getArenaBySlug } from "@/data/schedules";
 
-export async function fetchArenaDetails(name: string): Promise<Arena> {
-  const { arenas } = await import("@/data/schedules");
-  const arena = arenas.find((a) => a.name === name);
+export async function fetchArenaDetails(slug: string): Promise<Arena> {
+  const arena = getArenaBySlug(slug);
   if (!arena) {
-    throw new Error(`Arena not found: ${name}`);
+    throw new Error(`Arena not found: ${slug}`);
   }
   return arena;
 }

@@ -155,11 +155,11 @@ function CloseButton({
 }
 
 export function ArenaDetailModal({
-  arenaName,
+  slug,
   onClose,
   userLocation,
 }: {
-  arenaName: string;
+  slug: string;
   onClose: () => void;
   userLocation?: { lat: number; lon: number } | null;
 }) {
@@ -172,13 +172,13 @@ export function ArenaDetailModal({
 
   useEffect(() => {
     let cancelled = false;
-    fetchArenaDetails(arenaName)
+    fetchArenaDetails(slug)
       .then((data) => {
         if (cancelled) return;
         setArena(data);
         openedRef.current = true;
         trackEvent("arena_detail_open", {
-          arena_name: arenaName,
+          arena_name: data.name,
           program_count: data.schedule.programs?.length ?? 0,
         });
       })
@@ -189,10 +189,10 @@ export function ArenaDetailModal({
       cancelled = true;
       if (openedRef.current) {
         openedRef.current = false;
-        trackEvent("arena_detail_close", { arena_name: arenaName });
+        trackEvent("arena_detail_close", { arena_name: slug });
       }
     };
-  }, [arenaName]);
+  }, [slug]);
 
   if (error) {
     return (

@@ -46,50 +46,65 @@ import tomGraham from "./tom-graham-arena.json";
 import victoriaVillage from "./victoria-village.json";
 import yorkMills from "./york-mills.json";
 
-export const arenas: Arena[] = [
-  billBolton as Arena,
-  agincourt as Arena,
-  albion as Arena,
-  amesbury as Arena,
-  angelaJames as Arena,
-  baycrest as Arena,
-  bayview as Arena,
-  bondLake as Arena,
-  centennialEtobicoke as Arena,
-  centennialScarborough as Arena,
-  central as Arena,
-  chrisTonks as Arena,
-  commander as Arena,
-  cummerPark as Arena,
-  donMillsCivitan as Arena,
-  donMontgomery as Arena,
-  downsview as Arena,
-  eastYorkMemorial as Arena,
-  edSackfield as Arena,
-  elginBarrow as Arena,
-  fenside as Arena,
-  gordAndIreneRisk as Arena,
-  goulding as Arena,
-  grandravine as Arena,
-  habitant as Arena,
-  carnegie as Arena,
-  heronPark as Arena,
-  johnBoothMemorial as Arena,
-  lambton as Arena,
-  longBranch as Arena,
-  malvern as Arena,
-  mcgregorPark as Arena,
-  mimico as Arena,
-  mitchellField as Arena,
-  oriole as Arena,
-  parkLawnBubble as Arena,
-  philWhite as Arena,
-  pinePoint as Arena,
-  pleasantview as Arena,
-  roding as Arena,
-  scarboroughGardens as Arena,
-  scarboroughVillage as Arena,
-  tomGraham as Arena,
-  victoriaVillage as Arena,
-  yorkMills as Arena,
+const entries: [string, Arena][] = [
+  ["bill-bolton", billBolton as Arena],
+  ["agincourt", agincourt as Arena],
+  ["albion", albion as Arena],
+  ["amesbury-sports-complex", amesbury as Arena],
+  ["angela-james", angelaJames as Arena],
+  ["baycrest", baycrest as Arena],
+  ["bayview", bayview as Arena],
+  ["bond-lake-arena", bondLake as Arena],
+  ["centennial-park-etobicoke", centennialEtobicoke as Arena],
+  ["centennial-scarborough", centennialScarborough as Arena],
+  ["central", central as Arena],
+  ["chris-tonks", chrisTonks as Arena],
+  ["commander", commander as Arena],
+  ["cummer-park", cummerPark as Arena],
+  ["don-mills-civitan", donMillsCivitan as Arena],
+  ["don-montgomery", donMontgomery as Arena],
+  ["downsview", downsview as Arena],
+  ["east-york-memorial", eastYorkMemorial as Arena],
+  ["ed-sackfield-arena", edSackfield as Arena],
+  ["elgin-barrow-arena", elginBarrow as Arena],
+  ["fenside", fenside as Arena],
+  ["gord-and-irene-risk", gordAndIreneRisk as Arena],
+  ["goulding", goulding as Arena],
+  ["grandravine-community", grandravine as Arena],
+  ["habitant", habitant as Arena],
+  ["herbert-h-carnegie-centennial-centre", carnegie as Arena],
+  ["heron-park-community", heronPark as Arena],
+  ["john-booth-memorial", johnBoothMemorial as Arena],
+  ["lambton", lambton as Arena],
+  ["long-branch", longBranch as Arena],
+  ["malvern", malvern as Arena],
+  ["mcgregor-park", mcgregorPark as Arena],
+  ["mimico", mimico as Arena],
+  ["mitchell-field", mitchellField as Arena],
+  ["oriole", oriole as Arena],
+  ["park-lawn-bubble-rink", parkLawnBubble as Arena],
+  ["phil-white", philWhite as Arena],
+  ["pine-point", pinePoint as Arena],
+  ["pleasantview", pleasantview as Arena],
+  ["roding", roding as Arena],
+  ["scarborough-gardens", scarboroughGardens as Arena],
+  ["scarborough-village", scarboroughVillage as Arena],
+  ["tom-graham-arena", tomGraham as Arena],
+  ["victoria-village", victoriaVillage as Arena],
+  ["york-mills", yorkMills as Arena],
 ];
+
+const slugMap = new Map(entries);
+
+export const arenas = entries.map(([, a]) => a);
+
+export function getArenaBySlug(slug: string): Arena | undefined {
+  return slugMap.get(slug);
+}
+
+export function getSlugForArena(name: string): string | undefined {
+  for (const [slug, arena] of entries) {
+    if (arena.name === name) return slug;
+  }
+  return undefined;
+}
