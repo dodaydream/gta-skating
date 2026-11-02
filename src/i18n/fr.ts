@@ -57,6 +57,7 @@ const fr: Messages = {
     loadFailed: "Échec du chargement des détails de l’aréna.",
     day: "Jour",
     week: "Semaine",
+    schedule: "Horaires",
     filteredPrograms: "Filtré",
     allPrograms: "Tous les programmes",
     emptyProgramsTitle: "Aucune séance à venir",

@@ -120,15 +120,22 @@ function Panel({
   isDesktop,
   onClose,
   header,
+  bodyRef,
   children,
 }: {
   isDesktop: boolean;
   onClose: () => void;
   header?: React.ReactNode;
+  bodyRef?: React.Ref<HTMLDivElement>;
   children: React.ReactNode;
 }) {
   const body = (
-    <div className="flex min-h-0 flex-1 flex-col gap-3 md:gap-4">{children}</div>
+    <div
+      ref={bodyRef}
+      className="flex min-h-0 flex-1 flex-col gap-3 overflow-y-auto overscroll-contain md:gap-4"
+    >
+      {children}
+    </div>
   );
 
   if (isDesktop) {
@@ -244,7 +251,7 @@ export function VenueDetailModal({
   const [reportsSlug, setReportsSlug] = useState(slug);
   const [, setNowTick] = useState(0);
   const [filterActive, setFilterActive] = useState(true);
-  const weekBodyRef = useRef<HTMLDivElement>(null);
+  const bodyRef = useRef<HTMLDivElement>(null);
   const openedRef = useRef(false);
   const isDesktop = useIsDesktop();
 
@@ -388,6 +395,7 @@ export function VenueDetailModal({
     <Panel
       isDesktop={isDesktop}
       onClose={onClose}
+      bodyRef={bodyRef}
       header={
         <header className="flex items-start justify-between gap-3 px-5 py-4">
           <div>
@@ -427,37 +435,41 @@ export function VenueDetailModal({
             </div>
           ) : null}
 
-          <div className="px-5">
-            <Tabs
-              value={view}
-              onValueChange={(v) => setView(v as "day" | "week")}
-            >
-              <TabsList>
-                <TabsTrigger value="day">{t("venue.day")}</TabsTrigger>
-                <TabsTrigger value="week">{t("venue.week")}</TabsTrigger>
-              </TabsList>
-            </Tabs>
-          </div>
+          <div className="flex flex-col">
+            <div className="sticky top-0 z-30 flex h-12 items-center justify-between gap-3 bg-popover px-5">
+              <h3 className="text-sm font-semibold text-black dark:text-zinc-50">
+                {t("venue.schedule")}
+              </h3>
+              <Tabs
+                value={view}
+                onValueChange={(v) => setView(v as "day" | "week")}
+              >
+                <TabsList>
+                  <TabsTrigger value="day">{t("venue.day")}</TabsTrigger>
+                  <TabsTrigger value="week">{t("venue.week")}</TabsTrigger>
+                </TabsList>
+              </Tabs>
+            </div>
 
-          <div
-            ref={weekBodyRef}
-            className="flex flex-1 flex-col gap-3 overflow-x-hidden overflow-y-auto px-5 md:gap-5"
-          >
-            {view === "day" ? (
-              <ListView
-                programs={programs}
-                timezone={venue.timezone}
-                reports={reports}
-                reportsLoading={reportsLoading}
-                isDesktop={isDesktop}
-              />
-            ) : (
-              <WeekView
-                programs={programs}
-                timezone={venue.timezone}
-                bodyRef={weekBodyRef}
-              />
-            )}
+            <div className="flex flex-col gap-3 px-5 md:gap-5">
+              {view === "day" ? (
+                <div className="pt-3">
+                  <ListView
+                    programs={programs}
+                    timezone={venue.timezone}
+                    reports={reports}
+                    reportsLoading={reportsLoading}
+                    isDesktop={isDesktop}
+                  />
+                </div>
+              ) : (
+                <WeekView
+                  programs={programs}
+                  timezone={venue.timezone}
+                  bodyRef={bodyRef}
+                />
+              )}
+            </div>
           </div>
         </>
       ) : (

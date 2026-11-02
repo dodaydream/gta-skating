@@ -188,8 +188,8 @@ export function WeekView({
         weekEnd.locale(locale).format(`${SHORT_DATE_FORMAT[locale]}, YYYY`);
 
   return (
-    <div className="flex flex-col gap-2">
-      <div className="flex items-center justify-between gap-2">
+    <div className="flex flex-col">
+      <div className="sticky top-12 z-20 -mx-5 flex h-10 items-center justify-between gap-2 bg-popover px-5">
         <button
           type="button"
           onClick={() => setWeekOffset((o) => o - 1)}
@@ -224,7 +224,7 @@ export function WeekView({
         </button>
       </div>
 
-      <div className="week-calendar no-scrollbar min-w-0 flex-1 overflow-x-hidden overflow-y-auto" style={{ maxHeight: "55dvh" }}>
+      <div className="week-calendar min-w-0">
         <div className="week-calendar__header grid grid-cols-subgrid col-span-full">
           <div className="border-b border-black/[.08] dark:border-white/[.1]" />
           {columns.map((col) => (

@@ -55,6 +55,7 @@ const en = {
     loadFailed: "Failed to load venue details.",
     day: "Day",
     week: "Week",
+    schedule: "Schedules",
     filteredPrograms: "Filtered",
     allPrograms: "All programs",
     emptyProgramsTitle: "No upcoming sessions",
