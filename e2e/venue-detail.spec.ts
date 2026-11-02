@@ -40,7 +40,12 @@ test.describe("venue detail", () => {
         venue.url
       );
     }
-    await expect(dialog.getByRole("link", { name: "View on map" })).toHaveAttribute("href", /^geo:/);
+    await expect(
+      dialog.getByRole("link", { name: "View on Google Maps" })
+    ).toHaveAttribute(
+      "href",
+      /^https:\/\/www\.google\.com\/maps\/search\/\?api=1&query=/
+    );
 
     await dialog.getByRole("button", { name: "Close" }).click();
     await expect(page).toHaveURL(/\/$/);
@@ -65,5 +70,27 @@ test.describe("venue detail", () => {
     const title = await dialog.locator('[data-slot="dialog-title"]').innerText();
     expect(names.has(title)).toBe(true);
     expect(page.url()).toMatch(new RegExp(`/venue/${slugify(title)}$`));
+  });
+});
+
+test.describe("venue detail (android)", () => {
+  test.use({
+    userAgent:
+      "Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36",
+  });
+
+  test("map link uses the geo scheme on devices that support it", async ({
+    page,
+  }) => {
+    const venues = loadVenues();
+    await freezeToDay(page, densestDay(venues));
+    const venue = venueWithMostPrograms(venues);
+
+    await page.goto(`/venue/${slugify(venue.name)}`);
+
+    const dialog = page.locator('[data-slot="dialog-content"]');
+    await expect(
+      dialog.getByRole("link", { name: "View on map" })
+    ).toHaveAttribute("href", /^geo:/);
   });
 });

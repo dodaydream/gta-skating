@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState, useSyncExternalStore } from "react";
 import { useTranslation } from "react-i18next";
 import type { Venue } from "@/types/venue";
 import type { Program, ProgramType } from "@/types/schedule";
@@ -58,44 +58,48 @@ const SNAP_POINTS = [0.5, 0.9];
 
 const FIREBASE_CONFIGURED = isFirebaseConfigured();
 
-const GEO_SCHEME_SUPPORTED =
-  /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i;
+const GEO_SCHEME_SUPPORTED = /Android|BlackBerry|IEMobile|Opera Mini/i;
+
+function useGeoSchemeSupported() {
+  return useSyncExternalStore(
+    () => () => {},
+    () => GEO_SCHEME_SUPPORTED.test(navigator.userAgent),
+    () => false
+  );
+}
 
 function MapLink({
   name,
   coordinates,
   address,
   className,
-  children,
 }: {
   name?: string;
   coordinates: { lat: number; lon: number };
   address?: string;
   className?: string;
-  children: React.ReactNode;
 }) {
+  const { t } = useTranslation();
   const { lat, lon } = coordinates;
   const label = [name, address].filter(Boolean).join(", ");
   const query = label
     ? encodeURIComponent(label).replace(/%20/g, "+")
     : `${lat},${lon}`;
-  const geoHref = geoUrl(lat, lon);
-  const fallbackHref = `https://www.google.com/maps/search/?api=1&query=${query}`;
-
-  const handleClick = (e: React.MouseEvent) => {
-    if (GEO_SCHEME_SUPPORTED.test(navigator.userAgent)) return;
-    e.preventDefault();
-    window.open(fallbackHref, "_blank", "noopener,noreferrer");
-  };
+  const geoSchemeSupported = useGeoSchemeSupported();
+  const href = geoSchemeSupported
+    ? geoUrl(lat, lon)
+    : `https://www.google.com/maps/search/?api=1&query=${query}`;
 
   return (
     <a
       className={className}
-      href={geoHref}
+      href={href}
+      target={geoSchemeSupported ? undefined : "_blank"}
       rel="noopener noreferrer"
-      onClick={handleClick}
     >
-      {children}
+      {geoSchemeSupported
+        ? t("programs.viewOnMap")
+        : t("programs.viewOnGoogleMaps")}
     </a>
   );
 }
@@ -583,9 +587,7 @@ export function VenueDetailModal({
               name={venue.name}
               coordinates={venue.coordinates}
               address={venue.address}
-            >
-              {t("programs.viewOnMap")}
-            </MapLink>
+            />
           ) : null}
         </span>
         <span className="text-center text-zinc-400 md:text-right">

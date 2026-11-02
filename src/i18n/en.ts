@@ -44,6 +44,7 @@ const en = {
     noneUpcoming: "No upcoming sessions.",
     venueWebsite: "Venue website",
     viewOnMap: "View on map",
+    viewOnGoogleMaps: "View on Google Maps",
     updated: "Updated {{date}}",
     today: "Today",
     sessions_one: "{{count}} session",

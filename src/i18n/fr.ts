@@ -46,6 +46,7 @@ const fr: Messages = {
     noneUpcoming: "Aucune séance à venir.",
     venueWebsite: "Site Web de l’aréna",
     viewOnMap: "Voir sur la carte",
+    viewOnGoogleMaps: "Voir sur Google Maps",
     updated: "Mis à jour {{date}}",
     today: "Aujourd’hui",
     sessions_one: "{{count}} séance",
