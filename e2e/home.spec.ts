@@ -47,6 +47,38 @@ test.describe("home schedule", () => {
     );
   });
 
+  test("footer stays pinned below a long program list", async ({ page }) => {
+    await openDensestDay(page);
+
+    const aside = sidebar(page);
+    const footer = aside.locator("footer");
+    await expect(footer).toBeVisible();
+
+    const scroller = aside.locator(":scope > div").first();
+    await expect
+      .poll(() => scroller.evaluate((el) => el.scrollHeight > el.clientHeight + 4))
+      .toBe(true);
+
+    const before = await footer.boundingBox();
+    if (!before) throw new Error("missing footer box");
+
+    await scroller.evaluate((el) => {
+      el.scrollTop = el.scrollHeight;
+    });
+
+    const after = await footer.boundingBox();
+    if (!after) throw new Error("missing footer box");
+
+    // The footer is pinned, so scrolling the list must not move it.
+    expect(Math.abs(after.y - before.y)).toBeLessThan(2);
+
+    const asideBox = await aside.boundingBox();
+    if (!asideBox) throw new Error("missing aside box");
+    expect(after.y + after.height).toBeLessThanOrEqual(
+      asideBox.y + asideBox.height + 1
+    );
+  });
+
   test("shows the empty state when no program falls in the range", async ({ page }) => {
     const venues = loadVenues();
     await freezeToDay(page, addDays(densestDay(venues), 60));

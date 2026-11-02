@@ -116,6 +116,8 @@ export function ScheduleSidebar({
             className="flex min-h-0 flex-1 flex-col"
             listClassName="flex flex-1 flex-col gap-2"
           />
+        </div>
+        <div className="shrink-0 bg-card px-6 pb-5">
           <ScheduleFooter />
         </div>
       </aside>
