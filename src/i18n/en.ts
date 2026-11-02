@@ -47,6 +47,12 @@ const en = {
     loadFailed: "Failed to load venue details.",
     day: "Day",
     week: "Week",
+    filteredPrograms: "Filtered",
+    allPrograms: "All programs",
+    emptyProgramsTitle: "No upcoming sessions",
+    emptyProgramsAll: "This venue has no upcoming programs scheduled.",
+    emptyProgramsFiltered: "No upcoming programs match your current filters.",
+    showAllPrograms: "Show all programs",
   },
   week: {
     previous: "Previous week",

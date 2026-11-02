@@ -274,6 +274,9 @@ export default function SkatingApp({ initialSlug }: { initialSlug?: string }) {
           slug={detailSlug}
           userLocation={userLocation}
           onClose={handleCloseDetail}
+          filterFrom={fromDate}
+          filterTo={toDate}
+          filterTypes={types}
         />
       ) : null}
     </div>

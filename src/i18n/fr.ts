@@ -49,6 +49,12 @@ const fr: Messages = {
     loadFailed: "Échec du chargement des détails de l’aréna.",
     day: "Jour",
     week: "Semaine",
+    filteredPrograms: "Filtré",
+    allPrograms: "Tous les programmes",
+    emptyProgramsTitle: "Aucune séance à venir",
+    emptyProgramsAll: "Cet aréna n’a aucun programme à venir.",
+    emptyProgramsFiltered: "Aucun programme à venir ne correspond à vos filtres actuels.",
+    showAllPrograms: "Afficher tous les programmes",
   },
   week: {
     previous: "Semaine précédente",

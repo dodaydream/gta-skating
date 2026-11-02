@@ -3,7 +3,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import type { Venue } from "@/types/venue";
-import type { Program } from "@/types/schedule";
+import type { Program, ProgramType } from "@/types/schedule";
 import type { BusyReport } from "@/types/feedback";
 import { fetchVenueDetails } from "@/api/venues";
 import { loadVenueReports } from "@/api/busyness";
@@ -32,6 +32,7 @@ import {
   isProgramNotEnded,
   osmUrl,
 } from "@/lib/schedule";
+import { Button } from "@/components/ui/button";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { WeekView } from "@/components/schedule/WeekView";
 import { TicketBadge } from "@/components/schedule/TicketBadge";
@@ -40,6 +41,15 @@ import { BusynessInput } from "@/components/schedule/BusynessInput";
 import { trackEvent } from "@/lib/analytics";
 import { normalizeLocale } from "@/i18n/config";
 import { X } from "lucide-react";
+import { IconSnowflake } from "@tabler/icons-react";
+import {
+  Empty,
+  EmptyContent,
+  EmptyDescription,
+  EmptyHeader,
+  EmptyMedia,
+  EmptyTitle,
+} from "@/components/ui/empty";
 
 const DESKTOP_QUERY = "(min-width: 1024px)";
 
@@ -171,10 +181,16 @@ export function VenueDetailModal({
   slug,
   onClose,
   userLocation,
+  filterFrom,
+  filterTo,
+  filterTypes,
 }: {
   slug: string;
   onClose: () => void;
   userLocation?: { lat: number; lon: number } | null;
+  filterFrom?: string;
+  filterTo?: string;
+  filterTypes?: ProgramType[];
 }) {
   const { t, i18n } = useTranslation();
   const locale = normalizeLocale(i18n.resolvedLanguage);
@@ -185,6 +201,7 @@ export function VenueDetailModal({
   const [reportsLoading, setReportsLoading] = useState(FIREBASE_CONFIGURED);
   const [reportsSlug, setReportsSlug] = useState(slug);
   const [, setNowTick] = useState(0);
+  const [filterActive, setFilterActive] = useState(true);
   const weekBodyRef = useRef<HTMLDivElement>(null);
   const openedRef = useRef(false);
   const isDesktop = useIsDesktop();
@@ -289,9 +306,20 @@ export function VenueDetailModal({
     );
   }
 
-  const programs = venue.schedule.programs.filter((program) =>
-    isProgramNotEnded(program.end, venue.timezone)
-  );
+  const hasFilterCriteria = !!(filterFrom && filterTo) || (filterTypes && filterTypes.length > 0);
+  const typeFilterSet =
+    filterTypes && filterTypes.length > 0 ? new Set(filterTypes) : null;
+  const inRange = (start: string, end: string) =>
+    (!filterFrom || end >= filterFrom) && (!filterTo || start <= filterTo);
+  const matchesFilters = (program: Program) =>
+    (!typeFilterSet || typeFilterSet.has(program.type)) &&
+    (!filterFrom || inRange(program.start, program.end));
+
+  const programs = venue.schedule.programs.filter((program) => {
+    if (!isProgramNotEnded(program.end, venue.timezone)) return false;
+    if (hasFilterCriteria && filterActive) return matchesFilters(program);
+    return true;
+  });
   const updated = formatUpdatedDate(
     venue.schedule.updatedAt,
     venue.timezone,
@@ -337,12 +365,14 @@ export function VenueDetailModal({
         </header>
       }
     >
-      <TodayCards
-        programs={programs}
-        timezone={venue.timezone}
-        reports={reports}
-        reportsLoading={reportsLoading}
-      />
+      {programs.length > 0 ? (
+        <TodayCards
+          programs={programs}
+          timezone={venue.timezone}
+          reports={reports}
+          reportsLoading={reportsLoading}
+        />
+      ) : null}
 
       {inProgress ? (
         <div className="px-5">
@@ -368,7 +398,30 @@ export function VenueDetailModal({
         className="flex flex-1 flex-col gap-5 overflow-x-hidden overflow-y-auto px-5"
       >
         {programs.length === 0 ? (
-          <p className="text-sm text-zinc-500">{t("programs.noneUpcoming")}</p>
+          <Empty className="my-6">
+            <EmptyHeader>
+              <EmptyMedia variant="icon">
+                <IconSnowflake />
+              </EmptyMedia>
+              <EmptyTitle>{t("venue.emptyProgramsTitle")}</EmptyTitle>
+              <EmptyDescription>
+                {hasFilterCriteria && filterActive
+                  ? t("venue.emptyProgramsFiltered")
+                  : t("venue.emptyProgramsAll")}
+              </EmptyDescription>
+            </EmptyHeader>
+            {hasFilterCriteria && filterActive ? (
+              <EmptyContent>
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={() => setFilterActive(false)}
+                >
+                  {t("venue.showAllPrograms")}
+                </Button>
+              </EmptyContent>
+            ) : null}
+          </Empty>
         ) : view === "day" ? (
           <ListView
             programs={programs}
