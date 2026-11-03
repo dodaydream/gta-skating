@@ -1,0 +1,951 @@
+{
+  "name": "Burnhamthorpe Community Centre",
+  "url": "https://anc.ca.apm.activecommunities.com/activemississauga/calendars?defaultCalendarId=1&locationId=290&categoryIds=52&view=2",
+  "timezone": "America/Toronto",
+  "address": "1500 Gulleden Drive, Mississauga, ON L4X 2T7",
+  "coordinates": {
+    "lat": 43.622781,
+    "lon": -79.598509
+  },
+  "schedule": {
+    "updatedAt": "2026-11-03T00:11:47.491Z",
+    "programs": [
+      {
+        "id": "7079a2cd-b046-4c9a-916b-6acb4af8d4c4",
+        "start": "2026-11-02T11:15",
+        "end": "2026-11-02T12:45",
+        "name": "Fun Skate",
+        "type": "Public Skate",
+        "ticket": 4.61
+      },
+      {
+        "id": "7335300b-97bd-4060-b2ef-ab606b95cc6d",
+        "start": "2026-11-03T09:15",
+        "end": "2026-11-03T10:45",
+        "name": "Adult & Older Adult Skate",
+        "type": "Public Skate",
+        "ticket": 4.61
+      },
+      {
+        "id": "a924afaf-b52c-4ac4-8796-dc5945bfb83a",
+        "start": "2026-11-03T12:15",
+        "end": "2026-11-03T13:45",
+        "name": "Hockey Shinny (18+)",
+        "type": "Pickup Hockey",
+        "ticket": 6.96
+      },
+      {
+        "id": "c74eaedc-fc12-4277-adfc-9dc5ff941110",
+        "start": "2026-11-04T09:15",
+        "end": "2026-11-04T10:45",
+        "name": "55+ Hockey Shinny",
+        "type": "Pickup Hockey",
+        "ticket": 5.56
+      },
+      {
+        "id": "7644635b-5c23-4efd-b7ea-fc98024d1142",
+        "start": "2026-11-04T12:15",
+        "end": "2026-11-04T13:45",
+        "name": "Hockey Shinny (18+)",
+        "type": "Pickup Hockey",
+        "ticket": 6.96
+      },
+      {
+        "id": "d4406b06-ce5c-49fe-ad9b-0e900bbdb4d6",
+        "start": "2026-11-04T15:45",
+        "end": "2026-11-04T17:00",
+        "name": "Youth Sauga At Play Skate (10 - 17 yrs)",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "03e7f92a-d3ff-4fe9-9451-e5f85bbc92f0",
+        "start": "2026-11-04T17:15",
+        "end": "2026-11-04T18:05",
+        "name": "Hockey Stick & Puck With Adult (9-13 yrs)",
+        "type": "Stick and Puck",
+        "ticket": 3.98
+      },
+      {
+        "id": "cd0684be-6a95-4c41-9124-9b2e3fc73067",
+        "start": "2026-11-05T15:45",
+        "end": "2026-11-05T17:00",
+        "name": "Youth Sauga At Play Skate (10 - 17 yrs)",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "52fac581-14df-4539-84f1-de133cb34c16",
+        "start": "2026-11-06T09:15",
+        "end": "2026-11-06T10:45",
+        "name": "55+ Hockey Shinny",
+        "type": "Pickup Hockey",
+        "ticket": 5.56
+      },
+      {
+        "id": "854df1c4-ab56-4116-838c-6c8f426f77a2",
+        "start": "2026-11-06T11:15",
+        "end": "2026-11-06T12:45",
+        "name": "Fun Skate",
+        "type": "Public Skate",
+        "ticket": 4.61
+      },
+      {
+        "id": "f3b61ee9-e380-4a01-843d-b29e2422c09d",
+        "start": "2026-11-06T14:15",
+        "end": "2026-11-06T15:45",
+        "name": "Adult & Older Adult Skate",
+        "type": "Public Skate",
+        "ticket": 4.61
+      },
+      {
+        "id": "dcc9d0f5-bb6b-4b45-9e98-fab5f2a51b76",
+        "start": "2026-11-06T18:15",
+        "end": "2026-11-06T19:45",
+        "name": "Fun Skate",
+        "type": "Public Skate",
+        "ticket": 4.61
+      },
+      {
+        "id": "2b03596f-d9c7-4c96-8e87-1c24bcd52c75",
+        "start": "2026-11-07T14:15",
+        "end": "2026-11-07T15:45",
+        "name": "Fun Skate",
+        "type": "Public Skate",
+        "ticket": 4.61
+      },
+      {
+        "id": "0d1e199a-26ba-40a3-8a44-bf7b0b5fd063",
+        "start": "2026-11-07T16:15",
+        "end": "2026-11-07T17:45",
+        "name": "Figure Skating",
+        "type": "Figure Skating",
+        "ticket": 4.61
+      },
+      {
+        "id": "c4db3d9c-6641-43c8-8b55-3428285d7edb",
+        "start": "2026-11-07T18:15",
+        "end": "2026-11-07T19:45",
+        "name": "Fun Skate",
+        "type": "Public Skate",
+        "ticket": 4.61
+      },
+      {
+        "id": "98b6439e-0bef-4330-b9e6-489bd9bc76cc",
+        "start": "2026-11-09T11:15",
+        "end": "2026-11-09T12:45",
+        "name": "Fun Skate",
+        "type": "Public Skate",
+        "ticket": 4.61
+      },
+      {
+        "id": "1bcb1922-d56e-4e75-a82d-34dd8447c831",
+        "start": "2026-11-10T09:15",
+        "end": "2026-11-10T10:45",
+        "name": "Adult & Older Adult Skate",
+        "type": "Public Skate",
+        "ticket": 4.61
+      },
+      {
+        "id": "38b330bd-7063-4366-b04a-a238c0eee62f",
+        "start": "2026-11-10T12:15",
+        "end": "2026-11-10T13:45",
+        "name": "Hockey Shinny (18+)",
+        "type": "Pickup Hockey",
+        "ticket": 6.96
+      },
+      {
+        "id": "c2cd926f-f1b5-4c7b-a24d-abe6990203bb",
+        "start": "2026-11-11T09:15",
+        "end": "2026-11-11T10:45",
+        "name": "55+ Hockey Shinny",
+        "type": "Pickup Hockey",
+        "ticket": 5.56
+      },
+      {
+        "id": "fb2a7c3d-fb5c-4417-9924-ab78f8c5c547",
+        "start": "2026-11-11T12:15",
+        "end": "2026-11-11T13:45",
+        "name": "Hockey Shinny (18+)",
+        "type": "Pickup Hockey",
+        "ticket": 6.96
+      },
+      {
+        "id": "d8a14192-89fb-474b-8d20-e574c6819be7",
+        "start": "2026-11-11T15:45",
+        "end": "2026-11-11T17:00",
+        "name": "Youth Sauga At Play Skate (10 - 17 yrs)",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "8d18fec2-e6ed-4f01-8914-5e1f22ca2d76",
+        "start": "2026-11-11T17:15",
+        "end": "2026-11-11T18:05",
+        "name": "Hockey Stick & Puck With Adult (9-13 yrs)",
+        "type": "Stick and Puck",
+        "ticket": 3.98
+      },
+      {
+        "id": "586abe89-9c28-4b11-9434-68148dfee1b7",
+        "start": "2026-11-12T15:45",
+        "end": "2026-11-12T17:00",
+        "name": "Youth Sauga At Play Skate (10 - 17 yrs)",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "109ee3ad-94fc-4c83-ae35-f7bc5f8f41cd",
+        "start": "2026-11-13T09:15",
+        "end": "2026-11-13T10:45",
+        "name": "55+ Hockey Shinny",
+        "type": "Pickup Hockey",
+        "ticket": 5.56
+      },
+      {
+        "id": "a24b057c-b6be-492c-bf33-a25f07e307b2",
+        "start": "2026-11-13T11:15",
+        "end": "2026-11-13T12:45",
+        "name": "Fun Skate",
+        "type": "Public Skate",
+        "ticket": 4.61
+      },
+      {
+        "id": "9890cfbe-6950-47ec-8c14-72d7a4dbd0ce",
+        "start": "2026-11-13T14:15",
+        "end": "2026-11-13T15:45",
+        "name": "Adult & Older Adult Skate",
+        "type": "Public Skate",
+        "ticket": 4.61
+      },
+      {
+        "id": "2f024360-7289-44b5-b788-fe7cd0305f72",
+        "start": "2026-11-13T18:15",
+        "end": "2026-11-13T19:45",
+        "name": "Fun Skate",
+        "type": "Public Skate",
+        "ticket": 4.61
+      },
+      {
+        "id": "a688fd8f-b823-416b-9d84-178a89b9ba09",
+        "start": "2026-11-14T14:15",
+        "end": "2026-11-14T15:45",
+        "name": "Fun Skate",
+        "type": "Public Skate",
+        "ticket": 4.61
+      },
+      {
+        "id": "216d48ec-fb4b-4bce-bafc-5eb24184fb68",
+        "start": "2026-11-14T16:15",
+        "end": "2026-11-14T17:45",
+        "name": "Figure Skating",
+        "type": "Figure Skating",
+        "ticket": 4.61
+      },
+      {
+        "id": "b8c59f4c-7804-4f7f-a177-7ae3781f10da",
+        "start": "2026-11-14T18:15",
+        "end": "2026-11-14T19:45",
+        "name": "Fun Skate",
+        "type": "Public Skate",
+        "ticket": 4.61
+      },
+      {
+        "id": "f6044a73-3fc7-4d45-8789-8c78ef0a465a",
+        "start": "2026-11-16T11:15",
+        "end": "2026-11-16T12:45",
+        "name": "Fun Skate",
+        "type": "Public Skate",
+        "ticket": 4.61
+      },
+      {
+        "id": "3b76e7df-b4e4-40cf-9682-9f9d90809feb",
+        "start": "2026-11-17T09:15",
+        "end": "2026-11-17T10:45",
+        "name": "Adult & Older Adult Skate",
+        "type": "Public Skate",
+        "ticket": 4.61
+      },
+      {
+        "id": "e54e1bb2-136d-451f-b63d-df8d9fe5925d",
+        "start": "2026-11-17T12:15",
+        "end": "2026-11-17T13:45",
+        "name": "Hockey Shinny (18+)",
+        "type": "Pickup Hockey",
+        "ticket": 6.96
+      },
+      {
+        "id": "f2da6466-3cf0-47f9-aa09-0426f28b0189",
+        "start": "2026-11-18T09:15",
+        "end": "2026-11-18T10:45",
+        "name": "55+ Hockey Shinny",
+        "type": "Pickup Hockey",
+        "ticket": 5.56
+      },
+      {
+        "id": "6246845c-dbd7-4fb1-9b69-80ea04162be7",
+        "start": "2026-11-18T12:15",
+        "end": "2026-11-18T13:45",
+        "name": "Hockey Shinny (18+)",
+        "type": "Pickup Hockey",
+        "ticket": 6.96
+      },
+      {
+        "id": "2e8cecaa-31d4-4738-ab40-f0a164001310",
+        "start": "2026-11-18T15:45",
+        "end": "2026-11-18T17:00",
+        "name": "Youth Sauga At Play Skate (10 - 17 yrs)",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "79a5e3bb-705a-4be3-84cb-d851a4059f67",
+        "start": "2026-11-18T17:15",
+        "end": "2026-11-18T18:05",
+        "name": "Hockey Stick & Puck With Adult (9-13 yrs)",
+        "type": "Stick and Puck",
+        "ticket": 3.98
+      },
+      {
+        "id": "0549fb17-ab80-499f-a508-d11426ec99f3",
+        "start": "2026-11-19T15:45",
+        "end": "2026-11-19T17:00",
+        "name": "Youth Sauga At Play Skate (10 - 17 yrs)",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "02106b1f-0d2f-4281-9515-73fb35351804",
+        "start": "2026-11-20T09:15",
+        "end": "2026-11-20T10:45",
+        "name": "55+ Hockey Shinny",
+        "type": "Pickup Hockey",
+        "ticket": 5.56
+      },
+      {
+        "id": "9d445af9-243b-474d-acd8-a901dd787f57",
+        "start": "2026-11-20T11:15",
+        "end": "2026-11-20T12:45",
+        "name": "Fun Skate",
+        "type": "Public Skate",
+        "ticket": 4.61
+      },
+      {
+        "id": "bc2a0515-65a7-4248-9813-64606ef14679",
+        "start": "2026-11-20T14:15",
+        "end": "2026-11-20T15:45",
+        "name": "Adult & Older Adult Skate",
+        "type": "Public Skate",
+        "ticket": 4.61
+      },
+      {
+        "id": "d862fd5a-98d1-4140-8f72-c16de5b64c60",
+        "start": "2026-11-20T18:15",
+        "end": "2026-11-20T19:45",
+        "name": "Free Fun Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "545080cd-02f7-41e4-9db9-3b7a3eda5d65",
+        "start": "2026-11-21T14:15",
+        "end": "2026-11-21T15:45",
+        "name": "Fun Skate",
+        "type": "Public Skate",
+        "ticket": 4.61
+      },
+      {
+        "id": "c74a73b1-1ae8-431b-9c1e-c6e3c4b91f40",
+        "start": "2026-11-21T16:15",
+        "end": "2026-11-21T17:45",
+        "name": "Figure Skating",
+        "type": "Figure Skating",
+        "ticket": 4.61
+      },
+      {
+        "id": "235d33c2-a192-4abb-9da0-0f94e25be39b",
+        "start": "2026-11-21T18:15",
+        "end": "2026-11-21T19:45",
+        "name": "Fun Skate",
+        "type": "Public Skate",
+        "ticket": 4.61
+      },
+      {
+        "id": "6e4afbe2-b257-4f4c-8289-b989fcd1a509",
+        "start": "2026-11-23T11:15",
+        "end": "2026-11-23T12:45",
+        "name": "Fun Skate",
+        "type": "Public Skate",
+        "ticket": 4.61
+      },
+      {
+        "id": "b5202200-d18b-4e90-ae15-67182bfed52e",
+        "start": "2026-11-24T09:15",
+        "end": "2026-11-24T10:45",
+        "name": "Adult & Older Adult Skate",
+        "type": "Public Skate",
+        "ticket": 4.61
+      },
+      {
+        "id": "25bbcfd0-5f49-4b71-9b63-cabb4fc943ff",
+        "start": "2026-11-24T12:15",
+        "end": "2026-11-24T13:45",
+        "name": "Hockey Shinny (18+)",
+        "type": "Pickup Hockey",
+        "ticket": 6.96
+      },
+      {
+        "id": "1488f3bb-dc3a-44bc-9c83-029eeb4c16f3",
+        "start": "2026-11-25T09:15",
+        "end": "2026-11-25T10:45",
+        "name": "55+ Hockey Shinny",
+        "type": "Pickup Hockey",
+        "ticket": 5.56
+      },
+      {
+        "id": "1bdb2711-5b67-4f49-970c-b13dae94c25c",
+        "start": "2026-11-25T12:15",
+        "end": "2026-11-25T13:45",
+        "name": "Hockey Shinny (18+)",
+        "type": "Pickup Hockey",
+        "ticket": 6.96
+      },
+      {
+        "id": "7752d160-4659-40c7-8a5a-16b8d2eeb295",
+        "start": "2026-11-25T15:45",
+        "end": "2026-11-25T17:00",
+        "name": "Youth Sauga At Play Skate (10 - 17 yrs)",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "604e0f01-6815-440e-a2c0-b01336e5685f",
+        "start": "2026-11-25T17:15",
+        "end": "2026-11-25T18:05",
+        "name": "Hockey Stick & Puck With Adult (9-13 yrs)",
+        "type": "Stick and Puck",
+        "ticket": 3.98
+      },
+      {
+        "id": "4c668aa5-78d7-4edf-a8fb-449092578080",
+        "start": "2026-11-26T15:45",
+        "end": "2026-11-26T17:00",
+        "name": "Youth Sauga At Play Skate (10 - 17 yrs)",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "1cfe15b9-c6ef-4a55-915b-434283a01c09",
+        "start": "2026-11-27T09:15",
+        "end": "2026-11-27T10:45",
+        "name": "55+ Hockey Shinny",
+        "type": "Pickup Hockey",
+        "ticket": 5.56
+      },
+      {
+        "id": "b3c4df7b-997d-4c74-aa46-8c42e71bddfd",
+        "start": "2026-11-27T11:15",
+        "end": "2026-11-27T12:45",
+        "name": "Fun Skate",
+        "type": "Public Skate",
+        "ticket": 4.61
+      },
+      {
+        "id": "0fc2d039-dae3-41db-87d7-62ef47475495",
+        "start": "2026-11-27T14:15",
+        "end": "2026-11-27T15:45",
+        "name": "Adult & Older Adult Skate",
+        "type": "Public Skate",
+        "ticket": 4.61
+      },
+      {
+        "id": "b9be2990-a87e-4543-97b1-0ace83f44399",
+        "start": "2026-11-27T18:15",
+        "end": "2026-11-27T19:45",
+        "name": "Fun Skate",
+        "type": "Public Skate",
+        "ticket": 4.61
+      },
+      {
+        "id": "d0ed40e0-1ae5-47d4-b3be-eec6ff64f2f7",
+        "start": "2026-11-28T14:15",
+        "end": "2026-11-28T15:45",
+        "name": "Fun Skate",
+        "type": "Public Skate",
+        "ticket": 4.61
+      },
+      {
+        "id": "c599309e-1556-4c1d-adef-91262f1dab29",
+        "start": "2026-11-28T16:15",
+        "end": "2026-11-28T17:45",
+        "name": "Figure Skating",
+        "type": "Figure Skating",
+        "ticket": 4.61
+      },
+      {
+        "id": "4ded8ab3-32a5-40bb-90fa-a064a29fd4ac",
+        "start": "2026-11-28T18:15",
+        "end": "2026-11-28T19:45",
+        "name": "Fun Skate",
+        "type": "Public Skate",
+        "ticket": 4.61
+      },
+      {
+        "id": "66fd09ed-56fb-417f-a3c1-71f1d0cc699a",
+        "start": "2026-11-30T11:15",
+        "end": "2026-11-30T12:45",
+        "name": "Fun Skate",
+        "type": "Public Skate",
+        "ticket": 4.61
+      },
+      {
+        "id": "f90995f3-75c7-412a-bbdf-cb670f9138c6",
+        "start": "2026-12-01T09:15",
+        "end": "2026-12-01T10:45",
+        "name": "Adult & Older Adult Skate",
+        "type": "Public Skate",
+        "ticket": 4.61
+      },
+      {
+        "id": "1e734253-7a25-40e4-8796-0f315a361ea3",
+        "start": "2026-12-01T12:15",
+        "end": "2026-12-01T13:45",
+        "name": "Hockey Shinny (18+)",
+        "type": "Pickup Hockey",
+        "ticket": 6.96
+      },
+      {
+        "id": "040ed06d-bfc7-40f5-b0f2-349400920e64",
+        "start": "2026-12-02T09:15",
+        "end": "2026-12-02T10:45",
+        "name": "55+ Hockey Shinny",
+        "type": "Pickup Hockey",
+        "ticket": 5.56
+      },
+      {
+        "id": "bc6adfc0-1bbd-4747-a4a3-5899ca2c4a46",
+        "start": "2026-12-02T12:15",
+        "end": "2026-12-02T13:45",
+        "name": "Hockey Shinny (18+)",
+        "type": "Pickup Hockey",
+        "ticket": 6.96
+      },
+      {
+        "id": "ae94fd24-1712-408b-9247-9125b4ffb875",
+        "start": "2026-12-02T15:45",
+        "end": "2026-12-02T17:00",
+        "name": "Youth Sauga At Play Skate (10 - 17 yrs)",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "3d5f06ab-bd07-4382-a135-2cef688ee0cd",
+        "start": "2026-12-02T17:15",
+        "end": "2026-12-02T18:05",
+        "name": "Hockey Stick & Puck With Adult (9-13 yrs)",
+        "type": "Stick and Puck",
+        "ticket": 3.98
+      },
+      {
+        "id": "90f59ca6-793b-4e4a-838f-ee4c82cb28d8",
+        "start": "2026-12-03T15:45",
+        "end": "2026-12-03T17:00",
+        "name": "Youth Sauga At Play Skate (10 - 17 yrs)",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "0a83e0b4-84c3-4a54-8cb2-a70c1b994799",
+        "start": "2026-12-04T09:15",
+        "end": "2026-12-04T10:45",
+        "name": "55+ Hockey Shinny",
+        "type": "Pickup Hockey",
+        "ticket": 5.56
+      },
+      {
+        "id": "d835a709-bc68-4443-aa81-cca21c3a7285",
+        "start": "2026-12-04T11:15",
+        "end": "2026-12-04T12:45",
+        "name": "Fun Skate",
+        "type": "Public Skate",
+        "ticket": 4.61
+      },
+      {
+        "id": "a019904d-8f0b-4512-b46a-abc2a34aad2c",
+        "start": "2026-12-04T14:15",
+        "end": "2026-12-04T15:45",
+        "name": "Adult & Older Adult Skate",
+        "type": "Public Skate",
+        "ticket": 4.61
+      },
+      {
+        "id": "030aadf6-41b5-448d-ba7a-c5e7f0f2f1ec",
+        "start": "2026-12-04T18:15",
+        "end": "2026-12-04T19:45",
+        "name": "Fun Skate",
+        "type": "Public Skate",
+        "ticket": 4.61
+      },
+      {
+        "id": "59067784-e1f2-417d-936e-1cb82fdd1437",
+        "start": "2026-12-05T14:15",
+        "end": "2026-12-05T15:45",
+        "name": "Fun Skate",
+        "type": "Public Skate",
+        "ticket": 4.61
+      },
+      {
+        "id": "3619ba12-422d-4951-bc9c-69f1e6b9c293",
+        "start": "2026-12-05T16:15",
+        "end": "2026-12-05T17:45",
+        "name": "Figure Skating",
+        "type": "Figure Skating",
+        "ticket": 4.61
+      },
+      {
+        "id": "37c733ee-bfbf-467e-8eaf-e107a97b7393",
+        "start": "2026-12-05T18:15",
+        "end": "2026-12-05T19:45",
+        "name": "Fun Skate",
+        "type": "Public Skate",
+        "ticket": 4.61
+      },
+      {
+        "id": "9fe66048-bdd5-490c-a1db-9c2b2ff3ca53",
+        "start": "2026-12-07T11:15",
+        "end": "2026-12-07T12:45",
+        "name": "Fun Skate",
+        "type": "Public Skate",
+        "ticket": 4.61
+      },
+      {
+        "id": "cebc473e-c775-4621-bebb-a89bfcb4a033",
+        "start": "2026-12-08T09:15",
+        "end": "2026-12-08T10:45",
+        "name": "Adult & Older Adult Skate",
+        "type": "Public Skate",
+        "ticket": 4.61
+      },
+      {
+        "id": "bfdf44a0-23be-49dc-a55c-3c8182026384",
+        "start": "2026-12-08T12:15",
+        "end": "2026-12-08T13:45",
+        "name": "Hockey Shinny (18+)",
+        "type": "Pickup Hockey",
+        "ticket": 6.96
+      },
+      {
+        "id": "92f428e0-d09f-4f50-88a6-aa76bd7e111c",
+        "start": "2026-12-09T09:15",
+        "end": "2026-12-09T10:45",
+        "name": "55+ Hockey Shinny",
+        "type": "Pickup Hockey",
+        "ticket": 5.56
+      },
+      {
+        "id": "913c01ff-d356-449f-8205-5d1a7cafe9d2",
+        "start": "2026-12-09T12:15",
+        "end": "2026-12-09T13:45",
+        "name": "Hockey Shinny (18+)",
+        "type": "Pickup Hockey",
+        "ticket": 6.96
+      },
+      {
+        "id": "481426b8-19fc-48d1-943c-4bb025d95388",
+        "start": "2026-12-09T15:45",
+        "end": "2026-12-09T17:00",
+        "name": "Youth Sauga At Play Skate (10 - 17 yrs)",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "34e76f90-c6b0-4f92-8a99-198d832e74da",
+        "start": "2026-12-09T17:15",
+        "end": "2026-12-09T18:05",
+        "name": "Hockey Stick & Puck With Adult (9-13 yrs)",
+        "type": "Stick and Puck",
+        "ticket": 3.98
+      },
+      {
+        "id": "eef5fa65-fc00-4f07-a42c-ed29dc5dc1e8",
+        "start": "2026-12-10T15:45",
+        "end": "2026-12-10T17:00",
+        "name": "Youth Sauga At Play Skate (10 - 17 yrs)",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "a2b911c7-7a3d-4cab-ba4e-0ffb8e8abd3a",
+        "start": "2026-12-11T09:15",
+        "end": "2026-12-11T10:45",
+        "name": "55+ Hockey Shinny",
+        "type": "Pickup Hockey",
+        "ticket": 5.56
+      },
+      {
+        "id": "cdd3f632-67ff-4406-9fc8-6f1c27d47775",
+        "start": "2026-12-11T11:15",
+        "end": "2026-12-11T12:45",
+        "name": "Fun Skate",
+        "type": "Public Skate",
+        "ticket": 4.61
+      },
+      {
+        "id": "1ae8e1a4-48ee-452f-97da-5669c424361f",
+        "start": "2026-12-11T14:15",
+        "end": "2026-12-11T15:45",
+        "name": "Adult & Older Adult Skate",
+        "type": "Public Skate",
+        "ticket": 4.61
+      },
+      {
+        "id": "09ecec0f-8b88-4d98-a9dd-ef737f968edf",
+        "start": "2026-12-11T18:15",
+        "end": "2026-12-11T19:45",
+        "name": "Fun Skate",
+        "type": "Public Skate",
+        "ticket": 4.61
+      },
+      {
+        "id": "623d2e3c-9742-424b-af61-da76329d90a7",
+        "start": "2026-12-12T14:15",
+        "end": "2026-12-12T15:45",
+        "name": "Fun Skate",
+        "type": "Public Skate",
+        "ticket": 4.61
+      },
+      {
+        "id": "24a3113f-fa0d-4698-a089-f996ecfe3c13",
+        "start": "2026-12-12T16:15",
+        "end": "2026-12-12T17:45",
+        "name": "Figure Skating",
+        "type": "Figure Skating",
+        "ticket": 4.61
+      },
+      {
+        "id": "6ee77ff3-0030-4212-bbbb-2b51d217e1e8",
+        "start": "2026-12-12T18:15",
+        "end": "2026-12-12T19:45",
+        "name": "Fun Skate",
+        "type": "Public Skate",
+        "ticket": 4.61
+      },
+      {
+        "id": "18b0a359-7853-43fe-b337-a105668ba8ac",
+        "start": "2026-12-14T11:15",
+        "end": "2026-12-14T12:45",
+        "name": "Fun Skate",
+        "type": "Public Skate",
+        "ticket": 4.61
+      },
+      {
+        "id": "926eb59d-7c92-4c41-9e82-a1d6ec77929b",
+        "start": "2026-12-15T09:15",
+        "end": "2026-12-15T10:45",
+        "name": "Adult & Older Adult Skate",
+        "type": "Public Skate",
+        "ticket": 4.61
+      },
+      {
+        "id": "c0641f38-2f5b-4ec2-bcbc-a11d705264c1",
+        "start": "2026-12-15T12:15",
+        "end": "2026-12-15T13:45",
+        "name": "Hockey Shinny (18+)",
+        "type": "Pickup Hockey",
+        "ticket": 6.96
+      },
+      {
+        "id": "5f1bd58c-f360-4e35-a849-437e41e6f798",
+        "start": "2026-12-16T09:15",
+        "end": "2026-12-16T10:45",
+        "name": "55+ Hockey Shinny",
+        "type": "Pickup Hockey",
+        "ticket": 5.56
+      },
+      {
+        "id": "5e6acd46-180b-418c-8ff9-eb41552960a1",
+        "start": "2026-12-16T12:15",
+        "end": "2026-12-16T13:45",
+        "name": "Hockey Shinny (18+)",
+        "type": "Pickup Hockey",
+        "ticket": 6.96
+      },
+      {
+        "id": "50ceff56-b9d3-4964-ab9b-0159d34867d0",
+        "start": "2026-12-16T15:45",
+        "end": "2026-12-16T17:00",
+        "name": "Youth Sauga At Play Skate (10 - 17 yrs)",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "c7b3c503-49e9-4a02-ad5d-5bd337afabad",
+        "start": "2026-12-16T17:15",
+        "end": "2026-12-16T18:05",
+        "name": "Hockey Stick & Puck With Adult (9-13 yrs)",
+        "type": "Stick and Puck",
+        "ticket": 3.98
+      },
+      {
+        "id": "a42b0fbf-40fc-4296-b3b5-293742694da6",
+        "start": "2026-12-17T15:45",
+        "end": "2026-12-17T17:00",
+        "name": "Youth Sauga At Play Skate (10 - 17 yrs)",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "abb0cb10-1b9f-4023-8da7-1b1bf5266ead",
+        "start": "2026-12-18T09:15",
+        "end": "2026-12-18T10:45",
+        "name": "55+ Hockey Shinny",
+        "type": "Pickup Hockey",
+        "ticket": 5.56
+      },
+      {
+        "id": "b4b06a0e-92b5-4bb4-8f99-fe43b092e518",
+        "start": "2026-12-18T11:15",
+        "end": "2026-12-18T12:45",
+        "name": "Fun Skate",
+        "type": "Public Skate",
+        "ticket": 4.61
+      },
+      {
+        "id": "569f1db7-1305-4d51-a583-f8e89f6c78d1",
+        "start": "2026-12-18T14:15",
+        "end": "2026-12-18T15:45",
+        "name": "Adult & Older Adult Skate",
+        "type": "Public Skate",
+        "ticket": 4.61
+      },
+      {
+        "id": "7ff6cadd-774c-44d7-8ee8-9b39acacf5b5",
+        "start": "2026-12-18T18:15",
+        "end": "2026-12-18T19:45",
+        "name": "Free Fun Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "f202db19-8626-43ed-9874-a70ad996a51c",
+        "start": "2026-12-19T14:15",
+        "end": "2026-12-19T15:45",
+        "name": "Fun Skate",
+        "type": "Public Skate",
+        "ticket": 4.61
+      },
+      {
+        "id": "9df96f53-4414-4ced-a964-ba89f5e9cfc4",
+        "start": "2026-12-19T16:15",
+        "end": "2026-12-19T17:45",
+        "name": "Figure Skating",
+        "type": "Figure Skating",
+        "ticket": 4.61
+      },
+      {
+        "id": "b5b0f4fb-d075-40c7-bc55-52da6ef3d540",
+        "start": "2026-12-19T18:15",
+        "end": "2026-12-19T19:45",
+        "name": "Fun Skate",
+        "type": "Public Skate",
+        "ticket": 4.61
+      },
+      {
+        "id": "3400045f-65df-4482-8455-8d90427080e5",
+        "start": "2026-12-21T11:15",
+        "end": "2026-12-21T12:45",
+        "name": "Fun Skate",
+        "type": "Public Skate",
+        "ticket": 4.61
+      },
+      {
+        "id": "d86bd58f-7916-499e-8922-195ab381f1ee",
+        "start": "2026-12-22T09:15",
+        "end": "2026-12-22T10:45",
+        "name": "Adult & Older Adult Skate",
+        "type": "Public Skate",
+        "ticket": 4.61
+      },
+      {
+        "id": "6a17666c-64b3-4559-b994-89651d538f83",
+        "start": "2026-12-22T12:15",
+        "end": "2026-12-22T13:45",
+        "name": "Hockey Shinny (18+)",
+        "type": "Pickup Hockey",
+        "ticket": 6.96
+      },
+      {
+        "id": "7fe61c99-bbd6-4d21-b6af-868c8c6dd763",
+        "start": "2026-12-23T09:15",
+        "end": "2026-12-23T10:45",
+        "name": "55+ Hockey Shinny",
+        "type": "Pickup Hockey",
+        "ticket": 5.56
+      },
+      {
+        "id": "3017ffd8-289a-4e7f-aa62-77ff428b44e3",
+        "start": "2026-12-23T12:15",
+        "end": "2026-12-23T13:45",
+        "name": "Hockey Shinny (18+)",
+        "type": "Pickup Hockey",
+        "ticket": 6.96
+      },
+      {
+        "id": "1e4252be-1885-4d79-83c3-7f72539f6a41",
+        "start": "2026-12-23T17:15",
+        "end": "2026-12-23T18:05",
+        "name": "Hockey Stick & Puck With Adult (9-13 yrs)",
+        "type": "Stick and Puck",
+        "ticket": 3.98
+      },
+      {
+        "id": "fd55690a-e3c2-4bf7-952b-4e61fff2da78",
+        "start": "2026-12-28T11:15",
+        "end": "2026-12-28T12:45",
+        "name": "Fun Skate",
+        "type": "Public Skate",
+        "ticket": 4.61
+      },
+      {
+        "id": "7d084acb-b1d3-445c-91f6-0c347f42a28d",
+        "start": "2026-12-29T09:15",
+        "end": "2026-12-29T10:45",
+        "name": "Adult & Older Adult Skate",
+        "type": "Public Skate",
+        "ticket": 4.61
+      },
+      {
+        "id": "1f9bcfe0-8506-4f16-8e41-fa2dcd38cf62",
+        "start": "2026-12-29T12:15",
+        "end": "2026-12-29T13:45",
+        "name": "Hockey Shinny (18+)",
+        "type": "Pickup Hockey",
+        "ticket": 6.96
+      },
+      {
+        "id": "386ff722-4fde-461e-9047-1900515dd9f3",
+        "start": "2026-12-30T09:15",
+        "end": "2026-12-30T10:45",
+        "name": "55+ Hockey Shinny",
+        "type": "Pickup Hockey",
+        "ticket": 5.56
+      },
+      {
+        "id": "e2183a18-ac02-4498-b49e-1630311e5a8c",
+        "start": "2026-12-30T12:15",
+        "end": "2026-12-30T13:45",
+        "name": "Hockey Shinny (18+)",
+        "type": "Pickup Hockey",
+        "ticket": 6.96
+      },
+      {
+        "id": "ee7e6ce0-c135-40e6-999b-8f422874d47b",
+        "start": "2026-12-30T17:15",
+        "end": "2026-12-30T18:05",
+        "name": "Hockey Stick & Puck With Adult (9-13 yrs)",
+        "type": "Stick and Puck",
+        "ticket": 3.98
+      }
+    ]
+  }
+}

@@ -12,6 +12,8 @@ export interface VenueMetaEntry extends VenueMeta {
   locationId?: number;
   /** Daysmart Recreation facility id used by the canlan scraper. */
   facilityId?: number;
+  /** ActiveNet center id used by the mississauga-ca scraper. */
+  centerId?: number;
   type: "indoor" | "outdoor";
 }
 

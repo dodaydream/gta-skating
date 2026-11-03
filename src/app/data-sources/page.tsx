@@ -31,6 +31,11 @@ const SOURCES: {
     title: "Parks & Recreation Facility Listings – City of Toronto",
   },
   {
+    name: "City of Mississauga",
+    href: "https://anc.ca.apm.activecommunities.com/activemississauga/calendars?defaultCalendarId=1&categoryIds=52&view=2",
+    title: "Drop-In Recreation – City of Mississauga",
+  },
+  {
     name: "George Bell Arena",
     href: "https://georgebellarena.com/public-skating",
     title: "Public Skating",
@@ -44,6 +49,11 @@ const SOURCES: {
     name: "Leaside Gardens",
     href: "https://leasidegardens.com/arenas/public-skate-times/",
     title: "Public Skating, Figure Skating & Shinny – Leaside Gardens",
+  },
+  {
+    name: "Mattamy Athletic Centre",
+    href: "https://www.mattamyathleticcentre.ca/venue-info/community-skates",
+    title: "Community Skates | Mattamy Athletic Centre",
   },
   {
     name: "Moss Park Arena",
