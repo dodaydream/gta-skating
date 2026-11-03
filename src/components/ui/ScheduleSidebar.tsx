@@ -206,7 +206,7 @@ export function ScheduleSidebar({
             </div>
           }
         >
-          <div className="min-h-0 flex-1 overflow-y-auto px-4 pb-6">
+          <div className="min-h-0 flex-1 overflow-y-auto px-4 pb-6 group-data-[at-max-height=false]/drawer-popup:overflow-hidden">
             <ProgramList
               items={items}
               loading={loading}

@@ -6,6 +6,7 @@ import { cn } from "cn"
 
 type DrawerContextProps = {
   hasSnapPoints: boolean
+  atMaxHeight: boolean
   modal: DrawerPrimitive.Root.Props["modal"]
   showSwipeHandle: boolean
   swipeDirection: NonNullable<DrawerPrimitive.Root.Props["swipeDirection"]>
@@ -35,9 +36,14 @@ function Drawer({
 }) {
   const hasSnapPoints = snapPoints != null && snapPoints.length > 0
   const [detent, setDetent] = React.useState<number | null>(null)
+  const maxSnapPoint = hasSnapPoints
+    ? (snapPoints![snapPoints!.length - 1] as number)
+    : null
+  const atMaxHeight =
+    maxSnapPoint == null || (detent != null && detent >= maxSnapPoint)
   const contextValue = React.useMemo(
-    () => ({ hasSnapPoints, modal, showSwipeHandle, swipeDirection }),
-    [hasSnapPoints, modal, showSwipeHandle, swipeDirection]
+    () => ({ hasSnapPoints, atMaxHeight, modal, showSwipeHandle, swipeDirection }),
+    [hasSnapPoints, atMaxHeight, modal, showSwipeHandle, swipeDirection]
   )
 
   React.useEffect(() => {
@@ -119,7 +125,8 @@ function DrawerContent({
 }: DrawerPrimitive.Popup.Props & {
   header?: React.ReactNode
 }) {
-  const { hasSnapPoints, modal, showSwipeHandle, swipeDirection } = useDrawer()
+  const { hasSnapPoints, atMaxHeight, modal, showSwipeHandle, swipeDirection } =
+    useDrawer()
   const swipeAxis =
     swipeDirection === "down" || swipeDirection === "up" ? "y" : "x"
 
@@ -137,6 +144,7 @@ function DrawerContent({
           data-slot="drawer-popup"
           data-swipe-axis={swipeAxis}
           data-snap-points={hasSnapPoints ? "" : undefined}
+          data-at-max-height={atMaxHeight ? "true" : "false"}
           className={cn(
             // Base.
             "group/drawer-popup pointer-events-auto absolute z-50 flex h-(--drawer-content-height) max-h-(--drawer-content-max-height,none) min-h-0 w-(--drawer-content-width,auto) transform-[translate3d(var(--translate-x,0px),var(--translate-y,0px),0)_scale(var(--stack-scale))] flex-col bg-popover text-sm text-popover-foreground transition-[transform,height,opacity,filter] duration-450 ease-[cubic-bezier(0.32,0.72,0,1)] will-change-transform outline-none select-none [interpolate-size:allow-keywords] [corner-shape:squircle] data-[swipe-direction=down]:rounded-t-[1.5rem] data-[swipe-direction=down]:border-t data-[swipe-direction=left]:rounded-r-xl data-[swipe-direction=left]:border-r data-[swipe-direction=right]:rounded-l-xl data-[swipe-direction=right]:border-l data-[swipe-direction=up]:rounded-b-xl data-[swipe-direction=up]:border-b",
@@ -171,14 +179,19 @@ function DrawerContent({
               {header}
             </div>
           )}
-          <DrawerPrimitive.Content
+          <div
             data-slot="drawer-content"
+            // Base UI ignores pointer drags that start on `[data-drawer-content]` so the
+            // content can be selected/scrolled with a mouse. Only mark the content once the
+            // drawer is at its max height; below that we want pointer drags to resize it.
+            data-drawer-content={atMaxHeight ? "" : undefined}
             className={cn(
-              "flex min-h-0 flex-1 flex-col overflow-hidden overscroll-contain rounded-[inherit] transition-opacity duration-300 ease-[cubic-bezier(0.45,1.005,0,1.005)] select-text group-data-nested-drawer-open/drawer-popup:opacity-0 group-data-nested-drawer-swiping/drawer-popup:opacity-100 group-data-swiping/drawer-popup:select-none"
+              "flex min-h-0 flex-1 flex-col overflow-hidden overscroll-contain rounded-[inherit] transition-opacity duration-300 ease-[cubic-bezier(0.45,1.005,0,1.005)] group-data-nested-drawer-open/drawer-popup:opacity-0 group-data-nested-drawer-swiping/drawer-popup:opacity-100 group-data-swiping/drawer-popup:select-none",
+              atMaxHeight ? "select-text" : "select-none"
             )}
           >
             {children}
-          </DrawerPrimitive.Content>
+          </div>
         </DrawerPrimitive.Popup>
       </DrawerPrimitive.Viewport>
     </DrawerPortal>
