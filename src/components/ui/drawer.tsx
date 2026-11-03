@@ -131,7 +131,7 @@ function DrawerContent({
       <DrawerPrimitive.Viewport
         data-slot="drawer-viewport"
         data-modal={modal}
-        className="pointer-events-none fixed inset-0 z-50 m-1.5 select-none overflow-clip rounded-b-[max(32px,calc(var(--safe-bottom,0px)*1.2),calc(var(--device-corner-radius,0px)-8px))] [corner-shape:squircle] data-[modal=true]:pointer-events-auto"
+        className="pointer-events-none fixed inset-0 z-50 m-1.5 select-none overflow-clip rounded-3xl [corner-shape:squircle] data-[modal=true]:pointer-events-auto"
       >
         <DrawerPrimitive.Popup
           data-slot="drawer-popup"
