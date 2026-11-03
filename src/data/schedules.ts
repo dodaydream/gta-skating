@@ -40,6 +40,7 @@ import larryGrossman from "./larry-grossman-forest-hill-arena.json";
 import leasideGardens from "./leaside-gardens.json";
 import longBranch from "./long-branch-arena.json";
 import malvern from "./malvern-recreation-centre.json";
+import mattamy from "./mattamy-athletic-centre.json";
 import mcgregorPark from "./mcgregor-park-community-centre.json";
 import mimico from "./mimico-arena.json";
 import mitchellField from "./mitchell-field-community-centre.json";
@@ -97,6 +98,7 @@ export const venues: Venue[] = [
   leasideGardens as Venue,
   longBranch as Venue,
   malvern as Venue,
+  mattamy as Venue,
   mcgregorPark as Venue,
   mimico as Venue,
   mitchellField as Venue,
