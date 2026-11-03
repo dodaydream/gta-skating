@@ -9,7 +9,7 @@ const en = {
     programsFound_one: "{{count}} program found",
     programsFound_other: "{{count}} programs found",
     disclaimer:
-      "Schedule data may change — check the venue’s website to confirm times before you go.",
+      "Times, prices, and other details may be inaccurate or out of date — always check the venue’s website before you go.",
     privacy: "Privacy Policy",
     dataSources: "Data Sources",
   },
@@ -67,6 +67,8 @@ const en = {
     share: "Share venue",
     shareText: "Skating schedule for {{name}}",
     shareCopied: "Link copied",
+    disclaimer:
+      "Times, prices, and other details may be inaccurate or out of date — always check the venue’s website before you go.",
   },
   week: {
     previous: "Previous week",

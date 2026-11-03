@@ -11,7 +11,7 @@ const fr: Messages = {
     programsFound_one: "{{count}} programme trouvé",
     programsFound_other: "{{count}} programmes trouvés",
     disclaimer:
-      "Les horaires peuvent changer — vérifiez le site Web de l’aréna pour confirmer les heures avant de vous déplacer.",
+      "Les horaires, les prix et d’autres renseignements peuvent être inexacts ou périmés — vérifiez toujours le site Web de l’aréna avant de vous déplacer.",
     privacy: "Politique de confidentialité",
     dataSources: "Sources des données",
   },
@@ -69,6 +69,8 @@ const fr: Messages = {
     share: "Partager l’aréna",
     shareText: "Horaire de patinage pour {{name}}",
     shareCopied: "Lien copié",
+    disclaimer:
+      "Les horaires, les prix et d’autres renseignements peuvent être inexacts ou périmés — vérifiez toujours le site Web de l’aréna avant de vous déplacer.",
   },
   week: {
     previous: "Semaine précédente",

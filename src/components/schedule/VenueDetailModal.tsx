@@ -569,30 +569,35 @@ export function VenueDetailModal({
         </div>
       )}
 
-      <footer className="flex flex-col items-center gap-2 border-t border-black/[.06] px-5 py-3 text-xs text-zinc-500 dark:border-white/[.08] dark:text-zinc-400 md:flex-row md:justify-between md:gap-3">
-        <span className="flex items-center gap-3">
-          {venue.url ? (
-            <a
-              className="font-medium text-blue-600 hover:underline dark:text-blue-400"
-              href={venue.url}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {t("programs.venueWebsite")}
-            </a>
-          ) : null}
-          {venue.coordinates ? (
-            <MapLink
-              className="font-medium text-blue-600 hover:underline dark:text-blue-400"
-              name={venue.name}
-              coordinates={venue.coordinates}
-              address={venue.address}
-            />
-          ) : null}
-        </span>
-        <span className="text-center text-zinc-400 md:text-right">
-          {t("programs.updated", { date: updated })}
-        </span>
+      <footer className="flex flex-col gap-2 border-t border-black/[.06] px-5 py-3 text-xs text-zinc-500 dark:border-white/[.08] dark:text-zinc-400">
+        <p className="text-center text-zinc-400 md:text-left">
+          {t("venue.disclaimer")}
+        </p>
+        <div className="flex flex-col items-center gap-2 md:flex-row md:justify-between md:gap-3">
+          <span className="flex items-center gap-3">
+            {venue.url ? (
+              <a
+                className="font-medium text-blue-600 hover:underline dark:text-blue-400"
+                href={venue.url}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {t("programs.venueWebsite")}
+              </a>
+            ) : null}
+            {venue.coordinates ? (
+              <MapLink
+                className="font-medium text-blue-600 hover:underline dark:text-blue-400"
+                name={venue.name}
+                coordinates={venue.coordinates}
+                address={venue.address}
+              />
+            ) : null}
+          </span>
+          <span className="text-center text-zinc-400 md:text-right">
+            {t("programs.updated", { date: updated })}
+          </span>
+        </div>
       </footer>
     </Panel>
   );
