@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import type { Venue } from "@/types/venue";
 import type { MapBounds } from "@/types/map";
 import type { ProgramItem, ProgramType } from "@/types/schedule";
@@ -59,6 +59,16 @@ export default function SkatingApp({ initialSlug }: { initialSlug?: string }) {
   const [loading, setLoading] = useState(true);
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
   const [detailSlug, setDetailSlug] = useState<string | null>(initialSlug ?? null);
+  const [focusVenue, setFocusVenue] = useState<{
+    lat: number;
+    lon: number;
+  } | null>(() => {
+    if (!initialSlug) return null;
+    const coords = getVenueBySlug(initialSlug)?.coordinates;
+    return coords && isFinite(coords.lat) && isFinite(coords.lon)
+      ? { lat: coords.lat, lon: coords.lon }
+      : null;
+  });
   const [hideEmpty, setHideEmpty] = useState(true);
   const [types, setTypes] = useState<ProgramType[]>([]);
   const [mapBounds, setMapBounds] = useState<MapBounds | null>(null);
@@ -68,14 +78,14 @@ export default function SkatingApp({ initialSlug }: { initialSlug?: string }) {
   } | null>(null);
   const hasSetDate = useRef(false);
 
-  useEffect(() => {
-    if (hasSetDate.current) return;
-    hasSetDate.current = true;
-    const [f, t] = todayRange();
-    setFromDate(f);
-    setToDate(t);
+  const focusSlug = useCallback((slug: string) => {
+    const coords = getVenueBySlug(slug)?.coordinates;
+    if (!coords || !isFinite(coords.lat) || !isFinite(coords.lon)) return;
+    setFocusVenue({ lat: coords.lat, lon: coords.lon });
   }, []);
 
+  // A venue opened via the URL becomes the map's focus point (initialSlug is
+  // handled by the lazy focusVenue initializer above).
   useEffect(() => {
     const onPopState = () => {
       const slug = getSlugFromPath();
@@ -83,6 +93,7 @@ export default function SkatingApp({ initialSlug }: { initialSlug?: string }) {
         const venue = getVenueBySlug(slug);
         if (venue) {
           setDetailSlug(slug);
+          focusSlug(slug);
         }
       } else {
         setDetailSlug(null);
@@ -91,6 +102,14 @@ export default function SkatingApp({ initialSlug }: { initialSlug?: string }) {
     };
     window.addEventListener("popstate", onPopState);
     return () => window.removeEventListener("popstate", onPopState);
+  }, [focusSlug]);
+
+  useEffect(() => {
+    if (hasSetDate.current) return;
+    hasSetDate.current = true;
+    const [f, t] = todayRange();
+    setFromDate(f);
+    setToDate(t);
   }, []);
 
   useEffect(() => {
@@ -174,15 +193,27 @@ export default function SkatingApp({ initialSlug }: { initialSlug?: string }) {
     [venues, selectedIndex]
   );
 
-  const visibleIndex = selectedIndex;
+  // Selected pin: the current selection, or (once the list loads) the venue
+  // opened via the URL so its pin shows as selected.
+  const visibleIndex = useMemo(() => {
+    if (!detailSlug) return selectedIndex;
+    const venue = getVenueBySlug(detailSlug);
+    if (!venue) return selectedIndex;
+    const index = venues.findIndex((v) => v.name === venue.name);
+    return index >= 0 ? index : selectedIndex;
+  }, [detailSlug, venues, selectedIndex]);
 
-  const handleOpenVenue = useCallback((venue: Venue) => {
-    const slug = getSlugForVenue(venue.name);
-    if (slug) {
+  const handleOpenVenue = useCallback(
+    (venue: Venue) => {
+      const slug = getSlugForVenue(venue.name);
+      if (!slug) return;
       pushUrl(`/venue/${slug}`);
       setDetailSlug(slug);
-    }
-  }, []);
+      const index = venues.findIndex((v) => v.name === venue.name);
+      setSelectedIndex(index >= 0 ? index : null);
+    },
+    [venues]
+  );
 
   const handleCloseDetail = useCallback(() => {
     pushUrl("/");
@@ -201,9 +232,10 @@ export default function SkatingApp({ initialSlug }: { initialSlug?: string }) {
             onSelect={handleSelect}
             onBoundsChange={setMapBounds}
             userLocation={userLocation}
+            focusVenue={focusVenue}
           />
 
-          <div className="absolute left-0 right-0 top-[calc(var(--safe-top)_+_0.75rem)] z-40 pl-[calc(var(--safe-left)_+_1rem)] pr-[calc(var(--safe-right)_+_1rem)] lg:top-[calc(var(--safe-top)_+_1.5rem)] lg:pl-[calc(var(--safe-left)_+_1.5rem)] lg:pr-[calc(var(--safe-right)_+_1.5rem)]">
+          <div className="absolute left-0 right-0 top-[calc(var(--safe-top)_+_0.75rem)] z-40 pl-[calc(var(--safe-left)_+_0.75rem)] pr-[calc(var(--safe-right)_+_0.75rem)] lg:top-[calc(var(--safe-top)_+_1.5rem)] lg:pl-[calc(var(--safe-left)_+_1.5rem)] lg:pr-[calc(var(--safe-right)_+_1.5rem)]">
             <FilterBar>
               <Button
                 variant="secondary"
@@ -218,6 +250,7 @@ export default function SkatingApp({ initialSlug }: { initialSlug?: string }) {
                 <IconLocation className="size-4" />
               </Button>
               <FilterChips
+                className="min-w-0 flex-1 lg:flex-none"
                 from={fromDate}
                 to={toDate}
                 onFromChange={(v) => {

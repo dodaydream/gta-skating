@@ -86,10 +86,6 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${geistSans.variable} ${geistMono.variable} h-dvh overflow-hidden antialiased`}
     >
       <body className="flex h-full flex-col overflow-hidden">
-        <div
-          aria-hidden="true"
-          className="pointer-events-none inset-x-0 h-px w-full bg-background top-0"
-        />
         <DeviceCornerRadius />
         <I18nProvider>{children}</I18nProvider>
         {adsenseClient ? (

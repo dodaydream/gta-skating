@@ -25,7 +25,38 @@ type ScheduleSidebarProps = {
 };
 
 const DESKTOP_QUERY = "(min-width: 1024px)";
-const SNAP_POINTS = [0.5, 1];
+const MIN_SNAP = 0.5;
+
+// The max snap point leaves the floating top bar + margin visible, i.e. the
+// drawer can grow to `viewportHeight - (topbar + margin)` but no further.
+function useSnapPoints(): number[] {
+  const [snapPoints, setSnapPoints] = useState<number[]>([MIN_SNAP, 1]);
+
+  useEffect(() => {
+    const compute = () => {
+      const root = document.documentElement;
+      const rootFont = parseFloat(getComputedStyle(root).fontSize) || 16;
+      const toPx = (name: string) => {
+        const raw = getComputedStyle(root).getPropertyValue(name).trim();
+        const match = /^(-?[\d.]+)(px|rem)?$/.exec(raw);
+        if (!match) return 0;
+        const value = parseFloat(match[1]);
+        return match[2] === "px" ? value : value * rootFont;
+      };
+      const reserved = toPx("--topbar-height") + toPx("--topbar-margin");
+      const max = Math.min(
+        1,
+        Math.max(MIN_SNAP, (window.innerHeight - reserved) / window.innerHeight)
+      );
+      setSnapPoints([MIN_SNAP, Number(max.toFixed(4))]);
+    };
+    compute();
+    window.addEventListener("resize", compute);
+    return () => window.removeEventListener("resize", compute);
+  }, []);
+
+  return snapPoints;
+}
 const REPO_URL = "https://github.com/dodaydream/gta-skating";
 const SUPPORT_URL = process.env.NEXT_PUBLIC_BUYMEACOFFEE_URL;
 
@@ -108,8 +139,8 @@ export function ScheduleSidebar({
 }: ScheduleSidebarProps) {
   const { t } = useTranslation();
   const [open, setOpen] = useState(true);
-  const [detent, setDetent] = useState<number>(SNAP_POINTS[0]);
   const isDesktop = useIsDesktop();
+  const snapPoints = useSnapPoints();
 
   useEffect(() => {
     if (!isDesktop) setOpen(!detailOpen);
@@ -155,17 +186,14 @@ export function ScheduleSidebar({
         disablePointerDismissal
         swipeDirection="down"
         snapToSequentialPoints
-        snapPoints={SNAP_POINTS}
-        onSnapPointChange={(next) => {
-          if (typeof next === "number") setDetent(next);
-        }}
+        snapPoints={snapPoints}
         onOpenChange={(_nextOpen, eventDetails) => eventDetails.cancel()}
         showSwipeHandle
       >
         <DrawerContent
           className="border-black/[.08] dark:border-white/[.145] lg:hidden"
           header={
-            <div className="flex items-start justify-between gap-2 px-6 pb-4 pt-6">
+            <div className="flex items-start justify-between gap-2 px-4 pb-3 pt-4">
               <div className="flex flex-col">
                 <DrawerTitle className="text-xl font-semibold tracking-tight">
                   {t("sidebar.title")}
@@ -178,7 +206,7 @@ export function ScheduleSidebar({
             </div>
           }
         >
-          <div className="min-h-0 flex-1 overflow-y-auto px-6 pb-8">
+          <div className="min-h-0 flex-1 overflow-y-auto px-4 pb-6">
             <ProgramList
               items={items}
               loading={loading}

@@ -18,7 +18,7 @@ export function FilterBar({
   return (
     <div
       className={cn(
-        "no-scrollbar flex items-start gap-2 overflow-x-auto overflow-y-hidden overscroll-x-contain [&>*]:shrink-0",
+        "no-scrollbar flex items-center gap-1.5 overflow-x-auto overflow-y-hidden overscroll-x-contain lg:gap-2 [&>*]:shrink-0",
         "lg:overflow-x-visible lg:overflow-y-visible",
         className
       )}

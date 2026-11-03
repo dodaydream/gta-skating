@@ -10,7 +10,7 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover";
-import { IconCheck, IconFilter } from "@tabler/icons-react";
+import { IconCheck, IconFilter, IconFilterFilled } from "@tabler/icons-react";
 
 const DESKTOP_QUERY = "(min-width: 1024px)";
 
@@ -83,28 +83,24 @@ export function ProgramTypeFilter({
           </Button>
         );
       })}
-      {active ? (
-        <Button
-          variant="ghost"
-          size="lg"
-          className="justify-start font-normal text-muted-foreground"
-          onClick={() => onChange([])}
-        >
-          {t("filters.clear")}
-        </Button>
-      ) : null}
     </div>
   );
 
-  const trigger = (
-    <>
-      <IconFilter className={`size-4 ${active ? "text-blue-500" : ""}`} />
-      <span>
-        {active
-          ? t("filters.typeCount", { count: types.length })
-          : t("filters.type")}
-      </span>
-    </>
+  const clearButton = active ? (
+    <Button
+      variant="ghost"
+      size="sm"
+      className="text-muted-foreground"
+      onClick={() => onChange([])}
+    >
+      {t("filters.clear")}
+    </Button>
+  ) : null;
+
+  const trigger = active ? (
+    <IconFilterFilled className="size-4 text-blue-500" />
+  ) : (
+    <IconFilter className="size-4" />
   );
 
   if (isDesktop) {
@@ -113,15 +109,27 @@ export function ProgramTypeFilter({
         <PopoverTrigger
           render={
             <Button
-              variant={active ? "default" : "secondary"}
-              size="lg"
+              variant="secondary"
+              size="icon-lg"
               className={`shadow-xs ${className}`}
+              aria-label={t("filters.programType")}
+              title={
+                active
+                  ? t("filters.typeCount", { count: types.length })
+                  : t("filters.type")
+              }
             />
           }
         >
           {trigger}
         </PopoverTrigger>
         <PopoverContent align="start" className="w-56 p-0">
+          <div className="flex items-center justify-between gap-2 border-b px-3 py-2">
+            <span className="text-sm font-medium">
+              {t("filters.programType")}
+            </span>
+            {clearButton}
+          </div>
           {options}
         </PopoverContent>
       </Popover>
@@ -131,9 +139,15 @@ export function ProgramTypeFilter({
   return (
     <>
       <Button
-        variant={active ? "default" : "secondary"}
-        size="lg"
+        variant="secondary"
+        size="icon-lg"
         className={`shadow-xs ${className}`}
+        aria-label={t("filters.programType")}
+        title={
+          active
+            ? t("filters.typeCount", { count: types.length })
+            : t("filters.type")
+        }
         onClick={() => setOpen(true)}
       >
         {trigger}
@@ -143,9 +157,12 @@ export function ProgramTypeFilter({
         <DrawerContent
           className="lg:hidden [--drawer-height:auto]"
           header={
-            <DrawerTitle className="px-6 pb-2 pt-1 text-center text-base">
-              {t("filters.programType")}
-            </DrawerTitle>
+            <div className="flex items-center justify-between gap-2 px-6 pb-2 pt-1">
+              <DrawerTitle className="text-base">
+                {t("filters.programType")}
+              </DrawerTitle>
+              {clearButton}
+            </div>
           }
         >
           <div className="flex min-h-0 flex-1 flex-col overflow-y-auto pb-4">

@@ -12,7 +12,12 @@ import { DateRangePicker } from "@/components/ui/date-picker";
 import { ProgramTypeFilter } from "@/components/ui/ProgramTypeFilter";
 import { normalizeLocale, type Locale } from "@/i18n/config";
 import { dayjsLocale, formatTime } from "@/lib/schedule";
-import { IconCalendarWeek, IconCalendar } from "@tabler/icons-react";
+import {
+  IconCalendarWeek,
+  IconCalendar,
+  IconEyeFilled,
+  IconEyeOff,
+} from "@tabler/icons-react";
 
 interface FilterChipsProps {
   from: string;
@@ -160,7 +165,7 @@ export function FilterChips({
   };
 
   return (
-    <div className={`flex items-start gap-2 ${className}`}>
+    <div className={`flex items-center gap-1.5 lg:gap-2 ${className}`}>
       <DateRangePicker
         value={pendingRange}
         onChange={handleSelect}
@@ -169,7 +174,7 @@ export function FilterChips({
         max={MAX_RANGE_DAYS - 1}
         variant="secondary"
         size="lg"
-        className="shadow-xs"
+        className="shadow-xs min-w-0 flex-1 lg:flex-none"
         trigger={
           <>
             {active ? (
@@ -177,8 +182,12 @@ export function FilterChips({
             ) : (
               <IconCalendar className="size-4" />
             )}
-            <span>{displayLabel(from, to, now, t, locale)}</span>
-            {active && <span className="ml-0.5 size-1.5 rounded-full bg-blue-500" />}
+            <span className="truncate">
+              {displayLabel(from, to, now, t, locale)}
+            </span>
+            {active && (
+              <span className="ml-0.5 size-1.5 shrink-0 rounded-full bg-blue-500" />
+            )}
           </>
         }
         drawerTitle={displayLabel(from, to, now, t, locale)}
@@ -239,11 +248,18 @@ export function FilterChips({
 
       <Button
         variant="secondary"
-        size="lg"
+        size="icon-lg"
         className="shadow-xs"
+        aria-pressed={!hideEmpty}
+        aria-label={hideEmpty ? t("filters.showAll") : t("filters.hideEmpty")}
+        title={hideEmpty ? t("filters.showAll") : t("filters.hideEmpty")}
         onClick={() => onHideEmptyChange(!hideEmpty)}
       >
-        {hideEmpty ? t("filters.showAll") : t("filters.hideEmpty")}
+        {hideEmpty ? (
+          <IconEyeOff className="size-4" />
+        ) : (
+          <IconEyeFilled className="size-4 text-blue-500" />
+        )}
       </Button>
     </div>
   );

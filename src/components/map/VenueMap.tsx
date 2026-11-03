@@ -20,6 +20,7 @@ interface VenueMapProps {
   onBoundsChange?: (bounds: MapBounds) => void;
   userLocation?: { lat: number; lon: number } | null;
   locateRef: React.MutableRefObject<(() => void) | null>;
+  focusVenue?: { lat: number; lon: number } | null;
 }
 
 const LIGHT_STYLE = "https://tiles.openfreemap.org/styles/liberty";
@@ -29,40 +30,15 @@ const DEFAULT_ZOOM = 12;
 const TORONTO: [number, number] = [-79.390531, 43.725518];
 
 const DESKTOP_WIDTH = 1024;
-// Fallback fraction of the viewport the bottom drawer covers when it can't be
-// measured (e.g. not mounted yet).
-const DRAWER_RATIO_FALLBACK = 0.5;
 
 // Height (in map-canvas pixels) of the strip left visible above the bottom
-// drawer. The drawer's height comes from `--drawer-height` (set by the drawer
-// from its snap detent), so this is correct without waiting for the open
-// animation to settle. Falls back to measuring the drawer's top edge.
+// drawer. On mobile the list drawer snaps to half the viewport, so the visible
+// map height is the top 50dvh.
 function visibleMapHeight(map: maplibregl.Map): number {
-  const canvasHeight = map.getCanvas().clientHeight;
-
-  const raw = getComputedStyle(document.documentElement)
-    .getPropertyValue("--drawer-height")
-    .trim();
-  const match = /^([\d.]+)(dvh|vh|%)$/.exec(raw);
-  if (match) {
-    const fraction = parseFloat(match[1]) / 100;
-    const basis =
-      match[2] === "%" ? document.documentElement.clientHeight : window.innerHeight;
-    return Math.max(1, canvasHeight - fraction * basis);
+  if (isMobileViewport()) {
+    return Math.max(1, window.innerHeight * 0.5);
   }
-
-  let visibleBottom = canvasHeight;
-  const mapTop = map.getCanvas().getBoundingClientRect().top;
-  for (const drawer of document.querySelectorAll<HTMLElement>(
-    '[data-slot="drawer-popup"]',
-  )) {
-    const top = drawer.getBoundingClientRect().top - mapTop;
-    if (top > 0 && top < visibleBottom) visibleBottom = top;
-  }
-  if (visibleBottom >= canvasHeight) {
-    visibleBottom = canvasHeight * (1 - DRAWER_RATIO_FALLBACK);
-  }
-  return Math.max(1, visibleBottom);
+  return map.getCanvas().clientHeight;
 }
 
 // Returns the map center to use so that `lngLat` renders in the middle of the
@@ -113,6 +89,7 @@ function createMarkerElement(
     background:${selected ? "#2563eb" : hasPrograms ? "#22c55e" : "#ef4444"};
     border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.4);cursor:pointer;
     transition:width .2s,height .2s;
+    animation:${selected ? "arena-pin-pop .2s ease-out" : "none"};
   "></div>${selected ? `<span style="
     font-size:11px;font-weight:600;line-height:1.2;
     color:#fff;text-align:center;max-width:160px;
@@ -165,21 +142,21 @@ class ScaleLegend implements maplibregl.IControl {
   constructor(private readonly maxWidth = SCALE_MAX_WIDTH) {}
 
   getDefaultPosition(): maplibregl.ControlPosition {
-    return "bottom-left";
+    return "bottom-right";
   }
 
   onAdd(map: maplibregl.Map): HTMLElement {
     this.map = map;
 
     const container = document.createElement("div");
+    container.dataset.slot = "scale-legend";
     container.className =
-      "maplibregl-ctrl inline-flex flex-col items-center gap-1 rounded-full border border-black/10 bg-white/80 px-2.5 py-1 text-[10px] leading-none shadow-sm backdrop-blur-sm dark:border-white/15 dark:bg-black/60";
+      "maplibregl-ctrl inline-flex flex-col items-center gap-0.5 text-[10px] font-medium leading-none [text-shadow:0_1px_2px_rgba(255,255,255,0.9)] dark:[text-shadow:0_1px_2px_rgba(0,0,0,0.9)]";
     container.innerHTML = `
-      <span data-slot="label" class="whitespace-nowrap font-semibold tracking-tight tabular-nums text-zinc-800 dark:text-zinc-100"></span>
-      <span data-slot="bar" class="relative block h-1.5">
-        <span class="absolute inset-y-0 left-0 w-0.5 rounded-full bg-blue-600 dark:bg-blue-400"></span>
-        <span class="absolute inset-y-0 right-0 w-0.5 rounded-full bg-blue-600 dark:bg-blue-400"></span>
-        <span class="absolute inset-x-1 top-1/2 h-px -translate-y-1/2 bg-blue-600/40 dark:bg-blue-400/40"></span>
+      <span data-slot="label" class="whitespace-nowrap tracking-tight tabular-nums text-zinc-800 dark:text-zinc-100"></span>
+      <span data-slot="bar" class="relative block h-1.5 w-0 border-b border-zinc-800 dark:border-zinc-100">
+        <span class="absolute inset-y-0 left-0 w-px bg-zinc-800 dark:bg-zinc-100"></span>
+        <span class="absolute inset-y-0 right-0 w-px bg-zinc-800 dark:bg-zinc-100"></span>
       </span>
     `;
 
@@ -226,14 +203,115 @@ class ScaleLegend implements maplibregl.IControl {
     const maxMeters = left.distanceTo(right);
     if (!Number.isFinite(maxMeters) || maxMeters <= 0) return;
 
+    // The bar's total width maps to a nicely-rounded distance at the current
+    // map scale.
     const meters = roundScaleDistance(maxMeters);
-    const width = Math.max(
-      28,
-      Math.round(((meters / maxMeters) * this.maxWidth) / 0.5) * 0.5,
-    );
+    const width = (meters / maxMeters) * this.maxWidth;
 
     bar.style.width = `${width}px`;
     if (this.label) this.label.textContent = formatMetric(meters);
+  };
+}
+
+const ATTRIBUTION_LINK_CLASS =
+  "text-zinc-700 underline-offset-2 hover:underline dark:text-zinc-200";
+
+class AttributionControl implements maplibregl.IControl {
+  getDefaultPosition(): maplibregl.ControlPosition {
+    return "bottom-right";
+  }
+
+  onAdd(): HTMLElement {
+    const container = document.createElement("div");
+    container.dataset.slot = "attribution";
+    container.className =
+      "maplibregl-ctrl inline-flex flex-wrap items-center gap-x-1 rounded-full bg-white/50 px-1.5 py-px text-[8px] leading-tight text-zinc-700 lg:px-2 lg:py-0.5 lg:text-[10px] dark:bg-black/50 dark:text-zinc-200";
+    container.innerHTML =
+      `<a href="https://maplibre.org" target="_blank" rel="noopener noreferrer" class="${ATTRIBUTION_LINK_CLASS}">MapLibre</a>` +
+      `<span class="text-zinc-400 dark:text-zinc-500" aria-hidden="true">|</span>` +
+      `<a href="https://openfreemap.org" target="_blank" rel="noopener noreferrer" class="${ATTRIBUTION_LINK_CLASS}">OpenFreeMap</a>` +
+      `<a href="https://openmaptiles.org" target="_blank" rel="noopener noreferrer" class="${ATTRIBUTION_LINK_CLASS}">© OpenMapTiles</a>` +
+      `<a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer" class="${ATTRIBUTION_LINK_CLASS}">Data from OpenStreetMap</a>`;
+    return container;
+  }
+
+  onRemove(): void {}
+}
+
+const ZOOM_BUTTON_CLASS =
+  "flex size-8 items-center justify-center text-foreground transition-colors hover:bg-muted disabled:pointer-events-none disabled:opacity-40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:ring-inset";
+
+const ZOOM_ICON = `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-4" aria-hidden="true">`;
+
+class ZoomControl implements maplibregl.IControl {
+  private map: maplibregl.Map | null = null;
+  private container: HTMLDivElement | null = null;
+  private zoomInButton: HTMLButtonElement | null = null;
+  private zoomOutButton: HTMLButtonElement | null = null;
+
+  getDefaultPosition(): maplibregl.ControlPosition {
+    return "top-right";
+  }
+
+  onAdd(map: maplibregl.Map): HTMLElement {
+    this.map = map;
+
+    const container = document.createElement("div");
+    container.dataset.slot = "zoom-control";
+    container.className =
+      "maplibregl-ctrl inline-flex flex-col overflow-hidden rounded-lg border border-border bg-background text-foreground shadow-sm";
+    container.innerHTML = `
+      <button type="button" data-slot="zoom-in" aria-label="Zoom in" title="Zoom in" class="${ZOOM_BUTTON_CLASS}">
+        ${ZOOM_ICON}<path d="M5 12h14"/><path d="M12 5v14"/></svg>
+      </button>
+      <button type="button" data-slot="zoom-out" aria-label="Zoom out" title="Zoom out" class="${ZOOM_BUTTON_CLASS} border-t border-border">
+        ${ZOOM_ICON}<path d="M5 12h14"/></svg>
+      </button>
+    `;
+
+    this.zoomInButton = container.querySelector<HTMLButtonElement>(
+      '[data-slot="zoom-in"]',
+    );
+    this.zoomOutButton = container.querySelector<HTMLButtonElement>(
+      '[data-slot="zoom-out"]',
+    );
+
+    this.zoomInButton?.addEventListener("click", this.handleZoomIn);
+    this.zoomOutButton?.addEventListener("click", this.handleZoomOut);
+
+    map.on("zoom", this.update);
+    this.update();
+
+    this.container = container;
+    return container;
+  }
+
+  onRemove(): void {
+    const map = this.map;
+    if (map) map.off("zoom", this.update);
+    this.zoomInButton?.removeEventListener("click", this.handleZoomIn);
+    this.zoomOutButton?.removeEventListener("click", this.handleZoomOut);
+    this.container?.remove();
+    this.container = null;
+    this.zoomInButton = null;
+    this.zoomOutButton = null;
+    this.map = null;
+  }
+
+  private handleZoomIn = (): void => {
+    this.map?.zoomIn();
+  };
+
+  private handleZoomOut = (): void => {
+    this.map?.zoomOut();
+  };
+
+  private update = (): void => {
+    const map = this.map;
+    if (!map) return;
+    const zoom = map.getZoom();
+    if (this.zoomInButton) this.zoomInButton.disabled = zoom >= map.getMaxZoom();
+    if (this.zoomOutButton) this.zoomOutButton.disabled = zoom <= map.getMinZoom();
   };
 }
 
@@ -252,6 +330,7 @@ export default function VenueMap({
   onBoundsChange,
   userLocation,
   locateRef,
+  focusVenue,
 }: VenueMapProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<maplibregl.Map | null>(null);
@@ -260,6 +339,7 @@ export default function VenueMap({
   const centeredOnUserRef = useRef(false);
   const boundsTrackTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const [dark, setDark] = useState(false);
+  const [mapReady, setMapReady] = useState(false);
 
   const venuesRef = useRef(venues);
   venuesRef.current = venues;
@@ -315,10 +395,12 @@ export default function VenueMap({
         style: dark ? DARK_STYLE : LIGHT_STYLE,
         center: TORONTO,
         zoom: DEFAULT_ZOOM,
+        attributionControl: false,
       });
 
-      map.addControl(new maplibregl.NavigationControl(), "top-right");
-      map.addControl(new ScaleLegend(), "bottom-left");
+      map.addControl(new ZoomControl(), "top-right");
+      map.addControl(new AttributionControl(), "bottom-right");
+      map.addControl(new ScaleLegend(), "bottom-right");
     } catch {
       // WebGL2 unsupported/unavailable: skip the map so the rest of the app still works.
       return;
@@ -329,6 +411,7 @@ export default function VenueMap({
       if (!centeredOnUserRef.current) {
         map.setCenter(offsetForDrawer(map, TORONTO));
       }
+      setMapReady(true);
       syncMarkers.current?.();
     });
 
@@ -349,9 +432,17 @@ export default function VenueMap({
 
     const emitBounds = () => {
       const b = map.getBounds();
+      // On mobile the floating drawer covers the bottom of the map. The visible
+      // map height is `height - drawerHeight`, so clamp the southern edge to
+      // that line: venues behind the drawer are background, not list entries.
+      let south = b.getSouth();
+      if (isMobileViewport()) {
+        const bottom = map.unproject([0, visibleMapHeight(map)]);
+        if (Number.isFinite(bottom.lat)) south = bottom.lat;
+      }
       const bounds: MapBounds = {
         west: b.getWest(),
-        south: b.getSouth(),
+        south,
         east: b.getEast(),
         north: b.getNorth(),
       };
@@ -369,10 +460,28 @@ export default function VenueMap({
     map.on("load", emitBounds);
     map.on("moveend", emitBounds);
 
+    // Re-clamp when the drawer's snap detent changes `--drawer-height`.
+    let lastDrawerHeight = document.documentElement.style.getPropertyValue(
+      "--drawer-height",
+    );
+    const drawerObserver = new MutationObserver(() => {
+      const next = document.documentElement.style.getPropertyValue(
+        "--drawer-height",
+      );
+      if (next === lastDrawerHeight) return;
+      lastDrawerHeight = next;
+      emitBounds();
+    });
+    drawerObserver.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ["style"],
+    });
+
     mapRef.current = map;
 
     return () => {
       if (boundsTrackTimerRef.current) clearTimeout(boundsTrackTimerRef.current);
+      drawerObserver.disconnect();
       map.remove();
       mapRef.current = null;
       markersRef.current = [];
@@ -440,6 +549,19 @@ export default function VenueMap({
       });
     }
   }, [userLocation]);
+
+  useEffect(() => {
+    const map = mapRef.current;
+    if (!map || !mapReady || !focusVenue) return;
+    const { lat, lon } = focusVenue;
+    if (!isFinite(lat) || !isFinite(lon)) return;
+    // A venue focused from the URL takes precedence over user-location centering.
+    centeredOnUserRef.current = true;
+    map.flyTo({
+      center: offsetForDrawer(map, [lon, lat]),
+      zoom: DEFAULT_ZOOM,
+    });
+  }, [focusVenue, mapReady]);
 
   return (
     <div
