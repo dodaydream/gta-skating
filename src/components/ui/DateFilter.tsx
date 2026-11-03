@@ -174,7 +174,7 @@ export function FilterChips({
         max={MAX_RANGE_DAYS - 1}
         variant="secondary"
         size="lg"
-        className="shadow-xs min-w-0 flex-1 lg:flex-none"
+        className="shadow-xs min-w-0 flex-1 md:flex-none"
         trigger={
           <>
             {active ? (

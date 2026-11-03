@@ -148,6 +148,7 @@ function Panel({
       <Dialog open onOpenChange={(open) => !open && onClose()}>
         <DialogContent
           showCloseButton={false}
+          showOverlayBackground={false}
           className="flex max-h-[85dvh] flex-col overflow-hidden p-0"
           style={{ maxWidth: "48rem" }}
         >

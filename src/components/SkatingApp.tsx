@@ -250,7 +250,7 @@ export default function SkatingApp({ initialSlug }: { initialSlug?: string }) {
                 <IconLocation className="size-4" />
               </Button>
               <FilterChips
-                className="min-w-0 flex-1 lg:flex-none"
+                className="min-w-0 flex-1 md:flex-none"
                 from={fromDate}
                 to={toDate}
                 onFromChange={(v) => {

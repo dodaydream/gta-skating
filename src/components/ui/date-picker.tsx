@@ -129,7 +129,7 @@ function DateRangePicker({
               size={size}
               data-empty={!value?.from}
               className={cn(
-                "justify-center text-center font-normal data-[empty=true]:text-muted-foreground lg:justify-start lg:text-left",
+                "justify-center text-center font-normal data-[empty=true]:text-muted-foreground md:justify-start md:text-left",
                 className
               )}
             />
@@ -152,7 +152,7 @@ function DateRangePicker({
         size={size}
         data-empty={!value?.from}
         className={cn(
-          "justify-center text-center font-normal data-[empty=true]:text-muted-foreground lg:justify-start lg:text-left",
+          "justify-center text-center font-normal data-[empty=true]:text-muted-foreground md:justify-start md:text-left",
           className
         )}
         onClick={() => onOpenChange?.(true)}
