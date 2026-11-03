@@ -1,0 +1,71 @@
+{
+  "name": "Markham Village Community Centre",
+  "url": "https://www.markham.ca/sports-recreation-fitness/community-centres-libraries/markham-village-community-centre-library",
+  "timezone": "America/Toronto",
+  "address": "6041 Highway 7, Markham, ON L3P 3A7",
+  "coordinates": {
+    "lat": 43.873298,
+    "lon": -79.258153
+  },
+  "schedule": {
+    "updatedAt": "2026-11-03T02:28:49.346Z",
+    "programs": [
+      {
+        "id": "3e8d461e-7609-47bd-9239-75e92bc93c11",
+        "start": "2026-11-07T14:00",
+        "end": "2026-11-07T15:50",
+        "name": "Recreational Skate",
+        "type": "Public Skate",
+        "ticket": 5.17
+      },
+      {
+        "id": "f14e0817-a9bf-46da-bee6-a0597e0ed51b",
+        "start": "2026-11-14T14:00",
+        "end": "2026-11-14T15:50",
+        "name": "Recreational Skate",
+        "type": "Public Skate",
+        "ticket": 5.17
+      },
+      {
+        "id": "2223b960-5adb-4512-a0e0-9921e5066889",
+        "start": "2026-11-21T14:00",
+        "end": "2026-11-21T15:50",
+        "name": "Recreational Skate",
+        "type": "Public Skate",
+        "ticket": 5.17
+      },
+      {
+        "id": "10a7aa97-a998-4244-882c-835c6ecb70bc",
+        "start": "2026-11-28T14:00",
+        "end": "2026-11-28T15:50",
+        "name": "Recreational Skate",
+        "type": "Public Skate",
+        "ticket": 5.17
+      },
+      {
+        "id": "6f8cd34c-ce94-49d7-ba31-5c40e8ae1a81",
+        "start": "2026-12-05T14:00",
+        "end": "2026-12-05T15:50",
+        "name": "Recreational Skate",
+        "type": "Public Skate",
+        "ticket": 5.17
+      },
+      {
+        "id": "e54fef04-2c07-4a8a-8682-de47afa59c48",
+        "start": "2026-12-12T14:00",
+        "end": "2026-12-12T15:50",
+        "name": "Recreational Skate",
+        "type": "Public Skate",
+        "ticket": 5.17
+      },
+      {
+        "id": "a1476731-1627-4b1b-85eb-2ae4f280417e",
+        "start": "2026-12-19T14:00",
+        "end": "2026-12-19T15:50",
+        "name": "Recreational Skate",
+        "type": "Public Skate",
+        "ticket": 5.17
+      }
+    ]
+  }
+}

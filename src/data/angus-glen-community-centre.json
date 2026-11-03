@@ -1,0 +1,311 @@
+{
+  "name": "Angus Glen Community Centre",
+  "url": "https://www.markham.ca/sports-recreation-fitness/community-centres-libraries/angus-glen-community-centre-library",
+  "timezone": "America/Toronto",
+  "address": "3990 Major Mackenzie Drive, Markham, ON L6C 1P8",
+  "coordinates": {
+    "lat": 43.895354,
+    "lon": -79.336539
+  },
+  "schedule": {
+    "updatedAt": "2026-11-03T02:28:49.344Z",
+    "programs": [
+      {
+        "id": "45177915-0d49-4dc9-9345-287041062bee",
+        "start": "2026-11-05T16:15",
+        "end": "2026-11-05T18:05",
+        "name": "Recreational Skate",
+        "type": "Public Skate",
+        "ticket": 5.17
+      },
+      {
+        "id": "ab04723d-dcaf-43f5-9ffd-59db6b662627",
+        "start": "2026-11-07T12:15",
+        "end": "2026-11-07T14:05",
+        "name": "Recreational Skate",
+        "type": "Public Skate",
+        "ticket": 5.17
+      },
+      {
+        "id": "0e0df134-9084-4068-ba24-35363efabeec",
+        "start": "2026-11-08T12:15",
+        "end": "2026-11-08T14:05",
+        "name": "Recreational Skate",
+        "type": "Public Skate",
+        "ticket": 5.17
+      },
+      {
+        "id": "63295951-5bc6-4590-b41f-e30da8204483",
+        "start": "2026-11-08T14:15",
+        "end": "2026-11-08T16:05",
+        "name": "Recreational Skate",
+        "type": "Public Skate",
+        "ticket": 5.17
+      },
+      {
+        "id": "ee6e5975-015c-498d-9ff1-a4f6823862d8",
+        "start": "2026-11-09T16:15",
+        "end": "2026-11-09T18:05",
+        "name": "Recreational Skate",
+        "type": "Public Skate",
+        "ticket": 5.17
+      },
+      {
+        "id": "ca8fe301-d19f-4c0d-9c7a-36de8fc9f3bf",
+        "start": "2026-11-12T16:15",
+        "end": "2026-11-12T18:05",
+        "name": "Recreational Skate",
+        "type": "Public Skate",
+        "ticket": 5.17
+      },
+      {
+        "id": "ec748f88-fd29-4ea5-a824-9522099d5b4b",
+        "start": "2026-11-14T12:15",
+        "end": "2026-11-14T14:05",
+        "name": "Recreational Skate",
+        "type": "Public Skate",
+        "ticket": 5.17
+      },
+      {
+        "id": "3a4d8b28-0192-4445-9187-8c4b67593a61",
+        "start": "2026-11-15T12:15",
+        "end": "2026-11-15T14:05",
+        "name": "Recreational Skate",
+        "type": "Public Skate",
+        "ticket": 5.17
+      },
+      {
+        "id": "5e3eb202-37d9-4970-aa89-c0702f70d439",
+        "start": "2026-11-15T14:15",
+        "end": "2026-11-15T16:05",
+        "name": "Recreational Skate",
+        "type": "Public Skate",
+        "ticket": 5.17
+      },
+      {
+        "id": "2c824be1-4578-45e5-ab56-d2fed44f390f",
+        "start": "2026-11-16T16:15",
+        "end": "2026-11-16T18:05",
+        "name": "Recreational Skate",
+        "type": "Public Skate",
+        "ticket": 5.17
+      },
+      {
+        "id": "de23dce2-81ea-4069-9e54-29c62f4a676d",
+        "start": "2026-11-19T16:15",
+        "end": "2026-11-19T18:05",
+        "name": "Recreational Skate",
+        "type": "Public Skate",
+        "ticket": 5.17
+      },
+      {
+        "id": "bb50e182-6fd7-486e-86de-cc28f64c2631",
+        "start": "2026-11-21T12:15",
+        "end": "2026-11-21T14:05",
+        "name": "Recreational Skate",
+        "type": "Public Skate",
+        "ticket": 5.17
+      },
+      {
+        "id": "2f04d512-a5d1-43ba-be50-d97718015b49",
+        "start": "2026-11-22T12:15",
+        "end": "2026-11-22T14:05",
+        "name": "Recreational Skate",
+        "type": "Public Skate",
+        "ticket": 5.17
+      },
+      {
+        "id": "ff7f2c60-2387-4bb5-98cd-c6898f0858cc",
+        "start": "2026-11-22T14:15",
+        "end": "2026-11-22T16:05",
+        "name": "Recreational Skate",
+        "type": "Public Skate",
+        "ticket": 5.17
+      },
+      {
+        "id": "3b57798a-78c2-42aa-a197-16dc62e3f357",
+        "start": "2026-11-23T16:15",
+        "end": "2026-11-23T18:05",
+        "name": "Recreational Skate",
+        "type": "Public Skate",
+        "ticket": 5.17
+      },
+      {
+        "id": "2d0a2ee0-de15-4e7c-9db6-c1163a628d12",
+        "start": "2026-11-26T16:15",
+        "end": "2026-11-26T18:05",
+        "name": "Recreational Skate",
+        "type": "Public Skate",
+        "ticket": 5.17
+      },
+      {
+        "id": "f9a65e05-12f2-44b4-a786-9d13fdc26aa4",
+        "start": "2026-11-28T12:15",
+        "end": "2026-11-28T14:05",
+        "name": "Recreational Skate",
+        "type": "Public Skate",
+        "ticket": 5.17
+      },
+      {
+        "id": "198dbd5b-9d4c-4682-af56-0da963320da2",
+        "start": "2026-11-29T12:15",
+        "end": "2026-11-29T14:05",
+        "name": "Recreational Skate",
+        "type": "Public Skate",
+        "ticket": 5.17
+      },
+      {
+        "id": "e7d775ff-0af7-489b-83b1-0a457b528a76",
+        "start": "2026-11-29T14:15",
+        "end": "2026-11-29T16:05",
+        "name": "Recreational Skate",
+        "type": "Public Skate",
+        "ticket": 5.17
+      },
+      {
+        "id": "cd059a2b-087c-4d37-8e9d-ee9315cffb52",
+        "start": "2026-11-30T16:15",
+        "end": "2026-11-30T18:05",
+        "name": "Recreational Skate",
+        "type": "Public Skate",
+        "ticket": 5.17
+      },
+      {
+        "id": "c727ac8a-b2de-4c9a-9e63-66d13fdab942",
+        "start": "2026-12-03T16:15",
+        "end": "2026-12-03T18:05",
+        "name": "Recreational Skate",
+        "type": "Public Skate",
+        "ticket": 5.17
+      },
+      {
+        "id": "4a866feb-2ca0-4e13-a909-cad626788bf2",
+        "start": "2026-12-05T12:15",
+        "end": "2026-12-05T14:05",
+        "name": "Recreational Skate",
+        "type": "Public Skate",
+        "ticket": 5.17
+      },
+      {
+        "id": "e593bd5e-3af4-4814-a5ff-37c9f45aa715",
+        "start": "2026-12-06T12:15",
+        "end": "2026-12-06T14:05",
+        "name": "Recreational Skate",
+        "type": "Public Skate",
+        "ticket": 5.17
+      },
+      {
+        "id": "25da3460-4fad-4a9d-ae20-4554be707073",
+        "start": "2026-12-06T14:15",
+        "end": "2026-12-06T16:05",
+        "name": "Recreational Skate",
+        "type": "Public Skate",
+        "ticket": 5.17
+      },
+      {
+        "id": "64918ff5-3d62-4bf7-9377-aef36c43a342",
+        "start": "2026-12-07T16:15",
+        "end": "2026-12-07T18:05",
+        "name": "Recreational Skate",
+        "type": "Public Skate",
+        "ticket": 5.17
+      },
+      {
+        "id": "38a2205c-c195-4b2c-a011-aba1090a5aec",
+        "start": "2026-12-10T16:15",
+        "end": "2026-12-10T18:05",
+        "name": "Recreational Skate",
+        "type": "Public Skate",
+        "ticket": 5.17
+      },
+      {
+        "id": "d36e4ebf-5b01-460b-89a4-979ba0f45342",
+        "start": "2026-12-12T12:15",
+        "end": "2026-12-12T14:05",
+        "name": "Recreational Skate",
+        "type": "Public Skate",
+        "ticket": 5.17
+      },
+      {
+        "id": "32809572-7731-4b4b-a019-a1dd0d43ee89",
+        "start": "2026-12-13T12:15",
+        "end": "2026-12-13T14:05",
+        "name": "Recreational Skate",
+        "type": "Public Skate",
+        "ticket": 5.17
+      },
+      {
+        "id": "3476593f-2f65-4f70-acfe-065bb4e09559",
+        "start": "2026-12-13T14:15",
+        "end": "2026-12-13T16:05",
+        "name": "Recreational Skate",
+        "type": "Public Skate",
+        "ticket": 5.17
+      },
+      {
+        "id": "c0023047-b927-40a1-a5b0-97b22d6a4b4c",
+        "start": "2026-12-14T16:15",
+        "end": "2026-12-14T18:05",
+        "name": "Recreational Skate",
+        "type": "Public Skate",
+        "ticket": 5.17
+      },
+      {
+        "id": "a954f8c7-98a3-4a26-9281-9415e29a833b",
+        "start": "2026-12-17T16:15",
+        "end": "2026-12-17T18:05",
+        "name": "Recreational Skate",
+        "type": "Public Skate",
+        "ticket": 5.17
+      },
+      {
+        "id": "67aa8d27-252c-4d83-8a1d-8c8d28f9decb",
+        "start": "2026-12-19T12:15",
+        "end": "2026-12-19T14:05",
+        "name": "Recreational Skate",
+        "type": "Public Skate",
+        "ticket": 5.17
+      },
+      {
+        "id": "85d3dba0-5aee-4cff-aa61-5dacc09a75a5",
+        "start": "2026-12-20T12:15",
+        "end": "2026-12-20T14:05",
+        "name": "Recreational Skate",
+        "type": "Public Skate",
+        "ticket": 5.17
+      },
+      {
+        "id": "cdb920c7-e4b1-4a1d-978a-8d9b700ffdc8",
+        "start": "2026-12-20T14:15",
+        "end": "2026-12-20T16:05",
+        "name": "Recreational Skate",
+        "type": "Public Skate",
+        "ticket": 5.17
+      },
+      {
+        "id": "3fafc748-7eda-42e3-ab35-0b7b9d7ac559",
+        "start": "2026-12-21T16:15",
+        "end": "2026-12-21T18:05",
+        "name": "Recreational Skate",
+        "type": "Public Skate",
+        "ticket": 5.17
+      },
+      {
+        "id": "231f9a3a-d37d-415b-b19a-f2b2d65abadf",
+        "start": "2026-12-27T12:15",
+        "end": "2026-12-27T14:05",
+        "name": "Recreational Skate",
+        "type": "Public Skate",
+        "ticket": 5.17
+      },
+      {
+        "id": "4bb464b5-6a7b-46e3-9747-859f24451ac2",
+        "start": "2026-12-27T14:15",
+        "end": "2026-12-27T16:05",
+        "name": "Recreational Skate",
+        "type": "Public Skate",
+        "ticket": 5.17
+      }
+    ]
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "venues": [
+    {
+      "id": "angus-glen-community-centre",
+      "name": "Angus Glen Community Centre",
+      "url": "https://www.markham.ca/sports-recreation-fitness/community-centres-libraries/angus-glen-community-centre-library",
+      "address": "3990 Major Mackenzie Drive, Markham, ON L6C 1P8",
+      "coordinates": { "lat": 43.895354, "lon": -79.336539 },
+      "type": "indoor"
+    },
+    {
+      "id": "centennial-community-centre",
+      "name": "Centennial Community Centre",
+      "url": "https://www.markham.ca/sports-recreation-fitness/community-centres-libraries/centennial-community-centre",
+      "address": "8600 McCowan Road, Markham, ON L3P 3M2",
+      "coordinates": { "lat": 43.873185, "lon": -79.287161 },
+      "type": "indoor"
+    },
+    {
+      "id": "clatworthy-arena",
+      "name": "Clatworthy Arena",
+      "url": "https://www.markham.ca/sports-recreation-fitness/community-centres-libraries/rj-clatworthy-arena",
+      "address": "2400 John Street, Markham, ON L3T 6G6",
+      "coordinates": { "lat": 43.823602, "lon": -79.368555 },
+      "type": "indoor"
+    },
+    {
+      "id": "crosby-community-centre",
+      "name": "Crosby Community Centre",
+      "url": "https://www.markham.ca/sports-recreation-fitness/community-centres-libraries/crosby-community-centre",
+      "address": "210 Main Street Unionville, Markham, ON L3R 2G9",
+      "coordinates": { "lat": 43.868535, "lon": -79.313304 },
+      "type": "indoor"
+    },
+    {
+      "id": "markham-village-community-centre",
+      "name": "Markham Village Community Centre",
+      "url": "https://www.markham.ca/sports-recreation-fitness/community-centres-libraries/markham-village-community-centre-library",
+      "address": "6041 Highway 7, Markham, ON L3P 3A7",
+      "coordinates": { "lat": 43.873298, "lon": -79.258153 },
+      "type": "indoor"
+    },
+    {
+      "id": "milliken-mills-community-centre",
+      "name": "Milliken Mills Community Centre",
+      "url": "https://www.markham.ca/sports-recreation-fitness/community-centres-libraries/milliken-mills-community-centre",
+      "address": "7600 Kennedy Road, Markham, ON L3R 9S5",
+      "coordinates": { "lat": 43.840228, "lon": -79.305006 },
+      "type": "indoor"
+    },
+    {
+      "id": "mount-joy-community-centre",
+      "name": "Mount Joy Community Centre",
+      "url": "https://www.markham.ca/sports-recreation-fitness/community-centres-libraries/mount-joy-community-centre",
+      "address": "6140 16th Avenue East, Markham, ON L3P 3K8",
+      "coordinates": { "lat": 43.895012, "lon": -79.262293 },
+      "type": "indoor"
+    },
+    {
+      "id": "thornhill-community-centre",
+      "name": "Thornhill Community Centre",
+      "url": "https://www.markham.ca/sports-recreation-fitness/community-centres-libraries/thornhill-community-centre-library-fitness-centre",
+      "address": "7755 Bayview Avenue, Markham, ON L3T 4P1",
+      "coordinates": { "lat": 43.820032, "lon": -79.399873 },
+      "type": "indoor"
+    }
+  ]
+}

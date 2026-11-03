@@ -23,6 +23,9 @@ export function classifyProgram(name: string): ProgramType {
   if (lower.includes("stick and puck") || lower.includes("stick & puck")) {
     return ProgramType.StickAndPuck;
   }
+  if (lower.includes("stick and ring") || lower.includes("stick & ring")) {
+    return ProgramType.Ringette;
+  }
   if (lower.includes("ringette")) return ProgramType.Ringette;
 
   return ProgramType.PublicSkate;

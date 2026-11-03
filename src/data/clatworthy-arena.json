@@ -1,0 +1,239 @@
+{
+  "name": "Clatworthy Arena",
+  "url": "https://www.markham.ca/sports-recreation-fitness/community-centres-libraries/rj-clatworthy-arena",
+  "timezone": "America/Toronto",
+  "address": "2400 John Street, Markham, ON L3T 6G6",
+  "coordinates": {
+    "lat": 43.823602,
+    "lon": -79.368555
+  },
+  "schedule": {
+    "updatedAt": "2026-11-03T02:28:49.345Z",
+    "programs": [
+      {
+        "id": "3d513909-44e3-4664-9488-d495d8e8a283",
+        "start": "2026-11-03T11:00",
+        "end": "2026-11-03T12:30",
+        "name": "Shinny: Adults",
+        "type": "Pickup Hockey",
+        "ticket": 5.17
+      },
+      {
+        "id": "e3d9c43f-03f7-4820-a700-3ec153d7fa27",
+        "start": "2026-11-04T11:00",
+        "end": "2026-11-04T12:30",
+        "name": "Shinny: Adults",
+        "type": "Pickup Hockey",
+        "ticket": 5.17
+      },
+      {
+        "id": "494bcaf7-a6df-4bfa-ab27-c2812ef7cf6e",
+        "start": "2026-11-06T11:00",
+        "end": "2026-11-06T12:30",
+        "name": "Shinny: Adults",
+        "type": "Pickup Hockey",
+        "ticket": 5.17
+      },
+      {
+        "id": "7cad2b40-18e3-410c-b616-bd74b3ad851f",
+        "start": "2026-11-07T16:10",
+        "end": "2026-11-07T17:00",
+        "name": "Recreational Skate",
+        "type": "Public Skate",
+        "ticket": 5.17
+      },
+      {
+        "id": "a94a45fe-19b7-4a71-a50e-cd9c76fae81a",
+        "start": "2026-11-10T11:00",
+        "end": "2026-11-10T12:30",
+        "name": "Shinny: Adults",
+        "type": "Pickup Hockey",
+        "ticket": 5.17
+      },
+      {
+        "id": "50e430b8-5cd0-42d5-b04c-75f3852ae4b1",
+        "start": "2026-11-11T11:00",
+        "end": "2026-11-11T12:30",
+        "name": "Shinny: Adults",
+        "type": "Pickup Hockey",
+        "ticket": 5.17
+      },
+      {
+        "id": "a8a1ac7a-7613-4fea-899a-87eb02872c54",
+        "start": "2026-11-13T11:00",
+        "end": "2026-11-13T12:30",
+        "name": "Shinny: Adults",
+        "type": "Pickup Hockey",
+        "ticket": 5.17
+      },
+      {
+        "id": "092e7c52-691a-46a3-8308-1961bb027ec6",
+        "start": "2026-11-14T16:10",
+        "end": "2026-11-14T17:00",
+        "name": "Recreational Skate",
+        "type": "Public Skate",
+        "ticket": 5.17
+      },
+      {
+        "id": "b67758ea-0dee-40dc-90e7-057c90252eba",
+        "start": "2026-11-17T11:00",
+        "end": "2026-11-17T12:30",
+        "name": "Shinny: Adults",
+        "type": "Pickup Hockey",
+        "ticket": 5.17
+      },
+      {
+        "id": "0d33c3f6-7bc4-4ed6-b568-e57f0050cbfd",
+        "start": "2026-11-18T11:00",
+        "end": "2026-11-18T12:30",
+        "name": "Shinny: Adults",
+        "type": "Pickup Hockey",
+        "ticket": 5.17
+      },
+      {
+        "id": "1855eb9a-214e-4c4f-bd84-755f8f7b08cb",
+        "start": "2026-11-20T11:00",
+        "end": "2026-11-20T12:30",
+        "name": "Shinny: Adults",
+        "type": "Pickup Hockey",
+        "ticket": 5.17
+      },
+      {
+        "id": "5ffe1b4c-9de8-4541-9217-597d48173669",
+        "start": "2026-11-21T16:10",
+        "end": "2026-11-21T17:00",
+        "name": "Recreational Skate",
+        "type": "Public Skate",
+        "ticket": 5.17
+      },
+      {
+        "id": "f184fac9-ff3b-4581-9aa6-7fa70918e58e",
+        "start": "2026-11-24T11:00",
+        "end": "2026-11-24T12:30",
+        "name": "Shinny: Adults",
+        "type": "Pickup Hockey",
+        "ticket": 5.17
+      },
+      {
+        "id": "81ccc7ca-da18-4a83-8eee-5943112c5392",
+        "start": "2026-11-25T11:00",
+        "end": "2026-11-25T12:30",
+        "name": "Shinny: Adults",
+        "type": "Pickup Hockey",
+        "ticket": 5.17
+      },
+      {
+        "id": "a4069f51-21a2-45ae-83c0-2c723fd4aafe",
+        "start": "2026-11-27T11:00",
+        "end": "2026-11-27T12:30",
+        "name": "Shinny: Adults",
+        "type": "Pickup Hockey",
+        "ticket": 5.17
+      },
+      {
+        "id": "ea60c26f-787a-4ff3-b3b7-c4a12124415f",
+        "start": "2026-11-28T16:10",
+        "end": "2026-11-28T17:00",
+        "name": "Recreational Skate",
+        "type": "Public Skate",
+        "ticket": 5.17
+      },
+      {
+        "id": "d8cf9c67-a876-47a5-9d71-7c880221bede",
+        "start": "2026-12-01T11:00",
+        "end": "2026-12-01T12:30",
+        "name": "Shinny: Adults",
+        "type": "Pickup Hockey",
+        "ticket": 5.17
+      },
+      {
+        "id": "0ce4ffad-7b19-41bf-b704-3afc60935f25",
+        "start": "2026-12-02T11:00",
+        "end": "2026-12-02T12:30",
+        "name": "Shinny: Adults",
+        "type": "Pickup Hockey",
+        "ticket": 5.17
+      },
+      {
+        "id": "42ab46bc-204a-4ee3-b6a8-8cc04782cad9",
+        "start": "2026-12-04T11:00",
+        "end": "2026-12-04T12:30",
+        "name": "Shinny: Adults",
+        "type": "Pickup Hockey",
+        "ticket": 5.17
+      },
+      {
+        "id": "f57b7271-6e85-4022-9e61-6246b8be1332",
+        "start": "2026-12-05T16:10",
+        "end": "2026-12-05T17:00",
+        "name": "Recreational Skate",
+        "type": "Public Skate",
+        "ticket": 5.17
+      },
+      {
+        "id": "4f40205f-ddc3-44ad-99df-629d3a22e87c",
+        "start": "2026-12-08T11:00",
+        "end": "2026-12-08T12:30",
+        "name": "Shinny: Adults",
+        "type": "Pickup Hockey",
+        "ticket": 5.17
+      },
+      {
+        "id": "35b55b9e-741d-4fd0-8053-a4628e2162df",
+        "start": "2026-12-09T11:00",
+        "end": "2026-12-09T12:30",
+        "name": "Shinny: Adults",
+        "type": "Pickup Hockey",
+        "ticket": 5.17
+      },
+      {
+        "id": "76f6788f-1409-46d6-bc70-961d7dfa056c",
+        "start": "2026-12-11T11:00",
+        "end": "2026-12-11T12:30",
+        "name": "Shinny: Adults",
+        "type": "Pickup Hockey",
+        "ticket": 5.17
+      },
+      {
+        "id": "b8d79bb8-6e7b-4752-90c4-6e140101f3c9",
+        "start": "2026-12-12T16:10",
+        "end": "2026-12-12T17:00",
+        "name": "Recreational Skate",
+        "type": "Public Skate",
+        "ticket": 5.17
+      },
+      {
+        "id": "62f24360-adae-4242-994b-6c7ea26ed890",
+        "start": "2026-12-15T11:00",
+        "end": "2026-12-15T12:30",
+        "name": "Shinny: Adults",
+        "type": "Pickup Hockey",
+        "ticket": 5.17
+      },
+      {
+        "id": "1c16c6e2-119d-4b3b-ab5b-476bc60eedb2",
+        "start": "2026-12-16T11:00",
+        "end": "2026-12-16T12:30",
+        "name": "Shinny: Adults",
+        "type": "Pickup Hockey",
+        "ticket": 5.17
+      },
+      {
+        "id": "d04cd0ae-5e43-4474-95fd-2982fd91e6a1",
+        "start": "2026-12-18T11:00",
+        "end": "2026-12-18T12:30",
+        "name": "Shinny: Adults",
+        "type": "Pickup Hockey",
+        "ticket": 5.17
+      },
+      {
+        "id": "967f392e-0add-40b4-bcad-eef2861edb5a",
+        "start": "2026-12-19T16:10",
+        "end": "2026-12-19T17:00",
+        "name": "Recreational Skate",
+        "type": "Public Skate",
+        "ticket": 5.17
+      }
+    ]
+  }
+}
