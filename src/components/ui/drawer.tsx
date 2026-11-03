@@ -64,7 +64,7 @@ function Drawer({
     const minFraction = (snapPoints?.[0] as number | undefined) ?? 0.5
     root.style.setProperty(
       "--drawer-min-height",
-      `${Math.round(minFraction * 100)}dvh`
+      `${Math.round(minFraction * 100)}lvh`
     )
     return () => {
       root.style.removeProperty("--drawer-min-height")
