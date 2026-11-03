@@ -226,9 +226,14 @@
 
   .maplibregl-control-container .maplibregl-ctrl-bottom-right,
   .maplibregl-control-container .maplibregl-ctrl-bottom-left {
+    /* Offset by the drawer's smallest height so resizing the drawer does not
+       move the controls. */
     bottom: calc(
-      min(var(--drawer-height, 0px), calc(100dvh - var(--safe-top, 0px))) +
-        0.75rem
+      min(
+          var(--drawer-min-height, var(--drawer-height, 0px)),
+          calc(100dvh - var(--safe-top, 0px))
+        ) +
+        0.25rem
     );
   }
 }
@@ -261,7 +266,7 @@
   > [data-slot="scale-legend"] {
   order: 1;
   /* Space between the scale legend and the credit below it. */
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
 }
 
 .maplibregl-control-container

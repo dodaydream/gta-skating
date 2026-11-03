@@ -55,6 +55,22 @@ function Drawer({
     }
   }, [detent, snapPoints])
 
+  // Stable height of the drawer's smallest snap point. Overlays that should not
+  // follow the drawer as it is resized (e.g. the map controls) position against
+  // this instead of the live `--drawer-height`.
+  React.useEffect(() => {
+    if (!hasSnapPoints) return
+    const root = document.documentElement
+    const minFraction = (snapPoints?.[0] as number | undefined) ?? 0.5
+    root.style.setProperty(
+      "--drawer-min-height",
+      `${Math.round(minFraction * 100)}dvh`
+    )
+    return () => {
+      root.style.removeProperty("--drawer-min-height")
+    }
+  }, [hasSnapPoints, snapPoints])
+
   return (
     <DrawerContext.Provider value={contextValue}>
       <DrawerPrimitive.Root

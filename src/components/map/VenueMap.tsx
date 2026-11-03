@@ -225,7 +225,7 @@ class AttributionControl implements maplibregl.IControl {
     const container = document.createElement("div");
     container.dataset.slot = "attribution";
     container.className =
-      "maplibregl-ctrl inline-flex flex-wrap items-center gap-x-1 rounded-full bg-white/50 px-1.5 py-px text-[8px] leading-tight text-zinc-700 lg:px-2 lg:py-0.5 lg:text-[10px] dark:bg-black/50 dark:text-zinc-200";
+      "maplibregl-ctrl inline-flex flex-wrap items-center gap-x-1 text-[8px] leading-tight text-zinc-700 lg:text-[10px] [text-shadow:0_1px_2px_rgba(255,255,255,0.9)] dark:text-zinc-200 dark:[text-shadow:none]";
     container.innerHTML =
       `<a href="https://maplibre.org" target="_blank" rel="noopener noreferrer" class="${ATTRIBUTION_LINK_CLASS}">MapLibre</a>` +
       `<span class="text-zinc-400 dark:text-zinc-500" aria-hidden="true">|</span>` +
