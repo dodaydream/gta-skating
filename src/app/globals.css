@@ -228,13 +228,7 @@
   .maplibregl-control-container .maplibregl-ctrl-bottom-left {
     /* Offset by the drawer's smallest height so resizing the drawer does not
        move the controls. */
-    bottom: calc(
-      min(
-          var(--drawer-min-height, var(--drawer-height, 0px)),
-          calc(100dvh - var(--safe-top, 0px))
-        ) +
-        0.25rem
-    );
+    bottom: calc(var(--drawer-min-height, var(--drawer-height, 0px)) + 0.25rem);
   }
 }
 
