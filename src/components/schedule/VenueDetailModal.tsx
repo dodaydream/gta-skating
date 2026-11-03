@@ -539,8 +539,8 @@ export function VenueDetailModal({
                 <div className="pointer-events-none fixed left-1/2 bottom-[calc(var(--safe-bottom,0px)+1rem)] z-[1400] -translate-x-1/2">
                   <Button
                     variant="secondary"
-                    size="sm"
-                    className="pointer-events-auto rounded-full shadow-lg"
+                    size="lg"
+                    className="pointer-events-auto h-10 rounded-full px-5 text-sm shadow-lg"
                     onClick={() => setFilterActive(false)}
                   >
                     {t("venue.showAllPrograms")}
