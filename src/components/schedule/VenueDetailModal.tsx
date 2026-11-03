@@ -137,7 +137,7 @@ function Panel({
   const body = (
     <div
       ref={bodyRef}
-      className="flex min-h-0 flex-1 flex-col gap-3 overflow-y-auto overscroll-contain md:gap-4 group-data-[at-max-height=false]/drawer-popup:overflow-hidden"
+      className="flex min-h-0 flex-1 flex-col gap-3 overflow-y-auto overscroll-contain isolate md:gap-4 group-data-[at-max-height=false]/drawer-popup:overflow-hidden"
     >
       {children}
     </div>
