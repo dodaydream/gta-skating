@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState, useSyncExternalStore } from "react";
+import { createPortal } from "react-dom";
 import { useTranslation } from "react-i18next";
 import type { Venue } from "@/types/venue";
 import type { Program, ProgramType } from "@/types/schedule";
@@ -68,6 +69,14 @@ function useGeoSchemeSupported() {
   );
 }
 
+function useIsClient() {
+  return useSyncExternalStore(
+    () => () => {},
+    () => true,
+    () => false
+  );
+}
+
 function MapLink({
   name,
   coordinates,
@@ -126,12 +135,14 @@ function Panel({
   onClose,
   header,
   bodyRef,
+  disablePointerDismissal,
   children,
 }: {
   isDesktop: boolean;
   onClose: () => void;
   header?: React.ReactNode;
   bodyRef?: React.Ref<HTMLDivElement>;
+  disablePointerDismissal?: boolean;
   children: React.ReactNode;
 }) {
   const body = (
@@ -167,6 +178,7 @@ function Panel({
       showSwipeHandle
       snapToSequentialPoints
       snapPoints={SNAP_POINTS}
+      disablePointerDismissal={disablePointerDismissal}
       onOpenChange={(open) => !open && onClose()}
     >
       <DrawerContent
@@ -317,9 +329,12 @@ export function VenueDetailModal({
   const [reportsSlug, setReportsSlug] = useState(slug);
   const [, setNowTick] = useState(0);
   const [filterActive, setFilterActive] = useState(true);
+  const [scheduleVisible, setScheduleVisible] = useState(false);
   const bodyRef = useRef<HTMLDivElement>(null);
+  const scheduleRef = useRef<HTMLDivElement>(null);
   const openedRef = useRef(false);
   const isDesktop = useIsDesktop();
+  const isClient = useIsClient();
 
   if (reportsSlug !== slug) {
     setReportsSlug(slug);
@@ -380,6 +395,18 @@ export function VenueDetailModal({
     const id = setInterval(() => setNowTick((t) => t + 1), 60_000);
     return () => clearInterval(id);
   }, []);
+
+  useEffect(() => {
+    const root = bodyRef.current;
+    const target = scheduleRef.current;
+    if (!root || !target) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => setScheduleVisible(entry.isIntersecting),
+      { root }
+    );
+    observer.observe(target);
+    return () => observer.disconnect();
+  }, [venue]);
 
   if (error) {
     return (
@@ -457,11 +484,14 @@ export function VenueDetailModal({
         )
       : null;
 
+  const showFloating = hasFilterCriteria && filterActive && scheduleVisible && isClient;
+
   return (
     <Panel
       isDesktop={isDesktop}
       onClose={onClose}
       bodyRef={bodyRef}
+      disablePointerDismissal={showFloating}
       header={
         <header className="flex items-start justify-between gap-3 px-5 py-4">
           <div>
@@ -504,7 +534,23 @@ export function VenueDetailModal({
             </div>
           ) : null}
 
-          <div className="flex flex-col">
+          {showFloating
+            ? createPortal(
+                <div className="pointer-events-none fixed left-1/2 bottom-[calc(var(--safe-bottom,0px)+1rem)] z-[1400] -translate-x-1/2">
+                  <Button
+                    variant="secondary"
+                    size="sm"
+                    className="pointer-events-auto rounded-full shadow-lg"
+                    onClick={() => setFilterActive(false)}
+                  >
+                    {t("venue.showAllPrograms")}
+                  </Button>
+                </div>,
+                document.body
+              )
+            : null}
+
+          <div ref={scheduleRef} className="flex flex-col">
             <div className="sticky top-0 z-30 flex h-12 items-center justify-between gap-3 bg-popover px-5">
               <h3 className="text-sm font-semibold text-black dark:text-zinc-50">
                 {t("venue.schedule")}

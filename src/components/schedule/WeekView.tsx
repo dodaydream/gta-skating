@@ -295,7 +295,7 @@ export function WeekView({
           {showNow && (
             <div
               aria-hidden="true"
-              className="pointer-events-none absolute z-20 -translate-y-1/2 flex items-center"
+              className="pointer-events-none absolute z-10 -translate-y-1/2 flex items-center"
               style={{ top: `${nowPct}%`, left: "2.5rem", right: 0 }}
             >
               <span className="-ml-1 h-2 w-2 shrink-0 rounded-full bg-red-500 dark:bg-red-400" />
