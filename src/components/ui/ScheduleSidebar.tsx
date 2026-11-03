@@ -191,7 +191,7 @@ export function ScheduleSidebar({
         showSwipeHandle
       >
         <DrawerContent
-          className="border-black/[.08] dark:border-white/[.145] lg:hidden"
+          className="border-black/[.08] pb-[calc(var(--drawer-snap-point-offset,0px)+var(--drawer-swipe-movement-y,0px))] dark:border-white/[.145] lg:hidden"
           header={
             <div className="flex items-start justify-between gap-2 px-4 pb-3 pt-4">
               <div className="flex flex-col">
