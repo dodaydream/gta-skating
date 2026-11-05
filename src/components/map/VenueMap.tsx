@@ -338,7 +338,8 @@ export default function VenueMap({
   const userMarkerRef = useRef<maplibregl.Marker | null>(null);
   const centeredOnUserRef = useRef(false);
   const boundsTrackTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
-  const [dark, setDark] = useState(false);
+  const appliedStyleRef = useRef<string | null>(null);
+  const [dark, setDark] = useState(() => isDarkMode());
   const [mapReady, setMapReady] = useState(false);
 
   const venuesRef = useRef(venues);
@@ -390,17 +391,33 @@ export default function VenueMap({
 
     let map: maplibregl.Map;
     try {
+      const initialStyle = dark ? DARK_STYLE : LIGHT_STYLE;
       map = new maplibregl.Map({
         container: containerRef.current,
-        style: dark ? DARK_STYLE : LIGHT_STYLE,
+        style: initialStyle,
         center: TORONTO,
         zoom: DEFAULT_ZOOM,
         attributionControl: false,
       });
+      appliedStyleRef.current = initialStyle;
 
       map.addControl(new ZoomControl(), "top-right");
       map.addControl(new AttributionControl(), "bottom-right");
       map.addControl(new ScaleLegend(), "bottom-right");
+
+      // The style references sprite images that may be absent; register a
+      // resolver that substitutes a transparent 1x1 image. MapLibre awaits the
+      // resolver before treating an image as missing, so this suppresses the
+      // "could not be loaded" warning (the `styleimagemissing` event does not).
+      map.setMissingStyleImageResolver((id) => {
+        if (!map.hasImage(id)) {
+          map.addImage(id, {
+            width: 1,
+            height: 1,
+            data: new Uint8Array(4),
+          });
+        }
+      });
     } catch {
       // WebGL2 unsupported/unavailable: skip the map so the rest of the app still works.
       return;
@@ -500,7 +517,6 @@ export default function VenueMap({
       attributeFilter: ["class"],
     });
     mq.addEventListener("change", () => setDark(isDarkMode()));
-    setDark(isDarkMode());
 
     return () => {
       observer.disconnect();
@@ -512,7 +528,13 @@ export default function VenueMap({
     const map = mapRef.current;
     if (!map) return;
 
-    map.setStyle(dark ? DARK_STYLE : LIGHT_STYLE);
+    const next = dark ? DARK_STYLE : LIGHT_STYLE;
+    // Skip when the style is already applied (e.g. the initial mount), so we
+    // don't trigger a full style rebuild before the style has finished loading.
+    if (appliedStyleRef.current === next) return;
+    appliedStyleRef.current = next;
+
+    map.setStyle(next);
     map.once("style.load", () => syncMarkers.current?.());
   }, [dark]);
 
