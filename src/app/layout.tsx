@@ -30,7 +30,7 @@ const adsenseClient = process.env.NEXT_PUBLIC_ADSENSE_CLIENT;
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: "GTA Skating — Public Skating, Shinny & Figure Skating Schedules",
+  title: "GTA Skating — Public Skating, Shinny & Figure Skating",
   description,
   alternates: { canonical: "/" },
   manifest: "/manifest.json",
@@ -57,14 +57,14 @@ export const metadata: Metadata = {
     type: "website",
     url: SITE_URL,
     siteName: "GTA Skating",
-    title: "GTA Skating — Public Skating, Shinny & Figure Skating Schedules",
+    title: "GTA Skating — Public Skating, Shinny & Figure Skating",
     description,
     locale: "en_CA",
     images: [ogImage],
   },
   twitter: {
     card: "summary_large_image",
-    title: "GTA Skating — Public Skating, Shinny & Figure Skating Schedules",
+    title: "GTA Skating — Public Skating, Shinny & Figure Skating",
     description,
     images: [ogImage],
   },
