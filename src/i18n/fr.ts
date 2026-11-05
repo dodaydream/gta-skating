@@ -100,6 +100,11 @@ const fr: Messages = {
   ticket: {
     free: "Gratuit",
   },
+  notFound: {
+    title: "Page introuvable",
+    message: "Cette page n’existe pas ou a été déplacée.",
+    backToSchedule: "Voir tous les horaires de patinage",
+  },
   duration: {
     minutes: "{{count}} min",
     hours: "{{count}} h",

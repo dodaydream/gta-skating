@@ -98,6 +98,11 @@ const en = {
   ticket: {
     free: "Free",
   },
+  notFound: {
+    title: "Page not found",
+    message: "This page doesn’t exist or has moved.",
+    backToSchedule: "View all skating schedules",
+  },
   duration: {
     minutes: "{{count}}m",
     hours: "{{count}}h",
