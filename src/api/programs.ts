@@ -7,6 +7,7 @@ export interface FetchProgramsQuery {
   to: string;
   hideEmpty: boolean;
   types?: ProgramType[];
+  amenities?: string[];
   bounds?: MapBounds | null;
 }
 
@@ -44,7 +45,12 @@ export async function fetchPrograms(
   const typeFilter = types.length > 0 ? new Set(types) : null;
   const matchesType = (program: Program) =>
     !typeFilter || typeFilter.has(program.type);
-  const { venues: allVenues } = await import("@/data/schedules");
+  const amenities = query.amenities ?? [];
+  const matchesAmenities = (venue: Venue) =>
+    amenities.length === 0 ||
+    amenities.every((a) => (venue.amenities ?? []).includes(a));
+  const { venues: scheduleVenues } = await import("@/data/schedules");
+  const allVenues = scheduleVenues.filter(matchesAmenities);
 
   const matches: ProgramItem[] = [];
   for (const venue of allVenues) {

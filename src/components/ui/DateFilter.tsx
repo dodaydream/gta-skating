@@ -9,15 +9,10 @@ import type { DateRange } from "react-day-picker";
 import type { ProgramType } from "@/types/schedule";
 import { Button } from "@/components/ui/button";
 import { DateRangePicker } from "@/components/ui/date-picker";
-import { ProgramTypeFilter } from "@/components/ui/ProgramTypeFilter";
+import { FiltersControl } from "@/components/ui/FiltersControl";
 import { normalizeLocale, type Locale } from "@/i18n/config";
 import { dayjsLocale, formatTime } from "@/lib/schedule";
-import {
-  IconCalendarWeek,
-  IconCalendar,
-  IconEyeFilled,
-  IconEyeOff,
-} from "@tabler/icons-react";
+import { IconCalendarWeek, IconCalendar } from "@tabler/icons-react";
 
 interface FilterChipsProps {
   from: string;
@@ -29,6 +24,8 @@ interface FilterChipsProps {
   onHideEmptyChange: (v: boolean) => void;
   types: ProgramType[];
   onTypesChange: (types: ProgramType[]) => void;
+  amenities: string[];
+  onAmenitiesChange: (amenities: string[]) => void;
   className?: string;
 }
 
@@ -108,6 +105,8 @@ export function FilterChips({
   onHideEmptyChange,
   types,
   onTypesChange,
+  amenities,
+  onAmenitiesChange,
   className = "",
 }: FilterChipsProps) {
   const { t, i18n } = useTranslation();
@@ -244,23 +243,14 @@ export function FilterChips({
           </div>
       </DateRangePicker>
 
-      <ProgramTypeFilter types={types} onChange={onTypesChange} />
-
-      <Button
-        variant="secondary"
-        size="icon-lg"
-        className="shadow-xs"
-        aria-pressed={!hideEmpty}
-        aria-label={hideEmpty ? t("filters.showAll") : t("filters.hideEmpty")}
-        title={hideEmpty ? t("filters.showAll") : t("filters.hideEmpty")}
-        onClick={() => onHideEmptyChange(!hideEmpty)}
-      >
-        {hideEmpty ? (
-          <IconEyeOff className="size-4" />
-        ) : (
-          <IconEyeFilled className="size-4 text-blue-500" />
-        )}
-      </Button>
+      <FiltersControl
+        types={types}
+        onTypesChange={onTypesChange}
+        amenities={amenities}
+        onAmenitiesChange={onAmenitiesChange}
+        hideEmpty={hideEmpty}
+        onHideEmptyChange={onHideEmptyChange}
+      />
     </div>
   );
 }

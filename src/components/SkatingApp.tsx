@@ -71,6 +71,7 @@ export default function SkatingApp({ initialSlug }: { initialSlug?: string }) {
   });
   const [hideEmpty, setHideEmpty] = useState(true);
   const [types, setTypes] = useState<ProgramType[]>([]);
+  const [amenities, setAmenities] = useState<string[]>([]);
   const [mapBounds, setMapBounds] = useState<MapBounds | null>(null);
   const [userLocation, setUserLocation] = useState<{
     lat: number;
@@ -160,6 +161,7 @@ export default function SkatingApp({ initialSlug }: { initialSlug?: string }) {
       to: toDate,
       hideEmpty,
       types,
+      amenities,
       bounds: mapBounds,
     })
       .then((result) => {
@@ -174,7 +176,7 @@ export default function SkatingApp({ initialSlug }: { initialSlug?: string }) {
     return () => {
       cancelled = true;
     };
-  }, [fromDate, toDate, hideEmpty, types, mapBounds]);
+  }, [fromDate, toDate, hideEmpty, types, amenities, mapBounds]);
 
   const handleSelect = useCallback(
     (index: number) => {
@@ -280,6 +282,13 @@ export default function SkatingApp({ initialSlug }: { initialSlug?: string }) {
                 onTypesChange={(next) => {
                   setTypes(next);
                   trackEvent("type_filter_change", { types: next.join(",") });
+                }}
+                amenities={amenities}
+                onAmenitiesChange={(next) => {
+                  setAmenities(next);
+                  trackEvent("amenity_filter_change", {
+                    amenities: next.join(","),
+                  });
                 }}
               />
             </FilterBar>
