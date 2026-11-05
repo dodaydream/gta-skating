@@ -41,6 +41,11 @@ const SOURCES: {
     title: "Drop-In Recreation – City of Mississauga",
   },
   {
+    name: "City of Pickering",
+    href: "https://www.pickering.ca/parks-recreation-culture/arenas-and-skating/",
+    title: "Arenas and Skating – City of Pickering",
+  },
+  {
     name: "City of Vaughan",
     href: "https://vaughan.perfectmind.com/25076/Clients/BookMe4BookingPages/Classes?calendarId=84142d20-1da8-48ed-800d-31dc0c30121d&widgetId=dff88c8a-0b78-4a94-9dde-250040385300&embed=False",
     title: "Drop-In Skating – City of Vaughan",

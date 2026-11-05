@@ -1,0 +1,335 @@
+{
+  "name": "Chestnut Hill Developments Recreation Complex",
+  "url": "https://www.pickering.ca/parks-recreation-culture/arenas-and-skating/",
+  "timezone": "America/Toronto",
+  "address": "1867 Valley Farm Road, Pickering, ON L1V 1C1",
+  "coordinates": {
+    "lat": 43.8392345,
+    "lon": -79.0814572
+  },
+  "schedule": {
+    "updatedAt": "2026-11-05T01:40:31.974Z",
+    "programs": [
+      {
+        "id": "cfc62f96-8b7a-4526-a2c3-d0ad48d9ca49",
+        "start": "2026-11-04T11:00",
+        "end": "2026-11-04T13:00",
+        "name": "Daytime Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "411508f8-5858-4e81-a73a-07f9fe61cae1",
+        "start": "2026-11-05T11:00",
+        "end": "2026-11-05T13:00",
+        "name": "Daytime Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "396235c0-8f3a-411c-960d-1867696d902b",
+        "start": "2026-11-09T11:00",
+        "end": "2026-11-09T13:00",
+        "name": "Daytime Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "99f192dd-8831-407a-ae1d-7e0b89e67830",
+        "start": "2026-11-10T11:00",
+        "end": "2026-11-10T13:00",
+        "name": "Daytime Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "cc34fca8-a479-403d-bbae-1dda39e33024",
+        "start": "2026-11-10T18:45",
+        "end": "2026-11-10T20:30",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "92453328-b847-4fc7-abcd-d8ae15c6e495",
+        "start": "2026-11-11T11:00",
+        "end": "2026-11-11T13:00",
+        "name": "Daytime Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "994c14f0-a31f-4bc0-ba28-2a6b8f793fd8",
+        "start": "2026-11-12T11:00",
+        "end": "2026-11-12T13:00",
+        "name": "Daytime Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "f38e9ffd-6d5d-4909-ac50-24f16d94951d",
+        "start": "2026-11-13T11:00",
+        "end": "2026-11-13T13:00",
+        "name": "Daytime Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "d0d77d1c-892b-4938-968f-977cf294c2d8",
+        "start": "2026-11-14T14:45",
+        "end": "2026-11-14T16:30",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "1bf5a18a-1279-4f52-812f-00cd19d044eb",
+        "start": "2026-11-16T11:00",
+        "end": "2026-11-16T13:00",
+        "name": "Daytime Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "8016a86d-3b01-403c-84e1-26d80a711c23",
+        "start": "2026-11-17T11:00",
+        "end": "2026-11-17T13:00",
+        "name": "Daytime Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "1b086e79-9757-4969-b44a-21801b9ce8b7",
+        "start": "2026-11-17T18:45",
+        "end": "2026-11-17T20:30",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "3a57e958-3295-42c1-847b-0315b51083b3",
+        "start": "2026-11-18T11:00",
+        "end": "2026-11-18T13:00",
+        "name": "Daytime Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "925baca7-6f10-4d8d-8e31-30729c6f5abb",
+        "start": "2026-11-19T11:00",
+        "end": "2026-11-19T13:00",
+        "name": "Daytime Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "214ecf74-493b-4411-a866-6f9c9bfea3b2",
+        "start": "2026-11-20T11:00",
+        "end": "2026-11-20T13:00",
+        "name": "Daytime Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "8991edd0-83fe-433d-abab-966fa6ade7e3",
+        "start": "2026-11-21T14:45",
+        "end": "2026-11-21T16:30",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "92d6647a-0cf6-4fb9-b4bc-7db4c0e8bb31",
+        "start": "2026-11-23T11:00",
+        "end": "2026-11-23T13:00",
+        "name": "Daytime Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "f688d98f-fc00-4d8a-bde3-2b6d51f25981",
+        "start": "2026-11-24T11:00",
+        "end": "2026-11-24T13:00",
+        "name": "Daytime Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "a3ff8a09-d84a-4351-9753-0f9c047b1fa0",
+        "start": "2026-11-24T18:45",
+        "end": "2026-11-24T20:30",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "50c462ca-3b50-4eca-8b2d-62d8d2b60393",
+        "start": "2026-11-25T11:00",
+        "end": "2026-11-25T13:00",
+        "name": "Daytime Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "194f4aef-2b1d-404c-bf73-9c8beb18d05a",
+        "start": "2026-11-26T11:00",
+        "end": "2026-11-26T13:00",
+        "name": "Daytime Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "3f86b8d2-b6c4-4ece-9096-414f6d8127d3",
+        "start": "2026-11-27T11:00",
+        "end": "2026-11-27T13:00",
+        "name": "Daytime Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "4afed5f4-8755-451e-a015-a1180d25c855",
+        "start": "2026-11-28T14:45",
+        "end": "2026-11-28T16:30",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "0045a441-495b-4e42-a932-e3006560f1d0",
+        "start": "2026-11-30T11:00",
+        "end": "2026-11-30T13:00",
+        "name": "Daytime Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "00864340-6868-46e3-9f15-ce3efe0d3e40",
+        "start": "2026-12-01T11:00",
+        "end": "2026-12-01T13:00",
+        "name": "Daytime Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "f1ce8aed-7da2-44c1-b028-7d9f71be6d38",
+        "start": "2026-12-01T18:45",
+        "end": "2026-12-01T20:30",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "bb3ebf6c-910d-42fa-800f-25c177ec3f1b",
+        "start": "2026-12-02T11:00",
+        "end": "2026-12-02T13:00",
+        "name": "Daytime Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "74e8cbf7-29c3-4890-be01-70adfa7ddde2",
+        "start": "2026-12-03T11:00",
+        "end": "2026-12-03T13:00",
+        "name": "Daytime Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "9096b59b-9136-478e-9ec0-d79ff55ec963",
+        "start": "2026-12-07T11:00",
+        "end": "2026-12-07T13:00",
+        "name": "Daytime Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "02053917-54b4-4316-a5b7-95d99fcc0b67",
+        "start": "2026-12-08T11:00",
+        "end": "2026-12-08T13:00",
+        "name": "Daytime Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "922d7d5d-f4b5-437a-bb19-1a0db6ae4dab",
+        "start": "2026-12-08T18:45",
+        "end": "2026-12-08T20:30",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "54a3ef44-83a7-42f1-adac-bcd5a56b2cae",
+        "start": "2026-12-09T11:00",
+        "end": "2026-12-09T13:00",
+        "name": "Daytime Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "54f73a04-0598-45b7-a2a9-841f0c0735d6",
+        "start": "2026-12-10T11:00",
+        "end": "2026-12-10T13:00",
+        "name": "Daytime Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "be7bcc6f-4353-4d76-a14f-9ca6ef117625",
+        "start": "2026-12-14T11:00",
+        "end": "2026-12-14T13:00",
+        "name": "Daytime Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "68c45425-b97c-4366-83cc-00db9e315df7",
+        "start": "2026-12-15T11:00",
+        "end": "2026-12-15T13:00",
+        "name": "Daytime Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "bb2f32ba-5329-41f2-877d-9e6dc04a6efc",
+        "start": "2026-12-15T18:45",
+        "end": "2026-12-15T20:30",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "7bd51283-3404-49a4-9bcd-70a3b7b530e9",
+        "start": "2026-12-16T11:00",
+        "end": "2026-12-16T13:00",
+        "name": "Daytime Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "ad2814f2-da0e-4854-b00d-1ab935dc9d60",
+        "start": "2026-12-17T11:00",
+        "end": "2026-12-17T13:00",
+        "name": "Daytime Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "176f4c49-08b6-4454-aa45-e111687db277",
+        "start": "2026-12-18T11:00",
+        "end": "2026-12-18T13:00",
+        "name": "Daytime Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "735872c6-7c94-4df3-8840-7801d680ffdb",
+        "start": "2026-12-19T14:45",
+        "end": "2026-12-19T16:30",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      }
+    ]
+  }
+}

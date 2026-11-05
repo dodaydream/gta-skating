@@ -22,12 +22,14 @@ import centennialCommunity from "./centennial-community-centre.json";
 import centennialEtobicoke from "./centennial-park-arena-etobicoke.json";
 import centennialScarborough from "./centennial-recreation-centre-scarborough.json";
 import central from "./central-arena.json";
+import chestnutHillDevelopments from "./chestnut-hill-developments-recreation-complex.json";
 import chrisTonks from "./chris-tonks-arena.json";
 import clarkson from "./clarkson-community-centre.json";
 import clatworthy from "./clatworthy-arena.json";
 import commander from "./commander-recreation-centre.json";
 import crosby from "./crosby-community-centre.json";
 import cummerPark from "./cummer-park-community-centre.json";
+import donBeer from "./don-beer-arena.json";
 import donMillsCivitan from "./don-mills-civitan-arena.json";
 import donMontgomery from "./don-montgomery-community-centre.json";
 import downsview from "./downsview-arena.json";
@@ -107,12 +109,14 @@ export const venues: Venue[] = [
   centennialEtobicoke as Venue,
   centennialScarborough as Venue,
   central as Venue,
+  chestnutHillDevelopments as Venue,
   chrisTonks as Venue,
   clarkson as Venue,
   clatworthy as Venue,
   commander as Venue,
   crosby as Venue,
   cummerPark as Venue,
+  donBeer as Venue,
   donMillsCivitan as Venue,
   donMontgomery as Venue,
   downsview as Venue,

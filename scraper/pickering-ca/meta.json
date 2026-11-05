@@ -1,0 +1,20 @@
+{
+  "venues": [
+    {
+      "id": "chestnut-hill-developments-recreation-complex",
+      "name": "Chestnut Hill Developments Recreation Complex",
+      "url": "https://www.pickering.ca/parks-recreation-culture/arenas-and-skating/",
+      "address": "1867 Valley Farm Road, Pickering, ON L1V 1C1",
+      "coordinates": { "lat": 43.8392345, "lon": -79.0814572 },
+      "type": "indoor"
+    },
+    {
+      "id": "don-beer-arena",
+      "name": "Don Beer Arena",
+      "url": "https://www.pickering.ca/parks-recreation-culture/arenas-and-skating/",
+      "address": "940 Dillingham Road, Pickering, ON L1W 3R7",
+      "coordinates": { "lat": 43.8246138, "lon": -79.067142 },
+      "type": "indoor"
+    }
+  ]
+}
