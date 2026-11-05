@@ -4,6 +4,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { DeviceCornerRadius } from "@/components/DeviceCornerRadius";
 import { I18nProvider } from "@/components/I18nProvider";
+import { SITE_DESCRIPTION, SITE_URL } from "@/lib/site";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -16,8 +17,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const description =
-  "Leisure skating, figure skating, shinny, and hockey at rinks across the GTA. Live schedules and an interactive map.";
+const description = SITE_DESCRIPTION;
 
 const ogImage = {
   url: "/opengraph-image.png",
@@ -30,9 +30,10 @@ const ogImage = {
 const adsenseClient = process.env.NEXT_PUBLIC_ADSENSE_CLIENT;
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://gtaskating.com"),
-  title: "GTA Skating Schedule",
+  metadataBase: new URL(SITE_URL),
+  title: "GTA Skating — Public Skating, Shinny & Figure Skating Schedules",
   description,
+  alternates: { canonical: "/" },
   manifest: "/manifest.json",
   other: {
     "apple-mobile-web-app-capable": "yes",
@@ -51,16 +52,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    url: "https://gtaskating.com",
+    url: SITE_URL,
     siteName: "GTA Skating",
-    title: "GTA Skating Schedule",
+    title: "GTA Skating — Public Skating, Shinny & Figure Skating Schedules",
     description,
     locale: "en_CA",
     images: [ogImage],
   },
   twitter: {
     card: "summary_large_image",
-    title: "GTA Skating Schedule",
+    title: "GTA Skating — Public Skating, Shinny & Figure Skating Schedules",
     description,
     images: [ogImage],
   },
@@ -69,8 +70,6 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  maximumScale: 1,
-  userScalable: false,
   viewportFit: "cover",
   themeColor: [
     { media: "(prefers-color-scheme: light)", color: "#fafafa" },

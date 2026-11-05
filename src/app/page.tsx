@@ -1,7 +1,13 @@
-"use client";
-
 import SkatingApp from "@/components/SkatingApp";
+import { HomeSeoContent } from "@/components/seo/HomeSeoContent";
+import { SiteStructuredData } from "@/components/seo/SiteStructuredData";
 
 export default function Home() {
-  return <SkatingApp />;
+  return (
+    <>
+      <HomeSeoContent />
+      <SiteStructuredData />
+      <SkatingApp />
+    </>
+  );
 }

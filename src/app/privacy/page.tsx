@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: "Privacy Policy — GTA Skating Schedule",
   description:
     "How the GTA Skating Schedule collects, uses and shares information, including cookies, analytics, location and advertising.",
+  alternates: { canonical: "/privacy" },
 };
 
 const LAST_UPDATED = "2 November 2026";
