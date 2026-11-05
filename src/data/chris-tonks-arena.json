@@ -6,6 +6,14 @@
     { "name": "Ice Rink", "type": "North American / NHL" }
   ],
   "amenities": ["wifi", "dressing_rooms", "lockers"],
+  "info": [
+    { "key": "operator", "value": "City of Toronto" },
+    { "key": "phone", "value": "416-394-2733" },
+    {
+      "key": "website",
+      "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=476"
+    }
+  ],
   "address": "95 Black Creek Dr, Toronto, ON",
   "coordinates": {
     "lat": 43.68702,

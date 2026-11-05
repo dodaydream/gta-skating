@@ -25,6 +25,20 @@
         "wifi",
         "dressing_rooms",
         "lockers"
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-396-4037"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=523"
+        }
       ]
     },
     {
@@ -46,6 +60,16 @@
       ],
       "amenities": [
         "wifi"
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=2155"
+        }
       ]
     },
     {
@@ -69,6 +93,20 @@
         "wifi",
         "dressing_rooms",
         "lockers"
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-394-8690"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=800"
+        }
       ]
     },
     {
@@ -86,6 +124,20 @@
         {
           "name": "Outdoor Rink",
           "type": "Outdoor (non-standard)"
+        }
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-392-7686"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=31"
         }
       ]
     },
@@ -110,6 +162,20 @@
         "wifi",
         "dressing_rooms",
         "lockers"
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-395-6683"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=480"
+        }
       ]
     },
     {
@@ -133,6 +199,20 @@
         "wifi",
         "dressing_rooms",
         "lockers"
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-395-7838"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=582"
+        }
       ]
     },
     {
@@ -156,6 +236,20 @@
         "wifi",
         "dressing_rooms",
         "lockers"
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-395-7960"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=512"
+        }
       ]
     },
     {
@@ -179,6 +273,20 @@
         "wifi",
         "dressing_rooms",
         "lockers"
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-395-7825"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=515"
+        }
       ]
     },
     {
@@ -200,6 +308,20 @@
       ],
       "amenities": [
         "wifi"
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-395-7966"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=7"
+        }
       ]
     },
     {
@@ -217,6 +339,16 @@
         {
           "name": "Outdoor Rink",
           "type": "Outdoor (non-standard)"
+        }
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=813"
         }
       ]
     },
@@ -236,6 +368,16 @@
           "name": "Outdoor Rink",
           "type": "Outdoor (non-standard)"
         }
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=1053"
+        }
       ]
     },
     {
@@ -253,6 +395,16 @@
         {
           "name": "Outdoor Rink",
           "type": "Outdoor (non-standard)"
+        }
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=629"
         }
       ]
     },
@@ -281,6 +433,20 @@
         "wifi",
         "dressing_rooms",
         "lockers"
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-394-8758"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=913"
+        }
       ]
     },
     {
@@ -309,6 +475,20 @@
         "dressing_rooms",
         "onsite_free_parking",
         "lockers"
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-396-4057"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=537"
+        }
       ]
     },
     {
@@ -332,6 +512,20 @@
         "wifi",
         "dressing_rooms",
         "lockers"
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-394-5439"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=824"
+        }
       ]
     },
     {
@@ -355,6 +549,20 @@
         "wifi",
         "dressing_rooms",
         "lockers"
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-394-2733"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=476"
+        }
       ]
     },
     {
@@ -372,6 +580,16 @@
         {
           "name": "Outdoor Rink",
           "type": "Outdoor (non-standard)"
+        }
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=196"
         }
       ]
     },
@@ -391,6 +609,16 @@
           "name": "Outdoor Rink",
           "type": "Outdoor (non-standard)"
         }
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=223"
+        }
       ]
     },
     {
@@ -408,6 +636,16 @@
         {
           "name": "Outdoor Rink",
           "type": "Outdoor (non-standard)"
+        }
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=466"
         }
       ]
     },
@@ -436,6 +674,20 @@
         "wifi",
         "dressing_rooms",
         "lockers"
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-396-4024"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=558"
+        }
       ]
     },
     {
@@ -459,6 +711,20 @@
         "wifi",
         "dressing_rooms",
         "lockers"
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-395-7803"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=499"
+        }
       ]
     },
     {
@@ -476,6 +742,16 @@
         {
           "name": "Outdoor Rink",
           "type": "Outdoor (non-standard)"
+        }
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=327"
         }
       ]
     },
@@ -500,6 +776,20 @@
         "wifi",
         "dressing_rooms",
         "lockers"
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-395-7843"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=548"
+        }
       ]
     },
     {
@@ -527,6 +817,20 @@
         "wifi",
         "dressing_rooms",
         "lockers"
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-396-4043"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=712"
+        }
       ]
     },
     {
@@ -550,6 +854,20 @@
         "wifi",
         "dressing_rooms",
         "lockers"
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-395-7831"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=568"
+        }
       ]
     },
     {
@@ -567,6 +885,16 @@
         {
           "name": "Outdoor Rink",
           "type": "Outdoor (non-standard)"
+        }
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=87"
         }
       ]
     },
@@ -591,6 +919,20 @@
         "wifi",
         "dressing_rooms",
         "lockers"
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-396-2869"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=330"
+        }
       ]
     },
     {
@@ -608,6 +950,16 @@
         {
           "name": "Outdoor Rink",
           "type": "Outdoor (non-standard)"
+        }
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=2597"
         }
       ]
     },
@@ -632,6 +984,20 @@
         "wifi",
         "dressing_rooms",
         "lockers"
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-395-7846"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=303"
+        }
       ]
     },
     {
@@ -658,6 +1024,20 @@
         "skate_sharpening",
         "equipment_gear_purchase",
         "lockers"
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-251-5219"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=3782"
+        }
       ]
     },
     {
@@ -675,6 +1055,16 @@
         {
           "name": "Outdoor Rink",
           "type": "Outdoor (non-standard)"
+        }
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=514"
         }
       ]
     },
@@ -697,6 +1087,20 @@
       ],
       "amenities": [
         "wifi"
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-395-7921"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=638"
+        }
       ]
     },
     {
@@ -720,6 +1124,20 @@
         "wifi",
         "dressing_rooms",
         "lockers"
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-395-0355"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=642"
+        }
       ]
     },
     {
@@ -743,6 +1161,20 @@
         "wifi",
         "dressing_rooms",
         "lockers"
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-395-0123"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=643"
+        }
       ]
     },
     {
@@ -766,6 +1198,20 @@
         "wifi",
         "dressing_rooms",
         "lockers"
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-395-6171"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=647"
+        }
       ]
     },
     {
@@ -783,6 +1229,20 @@
         {
           "name": "Outdoor Rink",
           "type": "Outdoor (non-standard)"
+        }
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-392-7804"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=70"
         }
       ]
     },
@@ -807,6 +1267,20 @@
         "wifi",
         "dressing_rooms",
         "lockers"
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-395-7949"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=652"
+        }
       ]
     },
     {
@@ -830,6 +1304,20 @@
         "wifi",
         "dressing_rooms",
         "lockers"
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-395-6067"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=483"
+        }
       ]
     },
     {
@@ -857,6 +1345,20 @@
         "wifi",
         "dressing_rooms",
         "lockers"
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-396-4035"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=633"
+        }
       ]
     },
     {
@@ -874,6 +1376,20 @@
         {
           "name": "Outdoor Rink",
           "type": "Outdoor (non-standard)"
+        }
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-392-7807"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=77"
         }
       ]
     },
@@ -893,6 +1409,16 @@
           "name": "Outdoor Rink",
           "type": "Outdoor (non-standard)"
         }
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=1220"
+        }
       ]
     },
     {
@@ -910,6 +1436,16 @@
         {
           "name": "Outdoor Rink",
           "type": "Outdoor (non-standard)"
+        }
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=1012"
         }
       ]
     },
@@ -929,6 +1465,20 @@
           "name": "Outdoor Rink",
           "type": "Outdoor (non-standard)"
         }
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-395-7880"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=664"
+        }
       ]
     },
     {
@@ -946,6 +1496,16 @@
         {
           "name": "Outdoor Rink",
           "type": "Outdoor (non-standard)"
+        }
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=155"
         }
       ]
     },
@@ -970,6 +1530,20 @@
         "wifi",
         "dressing_rooms",
         "lockers"
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-395-7942"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=667"
+        }
       ]
     },
     {
@@ -988,6 +1562,16 @@
           "name": "Outdoor Rink",
           "type": "Outdoor (non-standard)"
         }
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=2715"
+        }
       ]
     },
     {
@@ -1005,6 +1589,16 @@
         {
           "name": "Outdoor Rink",
           "type": "Outdoor (non-standard)"
+        }
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=107"
         }
       ]
     },
@@ -1029,6 +1623,20 @@
         "wifi",
         "dressing_rooms",
         "lockers"
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-394-2735"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=479"
+        }
       ]
     },
     {
@@ -1047,6 +1655,16 @@
           "name": "Outdoor Rink",
           "type": "Outdoor (non-standard)"
         }
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=847"
+        }
       ]
     },
     {
@@ -1064,6 +1682,20 @@
         {
           "name": "Outdoor Rink",
           "type": "Outdoor (non-standard)"
+        }
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-395-6688"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=678"
         }
       ]
     },
@@ -1088,6 +1720,20 @@
         "wifi",
         "dressing_rooms",
         "lockers"
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-394-8694"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=803"
+        }
       ]
     },
     {
@@ -1115,6 +1761,20 @@
         "wifi",
         "dressing_rooms",
         "lockers"
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-396-4054"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=702"
+        }
       ]
     },
     {
@@ -1137,6 +1797,20 @@
       "amenities": [
         "dressing_rooms",
         "lockers"
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-392-0647"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=3490"
+        }
       ]
     },
     {
@@ -1154,6 +1828,16 @@
         {
           "name": "Outdoor Rink",
           "type": "Outdoor (non-standard)"
+        }
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=1500"
         }
       ]
     },
@@ -1182,6 +1866,20 @@
         "wifi",
         "dressing_rooms",
         "lockers"
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-396-4023"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=506"
+        }
       ]
     },
     {
@@ -1203,6 +1901,20 @@
       ],
       "amenities": [
         "wifi"
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-395-7584"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=956"
+        }
       ]
     },
     {
@@ -1226,6 +1938,20 @@
         "wifi",
         "dressing_rooms",
         "lockers"
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-394-8695"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=802"
+        }
       ]
     },
     {
@@ -1249,6 +1975,20 @@
         "wifi",
         "dressing_rooms",
         "lockers"
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-395-0265"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=693"
+        }
       ]
     },
     {
@@ -1266,6 +2006,20 @@
         {
           "name": "Outdoor Rink",
           "type": "Outdoor (non-standard)"
+        }
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-392-7831"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=145"
         }
       ]
     },
@@ -1288,6 +2042,16 @@
       ],
       "amenities": [
         "wifi"
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=1089"
+        }
       ]
     },
     {
@@ -1310,6 +2074,20 @@
       "amenities": [
         "dressing_rooms",
         "lockers"
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-485-0301"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=3492"
+        }
       ]
     },
     {
@@ -1331,6 +2109,20 @@
       ],
       "amenities": [
         "wifi"
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-392-6591"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=189"
+        }
       ]
     },
     {
@@ -1354,6 +2146,20 @@
         "wifi",
         "dressing_rooms",
         "lockers"
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-395-6005"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=714"
+        }
       ]
     },
     {
@@ -1371,6 +2177,16 @@
         {
           "name": "Outdoor Rink",
           "type": "Outdoor (non-standard)"
+        }
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=251"
         }
       ]
     },
@@ -1394,6 +2210,20 @@
       "amenities": [
         "dressing_rooms",
         "lockers"
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-394-8491"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=858"
+        }
       ]
     },
     {
@@ -1417,6 +2247,20 @@
         "wifi",
         "dressing_rooms",
         "lockers"
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-394-2734"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=477"
+        }
       ]
     },
     {
@@ -1440,6 +2284,20 @@
         "wifi",
         "dressing_rooms",
         "lockers"
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-394-8692"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=801"
+        }
       ]
     },
     {
@@ -1463,6 +2321,20 @@
         "wifi",
         "dressing_rooms",
         "lockers"
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-395-6013"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=732"
+        }
       ]
     },
     {
@@ -1480,6 +2352,16 @@
         {
           "name": "Outdoor Rink",
           "type": "Outdoor (non-standard)"
+        }
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=924"
         }
       ]
     },
@@ -1499,6 +2381,16 @@
           "name": "Outdoor Rink",
           "type": "Outdoor (non-standard)"
         }
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=861"
+        }
       ]
     },
     {
@@ -1516,6 +2408,16 @@
         {
           "name": "Outdoor Rink",
           "type": "Outdoor (non-standard)"
+        }
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=167"
         }
       ]
     },
@@ -1535,6 +2437,16 @@
           "name": "Outdoor Rink",
           "type": "Outdoor (non-standard)"
         }
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=419"
+        }
       ]
     },
     {
@@ -1552,6 +2464,16 @@
         {
           "name": "Outdoor Rink",
           "type": "Outdoor (non-standard)"
+        }
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=181"
         }
       ]
     },
@@ -1571,6 +2493,16 @@
           "name": "Outdoor Rink",
           "type": "Outdoor (non-standard)"
         }
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=355"
+        }
       ]
     },
     {
@@ -1588,6 +2520,16 @@
         {
           "name": "Outdoor Rink",
           "type": "Outdoor (non-standard)"
+        }
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=343"
         }
       ]
     },
@@ -1612,6 +2554,20 @@
         "wifi",
         "dressing_rooms",
         "lockers"
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-395-7964"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=744"
+        }
       ]
     },
     {
@@ -1630,6 +2586,16 @@
           "name": "Outdoor Rink",
           "type": "Outdoor (non-standard)"
         }
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=210"
+        }
       ]
     },
     {
@@ -1647,6 +2613,16 @@
         {
           "name": "Outdoor Rink",
           "type": "Outdoor (non-standard)"
+        }
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=878"
         }
       ]
     },
@@ -1671,6 +2647,20 @@
         "wifi",
         "dressing_rooms",
         "lockers"
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-396-4953"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=3493"
+        }
       ]
     },
     {
@@ -1694,6 +2684,20 @@
         "wifi",
         "dressing_rooms",
         "lockers"
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-396-4048"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=743"
+        }
       ]
     },
     {
@@ -1711,6 +2715,16 @@
         {
           "name": "Outdoor Rink",
           "type": "Outdoor (non-standard)"
+        }
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=1860"
         }
       ]
     },
@@ -1730,6 +2744,16 @@
           "name": "Outdoor Rink",
           "type": "Outdoor (non-standard)"
         }
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=2065"
+        }
       ]
     },
     {
@@ -1748,6 +2772,16 @@
           "name": "Outdoor Rink",
           "type": "Outdoor (non-standard)"
         }
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=870"
+        }
       ]
     },
     {
@@ -1765,6 +2799,16 @@
         {
           "name": "Outdoor Rink",
           "type": "Outdoor (non-standard)"
+        }
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=871"
         }
       ]
     },
@@ -1788,6 +2832,20 @@
       "amenities": [
         "dressing_rooms",
         "lockers"
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-694-6893"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=3494"
+        }
       ]
     },
     {
@@ -1805,6 +2863,16 @@
         {
           "name": "Outdoor Rink",
           "type": "Outdoor (non-standard)"
+        }
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=240"
         }
       ]
     },
@@ -1824,6 +2892,16 @@
           "name": "Outdoor Rink",
           "type": "Outdoor (non-standard)"
         }
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=241"
+        }
       ]
     },
     {
@@ -1842,6 +2920,16 @@
           "name": "Outdoor Rink",
           "type": "Outdoor (non-standard)"
         }
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=812"
+        }
       ]
     },
     {
@@ -1859,6 +2947,16 @@
         {
           "name": "Outdoor Rink",
           "type": "Outdoor (non-standard)"
+        }
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=770"
         }
       ]
     },
@@ -1883,6 +2981,20 @@
         "wifi",
         "dressing_rooms",
         "lockers"
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-395-0143"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=771"
+        }
       ]
     },
     {
@@ -1900,6 +3012,16 @@
         {
           "name": "Outdoor Rink",
           "type": "Outdoor (non-standard)"
+        }
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=260"
         }
       ]
     },
@@ -1919,6 +3041,16 @@
           "name": "Outdoor Rink",
           "type": "Outdoor (non-standard)"
         }
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=773"
+        }
       ]
     },
     {
@@ -1936,6 +3068,16 @@
         {
           "name": "Outdoor Rink",
           "type": "Outdoor (non-standard)"
+        }
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=873"
         }
       ]
     },
@@ -1955,6 +3097,16 @@
           "name": "Outdoor Rink",
           "type": "Outdoor (non-standard)"
         }
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=2642"
+        }
       ]
     },
     {
@@ -1972,6 +3124,16 @@
         {
           "name": "Outdoor Rink",
           "type": "Outdoor (non-standard)"
+        }
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=876"
         }
       ]
     },
@@ -1995,6 +3157,20 @@
       "amenities": [
         "dressing_rooms",
         "lockers"
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-241-0502"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=2007"
+        }
       ]
     },
     {
@@ -2012,6 +3188,16 @@
         {
           "name": "Outdoor Rink",
           "type": "Outdoor (non-standard)"
+        }
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=874"
         }
       ]
     },
@@ -2035,6 +3221,20 @@
       "amenities": [
         "dressing_rooms",
         "lockers"
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-392-0088"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=3495"
+        }
       ]
     },
     {
@@ -2056,6 +3256,16 @@
       ],
       "amenities": [
         "wifi"
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=306"
+        }
       ]
     },
     {
@@ -2079,6 +3289,20 @@
         "wifi",
         "dressing_rooms",
         "lockers"
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-395-7844"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=778"
+        }
       ]
     }
   ]

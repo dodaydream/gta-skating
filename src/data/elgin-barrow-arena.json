@@ -17,11 +17,25 @@
       "type": "North American / NHL"
     }
   ],
+  "info": [
+    {
+      "key": "operator",
+      "value": "City of Richmond Hill"
+    },
+    {
+      "key": "phone",
+      "value": "905-884-1368"
+    },
+    {
+      "key": "website",
+      "value": "https://www.richmondhill.ca/en/online-services/Arenas.aspx"
+    }
+  ],
   "schedule": {
-    "updatedAt": "2026-11-05T03:20:17.538Z",
+    "updatedAt": "2026-11-05T03:58:14.129Z",
     "programs": [
       {
-        "id": "a717f855-090d-4aa0-bd67-ef6b98beb4fc",
+        "id": "16aca4aa-434d-4859-99e7-febcd7986650",
         "start": "2026-11-07T19:15",
         "end": "2026-11-07T20:45",
         "name": "Public Skate",
@@ -29,7 +43,7 @@
         "ticket": 5.9
       },
       {
-        "id": "2dfb8f09-b02f-4d04-9b17-de80484702bb",
+        "id": "b8259ecb-346a-4b14-8d19-86586d0dc9d3",
         "start": "2026-11-07T20:45",
         "end": "2026-11-07T22:15",
         "name": "Shinny",
@@ -37,7 +51,7 @@
         "ticket": 8.7
       },
       {
-        "id": "0f7c45e2-cf77-4175-9343-bcbfc2ff13c3",
+        "id": "7444c11c-6c76-47eb-a131-671b10ba04d3",
         "start": "2026-11-14T19:15",
         "end": "2026-11-14T20:45",
         "name": "Public Skate",
@@ -45,7 +59,7 @@
         "ticket": 5.9
       },
       {
-        "id": "3e5c0984-0be6-4b05-a37d-83e7d6005250",
+        "id": "370c252a-84ac-4b3f-81f2-3a02d940377f",
         "start": "2026-11-14T20:45",
         "end": "2026-11-14T22:15",
         "name": "Shinny",
@@ -53,7 +67,7 @@
         "ticket": 8.7
       },
       {
-        "id": "11dcad86-3856-4a5b-99dc-43155f04c2cc",
+        "id": "bfd3e366-10e3-4e9e-8d23-a55b32e97f83",
         "start": "2026-11-21T19:15",
         "end": "2026-11-21T20:45",
         "name": "Public Skate",
@@ -61,7 +75,7 @@
         "ticket": 5.9
       },
       {
-        "id": "da17b358-37e2-4b22-86df-81cd13440153",
+        "id": "195ee5e3-c549-4621-8e9f-e61f85120d00",
         "start": "2026-11-21T20:45",
         "end": "2026-11-21T22:15",
         "name": "Shinny",
@@ -69,7 +83,7 @@
         "ticket": 8.7
       },
       {
-        "id": "6f582836-4cae-4ec1-8cd9-8ff89322da84",
+        "id": "2f211991-9047-4fc3-9b54-8f03d4558beb",
         "start": "2026-11-28T19:15",
         "end": "2026-11-28T20:45",
         "name": "Public Skate",
@@ -77,7 +91,7 @@
         "ticket": 5.9
       },
       {
-        "id": "701014dc-fbfd-4be1-a6f6-8afa3491a78b",
+        "id": "37974fb5-480e-4b2a-ad38-8d196b165b3a",
         "start": "2026-11-28T20:45",
         "end": "2026-11-28T22:15",
         "name": "Shinny",
@@ -85,7 +99,7 @@
         "ticket": 8.7
       },
       {
-        "id": "a907a19b-0e48-4236-8f84-8810f40b48b7",
+        "id": "6abbf840-3cad-4839-8fa9-df22ac7a0921",
         "start": "2026-12-05T19:15",
         "end": "2026-12-05T20:45",
         "name": "Public Skate",
@@ -93,7 +107,7 @@
         "ticket": 5.9
       },
       {
-        "id": "f3a7abd6-bf75-4425-a919-169b30059541",
+        "id": "c016597a-f100-4d55-8886-ec06e75b254e",
         "start": "2026-12-05T20:45",
         "end": "2026-12-05T22:15",
         "name": "Shinny",

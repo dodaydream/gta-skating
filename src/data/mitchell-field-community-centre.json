@@ -18,11 +18,25 @@
     "dressing_rooms",
     "lockers"
   ],
+  "info": [
+    {
+      "key": "operator",
+      "value": "City of Toronto"
+    },
+    {
+      "key": "phone",
+      "value": "416-395-0265"
+    },
+    {
+      "key": "website",
+      "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=693"
+    }
+  ],
   "schedule": {
-    "updatedAt": "2026-11-05T03:27:48.957Z",
+    "updatedAt": "2026-11-05T03:58:18.377Z",
     "programs": [
       {
-        "id": "c559f735-1915-4a6f-9696-8ade754e4a60",
+        "id": "00ad2242-d459-431a-93ea-ff4ea26c209a",
         "start": "2026-11-04T09:30",
         "end": "2026-11-04T11:30",
         "name": "Leisure Skate: Older Adult",
@@ -31,7 +45,7 @@
         "ticket": 0
       },
       {
-        "id": "20cb7364-078a-44c1-ad33-c13d895468e8",
+        "id": "ad119cad-78df-4b65-8fc7-c83c86e082b5",
         "start": "2026-11-05T16:00",
         "end": "2026-11-05T17:00",
         "name": "Shinny: Youth",
@@ -40,7 +54,7 @@
         "ticket": 0
       },
       {
-        "id": "fa68c4c3-8382-4e74-bccc-c7e8901b2baf",
+        "id": "25a74042-fc83-46a7-82dd-add01cf3762c",
         "start": "2026-11-06T09:30",
         "end": "2026-11-06T11:30",
         "name": "Leisure Skate: Older Adult",
@@ -49,7 +63,7 @@
         "ticket": 0
       },
       {
-        "id": "b250afe0-f2f1-41ef-82bc-eec66f632234",
+        "id": "7b85b42b-5218-443a-ba5c-063f0f583c18",
         "start": "2026-11-07T19:00",
         "end": "2026-11-07T21:00",
         "name": "Leisure Skate",
@@ -58,7 +72,7 @@
         "ticket": 0
       },
       {
-        "id": "d80d0731-6562-4dfb-bfd4-6ede23985763",
+        "id": "41a2ac66-0afd-48a2-90e0-fe642c343785",
         "start": "2026-11-07T21:30",
         "end": "2026-11-07T22:30",
         "name": "Shinny: Child",
@@ -67,7 +81,7 @@
         "ticket": 0
       },
       {
-        "id": "3b80c212-2fab-46dc-aa7c-e4ec82446674",
+        "id": "546078bc-8644-46e1-afa7-bf005f3d63cf",
         "start": "2026-11-07T22:30",
         "end": "2026-11-07T23:30",
         "name": "Shinny: Youth",
@@ -76,7 +90,7 @@
         "ticket": 0
       },
       {
-        "id": "e4f89302-4d26-4ef8-a144-9f2f1d7d36d1",
+        "id": "4bc82382-f3c3-49a1-9619-f5a8db4d7332",
         "start": "2026-11-08T16:00",
         "end": "2026-11-08T18:00",
         "name": "Leisure Skate",

@@ -1,9 +1,9 @@
 "use client";
 
-import { useCallback, useEffect, useRef, useState, useSyncExternalStore } from "react";
+import { Fragment, useCallback, useEffect, useRef, useState, useSyncExternalStore } from "react";
 import { createPortal } from "react-dom";
 import { useTranslation } from "react-i18next";
-import type { Rink, Venue } from "@/types/venue";
+import type { InfoItem, Rink, Venue } from "@/types/venue";
 import type { Program, ProgramType } from "@/types/schedule";
 import type { BusyReport } from "@/types/feedback";
 import { fetchVenueDetails } from "@/api/venues";
@@ -631,6 +631,8 @@ export function VenueDetailModal({
         </div>
       )}
 
+      <VenueInfoSection info={venue.info} />
+
       <footer className="flex flex-col gap-2 border-t border-black/[.06] px-5 py-3 text-xs text-zinc-500 dark:border-white/[.08] dark:text-zinc-400">
         <p className="text-center text-zinc-400 md:text-left">
           {t("venue.disclaimer")}
@@ -706,6 +708,76 @@ function RinksSection({
           </li>
         ))}
       </ul>
+    </section>
+  );
+}
+
+function websiteHost(url: string) {
+  try {
+    return new URL(url).host.replace(/^www\./, "");
+  } catch {
+    return url;
+  }
+}
+
+const INFO_LABELS: Record<string, string> = {
+  operator: "venue.operator",
+  year_built: "venue.yearBuilt",
+  phone: "venue.phone",
+  website: "venue.website",
+};
+
+function humanizeKey(key: string) {
+  return key.replace(/_/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
+}
+
+function VenueInfoSection({ info }: { info?: InfoItem[] }) {
+  const { t } = useTranslation();
+  if (!info || info.length === 0) return null;
+  const renderValue = (item: InfoItem) => {
+    if (/^https?:\/\//i.test(item.value)) {
+      return (
+        <a
+          href={item.value}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:underline"
+        >
+          {websiteHost(item.value)}
+        </a>
+      );
+    }
+    if (item.key === "phone") {
+      return (
+        <a
+          href={`tel:${item.value.replace(/[^\d+]/g, "")}`}
+          className="hover:underline"
+        >
+          {item.value}
+        </a>
+      );
+    }
+    return item.value;
+  };
+  return (
+    <section className="px-5 pt-4">
+      <h3 className="text-sm font-semibold text-black dark:text-zinc-50">
+        {t("venue.info")}
+      </h3>
+      <dl className="mt-2 grid grid-cols-[auto_1fr] gap-x-4 gap-y-2 text-xs">
+        {info.map((item) => (
+          <Fragment key={item.key}>
+            <dt className="text-zinc-500 dark:text-zinc-400">
+              {INFO_LABELS[item.key]
+                ? t(INFO_LABELS[item.key])
+                : humanizeKey(item.key)}
+            </dt>
+            <dd className="break-words text-right text-zinc-900 dark:text-zinc-100">
+              {renderValue(item)}
+            </dd>
+          </Fragment>
+        ))}
+      </dl>
     </section>
   );
 }

@@ -260,6 +260,7 @@ async function writeSchedule(
     coordinates: venue.coordinates,
     rinks: venue.rinks,
     amenities: venue.amenities,
+    info: venue.info,
     schedule: {
       updatedAt: new Date().toISOString(),
       programs,

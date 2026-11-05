@@ -18,11 +18,29 @@
     "equipment_gear_purchase",
     "snack_bar"
   ],
+  "info": [
+    {
+      "key": "operator",
+      "value": "Bill Bolton Arena"
+    },
+    {
+      "key": "year_built",
+      "value": "1971"
+    },
+    {
+      "key": "phone",
+      "value": "416-392-0088"
+    },
+    {
+      "key": "website",
+      "value": "https://www.billboltonarena.ca"
+    }
+  ],
   "schedule": {
-    "updatedAt": "2026-11-05T03:17:05.285Z",
+    "updatedAt": "2026-11-05T03:58:13.177Z",
     "programs": [
       {
-        "id": "6d97370a-0636-495c-b7e0-baa608864751",
+        "id": "d257f9fd-4c8c-40ab-a680-77f52e936997",
         "start": "2026-11-06T17:40",
         "end": "2026-11-06T19:15",
         "name": "General Public Free Skate",
@@ -30,7 +48,7 @@
         "ticket": 0
       },
       {
-        "id": "98f60ac7-e50c-4307-98c3-50835bde6561",
+        "id": "1b1c6766-5dde-4eb5-bd6c-bf709dc03482",
         "start": "2026-11-07T19:40",
         "end": "2026-11-07T20:30",
         "name": "General Public Free Skate",
@@ -38,7 +56,7 @@
         "ticket": 0
       },
       {
-        "id": "250def96-e15f-4b96-a81c-9dd4fa6b39b7",
+        "id": "77e58b03-3579-453d-a292-058224132de9",
         "start": "2026-11-09T11:40",
         "end": "2026-11-09T13:00",
         "name": "Adults Only Free Skate",
@@ -47,7 +65,7 @@
         "ticket": 0
       },
       {
-        "id": "314d9d48-a8e4-44f9-bf2e-2a0b6aa606ca",
+        "id": "4a63e437-8742-47de-b209-69b9a032b99c",
         "start": "2026-11-10T09:00",
         "end": "2026-11-10T10:00",
         "name": "Parent & Tots(4 and under) Free Skate",
@@ -55,7 +73,7 @@
         "ticket": 0
       },
       {
-        "id": "f287c59d-6ca6-440f-9ada-2fa6f451f78d",
+        "id": "74cdf972-1d48-4da6-b537-321e92f8edd1",
         "start": "2026-11-13T17:40",
         "end": "2026-11-13T19:15",
         "name": "General Public Free Skate",
@@ -63,7 +81,7 @@
         "ticket": 0
       },
       {
-        "id": "c3728942-bf9f-4d4b-bb4d-99e9809539dd",
+        "id": "df879b77-8d57-4e36-8be8-d696c16bf87a",
         "start": "2026-11-14T19:40",
         "end": "2026-11-14T20:30",
         "name": "General Public Free Skate",
@@ -71,7 +89,7 @@
         "ticket": 0
       },
       {
-        "id": "c65bcd8d-8df6-4615-b4ee-6e7a7a4ec1f4",
+        "id": "a825a942-2b7c-41e7-8ffd-c6f94c81cf64",
         "start": "2026-11-16T11:40",
         "end": "2026-11-16T13:00",
         "name": "Adults Only Free Skate",
@@ -80,7 +98,7 @@
         "ticket": 0
       },
       {
-        "id": "b239898b-3666-45a2-8688-b9af138fab13",
+        "id": "3d373596-91db-4bf7-b747-aca402513500",
         "start": "2026-11-17T09:00",
         "end": "2026-11-17T10:00",
         "name": "Parent & Tots(4 and under) Free Skate",
@@ -88,7 +106,7 @@
         "ticket": 0
       },
       {
-        "id": "cdfdbce2-e33d-4898-8278-677cbcffaac3",
+        "id": "e51cdc1c-c8b6-4984-ae22-ebf23bd2fb27",
         "start": "2026-11-20T17:40",
         "end": "2026-11-20T19:15",
         "name": "General Public Free Skate",
@@ -96,7 +114,7 @@
         "ticket": 0
       },
       {
-        "id": "baab1db9-ca64-4c10-aa6a-412505ac17df",
+        "id": "e4fde940-5d9b-448b-911a-875f2a054af1",
         "start": "2026-11-21T19:40",
         "end": "2026-11-21T20:30",
         "name": "General Public Free Skate",
@@ -104,7 +122,7 @@
         "ticket": 0
       },
       {
-        "id": "dbc13baa-37f9-4c44-94df-75be3b083783",
+        "id": "d8f8d46a-9ab4-438f-9b5b-d9c242da0f06",
         "start": "2026-11-23T11:40",
         "end": "2026-11-23T13:00",
         "name": "Adults Only Free Skate",
@@ -113,7 +131,7 @@
         "ticket": 0
       },
       {
-        "id": "102e31b9-8e83-4055-a046-df34be3293e4",
+        "id": "c20bc8fe-0fa7-4b9b-af69-925fdad30d6f",
         "start": "2026-11-24T09:00",
         "end": "2026-11-24T10:00",
         "name": "Parent & Tots(4 and under) Free Skate",
@@ -121,7 +139,7 @@
         "ticket": 0
       },
       {
-        "id": "65a7d617-91b9-4d8a-9dd3-2d7e4ebf4199",
+        "id": "7d8678f2-6367-42dd-b6a3-13feedbcdaa0",
         "start": "2026-11-27T17:40",
         "end": "2026-11-27T19:15",
         "name": "General Public Free Skate",
@@ -129,7 +147,7 @@
         "ticket": 0
       },
       {
-        "id": "e9a59735-31b0-4cdd-9ffb-a5a8bf25b632",
+        "id": "57564261-d4cc-43cf-871f-eb18ea71ae2d",
         "start": "2026-11-28T19:40",
         "end": "2026-11-28T20:30",
         "name": "General Public Free Skate",
@@ -137,7 +155,7 @@
         "ticket": 0
       },
       {
-        "id": "ce59edcb-e12a-4b0b-b51c-bf252207a46d",
+        "id": "48f41466-24e1-4af8-86ac-adb8759ab997",
         "start": "2026-11-30T11:40",
         "end": "2026-11-30T13:00",
         "name": "Adults Only Free Skate",
@@ -146,7 +164,7 @@
         "ticket": 0
       },
       {
-        "id": "658a1595-82d8-4585-8961-83882ade00ea",
+        "id": "fcb7f2f5-55e9-4a44-849b-17f8c3b08b9c",
         "start": "2026-12-01T09:00",
         "end": "2026-12-01T10:00",
         "name": "Parent & Tots(4 and under) Free Skate",
@@ -154,7 +172,7 @@
         "ticket": 0
       },
       {
-        "id": "8ba771be-a481-42fa-a4ff-ecba523731d4",
+        "id": "942d3574-9b32-4e06-9638-99d434767bc6",
         "start": "2026-12-04T17:40",
         "end": "2026-12-04T19:15",
         "name": "General Public Free Skate",
@@ -162,7 +180,7 @@
         "ticket": 0
       },
       {
-        "id": "74ec5b66-d200-46ad-8dde-74cae6a56f9a",
+        "id": "f50b5173-b05a-4171-a154-ecb13ffa50b1",
         "start": "2026-12-05T19:40",
         "end": "2026-12-05T20:30",
         "name": "General Public Free Skate",

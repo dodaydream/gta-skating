@@ -18,11 +18,25 @@
     "dressing_rooms",
     "lockers"
   ],
+  "info": [
+    {
+      "key": "operator",
+      "value": "City of Toronto"
+    },
+    {
+      "key": "phone",
+      "value": "416-394-8690"
+    },
+    {
+      "key": "website",
+      "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=800"
+    }
+  ],
   "schedule": {
-    "updatedAt": "2026-11-05T03:27:46.621Z",
+    "updatedAt": "2026-11-05T03:58:15.603Z",
     "programs": [
       {
-        "id": "4ebed1ac-f5b0-48e5-8fcb-87a056b52483",
+        "id": "b60016c3-0d34-45e6-9b00-00029559ad2b",
         "start": "2026-11-04T10:00",
         "end": "2026-11-04T12:00",
         "name": "Leisure Skate: Adult",
@@ -31,7 +45,7 @@
         "ticket": 0
       },
       {
-        "id": "ea6b76e8-69f6-4e8f-8234-6761e3c5a7c9",
+        "id": "a9cafc21-de7a-404d-9499-d1abb0825e10",
         "start": "2026-11-05T10:00",
         "end": "2026-11-05T12:00",
         "name": "Leisure Skate: Adult",
@@ -40,7 +54,7 @@
         "ticket": 0
       },
       {
-        "id": "8edde72b-b1f5-4ee5-89e9-ffd18353fdd2",
+        "id": "6e31e91b-2131-4127-9beb-2d20b0688265",
         "start": "2026-11-06T10:00",
         "end": "2026-11-06T12:00",
         "name": "Shinny: Child with Caregiver",
@@ -49,7 +63,7 @@
         "ticket": 0
       },
       {
-        "id": "dcdbd028-ae17-4188-a711-73ff2b91d999",
+        "id": "4c5b4597-ee39-4ea7-afb9-e1fac8830c34",
         "start": "2026-11-06T16:30",
         "end": "2026-11-06T17:45",
         "name": "Leisure Skate",
@@ -58,7 +72,7 @@
         "ticket": 0
       },
       {
-        "id": "17230286-a225-4697-b491-2036d4f3ec67",
+        "id": "e28b2b6b-9692-49b2-a0ed-415c6d27e9fd",
         "start": "2026-11-07T14:15",
         "end": "2026-11-07T15:30",
         "name": "Leisure Skate",
@@ -67,7 +81,7 @@
         "ticket": 0
       },
       {
-        "id": "d884c86f-bc82-4e38-a725-63460e731616",
+        "id": "5bd4c7fb-a904-49a4-a0f7-709232615f50",
         "start": "2026-11-08T14:45",
         "end": "2026-11-08T16:45",
         "name": "Leisure Skate",

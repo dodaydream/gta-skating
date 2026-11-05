@@ -6,11 +6,20 @@ export interface Rink {
   type: string;
 }
 
+/** A labelled extra fact about a venue, e.g. { key: "phone", value: "416-…" }. */
+export interface InfoItem {
+  /** Stable snake_case key; also used as the i18n lookup key. */
+  key: string;
+  value: string;
+}
+
 export interface VenueMeta {
   id: string;
   url: string;
   address: string;
   coordinates: { lat: number; lon: number };
+  /** Labelled extra facts (phone, website, year_built, operator, …). */
+  info?: InfoItem[];
   /** Ice pads at this venue (name + free-form type). */
   rinks?: Rink[];
   /** Free-form facility amenities, e.g. "Skate rentals". */
@@ -95,6 +104,7 @@ export interface Venue {
   timezone: string;
   address: string;
   coordinates: Coordinates;
+  info?: InfoItem[];
   rinks?: Rink[];
   amenities?: string[];
   schedule: VenueSchedule;

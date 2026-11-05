@@ -18,11 +18,25 @@
     "dressing_rooms",
     "lockers"
   ],
+  "info": [
+    {
+      "key": "operator",
+      "value": "City of Toronto"
+    },
+    {
+      "key": "phone",
+      "value": "416-395-6005"
+    },
+    {
+      "key": "website",
+      "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=714"
+    }
+  ],
   "schedule": {
-    "updatedAt": "2026-11-05T03:27:49.135Z",
+    "updatedAt": "2026-11-05T03:58:18.617Z",
     "programs": [
       {
-        "id": "6809c671-f772-4303-bc58-9e3af1cb4a61",
+        "id": "f9901c6b-04a8-41fd-bdc2-b7bcd628feff",
         "start": "2026-11-05T16:30",
         "end": "2026-11-05T17:15",
         "name": "Shinny: Child",
@@ -31,7 +45,7 @@
         "ticket": 0
       },
       {
-        "id": "9c33b9fa-babd-4c41-b966-86da423a7c00",
+        "id": "ed2953f7-068e-4e74-9586-53316c48e166",
         "start": "2026-11-05T17:15",
         "end": "2026-11-05T18:00",
         "name": "Shinny: Youth",
@@ -40,7 +54,7 @@
         "ticket": 0
       },
       {
-        "id": "2a286d58-4093-430e-aea6-51956945a28d",
+        "id": "7a32fdc1-030e-4487-bc57-7099eee0a9aa",
         "start": "2026-11-07T19:00",
         "end": "2026-11-07T21:00",
         "name": "Leisure Skate",
@@ -49,7 +63,7 @@
         "ticket": 0
       },
       {
-        "id": "41b4cf8c-12b7-45a0-aacd-d87443077167",
+        "id": "a4a9b9df-0681-4fe6-ac7b-4904347ac072",
         "start": "2026-11-07T21:15",
         "end": "2026-11-07T23:00",
         "name": "Shinny: Adult",
@@ -58,7 +72,7 @@
         "ticket": 0
       },
       {
-        "id": "b83d02d1-b7a2-4a99-bd75-91c20ed207dd",
+        "id": "2aefbef3-9d42-45bf-bbf4-898c1d5d2749",
         "start": "2026-11-08T14:30",
         "end": "2026-11-08T16:30",
         "name": "Leisure Skate",

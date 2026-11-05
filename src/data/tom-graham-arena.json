@@ -7,11 +7,25 @@
     "lat": 43.898905,
     "lon": -79.402495
   },
+  "info": [
+    {
+      "key": "operator",
+      "value": "City of Richmond Hill"
+    },
+    {
+      "key": "phone",
+      "value": "905-883-4710"
+    },
+    {
+      "key": "website",
+      "value": "https://www.richmondhill.ca/en/online-services/Arenas.aspx"
+    }
+  ],
   "schedule": {
-    "updatedAt": "2026-11-05T03:20:17.538Z",
+    "updatedAt": "2026-11-05T03:58:14.131Z",
     "programs": [
       {
-        "id": "aebf9de7-57b0-4102-a676-9095505cc0cf",
+        "id": "2a0ab208-64ec-4776-87e7-d6ae0cf4dc01",
         "start": "2026-11-06T19:00",
         "end": "2026-11-06T20:30",
         "name": "Public Skate",
@@ -19,7 +33,7 @@
         "ticket": 5.9
       },
       {
-        "id": "5fc5f5dc-01cd-4415-9fd8-14693a3c0515",
+        "id": "cfd1e0a8-11cd-42a0-8669-c148088b2792",
         "start": "2026-11-06T20:30",
         "end": "2026-11-06T21:30",
         "name": "Ringette",
@@ -27,7 +41,7 @@
         "ticket": 8.7
       },
       {
-        "id": "069dd5b6-99c1-41ac-81dc-a4f5b5f4c299",
+        "id": "3153501c-026f-4548-8451-a50d0c068eb6",
         "start": "2026-11-08T14:30",
         "end": "2026-11-08T16:00",
         "name": "Public Skate",
@@ -35,7 +49,7 @@
         "ticket": 5.9
       },
       {
-        "id": "9ebd99a3-3302-4937-9d38-608b42d66a7f",
+        "id": "8bd49686-08d4-4889-8630-ce24e0822035",
         "start": "2026-11-13T19:00",
         "end": "2026-11-13T20:30",
         "name": "Public Skate",
@@ -43,7 +57,7 @@
         "ticket": 5.9
       },
       {
-        "id": "f2f331be-4aef-4a31-9539-1422f9fd6ef4",
+        "id": "6c1192b5-94bf-4a1f-b28e-0e502a65e274",
         "start": "2026-11-13T20:30",
         "end": "2026-11-13T21:30",
         "name": "Ringette",
@@ -51,7 +65,7 @@
         "ticket": 8.7
       },
       {
-        "id": "1041b065-1b72-4e9e-bbc8-e4e36af9ec82",
+        "id": "2db28ee2-9fb4-4adf-838f-a3c81e748c9c",
         "start": "2026-11-15T14:30",
         "end": "2026-11-15T16:00",
         "name": "Public Skate",
@@ -59,7 +73,7 @@
         "ticket": 5.9
       },
       {
-        "id": "ebda0400-5843-4aa0-a252-92f060a1f233",
+        "id": "b8dc61d5-e04b-42a7-b8f8-ebc417f99c7d",
         "start": "2026-11-20T19:00",
         "end": "2026-11-20T20:30",
         "name": "Public Skate",
@@ -67,7 +81,7 @@
         "ticket": 5.9
       },
       {
-        "id": "88e2b380-698b-429c-943b-e195f92207c2",
+        "id": "a311586f-7689-4440-bdc3-6dfea286ff35",
         "start": "2026-11-20T20:30",
         "end": "2026-11-20T21:30",
         "name": "Ringette",
@@ -75,7 +89,7 @@
         "ticket": 8.7
       },
       {
-        "id": "23d59975-6171-4f93-bbaf-04329655ee46",
+        "id": "40a7f624-bf1f-41c3-9bb1-cba70df30323",
         "start": "2026-11-22T14:30",
         "end": "2026-11-22T16:00",
         "name": "Public Skate",
@@ -83,7 +97,7 @@
         "ticket": 5.9
       },
       {
-        "id": "7b60b2aa-92b8-46dd-9051-2fb5d6d292eb",
+        "id": "febd63a0-7c7a-4e16-8cc7-034badf14d5e",
         "start": "2026-11-27T19:00",
         "end": "2026-11-27T20:30",
         "name": "Public Skate",
@@ -91,7 +105,7 @@
         "ticket": 5.9
       },
       {
-        "id": "81c063e3-d939-4b55-bd00-20ebf362ce43",
+        "id": "9597628d-3247-4bc4-bad3-cd5ec374bb17",
         "start": "2026-11-27T20:30",
         "end": "2026-11-27T21:30",
         "name": "Ringette",
@@ -99,7 +113,7 @@
         "ticket": 8.7
       },
       {
-        "id": "642a5192-5c3f-4e34-8745-c828116a2a72",
+        "id": "ac05ca57-49a7-425f-a11f-2e2d84d0c80d",
         "start": "2026-11-29T14:30",
         "end": "2026-11-29T16:00",
         "name": "Public Skate",
@@ -107,7 +121,7 @@
         "ticket": 5.9
       },
       {
-        "id": "ceef0dad-512b-4703-a70c-8596780a40dd",
+        "id": "4f98d1b2-ead8-4c02-b5ba-fd72a764fcf9",
         "start": "2026-12-04T19:00",
         "end": "2026-12-04T20:30",
         "name": "Public Skate",
@@ -115,7 +129,7 @@
         "ticket": 5.9
       },
       {
-        "id": "96722fd5-1a7a-4431-ad19-0c92439adecc",
+        "id": "07eff38f-d618-4efa-8c28-227f7e34ccec",
         "start": "2026-12-04T20:30",
         "end": "2026-12-04T21:30",
         "name": "Ringette",

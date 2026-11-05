@@ -17,11 +17,25 @@
     "dressing_rooms",
     "lockers"
   ],
+  "info": [
+    {
+      "key": "operator",
+      "value": "City of Toronto"
+    },
+    {
+      "key": "phone",
+      "value": "416-394-8491"
+    },
+    {
+      "key": "website",
+      "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=858"
+    }
+  ],
   "schedule": {
-    "updatedAt": "2026-11-05T03:27:49.215Z",
+    "updatedAt": "2026-11-05T03:58:18.699Z",
     "programs": [
       {
-        "id": "dd8c5c0e-9668-4f75-9a35-6ab2fb02d9bb",
+        "id": "257bcb45-6cf9-4dd5-aaf5-d73131e4b845",
         "start": "2026-11-06T18:45",
         "end": "2026-11-06T20:15",
         "name": "Leisure Skate",
@@ -30,7 +44,7 @@
         "ticket": 0
       },
       {
-        "id": "b11adda6-bc99-4609-aa4e-42aa7aaace85",
+        "id": "42c8a7c7-3b7b-4ebc-935c-2e6a388211f3",
         "start": "2026-11-07T15:15",
         "end": "2026-11-07T16:45",
         "name": "Leisure Skate",
@@ -39,7 +53,7 @@
         "ticket": 0
       },
       {
-        "id": "5bc945e9-240f-4334-99cf-e1ea8447edff",
+        "id": "037d290d-d49b-42ac-9bdd-70e628ea4fa4",
         "start": "2026-11-08T16:30",
         "end": "2026-11-08T18:00",
         "name": "Leisure Skate",

@@ -22,11 +22,25 @@
     "dressing_rooms",
     "lockers"
   ],
+  "info": [
+    {
+      "key": "operator",
+      "value": "City of Toronto"
+    },
+    {
+      "key": "phone",
+      "value": "416-396-4035"
+    },
+    {
+      "key": "website",
+      "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=633"
+    }
+  ],
   "schedule": {
-    "updatedAt": "2026-11-05T03:27:48.215Z",
+    "updatedAt": "2026-11-05T03:58:17.640Z",
     "programs": [
       {
-        "id": "3141e8a3-3c92-4356-8ee4-680badafb1f7",
+        "id": "7380f58e-5beb-4b52-8a61-d43e26161dec",
         "start": "2026-11-04T10:00",
         "end": "2026-11-04T12:00",
         "name": "Leisure Skate: Older Adult (Unsupervised)",
@@ -35,7 +49,7 @@
         "ticket": 0
       },
       {
-        "id": "43e5c81c-c72f-464b-8036-6df37cb9a77d",
+        "id": "87091c01-4d13-43a2-ab34-232bd31e721f",
         "start": "2026-11-04T11:30",
         "end": "2026-11-04T12:30",
         "name": "Shinny: Older Adult (Unsupervised)",
@@ -44,7 +58,7 @@
         "ticket": 0
       },
       {
-        "id": "8cdaf86d-17b2-425a-9ffe-d91047182600",
+        "id": "fde0917f-56d8-41d8-b68f-ce49dc48d964",
         "start": "2026-11-04T13:00",
         "end": "2026-11-04T15:00",
         "name": "Shinny: Adult (Unsupervised)",
@@ -53,7 +67,7 @@
         "ticket": 0
       },
       {
-        "id": "b0dfc341-ead0-4266-a5b1-c5e64223cab2",
+        "id": "8ccaa79d-4c94-41d7-989b-ce58ae05d49e",
         "start": "2026-11-04T14:15",
         "end": "2026-11-04T15:15",
         "name": "Leisure Skate: Adult (Unsupervised)",
@@ -62,7 +76,7 @@
         "ticket": 0
       },
       {
-        "id": "a687b431-0be5-4c86-996e-3a1ed6699650",
+        "id": "923fabdc-29d5-499e-b780-ba5337ff5e13",
         "start": "2026-11-05T09:30",
         "end": "2026-11-05T11:00",
         "name": "Leisure Skate: Child with Caregiver (Unsupervised)",
@@ -71,7 +85,7 @@
         "ticket": 0
       },
       {
-        "id": "4e8030cf-93dc-4222-bd89-2f375a94c31c",
+        "id": "c09a852b-1e86-44a5-9e00-0b380531115e",
         "start": "2026-11-05T11:30",
         "end": "2026-11-05T12:30",
         "name": "Shinny: Older Adult (Unsupervised)",
@@ -80,7 +94,7 @@
         "ticket": 0
       },
       {
-        "id": "267bbdbe-4fdc-44be-acd5-1f5557baf1e1",
+        "id": "849a1820-8552-41be-9937-2ebd03f7b585",
         "start": "2026-11-05T13:00",
         "end": "2026-11-05T15:00",
         "name": "Shinny: Adult (Unsupervised)",
@@ -89,7 +103,7 @@
         "ticket": 0
       },
       {
-        "id": "54f331f0-34ad-4350-8fd2-6099e2153a6e",
+        "id": "50282d3a-0b45-4228-9e35-c3a4078f2395",
         "start": "2026-11-05T14:15",
         "end": "2026-11-05T15:15",
         "name": "Leisure Skate: Adult (Unsupervised)",
@@ -98,7 +112,7 @@
         "ticket": 0
       },
       {
-        "id": "d940585c-1f70-4d60-97a0-af3301197013",
+        "id": "a6f5068b-e5bd-4688-b79b-d974243711ec",
         "start": "2026-11-07T18:00",
         "end": "2026-11-07T19:00",
         "name": "Leisure Skate",
@@ -107,7 +121,7 @@
         "ticket": 0
       },
       {
-        "id": "36ea83fa-2396-4d6a-b016-dc7d9d929701",
+        "id": "5646b720-77d9-4b73-85fe-103f359b4890",
         "start": "2026-11-07T18:15",
         "end": "2026-11-07T19:00",
         "name": "Shinny: Child with Caregiver",
@@ -116,7 +130,7 @@
         "ticket": 0
       },
       {
-        "id": "f530ad2f-4816-4d49-a35d-48e0b956c095",
+        "id": "1de3b941-6ad5-48cb-aad7-accfa6bab607",
         "start": "2026-11-07T19:00",
         "end": "2026-11-07T20:00",
         "name": "Shinny: Child",
@@ -125,7 +139,7 @@
         "ticket": 0
       },
       {
-        "id": "46ae12d1-f861-41e2-8905-d79bbaa3f7a8",
+        "id": "52134047-36ef-4301-8619-9731ad2fe287",
         "start": "2026-11-07T19:00",
         "end": "2026-11-07T21:00",
         "name": "Ice Breakdancing",
@@ -134,7 +148,7 @@
         "ticket": 0
       },
       {
-        "id": "ed533bec-8eff-4fe8-a882-3c9250cc574d",
+        "id": "5bd65a0e-45f3-4803-ba7f-2c6724c744b6",
         "start": "2026-11-07T20:00",
         "end": "2026-11-07T21:00",
         "name": "Shinny: Youth",
@@ -143,7 +157,7 @@
         "ticket": 0
       },
       {
-        "id": "97854e46-53e5-4b4f-ae0d-99258fc30af5",
+        "id": "fe189e26-f780-4783-b3fe-cad099cafe53",
         "start": "2026-11-08T14:30",
         "end": "2026-11-08T16:00",
         "name": "Leisure Skate",

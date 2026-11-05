@@ -18,11 +18,25 @@
     "dressing_rooms",
     "lockers"
   ],
+  "info": [
+    {
+      "key": "operator",
+      "value": "City of Toronto"
+    },
+    {
+      "key": "phone",
+      "value": "416-395-7831"
+    },
+    {
+      "key": "website",
+      "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=568"
+    }
+  ],
   "schedule": {
-    "updatedAt": "2026-11-05T03:27:47.671Z",
+    "updatedAt": "2026-11-05T03:58:16.799Z",
     "programs": [
       {
-        "id": "ad016b9c-8fe9-41ff-ac53-0aa0664cfe0c",
+        "id": "b50c205e-a59f-45cc-be64-e45a204b6215",
         "start": "2026-11-04T19:15",
         "end": "2026-11-04T21:15",
         "name": "Leisure Skate",
@@ -31,7 +45,7 @@
         "ticket": 0
       },
       {
-        "id": "c8e5386b-6ef0-4cd8-aaa4-97388076fe6f",
+        "id": "1cfd0dc8-7ba2-48ab-b7ae-622fba5e85c6",
         "start": "2026-11-07T19:00",
         "end": "2026-11-07T21:00",
         "name": "Leisure Skate",
@@ -40,7 +54,7 @@
         "ticket": 0
       },
       {
-        "id": "7915e684-e091-473f-8ea7-afc40d7d657b",
+        "id": "aa68cb76-fba4-44c6-80b1-a4a9e53c1a98",
         "start": "2026-11-08T14:45",
         "end": "2026-11-08T15:30",
         "name": "Leisure Skate: Child with Caregiver",
@@ -49,7 +63,7 @@
         "ticket": 0
       },
       {
-        "id": "905c9d39-bf90-479f-9e9b-a50506bb443d",
+        "id": "aa19a1a3-2e20-4e79-8632-0e4889dda5a6",
         "start": "2026-11-08T15:30",
         "end": "2026-11-08T17:00",
         "name": "Leisure Skate",

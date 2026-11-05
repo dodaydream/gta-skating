@@ -359,6 +359,7 @@ async function writeVenueSchedule(
     coordinates: meta.coordinates,
     rinks: meta.rinks,
     amenities: meta.amenities,
+    info: meta.info,
     schedule: {
       updatedAt: new Date().toISOString(),
       programs,

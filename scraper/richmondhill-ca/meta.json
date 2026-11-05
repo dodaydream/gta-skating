@@ -15,6 +15,20 @@
           "name": "Rink 1",
           "type": "North American / NHL"
         }
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Richmond Hill"
+        },
+        {
+          "key": "phone",
+          "value": "905-773-4571"
+        },
+        {
+          "key": "website",
+          "value": "https://www.richmondhill.ca/en/online-services/Arenas.aspx"
+        }
       ]
     },
     {
@@ -42,6 +56,20 @@
         "dressing_rooms",
         "gender_neutral_washrooms",
         "onsite_free_parking"
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Richmond Hill"
+        },
+        {
+          "key": "phone",
+          "value": "905-771-8333"
+        },
+        {
+          "key": "website",
+          "value": "https://www.richmondhill.ca/en/things-to-do/Ed-Sackfield-Arena-and-Fitness-Centre.aspx"
+        }
       ]
     },
     {
@@ -63,6 +91,20 @@
           "name": "East Pad",
           "type": "North American / NHL"
         }
+      ],
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Richmond Hill"
+        },
+        {
+          "key": "phone",
+          "value": "905-884-1368"
+        },
+        {
+          "key": "website",
+          "value": "https://www.richmondhill.ca/en/online-services/Arenas.aspx"
+        }
       ]
     },
     {
@@ -74,7 +116,21 @@
         "lat": 43.898905,
         "lon": -79.402495
       },
-      "type": "indoor"
+      "type": "indoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Richmond Hill"
+        },
+        {
+          "key": "phone",
+          "value": "905-883-4710"
+        },
+        {
+          "key": "website",
+          "value": "https://www.richmondhill.ca/en/online-services/Arenas.aspx"
+        }
+      ]
     }
   ]
 }
