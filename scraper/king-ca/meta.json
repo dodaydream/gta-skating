@@ -1,0 +1,28 @@
+{
+  "venues": [
+    {
+      "id": "zancor-centre",
+      "name": "Zancor Centre",
+      "url": "https://townshipofking.perfectmind.com/23793/Clients/BookMe4BookingPages/Classes?calendarId=2fd6d540-75aa-416b-9a70-a78b8f598e7d&widgetId=15f6af07-39c5-473e-b053-96653f77a406&embed=False",
+      "address": "1600 15th Sideroad, King City, ON L7B 1A3",
+      "coordinates": { "lat": 43.952145, "lon": -79.510327 },
+      "type": "indoor"
+    },
+    {
+      "id": "trisan-centre",
+      "name": "Trisan Centre",
+      "url": "https://townshipofking.perfectmind.com/23793/Clients/BookMe4BookingPages/Classes?calendarId=2fd6d540-75aa-416b-9a70-a78b8f598e7d&widgetId=15f6af07-39c5-473e-b053-96653f77a406&embed=False",
+      "address": "25 Dillane Dr, Schomberg, ON L0G 1T0",
+      "coordinates": { "lat": 44.007546, "lon": -79.673178 },
+      "type": "indoor"
+    },
+    {
+      "id": "nobleton-arena-community-centre",
+      "name": "Nobleton Arena & Community Centre",
+      "url": "https://townshipofking.perfectmind.com/23793/Clients/BookMe4BookingPages/Classes?calendarId=2fd6d540-75aa-416b-9a70-a78b8f598e7d&widgetId=15f6af07-39c5-473e-b053-96653f77a406&embed=False",
+      "address": "15 Old King Rd, Nobleton, ON L0G 1N0",
+      "coordinates": { "lat": 43.901062, "lon": -79.650908 },
+      "type": "indoor"
+    }
+  ]
+}

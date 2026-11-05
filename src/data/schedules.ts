@@ -64,6 +64,7 @@ import mississaugaValley from "./mississauga-valley-community-centre.json";
 import mitchellField from "./mitchell-field-community-centre.json";
 import mossPark from "./moss-park-arena.json";
 import mountJoy from "./mount-joy-community-centre.json";
+import nobleton from "./nobleton-arena-community-centre.json";
 import oriole from "./oriole-community-centre.json";
 import parkLawnBubble from "./park-lawn-bubble-rink.json";
 import paulCoffey from "./paul-coffey-arena.json";
@@ -77,10 +78,12 @@ import scarboroughGardens from "./scarborough-arena-gardens.json";
 import scarboroughVillage from "./scarborough-village-recreation-centre.json";
 import thornhill from "./thornhill-community-centre.json";
 import tomGraham from "./tom-graham-arena.json";
+import trisan from "./trisan-centre.json";
 import varsityCentreArena from "./varsity-centre-arena.json";
 import victoriaVillage from "./victoria-village-arena.json";
 import woodbridgePool from "./woodbridge-pool-memorial-arena.json";
 import yorkMills from "./york-mills-arena.json";
+import zancor from "./zancor-centre.json";
 
 export const venues: Venue[] = [
   billBolton as Venue,
@@ -146,6 +149,7 @@ export const venues: Venue[] = [
   mitchellField as Venue,
   mossPark as Venue,
   mountJoy as Venue,
+  nobleton as Venue,
   oriole as Venue,
   parkLawnBubble as Venue,
   paulCoffey as Venue,
@@ -159,10 +163,12 @@ export const venues: Venue[] = [
   scarboroughVillage as Venue,
   thornhill as Venue,
   tomGraham as Venue,
+  trisan as Venue,
   varsityCentreArena as Venue,
   victoriaVillage as Venue,
   woodbridgePool as Venue,
   yorkMills as Venue,
+  zancor as Venue,
 ];
 
 const bySlug = new Map<string, Venue>();

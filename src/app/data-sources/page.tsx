@@ -76,6 +76,11 @@ const SOURCES: {
     title: "Skating - City of Richmond Hill",
   },
   {
+    name: "Township of King",
+    href: "https://townshipofking.perfectmind.com/23793/Clients/BookMe4BookingPages/Classes?calendarId=2fd6d540-75aa-416b-9a70-a78b8f598e7d&widgetId=15f6af07-39c5-473e-b053-96653f77a406&embed=False",
+    title: "Drop-In Skating – Township of King",
+  },
+  {
     name: "University of Toronto",
     href: "https://kpe.utoronto.ca/sport-recreationrecreational-fitness-drop-sportsdrop-sports-activities/drop-ice-skate-ice-sports",
     title:

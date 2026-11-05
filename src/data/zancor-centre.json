@@ -1,0 +1,2127 @@
+{
+  "name": "Zancor Centre",
+  "url": "https://townshipofking.perfectmind.com/23793/Clients/BookMe4BookingPages/Classes?calendarId=2fd6d540-75aa-416b-9a70-a78b8f598e7d&widgetId=15f6af07-39c5-473e-b053-96653f77a406&embed=False",
+  "timezone": "America/Toronto",
+  "address": "1600 15th Sideroad, King City, ON L7B 1A3",
+  "coordinates": {
+    "lat": 43.952145,
+    "lon": -79.510327
+  },
+  "schedule": {
+    "updatedAt": "2026-11-05T01:35:57.178Z",
+    "programs": [
+      {
+        "id": "2b756a9c-f60b-4991-afcc-5ac7aaa24a47",
+        "start": "2026-11-05T09:30",
+        "end": "2026-11-05T10:20",
+        "name": "Adaptive Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "f931b7fb-1d94-4215-a7c9-f7c3a6013ca5",
+        "start": "2026-11-05T10:30",
+        "end": "2026-11-05T11:50",
+        "name": "Figure Skating",
+        "type": "Figure Skating",
+        "ticket": 9
+      },
+      {
+        "id": "fccc483c-a09a-4f28-9fee-11ab916754b6",
+        "start": "2026-11-05T12:00",
+        "end": "2026-11-05T13:20",
+        "name": "Adult Shinny (Ages 18+)",
+        "type": "Pickup Hockey",
+        "ticket": 9
+      },
+      {
+        "id": "27d4beea-f488-4cd6-a4b6-e3a6b737ec8d",
+        "start": "2026-11-05T13:30",
+        "end": "2026-11-05T14:20",
+        "name": "55+ Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "951c8776-cb9d-4274-9fa8-1798a53ff7a4",
+        "start": "2026-11-06T10:00",
+        "end": "2026-11-06T10:50",
+        "name": "Parent & Tot Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "0f0fd68c-5cff-45b8-ba0c-0f9e4871b272",
+        "start": "2026-11-07T15:00",
+        "end": "2026-11-07T16:20",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "ticket": 3.5
+      },
+      {
+        "id": "4d29c5cd-9325-4cab-ae8b-0a5efea3b67c",
+        "start": "2026-11-07T16:30",
+        "end": "2026-11-07T17:20",
+        "name": "Youth Shinny (Ages 13-17)",
+        "type": "Pickup Hockey",
+        "ticket": 6
+      },
+      {
+        "id": "788ec4a4-d174-4715-81c4-1bb79d57c3bf",
+        "start": "2026-11-08T08:30",
+        "end": "2026-11-08T09:20",
+        "name": "Family Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 3
+      },
+      {
+        "id": "469011a4-87a0-42e6-bc0c-f4dc29335074",
+        "start": "2026-11-08T08:30",
+        "end": "2026-11-08T09:20",
+        "name": "Women's Shinny (Ages 18+)",
+        "type": "Pickup Hockey",
+        "ticket": 9
+      },
+      {
+        "id": "a3606234-d94b-49fd-a389-3079c313464e",
+        "start": "2026-11-08T09:30",
+        "end": "2026-11-08T10:50",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "ticket": 3.5
+      },
+      {
+        "id": "0854fa90-278b-4faa-b0db-a7c67a7bbf57",
+        "start": "2026-11-09T16:00",
+        "end": "2026-11-09T16:50",
+        "name": "Family Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 3
+      },
+      {
+        "id": "cb393041-49be-4c1f-b0d9-d8443ee7d2aa",
+        "start": "2026-11-10T07:00",
+        "end": "2026-11-10T08:20",
+        "name": "Figure Skating",
+        "type": "Figure Skating",
+        "ticket": 9
+      },
+      {
+        "id": "f6b736ee-07b3-4ddf-b5b2-3cb2ccf1bb9f",
+        "start": "2026-11-11T07:00",
+        "end": "2026-11-11T08:20",
+        "name": "Figure Skating",
+        "type": "Figure Skating",
+        "ticket": 9
+      },
+      {
+        "id": "224eda04-f84a-4c68-95ee-d4d9e20b1ed7",
+        "start": "2026-11-12T09:30",
+        "end": "2026-11-12T10:20",
+        "name": "Adaptive Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "b4bc5df3-b41c-4a20-b647-a6aa7e9a5be7",
+        "start": "2026-11-12T10:30",
+        "end": "2026-11-12T11:50",
+        "name": "Figure Skating",
+        "type": "Figure Skating",
+        "ticket": 9
+      },
+      {
+        "id": "e3d6e505-b9dd-4b50-bb5e-1d16349ddedd",
+        "start": "2026-11-12T12:00",
+        "end": "2026-11-12T13:20",
+        "name": "Adult Shinny (Ages 18+)",
+        "type": "Pickup Hockey",
+        "ticket": 9
+      },
+      {
+        "id": "459c23c4-a565-48c3-9732-667fc4d7891e",
+        "start": "2026-11-12T13:30",
+        "end": "2026-11-12T14:20",
+        "name": "55+ Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "7345073c-8c47-4eb9-86e8-561961d2d45f",
+        "start": "2026-11-13T10:00",
+        "end": "2026-11-13T10:50",
+        "name": "Parent & Tot Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "3a072392-9e38-4c41-bd53-0262230e2756",
+        "start": "2026-11-14T14:00",
+        "end": "2026-11-14T14:50",
+        "name": "Family Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 3
+      },
+      {
+        "id": "bbf441e4-9544-4a4c-9871-5a08b44a08ec",
+        "start": "2026-11-14T15:00",
+        "end": "2026-11-14T16:20",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "ticket": 3.5
+      },
+      {
+        "id": "98d5711c-0c94-4db7-8052-1f7f1cae9e27",
+        "start": "2026-11-14T16:30",
+        "end": "2026-11-14T17:20",
+        "name": "Youth Shinny (Ages 13-17)",
+        "type": "Pickup Hockey",
+        "ticket": 6
+      },
+      {
+        "id": "26844b74-5dcd-4785-b7d2-56a607140aae",
+        "start": "2026-11-15T08:30",
+        "end": "2026-11-15T09:20",
+        "name": "Family Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 3
+      },
+      {
+        "id": "45998c32-d059-4ad7-9199-3c11fdfe9f81",
+        "start": "2026-11-15T08:30",
+        "end": "2026-11-15T09:20",
+        "name": "Women's Shinny (Ages 18+)",
+        "type": "Pickup Hockey",
+        "ticket": 9
+      },
+      {
+        "id": "cfd38b8e-bd54-4ebb-a1ff-3cd89ca2dc6d",
+        "start": "2026-11-15T09:30",
+        "end": "2026-11-15T10:50",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "ticket": 3.5
+      },
+      {
+        "id": "c232cfca-26a4-4812-bab9-6d72b68a7eef",
+        "start": "2026-11-16T16:00",
+        "end": "2026-11-16T16:50",
+        "name": "Family Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 3
+      },
+      {
+        "id": "323e71c2-d0a7-447f-82d7-ec9c71df99db",
+        "start": "2026-11-17T07:00",
+        "end": "2026-11-17T08:20",
+        "name": "Figure Skating",
+        "type": "Figure Skating",
+        "ticket": 9
+      },
+      {
+        "id": "d8e34b28-6afc-45ab-83c1-77ebc3cf9247",
+        "start": "2026-11-18T07:00",
+        "end": "2026-11-18T08:20",
+        "name": "Figure Skating",
+        "type": "Figure Skating",
+        "ticket": 9
+      },
+      {
+        "id": "f176b891-decc-4f92-b1ee-dc983fa86a2e",
+        "start": "2026-11-19T09:30",
+        "end": "2026-11-19T10:20",
+        "name": "Adaptive Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "5c975550-cc15-43cf-acf1-f95db8333b59",
+        "start": "2026-11-19T10:30",
+        "end": "2026-11-19T11:50",
+        "name": "Figure Skating",
+        "type": "Figure Skating",
+        "ticket": 9
+      },
+      {
+        "id": "2ebc0159-ba68-422e-93b7-f65dc7a2c5ad",
+        "start": "2026-11-19T12:00",
+        "end": "2026-11-19T13:20",
+        "name": "Adult Shinny (Ages 18+)",
+        "type": "Pickup Hockey",
+        "ticket": 9
+      },
+      {
+        "id": "8e2c396d-653d-40f6-8c4a-abab55717384",
+        "start": "2026-11-19T13:30",
+        "end": "2026-11-19T14:20",
+        "name": "55+ Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "ae4c43ad-36f2-4526-b0ae-45cc51a03af3",
+        "start": "2026-11-21T14:00",
+        "end": "2026-11-21T14:50",
+        "name": "Family Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 3
+      },
+      {
+        "id": "72f478b6-d4d6-411e-8b12-5ed8c98c4605",
+        "start": "2026-11-21T15:00",
+        "end": "2026-11-21T16:20",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "ticket": 3.5
+      },
+      {
+        "id": "c8901970-11f6-4ae5-9dfb-faa8ef054ac7",
+        "start": "2026-11-21T16:30",
+        "end": "2026-11-21T17:20",
+        "name": "Youth Shinny (Ages 13-17)",
+        "type": "Pickup Hockey",
+        "ticket": 6
+      },
+      {
+        "id": "a6c97d78-0009-4391-a54c-4e250400e5fe",
+        "start": "2026-11-22T08:30",
+        "end": "2026-11-22T09:20",
+        "name": "Family Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 3
+      },
+      {
+        "id": "9d65a369-1bc1-468e-b0b4-3a950f324309",
+        "start": "2026-11-22T08:30",
+        "end": "2026-11-22T09:20",
+        "name": "Women's Shinny (Ages 18+)",
+        "type": "Pickup Hockey",
+        "ticket": 9
+      },
+      {
+        "id": "8f0485f6-02df-4281-89f0-c5f1a05b504a",
+        "start": "2026-11-22T09:30",
+        "end": "2026-11-22T10:50",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "ticket": 3.5
+      },
+      {
+        "id": "f419a291-75a0-4c08-bb1f-87cc2fcad11e",
+        "start": "2026-11-23T16:00",
+        "end": "2026-11-23T16:50",
+        "name": "Family Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 3
+      },
+      {
+        "id": "9950b66c-773c-4af6-a062-3f77e76b6334",
+        "start": "2026-11-24T07:00",
+        "end": "2026-11-24T08:20",
+        "name": "Figure Skating",
+        "type": "Figure Skating",
+        "ticket": 9
+      },
+      {
+        "id": "a7a12727-1543-4339-8d06-965c5f5d07e7",
+        "start": "2026-11-25T07:00",
+        "end": "2026-11-25T08:20",
+        "name": "Figure Skating",
+        "type": "Figure Skating",
+        "ticket": 9
+      },
+      {
+        "id": "72ee9e98-a904-4d4f-829c-cb184db39c21",
+        "start": "2026-11-26T09:30",
+        "end": "2026-11-26T10:20",
+        "name": "Adaptive Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "da805b9c-f5e1-4278-a9dd-2f6a8065192a",
+        "start": "2026-11-26T10:30",
+        "end": "2026-11-26T11:50",
+        "name": "Figure Skating",
+        "type": "Figure Skating",
+        "ticket": 9
+      },
+      {
+        "id": "b0c16f06-4b42-47f8-ba15-f1cf8ba46acf",
+        "start": "2026-11-26T12:00",
+        "end": "2026-11-26T13:20",
+        "name": "Adult Shinny (Ages 18+)",
+        "type": "Pickup Hockey",
+        "ticket": 9
+      },
+      {
+        "id": "a3de1c69-2de1-42f1-8a7f-b08658d41b47",
+        "start": "2026-11-26T13:30",
+        "end": "2026-11-26T14:20",
+        "name": "55+ Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "516b6d78-1834-49f2-9071-858832ec693c",
+        "start": "2026-11-27T10:00",
+        "end": "2026-11-27T10:50",
+        "name": "Parent & Tot Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "aa603e1d-4f87-41d4-8bf4-fb887ad370c1",
+        "start": "2026-11-28T14:00",
+        "end": "2026-11-28T14:50",
+        "name": "Family Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 3
+      },
+      {
+        "id": "7c5c42b6-65e0-4523-b867-33fbb85eb05e",
+        "start": "2026-11-28T15:00",
+        "end": "2026-11-28T16:20",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "ticket": 3.5
+      },
+      {
+        "id": "25959547-cbcc-40c7-8662-c7e0aa2b31cf",
+        "start": "2026-11-28T16:30",
+        "end": "2026-11-28T17:20",
+        "name": "Youth Shinny (Ages 13-17)",
+        "type": "Pickup Hockey",
+        "ticket": 6
+      },
+      {
+        "id": "b279fe95-bf10-4c5e-8f83-58fd94bc75cc",
+        "start": "2026-11-29T08:30",
+        "end": "2026-11-29T09:20",
+        "name": "Family Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 3
+      },
+      {
+        "id": "c167badc-c487-43e7-b1eb-716fb50418e0",
+        "start": "2026-11-29T08:30",
+        "end": "2026-11-29T09:20",
+        "name": "Women's Shinny (Ages 18+)",
+        "type": "Pickup Hockey",
+        "ticket": 9
+      },
+      {
+        "id": "18252031-9fb0-4a88-b047-f89a2212dca3",
+        "start": "2026-11-29T09:30",
+        "end": "2026-11-29T10:50",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "ticket": 3.5
+      },
+      {
+        "id": "a7dbc63b-766e-4213-bdb8-ac44309b7f86",
+        "start": "2026-11-30T16:00",
+        "end": "2026-11-30T16:50",
+        "name": "Family Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 3
+      },
+      {
+        "id": "6305f2b5-3304-4a8d-b48f-3d65a5d88acd",
+        "start": "2026-12-01T07:00",
+        "end": "2026-12-01T08:20",
+        "name": "Figure Skating",
+        "type": "Figure Skating",
+        "ticket": 9
+      },
+      {
+        "id": "9d3cc06b-3928-45f3-8377-bb8661da4282",
+        "start": "2026-12-02T07:00",
+        "end": "2026-12-02T08:20",
+        "name": "Figure Skating",
+        "type": "Figure Skating",
+        "ticket": 9
+      },
+      {
+        "id": "7d62fb18-5ca6-44d2-bfad-1a1c4819cd76",
+        "start": "2026-12-03T09:30",
+        "end": "2026-12-03T10:20",
+        "name": "Adaptive Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "db0d2015-25a2-4459-92e9-b9d67db08c1b",
+        "start": "2026-12-03T10:30",
+        "end": "2026-12-03T11:50",
+        "name": "Figure Skating",
+        "type": "Figure Skating",
+        "ticket": 9
+      },
+      {
+        "id": "18056619-780d-4613-89bf-00106ff281f9",
+        "start": "2026-12-03T12:00",
+        "end": "2026-12-03T13:20",
+        "name": "Adult Shinny (Ages 18+)",
+        "type": "Pickup Hockey",
+        "ticket": 9
+      },
+      {
+        "id": "c4282047-3477-48a6-8ea1-799eefca5ea2",
+        "start": "2026-12-03T13:30",
+        "end": "2026-12-03T14:20",
+        "name": "55+ Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "cdb6cda9-fa0a-486f-a104-f0fd195b0fa0",
+        "start": "2026-12-07T16:00",
+        "end": "2026-12-07T16:50",
+        "name": "Family Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 3
+      },
+      {
+        "id": "35e0fe1c-bd16-484b-b8ca-5f8de7884a70",
+        "start": "2026-12-08T07:00",
+        "end": "2026-12-08T08:20",
+        "name": "Figure Skating",
+        "type": "Figure Skating",
+        "ticket": 9
+      },
+      {
+        "id": "7746ff75-7e0d-41d7-bc75-b4e60194db24",
+        "start": "2026-12-09T07:00",
+        "end": "2026-12-09T08:20",
+        "name": "Figure Skating",
+        "type": "Figure Skating",
+        "ticket": 9
+      },
+      {
+        "id": "236108bb-d395-4ff9-98ed-68fe48ec6178",
+        "start": "2026-12-10T09:30",
+        "end": "2026-12-10T10:20",
+        "name": "Adaptive Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "6bfb3eca-3b12-4a93-bf29-34809ef62320",
+        "start": "2026-12-10T10:30",
+        "end": "2026-12-10T11:50",
+        "name": "Figure Skating",
+        "type": "Figure Skating",
+        "ticket": 9
+      },
+      {
+        "id": "dac01d25-d785-4ff1-8840-61f136bff867",
+        "start": "2026-12-10T12:00",
+        "end": "2026-12-10T13:20",
+        "name": "Adult Shinny (Ages 18+)",
+        "type": "Pickup Hockey",
+        "ticket": 9
+      },
+      {
+        "id": "cd98e7df-0a9d-460a-bb21-68cfba318fee",
+        "start": "2026-12-10T13:30",
+        "end": "2026-12-10T14:20",
+        "name": "55+ Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "cff22fdc-5abf-458b-993b-d58fa709d6cf",
+        "start": "2026-12-11T10:00",
+        "end": "2026-12-11T10:50",
+        "name": "Parent & Tot Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "fcce696b-98c5-43d7-9d87-3598b587ef74",
+        "start": "2026-12-12T14:00",
+        "end": "2026-12-12T14:50",
+        "name": "Family Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 3
+      },
+      {
+        "id": "40357a11-a833-45e2-83ca-8ff558586f3d",
+        "start": "2026-12-12T15:00",
+        "end": "2026-12-12T16:20",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "ticket": 3.5
+      },
+      {
+        "id": "3429f1ba-1a00-41d7-a023-8d7ab45d384d",
+        "start": "2026-12-12T16:30",
+        "end": "2026-12-12T17:20",
+        "name": "Youth Shinny (Ages 13-17)",
+        "type": "Pickup Hockey",
+        "ticket": 6
+      },
+      {
+        "id": "74568d48-b257-412d-b07c-8aa82189c723",
+        "start": "2026-12-13T08:30",
+        "end": "2026-12-13T09:20",
+        "name": "Family Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 3
+      },
+      {
+        "id": "d16868ba-a188-4d4d-8feb-3a07ebd1f5f2",
+        "start": "2026-12-13T08:30",
+        "end": "2026-12-13T09:20",
+        "name": "Women's Shinny (Ages 18+)",
+        "type": "Pickup Hockey",
+        "ticket": 9
+      },
+      {
+        "id": "3c3779c0-ee84-433a-86f9-d2309d89c085",
+        "start": "2026-12-13T09:30",
+        "end": "2026-12-13T10:50",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "ticket": 3.5
+      },
+      {
+        "id": "04db812e-a1bb-4d07-8d53-2ef51827e7cf",
+        "start": "2026-12-14T16:00",
+        "end": "2026-12-14T16:50",
+        "name": "Family Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 3
+      },
+      {
+        "id": "83269551-ec10-41ef-8796-3a91e867dae7",
+        "start": "2026-12-15T07:00",
+        "end": "2026-12-15T08:20",
+        "name": "Figure Skating",
+        "type": "Figure Skating",
+        "ticket": 9
+      },
+      {
+        "id": "c4ca13f3-9382-4afa-8754-149f3b0db95d",
+        "start": "2026-12-16T07:00",
+        "end": "2026-12-16T08:20",
+        "name": "Figure Skating",
+        "type": "Figure Skating",
+        "ticket": 9
+      },
+      {
+        "id": "81f8bd17-a572-49fe-9104-841ef07458b5",
+        "start": "2026-12-17T09:30",
+        "end": "2026-12-17T10:20",
+        "name": "Adaptive Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "08962e36-e6e4-4ddf-8e60-c1e213f82af7",
+        "start": "2026-12-17T10:30",
+        "end": "2026-12-17T11:50",
+        "name": "Figure Skating",
+        "type": "Figure Skating",
+        "ticket": 9
+      },
+      {
+        "id": "08c3beae-6aac-4f7d-ba0a-cdcc28a1a1e6",
+        "start": "2026-12-17T12:00",
+        "end": "2026-12-17T13:20",
+        "name": "Adult Shinny (Ages 18+)",
+        "type": "Pickup Hockey",
+        "ticket": 9
+      },
+      {
+        "id": "5cb27477-b1e7-4064-8c46-4820bb909c39",
+        "start": "2026-12-17T13:30",
+        "end": "2026-12-17T14:20",
+        "name": "55+ Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "b586b51c-94d5-409b-ade3-6ecf876ff453",
+        "start": "2026-12-18T10:00",
+        "end": "2026-12-18T10:50",
+        "name": "Parent & Tot Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "cdaf758b-9c06-4622-b2ce-a2df24d95ccf",
+        "start": "2026-12-19T14:00",
+        "end": "2026-12-19T14:50",
+        "name": "Family Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 3
+      },
+      {
+        "id": "c440bbb2-7ef7-4349-b3fc-7f9b1501da27",
+        "start": "2026-12-19T16:30",
+        "end": "2026-12-19T17:20",
+        "name": "Youth Shinny (Ages 13-17)",
+        "type": "Pickup Hockey",
+        "ticket": 6
+      },
+      {
+        "id": "f0b68559-0054-4e62-ad69-49383974396b",
+        "start": "2026-12-20T08:30",
+        "end": "2026-12-20T09:20",
+        "name": "Family Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 3
+      },
+      {
+        "id": "7177c569-048e-492c-8844-0960254fb70c",
+        "start": "2026-12-20T08:30",
+        "end": "2026-12-20T09:20",
+        "name": "Women's Shinny (Ages 18+)",
+        "type": "Pickup Hockey",
+        "ticket": 9
+      },
+      {
+        "id": "04d3717a-4210-4db6-b498-a1f0189e5042",
+        "start": "2026-12-20T09:30",
+        "end": "2026-12-20T10:50",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "ticket": 3.5
+      },
+      {
+        "id": "f19ede62-1373-4b0d-ac13-0f3273fb06b3",
+        "start": "2026-12-21T16:00",
+        "end": "2026-12-21T16:50",
+        "name": "Family Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 3
+      },
+      {
+        "id": "9a11476d-0fe5-4d84-b332-9796226ae5d8",
+        "start": "2026-12-22T07:00",
+        "end": "2026-12-22T08:20",
+        "name": "Figure Skating",
+        "type": "Figure Skating",
+        "ticket": 9
+      },
+      {
+        "id": "ab52b9dc-3fef-4a31-baae-600d1f4c5925",
+        "start": "2026-12-23T07:00",
+        "end": "2026-12-23T08:20",
+        "name": "Figure Skating",
+        "type": "Figure Skating",
+        "ticket": 9
+      },
+      {
+        "id": "efc1643a-11d3-4d58-9949-59f7707fc825",
+        "start": "2026-12-23T08:30",
+        "end": "2026-12-23T09:50",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "ticket": 3.5
+      },
+      {
+        "id": "ba4dce9f-c109-4a11-8e32-e22cb2421bca",
+        "start": "2026-12-24T09:30",
+        "end": "2026-12-24T10:20",
+        "name": "Adaptive Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "5197acd7-4487-49df-915a-29dcf3ed7493",
+        "start": "2026-12-24T10:30",
+        "end": "2026-12-24T11:50",
+        "name": "Figure Skating",
+        "type": "Figure Skating",
+        "ticket": 9
+      },
+      {
+        "id": "3d3c998f-8ef0-42b1-b9fb-20165fc06337",
+        "start": "2026-12-24T12:00",
+        "end": "2026-12-24T12:50",
+        "name": "Adult Shinny (Ages 18+)",
+        "type": "Pickup Hockey",
+        "ticket": 9
+      },
+      {
+        "id": "8bdf8420-99c5-425a-9746-1b6a653b50a0",
+        "start": "2026-12-27T08:30",
+        "end": "2026-12-27T09:20",
+        "name": "Family Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 3
+      },
+      {
+        "id": "58c1da36-f68a-40c6-ab80-20ce6675cfb3",
+        "start": "2026-12-27T08:30",
+        "end": "2026-12-27T09:20",
+        "name": "Women's Shinny (Ages 18+)",
+        "type": "Pickup Hockey",
+        "ticket": 9
+      },
+      {
+        "id": "560fe7cf-ce8a-458b-b95c-e3bc015d77e7",
+        "start": "2026-12-27T09:30",
+        "end": "2026-12-27T10:50",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "ticket": 3.5
+      },
+      {
+        "id": "29d54970-8904-4865-a7bb-e6e8c94e8c13",
+        "start": "2026-12-28T08:30",
+        "end": "2026-12-28T09:50",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "ticket": 3.5
+      },
+      {
+        "id": "b6e1f1e9-ef80-4355-82ac-7e38bd946888",
+        "start": "2026-12-28T16:00",
+        "end": "2026-12-28T16:50",
+        "name": "Family Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 3
+      },
+      {
+        "id": "0b8fac3d-c4f4-43d0-ac13-dd72a6b722fd",
+        "start": "2026-12-29T07:00",
+        "end": "2026-12-29T08:20",
+        "name": "Figure Skating",
+        "type": "Figure Skating",
+        "ticket": 9
+      },
+      {
+        "id": "2ee6a00b-2254-423f-be81-a59f3345796a",
+        "start": "2026-12-30T07:00",
+        "end": "2026-12-30T08:20",
+        "name": "Figure Skating",
+        "type": "Figure Skating",
+        "ticket": 9
+      },
+      {
+        "id": "26373770-8b74-4c9c-92c1-652289fba0ae",
+        "start": "2026-12-31T09:30",
+        "end": "2026-12-31T10:20",
+        "name": "Adaptive Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "3bf924da-adc2-4266-9114-d8e173c08f5e",
+        "start": "2026-12-31T10:30",
+        "end": "2026-12-31T11:50",
+        "name": "Figure Skating",
+        "type": "Figure Skating",
+        "ticket": 9
+      },
+      {
+        "id": "634bd912-9142-4b67-b155-015cde8ba00d",
+        "start": "2026-12-31T12:00",
+        "end": "2026-12-31T12:50",
+        "name": "Adult Shinny (Ages 18+)",
+        "type": "Pickup Hockey",
+        "ticket": 9
+      },
+      {
+        "id": "e3d871e8-f534-4808-b411-b09379a214b6",
+        "start": "2027-01-02T14:00",
+        "end": "2027-01-02T14:50",
+        "name": "Family Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 3
+      },
+      {
+        "id": "5a71fbb8-ae77-4612-888b-4795a5e2161b",
+        "start": "2027-01-02T15:00",
+        "end": "2027-01-02T16:20",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "ticket": 3.5
+      },
+      {
+        "id": "1306f44d-fe70-4e45-89fe-a695a95872a1",
+        "start": "2027-01-02T16:30",
+        "end": "2027-01-02T17:20",
+        "name": "Youth Shinny (Ages 13-17)",
+        "type": "Pickup Hockey",
+        "ticket": 6
+      },
+      {
+        "id": "2639e54f-5617-40ac-942b-e09c521d16d9",
+        "start": "2027-01-03T08:30",
+        "end": "2027-01-03T09:20",
+        "name": "Family Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 3
+      },
+      {
+        "id": "d05c09a9-ff32-45c5-8335-905a197bb235",
+        "start": "2027-01-03T08:30",
+        "end": "2027-01-03T09:20",
+        "name": "Women's Shinny (Ages 18+)",
+        "type": "Pickup Hockey",
+        "ticket": 9
+      },
+      {
+        "id": "f2ec4f7e-ac82-4f4b-a380-67e5646c68b3",
+        "start": "2027-01-03T09:30",
+        "end": "2027-01-03T10:50",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "ticket": 3.5
+      },
+      {
+        "id": "aa285c20-37ee-44e0-a071-beb9a5a3bccf",
+        "start": "2027-01-04T16:00",
+        "end": "2027-01-04T16:50",
+        "name": "Family Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 3
+      },
+      {
+        "id": "000e0996-6e27-473b-abee-64e94dd2dfef",
+        "start": "2027-01-05T07:00",
+        "end": "2027-01-05T08:20",
+        "name": "Figure Skating",
+        "type": "Figure Skating",
+        "ticket": 9
+      },
+      {
+        "id": "fbf36295-d6d1-40b0-94f0-65ed17815499",
+        "start": "2027-01-06T07:00",
+        "end": "2027-01-06T08:20",
+        "name": "Figure Skating",
+        "type": "Figure Skating",
+        "ticket": 9
+      },
+      {
+        "id": "bdc77c6a-fe9a-4a57-8a94-1d49f0ba9551",
+        "start": "2027-01-07T09:30",
+        "end": "2027-01-07T10:20",
+        "name": "Adaptive Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "339dd7cd-4bae-4450-8837-cdc1f56e22ed",
+        "start": "2027-01-07T10:30",
+        "end": "2027-01-07T11:50",
+        "name": "Figure Skating",
+        "type": "Figure Skating",
+        "ticket": 9
+      },
+      {
+        "id": "9612eb13-245d-4c51-a780-8fbcce86c415",
+        "start": "2027-01-07T12:00",
+        "end": "2027-01-07T13:20",
+        "name": "Adult Shinny (Ages 18+)",
+        "type": "Pickup Hockey",
+        "ticket": 9
+      },
+      {
+        "id": "a6c4695d-9e19-4772-9a38-4449f2473689",
+        "start": "2027-01-07T13:30",
+        "end": "2027-01-07T14:20",
+        "name": "55+ Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "3317e894-3f63-4008-9a84-4f5212377d4f",
+        "start": "2027-01-08T10:00",
+        "end": "2027-01-08T10:50",
+        "name": "Parent & Tot Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "5fd14c82-e839-4ce1-93f3-4490cc0fe85a",
+        "start": "2027-01-09T14:00",
+        "end": "2027-01-09T14:50",
+        "name": "Family Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 3
+      },
+      {
+        "id": "f37e0f25-90e0-4236-836d-4a4be4f33b9f",
+        "start": "2027-01-09T15:00",
+        "end": "2027-01-09T16:20",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "ticket": 3.5
+      },
+      {
+        "id": "773887ca-aefb-4909-a90c-883bcd1d8a4f",
+        "start": "2027-01-09T16:30",
+        "end": "2027-01-09T17:20",
+        "name": "Youth Shinny (Ages 13-17)",
+        "type": "Pickup Hockey",
+        "ticket": 6
+      },
+      {
+        "id": "e66221c0-8dc4-49f2-ad77-7bdb53361264",
+        "start": "2027-01-10T08:30",
+        "end": "2027-01-10T09:20",
+        "name": "Family Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 3
+      },
+      {
+        "id": "964516ea-5b70-49e5-afca-c37e4c64af5a",
+        "start": "2027-01-10T08:30",
+        "end": "2027-01-10T09:20",
+        "name": "Women's Shinny (Ages 18+)",
+        "type": "Pickup Hockey",
+        "ticket": 9
+      },
+      {
+        "id": "f935fc75-e0ed-4e7e-ace8-53af97eeea56",
+        "start": "2027-01-10T09:30",
+        "end": "2027-01-10T10:50",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "ticket": 3.5
+      },
+      {
+        "id": "62c16d77-f824-45e8-b2ae-70c31b7a6104",
+        "start": "2027-01-11T16:00",
+        "end": "2027-01-11T16:50",
+        "name": "Family Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 3
+      },
+      {
+        "id": "100d24d0-81b0-4de3-b59d-fc8ac936e269",
+        "start": "2027-01-12T07:00",
+        "end": "2027-01-12T08:20",
+        "name": "Figure Skating",
+        "type": "Figure Skating",
+        "ticket": 9
+      },
+      {
+        "id": "3c5e7f71-53f3-43eb-998c-5d35b71c2926",
+        "start": "2027-01-13T07:00",
+        "end": "2027-01-13T08:20",
+        "name": "Figure Skating",
+        "type": "Figure Skating",
+        "ticket": 9
+      },
+      {
+        "id": "9bd36d86-3844-48f9-aa68-11d202045e2d",
+        "start": "2027-01-14T09:30",
+        "end": "2027-01-14T10:20",
+        "name": "Adaptive Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "9402d546-e47f-4402-ac4f-81794b56f524",
+        "start": "2027-01-14T10:30",
+        "end": "2027-01-14T11:50",
+        "name": "Figure Skating",
+        "type": "Figure Skating",
+        "ticket": 9
+      },
+      {
+        "id": "a55cdefa-08e9-47c1-aa55-b0b012957438",
+        "start": "2027-01-14T12:00",
+        "end": "2027-01-14T13:20",
+        "name": "Adult Shinny (Ages 18+)",
+        "type": "Pickup Hockey",
+        "ticket": 9
+      },
+      {
+        "id": "b68bda25-af09-4f94-ae14-924d48cb6224",
+        "start": "2027-01-14T13:30",
+        "end": "2027-01-14T14:20",
+        "name": "55+ Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "bd7b4e3f-9a1b-47ff-aac0-511204dafa61",
+        "start": "2027-01-15T10:00",
+        "end": "2027-01-15T10:50",
+        "name": "Parent & Tot Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "526e62aa-4372-45f1-b10c-e0e4805944a3",
+        "start": "2027-01-16T15:00",
+        "end": "2027-01-16T16:20",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "ticket": 3.5
+      },
+      {
+        "id": "63a5022c-6916-4fa9-9e5f-99a2a0aa23ff",
+        "start": "2027-01-16T16:30",
+        "end": "2027-01-16T17:20",
+        "name": "Youth Shinny (Ages 13-17)",
+        "type": "Pickup Hockey",
+        "ticket": 6
+      },
+      {
+        "id": "b9532b55-3e5b-4277-a6fc-a9a4a3417326",
+        "start": "2027-01-17T08:30",
+        "end": "2027-01-17T09:20",
+        "name": "Family Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 3
+      },
+      {
+        "id": "ab2e72ff-89ea-447e-a4b5-1fd75079b191",
+        "start": "2027-01-17T08:30",
+        "end": "2027-01-17T09:20",
+        "name": "Women's Shinny (Ages 18+)",
+        "type": "Pickup Hockey",
+        "ticket": 9
+      },
+      {
+        "id": "344fc6f3-bb62-4155-8865-d4542dd97adf",
+        "start": "2027-01-17T09:30",
+        "end": "2027-01-17T10:50",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "ticket": 3.5
+      },
+      {
+        "id": "cd3c2f8e-25da-42ef-8076-7f45fc0fc19f",
+        "start": "2027-01-18T16:00",
+        "end": "2027-01-18T16:50",
+        "name": "Family Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 3
+      },
+      {
+        "id": "a6ff0eb6-3770-4695-ae10-0a0eaaa8aafa",
+        "start": "2027-01-19T07:00",
+        "end": "2027-01-19T08:20",
+        "name": "Figure Skating",
+        "type": "Figure Skating",
+        "ticket": 9
+      },
+      {
+        "id": "fa648f8a-e48c-43f3-b53d-eb0581d666fc",
+        "start": "2027-01-20T07:00",
+        "end": "2027-01-20T08:20",
+        "name": "Figure Skating",
+        "type": "Figure Skating",
+        "ticket": 9
+      },
+      {
+        "id": "6428a89a-85a1-485f-b0ac-25418468fe4e",
+        "start": "2027-01-21T09:30",
+        "end": "2027-01-21T10:20",
+        "name": "Adaptive Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "74aa73e2-be32-4666-844a-bd463ab9ccbc",
+        "start": "2027-01-21T10:30",
+        "end": "2027-01-21T11:50",
+        "name": "Figure Skating",
+        "type": "Figure Skating",
+        "ticket": 9
+      },
+      {
+        "id": "d77195b5-8d2a-4283-b4f1-798f3b95718d",
+        "start": "2027-01-21T12:00",
+        "end": "2027-01-21T13:20",
+        "name": "Adult Shinny (Ages 18+)",
+        "type": "Pickup Hockey",
+        "ticket": 9
+      },
+      {
+        "id": "42506cc5-c245-4683-8183-54efe744b195",
+        "start": "2027-01-21T13:30",
+        "end": "2027-01-21T14:20",
+        "name": "55+ Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "e700cde4-0e09-44d9-be60-d3003de5bdbe",
+        "start": "2027-01-22T10:00",
+        "end": "2027-01-22T10:50",
+        "name": "Parent & Tot Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "ca5b0f8b-b48b-4fb3-ab64-36e8ed25a675",
+        "start": "2027-01-23T14:00",
+        "end": "2027-01-23T14:50",
+        "name": "Family Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 3
+      },
+      {
+        "id": "a616c32c-0d44-4541-936c-ea7909e69492",
+        "start": "2027-01-23T15:00",
+        "end": "2027-01-23T16:20",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "ticket": 3.5
+      },
+      {
+        "id": "443b979f-f8b5-43e4-93e4-85fb2d78d9f0",
+        "start": "2027-01-23T16:30",
+        "end": "2027-01-23T17:20",
+        "name": "Youth Shinny (Ages 13-17)",
+        "type": "Pickup Hockey",
+        "ticket": 6
+      },
+      {
+        "id": "90afc215-f1b3-4795-82b9-84ab7d4f5717",
+        "start": "2027-01-24T08:30",
+        "end": "2027-01-24T09:20",
+        "name": "Family Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 3
+      },
+      {
+        "id": "9cf497d0-7d5e-4104-8eda-d3ea823c486d",
+        "start": "2027-01-24T08:30",
+        "end": "2027-01-24T09:20",
+        "name": "Women's Shinny (Ages 18+)",
+        "type": "Pickup Hockey",
+        "ticket": 9
+      },
+      {
+        "id": "a406ebcc-f2e7-441e-81a6-2f3e56cb8fd0",
+        "start": "2027-01-24T09:30",
+        "end": "2027-01-24T10:50",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "ticket": 3.5
+      },
+      {
+        "id": "155eef57-e191-401f-bc7e-b5e38b315308",
+        "start": "2027-01-25T16:00",
+        "end": "2027-01-25T16:50",
+        "name": "Family Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 3
+      },
+      {
+        "id": "c06293cd-2f8b-4f22-a550-8c1e95afd853",
+        "start": "2027-01-26T07:00",
+        "end": "2027-01-26T08:20",
+        "name": "Figure Skating",
+        "type": "Figure Skating",
+        "ticket": 9
+      },
+      {
+        "id": "82eb6298-9da0-476e-9601-b3fe63365504",
+        "start": "2027-01-27T07:00",
+        "end": "2027-01-27T08:20",
+        "name": "Figure Skating",
+        "type": "Figure Skating",
+        "ticket": 9
+      },
+      {
+        "id": "1408f38d-d20e-4099-9606-bae2b677e945",
+        "start": "2027-01-28T09:30",
+        "end": "2027-01-28T10:20",
+        "name": "Adaptive Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "3f61362d-2657-49e3-b83a-c781fe681691",
+        "start": "2027-01-28T10:30",
+        "end": "2027-01-28T11:50",
+        "name": "Figure Skating",
+        "type": "Figure Skating",
+        "ticket": 9
+      },
+      {
+        "id": "9a621b2f-5419-46af-80a0-41512f85a9ff",
+        "start": "2027-01-28T12:00",
+        "end": "2027-01-28T13:20",
+        "name": "Adult Shinny (Ages 18+)",
+        "type": "Pickup Hockey",
+        "ticket": 9
+      },
+      {
+        "id": "7f9cdbce-1153-41e8-9534-6278e04ba5b8",
+        "start": "2027-01-28T13:30",
+        "end": "2027-01-28T14:20",
+        "name": "55+ Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "f85f2f70-c77b-4c81-91ae-05a303d267bf",
+        "start": "2027-02-01T16:00",
+        "end": "2027-02-01T16:50",
+        "name": "Family Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 3
+      },
+      {
+        "id": "a93be871-94ec-4709-b122-0edc60b3c244",
+        "start": "2027-02-02T07:00",
+        "end": "2027-02-02T08:20",
+        "name": "Figure Skating",
+        "type": "Figure Skating",
+        "ticket": 9
+      },
+      {
+        "id": "1144b37f-40db-4c89-b581-fbfcf4da7ab8",
+        "start": "2027-02-03T07:00",
+        "end": "2027-02-03T08:20",
+        "name": "Figure Skating",
+        "type": "Figure Skating",
+        "ticket": 9
+      },
+      {
+        "id": "d7b0106d-524b-4b07-a176-7d7afeec4a51",
+        "start": "2027-02-04T09:30",
+        "end": "2027-02-04T10:20",
+        "name": "Adaptive Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "dd23c48d-4ba4-4c30-a0fd-cb7713841626",
+        "start": "2027-02-04T10:30",
+        "end": "2027-02-04T11:50",
+        "name": "Figure Skating",
+        "type": "Figure Skating",
+        "ticket": 9
+      },
+      {
+        "id": "3531ce17-1330-443c-83de-e620d8963e5a",
+        "start": "2027-02-04T12:00",
+        "end": "2027-02-04T13:20",
+        "name": "Adult Shinny (Ages 18+)",
+        "type": "Pickup Hockey",
+        "ticket": 9
+      },
+      {
+        "id": "7864684b-7675-43e5-abbc-8b05412cdec3",
+        "start": "2027-02-05T10:00",
+        "end": "2027-02-05T10:50",
+        "name": "Parent & Tot Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "f97cd334-f056-4a83-8526-7aac60b9fa27",
+        "start": "2027-02-06T14:00",
+        "end": "2027-02-06T14:50",
+        "name": "Family Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 3
+      },
+      {
+        "id": "36992963-a514-4fb9-8b26-f34efbcb994a",
+        "start": "2027-02-06T15:00",
+        "end": "2027-02-06T16:20",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "ticket": 3.5
+      },
+      {
+        "id": "0d6b5b9d-6773-4638-b3cb-02a1a7f60be5",
+        "start": "2027-02-06T16:30",
+        "end": "2027-02-06T17:20",
+        "name": "Youth Shinny (Ages 13-17)",
+        "type": "Pickup Hockey",
+        "ticket": 6
+      },
+      {
+        "id": "3031970c-c67c-4746-b0bd-8528dafbf2c1",
+        "start": "2027-02-07T08:30",
+        "end": "2027-02-07T09:20",
+        "name": "Family Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 3
+      },
+      {
+        "id": "41ee6840-5353-419a-a7c2-23a22d8ee618",
+        "start": "2027-02-07T08:30",
+        "end": "2027-02-07T09:20",
+        "name": "Women's Shinny (Ages 18+)",
+        "type": "Pickup Hockey",
+        "ticket": 9
+      },
+      {
+        "id": "9f48c774-9feb-49b0-a70c-85376f481f33",
+        "start": "2027-02-07T09:30",
+        "end": "2027-02-07T10:50",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "ticket": 3.5
+      },
+      {
+        "id": "b32df2bd-8032-4923-b58a-c20107a8b78f",
+        "start": "2027-02-08T16:00",
+        "end": "2027-02-08T16:50",
+        "name": "Family Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 3
+      },
+      {
+        "id": "651c20bc-3e2e-4dd1-88f1-996ff6656945",
+        "start": "2027-02-09T07:00",
+        "end": "2027-02-09T08:20",
+        "name": "Figure Skating",
+        "type": "Figure Skating",
+        "ticket": 9
+      },
+      {
+        "id": "9a849daa-e383-48ea-af7f-671b4d68a6ef",
+        "start": "2027-02-10T07:00",
+        "end": "2027-02-10T08:20",
+        "name": "Figure Skating",
+        "type": "Figure Skating",
+        "ticket": 9
+      },
+      {
+        "id": "8f0bd39d-5985-4dd1-bf98-fbdac1f5ade4",
+        "start": "2027-02-11T09:30",
+        "end": "2027-02-11T10:20",
+        "name": "Adaptive Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "ffd6ea0a-0856-4729-a906-cbf6b5ba3176",
+        "start": "2027-02-11T10:30",
+        "end": "2027-02-11T11:50",
+        "name": "Figure Skating",
+        "type": "Figure Skating",
+        "ticket": 9
+      },
+      {
+        "id": "55d88e1b-4d71-407f-956e-1fa30430c182",
+        "start": "2027-02-11T12:00",
+        "end": "2027-02-11T13:20",
+        "name": "Adult Shinny (Ages 18+)",
+        "type": "Pickup Hockey",
+        "ticket": 9
+      },
+      {
+        "id": "50605de4-c9ac-4da2-aafb-03459488609a",
+        "start": "2027-02-11T13:30",
+        "end": "2027-02-11T14:20",
+        "name": "55+ Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "35705fa4-0d9c-4c5b-b3bc-937c04122d75",
+        "start": "2027-02-12T10:00",
+        "end": "2027-02-12T10:50",
+        "name": "Parent & Tot Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "741636d8-5515-4c42-b8db-16f27af9c183",
+        "start": "2027-02-13T14:00",
+        "end": "2027-02-13T14:50",
+        "name": "Family Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 3
+      },
+      {
+        "id": "62dccc2d-2584-41a6-8d40-27891338791b",
+        "start": "2027-02-13T15:00",
+        "end": "2027-02-13T16:20",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "ticket": 3.5
+      },
+      {
+        "id": "d9bfb9ec-89ca-4395-9026-1d2800d859d5",
+        "start": "2027-02-13T16:30",
+        "end": "2027-02-13T17:20",
+        "name": "Youth Shinny (Ages 13-17)",
+        "type": "Pickup Hockey",
+        "ticket": 6
+      },
+      {
+        "id": "3d849f59-9bcc-40fd-8fbf-bb445c693531",
+        "start": "2027-02-14T08:30",
+        "end": "2027-02-14T09:20",
+        "name": "Family Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 3
+      },
+      {
+        "id": "8c3641c8-baff-498b-bb37-7b2427b67c86",
+        "start": "2027-02-14T08:30",
+        "end": "2027-02-14T09:20",
+        "name": "Women's Shinny (Ages 18+)",
+        "type": "Pickup Hockey",
+        "ticket": 9
+      },
+      {
+        "id": "8207bb82-3328-4c53-9aaa-0aec6bcd4514",
+        "start": "2027-02-14T09:30",
+        "end": "2027-02-14T10:50",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "ticket": 3.5
+      },
+      {
+        "id": "7e4a5bd6-7262-4b64-9d26-2bb27d4e18c2",
+        "start": "2027-02-16T07:00",
+        "end": "2027-02-16T08:20",
+        "name": "Figure Skating",
+        "type": "Figure Skating",
+        "ticket": 9
+      },
+      {
+        "id": "badeeb05-49a2-4165-b0b7-048e2b78aa6d",
+        "start": "2027-02-17T07:00",
+        "end": "2027-02-17T08:20",
+        "name": "Figure Skating",
+        "type": "Figure Skating",
+        "ticket": 9
+      },
+      {
+        "id": "3025ae3d-8a4a-4fef-a5a6-56c4107c99c1",
+        "start": "2027-02-18T09:30",
+        "end": "2027-02-18T10:20",
+        "name": "Adaptive Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "c6d54589-1da4-454f-83db-fce24275a68d",
+        "start": "2027-02-18T10:30",
+        "end": "2027-02-18T11:50",
+        "name": "Figure Skating",
+        "type": "Figure Skating",
+        "ticket": 9
+      },
+      {
+        "id": "1009510c-67a2-4893-b6ce-507928c37851",
+        "start": "2027-02-18T12:00",
+        "end": "2027-02-18T13:20",
+        "name": "Adult Shinny (Ages 18+)",
+        "type": "Pickup Hockey",
+        "ticket": 9
+      },
+      {
+        "id": "456295c6-4df3-4f19-a8a2-fce3722be415",
+        "start": "2027-02-18T13:30",
+        "end": "2027-02-18T14:20",
+        "name": "55+ Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "e6ccc364-f319-42ed-b53d-7faaafeba132",
+        "start": "2027-02-19T10:00",
+        "end": "2027-02-19T10:50",
+        "name": "Parent & Tot Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "fa0c35d8-bf45-43c5-b569-3336f95ceff8",
+        "start": "2027-02-20T14:00",
+        "end": "2027-02-20T14:50",
+        "name": "Family Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 3
+      },
+      {
+        "id": "d317c3f1-67d0-4494-9039-fbb59e64189e",
+        "start": "2027-02-20T15:00",
+        "end": "2027-02-20T16:20",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "ticket": 3.5
+      },
+      {
+        "id": "12dd707a-76d2-45a6-8b9b-bc8eed4f49bd",
+        "start": "2027-02-20T16:30",
+        "end": "2027-02-20T17:20",
+        "name": "Youth Shinny (Ages 13-17)",
+        "type": "Pickup Hockey",
+        "ticket": 6
+      },
+      {
+        "id": "c8735d7a-c5f1-4e33-8425-e75278cf1eba",
+        "start": "2027-02-21T08:30",
+        "end": "2027-02-21T09:20",
+        "name": "Family Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 3
+      },
+      {
+        "id": "167d0ce1-2dfe-4d39-a4a3-21b7ca70273e",
+        "start": "2027-02-21T08:30",
+        "end": "2027-02-21T09:20",
+        "name": "Women's Shinny (Ages 18+)",
+        "type": "Pickup Hockey",
+        "ticket": 9
+      },
+      {
+        "id": "f3cf9020-df3d-4ad6-946f-77dd1f6e3060",
+        "start": "2027-02-21T09:30",
+        "end": "2027-02-21T10:50",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "ticket": 3.5
+      },
+      {
+        "id": "b2949c39-df4f-4924-be6c-92b1bacd3c2c",
+        "start": "2027-02-22T16:00",
+        "end": "2027-02-22T16:50",
+        "name": "Family Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 3
+      },
+      {
+        "id": "50b93615-ee17-4a4c-9c65-0f3465de082c",
+        "start": "2027-02-23T07:00",
+        "end": "2027-02-23T08:20",
+        "name": "Figure Skating",
+        "type": "Figure Skating",
+        "ticket": 9
+      },
+      {
+        "id": "c3ac2cd9-945a-468f-aea5-bf3915e96e62",
+        "start": "2027-02-24T07:00",
+        "end": "2027-02-24T08:20",
+        "name": "Figure Skating",
+        "type": "Figure Skating",
+        "ticket": 9
+      },
+      {
+        "id": "b7a23e1c-9823-470d-a138-0aeb7d5c8211",
+        "start": "2027-02-25T09:30",
+        "end": "2027-02-25T10:20",
+        "name": "Adaptive Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "282cc09a-e36e-437e-bf32-12fb670a0c2d",
+        "start": "2027-02-25T10:30",
+        "end": "2027-02-25T11:50",
+        "name": "Figure Skating",
+        "type": "Figure Skating",
+        "ticket": 9
+      },
+      {
+        "id": "5246a9eb-9a06-447c-8cdc-1aa1717c3313",
+        "start": "2027-02-25T12:00",
+        "end": "2027-02-25T13:20",
+        "name": "Adult Shinny (Ages 18+)",
+        "type": "Pickup Hockey",
+        "ticket": 9
+      },
+      {
+        "id": "b8f0978d-182c-4d0a-aec4-43c4bb64df9f",
+        "start": "2027-02-25T13:30",
+        "end": "2027-02-25T14:20",
+        "name": "55+ Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "e8208486-82b0-49b6-bc35-b5c0457c0840",
+        "start": "2027-02-26T10:00",
+        "end": "2027-02-26T10:50",
+        "name": "Parent & Tot Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "59f634b4-239c-485c-9635-7c0ff7b35ad6",
+        "start": "2027-02-27T14:00",
+        "end": "2027-02-27T14:50",
+        "name": "Family Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 3
+      },
+      {
+        "id": "41202dcb-b809-4488-97e2-cdb8b57c3009",
+        "start": "2027-02-27T15:00",
+        "end": "2027-02-27T16:20",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "ticket": 3.5
+      },
+      {
+        "id": "52a7a720-17ee-434e-9f75-e098d66c41fe",
+        "start": "2027-02-27T16:30",
+        "end": "2027-02-27T17:20",
+        "name": "Youth Shinny (Ages 13-17)",
+        "type": "Pickup Hockey",
+        "ticket": 6
+      },
+      {
+        "id": "3e5de770-a1ef-441b-924e-6de1797217ca",
+        "start": "2027-02-28T08:30",
+        "end": "2027-02-28T09:20",
+        "name": "Family Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 3
+      },
+      {
+        "id": "cf2968fa-15b6-4ebb-aa12-e23ac714a4e5",
+        "start": "2027-02-28T08:30",
+        "end": "2027-02-28T09:20",
+        "name": "Women's Shinny (Ages 18+)",
+        "type": "Pickup Hockey",
+        "ticket": 9
+      },
+      {
+        "id": "43f5a238-3034-40b3-b5c0-e017bb0ca8db",
+        "start": "2027-02-28T09:30",
+        "end": "2027-02-28T10:50",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "ticket": 3.5
+      },
+      {
+        "id": "fcd7a61f-732a-43f6-b6fd-6603771a7b38",
+        "start": "2027-03-01T16:00",
+        "end": "2027-03-01T16:50",
+        "name": "Family Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 3
+      },
+      {
+        "id": "c32f618d-3a88-4265-a51e-4863d9862f84",
+        "start": "2027-03-02T07:00",
+        "end": "2027-03-02T08:20",
+        "name": "Figure Skating",
+        "type": "Figure Skating",
+        "ticket": 9
+      },
+      {
+        "id": "dedf90dc-bdfa-4619-b5cd-2b4fed56dbb2",
+        "start": "2027-03-03T07:00",
+        "end": "2027-03-03T08:20",
+        "name": "Figure Skating",
+        "type": "Figure Skating",
+        "ticket": 9
+      },
+      {
+        "id": "8237c85b-016f-4864-862c-e59bcd604b19",
+        "start": "2027-03-04T09:30",
+        "end": "2027-03-04T10:20",
+        "name": "Adaptive Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "e5d2073c-a24e-4246-896a-2a5e9c92b605",
+        "start": "2027-03-04T10:30",
+        "end": "2027-03-04T11:50",
+        "name": "Figure Skating",
+        "type": "Figure Skating",
+        "ticket": 9
+      },
+      {
+        "id": "44b7f6c8-2eb6-4fa6-a089-7be2ccca47c6",
+        "start": "2027-03-04T12:00",
+        "end": "2027-03-04T13:20",
+        "name": "Adult Shinny (Ages 18+)",
+        "type": "Pickup Hockey",
+        "ticket": 9
+      },
+      {
+        "id": "8ae9ec8b-c57c-41d0-99ff-75d93c6a9103",
+        "start": "2027-03-04T13:30",
+        "end": "2027-03-04T14:20",
+        "name": "55+ Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "27fa9a2f-89d4-4d43-926b-05dc01b63df5",
+        "start": "2027-03-05T10:00",
+        "end": "2027-03-05T10:50",
+        "name": "Parent & Tot Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "19ea0794-71b0-473b-b398-b42ea2fd42b2",
+        "start": "2027-03-06T14:00",
+        "end": "2027-03-06T14:50",
+        "name": "Family Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 3
+      },
+      {
+        "id": "f30a67aa-4bef-4c8c-8a76-88fb8ca00373",
+        "start": "2027-03-06T15:00",
+        "end": "2027-03-06T16:20",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "ticket": 3.5
+      },
+      {
+        "id": "6005d8f5-1be6-4e74-82bb-04fd609f2b93",
+        "start": "2027-03-06T16:30",
+        "end": "2027-03-06T17:20",
+        "name": "Youth Shinny (Ages 13-17)",
+        "type": "Pickup Hockey",
+        "ticket": 6
+      },
+      {
+        "id": "c4e6cd73-e520-4011-940c-8d4a290a0ee2",
+        "start": "2027-03-07T08:30",
+        "end": "2027-03-07T09:20",
+        "name": "Family Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 3
+      },
+      {
+        "id": "6e34e8fb-6155-494e-bba8-657a008800b6",
+        "start": "2027-03-07T08:30",
+        "end": "2027-03-07T09:20",
+        "name": "Women's Shinny (Ages 18+)",
+        "type": "Pickup Hockey",
+        "ticket": 9
+      },
+      {
+        "id": "e5dfaa44-e442-4946-8890-a2d8ddca45ef",
+        "start": "2027-03-07T09:30",
+        "end": "2027-03-07T10:50",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "ticket": 3.5
+      },
+      {
+        "id": "1ac151af-835b-486d-af14-41784dd6dbbe",
+        "start": "2027-03-08T16:00",
+        "end": "2027-03-08T16:50",
+        "name": "Family Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 3
+      },
+      {
+        "id": "9c67a006-e6ff-4f34-9737-5ad79fd2e4a3",
+        "start": "2027-03-09T07:00",
+        "end": "2027-03-09T08:20",
+        "name": "Figure Skating",
+        "type": "Figure Skating",
+        "ticket": 9
+      },
+      {
+        "id": "a999ce84-bb60-4a49-b9c3-9cdd6e59aabd",
+        "start": "2027-03-10T07:00",
+        "end": "2027-03-10T08:20",
+        "name": "Figure Skating",
+        "type": "Figure Skating",
+        "ticket": 9
+      },
+      {
+        "id": "78c8200c-8aba-404c-a5b3-d7ebe92f3927",
+        "start": "2027-03-11T09:30",
+        "end": "2027-03-11T10:20",
+        "name": "Adaptive Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "72b00fbd-3b86-44c7-96b7-96c4bc4d05c5",
+        "start": "2027-03-11T10:30",
+        "end": "2027-03-11T11:50",
+        "name": "Figure Skating",
+        "type": "Figure Skating",
+        "ticket": 9
+      },
+      {
+        "id": "65383e65-f358-4784-bf7c-7eba77831adb",
+        "start": "2027-03-11T12:00",
+        "end": "2027-03-11T13:20",
+        "name": "Adult Shinny (Ages 18+)",
+        "type": "Pickup Hockey",
+        "ticket": 9
+      },
+      {
+        "id": "bf100b56-620f-4fe7-969c-016430520fa9",
+        "start": "2027-03-11T13:30",
+        "end": "2027-03-11T14:20",
+        "name": "55+ Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "5231aa9f-70cf-4d8b-afb4-1da82e3a6aeb",
+        "start": "2027-03-12T10:00",
+        "end": "2027-03-12T10:50",
+        "name": "Parent & Tot Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "d2a4cc27-bae8-4067-ab51-5e9014c56ded",
+        "start": "2027-03-13T14:00",
+        "end": "2027-03-13T14:50",
+        "name": "Family Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 3
+      },
+      {
+        "id": "7c9e6b8e-450c-43c5-a843-089c3ba64001",
+        "start": "2027-03-13T15:00",
+        "end": "2027-03-13T16:20",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "ticket": 3.5
+      },
+      {
+        "id": "1a237eb4-f6b7-4d39-a8f2-5f2826b5a17f",
+        "start": "2027-03-13T16:30",
+        "end": "2027-03-13T17:20",
+        "name": "Youth Shinny (Ages 13-17)",
+        "type": "Pickup Hockey",
+        "ticket": 6
+      },
+      {
+        "id": "c934fd59-a16e-4998-81a6-4cb1ec024148",
+        "start": "2027-03-14T08:30",
+        "end": "2027-03-14T09:20",
+        "name": "Family Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 3
+      },
+      {
+        "id": "b67142be-9e3f-4c57-9159-ee38b4241f41",
+        "start": "2027-03-14T08:30",
+        "end": "2027-03-14T09:20",
+        "name": "Women's Shinny (Ages 18+)",
+        "type": "Pickup Hockey",
+        "ticket": 9
+      },
+      {
+        "id": "2746f0ca-60ce-461e-a3f1-5cfd20c04bfe",
+        "start": "2027-03-14T09:30",
+        "end": "2027-03-14T10:50",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "ticket": 3.5
+      },
+      {
+        "id": "23dc926e-db47-4a50-9e3c-29d6af73f3f3",
+        "start": "2027-03-15T16:00",
+        "end": "2027-03-15T16:50",
+        "name": "Family Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 3
+      },
+      {
+        "id": "837dc861-f497-4568-b1b5-295ca59847f1",
+        "start": "2027-03-16T07:00",
+        "end": "2027-03-16T08:20",
+        "name": "Figure Skating",
+        "type": "Figure Skating",
+        "ticket": 9
+      },
+      {
+        "id": "c579c002-ee10-4889-b6c9-2496c2239ba9",
+        "start": "2027-03-17T07:00",
+        "end": "2027-03-17T08:20",
+        "name": "Figure Skating",
+        "type": "Figure Skating",
+        "ticket": 9
+      },
+      {
+        "id": "d1778529-bd72-4347-b5f4-10bfe0f975ef",
+        "start": "2027-03-18T09:30",
+        "end": "2027-03-18T10:20",
+        "name": "Adaptive Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "ad231fac-1f23-4a39-8254-da3092bbb9d8",
+        "start": "2027-03-19T10:00",
+        "end": "2027-03-19T10:50",
+        "name": "Parent & Tot Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "826fd3cd-9b61-4d2d-812b-3523253b941f",
+        "start": "2027-03-20T14:00",
+        "end": "2027-03-20T14:50",
+        "name": "Family Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 3
+      },
+      {
+        "id": "17170320-21f3-4a5c-9b31-8c483da33272",
+        "start": "2027-03-20T15:00",
+        "end": "2027-03-20T16:20",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "ticket": 3.5
+      },
+      {
+        "id": "e638a8d0-9376-4aec-a197-c767f7a41ab2",
+        "start": "2027-03-20T16:30",
+        "end": "2027-03-20T17:20",
+        "name": "Youth Shinny (Ages 13-17)",
+        "type": "Pickup Hockey",
+        "ticket": 6
+      },
+      {
+        "id": "d0996ea4-8cbd-4bc0-8c35-b324d5ddd780",
+        "start": "2027-03-21T08:30",
+        "end": "2027-03-21T09:20",
+        "name": "Family Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 3
+      },
+      {
+        "id": "fcd7ae91-e8bc-47f5-b2aa-b0701edec886",
+        "start": "2027-03-21T08:30",
+        "end": "2027-03-21T09:20",
+        "name": "Women's Shinny (Ages 18+)",
+        "type": "Pickup Hockey",
+        "ticket": 9
+      },
+      {
+        "id": "882e979d-a6d1-47c7-bbdf-986843ed4d02",
+        "start": "2027-03-21T09:30",
+        "end": "2027-03-21T10:50",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "ticket": 3.5
+      },
+      {
+        "id": "76953206-7162-4b86-b95d-06e96c372e19",
+        "start": "2027-03-22T16:00",
+        "end": "2027-03-22T16:50",
+        "name": "Family Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 3
+      },
+      {
+        "id": "0cf65663-5f9c-4096-aebc-f43c136cafad",
+        "start": "2027-03-23T07:00",
+        "end": "2027-03-23T08:20",
+        "name": "Figure Skating",
+        "type": "Figure Skating",
+        "ticket": 9
+      },
+      {
+        "id": "f0f04d1e-0325-4979-bee7-42257efd8dac",
+        "start": "2027-03-24T07:00",
+        "end": "2027-03-24T08:20",
+        "name": "Figure Skating",
+        "type": "Figure Skating",
+        "ticket": 9
+      },
+      {
+        "id": "4261e558-4929-4fe2-a1ad-cdb4406314ad",
+        "start": "2027-03-25T09:30",
+        "end": "2027-03-25T10:20",
+        "name": "Adaptive Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "577e5a2e-7610-496c-89c7-2fca3cd429bd",
+        "start": "2027-03-25T10:30",
+        "end": "2027-03-25T11:50",
+        "name": "Figure Skating",
+        "type": "Figure Skating",
+        "ticket": 9
+      },
+      {
+        "id": "7f44466b-2e3f-40fd-860e-58299cbfeacd",
+        "start": "2027-03-25T12:00",
+        "end": "2027-03-25T13:20",
+        "name": "Adult Shinny (Ages 18+)",
+        "type": "Pickup Hockey",
+        "ticket": 9
+      },
+      {
+        "id": "8218e1e2-ba48-4f2b-b489-f3e068198ca1",
+        "start": "2027-03-25T13:30",
+        "end": "2027-03-25T14:20",
+        "name": "55+ Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "82cb02d1-01c4-498b-9474-827789714298",
+        "start": "2027-03-26T10:00",
+        "end": "2027-03-26T10:50",
+        "name": "Parent & Tot Skate",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "ec43ca36-a2a3-491f-a696-fd16ba3bff8a",
+        "start": "2027-03-27T14:00",
+        "end": "2027-03-27T14:50",
+        "name": "Family Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 3
+      },
+      {
+        "id": "fabea87f-f03a-4e65-926d-4fa84971f35a",
+        "start": "2027-03-27T15:00",
+        "end": "2027-03-27T16:20",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "ticket": 3.5
+      },
+      {
+        "id": "f4a10706-21ce-416c-b3df-cc969bfb7fc0",
+        "start": "2027-03-27T16:30",
+        "end": "2027-03-27T17:20",
+        "name": "Youth Shinny (Ages 13-17)",
+        "type": "Pickup Hockey",
+        "ticket": 6
+      },
+      {
+        "id": "a4e5e130-fe65-40a8-a6e0-ab5b59a0dc7c",
+        "start": "2027-03-28T09:30",
+        "end": "2027-03-28T10:50",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "ticket": 3.5
+      },
+      {
+        "id": "51871ddf-74b0-45be-8ff9-26c82885485d",
+        "start": "2027-03-29T16:00",
+        "end": "2027-03-29T16:50",
+        "name": "Family Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 3
+      },
+      {
+        "id": "46f69d54-1bc3-43ac-8138-3d460c3af9ad",
+        "start": "2027-03-30T07:00",
+        "end": "2027-03-30T08:20",
+        "name": "Figure Skating",
+        "type": "Figure Skating",
+        "ticket": 9
+      },
+      {
+        "id": "6603b897-f494-4d9b-b149-4efdf0873e51",
+        "start": "2027-03-31T07:00",
+        "end": "2027-03-31T08:20",
+        "name": "Figure Skating",
+        "type": "Figure Skating",
+        "ticket": 9
+      }
+    ]
+  }
+}
