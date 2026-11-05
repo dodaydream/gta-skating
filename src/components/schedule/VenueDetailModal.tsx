@@ -452,7 +452,7 @@ export function VenueDetailModal({
   const typeFilterSet =
     filterTypes && filterTypes.length > 0 ? new Set(filterTypes) : null;
   const inRange = (start: string, end: string) =>
-    (!filterFrom || end >= filterFrom) && (!filterTo || start <= filterTo);
+    (!filterFrom || end > filterFrom) && (!filterTo || start <= filterTo);
   const matchesFilters = (program: Program) =>
     (!typeFilterSet || typeFilterSet.has(program.type)) &&
     (!filterFrom || inRange(program.start, program.end));

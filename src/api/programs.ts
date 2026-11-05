@@ -21,7 +21,7 @@ function inRange(
   from: string,
   to: string
 ): boolean {
-  return start <= to && end >= from;
+  return start <= to && end > from;
 }
 
 function withinBounds(venue: Venue, bounds: MapBounds): boolean {

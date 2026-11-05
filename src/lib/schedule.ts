@@ -70,7 +70,7 @@ export function getUpcomingEvents(
   return venue.schedule.programs
     .filter(
       (program) =>
-        program.end >= start && (to === undefined || program.start <= to)
+        program.end > start && (to === undefined || program.start <= to)
     )
     .sort((a, b) => a.start.localeCompare(b.start));
 }
