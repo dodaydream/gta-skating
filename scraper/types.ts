@@ -13,6 +13,8 @@ export interface VenueMeta {
   coordinates: { lat: number; lon: number };
   /** Ice pads at this venue (name + free-form type). */
   rinks?: Rink[];
+  /** Free-form facility amenities, e.g. "Skate rentals". */
+  amenities?: string[];
 }
 
 /** Single-venue entry inside a multi-venue scraper's meta.json. */
@@ -94,5 +96,6 @@ export interface Venue {
   address: string;
   coordinates: Coordinates;
   rinks?: Rink[];
+  amenities?: string[];
   schedule: VenueSchedule;
 }

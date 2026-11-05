@@ -176,6 +176,7 @@ async function writeSchedule(
     address: meta.address,
     coordinates: meta.coordinates,
     rinks: meta.rinks,
+    amenities: meta.amenities,
     schedule: {
       updatedAt: new Date().toISOString(),
       programs,

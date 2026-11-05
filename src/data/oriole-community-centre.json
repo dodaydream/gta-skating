@@ -14,10 +14,10 @@
     }
   ],
   "schedule": {
-    "updatedAt": "2026-11-05T02:58:34.292Z",
+    "updatedAt": "2026-11-05T03:21:58.420Z",
     "programs": [
       {
-        "id": "04029676-76c7-45ac-b7ee-b6e00a318ad4",
+        "id": "ca8f7352-6e76-4be2-8bb5-0a4598ae7a06",
         "start": "2026-11-05T16:30",
         "end": "2026-11-05T17:15",
         "name": "Shinny: Child",
@@ -26,7 +26,7 @@
         "ticket": 0
       },
       {
-        "id": "24725c5f-0fff-484d-a8e0-05d7f6524872",
+        "id": "f6287391-c4e5-4202-a1de-a97178feb690",
         "start": "2026-11-05T17:15",
         "end": "2026-11-05T18:00",
         "name": "Shinny: Youth",
@@ -35,7 +35,7 @@
         "ticket": 0
       },
       {
-        "id": "1566c22a-2cb3-499f-a9e2-e5c42710a6ab",
+        "id": "5a3d95a4-7435-48c6-bdc9-bd543cf7df36",
         "start": "2026-11-07T19:00",
         "end": "2026-11-07T21:00",
         "name": "Leisure Skate",
@@ -44,7 +44,7 @@
         "ticket": 0
       },
       {
-        "id": "9b1db45e-38a5-489a-800a-589fba76a491",
+        "id": "e6e6522f-e8fc-4c82-91a1-6cb8a42398d6",
         "start": "2026-11-07T21:15",
         "end": "2026-11-07T23:00",
         "name": "Shinny: Adult",
@@ -53,7 +53,7 @@
         "ticket": 0
       },
       {
-        "id": "dc21cb03-d3da-49d7-8714-bfebf1e7e214",
+        "id": "f85d62d0-f6d6-4854-a64b-eaf0289638ed",
         "start": "2026-11-08T14:30",
         "end": "2026-11-08T16:30",
         "name": "Leisure Skate",

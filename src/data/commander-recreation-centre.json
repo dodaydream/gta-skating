@@ -18,10 +18,10 @@
     }
   ],
   "schedule": {
-    "updatedAt": "2026-11-05T02:58:32.381Z",
+    "updatedAt": "2026-11-05T03:21:56.046Z",
     "programs": [
       {
-        "id": "8f12be85-6b6c-415f-a8cb-6fe52fe8b21c",
+        "id": "c9dbdb20-b47e-44fa-a717-5122ba7a44ec",
         "start": "2026-11-05T10:00",
         "end": "2026-11-05T12:00",
         "name": "Leisure Skate: Older Adult (Unsupervised)",
@@ -30,7 +30,7 @@
         "ticket": 0
       },
       {
-        "id": "42a3a5eb-ff59-4c57-99ec-ff68450f7036",
+        "id": "bafc8fa1-0d51-4823-91ec-fd4ccce1b27c",
         "start": "2026-11-08T15:30",
         "end": "2026-11-08T17:00",
         "name": "Adapted Leisure Skate with Family",

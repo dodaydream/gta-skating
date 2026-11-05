@@ -262,6 +262,11 @@
           "name": "Ice Rink - Ice Galaxy",
           "type": "North American / NHL"
         }
+      ],
+      "amenities": [
+        "wifi",
+        "dressing_rooms",
+        "onsite_free_parking"
       ]
     },
     {

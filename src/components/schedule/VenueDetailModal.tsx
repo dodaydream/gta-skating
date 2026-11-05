@@ -40,6 +40,7 @@ import { TicketBadge } from "@/components/schedule/TicketBadge";
 import { BusyBadge } from "@/components/schedule/BusyBadge";
 import { BusynessInput } from "@/components/schedule/BusynessInput";
 import { trackEvent } from "@/lib/analytics";
+import { amenityIcon } from "@/lib/amenities";
 import { SITE_REPO } from "@/lib/site";
 import { normalizeLocale } from "@/i18n/config";
 import {
@@ -531,6 +532,7 @@ export function VenueDetailModal({
           />
 
           <RinksSection venueName={venue.name} rinks={venue.rinks} />
+          <AmenitiesSection amenities={venue.amenities} />
 
           {currentProgram ? (
             <div className="px-5">
@@ -599,6 +601,7 @@ export function VenueDetailModal({
       ) : (
         <div className="flex flex-1 flex-col">
           <RinksSection venueName={venue.name} rinks={venue.rinks} />
+          <AmenitiesSection amenities={venue.amenities} />
           <div className="flex flex-1 flex-col items-center justify-center px-5">
             <Empty className="my-6">
               <EmptyHeader>
@@ -672,7 +675,7 @@ function RinksSection({
   const { t } = useTranslation();
   if (!rinks || rinks.length === 0) return null;
   const reportUrl = `${SITE_REPO}/issues/new?template=report-rink.md&title=${encodeURIComponent(
-    `[Rink] ${venueName}`
+    `[Venue] ${venueName}`
   )}`;
   return (
     <section className="flex flex-col">
@@ -702,6 +705,31 @@ function RinksSection({
             <span className="text-zinc-500 dark:text-zinc-400">{rink.type}</span>
           </li>
         ))}
+      </ul>
+    </section>
+  );
+}
+
+function AmenitiesSection({ amenities }: { amenities?: string[] }) {
+  const { t } = useTranslation();
+  if (!amenities || amenities.length === 0) return null;
+  return (
+    <section className="flex flex-col">
+      <div className="sticky top-0 z-30 flex items-center justify-between gap-3 bg-popover px-5 py-2">
+        <h3 className="text-sm font-semibold text-black dark:text-zinc-50">
+          {t("venue.amenities")}
+        </h3>
+      </div>
+      <ul className="grid grid-cols-2 gap-x-4 gap-y-3 px-5 pb-2 pt-2 text-xs text-zinc-700 dark:text-zinc-300 sm:grid-cols-3">
+        {amenities.map((amenity) => {
+          const Icon = amenityIcon(amenity);
+          return (
+            <li key={amenity} className="flex items-center gap-1.5">
+              <Icon className="h-3.5 w-3.5 shrink-0 text-zinc-500 dark:text-zinc-400" />
+              {t(`amenities.${amenity}`)}
+            </li>
+          );
+        })}
       </ul>
     </section>
   );

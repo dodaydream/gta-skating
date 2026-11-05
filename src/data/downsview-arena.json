@@ -14,10 +14,10 @@
     }
   ],
   "schedule": {
-    "updatedAt": "2026-11-05T02:58:32.645Z",
+    "updatedAt": "2026-11-05T03:21:56.348Z",
     "programs": [
       {
-        "id": "5c52d218-6be8-4247-a49d-4a1b9165654b",
+        "id": "68a64164-24f0-4c3f-9083-058a87b9726e",
         "start": "2026-11-04T19:15",
         "end": "2026-11-04T21:15",
         "name": "Leisure Skate",
@@ -26,7 +26,7 @@
         "ticket": 0
       },
       {
-        "id": "c1bed745-1ad1-463a-a988-51b7ab777350",
+        "id": "8f9ecfc0-9878-48fc-b740-6ac35054bece",
         "start": "2026-11-07T19:00",
         "end": "2026-11-07T21:00",
         "name": "Leisure Skate",
@@ -35,7 +35,7 @@
         "ticket": 0
       },
       {
-        "id": "663f1620-5ee8-46c5-adaa-1ccb0c236cef",
+        "id": "e3f1fb14-4281-46f8-a85a-a7089d63d14a",
         "start": "2026-11-08T14:45",
         "end": "2026-11-08T15:30",
         "name": "Leisure Skate: Child with Caregiver",
@@ -44,7 +44,7 @@
         "ticket": 0
       },
       {
-        "id": "ddb68d4e-1aab-414b-b20f-c8ff4d247064",
+        "id": "5ecdf62a-e413-414c-87d3-0d1fc5c052f5",
         "start": "2026-11-08T15:30",
         "end": "2026-11-08T17:00",
         "name": "Leisure Skate",

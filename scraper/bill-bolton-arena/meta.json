@@ -5,6 +5,7 @@
   "rinks": [
     { "name": "Rink 1", "type": "North American / NHL" }
   ],
+  "amenities": ["skate_sharpening", "equipment_gear_purchase", "snack_bar"],
   "url": "https://www.billboltonarena.ca/public-skating",
   "address": "40 Rossmore Road, Toronto, ON M5R 3G7",
   "coordinates": { "lat": 43.671332, "lon": -79.415243 }

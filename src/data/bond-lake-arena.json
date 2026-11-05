@@ -14,10 +14,10 @@
     }
   ],
   "schedule": {
-    "updatedAt": "2026-11-05T02:58:59.481Z",
+    "updatedAt": "2026-11-05T03:20:17.536Z",
     "programs": [
       {
-        "id": "9eb7a8cb-2cab-4690-a8c0-97913db70057",
+        "id": "347d008d-070b-4a44-a5d2-390c9b51f7de",
         "start": "2026-11-07T18:30",
         "end": "2026-11-07T20:00",
         "name": "Public Skate",
@@ -25,7 +25,7 @@
         "ticket": 5.9
       },
       {
-        "id": "60bacc87-198c-4033-8e4a-ae35fb0fa650",
+        "id": "c0cb28b4-ddbc-469a-8a59-c7a10587efa3",
         "start": "2026-11-07T20:00",
         "end": "2026-11-07T21:30",
         "name": "Shinny",
@@ -33,7 +33,7 @@
         "ticket": 8.7
       },
       {
-        "id": "fbcdc607-af9d-4b12-88e7-c8491f2e0c10",
+        "id": "f2772c61-074c-4f04-81d8-5a9eee2dbc03",
         "start": "2026-11-08T14:30",
         "end": "2026-11-08T16:00",
         "name": "Public Skate",
@@ -41,7 +41,7 @@
         "ticket": 5.9
       },
       {
-        "id": "f089a9e7-607b-4aa2-b7f9-b38ab6e2b12f",
+        "id": "e722934e-fdcb-4a60-84af-95cc8e5745e4",
         "start": "2026-11-14T18:30",
         "end": "2026-11-14T20:00",
         "name": "Public Skate",
@@ -49,7 +49,7 @@
         "ticket": 5.9
       },
       {
-        "id": "d763b6a9-a8d9-4270-90cd-ecc9a2c630bd",
+        "id": "60dd1618-725d-4ac1-87e3-b0c581c06b08",
         "start": "2026-11-14T20:00",
         "end": "2026-11-14T21:30",
         "name": "Shinny",
@@ -57,7 +57,7 @@
         "ticket": 8.7
       },
       {
-        "id": "44d31fe5-b591-4e7d-942a-3f2a98bef873",
+        "id": "be115ceb-f0ad-44e9-8f25-112bf74e2d20",
         "start": "2026-11-15T14:30",
         "end": "2026-11-15T16:00",
         "name": "Public Skate",
@@ -65,7 +65,7 @@
         "ticket": 5.9
       },
       {
-        "id": "e8ff0438-8593-443a-9edf-cc6f152f1bf1",
+        "id": "37a972d3-2575-4f80-b5de-f29fd71ed5db",
         "start": "2026-11-21T18:30",
         "end": "2026-11-21T20:00",
         "name": "Public Skate",
@@ -73,7 +73,7 @@
         "ticket": 5.9
       },
       {
-        "id": "481bcf8a-1a4d-4337-a708-75680fcfdbb8",
+        "id": "3c491586-ac12-4c1f-a310-f898c0ae8c95",
         "start": "2026-11-21T20:00",
         "end": "2026-11-21T21:30",
         "name": "Shinny",
@@ -81,7 +81,7 @@
         "ticket": 8.7
       },
       {
-        "id": "c9368682-eee8-4e42-b34c-2c269acd6df9",
+        "id": "d7b8d34a-590b-4970-86d2-3dac7c5a8df7",
         "start": "2026-11-22T14:30",
         "end": "2026-11-22T16:00",
         "name": "Public Skate",
@@ -89,7 +89,7 @@
         "ticket": 5.9
       },
       {
-        "id": "ea44f84f-67a3-4f75-950e-b5d97a029190",
+        "id": "67deb345-904e-4226-8def-190280a57ecc",
         "start": "2026-11-28T18:30",
         "end": "2026-11-28T20:00",
         "name": "Public Skate",
@@ -97,7 +97,7 @@
         "ticket": 5.9
       },
       {
-        "id": "a1fed746-f232-4b4b-9828-40bb18c0e132",
+        "id": "8cccc911-5ad5-4a69-8205-5385d0abd5a1",
         "start": "2026-11-28T20:00",
         "end": "2026-11-28T21:30",
         "name": "Shinny",
@@ -105,7 +105,7 @@
         "ticket": 8.7
       },
       {
-        "id": "45b3a438-eac5-4dcd-a161-525b64cbc850",
+        "id": "b13f86b6-cb72-42b2-b645-cd710031fd9c",
         "start": "2026-11-29T14:30",
         "end": "2026-11-29T16:00",
         "name": "Public Skate",
@@ -113,7 +113,7 @@
         "ticket": 5.9
       },
       {
-        "id": "96fe2887-4867-4bd5-8488-446cbf90fd8d",
+        "id": "e74c5b1c-f2ab-470f-a594-6bb65e990f1f",
         "start": "2026-12-05T18:30",
         "end": "2026-12-05T20:00",
         "name": "Public Skate",
@@ -121,7 +121,7 @@
         "ticket": 5.9
       },
       {
-        "id": "d00d9422-f4d3-492c-a8f6-4169f8561fb2",
+        "id": "91598d7d-e28d-4072-93e0-00eb992d303e",
         "start": "2026-12-05T20:00",
         "end": "2026-12-05T21:30",
         "name": "Shinny",

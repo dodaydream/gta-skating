@@ -36,7 +36,13 @@
         "lat": 43.855906,
         "lon": -79.397721
       },
-      "type": "indoor"
+      "type": "indoor",
+      "amenities": [
+        "wifi",
+        "dressing_rooms",
+        "gender_neutral_washrooms",
+        "onsite_free_parking"
+      ]
     },
     {
       "id": "elgin-barrow-arena",

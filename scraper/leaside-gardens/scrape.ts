@@ -308,6 +308,7 @@ async function writeSchedule(meta: VenueMeta, programs: Program[]): Promise<stri
     address: meta.address,
     coordinates: meta.coordinates,
     rinks: meta.rinks,
+    amenities: meta.amenities,
     schedule: {
       updatedAt: new Date().toISOString(),
       programs,

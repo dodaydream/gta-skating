@@ -14,10 +14,10 @@
     }
   ],
   "schedule": {
-    "updatedAt": "2026-11-05T02:58:33.224Z",
+    "updatedAt": "2026-11-05T03:21:57.120Z",
     "programs": [
       {
-        "id": "25b9e5ab-2623-4667-91bc-4ed0d98ac1eb",
+        "id": "f9f0c063-9712-49f1-9fd1-2b97820285f6",
         "start": "2026-11-07T17:30",
         "end": "2026-11-07T19:30",
         "name": "Leisure Skate",
@@ -26,7 +26,7 @@
         "ticket": 0
       },
       {
-        "id": "8e2ba982-cbf3-4a0a-97c5-3b088f8e9900",
+        "id": "39e8be60-1eed-43e6-8a02-260b0a7ccfed",
         "start": "2026-11-08T12:15",
         "end": "2026-11-08T14:00",
         "name": "Leisure Skate",

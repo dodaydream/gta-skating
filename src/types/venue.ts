@@ -14,5 +14,6 @@ export interface Venue {
   coordinates: Coordinates;
   address: string;
   rinks?: Rink[];
+  amenities?: string[];
   schedule: Schedule;
 }

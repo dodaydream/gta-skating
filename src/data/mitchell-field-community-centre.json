@@ -14,10 +14,10 @@
     }
   ],
   "schedule": {
-    "updatedAt": "2026-11-05T02:58:34.080Z",
+    "updatedAt": "2026-11-05T03:21:58.210Z",
     "programs": [
       {
-        "id": "976949aa-66ee-439d-b48a-5baacee73215",
+        "id": "1ef454bc-6e92-4f18-8c53-34ed820d79d6",
         "start": "2026-11-04T09:30",
         "end": "2026-11-04T11:30",
         "name": "Leisure Skate: Older Adult",
@@ -26,7 +26,7 @@
         "ticket": 0
       },
       {
-        "id": "6ff5c211-bd0c-46dd-a6e2-5c27b1bdad1e",
+        "id": "b5351e13-abca-480f-aa95-2a90cd411fc3",
         "start": "2026-11-05T16:00",
         "end": "2026-11-05T17:00",
         "name": "Shinny: Youth",
@@ -35,7 +35,7 @@
         "ticket": 0
       },
       {
-        "id": "354ae6e9-5649-4cee-b437-9f6ac3a553d9",
+        "id": "f5bd5e18-3094-4955-8686-6c8d8c23342a",
         "start": "2026-11-06T09:30",
         "end": "2026-11-06T11:30",
         "name": "Leisure Skate: Older Adult",
@@ -44,7 +44,7 @@
         "ticket": 0
       },
       {
-        "id": "aade405c-bc4c-40e2-80a1-4542efc9f7a6",
+        "id": "b1c2634b-24ea-46f6-8c24-b52a27868380",
         "start": "2026-11-07T19:00",
         "end": "2026-11-07T21:00",
         "name": "Leisure Skate",
@@ -53,7 +53,7 @@
         "ticket": 0
       },
       {
-        "id": "ad96b73c-a0db-4bfe-b97b-7c9c4efd173d",
+        "id": "7418e28d-2e2a-49ab-aa95-6c4d93b3418d",
         "start": "2026-11-07T21:30",
         "end": "2026-11-07T22:30",
         "name": "Shinny: Child",
@@ -62,7 +62,7 @@
         "ticket": 0
       },
       {
-        "id": "47978901-53b9-4a73-a4ad-4934da58aabe",
+        "id": "415ba71c-0b46-4df2-8eb7-86504aec8eb6",
         "start": "2026-11-07T22:30",
         "end": "2026-11-07T23:30",
         "name": "Shinny: Youth",
@@ -71,7 +71,7 @@
         "ticket": 0
       },
       {
-        "id": "234dd22b-04c8-440a-bb18-535c56d9e28e",
+        "id": "0574eaaa-ce60-4e25-8834-06834f8fe9f2",
         "start": "2026-11-08T16:00",
         "end": "2026-11-08T18:00",
         "name": "Leisure Skate",

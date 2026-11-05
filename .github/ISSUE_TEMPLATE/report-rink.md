@@ -1,17 +1,20 @@
 ---
-name: Report a rink issue
-about: Something is wrong or missing about a venue's rinks (name or size/type)
-title: "[Rink] "
+name: Report a venue data issue
+about: Report incorrect or missing rink or amenity information for a venue
+title: "[Venue] "
 labels: ""
 assignees: ""
 ---
 
-<!-- Thanks for helping improve rink data! Please fill in what you can. -->
+<!-- Thanks for helping improve venue data! Please fill in what you can. -->
 
 **Venue:**
 
-**Rinks currently shown:**
-
 **What is incorrect or missing?**
+<!-- e.g. a rink name/size, or an amenity such as Wi-Fi, parking, washrooms, or rentals -->
+
+**Information currently shown:**
+
+**Correct information:**
 
 **Source (URL) with the correct information:**
