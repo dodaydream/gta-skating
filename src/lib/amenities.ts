@@ -1,5 +1,6 @@
 import type { ComponentType } from "react";
 import {
+  IconAccessible,
   IconArmchair,
   IconBadgeWc,
   IconBroadcast,
@@ -32,6 +33,7 @@ export const AMENITIES = [
   "onsite_free_parking",
   "onsite_paid_parking",
   "gender_neutral_washrooms",
+  "wheelchair_accessible",
   "spectator_seating",
   "live_streaming",
 ] as const;
@@ -53,6 +55,7 @@ const AMENITY_ICONS: Record<Amenity, AmenityIcon> = {
   onsite_free_parking: IconParking,
   onsite_paid_parking: IconParking,
   gender_neutral_washrooms: IconBadgeWc,
+  wheelchair_accessible: IconAccessible,
   spectator_seating: IconArmchair,
   live_streaming: IconBroadcast,
 };

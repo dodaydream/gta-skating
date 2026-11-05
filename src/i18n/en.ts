@@ -93,6 +93,7 @@ const en = {
     onsite_free_parking: "Onsite free parking",
     onsite_paid_parking: "Onsite paid parking",
     gender_neutral_washrooms: "Gender-neutral washrooms",
+    wheelchair_accessible: "Wheelchair accessible",
     spectator_seating: "Spectator seating",
     live_streaming: "Live streaming",
   },

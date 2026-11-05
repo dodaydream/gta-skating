@@ -28,6 +28,16 @@
           "name": "Rink 4",
           "type": "North American / NHL"
         }
+      ],
+      "amenities": [
+        "wifi",
+        "dressing_rooms",
+        "onsite_free_parking",
+        "snack_bar",
+        "equipment_gear_purchase",
+        "skate_sharpening",
+        "live_streaming",
+        "wheelchair_accessible"
       ]
     },
     {
@@ -58,6 +68,16 @@
           "name": "Rink 4",
           "type": "North American / NHL"
         }
+      ],
+      "amenities": [
+        "wifi",
+        "dressing_rooms",
+        "onsite_free_parking",
+        "snack_bar",
+        "equipment_gear_purchase",
+        "skate_sharpening",
+        "live_streaming",
+        "wheelchair_accessible"
       ]
     },
     {
@@ -110,6 +130,16 @@
           "name": "Rink 4",
           "type": "North American / NHL"
         }
+      ],
+      "amenities": [
+        "wifi",
+        "dressing_rooms",
+        "onsite_free_parking",
+        "snack_bar",
+        "equipment_gear_purchase",
+        "skate_sharpening",
+        "live_streaming",
+        "wheelchair_accessible"
       ]
     },
     {
@@ -148,6 +178,16 @@
           "name": "Rink 6",
           "type": "Olympic"
         }
+      ],
+      "amenities": [
+        "wifi",
+        "dressing_rooms",
+        "onsite_free_parking",
+        "snack_bar",
+        "equipment_gear_purchase",
+        "skate_sharpening",
+        "live_streaming",
+        "wheelchair_accessible"
       ]
     }
   ]

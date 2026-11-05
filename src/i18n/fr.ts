@@ -95,6 +95,7 @@ const fr: Messages = {
     onsite_free_parking: "Stationnement gratuit sur place",
     onsite_paid_parking: "Stationnement payant sur place",
     gender_neutral_washrooms: "Toilettes non genrées",
+    wheelchair_accessible: "Accessible en fauteuil roulant",
     spectator_seating: "Gradins",
     live_streaming: "Diffusion en direct",
   },

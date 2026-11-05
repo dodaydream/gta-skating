@@ -25,11 +25,21 @@
       "type": "North American / NHL"
     }
   ],
+  "amenities": [
+    "wifi",
+    "dressing_rooms",
+    "onsite_free_parking",
+    "snack_bar",
+    "equipment_gear_purchase",
+    "skate_sharpening",
+    "live_streaming",
+    "wheelchair_accessible"
+  ],
   "schedule": {
-    "updatedAt": "2026-11-05T02:58:00.172Z",
+    "updatedAt": "2026-11-05T03:45:15.926Z",
     "programs": [
       {
-        "id": "68a654d3-3199-4d20-9179-fd634e11a23c",
+        "id": "1cd3c794-7cda-4e10-8351-ed6186cf6daa",
         "start": "2026-11-04T08:45",
         "end": "2026-11-04T10:05",
         "name": "Senior Skate",
@@ -37,7 +47,7 @@
         "ticket": 0
       },
       {
-        "id": "f935b4d8-ce23-4224-ab6c-d3ee68e7e077",
+        "id": "43a1e024-98e2-4297-9c2d-ecea4744ff97",
         "start": "2026-11-04T12:15",
         "end": "2026-11-04T14:05",
         "name": "Stick & Puck",
@@ -45,7 +55,7 @@
         "ticket": 10
       },
       {
-        "id": "962f767b-23c7-45e3-b66b-86335746ba62",
+        "id": "eceba449-42c3-4618-934e-c1cb31a48fbe",
         "start": "2026-11-04T15:30",
         "end": "2026-11-04T16:20",
         "name": "Stick & Puck",
@@ -53,7 +63,7 @@
         "ticket": 10
       },
       {
-        "id": "61d3a90a-88a8-4ca5-93de-df23983c59be",
+        "id": "ca93565e-d86c-4780-8fe6-7395eb8f7e25",
         "start": "2026-11-04T16:00",
         "end": "2026-11-04T16:50",
         "name": "Stick & Puck Instruction",
@@ -61,7 +71,7 @@
         "ticket": 20
       },
       {
-        "id": "1ef0b587-9b3c-489c-a4f2-c5293fcad54d",
+        "id": "b0ffd951-db7a-417b-96bd-5e350ef5f1d6",
         "start": "2026-11-05T12:00",
         "end": "2026-11-05T13:50",
         "name": "Stick & Puck",
@@ -69,7 +79,7 @@
         "ticket": 10
       },
       {
-        "id": "1c7b6b39-ede7-440f-99ec-e2d100ffaf10",
+        "id": "35028974-3576-4c2d-a5f4-66cbc732995c",
         "start": "2026-11-05T15:30",
         "end": "2026-11-05T16:20",
         "name": "Stick & Puck",
@@ -77,7 +87,7 @@
         "ticket": 10
       },
       {
-        "id": "a8d19cd2-a44c-43e7-8b73-913cc6271b34",
+        "id": "f90d02b2-d266-459b-a3b3-ab7d511417d9",
         "start": "2026-11-06T12:00",
         "end": "2026-11-06T13:50",
         "name": "Stick & Puck",
@@ -85,7 +95,7 @@
         "ticket": 10
       },
       {
-        "id": "fc480816-8071-4af5-9fcc-8ea52545e131",
+        "id": "5e24743f-5c64-46c5-95cb-e488675d642e",
         "start": "2026-11-06T15:45",
         "end": "2026-11-06T16:35",
         "name": "Stick & Puck",
@@ -93,7 +103,7 @@
         "ticket": 10
       },
       {
-        "id": "3f8e8833-ab47-4c36-ba91-11f71abe0b7e",
+        "id": "263a0d5c-a7a7-4890-b53a-694c4b09f89b",
         "start": "2026-11-06T16:00",
         "end": "2026-11-06T16:50",
         "name": "Stick & Puck Instruction",
@@ -101,7 +111,7 @@
         "ticket": 20
       },
       {
-        "id": "a7a16563-3718-4063-a39b-59916eb7cd7e",
+        "id": "440c4c92-c5f0-4e77-ab30-286ab61f176c",
         "start": "2026-11-06T22:15",
         "end": "2026-11-06T23:05",
         "name": "Shinny",
@@ -109,7 +119,7 @@
         "ticket": 10
       },
       {
-        "id": "e8066bbf-7da7-4d0c-b74c-0f820cfb2500",
+        "id": "d9b292d6-5345-4ef7-9de8-bf5b4ff7922e",
         "start": "2026-11-06T22:15",
         "end": "2026-11-06T23:05",
         "name": "Shinny (Goalie Signup)",
@@ -117,7 +127,7 @@
         "ticket": 0
       },
       {
-        "id": "e861fbc1-1d81-406c-a5e5-bed666af765b",
+        "id": "388dc48f-c4fc-4ad7-a345-5f9e9c24c33f",
         "start": "2026-11-09T08:45",
         "end": "2026-11-09T10:20",
         "name": "Senior Skate",
@@ -125,7 +135,7 @@
         "ticket": 0
       },
       {
-        "id": "4544ad5f-1bf2-4684-b2b8-8c2b23ef3b08",
+        "id": "2676959e-619d-4730-a909-c9db79f53c14",
         "start": "2026-11-09T12:00",
         "end": "2026-11-09T13:50",
         "name": "Stick & Puck",
@@ -133,7 +143,7 @@
         "ticket": 10
       },
       {
-        "id": "eeded7a2-b6d4-4b47-89c6-48221cc3011c",
+        "id": "8d8cba31-ace6-449b-8211-e98941986cac",
         "start": "2026-11-09T15:30",
         "end": "2026-11-09T16:20",
         "name": "Stick & Puck",
@@ -141,7 +151,7 @@
         "ticket": 10
       },
       {
-        "id": "e88696c9-5b77-4d3f-be94-e6f1427093c2",
+        "id": "b7afb880-6e2e-4d37-992a-24c2846b8f0a",
         "start": "2026-11-10T12:00",
         "end": "2026-11-10T13:50",
         "name": "Stick & Puck",
@@ -149,7 +159,7 @@
         "ticket": 10
       },
       {
-        "id": "00e14515-8673-4800-8f23-1c043e805cb0",
+        "id": "76d4d7c5-3afe-442a-9aed-5e87909364c7",
         "start": "2026-11-10T15:30",
         "end": "2026-11-10T16:20",
         "name": "Stick & Puck",
@@ -157,7 +167,7 @@
         "ticket": 10
       },
       {
-        "id": "73264c6f-6d90-4062-b547-031152cf76c3",
+        "id": "a06aaae0-2d88-46f3-b7c7-4da1eb5f67af",
         "start": "2026-11-11T08:45",
         "end": "2026-11-11T10:05",
         "name": "Senior Skate",
@@ -165,7 +175,7 @@
         "ticket": 0
       },
       {
-        "id": "cd9ab4ae-caca-4b29-b93c-184954e09143",
+        "id": "9c3d1a7f-bf94-46c4-a341-f8c86b0511c2",
         "start": "2026-11-11T12:15",
         "end": "2026-11-11T14:05",
         "name": "Stick & Puck",
@@ -173,7 +183,7 @@
         "ticket": 10
       },
       {
-        "id": "456bf9c4-c983-4574-8c0e-24d14db138af",
+        "id": "c480c09b-4b95-4ec7-ab97-ef554de27062",
         "start": "2026-11-11T15:30",
         "end": "2026-11-11T16:20",
         "name": "Stick & Puck",
@@ -181,7 +191,7 @@
         "ticket": 10
       },
       {
-        "id": "ac0252df-a372-414b-bd97-aa0f224ceb3d",
+        "id": "368620c4-d4b2-46b3-a808-3b2f5562ac3b",
         "start": "2026-11-11T16:00",
         "end": "2026-11-11T16:50",
         "name": "Stick & Puck Instruction",
@@ -189,7 +199,7 @@
         "ticket": 20
       },
       {
-        "id": "206a1aae-fdd0-45cc-a391-9c8f91f8f275",
+        "id": "1cef414e-1a38-4db0-8121-fbd101ba4f87",
         "start": "2026-11-12T12:00",
         "end": "2026-11-12T13:50",
         "name": "Stick & Puck",
@@ -197,7 +207,7 @@
         "ticket": 10
       },
       {
-        "id": "52184963-a778-471d-a108-7fa2b97a1d8b",
+        "id": "31db9f48-b2c2-4fb8-9a5a-7bf09920ce14",
         "start": "2026-11-12T15:30",
         "end": "2026-11-12T16:20",
         "name": "Stick & Puck",
@@ -205,7 +215,7 @@
         "ticket": 10
       },
       {
-        "id": "254eee20-9f23-43f4-92de-bbe0eb83e2e5",
+        "id": "036b642a-7751-4f80-b56d-9d2d741afeed",
         "start": "2026-11-13T12:00",
         "end": "2026-11-13T13:50",
         "name": "Stick & Puck",
@@ -213,7 +223,7 @@
         "ticket": 10
       },
       {
-        "id": "776071ee-a80f-4bf5-84f7-d8c4fb6bd6d1",
+        "id": "987667de-897d-43c2-9cef-3d23f3cf85ce",
         "start": "2026-11-13T15:45",
         "end": "2026-11-13T16:35",
         "name": "Stick & Puck",
@@ -221,7 +231,7 @@
         "ticket": 10
       },
       {
-        "id": "9eb6791b-871a-4f09-bb40-9239bc4f356b",
+        "id": "d58be4a5-25fd-48c4-b659-5d7e077a967a",
         "start": "2026-11-13T16:00",
         "end": "2026-11-13T16:50",
         "name": "Stick & Puck Instruction",
@@ -229,7 +239,7 @@
         "ticket": 20
       },
       {
-        "id": "fabe985d-7d86-4a4a-94c8-7f4b71ccf411",
+        "id": "39b566c6-32b6-4caf-8b36-07e1b0a7d136",
         "start": "2026-11-13T22:15",
         "end": "2026-11-13T23:05",
         "name": "Shinny",
@@ -237,7 +247,7 @@
         "ticket": 10
       },
       {
-        "id": "75a36a8f-7846-49c1-b8ad-4c75ef3310ef",
+        "id": "11f0f51a-9770-4fde-8447-3fc917f7991b",
         "start": "2026-11-13T22:15",
         "end": "2026-11-13T23:05",
         "name": "Shinny (Goalie Signup)",
@@ -245,7 +255,7 @@
         "ticket": 0
       },
       {
-        "id": "973de391-dfda-41e6-8c57-a4a9afd9ee7f",
+        "id": "f8eb288a-896c-43a0-a254-923524405bba",
         "start": "2026-11-16T08:45",
         "end": "2026-11-16T10:20",
         "name": "Senior Skate",
@@ -253,7 +263,7 @@
         "ticket": 0
       },
       {
-        "id": "26b48bd9-e6d0-470d-8aa0-be522ec32ae5",
+        "id": "5c2a13b7-3346-430a-8225-16a905bb69f2",
         "start": "2026-11-16T12:00",
         "end": "2026-11-16T13:50",
         "name": "Stick & Puck",
@@ -261,7 +271,7 @@
         "ticket": 10
       },
       {
-        "id": "61e3a066-73c4-44b2-b069-73f1c71c2f04",
+        "id": "f4b965d3-c96c-4423-b6f9-ca196133093d",
         "start": "2026-11-16T15:30",
         "end": "2026-11-16T16:20",
         "name": "Stick & Puck",
@@ -269,7 +279,7 @@
         "ticket": 10
       },
       {
-        "id": "826babb9-cf2b-4df3-b2d5-70af4dc9ad02",
+        "id": "4e453309-9ea2-4bf6-914e-99bcdfbdcba3",
         "start": "2026-11-17T12:00",
         "end": "2026-11-17T13:50",
         "name": "Stick & Puck",
@@ -277,7 +287,7 @@
         "ticket": 10
       },
       {
-        "id": "c2e8dfcd-7310-4cb0-8b81-1512ee1f1ea3",
+        "id": "99b6e38e-0f25-4282-92f3-41052ab4bdab",
         "start": "2026-11-17T15:30",
         "end": "2026-11-17T16:20",
         "name": "Stick & Puck",
@@ -285,7 +295,7 @@
         "ticket": 10
       },
       {
-        "id": "ba30ca67-d9b8-4b1b-92ff-6424791762fb",
+        "id": "271db709-1f41-494f-a3a9-2cff27b4a921",
         "start": "2026-11-18T10:00",
         "end": "2026-11-18T10:50",
         "name": "Senior Skate",
@@ -293,7 +303,7 @@
         "ticket": 0
       },
       {
-        "id": "999af20d-4309-41c3-a379-dc0eaadfca05",
+        "id": "385494ec-1184-4cce-896b-4426b457f1aa",
         "start": "2026-11-18T12:15",
         "end": "2026-11-18T14:05",
         "name": "Stick & Puck",
@@ -301,7 +311,7 @@
         "ticket": 10
       },
       {
-        "id": "d16e7e08-8f0c-4a7e-95e4-89e2bebf871e",
+        "id": "e821cbf3-2361-491c-9c1f-ec7d6e97d5c6",
         "start": "2026-11-18T15:30",
         "end": "2026-11-18T16:20",
         "name": "Stick & Puck",
@@ -309,7 +319,7 @@
         "ticket": 10
       },
       {
-        "id": "d63c3abc-549c-4e12-81e3-8621641476e9",
+        "id": "7c525689-c1a0-4fcd-8e0e-624b7960c67b",
         "start": "2026-11-18T16:00",
         "end": "2026-11-18T16:50",
         "name": "Stick & Puck Instruction",
@@ -317,7 +327,7 @@
         "ticket": 20
       },
       {
-        "id": "fc16255d-0394-4348-8e82-909ef83193e2",
+        "id": "1b35636a-c827-496b-b849-12c8950667ac",
         "start": "2026-11-19T12:00",
         "end": "2026-11-19T13:50",
         "name": "Stick & Puck",
@@ -325,7 +335,7 @@
         "ticket": 10
       },
       {
-        "id": "cd45f117-7dc5-492e-af52-810b6972461f",
+        "id": "36777752-ab4b-4ccc-a815-56148be01185",
         "start": "2026-11-19T15:30",
         "end": "2026-11-19T16:20",
         "name": "Stick & Puck",
@@ -333,7 +343,7 @@
         "ticket": 10
       },
       {
-        "id": "18296f79-0ae6-47ee-b76c-7699a7582e52",
+        "id": "5017ff86-0ba7-4775-bc86-495209a1e1f8",
         "start": "2026-11-20T12:00",
         "end": "2026-11-20T13:50",
         "name": "Stick & Puck",
@@ -341,7 +351,7 @@
         "ticket": 10
       },
       {
-        "id": "b46902ea-3de7-4493-a187-d568533f0ed7",
+        "id": "fa70a69c-6b31-444e-a56d-105a8c800844",
         "start": "2026-11-20T15:45",
         "end": "2026-11-20T16:35",
         "name": "Stick & Puck",
@@ -349,7 +359,7 @@
         "ticket": 10
       },
       {
-        "id": "f022c180-ae05-476c-a423-356b757f60e2",
+        "id": "12378975-360f-4c98-8ea9-84ac573fc714",
         "start": "2026-11-20T16:00",
         "end": "2026-11-20T16:50",
         "name": "Stick & Puck Instruction",
@@ -357,7 +367,7 @@
         "ticket": 20
       },
       {
-        "id": "6374c81e-7952-4d9a-b45b-5b8815420419",
+        "id": "7078e505-c674-4704-9c8d-d9652def5b44",
         "start": "2026-11-20T22:15",
         "end": "2026-11-20T23:05",
         "name": "Shinny",
@@ -365,7 +375,7 @@
         "ticket": 10
       },
       {
-        "id": "3650b37d-641b-4d9b-86f0-218ae9572b32",
+        "id": "9f5478d4-b738-4310-9ec4-c8bdb9a46984",
         "start": "2026-11-20T22:15",
         "end": "2026-11-20T23:05",
         "name": "Shinny (Goalie Signup)",
@@ -373,7 +383,7 @@
         "ticket": 0
       },
       {
-        "id": "730ac1c7-0575-4e2b-8a10-5cbb0b69861b",
+        "id": "ec2e6e41-dda9-4e03-a814-a21c5a83ea8f",
         "start": "2026-11-23T08:45",
         "end": "2026-11-23T10:20",
         "name": "Senior Skate",
@@ -381,7 +391,7 @@
         "ticket": 0
       },
       {
-        "id": "e3d7d04f-5d50-4348-b8c2-15f119d7554f",
+        "id": "f72f3b9e-9987-4f2a-825a-6feca7d133e0",
         "start": "2026-11-23T12:00",
         "end": "2026-11-23T13:50",
         "name": "Stick & Puck",
@@ -389,7 +399,7 @@
         "ticket": 10
       },
       {
-        "id": "a39dfbc2-78fd-4784-ae58-178e407969ec",
+        "id": "f74be406-e2d6-42d8-a32d-debf33deb4c0",
         "start": "2026-11-23T15:30",
         "end": "2026-11-23T16:20",
         "name": "Stick & Puck",
@@ -397,7 +407,7 @@
         "ticket": 10
       },
       {
-        "id": "49ad985a-7c7e-4a22-a51a-535012128891",
+        "id": "ac2d9fa7-9801-485b-98a4-73715c965e69",
         "start": "2026-11-24T12:00",
         "end": "2026-11-24T13:50",
         "name": "Stick & Puck",
@@ -405,7 +415,7 @@
         "ticket": 10
       },
       {
-        "id": "8489a451-1835-4d52-9173-f2219444287a",
+        "id": "b402b220-aecc-4c98-8162-4476ff942d67",
         "start": "2026-11-24T15:30",
         "end": "2026-11-24T16:20",
         "name": "Stick & Puck",
@@ -413,7 +423,7 @@
         "ticket": 10
       },
       {
-        "id": "dc71e2c2-7082-4866-aa5e-a2a515987408",
+        "id": "d15ce916-d5d8-4c4a-94d1-50ee7783ac40",
         "start": "2026-11-25T10:00",
         "end": "2026-11-25T10:50",
         "name": "Senior Skate",
@@ -421,7 +431,7 @@
         "ticket": 0
       },
       {
-        "id": "11ad0538-2587-4afa-acc0-faa8d21eceae",
+        "id": "9799f8ed-af3d-4765-9c6a-f872facdde98",
         "start": "2026-11-25T12:15",
         "end": "2026-11-25T14:05",
         "name": "Stick & Puck",
@@ -429,7 +439,7 @@
         "ticket": 10
       },
       {
-        "id": "2aff61e3-dc1a-4291-af53-0aca0f1280fd",
+        "id": "424fa853-d2e8-4110-91b5-03289b7975f9",
         "start": "2026-11-25T15:30",
         "end": "2026-11-25T16:20",
         "name": "Stick & Puck",
@@ -437,7 +447,7 @@
         "ticket": 10
       },
       {
-        "id": "4b54de95-5a07-43bf-9bf8-f93641c8d74a",
+        "id": "d2af7ca0-8243-4203-8798-96c34b10fd00",
         "start": "2026-11-25T16:00",
         "end": "2026-11-25T16:50",
         "name": "Stick & Puck Instruction",
@@ -445,7 +455,7 @@
         "ticket": 20
       },
       {
-        "id": "7cd5e5b1-0787-45e8-b789-61c27e3a87ff",
+        "id": "9633ec28-a718-4ac3-b632-25d81f7ba446",
         "start": "2026-11-26T12:00",
         "end": "2026-11-26T13:50",
         "name": "Stick & Puck",
@@ -453,7 +463,7 @@
         "ticket": 10
       },
       {
-        "id": "b241ba35-c633-4f5f-8b9a-63901c4391b1",
+        "id": "c7eb02b0-2bb4-4006-b6cf-6e61b505d43b",
         "start": "2026-11-26T15:30",
         "end": "2026-11-26T16:20",
         "name": "Stick & Puck",
@@ -461,7 +471,7 @@
         "ticket": 10
       },
       {
-        "id": "6d13a959-f386-458d-ae19-d216ac825bf2",
+        "id": "fea6fad6-ca55-4ecc-ac72-6b6bd526a5c3",
         "start": "2026-11-27T12:45",
         "end": "2026-11-27T13:35",
         "name": "Stick & Puck",
@@ -469,7 +479,7 @@
         "ticket": 10
       },
       {
-        "id": "fd59d9f0-ae1c-4938-a512-c1072d410fc9",
+        "id": "4018f491-eabd-44a0-8a31-f28f33545cd5",
         "start": "2026-11-27T14:15",
         "end": "2026-11-27T15:05",
         "name": "Public Skating",
@@ -477,7 +487,7 @@
         "ticket": 5
       },
       {
-        "id": "0a04c806-3395-42f1-9f39-84ad726f53fe",
+        "id": "fe3bfe53-e265-4399-9fd9-92607989e9b2",
         "start": "2026-11-27T14:30",
         "end": "2026-11-27T15:20",
         "name": "Stick & Puck Instruction",
@@ -485,7 +495,7 @@
         "ticket": 20
       },
       {
-        "id": "9e0ab01f-dd09-4cdc-8d5b-ed1cd14058e0",
+        "id": "22dccbbb-2d4e-410d-a4a9-abf02ae774bf",
         "start": "2026-11-27T15:45",
         "end": "2026-11-27T16:35",
         "name": "Stick & Puck",
@@ -493,7 +503,7 @@
         "ticket": 10
       },
       {
-        "id": "39261479-5207-4dc8-ae44-e85a291060c5",
+        "id": "04742bac-1b65-46ca-b69e-4e29d3e14295",
         "start": "2026-11-27T22:15",
         "end": "2026-11-27T23:05",
         "name": "Shinny",
@@ -501,7 +511,7 @@
         "ticket": 10
       },
       {
-        "id": "85c28ae8-ad85-4fd6-8232-5bebd6fe38ef",
+        "id": "b1c0462f-e3fc-4da0-a234-db98be6dd3ec",
         "start": "2026-11-27T22:15",
         "end": "2026-11-27T23:05",
         "name": "Shinny (Goalie Signup)",
@@ -509,7 +519,7 @@
         "ticket": 0
       },
       {
-        "id": "a1f71b9d-a51c-494c-9ffa-3dfde50e4ce9",
+        "id": "02b3a934-f841-4e76-b5fd-38f57f15dfbb",
         "start": "2026-11-30T08:45",
         "end": "2026-11-30T10:20",
         "name": "Senior Skate",
@@ -517,7 +527,7 @@
         "ticket": 0
       },
       {
-        "id": "9d43afe5-8513-4975-8730-dd80659c6168",
+        "id": "ea78eac1-8a3e-4471-a1bd-58d836827a1f",
         "start": "2026-11-30T12:00",
         "end": "2026-11-30T13:50",
         "name": "Stick & Puck",
@@ -525,7 +535,7 @@
         "ticket": 10
       },
       {
-        "id": "00142750-aacb-4d6c-8eb4-e4a543712cf9",
+        "id": "c7afeec1-c210-4ed5-a4a9-6e8a21c0d8c6",
         "start": "2026-11-30T15:30",
         "end": "2026-11-30T16:20",
         "name": "Stick & Puck",
@@ -533,7 +543,7 @@
         "ticket": 10
       },
       {
-        "id": "be5fb566-fc15-4bd0-854a-5517c980201f",
+        "id": "038b0cc9-ca9d-4d31-9f80-247c6b805f9b",
         "start": "2026-12-01T12:00",
         "end": "2026-12-01T13:50",
         "name": "Stick & Puck",
@@ -541,7 +551,7 @@
         "ticket": 10
       },
       {
-        "id": "95071f0e-55eb-4d60-945e-5577a1528169",
+        "id": "fc940db7-9525-4356-b6d3-306618b2f89a",
         "start": "2026-12-01T15:30",
         "end": "2026-12-01T16:20",
         "name": "Stick & Puck",
@@ -549,7 +559,7 @@
         "ticket": 10
       },
       {
-        "id": "2935b636-45b0-40a7-b108-b7437c29dd41",
+        "id": "9338a69d-2aa7-4dc4-8f21-3b816b4238e4",
         "start": "2026-12-02T08:45",
         "end": "2026-12-02T10:05",
         "name": "Senior Skate",
@@ -557,7 +567,7 @@
         "ticket": 0
       },
       {
-        "id": "4d83c10c-f279-4274-b623-246e0db4028a",
+        "id": "2feed04b-dd3e-419d-b93c-1772905a8d2c",
         "start": "2026-12-02T12:15",
         "end": "2026-12-02T14:05",
         "name": "Stick & Puck",
@@ -565,7 +575,7 @@
         "ticket": 10
       },
       {
-        "id": "d045318f-a912-4451-9620-59e45240d110",
+        "id": "b9cf26dc-03fa-4bd4-9c7a-12c951f02783",
         "start": "2026-12-02T15:30",
         "end": "2026-12-02T16:20",
         "name": "Stick & Puck",
@@ -573,7 +583,7 @@
         "ticket": 10
       },
       {
-        "id": "c16a8b79-5c61-44f0-8f67-c3d096e937eb",
+        "id": "393dbc13-91bb-4d69-ba42-334712004c31",
         "start": "2026-12-02T16:00",
         "end": "2026-12-02T16:50",
         "name": "Stick & Puck Instruction",
@@ -581,7 +591,7 @@
         "ticket": 20
       },
       {
-        "id": "10350480-5b0b-44be-8cf2-9f19884feab7",
+        "id": "65a8951b-6aff-47e1-90de-5f0a914853db",
         "start": "2026-12-03T12:00",
         "end": "2026-12-03T13:50",
         "name": "Stick & Puck",
@@ -589,7 +599,7 @@
         "ticket": 10
       },
       {
-        "id": "69552bc5-d275-4d3f-ab9d-bc0eb42a9af8",
+        "id": "1748b162-1266-4c57-b633-59d5f7b0df5b",
         "start": "2026-12-03T15:30",
         "end": "2026-12-03T16:20",
         "name": "Stick & Puck",
@@ -597,7 +607,7 @@
         "ticket": 10
       },
       {
-        "id": "613e06e2-a00a-4f6b-bd58-ea1b01c6e08c",
+        "id": "35cf7be5-2db2-448b-8fae-17043a39c6d5",
         "start": "2026-12-04T22:15",
         "end": "2026-12-04T23:05",
         "name": "Shinny",
@@ -605,7 +615,7 @@
         "ticket": 10
       },
       {
-        "id": "cf099e26-7923-4bff-ad25-d97dd88ea912",
+        "id": "992c7d42-81cf-4539-b8d8-93431378d0bd",
         "start": "2026-12-04T22:15",
         "end": "2026-12-04T23:05",
         "name": "Shinny (Goalie Signup)",
