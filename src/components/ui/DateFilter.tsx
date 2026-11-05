@@ -31,6 +31,9 @@ interface FilterChipsProps {
   onTypesChange: (types: ProgramType[]) => void;
   amenities: string[];
   onAmenitiesChange: (amenities: string[]) => void;
+  sortBy: "time" | "distance";
+  onSortChange: (sortBy: "time" | "distance") => void;
+  hasLocation: boolean;
   className?: string;
 }
 
@@ -112,6 +115,9 @@ export function FilterChips({
   onTypesChange,
   amenities,
   onAmenitiesChange,
+  sortBy,
+  onSortChange,
+  hasLocation,
   className = "",
 }: FilterChipsProps) {
   const { t, i18n } = useTranslation();
@@ -253,6 +259,9 @@ export function FilterChips({
         onTypesChange={onTypesChange}
         amenities={amenities}
         onAmenitiesChange={onAmenitiesChange}
+        sortBy={sortBy}
+        onSortChange={onSortChange}
+        hasLocation={hasLocation}
       />
 
       <Button

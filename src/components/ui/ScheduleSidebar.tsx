@@ -1,12 +1,13 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
 import type { Venue } from "@/types/venue";
 import type { ProgramItem } from "@/types/schedule";
 import { ProgramList } from "@/components/schedule/ProgramList";
 import { LanguageToggle } from "@/components/LanguageToggle";
+import { distanceKm } from "@/lib/schedule";
 import {
   Drawer,
   DrawerContent,
@@ -22,6 +23,7 @@ type ScheduleSidebarProps = {
   userLocation?: { lat: number; lon: number } | null;
   onSelectVenue: (venue: Venue) => void;
   detailOpen: boolean;
+  sortBy: "time" | "distance";
 };
 
 const DESKTOP_QUERY = "(min-width: 1024px)";
@@ -136,6 +138,7 @@ export function ScheduleSidebar({
   userLocation,
   onSelectVenue,
   detailOpen,
+  sortBy,
 }: ScheduleSidebarProps) {
   const { t } = useTranslation();
   const [open, setOpen] = useState(true);
@@ -145,6 +148,17 @@ export function ScheduleSidebar({
   useEffect(() => {
     if (!isDesktop) setOpen(!detailOpen);
   }, [detailOpen, isDesktop]);
+
+  const sortedItems = useMemo(() => {
+    if (sortBy !== "distance" || !userLocation) return items;
+    const dist = (item: ProgramItem) => {
+      const c = item.venue.coordinates;
+      return c && isFinite(c.lat) && isFinite(c.lon)
+        ? distanceKm(userLocation.lat, userLocation.lon, c.lat, c.lon)
+        : Infinity;
+    };
+    return [...items].sort((a, b) => dist(a) - dist(b));
+  }, [items, sortBy, userLocation]);
 
   const programCount = t("sidebar.programsFound", { count: items.length });
 
@@ -166,7 +180,7 @@ export function ScheduleSidebar({
           </div>
 
           <ProgramList
-            items={items}
+            items={sortedItems}
             loading={loading}
             userLocation={userLocation}
             onSelectVenue={onSelectVenue}
@@ -208,7 +222,7 @@ export function ScheduleSidebar({
         >
           <div className="min-h-0 flex-1 overflow-y-auto px-4 pb-6 group-data-[at-max-height=false]/drawer-popup:overflow-hidden">
             <ProgramList
-              items={items}
+              items={sortedItems}
               loading={loading}
               userLocation={userLocation}
               onSelectVenue={onSelectVenue}

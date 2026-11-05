@@ -58,6 +58,9 @@ interface FiltersControlProps {
   onTypesChange: (types: ProgramType[]) => void;
   amenities: string[];
   onAmenitiesChange: (amenities: string[]) => void;
+  sortBy: "time" | "distance";
+  onSortChange: (sortBy: "time" | "distance") => void;
+  hasLocation: boolean;
   className?: string;
 }
 
@@ -65,17 +68,20 @@ function ToggleRow({
   checked,
   label,
   onClick,
+  disabled,
 }: {
   checked: boolean;
   label: string;
   onClick: () => void;
+  disabled?: boolean;
 }) {
   return (
     <Button
       variant="ghost"
-      size="lg"
-      className="justify-start font-normal"
+      size="sm"
+      className="w-full justify-start font-normal"
       aria-pressed={checked}
+      disabled={disabled}
       onClick={onClick}
     >
       <span className="flex-1 text-left">{label}</span>
@@ -126,6 +132,9 @@ export function FiltersControl({
   onTypesChange,
   amenities,
   onAmenitiesChange,
+  sortBy,
+  onSortChange,
+  hasLocation,
   className = "",
 }: FiltersControlProps) {
   const { t } = useTranslation();
@@ -155,6 +164,20 @@ export function FiltersControl({
 
   const body = (
     <div className="flex min-h-0 flex-1 flex-col gap-4 overflow-y-auto p-4 pt-2">
+      <Section title={t("filters.sortBy")}>
+        <ToggleRow
+          checked={sortBy === "time"}
+          label={t("filters.sortSoonest")}
+          onClick={() => onSortChange("time")}
+        />
+        <ToggleRow
+          checked={sortBy === "distance"}
+          label={t("filters.sortNearest")}
+          disabled={!hasLocation}
+          onClick={() => onSortChange("distance")}
+        />
+      </Section>
+
       <Section title={t("filters.programType")} count={types.length}>
         {PROGRAM_TYPES.map((type) => (
           <ToggleRow
@@ -190,7 +213,12 @@ export function FiltersControl({
       >
         {t("filters.clear")}
       </Button>
-      <Button variant="default" size="sm" onClick={() => setOpen(false)}>
+      <Button
+        variant="default"
+        size="default"
+        className="flex-1 sm:flex-none"
+        onClick={() => setOpen(false)}
+      >
         {t("filters.done")}
       </Button>
     </div>

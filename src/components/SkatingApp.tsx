@@ -72,6 +72,7 @@ export default function SkatingApp({ initialSlug }: { initialSlug?: string }) {
   const [hideEmpty, setHideEmpty] = useState(true);
   const [types, setTypes] = useState<ProgramType[]>([]);
   const [amenities, setAmenities] = useState<string[]>([]);
+  const [sortBy, setSortBy] = useState<"time" | "distance">("time");
   const [mapBounds, setMapBounds] = useState<MapBounds | null>(null);
   const [userLocation, setUserLocation] = useState<{
     lat: number;
@@ -290,6 +291,12 @@ export default function SkatingApp({ initialSlug }: { initialSlug?: string }) {
                     amenities: next.join(","),
                   });
                 }}
+                sortBy={sortBy}
+                onSortChange={(next) => {
+                  setSortBy(next);
+                  trackEvent("sort_change", { sort: next });
+                }}
+                hasLocation={!!userLocation}
               />
             </FilterBar>
           </div>
@@ -307,6 +314,7 @@ export default function SkatingApp({ initialSlug }: { initialSlug?: string }) {
           userLocation={userLocation}
           onSelectVenue={handleOpenVenue}
           detailOpen={detailSlug !== null}
+          sortBy={sortBy}
         />
       </div>
 
