@@ -1,0 +1,52 @@
+{
+  "venues": [
+    {
+      "id": "al-palladini-community-centre",
+      "name": "Al Palladini Community Centre",
+      "url": "https://vaughan.perfectmind.com/25076/Clients/BookMe4BookingPages/Classes?calendarId=84142d20-1da8-48ed-800d-31dc0c30121d&widgetId=dff88c8a-0b78-4a94-9dde-250040385300&embed=False",
+      "address": "9201 Islington Ave., Woodbridge, ON L4L 1A7",
+      "coordinates": { "lat": 43.816528, "lon": -79.597205 },
+      "type": "indoor"
+    },
+    {
+      "id": "garnet-a-williams-community-centre",
+      "name": "Garnet A. Williams Community Centre",
+      "url": "https://vaughan.perfectmind.com/25076/Clients/BookMe4BookingPages/Classes?calendarId=84142d20-1da8-48ed-800d-31dc0c30121d&widgetId=dff88c8a-0b78-4a94-9dde-250040385300&embed=False",
+      "address": "501 Clark Ave. West, Thornhill, ON L4J 4E5",
+      "coordinates": { "lat": 43.803966, "lon": -79.439973 },
+      "type": "indoor"
+    },
+    {
+      "id": "honey-barry-memorial-arena",
+      "name": "Honey & Barry Memorial Arena",
+      "url": "https://vaughan.perfectmind.com/25076/Clients/BookMe4BookingPages/Classes?calendarId=84142d20-1da8-48ed-800d-31dc0c30121d&widgetId=dff88c8a-0b78-4a94-9dde-250040385300&embed=False",
+      "address": "9600 Bathurst St, Maple, ON L6A 3Z8",
+      "coordinates": { "lat": 43.85414, "lon": -79.462445 },
+      "type": "indoor"
+    },
+    {
+      "id": "maple-community-centre",
+      "name": "Maple Community Centre",
+      "url": "https://vaughan.perfectmind.com/25076/Clients/BookMe4BookingPages/Classes?calendarId=84142d20-1da8-48ed-800d-31dc0c30121d&widgetId=dff88c8a-0b78-4a94-9dde-250040385300&embed=False",
+      "address": "10190 Keele St., Maple, ON L6A 1R7",
+      "coordinates": { "lat": 43.859882, "lon": -79.514834 },
+      "type": "indoor"
+    },
+    {
+      "id": "rosemount-community-centre",
+      "name": "Rosemount Community Centre",
+      "url": "https://vaughan.perfectmind.com/25076/Clients/BookMe4BookingPages/Classes?calendarId=84142d20-1da8-48ed-800d-31dc0c30121d&widgetId=dff88c8a-0b78-4a94-9dde-250040385300&embed=False",
+      "address": "1000 New Westminster Dr., Thornhill, ON L4J 8G3",
+      "coordinates": { "lat": 43.817858, "lon": -79.453424 },
+      "type": "indoor"
+    },
+    {
+      "id": "woodbridge-pool-memorial-arena",
+      "name": "Woodbridge Pool & Memorial Arena",
+      "url": "https://vaughan.perfectmind.com/25076/Clients/BookMe4BookingPages/Classes?calendarId=84142d20-1da8-48ed-800d-31dc0c30121d&widgetId=dff88c8a-0b78-4a94-9dde-250040385300&embed=False",
+      "address": "5020 Highway #7, Woodbridge, ON L4L 1T1",
+      "coordinates": { "lat": 43.7802455, "lon": -79.5916837 },
+      "type": "indoor"
+    }
+  ]
+}

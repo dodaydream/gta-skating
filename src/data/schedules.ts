@@ -4,6 +4,7 @@ import { slugify } from "@/lib/slug";
 import billBolton from "./bill-bolton-arena.json";
 import agincourt from "./agincourt-recreation-centre.json";
 import albion from "./albion-arena.json";
+import alPalladini from "./al-palladini-community-centre.json";
 import amesbury from "./amesbury-sports-complex.json";
 import angelaJames from "./angela-james-arena.json";
 import angusGlen from "./angus-glen-community-centre.json";
@@ -35,6 +36,7 @@ import edSackfield from "./ed-sackfield-arena.json";
 import elginBarrow from "./elgin-barrow-arena.json";
 import erinMillsTwin from "./erin-mills-twin-arena.json";
 import fenside from "./fenside-arena.json";
+import garnetAWilliams from "./garnet-a-williams-community-centre.json";
 import georgeBell from "./george-bell-arena.json";
 import gordAndIreneRisk from "./gord-and-irene-risk-community-centre.json";
 import goulding from "./goulding-community-centre.json";
@@ -42,6 +44,7 @@ import grandravine from "./grandravine-community-recreation-centre.json";
 import habitant from "./habitant-arena.json";
 import carnegie from "./herbert-h-carnegie-centennial-centre.json";
 import heronPark from "./heron-park-community-recreation-centre.json";
+import honeyBarry from "./honey-barry-memorial-arena.json";
 import huronPark from "./huron-park-recreation-centre.json";
 import iceland from "./iceland-arena.json";
 import johnBoothMemorial from "./john-booth-memorial-arena.json";
@@ -50,6 +53,7 @@ import larryGrossman from "./larry-grossman-forest-hill-arena.json";
 import leasideGardens from "./leaside-gardens.json";
 import longBranch from "./long-branch-arena.json";
 import malvern from "./malvern-recreation-centre.json";
+import mapleCommunity from "./maple-community-centre.json";
 import markhamVillage from "./markham-village-community-centre.json";
 import mattamy from "./mattamy-athletic-centre.json";
 import mcgregorPark from "./mcgregor-park-community-centre.json";
@@ -68,18 +72,21 @@ import pinePoint from "./pine-point-arena.json";
 import pleasantview from "./pleasantview-community-centre.json";
 import portCreditMemorial from "./port-credit-memorial-arena.json";
 import roding from "./roding-community-centre.json";
+import rosemount from "./rosemount-community-centre.json";
 import scarboroughGardens from "./scarborough-arena-gardens.json";
 import scarboroughVillage from "./scarborough-village-recreation-centre.json";
 import thornhill from "./thornhill-community-centre.json";
 import tomGraham from "./tom-graham-arena.json";
 import varsityCentreArena from "./varsity-centre-arena.json";
 import victoriaVillage from "./victoria-village-arena.json";
+import woodbridgePool from "./woodbridge-pool-memorial-arena.json";
 import yorkMills from "./york-mills-arena.json";
 
 export const venues: Venue[] = [
   billBolton as Venue,
   agincourt as Venue,
   albion as Venue,
+  alPalladini as Venue,
   amesbury as Venue,
   angelaJames as Venue,
   angusGlen as Venue,
@@ -111,6 +118,7 @@ export const venues: Venue[] = [
   elginBarrow as Venue,
   erinMillsTwin as Venue,
   fenside as Venue,
+  garnetAWilliams as Venue,
   georgeBell as Venue,
   gordAndIreneRisk as Venue,
   goulding as Venue,
@@ -118,6 +126,7 @@ export const venues: Venue[] = [
   habitant as Venue,
   carnegie as Venue,
   heronPark as Venue,
+  honeyBarry as Venue,
   huronPark as Venue,
   iceland as Venue,
   johnBoothMemorial as Venue,
@@ -126,6 +135,7 @@ export const venues: Venue[] = [
   leasideGardens as Venue,
   longBranch as Venue,
   malvern as Venue,
+  mapleCommunity as Venue,
   markhamVillage as Venue,
   mattamy as Venue,
   mcgregorPark as Venue,
@@ -144,12 +154,14 @@ export const venues: Venue[] = [
   pleasantview as Venue,
   portCreditMemorial as Venue,
   roding as Venue,
+  rosemount as Venue,
   scarboroughGardens as Venue,
   scarboroughVillage as Venue,
   thornhill as Venue,
   tomGraham as Venue,
   varsityCentreArena as Venue,
   victoriaVillage as Venue,
+  woodbridgePool as Venue,
   yorkMills as Venue,
 ];
 

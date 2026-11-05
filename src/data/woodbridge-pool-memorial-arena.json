@@ -1,0 +1,255 @@
+{
+  "name": "Woodbridge Pool & Memorial Arena",
+  "url": "https://vaughan.perfectmind.com/25076/Clients/BookMe4BookingPages/Classes?calendarId=84142d20-1da8-48ed-800d-31dc0c30121d&widgetId=dff88c8a-0b78-4a94-9dde-250040385300&embed=False",
+  "timezone": "America/Toronto",
+  "address": "5020 Highway #7, Woodbridge, ON L4L 1T1",
+  "coordinates": {
+    "lat": 43.7802455,
+    "lon": -79.5916837
+  },
+  "schedule": {
+    "updatedAt": "2026-11-05T01:30:42.457Z",
+    "programs": [
+      {
+        "id": "633d1adc-47b6-47c8-820d-d290e382d77b",
+        "start": "2026-11-05T10:00",
+        "end": "2026-11-05T12:00",
+        "name": "Skating - Adult Only Unsupervised",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "402c737e-1743-4b07-91d9-37384359f545",
+        "start": "2026-11-05T12:00",
+        "end": "2026-11-05T14:00",
+        "name": "Skating - Unsupervised",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "f2f87081-0ac9-474c-ae3d-c746df2dc6e3",
+        "start": "2026-11-06T12:00",
+        "end": "2026-11-06T14:00",
+        "name": "Skating - Unsupervised",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "4e31242d-eb17-44cf-9bfc-8287c5c48e88",
+        "start": "2026-11-06T17:00",
+        "end": "2026-11-06T18:30",
+        "name": "Shinny - Goalie Parent & Child Recreational",
+        "type": "Pickup Hockey",
+        "ticket": 0
+      },
+      {
+        "id": "c9e08113-1d86-4af1-8925-c47ac24a079e",
+        "start": "2026-11-06T17:00",
+        "end": "2026-11-06T18:30",
+        "name": "Shinny - Parent & Child Recreational",
+        "type": "Pickup Hockey",
+        "ticket": 22.5
+      },
+      {
+        "id": "28bcd199-6331-49b0-9203-4ebe48b516a2",
+        "start": "2026-11-07T18:05",
+        "end": "2026-11-07T19:30",
+        "name": "Shinny - Goalie Youth Recreational",
+        "type": "Pickup Hockey",
+        "ticket": 0
+      },
+      {
+        "id": "93c435d7-58d1-4011-b04e-dd9f9046bd93",
+        "start": "2026-11-07T18:05",
+        "end": "2026-11-07T19:30",
+        "name": "Shinny - Youth Recreational",
+        "type": "Pickup Hockey",
+        "ticket": 12.5
+      },
+      {
+        "id": "6e97eefb-fd47-45aa-a199-2bfa7aeeedfb",
+        "start": "2026-11-08T15:05",
+        "end": "2026-11-08T16:30",
+        "name": "Recreational Skate",
+        "type": "Public Skate",
+        "ticket": 6.75
+      },
+      {
+        "id": "beecc603-d0f9-4070-8fd2-06f33addf4e5",
+        "start": "2026-11-09T12:00",
+        "end": "2026-11-09T14:00",
+        "name": "Skating - Unsupervised",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "25596710-abfb-4382-895b-8bd9c627459e",
+        "start": "2026-11-10T10:00",
+        "end": "2026-11-10T12:00",
+        "name": "Skating - Adult Only Unsupervised",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "4559a878-4645-4799-be31-1b7b131962d6",
+        "start": "2026-11-10T12:00",
+        "end": "2026-11-10T14:00",
+        "name": "Skating - Unsupervised",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "efcc0894-d601-4ef6-ac15-6ecf42646318",
+        "start": "2026-11-10T16:00",
+        "end": "2026-11-10T17:20",
+        "name": "Shinny - Goalie Parent & Child Recreational",
+        "type": "Pickup Hockey",
+        "ticket": 0
+      },
+      {
+        "id": "c1791160-3679-44ff-b183-16855a50e060",
+        "start": "2026-11-10T16:00",
+        "end": "2026-11-10T17:20",
+        "name": "Shinny - Parent & Child Recreational",
+        "type": "Pickup Hockey",
+        "ticket": 22.5
+      },
+      {
+        "id": "199d432f-3fb0-43fc-8ce8-eccfd461bbe7",
+        "start": "2026-11-11T12:00",
+        "end": "2026-11-11T14:00",
+        "name": "Skating - Unsupervised",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "82e53db4-806c-41ef-8fdb-00e04670f137",
+        "start": "2026-11-11T19:05",
+        "end": "2026-11-11T20:30",
+        "name": "Recreational Skate",
+        "type": "Public Skate",
+        "ticket": 6.75
+      },
+      {
+        "id": "f6a38f88-ab86-4d77-9707-e5df37bc298a",
+        "start": "2026-11-12T10:00",
+        "end": "2026-11-12T12:00",
+        "name": "Skating - Adult Only Unsupervised",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "d2526671-8051-4c6b-b85a-b0b0667d7f3a",
+        "start": "2026-11-12T12:00",
+        "end": "2026-11-12T14:00",
+        "name": "Skating - Unsupervised",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "3be323c9-7969-4992-b69a-cad79667fa97",
+        "start": "2026-11-12T16:00",
+        "end": "2026-11-12T17:20",
+        "name": "Shinny - Goalie Parent & Child Unsupervised",
+        "type": "Pickup Hockey",
+        "ticket": 0
+      },
+      {
+        "id": "68639154-b86e-4231-b2fc-872608224521",
+        "start": "2026-11-12T16:00",
+        "end": "2026-11-12T17:20",
+        "name": "Shinny - Parent & Child Unsupervised",
+        "type": "Pickup Hockey",
+        "ticket": 0
+      },
+      {
+        "id": "ccee8507-1ec5-4d1e-a5af-ed78fbad83a4",
+        "start": "2026-11-13T12:00",
+        "end": "2026-11-13T14:00",
+        "name": "Skating - Unsupervised",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "663ff6af-38b2-46ad-ba9f-e7526ca066f1",
+        "start": "2026-11-13T17:00",
+        "end": "2026-11-13T18:30",
+        "name": "Shinny - Goalie Parent & Child Recreational",
+        "type": "Pickup Hockey",
+        "ticket": 0
+      },
+      {
+        "id": "97806a29-4f73-41f3-8726-0014883657d1",
+        "start": "2026-11-13T17:00",
+        "end": "2026-11-13T18:30",
+        "name": "Shinny - Parent & Child Recreational",
+        "type": "Pickup Hockey",
+        "ticket": 22.5
+      },
+      {
+        "id": "39d8847b-7e40-4477-8a27-4c1b6e2a3ffa",
+        "start": "2026-11-14T18:05",
+        "end": "2026-11-14T19:30",
+        "name": "Shinny - Goalie Youth Recreational",
+        "type": "Pickup Hockey",
+        "ticket": 0
+      },
+      {
+        "id": "dc1346ac-353d-496d-bffa-d4716e2156f9",
+        "start": "2026-11-14T18:05",
+        "end": "2026-11-14T19:30",
+        "name": "Shinny - Youth Recreational",
+        "type": "Pickup Hockey",
+        "ticket": 12.5
+      },
+      {
+        "id": "875f116c-2c4f-42d0-8034-c0bd2f7be901",
+        "start": "2026-11-15T15:05",
+        "end": "2026-11-15T16:30",
+        "name": "Recreational Skate",
+        "type": "Public Skate",
+        "ticket": 6.75
+      },
+      {
+        "id": "e9316291-0a53-4d12-be8b-7c7fa6724a9d",
+        "start": "2026-11-16T12:00",
+        "end": "2026-11-16T14:00",
+        "name": "Skating - Unsupervised",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "b35e12d3-8038-44a3-b763-05666d686970",
+        "start": "2026-11-17T10:00",
+        "end": "2026-11-17T12:00",
+        "name": "Skating - Adult Only Unsupervised",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "475b6c83-528e-4428-9cba-773c7b212407",
+        "start": "2026-11-17T12:00",
+        "end": "2026-11-17T14:00",
+        "name": "Skating - Unsupervised",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "d5977d24-8485-4246-bab7-6da38edd75d7",
+        "start": "2026-11-17T16:00",
+        "end": "2026-11-17T17:20",
+        "name": "Shinny - Goalie Parent & Child Recreational",
+        "type": "Pickup Hockey",
+        "ticket": 0
+      },
+      {
+        "id": "8f01fef8-2743-472e-b1a2-161d25da53c3",
+        "start": "2026-11-17T16:00",
+        "end": "2026-11-17T17:20",
+        "name": "Shinny - Parent & Child Recreational",
+        "type": "Pickup Hockey",
+        "ticket": 22.5
+      }
+    ]
+  }
+}

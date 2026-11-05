@@ -1,0 +1,31 @@
+{
+  "name": "Honey & Barry Memorial Arena",
+  "url": "https://vaughan.perfectmind.com/25076/Clients/BookMe4BookingPages/Classes?calendarId=84142d20-1da8-48ed-800d-31dc0c30121d&widgetId=dff88c8a-0b78-4a94-9dde-250040385300&embed=False",
+  "timezone": "America/Toronto",
+  "address": "9600 Bathurst St, Maple, ON L6A 3Z8",
+  "coordinates": {
+    "lat": 43.85414,
+    "lon": -79.462445
+  },
+  "schedule": {
+    "updatedAt": "2026-11-05T01:30:42.456Z",
+    "programs": [
+      {
+        "id": "76be66cd-0db8-4737-a462-3f458b2ee9b2",
+        "start": "2026-11-07T16:15",
+        "end": "2026-11-07T17:30",
+        "name": "Recreational Skate",
+        "type": "Public Skate",
+        "ticket": 6.25
+      },
+      {
+        "id": "2039c62d-e512-4d00-8012-437b7e263e37",
+        "start": "2026-11-14T16:15",
+        "end": "2026-11-14T17:30",
+        "name": "Recreational Skate",
+        "type": "Public Skate",
+        "ticket": 6.25
+      }
+    ]
+  }
+}

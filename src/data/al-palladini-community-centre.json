@@ -1,0 +1,391 @@
+{
+  "name": "Al Palladini Community Centre",
+  "url": "https://vaughan.perfectmind.com/25076/Clients/BookMe4BookingPages/Classes?calendarId=84142d20-1da8-48ed-800d-31dc0c30121d&widgetId=dff88c8a-0b78-4a94-9dde-250040385300&embed=False",
+  "timezone": "America/Toronto",
+  "address": "9201 Islington Ave., Woodbridge, ON L4L 1A7",
+  "coordinates": {
+    "lat": 43.816528,
+    "lon": -79.597205
+  },
+  "schedule": {
+    "updatedAt": "2026-11-05T01:30:42.453Z",
+    "programs": [
+      {
+        "id": "e9d214dc-25e7-4aa6-a207-7d668c5e2d5c",
+        "start": "2026-11-05T07:00",
+        "end": "2026-11-05T08:00",
+        "name": "Skating - Unsupervised",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "b7c90a25-3b7e-412c-9535-051d9cfad260",
+        "start": "2026-11-05T11:00",
+        "end": "2026-11-05T12:00",
+        "name": "Skating - Unsupervised",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "3b201c6f-c379-45db-8f8a-14090b32b3df",
+        "start": "2026-11-05T12:30",
+        "end": "2026-11-05T14:00",
+        "name": "Shinny - Adult Unsupervised",
+        "type": "Pickup Hockey",
+        "ticket": 0
+      },
+      {
+        "id": "115ac5c3-69dd-4d8c-a5da-4b34c89da26b",
+        "start": "2026-11-05T12:30",
+        "end": "2026-11-05T14:00",
+        "name": "Shinny - Goalie Adult Unsupervised",
+        "type": "Pickup Hockey",
+        "ticket": 0
+      },
+      {
+        "id": "31fcd02f-7a52-4bb4-ac60-a7600ec3a5c6",
+        "start": "2026-11-05T14:15",
+        "end": "2026-11-05T15:45",
+        "name": "Skating - Ticket Ice Figure Skating – Unsupervised",
+        "type": "Figure Skating",
+        "ticket": 10.5
+      },
+      {
+        "id": "02757fa4-2877-41a1-b661-0e5f3d450971",
+        "start": "2026-11-05T19:30",
+        "end": "2026-11-05T21:00",
+        "name": "Recreational Skate",
+        "type": "Public Skate",
+        "ticket": 6.75
+      },
+      {
+        "id": "d7ed56fe-1e18-4e9c-9205-fb0e1f03b79b",
+        "start": "2026-11-06T12:00",
+        "end": "2026-11-06T13:30",
+        "name": "Skating - Unsupervised",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "c63ee579-75d2-4579-8557-1b07b99ac346",
+        "start": "2026-11-06T16:15",
+        "end": "2026-11-06T17:45",
+        "name": "Shinny - Goalie Parent & Child Recreational",
+        "type": "Pickup Hockey",
+        "ticket": 0
+      },
+      {
+        "id": "b5c5ba33-dbb2-4af9-95c7-b9bfd260c837",
+        "start": "2026-11-06T16:15",
+        "end": "2026-11-06T17:45",
+        "name": "Shinny - Parent & Child Recreational",
+        "type": "Pickup Hockey",
+        "ticket": 22.5
+      },
+      {
+        "id": "2f55d5ac-aa65-4661-bcc2-70e661f8a208",
+        "start": "2026-11-07T19:00",
+        "end": "2026-11-07T20:30",
+        "name": "Recreational Skate",
+        "type": "Public Skate",
+        "ticket": 6.75
+      },
+      {
+        "id": "cecd392e-c88e-44b5-bdd2-9978b082ed1d",
+        "start": "2026-11-08T13:05",
+        "end": "2026-11-08T14:30",
+        "name": "Recreational Skate",
+        "type": "Public Skate",
+        "ticket": 6.75
+      },
+      {
+        "id": "bbdffc46-c9f1-41cd-acff-df1c1603ae23",
+        "start": "2026-11-09T07:00",
+        "end": "2026-11-09T09:00",
+        "name": "Skating - Ticket Ice Figure Skating – Unsupervised",
+        "type": "Figure Skating",
+        "ticket": 10.5
+      },
+      {
+        "id": "20138320-efca-48ea-bebc-a0294714bd0f",
+        "start": "2026-11-09T11:00",
+        "end": "2026-11-09T13:30",
+        "name": "Skating - Unsupervised",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "e8cdcb91-9bc6-4b5c-a966-138564ffce14",
+        "start": "2026-11-09T14:15",
+        "end": "2026-11-09T15:45",
+        "name": "Skating - Ticket Ice Figure Skating – Unsupervised",
+        "type": "Figure Skating",
+        "ticket": 10.5
+      },
+      {
+        "id": "cc45b27c-ed8d-4b69-b1e5-1bed94cc43fa",
+        "start": "2026-11-09T16:15",
+        "end": "2026-11-09T17:45",
+        "name": "Shinny - Child Recreational",
+        "type": "Pickup Hockey",
+        "ticket": 12
+      },
+      {
+        "id": "6e985ccb-5a35-4176-9373-950ca1422f40",
+        "start": "2026-11-09T16:15",
+        "end": "2026-11-09T17:45",
+        "name": "Shinny - Goalie Child Recreational",
+        "type": "Pickup Hockey",
+        "ticket": 0
+      },
+      {
+        "id": "ffbf8a06-a53b-424a-aa24-c2a8e75003b5",
+        "start": "2026-11-10T07:00",
+        "end": "2026-11-10T08:00",
+        "name": "Skating - Unsupervised",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "8b67afdb-59ca-4d5a-bf40-30c463599b4b",
+        "start": "2026-11-10T11:00",
+        "end": "2026-11-10T12:00",
+        "name": "Skating - Unsupervised",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "4153d2ab-ae02-461d-a312-00848279d1ab",
+        "start": "2026-11-10T12:30",
+        "end": "2026-11-10T14:00",
+        "name": "Shinny - Adult Unsupervised",
+        "type": "Pickup Hockey",
+        "ticket": 0
+      },
+      {
+        "id": "8a5b9519-4cb0-44b3-9fac-d1e0135eb7ea",
+        "start": "2026-11-10T12:30",
+        "end": "2026-11-10T14:00",
+        "name": "Shinny - Goalie Adult Unsupervised",
+        "type": "Pickup Hockey",
+        "ticket": 0
+      },
+      {
+        "id": "14aa9fe3-6fa6-4cdb-9e5a-1465049089e7",
+        "start": "2026-11-10T14:15",
+        "end": "2026-11-10T15:45",
+        "name": "Skating - Ticket Ice Figure Skating – Unsupervised",
+        "type": "Figure Skating",
+        "ticket": 10.5
+      },
+      {
+        "id": "becab294-3e04-4710-b8a0-c71a14cf73e4",
+        "start": "2026-11-11T07:00",
+        "end": "2026-11-11T08:00",
+        "name": "Shinny - Goalie Parent & Child Unsupervised",
+        "type": "Pickup Hockey",
+        "ticket": 0
+      },
+      {
+        "id": "787cf472-3f45-4399-b80b-110698a0aa05",
+        "start": "2026-11-11T07:00",
+        "end": "2026-11-11T08:00",
+        "name": "Shinny - Parent & Child Unsupervised",
+        "type": "Pickup Hockey",
+        "ticket": 0
+      },
+      {
+        "id": "d9fc0822-0c9e-4a24-8bca-15145f4df121",
+        "start": "2026-11-11T07:00",
+        "end": "2026-11-11T08:00",
+        "name": "Skating - Ticket Ice Figure Skating – Unsupervised",
+        "type": "Figure Skating",
+        "ticket": 10.5
+      },
+      {
+        "id": "d4d87182-dfb6-45d0-af07-647d6f180859",
+        "start": "2026-11-11T08:00",
+        "end": "2026-11-11T09:00",
+        "name": "Skating - Unsupervised",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "404c4321-5e75-4edb-bcaa-2a54b8d4b4a2",
+        "start": "2026-11-11T11:00",
+        "end": "2026-11-11T13:30",
+        "name": "Skating - Unsupervised",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "b17bea1c-7f17-4b91-8081-900dde70e49d",
+        "start": "2026-11-11T14:15",
+        "end": "2026-11-11T15:45",
+        "name": "Skating - Ticket Ice Figure Skating – Unsupervised",
+        "type": "Figure Skating",
+        "ticket": 10.5
+      },
+      {
+        "id": "b53c66b2-ee1f-41d3-8ace-3a8722b13212",
+        "start": "2026-11-11T16:00",
+        "end": "2026-11-11T17:20",
+        "name": "Shinny - Goalie Parent & Child Recreational",
+        "type": "Pickup Hockey",
+        "ticket": 0
+      },
+      {
+        "id": "8da0c389-29a5-49c4-ba68-e5269acf981f",
+        "start": "2026-11-11T16:00",
+        "end": "2026-11-11T17:20",
+        "name": "Shinny - Parent & Child Recreational",
+        "type": "Pickup Hockey",
+        "ticket": 22.5
+      },
+      {
+        "id": "75b78088-2257-4f8e-9993-574801d5ac54",
+        "start": "2026-11-12T07:00",
+        "end": "2026-11-12T08:00",
+        "name": "Skating - Unsupervised",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "e16f95c7-8546-4674-bff8-f6a04cb50d74",
+        "start": "2026-11-12T11:00",
+        "end": "2026-11-12T12:00",
+        "name": "Skating - Unsupervised",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "6c51fff4-cd6d-45b5-945b-5ef5fe77ac44",
+        "start": "2026-11-12T12:30",
+        "end": "2026-11-12T14:00",
+        "name": "Shinny - Adult Unsupervised",
+        "type": "Pickup Hockey",
+        "ticket": 0
+      },
+      {
+        "id": "855cd139-3ce0-4c95-86cb-4c2b8d7e39bc",
+        "start": "2026-11-12T12:30",
+        "end": "2026-11-12T14:00",
+        "name": "Shinny - Goalie Adult Unsupervised",
+        "type": "Pickup Hockey",
+        "ticket": 0
+      },
+      {
+        "id": "263117ff-0179-4290-a52e-b33f19afa711",
+        "start": "2026-11-12T14:15",
+        "end": "2026-11-12T15:45",
+        "name": "Skating - Ticket Ice Figure Skating – Unsupervised",
+        "type": "Figure Skating",
+        "ticket": 10.5
+      },
+      {
+        "id": "341a3674-f662-495a-ba7d-86bdd8b00ff3",
+        "start": "2026-11-12T19:30",
+        "end": "2026-11-12T21:00",
+        "name": "Recreational Skate",
+        "type": "Public Skate",
+        "ticket": 6.75
+      },
+      {
+        "id": "9344ce8e-7945-4d96-8b44-c40a4d064fe7",
+        "start": "2026-11-14T19:00",
+        "end": "2026-11-14T20:30",
+        "name": "Recreational Skate",
+        "type": "Public Skate",
+        "ticket": 6.75
+      },
+      {
+        "id": "784f6188-d497-49b9-a71c-fe9a933dc647",
+        "start": "2026-11-15T13:05",
+        "end": "2026-11-15T14:30",
+        "name": "Recreational Skate",
+        "type": "Public Skate",
+        "ticket": 6.75
+      },
+      {
+        "id": "3dcae866-99a8-4bd1-947c-628f1c2d091b",
+        "start": "2026-11-16T07:00",
+        "end": "2026-11-16T09:00",
+        "name": "Skating - Ticket Ice Figure Skating – Unsupervised",
+        "type": "Figure Skating",
+        "ticket": 10.5
+      },
+      {
+        "id": "6e0e7e2a-5eab-4745-b0d5-0832fd8c2074",
+        "start": "2026-11-16T11:00",
+        "end": "2026-11-16T13:30",
+        "name": "Skating - Unsupervised",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "e82a7839-d415-4435-a37e-0d3f9b73f622",
+        "start": "2026-11-16T14:15",
+        "end": "2026-11-16T15:45",
+        "name": "Skating - Ticket Ice Figure Skating – Unsupervised",
+        "type": "Figure Skating",
+        "ticket": 10.5
+      },
+      {
+        "id": "93cd2d28-3847-4829-bce8-ad728520b040",
+        "start": "2026-11-16T16:15",
+        "end": "2026-11-16T17:45",
+        "name": "Shinny - Child Recreational",
+        "type": "Pickup Hockey",
+        "ticket": 12
+      },
+      {
+        "id": "0c12c8dd-f10f-4033-a4f5-b31a945be4ab",
+        "start": "2026-11-16T16:15",
+        "end": "2026-11-16T17:45",
+        "name": "Shinny - Goalie Child Recreational",
+        "type": "Pickup Hockey",
+        "ticket": 0
+      },
+      {
+        "id": "4d887c64-1911-4862-ac04-b534a24813a5",
+        "start": "2026-11-17T07:00",
+        "end": "2026-11-17T08:00",
+        "name": "Skating - Unsupervised",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "f0690df4-90fb-460d-8a0b-91987210108b",
+        "start": "2026-11-17T11:00",
+        "end": "2026-11-17T12:00",
+        "name": "Skating - Unsupervised",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "07ac7930-ea91-4238-8e8a-4a7af1ca77c8",
+        "start": "2026-11-17T12:30",
+        "end": "2026-11-17T14:00",
+        "name": "Shinny - Adult Unsupervised",
+        "type": "Pickup Hockey",
+        "ticket": 0
+      },
+      {
+        "id": "ab9e4f5c-6aef-4d0b-b578-46e07b2efc22",
+        "start": "2026-11-17T12:30",
+        "end": "2026-11-17T14:00",
+        "name": "Shinny - Goalie Adult Unsupervised",
+        "type": "Pickup Hockey",
+        "ticket": 0
+      },
+      {
+        "id": "aeffbb45-3068-4e50-830c-2d6b8764a01b",
+        "start": "2026-11-17T14:15",
+        "end": "2026-11-17T15:45",
+        "name": "Skating - Ticket Ice Figure Skating – Unsupervised",
+        "type": "Figure Skating",
+        "ticket": 10.5
+      }
+    ]
+  }
+}

@@ -1,0 +1,151 @@
+{
+  "name": "Rosemount Community Centre",
+  "url": "https://vaughan.perfectmind.com/25076/Clients/BookMe4BookingPages/Classes?calendarId=84142d20-1da8-48ed-800d-31dc0c30121d&widgetId=dff88c8a-0b78-4a94-9dde-250040385300&embed=False",
+  "timezone": "America/Toronto",
+  "address": "1000 New Westminster Dr., Thornhill, ON L4J 8G3",
+  "coordinates": {
+    "lat": 43.817858,
+    "lon": -79.453424
+  },
+  "schedule": {
+    "updatedAt": "2026-11-05T01:30:42.457Z",
+    "programs": [
+      {
+        "id": "29c5289c-c4a0-4bac-8a41-526a5bedb22e",
+        "start": "2026-11-05T12:00",
+        "end": "2026-11-05T14:00",
+        "name": "Skating - Unsupervised",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "40e9d272-2f59-43a4-bc6a-c7d9975ae639",
+        "start": "2026-11-06T16:00",
+        "end": "2026-11-06T17:30",
+        "name": "Shinny - Goalie Youth Recreational",
+        "type": "Pickup Hockey",
+        "ticket": 0
+      },
+      {
+        "id": "8303324f-232e-4655-b762-f68b11bec233",
+        "start": "2026-11-06T16:00",
+        "end": "2026-11-06T17:30",
+        "name": "Shinny - Youth Recreational",
+        "type": "Pickup Hockey",
+        "ticket": 12.5
+      },
+      {
+        "id": "7d1a978a-e034-4f54-8422-b63ce2d3d8f0",
+        "start": "2026-11-07T14:05",
+        "end": "2026-11-07T16:00",
+        "name": "Recreational Skate",
+        "type": "Public Skate",
+        "ticket": 6.75
+      },
+      {
+        "id": "591cd37b-0914-4b67-a87e-403d21074be9",
+        "start": "2026-11-09T12:00",
+        "end": "2026-11-09T14:00",
+        "name": "Skating - Unsupervised",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "0df06b34-6651-4def-8b59-446bbaacb201",
+        "start": "2026-11-09T19:05",
+        "end": "2026-11-09T20:30",
+        "name": "Skating - Unsupervised",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "a55ed010-48c6-4906-a63e-a5cf0c311b1e",
+        "start": "2026-11-10T12:00",
+        "end": "2026-11-10T14:00",
+        "name": "Skating - Older Adult Only Unsupervised",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "beed93ec-61ae-40c1-b361-e0e4d05d632a",
+        "start": "2026-11-11T11:45",
+        "end": "2026-11-11T12:45",
+        "name": "Shinny - Adult Unsupervised",
+        "type": "Pickup Hockey",
+        "ticket": 0
+      },
+      {
+        "id": "1f96688c-48d8-45d8-aac0-b317c3a906a4",
+        "start": "2026-11-11T11:45",
+        "end": "2026-11-11T12:45",
+        "name": "Shinny - Goalie Adult Unsupervised",
+        "type": "Pickup Hockey",
+        "ticket": 0
+      },
+      {
+        "id": "c262c4e6-eae2-43b6-9995-d624ee5e4dc8",
+        "start": "2026-11-11T16:30",
+        "end": "2026-11-11T17:50",
+        "name": "Shinny - Goalie Parent & Child Recreational",
+        "type": "Pickup Hockey",
+        "ticket": 0
+      },
+      {
+        "id": "e06963b3-c4df-4944-94c8-7141b572835b",
+        "start": "2026-11-11T16:30",
+        "end": "2026-11-11T17:50",
+        "name": "Shinny - Parent & Child Recreational",
+        "type": "Pickup Hockey",
+        "ticket": 22.5
+      },
+      {
+        "id": "a0533481-b8c3-41c8-a5d2-7ff545f19a61",
+        "start": "2026-11-11T19:05",
+        "end": "2026-11-11T20:30",
+        "name": "Recreational Skate",
+        "type": "Public Skate",
+        "ticket": 6.75
+      },
+      {
+        "id": "4728dced-459f-4d84-944c-e5e1a6831fd7",
+        "start": "2026-11-12T12:00",
+        "end": "2026-11-12T14:00",
+        "name": "Skating - Unsupervised",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "b75db988-3a17-4612-8791-d4444c90f3a1",
+        "start": "2026-11-14T14:05",
+        "end": "2026-11-14T16:00",
+        "name": "Recreational Skate",
+        "type": "Public Skate",
+        "ticket": 6.75
+      },
+      {
+        "id": "4bc1d119-f329-422c-851e-9dedbd736d59",
+        "start": "2026-11-16T12:00",
+        "end": "2026-11-16T14:00",
+        "name": "Skating - Unsupervised",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "40222a0f-295e-483f-9825-7d05b5b049cd",
+        "start": "2026-11-16T19:05",
+        "end": "2026-11-16T20:30",
+        "name": "Skating - Unsupervised",
+        "type": "Public Skate",
+        "ticket": 0
+      },
+      {
+        "id": "f543b076-c2bf-4839-a016-f8d946f977d7",
+        "start": "2026-11-17T12:00",
+        "end": "2026-11-17T14:00",
+        "name": "Skating - Older Adult Only Unsupervised",
+        "type": "Public Skate",
+        "ticket": 0
+      }
+    ]
+  }
+}

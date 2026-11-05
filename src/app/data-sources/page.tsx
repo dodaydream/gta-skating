@@ -31,9 +31,19 @@ const SOURCES: {
     title: "Parks & Recreation Facility Listings – City of Toronto",
   },
   {
+    name: "City of Markham",
+    href: "https://cityofmarkham.perfectmind.com/Clients/BookMe4BookingPages/Classes?calendarId=ecf5202d-4c97-4f89-b4e3-42966a1cc453&widgetId=6825ea71-e5b7-4c2a-948f-9195507ad90a&embed=False",
+    title: "Drop-In Skating – City of Markham",
+  },
+  {
     name: "City of Mississauga",
     href: "https://anc.ca.apm.activecommunities.com/activemississauga/calendars?defaultCalendarId=1&categoryIds=52&view=2",
     title: "Drop-In Recreation – City of Mississauga",
+  },
+  {
+    name: "City of Vaughan",
+    href: "https://vaughan.perfectmind.com/25076/Clients/BookMe4BookingPages/Classes?calendarId=84142d20-1da8-48ed-800d-31dc0c30121d&widgetId=dff88c8a-0b78-4a94-9dde-250040385300&embed=False",
+    title: "Drop-In Skating – City of Vaughan",
   },
   {
     name: "George Bell Arena",
