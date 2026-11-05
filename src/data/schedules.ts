@@ -38,6 +38,7 @@ import edSackfield from "./ed-sackfield-arena.json";
 import elginBarrow from "./elgin-barrow-arena.json";
 import erinMillsTwin from "./erin-mills-twin-arena.json";
 import fenside from "./fenside-arena.json";
+import fieldgate from "./fieldgate-sports-complex.json";
 import garnetAWilliams from "./garnet-a-williams-community-centre.json";
 import georgeBell from "./george-bell-arena.json";
 import gordAndIreneRisk from "./gord-and-irene-risk-community-centre.json";
@@ -49,6 +50,7 @@ import heronPark from "./heron-park-community-recreation-centre.json";
 import honeyBarry from "./honey-barry-memorial-arena.json";
 import huronPark from "./huron-park-recreation-centre.json";
 import iceland from "./iceland-arena.json";
+import iroquois from "./iroquois-park-sports-centre.json";
 import johnBoothMemorial from "./john-booth-memorial-arena.json";
 import lambton from "./lambton-arena.json";
 import larryGrossman from "./larry-grossman-forest-hill-arena.json";
@@ -59,6 +61,7 @@ import mapleCommunity from "./maple-community-centre.json";
 import markhamVillage from "./markham-village-community-centre.json";
 import mattamy from "./mattamy-athletic-centre.json";
 import mcgregorPark from "./mcgregor-park-community-centre.json";
+import mckinney from "./mckinney-centre.json";
 import meadowvale4Rinks from "./meadowvale-4-rinks.json";
 import mimico from "./mimico-arena.json";
 import millikenMills from "./milliken-mills-community-centre.json";
@@ -125,6 +128,7 @@ export const venues: Venue[] = [
   elginBarrow as Venue,
   erinMillsTwin as Venue,
   fenside as Venue,
+  fieldgate as Venue,
   garnetAWilliams as Venue,
   georgeBell as Venue,
   gordAndIreneRisk as Venue,
@@ -136,6 +140,7 @@ export const venues: Venue[] = [
   honeyBarry as Venue,
   huronPark as Venue,
   iceland as Venue,
+  iroquois as Venue,
   johnBoothMemorial as Venue,
   lambton as Venue,
   larryGrossman as Venue,
@@ -146,6 +151,7 @@ export const venues: Venue[] = [
   markhamVillage as Venue,
   mattamy as Venue,
   mcgregorPark as Venue,
+  mckinney as Venue,
   meadowvale4Rinks as Venue,
   mimico as Venue,
   millikenMills as Venue,

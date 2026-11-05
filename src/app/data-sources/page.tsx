@@ -81,6 +81,11 @@ const SOURCES: {
     title: "Skating - City of Richmond Hill",
   },
   {
+    name: "Town of Whitby",
+    href: "https://www.whitby.ca/explore-and-enjoy/parks-and-recreation/skating-schedules-and-arenas/",
+    title: "Skating Schedules and Arenas – Town of Whitby",
+  },
+  {
     name: "Township of King",
     href: "https://townshipofking.perfectmind.com/23793/Clients/BookMe4BookingPages/Classes?calendarId=2fd6d540-75aa-416b-9a70-a78b8f598e7d&widgetId=15f6af07-39c5-473e-b053-96653f77a406&embed=False",
     title: "Drop-In Skating – Township of King",

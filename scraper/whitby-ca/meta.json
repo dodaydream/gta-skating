@@ -1,0 +1,28 @@
+{
+  "venues": [
+    {
+      "id": "fieldgate-sports-complex",
+      "name": "Fieldgate Sports Complex",
+      "url": "https://www.whitby.ca/explore-and-enjoy/parks-and-recreation/skating-schedules-and-arenas/",
+      "address": "2 Gathering Place, Whitby, ON L1M 1T4",
+      "coordinates": { "lat": 43.9429379, "lon": -78.9632445 },
+      "type": "indoor"
+    },
+    {
+      "id": "iroquois-park-sports-centre",
+      "name": "Iroquois Park Sports Centre",
+      "url": "https://www.whitby.ca/explore-and-enjoy/parks-and-recreation/skating-schedules-and-arenas/",
+      "address": "500 Victoria St. W., Whitby, ON L1N 9G4",
+      "coordinates": { "lat": 43.860281, "lon": -78.944613 },
+      "type": "indoor"
+    },
+    {
+      "id": "mckinney-centre",
+      "name": "McKinney Centre",
+      "url": "https://www.whitby.ca/explore-and-enjoy/parks-and-recreation/skating-schedules-and-arenas/",
+      "address": "222 McKinney Dr., Whitby, ON L1R 3M3",
+      "coordinates": { "lat": 43.920905, "lon": -78.9553679 },
+      "type": "indoor"
+    }
+  ]
+}
