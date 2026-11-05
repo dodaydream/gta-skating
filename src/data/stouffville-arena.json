@@ -1,0 +1,231 @@
+{
+  "name": "Stouffville Arena",
+  "url": "https://anc.ca.apm.activecommunities.com/townofws/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=13&displayType=0&view=2",
+  "timezone": "America/Toronto",
+  "address": "12483 Ninth Line, Stouffville, ON L4A 0Z6",
+  "coordinates": {
+    "lat": 43.9742243,
+    "lon": -79.2553137
+  },
+  "schedule": {
+    "updatedAt": "2026-11-05T01:50:50.469Z",
+    "programs": [
+      {
+        "id": "fe38cb17-e72e-4239-9b10-066061ad6b00",
+        "start": "2026-11-05T16:15",
+        "end": "2026-11-05T17:15",
+        "name": "Family Stick and Puck (4-10 years w/adult)",
+        "type": "Stick and Puck",
+        "ticket": 17.5
+      },
+      {
+        "id": "04cb46f0-7849-46d7-8e90-f7b15d9a5711",
+        "start": "2026-11-06T16:00",
+        "end": "2026-11-06T17:00",
+        "name": "Family Stick and Puck (ages 4-10 w/adult)",
+        "type": "Stick and Puck",
+        "ticket": 17.5
+      },
+      {
+        "id": "11f66032-eafb-401c-ab9a-1d79edd87ae0",
+        "start": "2026-11-06T16:15",
+        "end": "2026-11-06T17:15",
+        "name": "Youth Shinny (11-14 years)",
+        "type": "Pickup Hockey",
+        "ticket": 5.5
+      },
+      {
+        "id": "7ab0f2e5-3008-4aa6-b0d8-3e4a1f167217",
+        "start": "2026-11-07T15:00",
+        "end": "2026-11-07T17:00",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "ticket": 5.5
+      },
+      {
+        "id": "e5b6431f-f7b0-4b20-8473-25943cbcbb19",
+        "start": "2026-11-09T16:15",
+        "end": "2026-11-09T17:15",
+        "name": "Family Stick and Puck (ages 4-10 w/adult)",
+        "type": "Stick and Puck",
+        "ticket": 17.5
+      },
+      {
+        "id": "474cd807-9f3c-433c-8b14-2a4b0df5b06a",
+        "start": "2026-11-12T16:15",
+        "end": "2026-11-12T17:15",
+        "name": "Family Stick and Puck (4-10 years w/adult)",
+        "type": "Stick and Puck",
+        "ticket": 17.5
+      },
+      {
+        "id": "a18e3ac6-2cc2-43b1-a713-d8063789dab0",
+        "start": "2026-11-13T16:00",
+        "end": "2026-11-13T17:00",
+        "name": "Family Stick and Puck (ages 4-10 w/adult)",
+        "type": "Stick and Puck",
+        "ticket": 17.5
+      },
+      {
+        "id": "ad2a9fb7-bda8-49f8-9ce5-2ecd3bdb0534",
+        "start": "2026-11-13T16:15",
+        "end": "2026-11-13T17:15",
+        "name": "Youth Shinny (11-14 years)",
+        "type": "Pickup Hockey",
+        "ticket": 5.5
+      },
+      {
+        "id": "30fad19b-df3c-4a81-84d9-765ad8340711",
+        "start": "2026-11-14T15:00",
+        "end": "2026-11-14T17:00",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "ticket": 5.5
+      },
+      {
+        "id": "fed88ac0-ff71-4ea8-b70e-b714e5e84ead",
+        "start": "2026-11-16T16:15",
+        "end": "2026-11-16T17:15",
+        "name": "Family Stick and Puck (ages 4-10 w/adult)",
+        "type": "Stick and Puck",
+        "ticket": 17.5
+      },
+      {
+        "id": "c1b9d6d2-12db-4564-8d23-2e5e17287a6c",
+        "start": "2026-11-19T16:15",
+        "end": "2026-11-19T17:15",
+        "name": "Family Stick and Puck (4-10 years w/adult)",
+        "type": "Stick and Puck",
+        "ticket": 17.5
+      },
+      {
+        "id": "e31db5e6-2913-41cd-afae-266309ac3754",
+        "start": "2026-11-20T12:30",
+        "end": "2026-11-20T13:30",
+        "name": "PA Day Family Stick and Puck",
+        "type": "Stick and Puck",
+        "ticket": 17.5
+      },
+      {
+        "id": "e7db5b48-10a8-46d2-8c5c-73a0166a234c",
+        "start": "2026-11-20T13:00",
+        "end": "2026-11-20T15:00",
+        "name": "PA Day Public Skate",
+        "type": "Public Skate",
+        "ticket": 5.5
+      },
+      {
+        "id": "3ddf5409-c9e5-479a-a242-d2d97eeebeee",
+        "start": "2026-11-20T13:30",
+        "end": "2026-11-20T14:30",
+        "name": "PA Day Youth Shinny (14-17 years)",
+        "type": "Pickup Hockey",
+        "ticket": 5.5
+      },
+      {
+        "id": "57acf497-63a4-4bb8-9841-c6e63f53ad35",
+        "start": "2026-11-20T16:00",
+        "end": "2026-11-20T17:00",
+        "name": "Family Stick and Puck (ages 4-10 w/adult)",
+        "type": "Stick and Puck",
+        "ticket": 17.5
+      },
+      {
+        "id": "92a21e4d-5ee8-4c65-bc69-6ff01a471df9",
+        "start": "2026-11-20T16:15",
+        "end": "2026-11-20T17:15",
+        "name": "Youth Shinny (11-14 years)",
+        "type": "Pickup Hockey",
+        "ticket": 5.5
+      },
+      {
+        "id": "aca4801f-e825-43e9-9d47-4b05289e34b4",
+        "start": "2026-11-21T15:00",
+        "end": "2026-11-21T17:00",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "ticket": 5.5
+      },
+      {
+        "id": "b2e9f72a-941a-4de5-9960-cd7120fafabd",
+        "start": "2026-11-23T16:15",
+        "end": "2026-11-23T17:15",
+        "name": "Family Stick and Puck (ages 4-10 w/adult)",
+        "type": "Stick and Puck",
+        "ticket": 17.5
+      },
+      {
+        "id": "f46c266b-212b-4ac7-b5e5-c519bca87d50",
+        "start": "2026-11-26T16:15",
+        "end": "2026-11-26T17:15",
+        "name": "Family Stick and Puck (4-10 years w/adult)",
+        "type": "Stick and Puck",
+        "ticket": 17.5
+      },
+      {
+        "id": "a9292525-6b0f-4be8-a8eb-5577f858be94",
+        "start": "2026-11-27T16:00",
+        "end": "2026-11-27T17:00",
+        "name": "Family Stick and Puck (ages 4-10 w/adult)",
+        "type": "Stick and Puck",
+        "ticket": 17.5
+      },
+      {
+        "id": "c0b45744-e448-45a3-9398-7663c604913e",
+        "start": "2026-11-27T16:15",
+        "end": "2026-11-27T17:15",
+        "name": "Youth Shinny (11-14 years)",
+        "type": "Pickup Hockey",
+        "ticket": 5.5
+      },
+      {
+        "id": "08feabf5-b9b1-4b1d-9f17-291559b56f9c",
+        "start": "2026-11-28T15:00",
+        "end": "2026-11-28T17:00",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "ticket": 5.5
+      },
+      {
+        "id": "3b8dc604-bc57-4020-b049-880f44333210",
+        "start": "2026-11-30T16:15",
+        "end": "2026-11-30T17:15",
+        "name": "Family Stick and Puck (ages 4-10 w/adult)",
+        "type": "Stick and Puck",
+        "ticket": 17.5
+      },
+      {
+        "id": "14f61a7f-8974-4cc2-825f-fa14adf7ea4a",
+        "start": "2026-12-03T16:15",
+        "end": "2026-12-03T17:15",
+        "name": "Family Stick and Puck (4-10 years w/adult)",
+        "type": "Stick and Puck",
+        "ticket": 17.5
+      },
+      {
+        "id": "22dfccaa-9ba1-4ceb-86fb-8fdaa5e309e4",
+        "start": "2026-12-04T16:00",
+        "end": "2026-12-04T17:00",
+        "name": "Family Stick and Puck (ages 4-10 w/adult)",
+        "type": "Stick and Puck",
+        "ticket": 17.5
+      },
+      {
+        "id": "0c58a22f-d882-4a57-88d6-5fdd9e6beea4",
+        "start": "2026-12-04T16:15",
+        "end": "2026-12-04T17:15",
+        "name": "Youth Shinny (11-14 years)",
+        "type": "Pickup Hockey",
+        "ticket": 5.5
+      },
+      {
+        "id": "284a313d-ff8f-4984-a207-3c762f196b02",
+        "start": "2026-12-05T15:00",
+        "end": "2026-12-05T17:00",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "ticket": 5.5
+      }
+    ]
+  }
+}

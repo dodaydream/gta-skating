@@ -86,6 +86,11 @@ const SOURCES: {
     title: "Skating Schedules and Arenas – Town of Whitby",
   },
   {
+    name: "Town of Whitchurch-Stouffville",
+    href: "https://anc.ca.apm.activecommunities.com/townofws/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=13%2C14&displayType=0&view=2",
+    title: "Drop-In Skating – Town of Whitchurch-Stouffville",
+  },
+  {
     name: "Township of King",
     href: "https://townshipofking.perfectmind.com/23793/Clients/BookMe4BookingPages/Classes?calendarId=2fd6d540-75aa-416b-9a70-a78b8f598e7d&widgetId=15f6af07-39c5-473e-b053-96653f77a406&embed=False",
     title: "Drop-In Skating – Township of King",

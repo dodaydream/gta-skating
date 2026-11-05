@@ -1,0 +1,319 @@
+{
+  "name": "Stouffville Clippers Sports Complex",
+  "url": "https://anc.ca.apm.activecommunities.com/townofws/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=14&displayType=0&view=2",
+  "timezone": "America/Toronto",
+  "address": "120 Weldon Road, Stouffville, ON L4A 1N2",
+  "coordinates": {
+    "lat": 43.9650556,
+    "lon": -79.2617345
+  },
+  "schedule": {
+    "updatedAt": "2026-11-05T01:50:50.470Z",
+    "programs": [
+      {
+        "id": "c2637814-61a6-4471-afeb-ecec627d6049",
+        "start": "2026-11-05T12:30",
+        "end": "2026-11-05T14:00",
+        "name": "Adult/Senior Free Skate",
+        "type": "Public Skate",
+        "ticket": 5.5
+      },
+      {
+        "id": "7720956c-d672-49a0-afe2-f7e85986dd22",
+        "start": "2026-11-06T09:15",
+        "end": "2026-11-06T10:15",
+        "name": "Parent and Tot (under 6 years w/adult)",
+        "type": "Public Skate",
+        "ticket": 2.5
+      },
+      {
+        "id": "86b33a3b-026f-4684-a489-b8e0fa856a8b",
+        "start": "2026-11-06T10:00",
+        "end": "2026-11-06T11:30",
+        "name": "Adult/Senior Free Skate",
+        "type": "Public Skate",
+        "ticket": 5.5
+      },
+      {
+        "id": "2b3b6104-b66b-4a56-a143-86e3825ed54d",
+        "start": "2026-11-06T11:15",
+        "end": "2026-11-06T12:15",
+        "name": "Adult Shinny",
+        "type": "Pickup Hockey",
+        "ticket": 7.5
+      },
+      {
+        "id": "f27f03d8-2b12-4e7e-9630-bb4f469cf552",
+        "start": "2026-11-07T19:00",
+        "end": "2026-11-07T20:00",
+        "name": "Youth Shinny (11-14 years)",
+        "type": "Pickup Hockey",
+        "ticket": 5.5
+      },
+      {
+        "id": "0d17b7be-e8bf-44bd-b21e-e82290a1da20",
+        "start": "2026-11-07T20:00",
+        "end": "2026-11-07T21:00",
+        "name": "Youth Shinny (14-17 years)",
+        "type": "Pickup Hockey",
+        "ticket": 5.5
+      },
+      {
+        "id": "e0e2244b-e19f-4e4f-ac9e-0320ebf6868d",
+        "start": "2026-11-08T18:15",
+        "end": "2026-11-08T20:15",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "ticket": 5.5
+      },
+      {
+        "id": "fc62a346-5011-4214-a7f3-9627309eec7b",
+        "start": "2026-11-10T13:00",
+        "end": "2026-11-10T14:30",
+        "name": "Adult/Senior Free Skate",
+        "type": "Public Skate",
+        "ticket": 5.5
+      },
+      {
+        "id": "ea02c079-e58c-4621-8afa-7881879c055a",
+        "start": "2026-11-12T12:30",
+        "end": "2026-11-12T14:00",
+        "name": "Adult/Senior Free Skate",
+        "type": "Public Skate",
+        "ticket": 5.5
+      },
+      {
+        "id": "75f9a284-5cb3-4273-85a1-19b6aa755c9d",
+        "start": "2026-11-13T09:15",
+        "end": "2026-11-13T10:15",
+        "name": "Parent and Tot (under 6 years w/adult)",
+        "type": "Public Skate",
+        "ticket": 2.5
+      },
+      {
+        "id": "c65dcd09-64f6-4244-b88e-037be8049c81",
+        "start": "2026-11-13T10:00",
+        "end": "2026-11-13T11:30",
+        "name": "Adult/Senior Free Skate",
+        "type": "Public Skate",
+        "ticket": 5.5
+      },
+      {
+        "id": "4d7ddafb-05eb-4526-80fe-6366a4699e6a",
+        "start": "2026-11-13T11:15",
+        "end": "2026-11-13T12:15",
+        "name": "Adult Shinny",
+        "type": "Pickup Hockey",
+        "ticket": 7.5
+      },
+      {
+        "id": "6bbdca5c-42c7-4850-86e7-e99f4b317edf",
+        "start": "2026-11-14T19:00",
+        "end": "2026-11-14T20:00",
+        "name": "Youth Shinny (11-14 years)",
+        "type": "Pickup Hockey",
+        "ticket": 5.5
+      },
+      {
+        "id": "89d29cf1-6bbd-4325-80e0-98802acd5631",
+        "start": "2026-11-14T20:00",
+        "end": "2026-11-14T21:00",
+        "name": "Youth Shinny (14-17 years)",
+        "type": "Pickup Hockey",
+        "ticket": 5.5
+      },
+      {
+        "id": "1e4087fe-11b1-4b55-804c-b987c5786fb1",
+        "start": "2026-11-15T18:15",
+        "end": "2026-11-15T20:15",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "ticket": 5.5
+      },
+      {
+        "id": "1003d1c2-8d5b-4b5e-9e32-822ee0c04f27",
+        "start": "2026-11-17T13:00",
+        "end": "2026-11-17T14:30",
+        "name": "Adult/Senior Free Skate",
+        "type": "Public Skate",
+        "ticket": 5.5
+      },
+      {
+        "id": "81cb56f5-a876-400c-b16a-642199981a54",
+        "start": "2026-11-19T12:30",
+        "end": "2026-11-19T14:00",
+        "name": "Adult/Senior Free Skate",
+        "type": "Public Skate",
+        "ticket": 5.5
+      },
+      {
+        "id": "e1a7826d-42d9-4a42-891f-2a0d01e3accb",
+        "start": "2026-11-20T09:15",
+        "end": "2026-11-20T10:15",
+        "name": "Parent and Tot (under 6 years w/adult)",
+        "type": "Public Skate",
+        "ticket": 2.5
+      },
+      {
+        "id": "b04bc1af-87d4-4756-87eb-2295de945c2b",
+        "start": "2026-11-20T10:00",
+        "end": "2026-11-20T11:30",
+        "name": "Adult/Senior Free Skate",
+        "type": "Public Skate",
+        "ticket": 5.5
+      },
+      {
+        "id": "d49ddb10-942b-405d-960b-551ed6e2736d",
+        "start": "2026-11-20T11:15",
+        "end": "2026-11-20T12:15",
+        "name": "Adult Shinny",
+        "type": "Pickup Hockey",
+        "ticket": 7.5
+      },
+      {
+        "id": "412b0be4-0f03-4dfb-aaf9-d13e27adf44c",
+        "start": "2026-11-21T19:00",
+        "end": "2026-11-21T20:00",
+        "name": "Youth Shinny (11-14 years)",
+        "type": "Pickup Hockey",
+        "ticket": 5.5
+      },
+      {
+        "id": "fadd991f-a907-4df4-b3e3-d308efa328d4",
+        "start": "2026-11-21T20:00",
+        "end": "2026-11-21T21:00",
+        "name": "Youth Shinny (14-17 years)",
+        "type": "Pickup Hockey",
+        "ticket": 5.5
+      },
+      {
+        "id": "07d7d051-a54a-4b51-807c-14414c03cfcc",
+        "start": "2026-11-22T18:15",
+        "end": "2026-11-22T20:15",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "ticket": 5.5
+      },
+      {
+        "id": "5c7e37b6-7223-4290-bfc6-749bb0f51a09",
+        "start": "2026-11-24T13:00",
+        "end": "2026-11-24T14:30",
+        "name": "Adult/Senior Free Skate",
+        "type": "Public Skate",
+        "ticket": 5.5
+      },
+      {
+        "id": "1cc701b1-9643-4dba-8f3a-784b89e43141",
+        "start": "2026-11-26T12:30",
+        "end": "2026-11-26T14:00",
+        "name": "Adult/Senior Free Skate",
+        "type": "Public Skate",
+        "ticket": 5.5
+      },
+      {
+        "id": "1858a84a-acb1-46c4-bccd-daaa1cf66f41",
+        "start": "2026-11-27T09:15",
+        "end": "2026-11-27T10:15",
+        "name": "Parent and Tot (under 6 years w/adult)",
+        "type": "Public Skate",
+        "ticket": 2.5
+      },
+      {
+        "id": "f8379400-cec9-403e-929a-74fc19116060",
+        "start": "2026-11-27T10:00",
+        "end": "2026-11-27T11:30",
+        "name": "Adult/Senior Free Skate",
+        "type": "Public Skate",
+        "ticket": 5.5
+      },
+      {
+        "id": "c664ab49-9a40-44ec-8e3d-07631e81e792",
+        "start": "2026-11-27T11:15",
+        "end": "2026-11-27T12:15",
+        "name": "Adult Shinny",
+        "type": "Pickup Hockey",
+        "ticket": 7.5
+      },
+      {
+        "id": "076673ce-4a54-4a5a-871a-5c3d64e05177",
+        "start": "2026-11-28T19:00",
+        "end": "2026-11-28T20:00",
+        "name": "Youth Shinny (11-14 years)",
+        "type": "Pickup Hockey",
+        "ticket": 5.5
+      },
+      {
+        "id": "d379ea63-e87f-493d-981c-8476ebe1cbba",
+        "start": "2026-11-28T20:00",
+        "end": "2026-11-28T21:00",
+        "name": "Youth Shinny (14-17 years)",
+        "type": "Pickup Hockey",
+        "ticket": 5.5
+      },
+      {
+        "id": "b2b2ae1d-30f6-4844-a9e4-7978d90cefcc",
+        "start": "2026-11-29T18:15",
+        "end": "2026-11-29T20:15",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "ticket": 5.5
+      },
+      {
+        "id": "ebcb2f44-699d-4fd8-a4c7-711da7a67885",
+        "start": "2026-12-01T13:00",
+        "end": "2026-12-01T14:30",
+        "name": "Adult/Senior Free Skate",
+        "type": "Public Skate",
+        "ticket": 5.5
+      },
+      {
+        "id": "713b48be-a034-42de-9026-b1801194981a",
+        "start": "2026-12-03T12:30",
+        "end": "2026-12-03T14:00",
+        "name": "Adult/Senior Free Skate",
+        "type": "Public Skate",
+        "ticket": 5.5
+      },
+      {
+        "id": "f7df68f9-683f-4b02-b937-7e154701cf03",
+        "start": "2026-12-04T09:15",
+        "end": "2026-12-04T10:15",
+        "name": "Parent and Tot (under 6 years w/adult)",
+        "type": "Public Skate",
+        "ticket": 2.5
+      },
+      {
+        "id": "4d885c5c-bd00-4710-b308-19c721734e6b",
+        "start": "2026-12-04T10:00",
+        "end": "2026-12-04T11:30",
+        "name": "Adult/Senior Free Skate",
+        "type": "Public Skate",
+        "ticket": 5.5
+      },
+      {
+        "id": "d85cf2be-d400-4d7b-9a10-521e995b89f5",
+        "start": "2026-12-04T11:15",
+        "end": "2026-12-04T12:15",
+        "name": "Adult Shinny",
+        "type": "Pickup Hockey",
+        "ticket": 7.5
+      },
+      {
+        "id": "6f1301b4-87a4-4312-aa1e-5d8ef8af8a7f",
+        "start": "2026-12-05T19:00",
+        "end": "2026-12-05T20:00",
+        "name": "Youth Shinny (11-14 years)",
+        "type": "Pickup Hockey",
+        "ticket": 5.5
+      },
+      {
+        "id": "329a9764-7a78-425b-b55d-c649e5c9a996",
+        "start": "2026-12-05T20:00",
+        "end": "2026-12-05T21:00",
+        "name": "Youth Shinny (14-17 years)",
+        "type": "Pickup Hockey",
+        "ticket": 5.5
+      }
+    ]
+  }
+}

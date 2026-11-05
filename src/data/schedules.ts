@@ -81,6 +81,8 @@ import roding from "./roding-community-centre.json";
 import rosemount from "./rosemount-community-centre.json";
 import scarboroughGardens from "./scarborough-arena-gardens.json";
 import scarboroughVillage from "./scarborough-village-recreation-centre.json";
+import stouffvilleArena from "./stouffville-arena.json";
+import stouffvilleClippers from "./stouffville-clippers-sports-complex.json";
 import thornhill from "./thornhill-community-centre.json";
 import tomGraham from "./tom-graham-arena.json";
 import trisan from "./trisan-centre.json";
@@ -171,6 +173,8 @@ export const venues: Venue[] = [
   rosemount as Venue,
   scarboroughGardens as Venue,
   scarboroughVillage as Venue,
+  stouffvilleArena as Venue,
+  stouffvilleClippers as Venue,
   thornhill as Venue,
   tomGraham as Venue,
   trisan as Venue,
