@@ -1,5 +1,4 @@
 import type { Metadata, Viewport } from "next";
-import Script from "next/script";
 import { Geist, Geist_Mono } from "next/font/google";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { DeviceCornerRadius } from "@/components/DeviceCornerRadius";
@@ -92,11 +91,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <DeviceCornerRadius />
         <I18nProvider>{children}</I18nProvider>
         {adsenseClient ? (
-          <Script
+          <script
             async
             crossOrigin="anonymous"
             src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adsenseClient}`}
-            strategy="afterInteractive"
           />
         ) : null}
         {gaId ? <GoogleAnalytics gaId={gaId} /> : null}
