@@ -3,7 +3,7 @@
 import { useCallback, useEffect, useRef, useState, useSyncExternalStore } from "react";
 import { createPortal } from "react-dom";
 import { useTranslation } from "react-i18next";
-import type { Venue } from "@/types/venue";
+import type { Rink, Venue } from "@/types/venue";
 import type { Program, ProgramType } from "@/types/schedule";
 import type { BusyReport } from "@/types/feedback";
 import { fetchVenueDetails } from "@/api/venues";
@@ -523,6 +523,8 @@ export function VenueDetailModal({
             reportsLoading={reportsLoading}
           />
 
+          <RinksSection rinks={venue.rinks} />
+
           {currentProgram ? (
             <div className="px-5">
               <BusynessInput
@@ -588,31 +590,34 @@ export function VenueDetailModal({
           </div>
         </>
       ) : (
-        <div className="flex flex-1 flex-col items-center justify-center px-5">
-          <Empty className="my-6">
-            <EmptyHeader>
-              <EmptyMedia variant="icon">
-                <IconSnowflake />
-              </EmptyMedia>
-              <EmptyTitle>{t("venue.emptyProgramsTitle")}</EmptyTitle>
-              <EmptyDescription>
-                {hasFilterCriteria && filterActive
-                  ? t("venue.emptyProgramsFiltered")
-                  : t("venue.emptyProgramsAll")}
-              </EmptyDescription>
-            </EmptyHeader>
-            {hasFilterCriteria && filterActive ? (
-              <EmptyContent>
-                <Button
-                  variant="outline"
-                  size="sm"
-                  onClick={() => setFilterActive(false)}
-                >
-                  {t("venue.showAllPrograms")}
-                </Button>
-              </EmptyContent>
-            ) : null}
-          </Empty>
+        <div className="flex flex-1 flex-col">
+          <RinksSection rinks={venue.rinks} />
+          <div className="flex flex-1 flex-col items-center justify-center px-5">
+            <Empty className="my-6">
+              <EmptyHeader>
+                <EmptyMedia variant="icon">
+                  <IconSnowflake />
+                </EmptyMedia>
+                <EmptyTitle>{t("venue.emptyProgramsTitle")}</EmptyTitle>
+                <EmptyDescription>
+                  {hasFilterCriteria && filterActive
+                    ? t("venue.emptyProgramsFiltered")
+                    : t("venue.emptyProgramsAll")}
+                </EmptyDescription>
+              </EmptyHeader>
+              {hasFilterCriteria && filterActive ? (
+                <EmptyContent>
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    onClick={() => setFilterActive(false)}
+                  >
+                    {t("venue.showAllPrograms")}
+                  </Button>
+                </EmptyContent>
+              ) : null}
+            </Empty>
+          </div>
         </div>
       )}
 
@@ -647,6 +652,33 @@ export function VenueDetailModal({
         </div>
       </footer>
     </Panel>
+  );
+}
+
+function RinksSection({ rinks }: { rinks?: Rink[] }) {
+  const { t } = useTranslation();
+  if (!rinks || rinks.length === 0) return null;
+  return (
+    <section className="flex flex-col">
+      <div className="sticky top-0 z-30 flex h-12 items-center justify-between gap-3 bg-popover px-5">
+        <h3 className="text-sm font-semibold text-black dark:text-zinc-50">
+          {t("venue.rinks")}
+        </h3>
+      </div>
+      <ul className="flex flex-wrap gap-1.5 px-5 pb-1 pt-1">
+        {rinks.map((rink) => (
+          <li
+            key={rink.name}
+            className="flex items-center gap-1.5 rounded-full border border-black/[.08] bg-white px-2.5 py-1 text-xs dark:border-white/[.145] dark:bg-zinc-950"
+          >
+            <span className="font-medium text-black dark:text-zinc-50">
+              {rink.name}
+            </span>
+            <span className="text-zinc-500 dark:text-zinc-400">{rink.type}</span>
+          </li>
+        ))}
+      </ul>
+    </section>
   );
 }
 

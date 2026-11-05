@@ -1,8 +1,18 @@
+/** A single ice pad at a venue; a venue may have several. */
+export interface Rink {
+  /** Pad label as shown on the venue site/feed, e.g. "Ice Rink - 1". */
+  name: string;
+  /** Free-form rink type, e.g. "North American / NHL". */
+  type: string;
+}
+
 export interface VenueMeta {
   id: string;
   url: string;
   address: string;
   coordinates: { lat: number; lon: number };
+  /** Ice pads at this venue (name + free-form type). */
+  rinks?: Rink[];
 }
 
 /** Single-venue entry inside a multi-venue scraper's meta.json. */
@@ -83,5 +93,6 @@ export interface Venue {
   timezone: string;
   address: string;
   coordinates: Coordinates;
+  rinks?: Rink[];
   schedule: VenueSchedule;
 }
