@@ -13,11 +13,14 @@
       "type": "North American / NHL"
     }
   ],
+  "amenities": [
+    "skate_sharpening"
+  ],
   "schedule": {
-    "updatedAt": "2026-11-05T03:27:50.765Z",
+    "updatedAt": "2026-11-05T03:34:59.744Z",
     "programs": [
       {
-        "id": "47495311-5cdc-4f50-9c3e-d83243aa073b",
+        "id": "8c543321-40a8-49cb-b6f4-e1d3d8efab3a",
         "start": "2026-11-05T11:00",
         "end": "2026-11-05T12:25",
         "name": "Public Skate",
@@ -26,7 +29,7 @@
         "ticket": 0
       },
       {
-        "id": "8ab3c157-6016-4421-8a80-70c18e81b164",
+        "id": "9f88ddb7-76c4-4384-8483-0ad98d0c9554",
         "start": "2026-11-05T12:30",
         "end": "2026-11-05T13:25",
         "name": "Stick and Puck",
@@ -35,7 +38,7 @@
         "ticket": 0
       },
       {
-        "id": "b2e2259a-08de-4f0c-abfe-632a0ace3514",
+        "id": "33497a78-f0f3-4271-9667-cbd493785be8",
         "start": "2026-11-05T13:30",
         "end": "2026-11-05T14:25",
         "name": "Shinny",
@@ -44,7 +47,7 @@
         "ticket": 0
       },
       {
-        "id": "5cbf54b7-c630-40e9-8816-ed98cae4de0c",
+        "id": "2a4b141e-312a-48dc-ad18-95d22ac51603",
         "start": "2026-11-05T14:30",
         "end": "2026-11-05T15:50",
         "name": "Figure Skating",
@@ -53,7 +56,7 @@
         "ticket": 0
       },
       {
-        "id": "6966e426-e0cb-4528-8ac2-e1a486aee7df",
+        "id": "ff6ea5d3-f0ec-4c58-9adf-29005ee22a3b",
         "start": "2026-11-06T10:00",
         "end": "2026-11-06T11:55",
         "name": "Public Skate",
@@ -62,7 +65,7 @@
         "ticket": 0
       },
       {
-        "id": "84db5f28-7d68-48d8-b571-dbacfc09be12",
+        "id": "17965d3b-ffaf-413b-8260-0be7539b3ab9",
         "start": "2026-11-06T12:00",
         "end": "2026-11-06T12:55",
         "name": "Stick and Puck",
@@ -71,7 +74,7 @@
         "ticket": 0
       },
       {
-        "id": "f0183585-48c4-4b45-9fe2-b5937c735035",
+        "id": "95606f92-7899-4c4c-b3fc-cb3f89512d7b",
         "start": "2026-11-06T13:00",
         "end": "2026-11-06T13:50",
         "name": "Hockey",
@@ -80,7 +83,7 @@
         "ticket": 0
       },
       {
-        "id": "2b10a1de-fd02-485e-a183-531aae130e8b",
+        "id": "f7d45e25-742f-4290-81ad-4d0b5063dbb6",
         "start": "2026-11-08T17:15",
         "end": "2026-11-08T18:50",
         "name": "Family Skate",
@@ -89,7 +92,7 @@
         "ticket": 0
       },
       {
-        "id": "887bec1d-14ab-4bb0-b55f-9f150627a94b",
+        "id": "5f109af7-9920-4797-b959-c875d1d38f71",
         "start": "2026-11-09T13:00",
         "end": "2026-11-09T15:55",
         "name": "Public Skate",
@@ -98,7 +101,7 @@
         "ticket": 0
       },
       {
-        "id": "b40bc66c-002b-4876-860f-b61bdc4db055",
+        "id": "249c109b-fe42-4d71-8151-fe43f422e0bd",
         "start": "2026-11-09T16:00",
         "end": "2026-11-09T16:50",
         "name": "Hockey",
@@ -107,7 +110,7 @@
         "ticket": 0
       },
       {
-        "id": "d83ca428-719b-45b1-a12d-5219315c5f55",
+        "id": "fb7a91dd-d60a-4ae6-a929-6e7040c94f51",
         "start": "2026-11-10T11:00",
         "end": "2026-11-10T12:50",
         "name": "Public Skate",
@@ -116,7 +119,7 @@
         "ticket": 0
       },
       {
-        "id": "8b647bfe-7574-4a58-8e65-6a1ddf96e15d",
+        "id": "8460d821-0e70-4489-a523-e687a0ef0665",
         "start": "2026-11-12T11:00",
         "end": "2026-11-12T12:25",
         "name": "Public Skate",
@@ -125,7 +128,7 @@
         "ticket": 0
       },
       {
-        "id": "7c65981f-4af6-4f80-ae4c-ec1f51eab5c8",
+        "id": "4aaec5b7-0e7d-4c5a-9eb6-03eff2ae4438",
         "start": "2026-11-12T12:30",
         "end": "2026-11-12T13:25",
         "name": "Stick and Puck",
@@ -134,7 +137,7 @@
         "ticket": 0
       },
       {
-        "id": "290b1e96-e7c9-497b-a988-76c5ccd7911d",
+        "id": "54516a25-fa7f-43ee-99f8-802c5bed166d",
         "start": "2026-11-12T13:30",
         "end": "2026-11-12T14:25",
         "name": "Shinny",
@@ -143,7 +146,7 @@
         "ticket": 0
       },
       {
-        "id": "6726a871-273b-4c6f-86ea-855074a6fd96",
+        "id": "ae74ea4a-d1a2-4fb0-a2cc-3f3c3f7b8b30",
         "start": "2026-11-12T14:30",
         "end": "2026-11-12T15:50",
         "name": "Figure Skating",
@@ -152,7 +155,7 @@
         "ticket": 0
       },
       {
-        "id": "f6edc24a-1a2e-4c51-b551-cd16ed3747b5",
+        "id": "431b8c8e-c96a-48f4-85bc-ae4e4db752ae",
         "start": "2026-11-13T10:00",
         "end": "2026-11-13T11:55",
         "name": "Public Skate",
@@ -161,7 +164,7 @@
         "ticket": 0
       },
       {
-        "id": "174c33e5-7884-4990-9182-8ffe896c30af",
+        "id": "d05f951c-6e7a-496c-9cc4-4eac6120ca25",
         "start": "2026-11-13T12:00",
         "end": "2026-11-13T12:55",
         "name": "Stick and Puck",
@@ -170,7 +173,7 @@
         "ticket": 0
       },
       {
-        "id": "ed0d6e57-c2b4-4cdf-b424-d6f651f3552d",
+        "id": "7572980a-8849-4eba-b201-5ecf660e1e77",
         "start": "2026-11-13T13:00",
         "end": "2026-11-13T13:50",
         "name": "Hockey",
@@ -179,7 +182,7 @@
         "ticket": 0
       },
       {
-        "id": "88008817-651a-4247-a4f3-3e260bfdb3e6",
+        "id": "531cbf10-58de-403d-ab70-dfd5dc18d871",
         "start": "2026-11-15T17:15",
         "end": "2026-11-15T18:50",
         "name": "Family Skate",
@@ -188,7 +191,7 @@
         "ticket": 0
       },
       {
-        "id": "4cc5b291-b951-45d5-ac4e-043d590f706a",
+        "id": "7d47cfb1-0255-44ce-bbd2-457fd46f0215",
         "start": "2026-11-16T13:00",
         "end": "2026-11-16T15:55",
         "name": "Public Skate",
@@ -197,7 +200,7 @@
         "ticket": 0
       },
       {
-        "id": "82be5e33-7e7c-467c-bf14-119a5182dfa0",
+        "id": "d4d2e945-56ad-4515-846d-cf42eccda42e",
         "start": "2026-11-16T16:00",
         "end": "2026-11-16T16:50",
         "name": "Hockey",
@@ -206,7 +209,7 @@
         "ticket": 0
       },
       {
-        "id": "36491925-53c4-41aa-8439-b04ac7f6941c",
+        "id": "41a10841-a6fe-47a9-a700-cbeb1befd801",
         "start": "2026-11-17T11:00",
         "end": "2026-11-17T12:50",
         "name": "Public Skate",
@@ -215,7 +218,7 @@
         "ticket": 0
       },
       {
-        "id": "eab3df80-ef53-465f-81b8-fe888584c41e",
+        "id": "443a58b5-ae9a-454f-94bd-c4dc83c77bfa",
         "start": "2026-11-19T11:00",
         "end": "2026-11-19T12:25",
         "name": "Public Skate",
@@ -224,7 +227,7 @@
         "ticket": 0
       },
       {
-        "id": "0590d892-365a-4a04-a54f-505a6f36b81e",
+        "id": "e2cdd401-cac3-4a26-a663-f3931501346a",
         "start": "2026-11-19T12:30",
         "end": "2026-11-19T13:25",
         "name": "Stick and Puck",
@@ -233,7 +236,7 @@
         "ticket": 0
       },
       {
-        "id": "d07b31aa-3f09-4482-ac9c-d541db935abd",
+        "id": "a0526d9b-69de-47a2-8f9f-c573c32e8781",
         "start": "2026-11-19T13:30",
         "end": "2026-11-19T14:25",
         "name": "Shinny",
@@ -242,7 +245,7 @@
         "ticket": 0
       },
       {
-        "id": "895741fa-e193-4ec8-8052-7206e4a083a8",
+        "id": "0d8bf044-adf1-4473-8370-4bf105b9ecc4",
         "start": "2026-11-19T14:30",
         "end": "2026-11-19T15:50",
         "name": "Figure Skating",
@@ -251,7 +254,7 @@
         "ticket": 0
       },
       {
-        "id": "f595b93b-be11-4e43-841b-0357c2af14b5",
+        "id": "e2bfe3b5-3c29-42bc-a7aa-7e10ef0360f3",
         "start": "2026-11-20T10:00",
         "end": "2026-11-20T11:55",
         "name": "Public Skate",
@@ -260,7 +263,7 @@
         "ticket": 0
       },
       {
-        "id": "f6504ae4-8f9e-4df9-a9ad-17a8476a5bd3",
+        "id": "299b1ee4-abe9-4a97-9e79-fe81b81f645e",
         "start": "2026-11-20T12:00",
         "end": "2026-11-20T12:55",
         "name": "Stick and Puck",
@@ -269,7 +272,7 @@
         "ticket": 0
       },
       {
-        "id": "74ad9bb1-2c7e-4be5-9b69-9b6dbd663fb5",
+        "id": "192528a6-af24-4111-8cb6-667c5ca4f97f",
         "start": "2026-11-20T13:00",
         "end": "2026-11-20T13:50",
         "name": "Hockey",
@@ -278,7 +281,7 @@
         "ticket": 0
       },
       {
-        "id": "3c5ce484-e6a9-4a76-b9d0-3f812d0b9c13",
+        "id": "a2f3dd42-583a-4ff4-8378-3d8bdae4c150",
         "start": "2026-11-22T17:15",
         "end": "2026-11-22T18:50",
         "name": "Family Skate",
@@ -287,7 +290,7 @@
         "ticket": 0
       },
       {
-        "id": "745db023-b7d6-47f8-9bee-fed58396bf50",
+        "id": "f0b79b1b-de1f-4cb6-b70f-0e8e129a2e10",
         "start": "2026-11-23T13:00",
         "end": "2026-11-23T15:55",
         "name": "Public Skate",
@@ -296,7 +299,7 @@
         "ticket": 0
       },
       {
-        "id": "449f6c8c-62a4-4599-b90c-0a7440940c2f",
+        "id": "2d00643e-473f-4640-a361-54161f0acdea",
         "start": "2026-11-23T16:00",
         "end": "2026-11-23T16:50",
         "name": "Hockey",
@@ -305,7 +308,7 @@
         "ticket": 0
       },
       {
-        "id": "0d6db7fe-f357-4e13-89c8-c1bfcabdb521",
+        "id": "f5d5f787-77f1-49f1-b8dd-319a94eda66e",
         "start": "2026-11-24T11:00",
         "end": "2026-11-24T12:50",
         "name": "Public Skate",
@@ -314,7 +317,7 @@
         "ticket": 0
       },
       {
-        "id": "86dae66c-30de-4d16-b574-453de696e31c",
+        "id": "36104627-90c4-4ab2-ad04-5ee88f3793cf",
         "start": "2026-11-26T11:00",
         "end": "2026-11-26T12:25",
         "name": "Public Skate",
@@ -323,7 +326,7 @@
         "ticket": 0
       },
       {
-        "id": "22b81126-8a3b-4974-b904-1c9b28eee4c5",
+        "id": "10259437-2041-40d8-a090-79d56c21e5d3",
         "start": "2026-11-26T12:30",
         "end": "2026-11-26T13:25",
         "name": "Stick and Puck",
@@ -332,7 +335,7 @@
         "ticket": 0
       },
       {
-        "id": "73010c1d-3e62-4a2f-8754-f37ac711b48e",
+        "id": "5bf3c02e-e05b-46f8-bebe-7e29f645f982",
         "start": "2026-11-26T13:30",
         "end": "2026-11-26T14:25",
         "name": "Shinny",
@@ -341,7 +344,7 @@
         "ticket": 0
       },
       {
-        "id": "dc4b540a-33aa-42f5-b39e-daf38408875e",
+        "id": "414a5118-96a2-47c7-823b-73d69e06a64d",
         "start": "2026-11-26T14:30",
         "end": "2026-11-26T15:50",
         "name": "Figure Skating",
@@ -350,7 +353,7 @@
         "ticket": 0
       },
       {
-        "id": "283e2d7c-37e9-4801-acfb-1a8c6ebcd67c",
+        "id": "75f301e8-02bc-45b0-890a-2d50f60e6804",
         "start": "2026-11-27T10:00",
         "end": "2026-11-27T11:55",
         "name": "Public Skate",
@@ -359,7 +362,7 @@
         "ticket": 0
       },
       {
-        "id": "9173013f-3435-4171-992f-1a2fcdf4bffd",
+        "id": "2d1d2fbc-c609-4c55-baf9-d181b492bcde",
         "start": "2026-11-27T12:00",
         "end": "2026-11-27T12:55",
         "name": "Stick and Puck",
@@ -368,7 +371,7 @@
         "ticket": 0
       },
       {
-        "id": "87f6f9f5-d7b2-4a78-aeea-28f3fcc20e7c",
+        "id": "0a3bf0fa-bfa5-4047-b55d-cb696f2996e3",
         "start": "2026-11-27T13:00",
         "end": "2026-11-27T13:50",
         "name": "Hockey",
@@ -377,7 +380,7 @@
         "ticket": 0
       },
       {
-        "id": "178b07dc-1389-4d46-b3a8-007e2803ebf4",
+        "id": "5b9ede8d-1e66-4f3a-8fe8-03e5700b942a",
         "start": "2026-11-29T17:15",
         "end": "2026-11-29T18:50",
         "name": "Family Skate",
@@ -386,7 +389,7 @@
         "ticket": 0
       },
       {
-        "id": "de6a5aa9-3c41-48e6-8c38-0353d326b21a",
+        "id": "50676471-71f9-4f5a-80b2-a0d02957904f",
         "start": "2026-11-30T13:00",
         "end": "2026-11-30T15:55",
         "name": "Public Skate",
@@ -395,7 +398,7 @@
         "ticket": 0
       },
       {
-        "id": "f4990a9e-72af-40db-ae06-fb339a2afbc8",
+        "id": "980a5b56-b546-459a-8fb0-33bf014998c7",
         "start": "2026-11-30T16:00",
         "end": "2026-11-30T16:50",
         "name": "Hockey",
@@ -404,7 +407,7 @@
         "ticket": 0
       },
       {
-        "id": "8b901c91-4e00-4bb9-81db-c59204767e56",
+        "id": "5a9b65a4-c513-4e0b-9449-94f38aa3690a",
         "start": "2026-12-01T11:00",
         "end": "2026-12-01T12:50",
         "name": "Public Skate",
@@ -413,7 +416,7 @@
         "ticket": 0
       },
       {
-        "id": "2766dcda-6a33-42db-a880-45671f685ad1",
+        "id": "f2b73a90-3bf9-47dc-815c-bb4a0c7a2e80",
         "start": "2026-12-03T11:00",
         "end": "2026-12-03T12:25",
         "name": "Public Skate",
@@ -422,7 +425,7 @@
         "ticket": 0
       },
       {
-        "id": "3dba8d9f-b8e8-4335-9fa5-637bc458a2a2",
+        "id": "0de2f8f3-279a-44c9-9561-92e5d5981b3a",
         "start": "2026-12-03T12:30",
         "end": "2026-12-03T13:25",
         "name": "Stick and Puck",
@@ -431,7 +434,7 @@
         "ticket": 0
       },
       {
-        "id": "4d075de8-ad62-45e8-af5b-eb9aaa6eaba0",
+        "id": "4af8b491-b944-47d0-b3c4-573e8f9e507d",
         "start": "2026-12-03T13:30",
         "end": "2026-12-03T14:25",
         "name": "Shinny",
@@ -440,7 +443,7 @@
         "ticket": 0
       },
       {
-        "id": "2e6bf117-225e-43fc-b854-bbd3579fce1f",
+        "id": "d4260185-c01e-4a13-9dbe-bb1129c3360f",
         "start": "2026-12-03T14:30",
         "end": "2026-12-03T15:50",
         "name": "Figure Skating",
@@ -449,7 +452,7 @@
         "ticket": 0
       },
       {
-        "id": "8e2b057a-6637-4f9c-bad9-80090120c5e7",
+        "id": "409a7db9-f48b-4518-810b-40d6ddbb509d",
         "start": "2026-12-04T10:00",
         "end": "2026-12-04T11:55",
         "name": "Public Skate",
@@ -458,7 +461,7 @@
         "ticket": 0
       },
       {
-        "id": "685defef-c1b0-4303-b2e6-411e64b142d0",
+        "id": "c30949c7-6df4-42a2-85a5-06979d47e950",
         "start": "2026-12-04T12:00",
         "end": "2026-12-04T12:55",
         "name": "Stick and Puck",
@@ -467,7 +470,7 @@
         "ticket": 0
       },
       {
-        "id": "5dddae35-7551-4bd6-966c-309e01480e37",
+        "id": "9f5ce77a-a361-4a31-a90d-83d12842f6fa",
         "start": "2026-12-04T13:00",
         "end": "2026-12-04T13:50",
         "name": "Hockey",
@@ -476,7 +479,7 @@
         "ticket": 0
       },
       {
-        "id": "8c165339-9d74-4f7e-82ae-8874f72b97ca",
+        "id": "27b9c0bd-7013-4cdd-af6b-855b99766837",
         "start": "2026-12-06T17:15",
         "end": "2026-12-06T18:50",
         "name": "Family Skate",

@@ -7,7 +7,6 @@ import { cn } from "cn";
 import { ProgramType } from "@/types/schedule";
 import { AMENITIES } from "@/lib/amenities";
 import { Button } from "@/components/ui/button";
-import { Switch } from "@/components/ui/switch";
 import {
   Collapsible,
   CollapsibleContent,
@@ -59,8 +58,6 @@ interface FiltersControlProps {
   onTypesChange: (types: ProgramType[]) => void;
   amenities: string[];
   onAmenitiesChange: (amenities: string[]) => void;
-  hideEmpty: boolean;
-  onHideEmptyChange: (v: boolean) => void;
   className?: string;
 }
 
@@ -129,15 +126,13 @@ export function FiltersControl({
   onTypesChange,
   amenities,
   onAmenitiesChange,
-  hideEmpty,
-  onHideEmptyChange,
   className = "",
 }: FiltersControlProps) {
   const { t } = useTranslation();
   const [open, setOpen] = useState(false);
   const isDesktop = useIsDesktop();
   const count = types.length + amenities.length;
-  const active = count > 0 || !hideEmpty;
+  const active = count > 0;
 
   const toggleType = (type: ProgramType) => {
     onTypesChange(
@@ -156,7 +151,6 @@ export function FiltersControl({
   const clearAll = () => {
     onTypesChange([]);
     onAmenitiesChange([]);
-    onHideEmptyChange(true);
   };
 
   const body = (
@@ -173,9 +167,6 @@ export function FiltersControl({
       </Section>
 
       <Section title={t("filters.amenities")} count={amenities.length}>
-        <p className="px-1 pb-1 text-[11px] text-muted-foreground">
-          {t("filters.amenitiesHint")}
-        </p>
         {AMENITIES.map((amenity) => (
           <ToggleRow
             key={amenity}
@@ -185,11 +176,6 @@ export function FiltersControl({
           />
         ))}
       </Section>
-
-      <div className="flex items-center justify-between gap-3 px-1 pt-1">
-        <span className="text-sm">{t("filters.hideEmpty")}</span>
-        <Switch checked={hideEmpty} onCheckedChange={onHideEmptyChange} />
-      </div>
     </div>
   );
 

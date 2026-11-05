@@ -22,7 +22,6 @@ const en = {
     amenityCount: "{{count}} amenities",
     title: "Filters",
     done: "Done",
-    amenitiesHint: "Venues must have all selected",
     clear: "Clear",
     showAll: "Show all venues",
     hideEmpty: "Hide venues without programs",

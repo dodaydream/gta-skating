@@ -12,7 +12,12 @@ import { DateRangePicker } from "@/components/ui/date-picker";
 import { FiltersControl } from "@/components/ui/FiltersControl";
 import { normalizeLocale, type Locale } from "@/i18n/config";
 import { dayjsLocale, formatTime } from "@/lib/schedule";
-import { IconCalendarWeek, IconCalendar } from "@tabler/icons-react";
+import {
+  IconCalendarWeek,
+  IconCalendar,
+  IconEyeFilled,
+  IconEyeOff,
+} from "@tabler/icons-react";
 
 interface FilterChipsProps {
   from: string;
@@ -248,9 +253,23 @@ export function FilterChips({
         onTypesChange={onTypesChange}
         amenities={amenities}
         onAmenitiesChange={onAmenitiesChange}
-        hideEmpty={hideEmpty}
-        onHideEmptyChange={onHideEmptyChange}
       />
+
+      <Button
+        variant="secondary"
+        size="icon-lg"
+        className="shadow-xs"
+        aria-pressed={!hideEmpty}
+        aria-label={hideEmpty ? t("filters.showAll") : t("filters.hideEmpty")}
+        title={hideEmpty ? t("filters.showAll") : t("filters.hideEmpty")}
+        onClick={() => onHideEmptyChange(!hideEmpty)}
+      >
+        {hideEmpty ? (
+          <IconEyeOff className="size-4" />
+        ) : (
+          <IconEyeFilled className="size-4 text-blue-500" />
+        )}
+      </Button>
     </div>
   );
 }

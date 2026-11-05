@@ -11,5 +11,6 @@
       "name": "Varsity Arena",
       "type": "North American / NHL"
     }
-  ]
+  ],
+  "amenities": ["skate_sharpening"]
 }

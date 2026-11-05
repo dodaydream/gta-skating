@@ -24,7 +24,6 @@ const fr: Messages = {
     amenityCount: "{{count}} commodités",
     title: "Filtres",
     done: "Terminé",
-    amenitiesHint: "Les lieux doivent offrir toutes les commodités sélectionnées",
     clear: "Effacer",
     showAll: "Afficher tous les arénas",
     hideEmpty: "Masquer les arénas sans programmes",
