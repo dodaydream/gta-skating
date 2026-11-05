@@ -7,29 +7,17 @@
     "lat": 43.729092,
     "lon": -79.492501
   },
+  "rinks": [
+    {
+      "name": "Ice Rink",
+      "type": "North American / NHL"
+    }
+  ],
   "schedule": {
-    "updatedAt": "2026-11-02T06:09:06.913Z",
+    "updatedAt": "2026-11-05T02:58:34.813Z",
     "programs": [
       {
-        "id": "92c1c122-9916-4374-8e4b-101d44e7f348",
-        "start": "2026-11-02T16:00",
-        "end": "2026-11-02T17:00",
-        "name": "Shinny: Child",
-        "type": "Pickup Hockey",
-        "notes": "6 - 12 years",
-        "ticket": 0
-      },
-      {
-        "id": "dd8c090f-a949-4cd8-a9f2-30fd7d611a1b",
-        "start": "2026-11-02T17:00",
-        "end": "2026-11-02T18:00",
-        "name": "Shinny: Youth",
-        "type": "Pickup Hockey",
-        "notes": "13 - 17 years",
-        "ticket": 0
-      },
-      {
-        "id": "5b9cdd60-bb0a-4b1e-9cc8-b62d53407b0e",
+        "id": "a04d28db-8bbe-4eef-b72f-a1439e8318a1",
         "start": "2026-11-05T16:00",
         "end": "2026-11-05T17:00",
         "name": "Shinny: Youth",
@@ -38,7 +26,7 @@
         "ticket": 0
       },
       {
-        "id": "870fdbb6-58ec-4e45-88ac-4d1290ec45a2",
+        "id": "7760f935-779a-415d-861a-2e7b5f09ad6e",
         "start": "2026-11-07T19:00",
         "end": "2026-11-07T21:00",
         "name": "Leisure Skate",
@@ -47,7 +35,7 @@
         "ticket": 0
       },
       {
-        "id": "cf23bb4b-9ea6-40b9-9a17-852e01fd7744",
+        "id": "20671688-bb52-49c5-ad50-6e369b346d41",
         "start": "2026-11-08T14:30",
         "end": "2026-11-08T16:30",
         "name": "Leisure Skate",

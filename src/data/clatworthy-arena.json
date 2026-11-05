@@ -7,27 +7,17 @@
     "lat": 43.823602,
     "lon": -79.368555
   },
+  "rinks": [
+    {
+      "name": "Rink 1",
+      "type": "North American / NHL"
+    }
+  ],
   "schedule": {
-    "updatedAt": "2026-11-03T02:28:49.345Z",
+    "updatedAt": "2026-11-05T02:58:23.375Z",
     "programs": [
       {
-        "id": "3d513909-44e3-4664-9488-d495d8e8a283",
-        "start": "2026-11-03T11:00",
-        "end": "2026-11-03T12:30",
-        "name": "Shinny: Adults",
-        "type": "Pickup Hockey",
-        "ticket": 5.17
-      },
-      {
-        "id": "e3d9c43f-03f7-4820-a700-3ec153d7fa27",
-        "start": "2026-11-04T11:00",
-        "end": "2026-11-04T12:30",
-        "name": "Shinny: Adults",
-        "type": "Pickup Hockey",
-        "ticket": 5.17
-      },
-      {
-        "id": "494bcaf7-a6df-4bfa-ab27-c2812ef7cf6e",
+        "id": "b3ad9e75-76b2-4868-853d-2834e7fd9e13",
         "start": "2026-11-06T11:00",
         "end": "2026-11-06T12:30",
         "name": "Shinny: Adults",
@@ -35,7 +25,7 @@
         "ticket": 5.17
       },
       {
-        "id": "7cad2b40-18e3-410c-b616-bd74b3ad851f",
+        "id": "a8851b55-1e11-48bf-8274-b1fa07fc87c7",
         "start": "2026-11-07T16:10",
         "end": "2026-11-07T17:00",
         "name": "Recreational Skate",
@@ -43,7 +33,7 @@
         "ticket": 5.17
       },
       {
-        "id": "a94a45fe-19b7-4a71-a50e-cd9c76fae81a",
+        "id": "9c4c4346-2b3b-4b20-b539-6ec4d14da45a",
         "start": "2026-11-10T11:00",
         "end": "2026-11-10T12:30",
         "name": "Shinny: Adults",
@@ -51,7 +41,7 @@
         "ticket": 5.17
       },
       {
-        "id": "50e430b8-5cd0-42d5-b04c-75f3852ae4b1",
+        "id": "107db697-dbd5-41f8-9fd9-aba361d7d1bb",
         "start": "2026-11-11T11:00",
         "end": "2026-11-11T12:30",
         "name": "Shinny: Adults",
@@ -59,7 +49,7 @@
         "ticket": 5.17
       },
       {
-        "id": "a8a1ac7a-7613-4fea-899a-87eb02872c54",
+        "id": "e5d0f4f4-a18c-4f82-b56b-ae41825909d1",
         "start": "2026-11-13T11:00",
         "end": "2026-11-13T12:30",
         "name": "Shinny: Adults",
@@ -67,7 +57,7 @@
         "ticket": 5.17
       },
       {
-        "id": "092e7c52-691a-46a3-8308-1961bb027ec6",
+        "id": "cba5a8f6-ee29-49d4-baec-82a76bf122da",
         "start": "2026-11-14T16:10",
         "end": "2026-11-14T17:00",
         "name": "Recreational Skate",
@@ -75,7 +65,7 @@
         "ticket": 5.17
       },
       {
-        "id": "b67758ea-0dee-40dc-90e7-057c90252eba",
+        "id": "de981b76-dc59-4a80-a0ac-06c79694712c",
         "start": "2026-11-17T11:00",
         "end": "2026-11-17T12:30",
         "name": "Shinny: Adults",
@@ -83,7 +73,7 @@
         "ticket": 5.17
       },
       {
-        "id": "0d33c3f6-7bc4-4ed6-b568-e57f0050cbfd",
+        "id": "bea34ab8-3d26-4346-8f1a-e9c61c78db11",
         "start": "2026-11-18T11:00",
         "end": "2026-11-18T12:30",
         "name": "Shinny: Adults",
@@ -91,7 +81,7 @@
         "ticket": 5.17
       },
       {
-        "id": "1855eb9a-214e-4c4f-bd84-755f8f7b08cb",
+        "id": "c3f7d289-fcc0-456a-ba6d-c74a9f3c286a",
         "start": "2026-11-20T11:00",
         "end": "2026-11-20T12:30",
         "name": "Shinny: Adults",
@@ -99,7 +89,7 @@
         "ticket": 5.17
       },
       {
-        "id": "5ffe1b4c-9de8-4541-9217-597d48173669",
+        "id": "b090df1a-b7c8-4ca7-9f91-f159dc8a038e",
         "start": "2026-11-21T16:10",
         "end": "2026-11-21T17:00",
         "name": "Recreational Skate",
@@ -107,7 +97,7 @@
         "ticket": 5.17
       },
       {
-        "id": "f184fac9-ff3b-4581-9aa6-7fa70918e58e",
+        "id": "3b2b9d03-b1e6-476a-b590-56da16b7b863",
         "start": "2026-11-24T11:00",
         "end": "2026-11-24T12:30",
         "name": "Shinny: Adults",
@@ -115,7 +105,7 @@
         "ticket": 5.17
       },
       {
-        "id": "81ccc7ca-da18-4a83-8eee-5943112c5392",
+        "id": "dc452d37-0717-40bb-8af5-7e17a557b492",
         "start": "2026-11-25T11:00",
         "end": "2026-11-25T12:30",
         "name": "Shinny: Adults",
@@ -123,7 +113,7 @@
         "ticket": 5.17
       },
       {
-        "id": "a4069f51-21a2-45ae-83c0-2c723fd4aafe",
+        "id": "3d50ffaf-5529-4ae0-9f4b-14aa2917d582",
         "start": "2026-11-27T11:00",
         "end": "2026-11-27T12:30",
         "name": "Shinny: Adults",
@@ -131,7 +121,7 @@
         "ticket": 5.17
       },
       {
-        "id": "ea60c26f-787a-4ff3-b3b7-c4a12124415f",
+        "id": "5a3f91fb-1cf2-411a-95f8-e0f33e789016",
         "start": "2026-11-28T16:10",
         "end": "2026-11-28T17:00",
         "name": "Recreational Skate",
@@ -139,7 +129,7 @@
         "ticket": 5.17
       },
       {
-        "id": "d8cf9c67-a876-47a5-9d71-7c880221bede",
+        "id": "84b05aa7-55d7-4e38-b3fd-220ab3efae76",
         "start": "2026-12-01T11:00",
         "end": "2026-12-01T12:30",
         "name": "Shinny: Adults",
@@ -147,7 +137,7 @@
         "ticket": 5.17
       },
       {
-        "id": "0ce4ffad-7b19-41bf-b704-3afc60935f25",
+        "id": "6798b06e-fea5-4024-b6c3-b083a677a71c",
         "start": "2026-12-02T11:00",
         "end": "2026-12-02T12:30",
         "name": "Shinny: Adults",
@@ -155,7 +145,7 @@
         "ticket": 5.17
       },
       {
-        "id": "42ab46bc-204a-4ee3-b6a8-8cc04782cad9",
+        "id": "cfb4f54c-d064-4449-9a14-c61141b07ef5",
         "start": "2026-12-04T11:00",
         "end": "2026-12-04T12:30",
         "name": "Shinny: Adults",
@@ -163,7 +153,7 @@
         "ticket": 5.17
       },
       {
-        "id": "f57b7271-6e85-4022-9e61-6246b8be1332",
+        "id": "0141c06d-5cc1-4805-9299-325a888573cb",
         "start": "2026-12-05T16:10",
         "end": "2026-12-05T17:00",
         "name": "Recreational Skate",
@@ -171,7 +161,7 @@
         "ticket": 5.17
       },
       {
-        "id": "4f40205f-ddc3-44ad-99df-629d3a22e87c",
+        "id": "984f1bad-50a8-4bd8-ab29-8afff76c526e",
         "start": "2026-12-08T11:00",
         "end": "2026-12-08T12:30",
         "name": "Shinny: Adults",
@@ -179,7 +169,7 @@
         "ticket": 5.17
       },
       {
-        "id": "35b55b9e-741d-4fd0-8053-a4628e2162df",
+        "id": "e5e64897-d9b1-47fc-a080-460f3ef0fded",
         "start": "2026-12-09T11:00",
         "end": "2026-12-09T12:30",
         "name": "Shinny: Adults",
@@ -187,7 +177,7 @@
         "ticket": 5.17
       },
       {
-        "id": "76f6788f-1409-46d6-bc70-961d7dfa056c",
+        "id": "1ee26925-fb66-4108-81d7-c7487583a08a",
         "start": "2026-12-11T11:00",
         "end": "2026-12-11T12:30",
         "name": "Shinny: Adults",
@@ -195,7 +185,7 @@
         "ticket": 5.17
       },
       {
-        "id": "b8d79bb8-6e7b-4752-90c4-6e140101f3c9",
+        "id": "41c52607-43af-4537-84f4-a90e8216e117",
         "start": "2026-12-12T16:10",
         "end": "2026-12-12T17:00",
         "name": "Recreational Skate",
@@ -203,7 +193,7 @@
         "ticket": 5.17
       },
       {
-        "id": "62f24360-adae-4242-994b-6c7ea26ed890",
+        "id": "112e0f20-53c2-499f-a6e3-608ad2d8624f",
         "start": "2026-12-15T11:00",
         "end": "2026-12-15T12:30",
         "name": "Shinny: Adults",
@@ -211,7 +201,7 @@
         "ticket": 5.17
       },
       {
-        "id": "1c16c6e2-119d-4b3b-ab5b-476bc60eedb2",
+        "id": "fa97fbaa-5a81-4940-90e0-5566fa905f0f",
         "start": "2026-12-16T11:00",
         "end": "2026-12-16T12:30",
         "name": "Shinny: Adults",
@@ -219,7 +209,7 @@
         "ticket": 5.17
       },
       {
-        "id": "d04cd0ae-5e43-4474-95fd-2982fd91e6a1",
+        "id": "5a4cc565-172b-4b1b-ad9d-0fa37f773796",
         "start": "2026-12-18T11:00",
         "end": "2026-12-18T12:30",
         "name": "Shinny: Adults",
@@ -227,7 +217,7 @@
         "ticket": 5.17
       },
       {
-        "id": "967f392e-0add-40b4-bcad-eef2861edb5a",
+        "id": "e0d2d577-13c2-4d3a-a4cf-52ae39e553f0",
         "start": "2026-12-19T16:10",
         "end": "2026-12-19T17:00",
         "name": "Recreational Skate",

@@ -7,11 +7,17 @@
     "lat": 43.719835,
     "lon": -79.512771
   },
+  "rinks": [
+    {
+      "name": "Ice Rink",
+      "type": "North American / NHL"
+    }
+  ],
   "schedule": {
-    "updatedAt": "2026-11-02T06:09:03.552Z",
+    "updatedAt": "2026-11-05T02:58:32.645Z",
     "programs": [
       {
-        "id": "86f53aec-3c8c-4bb5-b6ad-892c4bf875c7",
+        "id": "5c52d218-6be8-4247-a49d-4a1b9165654b",
         "start": "2026-11-04T19:15",
         "end": "2026-11-04T21:15",
         "name": "Leisure Skate",
@@ -20,7 +26,7 @@
         "ticket": 0
       },
       {
-        "id": "5f3dbd9e-7b5a-4465-8e76-f0bbe88c5386",
+        "id": "c1bed745-1ad1-463a-a988-51b7ab777350",
         "start": "2026-11-07T19:00",
         "end": "2026-11-07T21:00",
         "name": "Leisure Skate",
@@ -29,7 +35,7 @@
         "ticket": 0
       },
       {
-        "id": "7ba7cb7d-1867-4bdc-871f-b9b1d52b3924",
+        "id": "663f1620-5ee8-46c5-adaa-1ccb0c236cef",
         "start": "2026-11-08T14:45",
         "end": "2026-11-08T15:30",
         "name": "Leisure Skate: Child with Caregiver",
@@ -38,7 +44,7 @@
         "ticket": 0
       },
       {
-        "id": "9fa69a62-b6c2-46cb-a214-09cfd78e5eec",
+        "id": "ddb68d4e-1aab-414b-b20f-c8ff4d247064",
         "start": "2026-11-08T15:30",
         "end": "2026-11-08T17:00",
         "name": "Leisure Skate",

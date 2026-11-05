@@ -2,6 +2,9 @@
   "name": "Chris Tonks Arena",
   "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=476",
   "timezone": "America/Toronto",
+  "rinks": [
+    { "name": "Ice Rink", "type": "North American / NHL" }
+  ],
   "address": "95 Black Creek Dr, Toronto, ON",
   "coordinates": {
     "lat": 43.68702,

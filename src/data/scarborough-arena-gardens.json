@@ -7,56 +7,17 @@
     "lat": 43.694811,
     "lon": -79.262009
   },
+  "rinks": [
+    {
+      "name": "Ice Rink",
+      "type": "North American / NHL"
+    }
+  ],
   "schedule": {
-    "updatedAt": "2026-11-02T06:09:07.299Z",
+    "updatedAt": "2026-11-05T02:58:34.977Z",
     "programs": [
       {
-        "id": "3af9a0f7-97ef-4359-96a2-6ca9ef90b63c",
-        "start": "2026-11-02T09:00",
-        "end": "2026-11-02T10:00",
-        "name": "Figure Skating",
-        "type": "Figure Skating",
-        "notes": "6 years and over",
-        "ticket": 0
-      },
-      {
-        "id": "2fdf2b75-d6d8-4871-b4dd-ead9e266351e",
-        "start": "2026-11-02T10:00",
-        "end": "2026-11-02T11:45",
-        "name": "Leisure Skate: Older Adult (Unsupervised)",
-        "type": "Public Skate",
-        "notes": "60 years and over",
-        "ticket": 0
-      },
-      {
-        "id": "87dd7638-d414-4b6c-b4ef-cc4e3e4b66a1",
-        "start": "2026-11-02T12:00",
-        "end": "2026-11-02T13:00",
-        "name": "Shinny: Adult (Unsupervised)",
-        "type": "Pickup Hockey",
-        "notes": "19 years and over",
-        "ticket": 0
-      },
-      {
-        "id": "54a5944f-10e9-46d4-adb4-2efbf60bfa81",
-        "start": "2026-11-02T13:00",
-        "end": "2026-11-02T14:00",
-        "name": "Shinny (Women) (Unsupervised)",
-        "type": "Pickup Hockey",
-        "notes": "19 years and over",
-        "ticket": 0
-      },
-      {
-        "id": "72b2a13e-8d1c-4094-94c7-8a19e7327946",
-        "start": "2026-11-02T16:00",
-        "end": "2026-11-02T18:00",
-        "name": "Leisure Skate",
-        "type": "Public Skate",
-        "notes": "0 years and over",
-        "ticket": 0
-      },
-      {
-        "id": "6ccf7660-6059-46cf-9dd7-769989d84341",
+        "id": "4e2ad490-fb7e-4044-8a4b-99f019255098",
         "start": "2026-11-04T09:00",
         "end": "2026-11-04T10:00",
         "name": "Leisure Skate: Child with Caregiver (Unsupervised)",
@@ -65,7 +26,7 @@
         "ticket": 0
       },
       {
-        "id": "49824f6a-996d-453a-86b9-47e83c508ee0",
+        "id": "2e536558-f776-445c-ae1e-55dcbd4778f0",
         "start": "2026-11-04T10:00",
         "end": "2026-11-04T11:45",
         "name": "Leisure Skate: Older Adult (Unsupervised)",
@@ -74,7 +35,7 @@
         "ticket": 0
       },
       {
-        "id": "2a7333c9-64bb-4b1d-93f6-cb4db08eb04d",
+        "id": "cb23b5e1-d5db-4d1d-b2fd-e72c855ad842",
         "start": "2026-11-04T12:00",
         "end": "2026-11-04T13:00",
         "name": "Pick Up Hockey: Adults (Unsupervised)",
@@ -83,7 +44,7 @@
         "ticket": 0
       },
       {
-        "id": "14c7c652-b0a6-4f60-89c0-b1810d59cef7",
+        "id": "cffbbd40-8d0d-46b5-abbc-19da3e46136e",
         "start": "2026-11-04T13:00",
         "end": "2026-11-04T14:00",
         "name": "Shinny: Older Adult (Unsupervised)",
@@ -92,7 +53,7 @@
         "ticket": 0
       },
       {
-        "id": "1d211478-5f46-4bed-bc2f-665baea884f2",
+        "id": "5ea67260-2f1e-40d4-9d0d-0cf802d65c11",
         "start": "2026-11-05T09:00",
         "end": "2026-11-05T10:00",
         "name": "Adapted Leisure Skate with Family",
@@ -101,7 +62,7 @@
         "ticket": 0
       },
       {
-        "id": "000e7476-8ad5-44f3-a256-de1610fcea38",
+        "id": "ff3c8b3b-bf7c-4b4a-a79f-ab40e2d0a343",
         "start": "2026-11-05T10:00",
         "end": "2026-11-05T11:45",
         "name": "Leisure Skate: Adult (Unsupervised)",
@@ -110,7 +71,7 @@
         "ticket": 0
       },
       {
-        "id": "d3ab257c-9e7d-4fdf-9979-98b1c5ff285e",
+        "id": "5b87116b-7e29-49f7-9a53-f94052ab13b0",
         "start": "2026-11-05T12:00",
         "end": "2026-11-05T13:00",
         "name": "Shinny: Adult (Unsupervised)",
@@ -119,7 +80,7 @@
         "ticket": 0
       },
       {
-        "id": "62ad3fda-a92c-4f3f-97f4-d63dc94e6e25",
+        "id": "bfef78d5-1442-4ff4-a339-f71848138aad",
         "start": "2026-11-05T13:00",
         "end": "2026-11-05T14:00",
         "name": "Shinny: Older Adult (Unsupervised)",
@@ -128,7 +89,7 @@
         "ticket": 0
       },
       {
-        "id": "23ed6203-437b-4836-ab24-4cb45905b582",
+        "id": "318c9fef-7df4-47e8-af76-dedef4fcefea",
         "start": "2026-11-06T09:00",
         "end": "2026-11-06T10:00",
         "name": "Adapted Leisure Skate with Family",
@@ -137,7 +98,7 @@
         "ticket": 0
       },
       {
-        "id": "03bacfa8-989e-45e8-bca4-a1236203442a",
+        "id": "17d152be-327f-48b8-bba0-04943f05f7be",
         "start": "2026-11-06T10:00",
         "end": "2026-11-06T11:45",
         "name": "Leisure Skate: Adult (Unsupervised)",
@@ -146,7 +107,7 @@
         "ticket": 0
       },
       {
-        "id": "e0aa34e0-989e-465a-8a6f-1ee264b91e0b",
+        "id": "5f0db1f9-7171-495b-854d-8cd0dbe19501",
         "start": "2026-11-06T12:00",
         "end": "2026-11-06T13:00",
         "name": "Pick Up Hockey: Adults (Unsupervised)",
@@ -155,7 +116,7 @@
         "ticket": 0
       },
       {
-        "id": "cf645a91-0434-46a6-b2d0-4dc501770583",
+        "id": "464c478d-1c14-47cf-b659-4891abfac144",
         "start": "2026-11-06T13:00",
         "end": "2026-11-06T14:00",
         "name": "Pick Up Hockey: Older Adult",
@@ -164,7 +125,7 @@
         "ticket": 0
       },
       {
-        "id": "26ab4e32-5dc6-468b-950f-709c9569a267",
+        "id": "e2e32598-80be-41de-8211-f0eab3ea65fc",
         "start": "2026-11-08T17:15",
         "end": "2026-11-08T19:00",
         "name": "Leisure Skate",

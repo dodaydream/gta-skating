@@ -5,18 +5,44 @@
       "name": "Stouffville Arena",
       "url": "https://anc.ca.apm.activecommunities.com/townofws/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=13&displayType=0&view=2",
       "address": "12483 Ninth Line, Stouffville, ON L4A 0Z6",
-      "coordinates": { "lat": 43.9742243, "lon": -79.2553137 },
+      "coordinates": {
+        "lat": 43.9742243,
+        "lon": -79.2553137
+      },
       "centerId": 13,
-      "type": "indoor"
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Pad A",
+          "type": "North American / NHL"
+        },
+        {
+          "name": "Pad B",
+          "type": "North American / NHL"
+        }
+      ]
     },
     {
       "id": "stouffville-clippers-sports-complex",
       "name": "Stouffville Clippers Sports Complex",
       "url": "https://anc.ca.apm.activecommunities.com/townofws/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=14&displayType=0&view=2",
       "address": "120 Weldon Road, Stouffville, ON L4A 1N2",
-      "coordinates": { "lat": 43.9650556, "lon": -79.2617345 },
+      "coordinates": {
+        "lat": 43.9650556,
+        "lon": -79.2617345
+      },
       "centerId": 14,
-      "type": "indoor"
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Pad 1",
+          "type": "North American / NHL"
+        },
+        {
+          "name": "Pad 2",
+          "type": "North American / NHL"
+        }
+      ]
     }
   ]
 }

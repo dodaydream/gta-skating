@@ -5,24 +5,83 @@
       "name": "Fieldgate Sports Complex",
       "url": "https://www.whitby.ca/explore-and-enjoy/parks-and-recreation/skating-schedules-and-arenas/",
       "address": "2 Gathering Place, Whitby, ON L1M 1T4",
-      "coordinates": { "lat": 43.9429379, "lon": -78.9632445 },
-      "type": "indoor"
+      "coordinates": {
+        "lat": 43.9429379,
+        "lon": -78.9632445
+      },
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Rink 1",
+          "type": "North American / NHL"
+        },
+        {
+          "name": "Rink 2",
+          "type": "North American / NHL"
+        }
+      ]
     },
     {
       "id": "iroquois-park-sports-centre",
       "name": "Iroquois Park Sports Centre",
       "url": "https://www.whitby.ca/explore-and-enjoy/parks-and-recreation/skating-schedules-and-arenas/",
       "address": "500 Victoria St. W., Whitby, ON L1N 9G4",
-      "coordinates": { "lat": 43.860281, "lon": -78.944613 },
-      "type": "indoor"
+      "coordinates": {
+        "lat": 43.860281,
+        "lon": -78.944613
+      },
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Pad 1",
+          "type": "North American / NHL"
+        },
+        {
+          "name": "Pad 2",
+          "type": "North American / NHL"
+        },
+        {
+          "name": "Pad 3",
+          "type": "North American / NHL"
+        },
+        {
+          "name": "Pad 4",
+          "type": "North American / NHL"
+        },
+        {
+          "name": "Pad 5",
+          "type": "North American / NHL"
+        },
+        {
+          "name": "Pad 6",
+          "type": "North American / NHL"
+        }
+      ]
     },
     {
       "id": "mckinney-centre",
       "name": "McKinney Centre",
       "url": "https://www.whitby.ca/explore-and-enjoy/parks-and-recreation/skating-schedules-and-arenas/",
       "address": "222 McKinney Dr., Whitby, ON L1R 3M3",
-      "coordinates": { "lat": 43.920905, "lon": -78.9553679 },
-      "type": "indoor"
+      "coordinates": {
+        "lat": 43.920905,
+        "lon": -78.9553679
+      },
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Pad 1",
+          "type": "North American / NHL"
+        },
+        {
+          "name": "Pad 2",
+          "type": "North American / NHL"
+        },
+        {
+          "name": "Figure Skating Pad",
+          "type": "Figure Skating"
+        }
+      ]
     }
   ]
 }

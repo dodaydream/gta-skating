@@ -7,43 +7,37 @@
     "lat": 43.776161,
     "lon": -79.516738
   },
+  "rinks": [
+    {
+      "name": "Rink 1",
+      "type": "North American / NHL"
+    },
+    {
+      "name": "Rink 2",
+      "type": "North American / NHL"
+    },
+    {
+      "name": "Rink 3",
+      "type": "North American / NHL"
+    },
+    {
+      "name": "Rink 4",
+      "type": "North American / NHL"
+    },
+    {
+      "name": "Rink 5",
+      "type": "North American / NHL"
+    },
+    {
+      "name": "Rink 6",
+      "type": "Olympic"
+    }
+  ],
   "schedule": {
-    "updatedAt": "2026-11-02T06:20:13.878Z",
+    "updatedAt": "2026-11-05T02:58:00.174Z",
     "programs": [
       {
-        "id": "9d46363a-1b7f-4684-89c9-d9d37ac1e11b",
-        "start": "2026-11-02T13:15",
-        "end": "2026-11-02T14:35",
-        "name": "Public Skate",
-        "type": "Public Skate",
-        "ticket": 5
-      },
-      {
-        "id": "e1066b89-3171-472d-8e84-bd08a5837bbd",
-        "start": "2026-11-02T13:30",
-        "end": "2026-11-02T14:50",
-        "name": "Stick & Puck",
-        "type": "Stick and Puck",
-        "ticket": 10
-      },
-      {
-        "id": "c1d35b7c-78ad-410a-a81f-da4ea0ef171a",
-        "start": "2026-11-03T13:15",
-        "end": "2026-11-03T14:35",
-        "name": "Public Skate",
-        "type": "Public Skate",
-        "ticket": 5
-      },
-      {
-        "id": "fec1b4b2-df0f-4fec-bc67-baa93a363568",
-        "start": "2026-11-03T13:30",
-        "end": "2026-11-03T14:50",
-        "name": "Stick & Puck",
-        "type": "Stick and Puck",
-        "ticket": 10
-      },
-      {
-        "id": "e35abd90-cc25-4392-87cb-92ac89fb52b5",
+        "id": "4cb64103-375f-4f15-b5df-4060e4d51e79",
         "start": "2026-11-04T13:15",
         "end": "2026-11-04T14:35",
         "name": "Public Skate",
@@ -51,7 +45,7 @@
         "ticket": 5
       },
       {
-        "id": "56e9fb12-3a54-4849-a8f6-40c745bf8227",
+        "id": "648ccac9-801a-4c62-89a1-fbc3ad78db74",
         "start": "2026-11-04T13:30",
         "end": "2026-11-04T14:50",
         "name": "Stick & Puck",
@@ -59,7 +53,7 @@
         "ticket": 10
       },
       {
-        "id": "1056d912-d1ea-48cc-8204-9953a5304ad0",
+        "id": "e4581215-0815-4d62-a906-049df2bbc193",
         "start": "2026-11-06T13:30",
         "end": "2026-11-06T14:50",
         "name": "Stick & Puck",
@@ -67,7 +61,7 @@
         "ticket": 10
       },
       {
-        "id": "fc4dba05-0c64-4f49-b96e-0632dbb602f8",
+        "id": "9aac6dee-50a1-4e8e-ba9e-4be4f2f97386",
         "start": "2026-11-09T13:15",
         "end": "2026-11-09T14:35",
         "name": "Public Skate",
@@ -75,7 +69,7 @@
         "ticket": 5
       },
       {
-        "id": "e2179f8c-ed66-4a19-b046-b8098c5deb28",
+        "id": "019d0d5e-7078-4617-b7a0-448a4fa4b00a",
         "start": "2026-11-09T13:30",
         "end": "2026-11-09T14:50",
         "name": "Stick & Puck",
@@ -83,7 +77,7 @@
         "ticket": 10
       },
       {
-        "id": "13222d53-f6b2-4151-aeed-f7314ce367d4",
+        "id": "f3f7d013-38c6-4971-8dde-3f644ea48deb",
         "start": "2026-11-10T13:15",
         "end": "2026-11-10T14:35",
         "name": "Public Skate",
@@ -91,7 +85,7 @@
         "ticket": 5
       },
       {
-        "id": "54d2007a-b2c0-4cf1-aa5a-aaf10e24070b",
+        "id": "6126fc93-a7ee-467b-971a-7fa89a55720a",
         "start": "2026-11-10T13:30",
         "end": "2026-11-10T14:50",
         "name": "Stick & Puck",
@@ -99,7 +93,7 @@
         "ticket": 10
       },
       {
-        "id": "a6595829-ce25-4c6d-8cb7-78d74adf63db",
+        "id": "03ffe1df-da22-4d2c-8bb4-c0a7023a3806",
         "start": "2026-11-11T14:00",
         "end": "2026-11-11T15:20",
         "name": "Public Skate",
@@ -107,7 +101,7 @@
         "ticket": 5
       },
       {
-        "id": "be424a48-1863-4698-a525-b45e09591858",
+        "id": "c50149e4-2f37-4144-8bbf-3b4012f3ee87",
         "start": "2026-11-11T14:15",
         "end": "2026-11-11T15:35",
         "name": "Stick & Puck",
@@ -115,7 +109,7 @@
         "ticket": 10
       },
       {
-        "id": "08a03a06-cb85-4085-b479-f98c6fac669b",
+        "id": "8e21527d-b5bf-40e0-9c4b-e87dbc35971c",
         "start": "2026-11-12T14:00",
         "end": "2026-11-12T15:20",
         "name": "Public Skate",
@@ -123,7 +117,7 @@
         "ticket": 5
       },
       {
-        "id": "060f58e8-1019-4668-852a-6d53bb9f2eef",
+        "id": "24243c04-3f6e-4c57-bb44-30dd32d9c1b7",
         "start": "2026-11-12T14:15",
         "end": "2026-11-12T15:35",
         "name": "Stick & Puck",
@@ -131,7 +125,7 @@
         "ticket": 10
       },
       {
-        "id": "eeaaa243-2d6f-4e9c-bceb-d91e62e31bf9",
+        "id": "30c968fb-03d9-4b67-a166-ab43b50991e1",
         "start": "2026-11-16T13:15",
         "end": "2026-11-16T15:05",
         "name": "Public Skate",
@@ -139,7 +133,7 @@
         "ticket": 5
       },
       {
-        "id": "a31db709-dd41-487e-a705-881f31c1afa7",
+        "id": "cb096777-fa46-4cd5-94d3-8c2d6cee1eae",
         "start": "2026-11-16T13:45",
         "end": "2026-11-16T15:35",
         "name": "Stick & Puck",
@@ -147,7 +141,7 @@
         "ticket": 10
       },
       {
-        "id": "c35142a0-759f-4926-8143-cb50afb4c8e2",
+        "id": "3e066630-6805-487a-83c9-a42084fefc89",
         "start": "2026-11-17T13:15",
         "end": "2026-11-17T15:05",
         "name": "Public Skate",
@@ -155,7 +149,7 @@
         "ticket": 5
       },
       {
-        "id": "efbc7d96-24ac-44fd-a392-c541714e797b",
+        "id": "8f54b91d-c82b-44f7-bb40-ae5192c18f0c",
         "start": "2026-11-17T13:45",
         "end": "2026-11-17T15:35",
         "name": "Stick & Puck",
@@ -163,7 +157,7 @@
         "ticket": 10
       },
       {
-        "id": "7c220261-680f-4ce5-bd3e-6346204fc806",
+        "id": "2e794cde-4391-4ef4-95ac-2723ab11b509",
         "start": "2026-11-18T13:15",
         "end": "2026-11-18T15:05",
         "name": "Public Skate",
@@ -171,7 +165,7 @@
         "ticket": 5
       },
       {
-        "id": "be137b5c-d253-4b32-a747-b857671bd626",
+        "id": "949bc711-84eb-415f-a2b4-7aa56b5c41b9",
         "start": "2026-11-18T13:45",
         "end": "2026-11-18T15:35",
         "name": "Stick & Puck",
@@ -179,7 +173,7 @@
         "ticket": 10
       },
       {
-        "id": "d64ae018-f9bc-4113-8eb2-1099553bb3d3",
+        "id": "c89e67d4-fe47-44af-b00a-536279618532",
         "start": "2026-11-23T13:15",
         "end": "2026-11-23T15:05",
         "name": "Public Skate",
@@ -187,7 +181,7 @@
         "ticket": 5
       },
       {
-        "id": "66bd2c2e-0b64-4488-b2cd-49b8335c5cf5",
+        "id": "625c03a7-4b51-4c55-a6c8-fa7005b2e0a6",
         "start": "2026-11-23T13:45",
         "end": "2026-11-23T15:35",
         "name": "Stick & Puck",
@@ -195,7 +189,7 @@
         "ticket": 10
       },
       {
-        "id": "b6fc921d-5b04-4a20-abea-904a8cdf7598",
+        "id": "002eff5f-739a-458d-8820-232bc615ba07",
         "start": "2026-11-24T13:15",
         "end": "2026-11-24T15:05",
         "name": "Public Skate",
@@ -203,7 +197,7 @@
         "ticket": 5
       },
       {
-        "id": "957ed425-11f0-4136-91b0-3b9e627509b7",
+        "id": "b2a546ec-5158-4d70-b4fc-19125aa3ea6b",
         "start": "2026-11-24T13:45",
         "end": "2026-11-24T15:35",
         "name": "Stick & Puck",
@@ -211,7 +205,7 @@
         "ticket": 10
       },
       {
-        "id": "11851681-c0f7-4eeb-a234-c03a9e97ec5b",
+        "id": "4c04016a-e95b-4192-a7fc-0ef8b95bf791",
         "start": "2026-11-25T13:15",
         "end": "2026-11-25T15:05",
         "name": "Public Skate",
@@ -219,7 +213,7 @@
         "ticket": 5
       },
       {
-        "id": "5ff6de0b-f05b-4d64-8912-ddc0b0bd4e4c",
+        "id": "cbbc75b1-67cb-4f7e-919a-c006a15c6cd8",
         "start": "2026-11-25T13:45",
         "end": "2026-11-25T15:35",
         "name": "Stick & Puck",
@@ -227,7 +221,7 @@
         "ticket": 10
       },
       {
-        "id": "8b0730cb-3202-422d-a33b-02571e443b7c",
+        "id": "eb0fb5a1-5bce-4f57-8310-043759d3c0c4",
         "start": "2026-11-26T13:15",
         "end": "2026-11-26T15:05",
         "name": "Public Skate",
@@ -235,7 +229,7 @@
         "ticket": 5
       },
       {
-        "id": "c065b17f-feaf-4b5b-aeea-1d5d14957d53",
+        "id": "4273147c-4c85-44c5-b313-75540b00b99b",
         "start": "2026-11-26T13:45",
         "end": "2026-11-26T15:35",
         "name": "Stick & Puck",
@@ -243,7 +237,7 @@
         "ticket": 10
       },
       {
-        "id": "7dae280f-2d58-46a4-b3fa-48b4fa472426",
+        "id": "3ce9bfa6-50a5-4b2c-a892-e3534ba5627b",
         "start": "2026-11-30T13:15",
         "end": "2026-11-30T15:05",
         "name": "Public Skate",
@@ -251,7 +245,7 @@
         "ticket": 5
       },
       {
-        "id": "81beb490-5f37-438c-ae37-bcb182b9fd6e",
+        "id": "0375c5ce-e00e-4dc5-9f6d-43be4f9e75de",
         "start": "2026-11-30T13:45",
         "end": "2026-11-30T15:35",
         "name": "Stick & Puck",
@@ -259,7 +253,7 @@
         "ticket": 10
       },
       {
-        "id": "09bc7e79-86a1-4dbf-8541-85af35c60b3c",
+        "id": "6f84576c-e8d2-4dde-b58e-7823250838d2",
         "start": "2026-12-01T13:15",
         "end": "2026-12-01T15:05",
         "name": "Public Skate",
@@ -267,9 +261,25 @@
         "ticket": 5
       },
       {
-        "id": "2e590432-7c8a-42c4-b7a9-66241923590d",
+        "id": "35cb44b1-8bfa-42d9-b8b2-bd4a40aad60c",
         "start": "2026-12-01T13:45",
         "end": "2026-12-01T15:35",
+        "name": "Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 10
+      },
+      {
+        "id": "f215e87c-0f4c-4f85-88f4-aafac7c99eeb",
+        "start": "2026-12-04T13:15",
+        "end": "2026-12-04T15:05",
+        "name": "Public Skate",
+        "type": "Public Skate",
+        "ticket": 5
+      },
+      {
+        "id": "3436a4a8-e6ad-4c69-979e-dfdfc2f37f82",
+        "start": "2026-12-04T13:45",
+        "end": "2026-12-04T15:35",
         "name": "Stick & Puck",
         "type": "Stick and Puck",
         "ticket": 10

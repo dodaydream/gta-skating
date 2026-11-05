@@ -67,6 +67,7 @@ const fr: Messages = {
     emptyProgramsFiltered: "Aucun programme à venir ne correspond à vos filtres actuels.",
     showAllPrograms: "Afficher tous les programmes",
     rinks: "Patinoires",
+    reportRink: "Signaler un problème",
     share: "Partager l’aréna",
     shareText: "Horaire de patinage pour {{name}}",
     shareCopied: "Lien copié",

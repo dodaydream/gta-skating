@@ -40,8 +40,15 @@ import { TicketBadge } from "@/components/schedule/TicketBadge";
 import { BusyBadge } from "@/components/schedule/BusyBadge";
 import { BusynessInput } from "@/components/schedule/BusynessInput";
 import { trackEvent } from "@/lib/analytics";
+import { SITE_REPO } from "@/lib/site";
 import { normalizeLocale } from "@/i18n/config";
-import { IconCheck, IconShare2, IconSnowflake, IconX } from "@tabler/icons-react";
+import {
+  IconAlertCircle,
+  IconCheck,
+  IconShare2,
+  IconSnowflake,
+  IconX,
+} from "@tabler/icons-react";
 import {
   Empty,
   EmptyContent,
@@ -523,7 +530,7 @@ export function VenueDetailModal({
             reportsLoading={reportsLoading}
           />
 
-          <RinksSection rinks={venue.rinks} />
+          <RinksSection venueName={venue.name} rinks={venue.rinks} />
 
           {currentProgram ? (
             <div className="px-5">
@@ -591,7 +598,7 @@ export function VenueDetailModal({
         </>
       ) : (
         <div className="flex flex-1 flex-col">
-          <RinksSection rinks={venue.rinks} />
+          <RinksSection venueName={venue.name} rinks={venue.rinks} />
           <div className="flex flex-1 flex-col items-center justify-center px-5">
             <Empty className="my-6">
               <EmptyHeader>
@@ -655,15 +662,33 @@ export function VenueDetailModal({
   );
 }
 
-function RinksSection({ rinks }: { rinks?: Rink[] }) {
+function RinksSection({
+  venueName,
+  rinks,
+}: {
+  venueName: string;
+  rinks?: Rink[];
+}) {
   const { t } = useTranslation();
   if (!rinks || rinks.length === 0) return null;
+  const reportUrl = `${SITE_REPO}/issues/new?template=report-rink.md&title=${encodeURIComponent(
+    `[Rink] ${venueName}`
+  )}`;
   return (
     <section className="flex flex-col">
-      <div className="sticky top-0 z-30 flex h-12 items-center justify-between gap-3 bg-popover px-5">
+      <div className="sticky top-0 z-30 flex items-center justify-between gap-3 bg-popover px-5 py-2">
         <h3 className="text-sm font-semibold text-black dark:text-zinc-50">
           {t("venue.rinks")}
         </h3>
+        <a
+          href={reportUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex shrink-0 items-center gap-1 text-xs font-medium text-zinc-500 hover:text-black hover:underline dark:text-zinc-400 dark:hover:text-zinc-50"
+        >
+          <IconAlertCircle className="h-3.5 w-3.5" />
+          {t("venue.reportRink")}
+        </a>
       </div>
       <ul className="flex flex-wrap gap-1.5 px-5 pb-1 pt-1">
         {rinks.map((rink) => (

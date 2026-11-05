@@ -7,11 +7,17 @@
     "lat": 43.895012,
     "lon": -79.262293
   },
+  "rinks": [
+    {
+      "name": "Rink 1",
+      "type": "North American / NHL"
+    }
+  ],
   "schedule": {
-    "updatedAt": "2026-11-03T02:28:49.347Z",
+    "updatedAt": "2026-11-05T02:58:23.376Z",
     "programs": [
       {
-        "id": "679e7c35-0d98-474e-86b0-73e728b1197a",
+        "id": "078afe10-6b06-435a-8a21-2c530ee7c161",
         "start": "2026-11-22T16:00",
         "end": "2026-11-22T17:50",
         "name": "Recreational Skate",
@@ -19,7 +25,7 @@
         "ticket": 5.17
       },
       {
-        "id": "0fbb93f2-c7bc-4f33-a2c3-f91110ea39e6",
+        "id": "1f556cd5-4aa2-418f-9181-3ca40d7535be",
         "start": "2026-11-29T16:00",
         "end": "2026-11-29T17:50",
         "name": "Recreational Skate",
@@ -27,7 +33,7 @@
         "ticket": 5.17
       },
       {
-        "id": "052ac54b-7bbd-435b-b86c-2609976eadc0",
+        "id": "9a5f7aa3-1a02-42e5-b4e4-d69bf0aa549f",
         "start": "2026-12-06T16:00",
         "end": "2026-12-06T17:50",
         "name": "Recreational Skate",
@@ -35,7 +41,7 @@
         "ticket": 5.17
       },
       {
-        "id": "1a4e5523-2640-4c33-b7a7-9382b5069119",
+        "id": "1b3de797-3844-44d4-b685-8b47f8484484",
         "start": "2026-12-13T16:00",
         "end": "2026-12-13T17:50",
         "name": "Recreational Skate",
@@ -43,7 +49,7 @@
         "ticket": 5.17
       },
       {
-        "id": "637c66a2-2cfe-4b44-9a4c-98c320f4d5c6",
+        "id": "2c8d6505-6c67-4540-95fd-db7f30a231d0",
         "start": "2026-12-20T16:00",
         "end": "2026-12-20T17:50",
         "name": "Recreational Skate",

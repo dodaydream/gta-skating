@@ -7,11 +7,21 @@
     "lat": 43.895354,
     "lon": -79.336539
   },
+  "rinks": [
+    {
+      "name": "Arena 1",
+      "type": "North American / NHL"
+    },
+    {
+      "name": "Arena 2",
+      "type": "North American / NHL"
+    }
+  ],
   "schedule": {
-    "updatedAt": "2026-11-03T02:28:49.344Z",
+    "updatedAt": "2026-11-05T02:58:23.370Z",
     "programs": [
       {
-        "id": "45177915-0d49-4dc9-9345-287041062bee",
+        "id": "09b6f1b4-5b32-4778-b54d-60665e7ca5ca",
         "start": "2026-11-05T16:15",
         "end": "2026-11-05T18:05",
         "name": "Recreational Skate",
@@ -19,7 +29,7 @@
         "ticket": 5.17
       },
       {
-        "id": "ab04723d-dcaf-43f5-9ffd-59db6b662627",
+        "id": "bb41eb35-f3e8-45bb-a57c-16a26f604c70",
         "start": "2026-11-07T12:15",
         "end": "2026-11-07T14:05",
         "name": "Recreational Skate",
@@ -27,7 +37,7 @@
         "ticket": 5.17
       },
       {
-        "id": "0e0df134-9084-4068-ba24-35363efabeec",
+        "id": "47146b76-fe8a-487e-b3cc-7a5ff3bf6ca6",
         "start": "2026-11-08T12:15",
         "end": "2026-11-08T14:05",
         "name": "Recreational Skate",
@@ -35,7 +45,7 @@
         "ticket": 5.17
       },
       {
-        "id": "63295951-5bc6-4590-b41f-e30da8204483",
+        "id": "40572fd9-d79c-42ac-b5d2-8ef14dc35686",
         "start": "2026-11-08T14:15",
         "end": "2026-11-08T16:05",
         "name": "Recreational Skate",
@@ -43,7 +53,7 @@
         "ticket": 5.17
       },
       {
-        "id": "ee6e5975-015c-498d-9ff1-a4f6823862d8",
+        "id": "2531d3c0-52bd-465b-bcb1-af5bb8a8ba85",
         "start": "2026-11-09T16:15",
         "end": "2026-11-09T18:05",
         "name": "Recreational Skate",
@@ -51,7 +61,7 @@
         "ticket": 5.17
       },
       {
-        "id": "ca8fe301-d19f-4c0d-9c7a-36de8fc9f3bf",
+        "id": "21186f50-deb1-4173-8273-db6500d3e102",
         "start": "2026-11-12T16:15",
         "end": "2026-11-12T18:05",
         "name": "Recreational Skate",
@@ -59,7 +69,7 @@
         "ticket": 5.17
       },
       {
-        "id": "ec748f88-fd29-4ea5-a824-9522099d5b4b",
+        "id": "31f9f76e-b653-4140-b8ad-4b8cfb6814fb",
         "start": "2026-11-14T12:15",
         "end": "2026-11-14T14:05",
         "name": "Recreational Skate",
@@ -67,7 +77,7 @@
         "ticket": 5.17
       },
       {
-        "id": "3a4d8b28-0192-4445-9187-8c4b67593a61",
+        "id": "2592c2fc-132d-4c4b-b0f0-993d3820ea6c",
         "start": "2026-11-15T12:15",
         "end": "2026-11-15T14:05",
         "name": "Recreational Skate",
@@ -75,7 +85,7 @@
         "ticket": 5.17
       },
       {
-        "id": "5e3eb202-37d9-4970-aa89-c0702f70d439",
+        "id": "25c73555-bce8-448b-9c5a-e28a250678b8",
         "start": "2026-11-15T14:15",
         "end": "2026-11-15T16:05",
         "name": "Recreational Skate",
@@ -83,7 +93,7 @@
         "ticket": 5.17
       },
       {
-        "id": "2c824be1-4578-45e5-ab56-d2fed44f390f",
+        "id": "9deddfef-99ad-4db6-a818-4a1ce337e140",
         "start": "2026-11-16T16:15",
         "end": "2026-11-16T18:05",
         "name": "Recreational Skate",
@@ -91,7 +101,7 @@
         "ticket": 5.17
       },
       {
-        "id": "de23dce2-81ea-4069-9e54-29c62f4a676d",
+        "id": "ad16e295-e744-491f-820d-92348d59c11f",
         "start": "2026-11-19T16:15",
         "end": "2026-11-19T18:05",
         "name": "Recreational Skate",
@@ -99,7 +109,7 @@
         "ticket": 5.17
       },
       {
-        "id": "bb50e182-6fd7-486e-86de-cc28f64c2631",
+        "id": "abf33b94-527e-4744-a273-8c60f0899941",
         "start": "2026-11-21T12:15",
         "end": "2026-11-21T14:05",
         "name": "Recreational Skate",
@@ -107,7 +117,7 @@
         "ticket": 5.17
       },
       {
-        "id": "2f04d512-a5d1-43ba-be50-d97718015b49",
+        "id": "c887a3aa-24b2-4cc7-a6f8-fcce2716ae7f",
         "start": "2026-11-22T12:15",
         "end": "2026-11-22T14:05",
         "name": "Recreational Skate",
@@ -115,7 +125,7 @@
         "ticket": 5.17
       },
       {
-        "id": "ff7f2c60-2387-4bb5-98cd-c6898f0858cc",
+        "id": "de3ac932-fecc-4d57-b0d0-2dd8b2fdbc65",
         "start": "2026-11-22T14:15",
         "end": "2026-11-22T16:05",
         "name": "Recreational Skate",
@@ -123,7 +133,7 @@
         "ticket": 5.17
       },
       {
-        "id": "3b57798a-78c2-42aa-a197-16dc62e3f357",
+        "id": "37bd6f83-b134-4ea3-a299-f537bdbc6300",
         "start": "2026-11-23T16:15",
         "end": "2026-11-23T18:05",
         "name": "Recreational Skate",
@@ -131,7 +141,7 @@
         "ticket": 5.17
       },
       {
-        "id": "2d0a2ee0-de15-4e7c-9db6-c1163a628d12",
+        "id": "3a052b7b-3252-42d9-b3ef-6ddb185323cd",
         "start": "2026-11-26T16:15",
         "end": "2026-11-26T18:05",
         "name": "Recreational Skate",
@@ -139,7 +149,7 @@
         "ticket": 5.17
       },
       {
-        "id": "f9a65e05-12f2-44b4-a786-9d13fdc26aa4",
+        "id": "edbd3fbc-60a1-4221-937c-8c13000e4d25",
         "start": "2026-11-28T12:15",
         "end": "2026-11-28T14:05",
         "name": "Recreational Skate",
@@ -147,7 +157,7 @@
         "ticket": 5.17
       },
       {
-        "id": "198dbd5b-9d4c-4682-af56-0da963320da2",
+        "id": "89e3029f-10d9-4557-a64e-6e08b2216bf8",
         "start": "2026-11-29T12:15",
         "end": "2026-11-29T14:05",
         "name": "Recreational Skate",
@@ -155,7 +165,7 @@
         "ticket": 5.17
       },
       {
-        "id": "e7d775ff-0af7-489b-83b1-0a457b528a76",
+        "id": "f73a47a2-7867-48f3-9f84-50fe7c5ac56e",
         "start": "2026-11-29T14:15",
         "end": "2026-11-29T16:05",
         "name": "Recreational Skate",
@@ -163,7 +173,7 @@
         "ticket": 5.17
       },
       {
-        "id": "cd059a2b-087c-4d37-8e9d-ee9315cffb52",
+        "id": "4452513d-09d0-4a15-b6ac-5198791eb605",
         "start": "2026-11-30T16:15",
         "end": "2026-11-30T18:05",
         "name": "Recreational Skate",
@@ -171,7 +181,7 @@
         "ticket": 5.17
       },
       {
-        "id": "c727ac8a-b2de-4c9a-9e63-66d13fdab942",
+        "id": "9ea85569-25bf-48f3-994f-49c4f234a2e9",
         "start": "2026-12-03T16:15",
         "end": "2026-12-03T18:05",
         "name": "Recreational Skate",
@@ -179,7 +189,7 @@
         "ticket": 5.17
       },
       {
-        "id": "4a866feb-2ca0-4e13-a909-cad626788bf2",
+        "id": "5eaa4f57-d4f0-497c-ade5-d814e7178be7",
         "start": "2026-12-05T12:15",
         "end": "2026-12-05T14:05",
         "name": "Recreational Skate",
@@ -187,7 +197,7 @@
         "ticket": 5.17
       },
       {
-        "id": "e593bd5e-3af4-4814-a5ff-37c9f45aa715",
+        "id": "9ccc5081-0edc-40f6-a93b-1b51806d01ed",
         "start": "2026-12-06T12:15",
         "end": "2026-12-06T14:05",
         "name": "Recreational Skate",
@@ -195,7 +205,7 @@
         "ticket": 5.17
       },
       {
-        "id": "25da3460-4fad-4a9d-ae20-4554be707073",
+        "id": "9c1d0ecf-0139-4945-a2a0-dbd6f01a717a",
         "start": "2026-12-06T14:15",
         "end": "2026-12-06T16:05",
         "name": "Recreational Skate",
@@ -203,7 +213,7 @@
         "ticket": 5.17
       },
       {
-        "id": "64918ff5-3d62-4bf7-9377-aef36c43a342",
+        "id": "34d488c8-fb81-482d-a1b8-82bdc70c64d4",
         "start": "2026-12-07T16:15",
         "end": "2026-12-07T18:05",
         "name": "Recreational Skate",
@@ -211,7 +221,7 @@
         "ticket": 5.17
       },
       {
-        "id": "38a2205c-c195-4b2c-a011-aba1090a5aec",
+        "id": "9d4feda7-f3c5-4683-8c15-7daf5c31af39",
         "start": "2026-12-10T16:15",
         "end": "2026-12-10T18:05",
         "name": "Recreational Skate",
@@ -219,7 +229,7 @@
         "ticket": 5.17
       },
       {
-        "id": "d36e4ebf-5b01-460b-89a4-979ba0f45342",
+        "id": "a11023f7-f63b-4cf7-98b2-b55c45fa5c03",
         "start": "2026-12-12T12:15",
         "end": "2026-12-12T14:05",
         "name": "Recreational Skate",
@@ -227,7 +237,7 @@
         "ticket": 5.17
       },
       {
-        "id": "32809572-7731-4b4b-a019-a1dd0d43ee89",
+        "id": "23c190df-5ed3-4a09-8fc5-4373972ed8d1",
         "start": "2026-12-13T12:15",
         "end": "2026-12-13T14:05",
         "name": "Recreational Skate",
@@ -235,7 +245,7 @@
         "ticket": 5.17
       },
       {
-        "id": "3476593f-2f65-4f70-acfe-065bb4e09559",
+        "id": "29ff5d19-7309-408a-83e2-90ad885eb5d9",
         "start": "2026-12-13T14:15",
         "end": "2026-12-13T16:05",
         "name": "Recreational Skate",
@@ -243,7 +253,7 @@
         "ticket": 5.17
       },
       {
-        "id": "c0023047-b927-40a1-a5b0-97b22d6a4b4c",
+        "id": "03cc61ee-c58b-41b1-8670-9d28005e771a",
         "start": "2026-12-14T16:15",
         "end": "2026-12-14T18:05",
         "name": "Recreational Skate",
@@ -251,7 +261,7 @@
         "ticket": 5.17
       },
       {
-        "id": "a954f8c7-98a3-4a26-9281-9415e29a833b",
+        "id": "fd28900e-3e5f-4411-bed7-d00ada7403ac",
         "start": "2026-12-17T16:15",
         "end": "2026-12-17T18:05",
         "name": "Recreational Skate",
@@ -259,7 +269,7 @@
         "ticket": 5.17
       },
       {
-        "id": "67aa8d27-252c-4d83-8a1d-8c8d28f9decb",
+        "id": "bf3dba17-a591-493e-87c7-00bd2e9b2140",
         "start": "2026-12-19T12:15",
         "end": "2026-12-19T14:05",
         "name": "Recreational Skate",
@@ -267,7 +277,7 @@
         "ticket": 5.17
       },
       {
-        "id": "85d3dba0-5aee-4cff-aa61-5dacc09a75a5",
+        "id": "eb7be542-3123-42cb-a004-7698be5b9f80",
         "start": "2026-12-20T12:15",
         "end": "2026-12-20T14:05",
         "name": "Recreational Skate",
@@ -275,7 +285,7 @@
         "ticket": 5.17
       },
       {
-        "id": "cdb920c7-e4b1-4a1d-978a-8d9b700ffdc8",
+        "id": "b4234baa-0f1f-4f23-9cce-91694ea04015",
         "start": "2026-12-20T14:15",
         "end": "2026-12-20T16:05",
         "name": "Recreational Skate",
@@ -283,7 +293,7 @@
         "ticket": 5.17
       },
       {
-        "id": "3fafc748-7eda-42e3-ab35-0b7b9d7ac559",
+        "id": "b859791c-96e3-47cd-b740-6dd0864026b5",
         "start": "2026-12-21T16:15",
         "end": "2026-12-21T18:05",
         "name": "Recreational Skate",
@@ -291,7 +301,7 @@
         "ticket": 5.17
       },
       {
-        "id": "231f9a3a-d37d-415b-b19a-f2b2d65abadf",
+        "id": "183e24c8-9cf7-4064-ba2a-843960f63d53",
         "start": "2026-12-27T12:15",
         "end": "2026-12-27T14:05",
         "name": "Recreational Skate",
@@ -299,7 +309,7 @@
         "ticket": 5.17
       },
       {
-        "id": "4bb464b5-6a7b-46e3-9747-859f24451ac2",
+        "id": "cf5868f3-23e1-4489-8053-edb33776f9fa",
         "start": "2026-12-27T14:15",
         "end": "2026-12-27T16:05",
         "name": "Recreational Skate",

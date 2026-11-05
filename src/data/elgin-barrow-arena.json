@@ -7,11 +7,21 @@
     "lat": 43.874834,
     "lon": -79.436087
   },
+  "rinks": [
+    {
+      "name": "West Pad",
+      "type": "North American / NHL"
+    },
+    {
+      "name": "East Pad",
+      "type": "North American / NHL"
+    }
+  ],
   "schedule": {
-    "updatedAt": "2026-11-05T02:39:26.324Z",
+    "updatedAt": "2026-11-05T02:58:59.483Z",
     "programs": [
       {
-        "id": "10c958c7-0248-4c03-be50-09dd3666f880",
+        "id": "1a3567fc-9b3c-4523-bf59-c2e4b662a752",
         "start": "2026-11-07T19:15",
         "end": "2026-11-07T20:45",
         "name": "Public Skate",
@@ -19,7 +29,7 @@
         "ticket": 5.9
       },
       {
-        "id": "82c7bdc3-3119-4b1d-999d-97053fbb67d0",
+        "id": "0f67084d-dee9-4425-a284-ee63769e2c4f",
         "start": "2026-11-07T20:45",
         "end": "2026-11-07T22:15",
         "name": "Shinny",
@@ -27,7 +37,7 @@
         "ticket": 8.7
       },
       {
-        "id": "fb3843c2-05f2-47cb-8c76-8020eabd6221",
+        "id": "8391badc-e60a-467c-bf6d-175be5084581",
         "start": "2026-11-14T19:15",
         "end": "2026-11-14T20:45",
         "name": "Public Skate",
@@ -35,7 +45,7 @@
         "ticket": 5.9
       },
       {
-        "id": "a447f61a-4c80-4a32-a07c-64aaecf37a1a",
+        "id": "28ebf0d3-f11b-4215-963a-509962cf4156",
         "start": "2026-11-14T20:45",
         "end": "2026-11-14T22:15",
         "name": "Shinny",
@@ -43,7 +53,7 @@
         "ticket": 8.7
       },
       {
-        "id": "b2740f01-0bf4-4ec8-bf37-1093325a2fed",
+        "id": "d5634060-152b-4178-a886-d75a949efb22",
         "start": "2026-11-21T19:15",
         "end": "2026-11-21T20:45",
         "name": "Public Skate",
@@ -51,7 +61,7 @@
         "ticket": 5.9
       },
       {
-        "id": "5c7eccef-f012-42b9-9d93-d05287d4c17c",
+        "id": "51fddc66-7f49-43f4-b9b5-f81e39e444d4",
         "start": "2026-11-21T20:45",
         "end": "2026-11-21T22:15",
         "name": "Shinny",
@@ -59,7 +69,7 @@
         "ticket": 8.7
       },
       {
-        "id": "ef9b5328-ab6b-45e2-90d2-09d3f0fca13a",
+        "id": "ad8fcaaf-6de3-4316-8d16-08a18c3a2e08",
         "start": "2026-11-28T19:15",
         "end": "2026-11-28T20:45",
         "name": "Public Skate",
@@ -67,7 +77,7 @@
         "ticket": 5.9
       },
       {
-        "id": "e3f0d9d0-3806-4ac5-8912-9410066c1647",
+        "id": "e307df5a-0161-409c-ab54-8cfa2b07893d",
         "start": "2026-11-28T20:45",
         "end": "2026-11-28T22:15",
         "name": "Shinny",
@@ -75,7 +85,7 @@
         "ticket": 8.7
       },
       {
-        "id": "fba8866f-6b44-4817-a06a-037c08c2e4c7",
+        "id": "6bf1cecb-733e-4599-a1a5-7f9dc19cc3f5",
         "start": "2026-12-05T19:15",
         "end": "2026-12-05T20:45",
         "name": "Public Skate",
@@ -83,7 +93,7 @@
         "ticket": 5.9
       },
       {
-        "id": "8532c8b8-efda-4aae-b7c3-31e59ed6eacf",
+        "id": "a9a68fdd-359d-4678-8616-c059919956b4",
         "start": "2026-12-05T20:45",
         "end": "2026-12-05T22:15",
         "name": "Shinny",

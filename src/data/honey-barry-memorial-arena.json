@@ -7,11 +7,21 @@
     "lat": 43.85414,
     "lon": -79.462445
   },
+  "rinks": [
+    {
+      "name": "North Rink",
+      "type": "North American / NHL"
+    },
+    {
+      "name": "South Rink",
+      "type": "North American / NHL"
+    }
+  ],
   "schedule": {
-    "updatedAt": "2026-11-05T01:30:42.456Z",
+    "updatedAt": "2026-11-05T02:58:41.312Z",
     "programs": [
       {
-        "id": "76be66cd-0db8-4737-a462-3f458b2ee9b2",
+        "id": "916f25a6-1635-4a76-b94a-3cb03e941d34",
         "start": "2026-11-07T16:15",
         "end": "2026-11-07T17:30",
         "name": "Recreational Skate",
@@ -19,7 +29,7 @@
         "ticket": 6.25
       },
       {
-        "id": "2039c62d-e512-4d00-8012-437b7e263e37",
+        "id": "09129908-f148-47d0-9981-f0eb07c98a1a",
         "start": "2026-11-14T16:15",
         "end": "2026-11-14T17:30",
         "name": "Recreational Skate",

@@ -5,19 +5,37 @@
       "name": "Bond Lake Arena",
       "url": "https://www.richmondhill.ca/en/online-services/Arenas.aspx",
       "address": "70 Old Colony Road, Richmond Hill, ON L4E 3G4",
-      "coordinates": { "lat": 43.940667, "lon": -79.450453 },
-      "type": "indoor"
+      "coordinates": {
+        "lat": 43.940667,
+        "lon": -79.450453
+      },
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Rink 1",
+          "type": "North American / NHL"
+        }
+      ]
     },
     {
       "id": "ed-sackfield-arena",
       "name": "Ed Sackfield Arena",
       "rinks": [
-        { "name": "South Arena Ice Pad", "type": "North American / NHL" },
-        { "name": "North Arena Ice Pad", "type": "Olympic" }
+        {
+          "name": "South Arena Ice Pad",
+          "type": "North American / NHL"
+        },
+        {
+          "name": "North Arena Ice Pad",
+          "type": "Olympic"
+        }
       ],
       "url": "https://www.richmondhill.ca/en/things-to-do/Ed-Sackfield-Arena-and-Fitness-Centre.aspx",
       "address": "311 Valleymede Drive, Richmond Hill, ON L4B 2E1",
-      "coordinates": { "lat": 43.855906, "lon": -79.397721 },
+      "coordinates": {
+        "lat": 43.855906,
+        "lon": -79.397721
+      },
       "type": "indoor"
     },
     {
@@ -25,15 +43,31 @@
       "name": "Elgin Barrow Arena",
       "url": "https://www.richmondhill.ca/en/online-services/Arenas.aspx",
       "address": "43 Church Street South, Richmond Hill, ON L4C 1W1",
-      "coordinates": { "lat": 43.874834, "lon": -79.436087 },
-      "type": "indoor"
+      "coordinates": {
+        "lat": 43.874834,
+        "lon": -79.436087
+      },
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "West Pad",
+          "type": "North American / NHL"
+        },
+        {
+          "name": "East Pad",
+          "type": "North American / NHL"
+        }
+      ]
     },
     {
       "id": "tom-graham-arena",
       "name": "Tom Graham Arena",
       "url": "https://www.richmondhill.ca/en/online-services/Arenas.aspx",
       "address": "1300 Elgin Mills Road East, Richmond Hill, ON L4S 1M5",
-      "coordinates": { "lat": 43.898905, "lon": -79.402495 },
+      "coordinates": {
+        "lat": 43.898905,
+        "lon": -79.402495
+      },
       "type": "indoor"
     }
   ]

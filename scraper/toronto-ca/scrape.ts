@@ -135,6 +135,7 @@ async function writeSchedule(
     timezone: TIMEZONE,
     address: meta.address,
     coordinates: meta.coordinates,
+    rinks: meta.rinks,
     schedule: {
       updatedAt: new Date().toISOString(),
       programs,

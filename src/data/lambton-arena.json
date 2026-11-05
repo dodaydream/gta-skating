@@ -2,6 +2,9 @@
   "name": "Lambton Arena",
   "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=479",
   "timezone": "America/Toronto",
+  "rinks": [
+    { "name": "Ice Rink", "type": "North American / NHL" }
+  ],
   "address": "4100 Dundas St W, Toronto, ON",
   "coordinates": {
     "lat": 43.664913,

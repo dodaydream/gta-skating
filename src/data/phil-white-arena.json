@@ -7,11 +7,17 @@
     "lat": 43.691283,
     "lon": -79.432609
   },
+  "rinks": [
+    {
+      "name": "Ice Rink",
+      "type": "North American / NHL"
+    }
+  ],
   "schedule": {
-    "updatedAt": "2026-11-02T06:09:06.348Z",
+    "updatedAt": "2026-11-05T02:58:34.405Z",
     "programs": [
       {
-        "id": "80c2b11d-69b1-4d67-ae14-c2c5daf281fe",
+        "id": "722d1d9d-b4a4-4942-8e47-9dc3355e8e11",
         "start": "2026-11-08T13:15",
         "end": "2026-11-08T15:00",
         "name": "Leisure Skate",

@@ -7,75 +7,29 @@
     "lat": 43.628202,
     "lon": -79.648999
   },
+  "rinks": [
+    {
+      "name": "Rink 1",
+      "type": "Olympic"
+    },
+    {
+      "name": "Rink 2",
+      "type": "North American / NHL"
+    },
+    {
+      "name": "Rink 3",
+      "type": "North American / NHL"
+    },
+    {
+      "name": "Rink 4",
+      "type": "North American / NHL"
+    }
+  ],
   "schedule": {
-    "updatedAt": "2026-11-03T00:11:47.499Z",
+    "updatedAt": "2026-11-05T02:58:24.639Z",
     "programs": [
       {
-        "id": "259dd05d-ec6c-47f8-a48c-4b32569e8dd5",
-        "start": "2026-11-02T09:00",
-        "end": "2026-11-02T10:30",
-        "name": "Hockey Shinny (18+)",
-        "type": "Pickup Hockey",
-        "ticket": 6.96
-      },
-      {
-        "id": "df98e941-ce2d-426f-9d39-dfc8fe2d7da0",
-        "start": "2026-11-02T12:00",
-        "end": "2026-11-02T13:30",
-        "name": "Hockey 18+ Shinny Sledge",
-        "type": "Pickup Hockey",
-        "ticket": 6.96
-      },
-      {
-        "id": "b238da87-f74e-4bd6-92cb-203adb481efb",
-        "start": "2026-11-02T12:00",
-        "end": "2026-11-02T13:30",
-        "name": "Hockey Shinny (18+)",
-        "type": "Pickup Hockey",
-        "ticket": 6.96
-      },
-      {
-        "id": "5d29616b-9adc-4659-8d08-7b16d3363b1f",
-        "start": "2026-11-02T12:15",
-        "end": "2026-11-02T13:05",
-        "name": "Adult Skate Fit",
-        "type": "Public Skate",
-        "ticket": 17.22
-      },
-      {
-        "id": "ad364cb9-0847-4073-9e4b-358f3cf53491",
-        "start": "2026-11-03T09:15",
-        "end": "2026-11-03T10:45",
-        "name": "65+ Hockey Shinny",
-        "type": "Pickup Hockey",
-        "ticket": 5.56
-      },
-      {
-        "id": "5f5be922-2602-4c7a-a776-375527bcec66",
-        "start": "2026-11-03T10:00",
-        "end": "2026-11-03T11:30",
-        "name": "55+ Hockey Shinny",
-        "type": "Pickup Hockey",
-        "ticket": 5.56
-      },
-      {
-        "id": "9a2e5e1b-cc8a-4ea2-b8af-85ea2ddedffe",
-        "start": "2026-11-03T11:15",
-        "end": "2026-11-03T12:45",
-        "name": "Adult & Older Adult Skate",
-        "type": "Public Skate",
-        "ticket": 4.61
-      },
-      {
-        "id": "0631ed5b-3fa1-4801-8ca9-76fa6c4ce0df",
-        "start": "2026-11-03T12:00",
-        "end": "2026-11-03T13:30",
-        "name": "Hockey Shinny (18+)",
-        "type": "Pickup Hockey",
-        "ticket": 6.96
-      },
-      {
-        "id": "e6e314af-bac4-4a63-8fa9-6c651cd6b415",
+        "id": "1f146bb7-6b30-4c82-a5d9-41a78112d2e1",
         "start": "2026-11-04T07:00",
         "end": "2026-11-04T08:30",
         "name": "Hockey Shinny (18+)",
@@ -83,7 +37,7 @@
         "ticket": 6.96
       },
       {
-        "id": "ccff741f-427b-4211-be9f-499d2e128193",
+        "id": "27742ea6-d5e7-4bf7-a5c8-4225400868f3",
         "start": "2026-11-04T12:00",
         "end": "2026-11-04T13:30",
         "name": "Hockey 18+ Shinny Sledge",
@@ -91,7 +45,7 @@
         "ticket": 6.96
       },
       {
-        "id": "5af5bbc2-c6c3-43c3-a891-3a1f5d53c17e",
+        "id": "f5af2e6e-89dc-4046-adf6-cc880ddcc662",
         "start": "2026-11-04T12:00",
         "end": "2026-11-04T13:30",
         "name": "Hockey Shinny (18+)",
@@ -99,7 +53,7 @@
         "ticket": 6.96
       },
       {
-        "id": "1a5facd6-bf2d-42e7-b037-2d21a114f01c",
+        "id": "e0a1e415-a744-4019-b1cb-888a25691417",
         "start": "2026-11-04T13:15",
         "end": "2026-11-04T14:45",
         "name": "Figure Skating",
@@ -107,7 +61,7 @@
         "ticket": 4.61
       },
       {
-        "id": "9d7db6d0-0b19-4311-ab94-0625545d04a7",
+        "id": "40f2d5a8-9c14-4f17-89de-ed9a5ed926d1",
         "start": "2026-11-04T14:00",
         "end": "2026-11-04T15:30",
         "name": "Fun Skate",
@@ -115,7 +69,7 @@
         "ticket": 4.61
       },
       {
-        "id": "2b0707c1-ffbb-4a52-babc-74caf42b5385",
+        "id": "76b08f18-cb66-4471-b3f6-c6974a25ae16",
         "start": "2026-11-05T09:15",
         "end": "2026-11-05T10:45",
         "name": "65+ Hockey Shinny",
@@ -123,7 +77,7 @@
         "ticket": 5.56
       },
       {
-        "id": "d0f6feea-f624-472a-bbde-a16459263070",
+        "id": "732f7109-8636-49b9-9673-795d54a7339f",
         "start": "2026-11-05T09:45",
         "end": "2026-11-05T10:35",
         "name": "Adult Skate Fit",
@@ -131,7 +85,7 @@
         "ticket": 17.22
       },
       {
-        "id": "278ae227-7ec1-4c3e-a961-478c4cc610d1",
+        "id": "da37ab4d-36a5-4e4b-b8d2-1e3485506139",
         "start": "2026-11-05T10:00",
         "end": "2026-11-05T11:30",
         "name": "55+ Hockey Shinny",
@@ -139,7 +93,7 @@
         "ticket": 5.56
       },
       {
-        "id": "ec1a5893-f958-4bfc-abb2-94d98b2dbc37",
+        "id": "ab0ad661-60d5-45a9-88f9-ae8f00d99b43",
         "start": "2026-11-05T11:15",
         "end": "2026-11-05T12:45",
         "name": "Adult & Older Adult Skate",
@@ -147,7 +101,7 @@
         "ticket": 4.61
       },
       {
-        "id": "e6f4e816-0312-46f6-a254-96ffdf8f8911",
+        "id": "418d8ad4-18a4-4cd1-977d-492dcdac96cc",
         "start": "2026-11-05T11:45",
         "end": "2026-11-05T13:15",
         "name": "Figure Skating",
@@ -155,7 +109,7 @@
         "ticket": 4.61
       },
       {
-        "id": "16bd441c-38f7-47c0-8a04-b5d5094c8504",
+        "id": "990195c8-190d-4e09-90a1-d5f73bdf72cf",
         "start": "2026-11-05T12:00",
         "end": "2026-11-05T13:30",
         "name": "Hockey Shinny (18+)",
@@ -163,7 +117,7 @@
         "ticket": 6.96
       },
       {
-        "id": "f13bb080-e7f1-4ab7-977f-d0e8c2ee76c9",
+        "id": "5cc8001c-110f-4b3f-85bb-7bd78d666401",
         "start": "2026-11-09T09:00",
         "end": "2026-11-09T10:30",
         "name": "Hockey Shinny (18+)",
@@ -171,7 +125,7 @@
         "ticket": 6.96
       },
       {
-        "id": "0c20275b-737f-43db-8a40-0153746de277",
+        "id": "ac3f02db-d293-4a53-b206-c06c8a4215c2",
         "start": "2026-11-09T12:00",
         "end": "2026-11-09T13:30",
         "name": "Hockey 18+ Shinny Sledge",
@@ -179,7 +133,7 @@
         "ticket": 6.96
       },
       {
-        "id": "8dd5c77d-e49b-42b3-8ab7-d7f29a42eaee",
+        "id": "b9cb0c9f-1c00-4d58-b3a5-844c885b84be",
         "start": "2026-11-09T12:00",
         "end": "2026-11-09T13:30",
         "name": "Hockey Shinny (18+)",
@@ -187,7 +141,7 @@
         "ticket": 6.96
       },
       {
-        "id": "16c4b530-bff2-4776-8b0d-86f78764d3b5",
+        "id": "88e9ab4c-4fe4-463d-b997-d0da1ea17ba4",
         "start": "2026-11-09T12:15",
         "end": "2026-11-09T13:05",
         "name": "Adult Skate Fit",
@@ -195,7 +149,7 @@
         "ticket": 17.22
       },
       {
-        "id": "bd049aab-dec8-4d56-ab86-117360d2b423",
+        "id": "dc1cf57a-b93a-4892-912c-a723f4094cbf",
         "start": "2026-11-10T09:15",
         "end": "2026-11-10T10:45",
         "name": "65+ Hockey Shinny",
@@ -203,7 +157,7 @@
         "ticket": 5.56
       },
       {
-        "id": "872ac0cb-422d-48cc-afa7-1b2606a642c9",
+        "id": "e4f8913b-a82d-4f48-9ac5-5d76ba69715f",
         "start": "2026-11-10T10:00",
         "end": "2026-11-10T11:30",
         "name": "55+ Hockey Shinny",
@@ -211,7 +165,7 @@
         "ticket": 5.56
       },
       {
-        "id": "81698af4-d75b-4423-b930-4e4ed6428bfc",
+        "id": "e71f6cee-da3f-4573-9d76-c4d46842b4e2",
         "start": "2026-11-10T11:15",
         "end": "2026-11-10T12:45",
         "name": "Adult & Older Adult Skate",
@@ -219,7 +173,7 @@
         "ticket": 4.61
       },
       {
-        "id": "785c0011-5da4-45c6-b6c0-bb554083a260",
+        "id": "59471f61-fabc-42d9-93e9-a9f0f5200d16",
         "start": "2026-11-10T12:00",
         "end": "2026-11-10T13:30",
         "name": "Hockey Shinny (18+)",
@@ -227,7 +181,7 @@
         "ticket": 6.96
       },
       {
-        "id": "916f2eba-a1cd-483b-bd2a-b94eb42c0317",
+        "id": "d4f45091-4fdb-4c30-87a4-6ed0de71fd87",
         "start": "2026-11-11T07:00",
         "end": "2026-11-11T08:30",
         "name": "Hockey Shinny (18+)",
@@ -235,7 +189,7 @@
         "ticket": 6.96
       },
       {
-        "id": "5b9e85ff-251c-4fb3-9a15-510fa3d9bca7",
+        "id": "319e0323-0c6c-42fe-92f5-d34c70ba44cc",
         "start": "2026-11-11T12:00",
         "end": "2026-11-11T13:30",
         "name": "Hockey 18+ Shinny Sledge",
@@ -243,7 +197,7 @@
         "ticket": 6.96
       },
       {
-        "id": "f56d8057-a1fb-491c-99a2-292f47077170",
+        "id": "0fe42e71-62f2-459c-9f49-15d024823200",
         "start": "2026-11-11T12:00",
         "end": "2026-11-11T13:30",
         "name": "Hockey Shinny (18+)",
@@ -251,7 +205,7 @@
         "ticket": 6.96
       },
       {
-        "id": "dbc94909-05d0-40f6-930f-e6607035695e",
+        "id": "1af65dcf-63df-4c65-80cf-f128c3a8820c",
         "start": "2026-11-11T13:15",
         "end": "2026-11-11T14:45",
         "name": "Figure Skating",
@@ -259,7 +213,7 @@
         "ticket": 4.61
       },
       {
-        "id": "aeeb1ef8-f143-4f74-b4f5-9f1eff0c117d",
+        "id": "0ed60d58-fad5-491b-8680-d15ff0047f30",
         "start": "2026-11-11T14:00",
         "end": "2026-11-11T15:30",
         "name": "Fun Skate",
@@ -267,7 +221,7 @@
         "ticket": 4.61
       },
       {
-        "id": "4d07b24f-ecb2-4a47-ab76-2fa3a1627388",
+        "id": "16754726-073c-4a88-9ae7-380733dc18bc",
         "start": "2026-11-12T09:15",
         "end": "2026-11-12T10:45",
         "name": "65+ Hockey Shinny",
@@ -275,7 +229,7 @@
         "ticket": 5.56
       },
       {
-        "id": "1aa330f3-563e-4900-acad-185765ab0346",
+        "id": "fe3b71dd-6c73-4968-a82a-ea4d77885054",
         "start": "2026-11-12T09:45",
         "end": "2026-11-12T10:35",
         "name": "Adult Skate Fit",
@@ -283,7 +237,7 @@
         "ticket": 17.22
       },
       {
-        "id": "04cf45c7-49f9-4e89-8539-763f21017e5b",
+        "id": "3b2c4e25-aacb-4f9b-92a8-e4dd531728f9",
         "start": "2026-11-12T10:00",
         "end": "2026-11-12T11:30",
         "name": "55+ Hockey Shinny",
@@ -291,7 +245,7 @@
         "ticket": 5.56
       },
       {
-        "id": "7dbfdd70-42bd-419a-9490-27423856e3d3",
+        "id": "6d3b6e22-6f02-4a16-ac56-ddb42c121dd7",
         "start": "2026-11-12T11:15",
         "end": "2026-11-12T12:45",
         "name": "Adult & Older Adult Skate",
@@ -299,7 +253,7 @@
         "ticket": 4.61
       },
       {
-        "id": "084a63a2-cca3-46b7-a87c-5241dc5843b0",
+        "id": "5652cb35-4943-4fc2-af76-ded3dda0b7f6",
         "start": "2026-11-12T11:45",
         "end": "2026-11-12T13:15",
         "name": "Figure Skating",
@@ -307,7 +261,7 @@
         "ticket": 4.61
       },
       {
-        "id": "ac406e32-7121-4e52-9ab2-c6bb223761da",
+        "id": "443f2486-c236-49a3-a7c4-bcc6c2aa65fc",
         "start": "2026-11-12T12:00",
         "end": "2026-11-12T13:30",
         "name": "Hockey Shinny (18+)",
@@ -315,7 +269,7 @@
         "ticket": 6.96
       },
       {
-        "id": "56923951-c9a3-411c-ba78-cdfe49a9436b",
+        "id": "8f62a56f-c4ba-4c54-979f-60ea5641f7fa",
         "start": "2026-11-13T09:45",
         "end": "2026-11-13T11:15",
         "name": "Women's Hockey Shinny",
@@ -323,7 +277,7 @@
         "ticket": 6.96
       },
       {
-        "id": "0d200e60-dbd5-4fd6-8032-9afa3be52d80",
+        "id": "6a34beb8-4b9d-492c-8af2-e1727e8465fc",
         "start": "2026-11-13T10:00",
         "end": "2026-11-13T11:30",
         "name": "55+ Hockey Shinny",
@@ -331,7 +285,7 @@
         "ticket": 5.56
       },
       {
-        "id": "0862cbe4-5863-4bad-9eba-59f6adab3d07",
+        "id": "1f656958-2cd6-41c8-b748-060b6f899686",
         "start": "2026-11-13T12:00",
         "end": "2026-11-13T13:30",
         "name": "Hockey Shinny (18+)",
@@ -339,7 +293,7 @@
         "ticket": 6.96
       },
       {
-        "id": "c28a5395-41d4-4538-be47-432f715d98d8",
+        "id": "740239d0-4386-4c4d-b252-8893dce745e4",
         "start": "2026-11-13T12:15",
         "end": "2026-11-13T13:05",
         "name": "Hockey Stick & Puck (18+)",
@@ -347,7 +301,7 @@
         "ticket": 3.98
       },
       {
-        "id": "cc8e202d-a18d-4a31-a04d-a3e53390ff10",
+        "id": "1058e95f-d5da-4753-a7bc-dc90f5e12607",
         "start": "2026-11-13T13:15",
         "end": "2026-11-13T14:45",
         "name": "Figure Skating",
@@ -355,7 +309,7 @@
         "ticket": 4.61
       },
       {
-        "id": "aa574f05-52af-47a8-8c97-ebd4fcb69306",
+        "id": "f4f75566-f233-4c68-a5ef-e1dfebea6272",
         "start": "2026-11-14T16:30",
         "end": "2026-11-14T17:20",
         "name": "Hockey Stick & Puck with Adult (3-8 yrs)",
@@ -363,7 +317,7 @@
         "ticket": 3.98
       },
       {
-        "id": "8efe1296-bc1b-4592-bb07-05d9c81ad6cf",
+        "id": "8dae4f3c-8f7e-40c8-b016-58a65c28b745",
         "start": "2026-11-14T17:30",
         "end": "2026-11-14T18:20",
         "name": "Hockey Stick & Puck With Adult (9-13 yrs)",
@@ -371,7 +325,7 @@
         "ticket": 3.98
       },
       {
-        "id": "16fa26aa-6b82-4e97-b70e-7ea89aed2d24",
+        "id": "ce11c8e8-38b4-4873-bf0a-63f81e50f6c0",
         "start": "2026-11-14T18:30",
         "end": "2026-11-14T19:20",
         "name": "Youth Hockey Shinny (13-17)",
@@ -379,7 +333,7 @@
         "ticket": 3.71
       },
       {
-        "id": "9814518c-ed6b-4390-86b7-17f4d38c98b8",
+        "id": "9268f31b-58d2-462d-8afc-c995a74c9864",
         "start": "2026-11-14T18:30",
         "end": "2026-11-14T20:00",
         "name": "Fun Skate",
@@ -387,7 +341,7 @@
         "ticket": 4.61
       },
       {
-        "id": "9eaf6d8b-3eea-40e5-9b28-9a9617d9f28a",
+        "id": "e992ed33-8d70-4421-a641-b4a40cca2b9d",
         "start": "2026-11-14T19:30",
         "end": "2026-11-14T21:00",
         "name": "Hockey Shinny (18+)",
@@ -395,7 +349,7 @@
         "ticket": 6.96
       },
       {
-        "id": "58bc6b6c-5626-413b-952f-ba2f03237505",
+        "id": "0b625ea4-383a-49c5-aea9-3185167937f0",
         "start": "2026-11-15T13:45",
         "end": "2026-11-15T15:15",
         "name": "Fun Skate",
@@ -403,7 +357,7 @@
         "ticket": 4.61
       },
       {
-        "id": "64fc5142-c570-455d-ba2d-79b198b2aa3c",
+        "id": "7301e42f-4aa8-4c0f-8392-eeea4705a5cf",
         "start": "2026-11-16T09:00",
         "end": "2026-11-16T10:30",
         "name": "Hockey Shinny (18+)",
@@ -411,7 +365,7 @@
         "ticket": 6.96
       },
       {
-        "id": "4e7a106d-f07b-49fb-9a4c-60397da4c5b7",
+        "id": "b1c5d4c2-fc0d-49e5-9fa1-d261027be745",
         "start": "2026-11-16T12:00",
         "end": "2026-11-16T13:30",
         "name": "Hockey 18+ Shinny Sledge",
@@ -419,7 +373,7 @@
         "ticket": 6.96
       },
       {
-        "id": "3a389795-acd2-4804-b76d-554dba02eb52",
+        "id": "be48b419-34ca-48d7-9f69-ed379b9420e5",
         "start": "2026-11-16T12:00",
         "end": "2026-11-16T13:30",
         "name": "Hockey Shinny (18+)",
@@ -427,7 +381,7 @@
         "ticket": 6.96
       },
       {
-        "id": "0b482ae6-059f-42c5-95a4-9a81f14082fb",
+        "id": "73d020c5-a4b6-4d03-ba5c-e600bc6efba5",
         "start": "2026-11-16T12:15",
         "end": "2026-11-16T13:05",
         "name": "Adult Skate Fit",
@@ -435,7 +389,7 @@
         "ticket": 17.22
       },
       {
-        "id": "715b0dad-1187-4054-9b38-e624f520baa5",
+        "id": "3d00d542-46e7-4250-83fc-c94f91b78a3b",
         "start": "2026-11-17T09:15",
         "end": "2026-11-17T10:45",
         "name": "65+ Hockey Shinny",
@@ -443,7 +397,7 @@
         "ticket": 5.56
       },
       {
-        "id": "a51b1d23-8d0e-4c6f-bfc0-4d5225942eb4",
+        "id": "fbd38684-8d35-4125-b347-accc8933372a",
         "start": "2026-11-17T10:00",
         "end": "2026-11-17T11:30",
         "name": "55+ Hockey Shinny",
@@ -451,7 +405,7 @@
         "ticket": 5.56
       },
       {
-        "id": "50a6b269-b937-48a3-a0ad-9ed34f55e82c",
+        "id": "1b74b182-ade4-4f3b-9407-b5ccb0fc1450",
         "start": "2026-11-17T11:15",
         "end": "2026-11-17T12:45",
         "name": "Adult & Older Adult Skate",
@@ -459,7 +413,7 @@
         "ticket": 4.61
       },
       {
-        "id": "468cfbc8-a22a-4ad0-89cc-c06b22a7ddfb",
+        "id": "328ae348-226b-4a0d-8b1c-adfd035f33ff",
         "start": "2026-11-17T12:00",
         "end": "2026-11-17T13:30",
         "name": "Hockey Shinny (18+)",
@@ -467,7 +421,7 @@
         "ticket": 6.96
       },
       {
-        "id": "fd91129c-db9b-418b-8d4e-9a5f09cc4aa8",
+        "id": "6c307586-1597-4b91-a535-2f1c5f63cec9",
         "start": "2026-11-18T07:00",
         "end": "2026-11-18T08:30",
         "name": "Hockey Shinny (18+)",
@@ -475,7 +429,7 @@
         "ticket": 6.96
       },
       {
-        "id": "5bc4084b-fedb-4795-ac63-f25dc590ffc3",
+        "id": "8207c4c2-9811-4a9a-817f-a296ad9862d7",
         "start": "2026-11-18T12:00",
         "end": "2026-11-18T13:30",
         "name": "Hockey 18+ Shinny Sledge",
@@ -483,7 +437,7 @@
         "ticket": 6.96
       },
       {
-        "id": "ad63db2e-c126-4023-9c75-33e04f7252fb",
+        "id": "64d0a6f0-3f31-410e-8c1a-4abca4ed5e70",
         "start": "2026-11-18T12:00",
         "end": "2026-11-18T13:30",
         "name": "Hockey Shinny (18+)",
@@ -491,7 +445,7 @@
         "ticket": 6.96
       },
       {
-        "id": "e646f485-d5df-425f-8b59-446c521d44d3",
+        "id": "15ef0411-a7cd-4714-b59d-9025263d6d9f",
         "start": "2026-11-18T13:15",
         "end": "2026-11-18T14:45",
         "name": "Figure Skating",
@@ -499,7 +453,7 @@
         "ticket": 4.61
       },
       {
-        "id": "fe498bc1-7fed-4bb2-86a6-a897e0ecfe07",
+        "id": "d2ee9a0e-28de-40c1-8af6-7fd99e8eede7",
         "start": "2026-11-18T14:00",
         "end": "2026-11-18T15:30",
         "name": "Fun Skate",
@@ -507,7 +461,7 @@
         "ticket": 4.61
       },
       {
-        "id": "22322c55-54ff-4144-a6c9-7162ad202ff7",
+        "id": "6c311aad-b8d4-4d3f-8bc0-86ed2641fb4b",
         "start": "2026-11-19T09:15",
         "end": "2026-11-19T10:45",
         "name": "65+ Hockey Shinny",
@@ -515,7 +469,7 @@
         "ticket": 5.56
       },
       {
-        "id": "7cdce7f7-271f-4caa-b6b2-6fd93079ed01",
+        "id": "34023f2e-912f-4f78-a395-9c531a31fad9",
         "start": "2026-11-19T09:45",
         "end": "2026-11-19T10:35",
         "name": "Adult Skate Fit",
@@ -523,7 +477,7 @@
         "ticket": 17.22
       },
       {
-        "id": "96a66bf6-39f1-4866-a791-2dfe870bf232",
+        "id": "9b65f529-553d-41cc-88c4-4230ae4e1ccf",
         "start": "2026-11-19T10:00",
         "end": "2026-11-19T11:30",
         "name": "55+ Hockey Shinny",
@@ -531,7 +485,7 @@
         "ticket": 5.56
       },
       {
-        "id": "48c7b0da-34d7-44a6-a372-5bd0a52d411a",
+        "id": "69d7f2bd-b6ce-4352-bf98-8c6a145ca003",
         "start": "2026-11-19T11:15",
         "end": "2026-11-19T12:45",
         "name": "Adult & Older Adult Skate",
@@ -539,7 +493,7 @@
         "ticket": 4.61
       },
       {
-        "id": "e8439e87-d03c-4471-a21c-cfc9370e9b3d",
+        "id": "5a3da99c-0587-4190-9226-e765992bdbc3",
         "start": "2026-11-19T11:45",
         "end": "2026-11-19T13:15",
         "name": "Figure Skating",
@@ -547,7 +501,7 @@
         "ticket": 4.61
       },
       {
-        "id": "62733585-a86d-43cb-838b-c0e2fb4f0519",
+        "id": "d2cb7587-dbea-4390-b5e7-7719b9d261ad",
         "start": "2026-11-19T12:00",
         "end": "2026-11-19T13:30",
         "name": "Hockey Shinny (18+)",
@@ -555,7 +509,7 @@
         "ticket": 6.96
       },
       {
-        "id": "90d58294-0c7b-4d25-af10-bb3a46a3804d",
+        "id": "dcb46477-7602-4cc0-b643-b85d8018c9d5",
         "start": "2026-11-23T09:00",
         "end": "2026-11-23T10:30",
         "name": "Hockey Shinny (18+)",
@@ -563,7 +517,7 @@
         "ticket": 6.96
       },
       {
-        "id": "2da08024-1375-40c6-8d99-9cffa2c5db28",
+        "id": "80994ff4-abc5-4e39-8629-ea6c88666844",
         "start": "2026-11-23T12:00",
         "end": "2026-11-23T13:30",
         "name": "Hockey 18+ Shinny Sledge",
@@ -571,7 +525,7 @@
         "ticket": 6.96
       },
       {
-        "id": "a4eb3169-e8cf-4c84-be2f-a1c25f1339e3",
+        "id": "9443ff73-82ef-4a51-8d00-69ebf4898414",
         "start": "2026-11-23T12:00",
         "end": "2026-11-23T13:30",
         "name": "Hockey Shinny (18+)",
@@ -579,7 +533,7 @@
         "ticket": 6.96
       },
       {
-        "id": "10f3b15e-23c3-44b1-9f97-3303bfd3686a",
+        "id": "8ee5f387-896b-48d0-ab81-063268f9050c",
         "start": "2026-11-23T12:15",
         "end": "2026-11-23T13:05",
         "name": "Adult Skate Fit",
@@ -587,7 +541,7 @@
         "ticket": 17.22
       },
       {
-        "id": "9f9d6e7f-3366-40b5-8e19-56013304c8af",
+        "id": "78cfefae-b374-47d1-aa2e-29ba8b21ced9",
         "start": "2026-11-25T07:00",
         "end": "2026-11-25T08:30",
         "name": "Hockey Shinny (18+)",
@@ -595,7 +549,7 @@
         "ticket": 6.96
       },
       {
-        "id": "2ed91dde-ecc8-49fc-9ee9-4ac3917a3c26",
+        "id": "142d2ef2-6f54-4984-bf8e-77793c4a3a19",
         "start": "2026-11-25T12:00",
         "end": "2026-11-25T13:30",
         "name": "Hockey 18+ Shinny Sledge",
@@ -603,7 +557,7 @@
         "ticket": 6.96
       },
       {
-        "id": "9b91dd3f-e70b-4f65-b3d9-f2fbc289e3df",
+        "id": "286017cd-ec99-4f4f-bebb-18718ebaac61",
         "start": "2026-11-25T12:00",
         "end": "2026-11-25T13:30",
         "name": "Hockey Shinny (18+)",
@@ -611,7 +565,7 @@
         "ticket": 6.96
       },
       {
-        "id": "acb41f01-b741-4f7b-b93c-ceab2b561a5c",
+        "id": "0faf09f8-8727-4e11-b44c-420798ba3c08",
         "start": "2026-11-25T13:15",
         "end": "2026-11-25T14:45",
         "name": "Figure Skating",
@@ -619,7 +573,7 @@
         "ticket": 4.61
       },
       {
-        "id": "9a571bbd-2e95-42a4-ae56-2c15966fbb08",
+        "id": "8d995bf0-f283-4235-b12f-3187ef0d30e3",
         "start": "2026-11-25T14:00",
         "end": "2026-11-25T15:30",
         "name": "Fun Skate",
@@ -627,7 +581,7 @@
         "ticket": 4.61
       },
       {
-        "id": "e92b6680-041c-4d5f-ab14-36f192f6c0b5",
+        "id": "dc8d0c61-e14e-434b-b0a3-59ddd54e2669",
         "start": "2026-11-26T09:15",
         "end": "2026-11-26T10:45",
         "name": "65+ Hockey Shinny",
@@ -635,7 +589,7 @@
         "ticket": 5.56
       },
       {
-        "id": "672beba9-8d56-43dd-bc3f-301ac3c4b26c",
+        "id": "5c050f6d-fc1e-43e0-a3b1-b418e63b056d",
         "start": "2026-11-26T09:45",
         "end": "2026-11-26T10:35",
         "name": "Adult Skate Fit",
@@ -643,7 +597,7 @@
         "ticket": 17.22
       },
       {
-        "id": "e251a1dd-542a-4445-a970-25ef92e8ac2a",
+        "id": "d7a039bf-1c4b-4b8f-b6c9-a665efd42e11",
         "start": "2026-11-26T10:00",
         "end": "2026-11-26T11:30",
         "name": "55+ Hockey Shinny",
@@ -651,7 +605,7 @@
         "ticket": 5.56
       },
       {
-        "id": "308635be-6d2d-4b20-8fc5-cb8d03371794",
+        "id": "cf6fcc3a-40e3-4a69-b979-f32b798f0859",
         "start": "2026-11-26T11:15",
         "end": "2026-11-26T12:45",
         "name": "Adult & Older Adult Skate",
@@ -659,7 +613,7 @@
         "ticket": 4.61
       },
       {
-        "id": "6f3672d7-a296-4a5c-9d81-62e3dd86f545",
+        "id": "d83bc60a-2033-489f-bfc1-5013159a4151",
         "start": "2026-11-26T11:45",
         "end": "2026-11-26T13:15",
         "name": "Figure Skating",
@@ -667,7 +621,7 @@
         "ticket": 4.61
       },
       {
-        "id": "b25f3312-8c27-45ba-9682-6ac6eefa61fd",
+        "id": "0cd74998-bc65-4e7a-8476-6a1d71429ec3",
         "start": "2026-11-26T12:00",
         "end": "2026-11-26T13:30",
         "name": "Hockey Shinny (18+)",
@@ -675,7 +629,7 @@
         "ticket": 6.96
       },
       {
-        "id": "7f85f675-4c0a-42b5-9cd9-149237471cee",
+        "id": "21331181-8700-416d-bac2-d691b57d23d7",
         "start": "2026-11-27T09:45",
         "end": "2026-11-27T11:15",
         "name": "Women's Hockey Shinny",
@@ -683,7 +637,7 @@
         "ticket": 6.96
       },
       {
-        "id": "b5c370cd-27f9-4c49-bbcf-7ffce94dd0c3",
+        "id": "9ce363fc-1918-4a7c-905d-2dc82c663ad0",
         "start": "2026-11-27T10:00",
         "end": "2026-11-27T11:30",
         "name": "55+ Hockey Shinny",
@@ -691,7 +645,7 @@
         "ticket": 5.56
       },
       {
-        "id": "ef17831b-c2dc-403e-bb29-cb80b6a3babe",
+        "id": "aef93126-3bac-4e64-899a-8125de68af57",
         "start": "2026-11-27T12:00",
         "end": "2026-11-27T13:30",
         "name": "Hockey Shinny (18+)",
@@ -699,7 +653,7 @@
         "ticket": 6.96
       },
       {
-        "id": "cfc99a29-80b8-4063-9c0f-916d78aac16d",
+        "id": "5a15b475-0eca-4998-ad50-f274995d1ab9",
         "start": "2026-11-27T12:15",
         "end": "2026-11-27T13:05",
         "name": "Hockey Stick & Puck (18+)",
@@ -707,7 +661,7 @@
         "ticket": 3.98
       },
       {
-        "id": "dc43e5f5-1c25-4400-adb3-75426e4737d9",
+        "id": "50291aed-ba5d-42f4-b52a-079efaede6ad",
         "start": "2026-11-27T13:15",
         "end": "2026-11-27T14:45",
         "name": "Figure Skating",
@@ -715,7 +669,7 @@
         "ticket": 4.61
       },
       {
-        "id": "aea2078d-b388-432f-bf9e-f6bfbe42b7f3",
+        "id": "147d5f92-5d36-4fa2-8f1b-c94646d8c1bc",
         "start": "2026-11-28T16:30",
         "end": "2026-11-28T17:20",
         "name": "Hockey Stick & Puck with Adult (3-8 yrs)",
@@ -723,7 +677,7 @@
         "ticket": 3.98
       },
       {
-        "id": "54143b1c-9cb2-41f8-9f61-2b9497d22a0d",
+        "id": "9eec9aa6-7fb3-4cdc-935d-c699081b8f05",
         "start": "2026-11-28T17:30",
         "end": "2026-11-28T18:20",
         "name": "Hockey Stick & Puck With Adult (9-13 yrs)",
@@ -731,7 +685,7 @@
         "ticket": 3.98
       },
       {
-        "id": "d2bf2e0f-fc44-4984-b605-1a174fe35e11",
+        "id": "fe1e2ff6-532b-47fb-9a69-646173ae0c04",
         "start": "2026-11-28T18:30",
         "end": "2026-11-28T19:20",
         "name": "Youth Hockey Shinny (13-17)",
@@ -739,7 +693,7 @@
         "ticket": 3.71
       },
       {
-        "id": "8373e301-f056-46e6-a9d6-0a4001ccb027",
+        "id": "99dcb8ee-ad58-42af-81b9-1d18db7fa887",
         "start": "2026-11-28T18:30",
         "end": "2026-11-28T20:00",
         "name": "Fun Skate",
@@ -747,7 +701,7 @@
         "ticket": 4.61
       },
       {
-        "id": "3d05d799-f44d-4335-a08d-66c496273eec",
+        "id": "9e9cec0c-37aa-4b08-98eb-36bdddb654a8",
         "start": "2026-11-28T19:30",
         "end": "2026-11-28T21:00",
         "name": "Hockey Shinny (18+)",
@@ -755,7 +709,7 @@
         "ticket": 6.96
       },
       {
-        "id": "8916b1aa-e486-46a0-adad-2bcd4ef31e34",
+        "id": "ab5e3f60-1319-416a-aa0f-e9a9ecf5a5d7",
         "start": "2026-11-29T14:15",
         "end": "2026-11-29T15:45",
         "name": "Fun Skate",
@@ -763,7 +717,7 @@
         "ticket": 4.61
       },
       {
-        "id": "44d50331-696e-4990-a027-bd5fb3c9f650",
+        "id": "275acd1d-50b9-40ab-9b65-9bd624b78cd7",
         "start": "2026-11-30T09:00",
         "end": "2026-11-30T10:30",
         "name": "Hockey Shinny (18+)",
@@ -771,7 +725,7 @@
         "ticket": 6.96
       },
       {
-        "id": "f022f09f-9883-4757-8302-f31e5da3147a",
+        "id": "8892c162-c7fc-4f19-99e5-5fdde45fa1f4",
         "start": "2026-11-30T12:00",
         "end": "2026-11-30T13:30",
         "name": "Hockey 18+ Shinny Sledge",
@@ -779,7 +733,7 @@
         "ticket": 6.96
       },
       {
-        "id": "17d67273-e0f4-4e60-993f-fedf371a0d6b",
+        "id": "f6c5da4e-07e2-4ff4-8e93-a81ed81e44f4",
         "start": "2026-11-30T12:00",
         "end": "2026-11-30T13:30",
         "name": "Hockey Shinny (18+)",
@@ -787,7 +741,7 @@
         "ticket": 6.96
       },
       {
-        "id": "8ee5d2c3-4827-4159-96c2-5186d5819c91",
+        "id": "3653752c-5004-40d0-b015-70b364d2fee9",
         "start": "2026-11-30T12:15",
         "end": "2026-11-30T13:05",
         "name": "Adult Skate Fit",
@@ -795,7 +749,7 @@
         "ticket": 17.22
       },
       {
-        "id": "435de58e-1861-43f6-83e7-6c24e49b24dd",
+        "id": "35f8f396-eb82-44e8-b0f8-3d317ce91b07",
         "start": "2026-12-01T09:15",
         "end": "2026-12-01T10:45",
         "name": "65+ Hockey Shinny",
@@ -803,7 +757,7 @@
         "ticket": 5.56
       },
       {
-        "id": "225040b6-2dd8-42de-ab2f-8f2f0e2a2108",
+        "id": "3749ed2e-f7de-49c2-ab48-9093b3a61a67",
         "start": "2026-12-01T10:00",
         "end": "2026-12-01T11:30",
         "name": "55+ Hockey Shinny",
@@ -811,7 +765,7 @@
         "ticket": 5.56
       },
       {
-        "id": "9f746d09-00cd-40cc-ae2e-ec3c3397b9d7",
+        "id": "e73efdc6-4777-4e3b-9ecf-0ab03790ee95",
         "start": "2026-12-01T11:15",
         "end": "2026-12-01T12:45",
         "name": "Adult & Older Adult Skate",
@@ -819,7 +773,7 @@
         "ticket": 4.61
       },
       {
-        "id": "d3d04ca4-c7c2-4294-8d94-c3488533bb9a",
+        "id": "835e5df8-5ba0-4987-8014-5c493abd5e88",
         "start": "2026-12-01T12:00",
         "end": "2026-12-01T13:30",
         "name": "Hockey Shinny (18+)",
@@ -827,7 +781,7 @@
         "ticket": 6.96
       },
       {
-        "id": "ce59eb0a-5b6b-4893-b843-d7926a30829b",
+        "id": "638b8a45-74b2-4504-aeb6-4e80e2dc8b0d",
         "start": "2026-12-02T07:00",
         "end": "2026-12-02T08:30",
         "name": "Hockey Shinny (18+)",
@@ -835,7 +789,7 @@
         "ticket": 6.96
       },
       {
-        "id": "fa02ba17-3731-4788-a4a2-9dab49b87ae0",
+        "id": "19a1bcdb-c21b-4f30-a299-e25894ef3eda",
         "start": "2026-12-02T12:00",
         "end": "2026-12-02T13:30",
         "name": "Hockey 18+ Shinny Sledge",
@@ -843,7 +797,7 @@
         "ticket": 6.96
       },
       {
-        "id": "cd6a9270-1663-47d8-ba8b-0a4a389935cd",
+        "id": "1b987cdd-6040-42c4-8870-8de14eb71585",
         "start": "2026-12-02T12:00",
         "end": "2026-12-02T13:30",
         "name": "Hockey Shinny (18+)",
@@ -851,7 +805,7 @@
         "ticket": 6.96
       },
       {
-        "id": "c1aac4e6-b3ce-40ee-ae3c-f0ed28fb7b51",
+        "id": "de6a200c-64b5-461d-84b2-c4d6579a4e89",
         "start": "2026-12-02T13:15",
         "end": "2026-12-02T14:45",
         "name": "Figure Skating",
@@ -859,7 +813,7 @@
         "ticket": 4.61
       },
       {
-        "id": "7c50bec8-c1fe-4ccf-a65c-8bf5fe6d42ac",
+        "id": "7902a4ed-f83c-4ac4-8565-1b6d0a3a091f",
         "start": "2026-12-02T14:00",
         "end": "2026-12-02T15:30",
         "name": "Fun Skate",
@@ -867,7 +821,7 @@
         "ticket": 4.61
       },
       {
-        "id": "1e40b99d-4566-42bb-9e03-944609279f7a",
+        "id": "1aed2ef7-f73b-42bf-b247-66b1a6a6ead5",
         "start": "2026-12-03T09:15",
         "end": "2026-12-03T10:45",
         "name": "65+ Hockey Shinny",
@@ -875,7 +829,7 @@
         "ticket": 5.56
       },
       {
-        "id": "7fae8868-ae18-4955-b547-c6b4ff4d9cd1",
+        "id": "9b8c246c-7884-439e-b738-0654aa405255",
         "start": "2026-12-03T09:45",
         "end": "2026-12-03T10:35",
         "name": "Adult Skate Fit",
@@ -883,7 +837,7 @@
         "ticket": 17.22
       },
       {
-        "id": "d4ecf8bd-0d79-4f7b-9f40-61ebfe9065f2",
+        "id": "2858aa1e-998d-4db6-881c-464518e88af3",
         "start": "2026-12-03T10:00",
         "end": "2026-12-03T11:30",
         "name": "55+ Hockey Shinny",
@@ -891,7 +845,7 @@
         "ticket": 5.56
       },
       {
-        "id": "e83297f4-e187-4fb0-a896-1eb2acd8e94a",
+        "id": "9fd2140e-a30a-4bc8-8fb1-8223bb7caa5d",
         "start": "2026-12-03T11:15",
         "end": "2026-12-03T12:45",
         "name": "Adult & Older Adult Skate",
@@ -899,7 +853,7 @@
         "ticket": 4.61
       },
       {
-        "id": "e015b117-b7a5-4cc3-94a3-653002235c6d",
+        "id": "98541855-6dc5-4688-9ab9-04509134d7c1",
         "start": "2026-12-03T11:45",
         "end": "2026-12-03T13:15",
         "name": "Figure Skating",
@@ -907,7 +861,7 @@
         "ticket": 4.61
       },
       {
-        "id": "2d2dad6b-8037-4a9e-9ec6-ccdd8ff576d3",
+        "id": "2d38a4be-b7b7-49d6-96b3-1dd6806e53f0",
         "start": "2026-12-03T12:00",
         "end": "2026-12-03T13:30",
         "name": "Hockey Shinny (18+)",
@@ -915,7 +869,7 @@
         "ticket": 6.96
       },
       {
-        "id": "46bf9c36-14ea-478b-a987-0e42455e2160",
+        "id": "b6042647-d371-4550-83b4-8848a43b59fd",
         "start": "2026-12-07T09:00",
         "end": "2026-12-07T10:30",
         "name": "Hockey Shinny (18+)",
@@ -923,7 +877,7 @@
         "ticket": 6.96
       },
       {
-        "id": "ffc5b5c7-ce75-4bb3-a0b8-433378fb3838",
+        "id": "f6ceb0c4-4831-4f03-8801-c5386a8c20ce",
         "start": "2026-12-07T12:00",
         "end": "2026-12-07T13:30",
         "name": "Hockey 18+ Shinny Sledge",
@@ -931,7 +885,7 @@
         "ticket": 6.96
       },
       {
-        "id": "75c4e698-fbaf-481c-b486-46c262fa8b2e",
+        "id": "52344279-97bc-4def-b381-5a83e7e9592a",
         "start": "2026-12-07T12:00",
         "end": "2026-12-07T13:30",
         "name": "Hockey Shinny (18+)",
@@ -939,7 +893,7 @@
         "ticket": 6.96
       },
       {
-        "id": "470f4903-d689-4021-b7fc-8b961f3570c6",
+        "id": "3c122590-ed8a-41c6-b153-93f837d445fc",
         "start": "2026-12-07T12:15",
         "end": "2026-12-07T13:05",
         "name": "Adult Skate Fit",
@@ -947,7 +901,7 @@
         "ticket": 17.22
       },
       {
-        "id": "b7243bbb-9a3f-4b44-8763-145409ea9812",
+        "id": "5a041660-4516-43a7-ab6c-0697e65e877d",
         "start": "2026-12-08T09:15",
         "end": "2026-12-08T10:45",
         "name": "65+ Hockey Shinny",
@@ -955,7 +909,7 @@
         "ticket": 5.56
       },
       {
-        "id": "8663cd5a-ae12-44cc-a71b-daecc6f74d1f",
+        "id": "bdac7284-7962-42c3-bafe-2eb8a9ecba02",
         "start": "2026-12-08T10:00",
         "end": "2026-12-08T11:30",
         "name": "55+ Hockey Shinny",
@@ -963,7 +917,7 @@
         "ticket": 5.56
       },
       {
-        "id": "dbefa7c2-db6f-4172-8b3b-5343d0306f25",
+        "id": "abd68e79-9e6d-4a59-b9b1-5bfd95a8a61d",
         "start": "2026-12-08T11:15",
         "end": "2026-12-08T12:45",
         "name": "Adult & Older Adult Skate",
@@ -971,7 +925,7 @@
         "ticket": 4.61
       },
       {
-        "id": "05f5b364-9936-4aa4-9c74-aca79a766e1d",
+        "id": "b2949fa3-7817-492f-bb76-1c40971e7c9b",
         "start": "2026-12-08T12:00",
         "end": "2026-12-08T13:30",
         "name": "Hockey Shinny (18+)",
@@ -979,7 +933,7 @@
         "ticket": 6.96
       },
       {
-        "id": "97f5449f-48e5-4136-9c31-96323a5ffaba",
+        "id": "3b58cfdb-d5a9-4d85-97fd-52c59cf4c386",
         "start": "2026-12-09T07:00",
         "end": "2026-12-09T08:30",
         "name": "Hockey Shinny (18+)",
@@ -987,7 +941,7 @@
         "ticket": 6.96
       },
       {
-        "id": "d77290c0-4c3c-4741-b47e-1a4a1c926098",
+        "id": "57d1243a-6e71-4b3b-a808-8e0de218670b",
         "start": "2026-12-09T12:00",
         "end": "2026-12-09T13:30",
         "name": "Hockey 18+ Shinny Sledge",
@@ -995,7 +949,7 @@
         "ticket": 6.96
       },
       {
-        "id": "7c9bb2fb-d8d6-4c0f-8b21-dea42b7aa141",
+        "id": "166441c3-1e9e-4f45-8734-9db89c1266f4",
         "start": "2026-12-09T12:00",
         "end": "2026-12-09T13:30",
         "name": "Hockey Shinny (18+)",
@@ -1003,7 +957,7 @@
         "ticket": 6.96
       },
       {
-        "id": "2dd2961f-a8ab-4bc3-a896-9a352e33302f",
+        "id": "e4d225a9-fc1f-49d7-bc86-518fd5b1435c",
         "start": "2026-12-09T13:15",
         "end": "2026-12-09T14:45",
         "name": "Figure Skating",
@@ -1011,7 +965,7 @@
         "ticket": 4.61
       },
       {
-        "id": "b6b0adff-0cdf-40a7-aee1-ed756bd416ca",
+        "id": "e9490279-9ab3-4f93-b54e-7ea125f72649",
         "start": "2026-12-09T14:00",
         "end": "2026-12-09T15:30",
         "name": "Fun Skate",
@@ -1019,7 +973,7 @@
         "ticket": 4.61
       },
       {
-        "id": "8434c048-f86f-4e1d-975f-c8e1649e5a00",
+        "id": "ecdaf961-42f7-476a-aec5-b5e62987d69b",
         "start": "2026-12-10T09:15",
         "end": "2026-12-10T10:45",
         "name": "65+ Hockey Shinny",
@@ -1027,7 +981,7 @@
         "ticket": 5.56
       },
       {
-        "id": "56b23f8d-33ab-4575-a088-7e5905bcfa79",
+        "id": "fcce24eb-2145-4983-ad1b-64231f81a1be",
         "start": "2026-12-10T09:45",
         "end": "2026-12-10T10:35",
         "name": "Adult Skate Fit",
@@ -1035,7 +989,7 @@
         "ticket": 17.22
       },
       {
-        "id": "6b32bf6f-eff8-49ae-9920-bf94e8133b54",
+        "id": "fa1bccf4-9137-4ac0-885b-d6f57cbf9066",
         "start": "2026-12-10T10:00",
         "end": "2026-12-10T11:30",
         "name": "55+ Hockey Shinny",
@@ -1043,7 +997,7 @@
         "ticket": 5.56
       },
       {
-        "id": "810f230f-b5e4-40eb-9f06-4e23e6398544",
+        "id": "8cc72ef2-44ee-4957-9134-487c4f6b7619",
         "start": "2026-12-10T11:15",
         "end": "2026-12-10T12:45",
         "name": "Adult & Older Adult Skate",
@@ -1051,7 +1005,7 @@
         "ticket": 4.61
       },
       {
-        "id": "5eb86fc3-1721-4986-ab7a-8b40ab2b9be3",
+        "id": "47bdf27f-4439-4239-aa4b-92b98b7ed860",
         "start": "2026-12-10T11:45",
         "end": "2026-12-10T13:15",
         "name": "Figure Skating",
@@ -1059,7 +1013,7 @@
         "ticket": 4.61
       },
       {
-        "id": "fdf1e066-9631-43a3-b1cf-ba5d67d82fca",
+        "id": "2a2a96d1-72a6-4490-b742-1e27e088e4d0",
         "start": "2026-12-10T12:00",
         "end": "2026-12-10T13:30",
         "name": "Hockey Shinny (18+)",
@@ -1067,7 +1021,7 @@
         "ticket": 6.96
       },
       {
-        "id": "788e9198-f4c7-4558-b582-65197c35a0b8",
+        "id": "c43c598f-b0c5-42a9-a082-1a029d3a4f39",
         "start": "2026-12-11T09:45",
         "end": "2026-12-11T11:15",
         "name": "Women's Hockey Shinny",
@@ -1075,7 +1029,7 @@
         "ticket": 6.96
       },
       {
-        "id": "99d56a3e-4cd8-4773-8ad3-7a0004243b46",
+        "id": "3e33012b-3dd0-4952-95cc-a91dca532409",
         "start": "2026-12-11T10:00",
         "end": "2026-12-11T11:30",
         "name": "55+ Hockey Shinny",
@@ -1083,7 +1037,7 @@
         "ticket": 5.56
       },
       {
-        "id": "d2a7b1b5-62f4-41fe-bdeb-d862ee9f57b1",
+        "id": "5cc6f70d-7930-49bd-85a5-ed4a666ace72",
         "start": "2026-12-11T12:00",
         "end": "2026-12-11T13:30",
         "name": "Hockey Shinny (18+)",
@@ -1091,7 +1045,7 @@
         "ticket": 6.96
       },
       {
-        "id": "57d354a3-0f87-47d8-8a64-afd105e77212",
+        "id": "4a77e17e-13d7-428e-9cea-133976023312",
         "start": "2026-12-11T12:15",
         "end": "2026-12-11T13:05",
         "name": "Hockey Stick & Puck (18+)",
@@ -1099,7 +1053,7 @@
         "ticket": 3.98
       },
       {
-        "id": "a147e490-3547-4e68-9f01-e1f1f86fdc51",
+        "id": "3ca813c4-2fcd-40f8-8094-fc21f5c65666",
         "start": "2026-12-11T13:15",
         "end": "2026-12-11T14:45",
         "name": "Figure Skating",
@@ -1107,7 +1061,7 @@
         "ticket": 4.61
       },
       {
-        "id": "1e615464-4321-457e-bc93-08b5c5c3f765",
+        "id": "9445b63b-f723-4b83-b4a8-d614b0942e8d",
         "start": "2026-12-12T16:30",
         "end": "2026-12-12T17:20",
         "name": "Hockey Stick & Puck with Adult (3-8 yrs)",
@@ -1115,7 +1069,7 @@
         "ticket": 3.98
       },
       {
-        "id": "716cb2f2-b0bb-4dc2-b344-a3b3b9656a13",
+        "id": "adfee2e3-a1de-4c2a-a05c-1acddea4c690",
         "start": "2026-12-12T17:30",
         "end": "2026-12-12T18:20",
         "name": "Hockey Stick & Puck With Adult (9-13 yrs)",
@@ -1123,7 +1077,7 @@
         "ticket": 3.98
       },
       {
-        "id": "a12ccff4-0135-45fb-a496-a6eb2501a30a",
+        "id": "c40e70ea-e054-4e9b-96c2-511ea0f2ecee",
         "start": "2026-12-12T18:30",
         "end": "2026-12-12T19:20",
         "name": "Youth Hockey Shinny (13-17)",
@@ -1131,7 +1085,7 @@
         "ticket": 3.71
       },
       {
-        "id": "58601a8b-3772-4edc-9b4f-d9643fe59aae",
+        "id": "8a2903fd-5584-4818-893a-38d035bce56a",
         "start": "2026-12-12T18:30",
         "end": "2026-12-12T20:00",
         "name": "Fun Skate",
@@ -1139,7 +1093,7 @@
         "ticket": 4.61
       },
       {
-        "id": "850fbaf7-0cf8-46d0-b16f-d577c0dadc60",
+        "id": "cc8836bd-eddd-43da-a16f-c9d06f3d6aa6",
         "start": "2026-12-12T19:30",
         "end": "2026-12-12T21:00",
         "name": "Hockey Shinny (18+)",
@@ -1147,7 +1101,7 @@
         "ticket": 6.96
       },
       {
-        "id": "45aedb61-c73d-4dd3-8a63-94d0a3ece916",
+        "id": "cd2241c3-d9fd-40ab-854e-53d611b3455f",
         "start": "2026-12-13T13:45",
         "end": "2026-12-13T15:15",
         "name": "Fun Skate",
@@ -1155,7 +1109,7 @@
         "ticket": 4.61
       },
       {
-        "id": "149fcc6a-cac6-4543-87c2-f6dd1010fff1",
+        "id": "40d28329-9fcf-4195-b384-c92ff5c13b42",
         "start": "2026-12-14T09:00",
         "end": "2026-12-14T10:30",
         "name": "Hockey Shinny (18+)",
@@ -1163,7 +1117,7 @@
         "ticket": 6.96
       },
       {
-        "id": "26d903ee-0dfb-4ca4-839f-7f84616de230",
+        "id": "c5da17bc-3ac7-4f5d-ab7f-e4b9cec1c56b",
         "start": "2026-12-14T12:00",
         "end": "2026-12-14T13:30",
         "name": "Hockey 18+ Shinny Sledge",
@@ -1171,7 +1125,7 @@
         "ticket": 6.96
       },
       {
-        "id": "f879a44c-5364-4044-985f-f1ffd8c34fd2",
+        "id": "c19cdfc5-4a45-4087-a217-bb4a85a623da",
         "start": "2026-12-14T12:00",
         "end": "2026-12-14T13:30",
         "name": "Hockey Shinny (18+)",
@@ -1179,7 +1133,7 @@
         "ticket": 6.96
       },
       {
-        "id": "f7dde40b-8c03-4074-be7a-7d2ccceeea04",
+        "id": "c28d3c5f-3404-4e7c-9952-832e29432da6",
         "start": "2026-12-14T12:15",
         "end": "2026-12-14T13:05",
         "name": "Adult Skate Fit",
@@ -1187,7 +1141,7 @@
         "ticket": 17.22
       },
       {
-        "id": "4f1b0015-60a3-4e8d-9608-021e5e8107c8",
+        "id": "d21fd00d-4779-4017-85c7-3269a9ad36b7",
         "start": "2026-12-16T07:00",
         "end": "2026-12-16T08:30",
         "name": "Hockey Shinny (18+)",
@@ -1195,7 +1149,7 @@
         "ticket": 6.96
       },
       {
-        "id": "fced935c-f62f-4bf9-a85c-de1160334f3a",
+        "id": "06836952-16e5-4817-a9c0-d75560be08dd",
         "start": "2026-12-16T12:00",
         "end": "2026-12-16T13:30",
         "name": "Hockey 18+ Shinny Sledge",
@@ -1203,7 +1157,7 @@
         "ticket": 6.96
       },
       {
-        "id": "ee22400c-81f6-4d58-a0b1-4eba9de7568e",
+        "id": "9361b8a4-48a0-404c-b5ce-972ba6ccacff",
         "start": "2026-12-16T12:00",
         "end": "2026-12-16T13:30",
         "name": "Hockey Shinny (18+)",
@@ -1211,7 +1165,7 @@
         "ticket": 6.96
       },
       {
-        "id": "99deeb2c-72c5-4ab2-95fa-0ed18f645a26",
+        "id": "810cd77e-4649-44f5-bd2c-0579e45ac533",
         "start": "2026-12-16T13:15",
         "end": "2026-12-16T14:45",
         "name": "Figure Skating",
@@ -1219,7 +1173,7 @@
         "ticket": 4.61
       },
       {
-        "id": "ec4d7a5c-9066-4d4f-bec7-92f43e9e6436",
+        "id": "72370d2d-863a-4d27-8f78-39fb02b8d50f",
         "start": "2026-12-16T14:00",
         "end": "2026-12-16T15:30",
         "name": "Fun Skate",
@@ -1227,7 +1181,7 @@
         "ticket": 4.61
       },
       {
-        "id": "10bb60de-aae2-47da-9f81-28faaaff1f43",
+        "id": "4071b277-ca6d-4190-8651-66a955ac8e97",
         "start": "2026-12-17T09:15",
         "end": "2026-12-17T10:45",
         "name": "65+ Hockey Shinny",
@@ -1235,7 +1189,7 @@
         "ticket": 5.56
       },
       {
-        "id": "0de57c74-36d4-4718-a452-ad8ab06ad4d4",
+        "id": "ab26b807-6ff3-42cf-ba36-e6be8fac5294",
         "start": "2026-12-17T09:45",
         "end": "2026-12-17T10:35",
         "name": "Adult Skate Fit",
@@ -1243,7 +1197,7 @@
         "ticket": 17.22
       },
       {
-        "id": "f7902f30-063d-4c65-980b-1ef575423757",
+        "id": "0d911295-65fd-45c8-84d6-4dfd4061a8fe",
         "start": "2026-12-17T10:00",
         "end": "2026-12-17T11:30",
         "name": "55+ Hockey Shinny",
@@ -1251,7 +1205,7 @@
         "ticket": 5.56
       },
       {
-        "id": "f9ef34d5-693d-4bb7-8bb5-c5f24e32924b",
+        "id": "c475e6ef-44dd-475c-aca3-fcd18feb8959",
         "start": "2026-12-17T11:15",
         "end": "2026-12-17T12:45",
         "name": "Adult & Older Adult Skate",
@@ -1259,7 +1213,7 @@
         "ticket": 4.61
       },
       {
-        "id": "e834e3e7-05a3-44a5-83a9-dd5234a765f0",
+        "id": "268efc14-eff0-4ca8-91c2-6fab053eaa19",
         "start": "2026-12-17T11:45",
         "end": "2026-12-17T13:15",
         "name": "Figure Skating",
@@ -1267,7 +1221,7 @@
         "ticket": 4.61
       },
       {
-        "id": "08f635b4-762a-426c-ba9b-f6d39d07e4bb",
+        "id": "1c6f43a2-dde3-49eb-ad09-c479475cb564",
         "start": "2026-12-17T12:00",
         "end": "2026-12-17T13:30",
         "name": "Hockey Shinny (18+)",
@@ -1275,7 +1229,7 @@
         "ticket": 6.96
       },
       {
-        "id": "73823667-830c-4067-ad69-038f0c7aa46c",
+        "id": "079bc2ae-a2b3-490d-81ad-4cf061473bba",
         "start": "2026-12-18T09:45",
         "end": "2026-12-18T11:15",
         "name": "Women's Hockey Shinny",
@@ -1283,7 +1237,7 @@
         "ticket": 6.96
       },
       {
-        "id": "539fc094-cb82-44a4-9bee-7b487a33411b",
+        "id": "c584804c-228d-450c-8042-35486645cb3a",
         "start": "2026-12-18T10:00",
         "end": "2026-12-18T11:30",
         "name": "55+ Hockey Shinny",
@@ -1291,7 +1245,7 @@
         "ticket": 5.56
       },
       {
-        "id": "d9866f70-e43c-4790-bfb4-30d8a12a374e",
+        "id": "870490ce-5c78-4049-a950-6ac6d05bf627",
         "start": "2026-12-18T12:00",
         "end": "2026-12-18T13:30",
         "name": "Hockey Shinny (18+)",
@@ -1299,7 +1253,7 @@
         "ticket": 6.96
       },
       {
-        "id": "be0e3521-0ebb-41f7-9ce3-d7a310e62c80",
+        "id": "05fcb753-c9a9-4ce7-b52b-aecc2273ee2f",
         "start": "2026-12-18T12:15",
         "end": "2026-12-18T13:05",
         "name": "Hockey Stick & Puck (18+)",
@@ -1307,7 +1261,7 @@
         "ticket": 3.98
       },
       {
-        "id": "4a3217cb-876e-4373-aaf7-95afdbda0203",
+        "id": "ea65cfcf-fd1d-4d44-9fda-6116015bf47f",
         "start": "2026-12-18T13:15",
         "end": "2026-12-18T14:45",
         "name": "Figure Skating",
@@ -1315,7 +1269,7 @@
         "ticket": 4.61
       },
       {
-        "id": "7ebeeba4-1fa4-41e1-aa6e-610747d5f7ed",
+        "id": "fc02bcca-5622-406a-9490-8fd5c7c4cb56",
         "start": "2026-12-19T16:30",
         "end": "2026-12-19T17:20",
         "name": "Hockey Stick & Puck with Adult (3-8 yrs)",
@@ -1323,7 +1277,7 @@
         "ticket": 3.98
       },
       {
-        "id": "b945337d-373b-438f-a310-eadc8b98376c",
+        "id": "ca42e746-b69c-4d5e-9fe1-982422115ef6",
         "start": "2026-12-19T17:30",
         "end": "2026-12-19T18:20",
         "name": "Hockey Stick & Puck With Adult (9-13 yrs)",
@@ -1331,7 +1285,7 @@
         "ticket": 3.98
       },
       {
-        "id": "4805eb7d-7ee7-4a13-bf40-c58f90221e8d",
+        "id": "99a9eb85-6196-4174-b5d0-3d629f4d40be",
         "start": "2026-12-19T18:30",
         "end": "2026-12-19T19:20",
         "name": "Youth Hockey Shinny (13-17)",
@@ -1339,7 +1293,7 @@
         "ticket": 3.71
       },
       {
-        "id": "b0a2441e-e75e-41cc-9cb2-3469aaebfcdd",
+        "id": "78791bc0-dbc6-4ddd-be43-d6ad7fb85bed",
         "start": "2026-12-19T18:30",
         "end": "2026-12-19T20:00",
         "name": "Fun Skate",
@@ -1347,7 +1301,7 @@
         "ticket": 4.61
       },
       {
-        "id": "610f5a74-55f6-4b62-ba92-78c8f0803f72",
+        "id": "137efdeb-0b42-46d3-8b1f-41b3e8abc1d1",
         "start": "2026-12-19T19:30",
         "end": "2026-12-19T21:00",
         "name": "Hockey Shinny (18+)",
@@ -1355,7 +1309,7 @@
         "ticket": 6.96
       },
       {
-        "id": "38b8bf07-b824-4dee-aab3-1cc1d3e59410",
+        "id": "a0bef983-9692-4583-b710-09b8b7534795",
         "start": "2026-12-20T13:45",
         "end": "2026-12-20T15:15",
         "name": "Fun Skate",
@@ -1363,7 +1317,7 @@
         "ticket": 4.61
       },
       {
-        "id": "e93ce17c-f3a9-4966-9a56-72010496d6d0",
+        "id": "30a9256b-4f79-4544-ad15-7e330703a2df",
         "start": "2026-12-21T09:00",
         "end": "2026-12-21T10:30",
         "name": "Hockey Shinny (18+)",
@@ -1371,7 +1325,7 @@
         "ticket": 6.96
       },
       {
-        "id": "bcd3a130-30cf-48f0-84b1-2b3934f312a0",
+        "id": "92e9ba0b-913f-4394-85c9-526682b914db",
         "start": "2026-12-21T12:00",
         "end": "2026-12-21T13:30",
         "name": "Hockey 18+ Shinny Sledge",
@@ -1379,7 +1333,7 @@
         "ticket": 6.96
       },
       {
-        "id": "939e75ed-0c72-492b-b4d5-7b346dea9112",
+        "id": "9c1bf4cc-605c-4910-8ff0-c49222de3317",
         "start": "2026-12-21T12:00",
         "end": "2026-12-21T13:30",
         "name": "Hockey Shinny (18+)",
@@ -1387,7 +1341,7 @@
         "ticket": 6.96
       },
       {
-        "id": "317d8542-fa5a-4460-b5e5-01a9cd35d844",
+        "id": "7118792b-1727-4073-88ce-74553a46494d",
         "start": "2026-12-21T12:15",
         "end": "2026-12-21T13:05",
         "name": "Adult Skate Fit",
@@ -1395,7 +1349,7 @@
         "ticket": 17.22
       },
       {
-        "id": "c918fcc6-7f98-4c39-a725-c25f79d3cc17",
+        "id": "1997ec89-b941-487f-a28d-d4f5b2e521b2",
         "start": "2026-12-22T09:15",
         "end": "2026-12-22T10:45",
         "name": "65+ Hockey Shinny",
@@ -1403,7 +1357,7 @@
         "ticket": 5.56
       },
       {
-        "id": "32ecba3d-0ba9-4272-b5d4-cbc34b63110e",
+        "id": "6932982b-2fba-4e2e-b12e-81a842c9d273",
         "start": "2026-12-22T10:00",
         "end": "2026-12-22T11:30",
         "name": "55+ Hockey Shinny",
@@ -1411,7 +1365,7 @@
         "ticket": 5.56
       },
       {
-        "id": "77a3af1b-70b7-4ee7-b86e-09e7562f3b4f",
+        "id": "c979981d-0dc6-4cb0-8173-8821a4879a97",
         "start": "2026-12-22T11:15",
         "end": "2026-12-22T12:45",
         "name": "Adult & Older Adult Skate",
@@ -1419,7 +1373,7 @@
         "ticket": 4.61
       },
       {
-        "id": "c6593fee-e89d-41dd-8d87-c3f784e58fb6",
+        "id": "93ac243a-43d2-49b0-b4f8-7b87cbf691ae",
         "start": "2026-12-22T12:00",
         "end": "2026-12-22T13:30",
         "name": "Hockey Shinny (18+)",
@@ -1427,7 +1381,7 @@
         "ticket": 6.96
       },
       {
-        "id": "ad18c616-1d90-45f4-8c3b-8150c5095fad",
+        "id": "f58f8e57-cb4e-42f6-b245-58fa19214bbc",
         "start": "2026-12-23T07:00",
         "end": "2026-12-23T08:30",
         "name": "Hockey Shinny (18+)",
@@ -1435,7 +1389,7 @@
         "ticket": 6.96
       },
       {
-        "id": "719b7e3b-2a65-4503-8d93-255d27cc095e",
+        "id": "5fb2de12-7df4-434c-a6c9-a9173876c13c",
         "start": "2026-12-23T12:00",
         "end": "2026-12-23T13:30",
         "name": "Hockey 18+ Shinny Sledge",
@@ -1443,7 +1397,7 @@
         "ticket": 6.96
       },
       {
-        "id": "63714ff8-c62c-4c26-932d-2edf2d116f73",
+        "id": "a5cb6a96-2931-4040-99c6-92cada71ed45",
         "start": "2026-12-23T12:00",
         "end": "2026-12-23T13:30",
         "name": "Hockey Shinny (18+)",
@@ -1451,7 +1405,7 @@
         "ticket": 6.96
       },
       {
-        "id": "ad4a907a-f332-4a8f-88aa-6cbd3f269c98",
+        "id": "a211e5b0-a26f-44a7-a8b8-6c34551fb55c",
         "start": "2026-12-23T13:15",
         "end": "2026-12-23T14:45",
         "name": "Figure Skating",
@@ -1459,7 +1413,7 @@
         "ticket": 4.61
       },
       {
-        "id": "002550e7-604a-47ff-8d46-da83902ba26e",
+        "id": "36bcef77-5d79-48a6-a3ed-410e3f5d6f35",
         "start": "2026-12-23T14:00",
         "end": "2026-12-23T15:30",
         "name": "Fun Skate",
@@ -1467,7 +1421,7 @@
         "ticket": 4.61
       },
       {
-        "id": "f927ec65-bd2e-4852-b672-b888a2658ce0",
+        "id": "8163622d-9e67-4504-ac0a-53bb830db891",
         "start": "2026-12-28T09:00",
         "end": "2026-12-28T10:30",
         "name": "Hockey Shinny (18+)",
@@ -1475,7 +1429,7 @@
         "ticket": 6.96
       },
       {
-        "id": "8479717f-a4b9-4013-97d5-8a0e388956c1",
+        "id": "383ca19c-18e3-47af-b6af-ae47f56b4841",
         "start": "2026-12-28T12:00",
         "end": "2026-12-28T13:30",
         "name": "Hockey 18+ Shinny Sledge",
@@ -1483,7 +1437,7 @@
         "ticket": 6.96
       },
       {
-        "id": "26daa9c3-faab-4cf9-996b-7deddc6ba06a",
+        "id": "e02e79e4-93b0-49fd-91eb-f9297859db60",
         "start": "2026-12-28T12:00",
         "end": "2026-12-28T13:30",
         "name": "Hockey Shinny (18+)",
@@ -1491,7 +1445,7 @@
         "ticket": 6.96
       },
       {
-        "id": "a0999786-342d-4df3-a8a0-c7858040e838",
+        "id": "414d256b-ac53-4a1b-a98d-76386a83e4f6",
         "start": "2026-12-28T12:15",
         "end": "2026-12-28T13:05",
         "name": "Adult Skate Fit",
@@ -1499,7 +1453,7 @@
         "ticket": 17.22
       },
       {
-        "id": "bf350f0c-0b19-4cf2-bbea-9a917b9131da",
+        "id": "302a7cfc-974e-4212-a9fd-0b3b36e3f51a",
         "start": "2026-12-29T09:15",
         "end": "2026-12-29T10:45",
         "name": "65+ Hockey Shinny",
@@ -1507,7 +1461,7 @@
         "ticket": 5.56
       },
       {
-        "id": "108ff4ca-cecf-436d-8526-b31585720f7c",
+        "id": "3c7ac96d-9828-4f3c-a1da-83f54b4b3120",
         "start": "2026-12-29T10:00",
         "end": "2026-12-29T11:30",
         "name": "55+ Hockey Shinny",
@@ -1515,7 +1469,7 @@
         "ticket": 5.56
       },
       {
-        "id": "dd2a3b77-0398-4436-b4fa-ebb004fe3339",
+        "id": "a03b0291-2910-492e-aec0-7ef53dc199a4",
         "start": "2026-12-29T11:15",
         "end": "2026-12-29T12:45",
         "name": "Adult & Older Adult Skate",
@@ -1523,7 +1477,7 @@
         "ticket": 4.61
       },
       {
-        "id": "a1805228-3454-4001-ad4e-4ad4bdb82af2",
+        "id": "21f24649-428d-4b73-bd76-b65abbb81183",
         "start": "2026-12-29T12:00",
         "end": "2026-12-29T13:30",
         "name": "Hockey Shinny (18+)",
@@ -1531,7 +1485,7 @@
         "ticket": 6.96
       },
       {
-        "id": "1229837c-6dc7-48c8-84c3-5963288a0d48",
+        "id": "f4632f8f-b6cb-4fca-ba5b-a1eb030a3019",
         "start": "2026-12-30T07:00",
         "end": "2026-12-30T08:30",
         "name": "Hockey Shinny (18+)",
@@ -1539,7 +1493,7 @@
         "ticket": 6.96
       },
       {
-        "id": "353696c5-bc8b-40ae-b95c-b224f45b7740",
+        "id": "60a7cd3d-284f-4e0e-aa25-0cab9fc20bbf",
         "start": "2026-12-30T12:00",
         "end": "2026-12-30T13:30",
         "name": "Hockey 18+ Shinny Sledge",
@@ -1547,7 +1501,7 @@
         "ticket": 6.96
       },
       {
-        "id": "3c2beaf3-7251-480a-8572-8221a5047e32",
+        "id": "9f81d53b-c2d7-43a5-829b-756b288f5ad8",
         "start": "2026-12-30T12:00",
         "end": "2026-12-30T13:30",
         "name": "Hockey Shinny (18+)",
@@ -1555,7 +1509,7 @@
         "ticket": 6.96
       },
       {
-        "id": "a2c4cb45-ac59-40ed-a080-031eda2e0e4f",
+        "id": "890895a1-7162-47ee-8cb0-0ce10ad7887f",
         "start": "2026-12-30T13:15",
         "end": "2026-12-30T14:45",
         "name": "Figure Skating",
@@ -1563,7 +1517,7 @@
         "ticket": 4.61
       },
       {
-        "id": "3059bd25-61ed-46fd-9f3a-1b2dce2c9a10",
+        "id": "d67bca95-8323-4ff4-931b-1a654fd2f3b2",
         "start": "2026-12-30T14:00",
         "end": "2026-12-30T15:30",
         "name": "Free Fun Skate",

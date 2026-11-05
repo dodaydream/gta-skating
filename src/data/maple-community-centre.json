@@ -7,11 +7,17 @@
     "lat": 43.859882,
     "lon": -79.514834
   },
+  "rinks": [
+    {
+      "name": "Rink 1",
+      "type": "North American / NHL"
+    }
+  ],
   "schedule": {
-    "updatedAt": "2026-11-05T01:30:42.456Z",
+    "updatedAt": "2026-11-05T02:58:41.313Z",
     "programs": [
       {
-        "id": "ec64e054-0966-4498-9625-8fef7c8dceb0",
+        "id": "a7e26e03-3be2-429a-9dd3-38689ce662c4",
         "start": "2026-11-05T15:00",
         "end": "2026-11-05T16:20",
         "name": "Shinny - Goalie Youth Recreational",
@@ -19,7 +25,7 @@
         "ticket": 0
       },
       {
-        "id": "4ad0c0d0-e641-4a3e-82eb-5c0c12b3abc0",
+        "id": "726bbc74-cbb9-4650-948a-66dde61752a6",
         "start": "2026-11-05T15:00",
         "end": "2026-11-05T16:20",
         "name": "Shinny - Youth Recreational",
@@ -27,7 +33,7 @@
         "ticket": 12.5
       },
       {
-        "id": "48a651f5-9923-497a-8be9-91ed8bc18dda",
+        "id": "a30836fe-c8c7-446c-9531-7a4bf9fa774f",
         "start": "2026-11-05T18:30",
         "end": "2026-11-05T20:00",
         "name": "Recreational Skate",
@@ -35,7 +41,7 @@
         "ticket": 6.75
       },
       {
-        "id": "a957fd3f-02da-461d-8026-cbfcb7c263af",
+        "id": "8ee058b1-f81b-49d1-9383-8500a8107438",
         "start": "2026-11-06T06:30",
         "end": "2026-11-06T08:00",
         "name": "Shinny - Goalie Parent & Child Unsupervised",
@@ -43,7 +49,7 @@
         "ticket": 0
       },
       {
-        "id": "fd251c6e-6924-4f51-a78d-771bcdaab36e",
+        "id": "6c95115f-7463-4c6e-a465-5e1b3f9bdffb",
         "start": "2026-11-06T06:30",
         "end": "2026-11-06T08:00",
         "name": "Shinny - Parent & Child Unsupervised",
@@ -51,7 +57,7 @@
         "ticket": 0
       },
       {
-        "id": "b44bb161-cdbc-4cb6-a8ff-f80cffaa8c16",
+        "id": "6228478e-e29b-491f-8c6d-e8c2cd01615d",
         "start": "2026-11-06T12:00",
         "end": "2026-11-06T14:00",
         "name": "Skating - Unsupervised",
@@ -59,7 +65,7 @@
         "ticket": 0
       },
       {
-        "id": "c56122b2-7817-44c7-b808-e2bc229a6a7b",
+        "id": "7c3e4acb-8384-426f-bc5a-6daea362e77c",
         "start": "2026-11-06T14:00",
         "end": "2026-11-06T15:50",
         "name": "Shinny - Goalie Older Adult Recreational",
@@ -67,7 +73,7 @@
         "ticket": 0
       },
       {
-        "id": "eb299755-3f12-4ed4-9bda-b30ed449703b",
+        "id": "37559669-d458-4de7-83bb-b031f3e905ee",
         "start": "2026-11-06T14:00",
         "end": "2026-11-06T15:50",
         "name": "Shinny - Older Adult Recreational",
@@ -75,7 +81,7 @@
         "ticket": 10.5
       },
       {
-        "id": "246c29a8-86f3-4e25-b98f-2180925c8280",
+        "id": "3881fa7a-e73f-45a4-ae17-3510feb577f5",
         "start": "2026-11-07T18:05",
         "end": "2026-11-07T19:00",
         "name": "Adaptive Skate",
@@ -83,7 +89,7 @@
         "ticket": 6.75
       },
       {
-        "id": "7a7fc8cf-ed05-4446-b0ef-9d8ec3a03587",
+        "id": "95951454-b484-42fe-8030-aacefa944215",
         "start": "2026-11-07T19:05",
         "end": "2026-11-07T21:00",
         "name": "Recreational Skate",
@@ -91,7 +97,7 @@
         "ticket": 6.75
       },
       {
-        "id": "d424b5c5-0836-4b2b-9b86-f41bc4139bbd",
+        "id": "70889606-d2f0-4598-a3b9-418badea8444",
         "start": "2026-11-08T14:05",
         "end": "2026-11-08T16:00",
         "name": "Recreational Skate",
@@ -99,7 +105,7 @@
         "ticket": 6.75
       },
       {
-        "id": "f9fa377a-1fea-4e97-95cd-5f79dacc1758",
+        "id": "ee217180-d99d-403b-82a5-6ec37949cab9",
         "start": "2026-11-09T12:00",
         "end": "2026-11-09T14:00",
         "name": "Skating - Unsupervised",
@@ -107,7 +113,7 @@
         "ticket": 0
       },
       {
-        "id": "59f4cd31-729c-4bf5-9620-883cbdd13843",
+        "id": "c207e38b-383d-4913-ad9c-9cc510f794d0",
         "start": "2026-11-10T10:00",
         "end": "2026-11-10T12:00",
         "name": "Skating - Older Adult Only Unsupervised",
@@ -115,7 +121,7 @@
         "ticket": 0
       },
       {
-        "id": "66447f5d-055b-417a-b08d-b4b07ba5a229",
+        "id": "2058b105-c5f7-4f23-a1be-6c7d7bd056b2",
         "start": "2026-11-11T12:00",
         "end": "2026-11-11T14:00",
         "name": "Skating - Unsupervised",
@@ -123,7 +129,7 @@
         "ticket": 0
       },
       {
-        "id": "a93917b7-52a5-4d67-a18b-6c5d9110a1fc",
+        "id": "5a35dabd-2553-48bb-895b-ec00aa5cc223",
         "start": "2026-11-12T15:00",
         "end": "2026-11-12T16:20",
         "name": "Shinny - Goalie Youth Recreational",
@@ -131,7 +137,7 @@
         "ticket": 0
       },
       {
-        "id": "e7e7e785-737c-437d-9c7e-6dfa0e6990e5",
+        "id": "9ef64201-ef96-43f1-a0c1-a709d6726267",
         "start": "2026-11-12T15:00",
         "end": "2026-11-12T16:20",
         "name": "Shinny - Youth Recreational",
@@ -139,7 +145,7 @@
         "ticket": 12.5
       },
       {
-        "id": "e0fd8ed8-3775-49b4-a33e-7e41a0963288",
+        "id": "1b6f57f9-54e7-406c-a5f8-9607571f2490",
         "start": "2026-11-12T18:30",
         "end": "2026-11-12T20:00",
         "name": "Recreational Skate",
@@ -147,7 +153,7 @@
         "ticket": 6.75
       },
       {
-        "id": "26d35ffa-c725-4e9b-baf5-a91af59509d4",
+        "id": "f6cef281-26be-40f7-bc12-51e48a93fd54",
         "start": "2026-11-13T06:30",
         "end": "2026-11-13T08:00",
         "name": "Shinny - Goalie Parent & Child Unsupervised",
@@ -155,7 +161,7 @@
         "ticket": 0
       },
       {
-        "id": "fa5546fa-0561-4c92-8719-c92710cd9920",
+        "id": "efe51d5a-9170-4142-8b8d-05f58b9157d1",
         "start": "2026-11-13T06:30",
         "end": "2026-11-13T08:00",
         "name": "Shinny - Parent & Child Unsupervised",
@@ -163,7 +169,7 @@
         "ticket": 0
       },
       {
-        "id": "ec5181c1-3ba2-4fb3-b8af-1ca50aea4e00",
+        "id": "f5841806-ec3d-4891-804d-9a1f1c0018d1",
         "start": "2026-11-13T12:00",
         "end": "2026-11-13T14:00",
         "name": "Skating - Unsupervised",
@@ -171,7 +177,7 @@
         "ticket": 0
       },
       {
-        "id": "a2b9ca1b-999d-4905-a89b-ef8c3ccac60a",
+        "id": "1dba91cb-50a8-4f69-a7a5-044702cb5b91",
         "start": "2026-11-13T14:00",
         "end": "2026-11-13T15:50",
         "name": "Shinny - Goalie Older Adult Recreational",
@@ -179,7 +185,7 @@
         "ticket": 0
       },
       {
-        "id": "0c2ede45-7ceb-4cd8-af09-0deef4ec51a4",
+        "id": "e4081c1a-e4e1-4a03-b918-043ab2382fb0",
         "start": "2026-11-13T14:00",
         "end": "2026-11-13T15:50",
         "name": "Shinny - Older Adult Recreational",
@@ -187,7 +193,7 @@
         "ticket": 10.5
       },
       {
-        "id": "5585b7b4-c7f0-4939-b0f1-479d79dd59d8",
+        "id": "795ca24b-dbf6-45f7-b85f-2d0586a9af24",
         "start": "2026-11-14T19:05",
         "end": "2026-11-14T21:00",
         "name": "Recreational Skate",
@@ -195,7 +201,7 @@
         "ticket": 6.75
       },
       {
-        "id": "c458ed72-cfbe-4abf-89d6-686b6e16eae4",
+        "id": "e7360feb-8337-4b0d-9541-85f16e52b777",
         "start": "2026-11-15T14:05",
         "end": "2026-11-15T16:00",
         "name": "Recreational Skate",
@@ -203,7 +209,7 @@
         "ticket": 6.75
       },
       {
-        "id": "fa9c7e56-e18e-4309-9015-fbe563b3e3ae",
+        "id": "12854b38-6a34-403d-94d6-ea1287828d31",
         "start": "2026-11-16T12:00",
         "end": "2026-11-16T14:00",
         "name": "Skating - Unsupervised",
@@ -211,7 +217,7 @@
         "ticket": 0
       },
       {
-        "id": "42213144-70d7-4f99-aa1a-0de5458b6725",
+        "id": "2de51e7b-17b6-4335-8f33-076695df0ce9",
         "start": "2026-11-17T10:00",
         "end": "2026-11-17T12:00",
         "name": "Skating - Older Adult Only Unsupervised",

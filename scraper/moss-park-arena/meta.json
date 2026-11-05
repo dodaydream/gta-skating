@@ -4,5 +4,14 @@
   "type": "Indoor",
   "url": "https://mossparkarena.com/home/skating/public-skating/",
   "address": "140 Sherbourne St, Toronto, ON",
-  "coordinates": { "lat": 43.655024, "lon": -79.370213 }
+  "coordinates": {
+    "lat": 43.655024,
+    "lon": -79.370213
+  },
+  "rinks": [
+    {
+      "name": "Moss Park Arena Rink",
+      "type": "Indoor (non-standard) 170' x 80'"
+    }
+  ]
 }

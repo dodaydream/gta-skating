@@ -7,11 +7,21 @@
     "lat": 43.9742243,
     "lon": -79.2553137
   },
+  "rinks": [
+    {
+      "name": "Pad A",
+      "type": "North American / NHL"
+    },
+    {
+      "name": "Pad B",
+      "type": "North American / NHL"
+    }
+  ],
   "schedule": {
-    "updatedAt": "2026-11-05T01:50:50.469Z",
+    "updatedAt": "2026-11-05T02:58:36.356Z",
     "programs": [
       {
-        "id": "fe38cb17-e72e-4239-9b10-066061ad6b00",
+        "id": "7df86b16-ac45-461f-967c-0bd6d4437c74",
         "start": "2026-11-05T16:15",
         "end": "2026-11-05T17:15",
         "name": "Family Stick and Puck (4-10 years w/adult)",
@@ -19,7 +29,7 @@
         "ticket": 17.5
       },
       {
-        "id": "04cb46f0-7849-46d7-8e90-f7b15d9a5711",
+        "id": "a6794397-8ed9-4353-8704-99022ef547db",
         "start": "2026-11-06T16:00",
         "end": "2026-11-06T17:00",
         "name": "Family Stick and Puck (ages 4-10 w/adult)",
@@ -27,7 +37,7 @@
         "ticket": 17.5
       },
       {
-        "id": "11f66032-eafb-401c-ab9a-1d79edd87ae0",
+        "id": "925f9365-1347-466d-bebb-93ccdc38bc18",
         "start": "2026-11-06T16:15",
         "end": "2026-11-06T17:15",
         "name": "Youth Shinny (11-14 years)",
@@ -35,7 +45,7 @@
         "ticket": 5.5
       },
       {
-        "id": "7ab0f2e5-3008-4aa6-b0d8-3e4a1f167217",
+        "id": "cf7989ad-59cb-4747-8a75-8e2b03da8a31",
         "start": "2026-11-07T15:00",
         "end": "2026-11-07T17:00",
         "name": "Public Skate",
@@ -43,7 +53,7 @@
         "ticket": 5.5
       },
       {
-        "id": "e5b6431f-f7b0-4b20-8473-25943cbcbb19",
+        "id": "803d6be9-0ac9-461a-8cef-26b9d422a8f6",
         "start": "2026-11-09T16:15",
         "end": "2026-11-09T17:15",
         "name": "Family Stick and Puck (ages 4-10 w/adult)",
@@ -51,7 +61,7 @@
         "ticket": 17.5
       },
       {
-        "id": "474cd807-9f3c-433c-8b14-2a4b0df5b06a",
+        "id": "1613cd0c-1ad0-4453-b08a-9611a64aba2e",
         "start": "2026-11-12T16:15",
         "end": "2026-11-12T17:15",
         "name": "Family Stick and Puck (4-10 years w/adult)",
@@ -59,7 +69,7 @@
         "ticket": 17.5
       },
       {
-        "id": "a18e3ac6-2cc2-43b1-a713-d8063789dab0",
+        "id": "0bd7c3af-4aab-4c65-9856-356ff72d3bb6",
         "start": "2026-11-13T16:00",
         "end": "2026-11-13T17:00",
         "name": "Family Stick and Puck (ages 4-10 w/adult)",
@@ -67,7 +77,7 @@
         "ticket": 17.5
       },
       {
-        "id": "ad2a9fb7-bda8-49f8-9ce5-2ecd3bdb0534",
+        "id": "bfcc31af-de24-4492-a013-82577c15a241",
         "start": "2026-11-13T16:15",
         "end": "2026-11-13T17:15",
         "name": "Youth Shinny (11-14 years)",
@@ -75,7 +85,7 @@
         "ticket": 5.5
       },
       {
-        "id": "30fad19b-df3c-4a81-84d9-765ad8340711",
+        "id": "8828c884-6d2d-44d5-9f61-c44155b33d9b",
         "start": "2026-11-14T15:00",
         "end": "2026-11-14T17:00",
         "name": "Public Skate",
@@ -83,7 +93,7 @@
         "ticket": 5.5
       },
       {
-        "id": "fed88ac0-ff71-4ea8-b70e-b714e5e84ead",
+        "id": "a50c0cb3-7f79-4ce5-8328-994bb0bcd46c",
         "start": "2026-11-16T16:15",
         "end": "2026-11-16T17:15",
         "name": "Family Stick and Puck (ages 4-10 w/adult)",
@@ -91,7 +101,7 @@
         "ticket": 17.5
       },
       {
-        "id": "c1b9d6d2-12db-4564-8d23-2e5e17287a6c",
+        "id": "2e215f14-88e2-4aa6-9761-9582de2feb44",
         "start": "2026-11-19T16:15",
         "end": "2026-11-19T17:15",
         "name": "Family Stick and Puck (4-10 years w/adult)",
@@ -99,7 +109,7 @@
         "ticket": 17.5
       },
       {
-        "id": "e31db5e6-2913-41cd-afae-266309ac3754",
+        "id": "62bcdd40-843c-4dfb-b0fb-4bacd50b2f6b",
         "start": "2026-11-20T12:30",
         "end": "2026-11-20T13:30",
         "name": "PA Day Family Stick and Puck",
@@ -107,7 +117,7 @@
         "ticket": 17.5
       },
       {
-        "id": "e7db5b48-10a8-46d2-8c5c-73a0166a234c",
+        "id": "7efedd60-1ea7-4c52-beb6-66898a6661ce",
         "start": "2026-11-20T13:00",
         "end": "2026-11-20T15:00",
         "name": "PA Day Public Skate",
@@ -115,7 +125,7 @@
         "ticket": 5.5
       },
       {
-        "id": "3ddf5409-c9e5-479a-a242-d2d97eeebeee",
+        "id": "4c1a9a2b-137e-47fe-b516-65c9d27a8802",
         "start": "2026-11-20T13:30",
         "end": "2026-11-20T14:30",
         "name": "PA Day Youth Shinny (14-17 years)",
@@ -123,7 +133,7 @@
         "ticket": 5.5
       },
       {
-        "id": "57acf497-63a4-4bb8-9841-c6e63f53ad35",
+        "id": "89dc4dc7-1078-45a1-b5cc-54ff90a7f1a5",
         "start": "2026-11-20T16:00",
         "end": "2026-11-20T17:00",
         "name": "Family Stick and Puck (ages 4-10 w/adult)",
@@ -131,7 +141,7 @@
         "ticket": 17.5
       },
       {
-        "id": "92a21e4d-5ee8-4c65-bc69-6ff01a471df9",
+        "id": "f2b3f8f5-78e0-4154-a309-cb1552a61aa3",
         "start": "2026-11-20T16:15",
         "end": "2026-11-20T17:15",
         "name": "Youth Shinny (11-14 years)",
@@ -139,7 +149,7 @@
         "ticket": 5.5
       },
       {
-        "id": "aca4801f-e825-43e9-9d47-4b05289e34b4",
+        "id": "34ae4f49-6b6a-44d3-a675-64e753c28a8b",
         "start": "2026-11-21T15:00",
         "end": "2026-11-21T17:00",
         "name": "Public Skate",
@@ -147,7 +157,7 @@
         "ticket": 5.5
       },
       {
-        "id": "b2e9f72a-941a-4de5-9960-cd7120fafabd",
+        "id": "39659ab8-e659-427e-86c6-75b8e52a8bec",
         "start": "2026-11-23T16:15",
         "end": "2026-11-23T17:15",
         "name": "Family Stick and Puck (ages 4-10 w/adult)",
@@ -155,7 +165,7 @@
         "ticket": 17.5
       },
       {
-        "id": "f46c266b-212b-4ac7-b5e5-c519bca87d50",
+        "id": "dc9e5dbe-36f7-4333-85d0-c137d7b238ae",
         "start": "2026-11-26T16:15",
         "end": "2026-11-26T17:15",
         "name": "Family Stick and Puck (4-10 years w/adult)",
@@ -163,7 +173,7 @@
         "ticket": 17.5
       },
       {
-        "id": "a9292525-6b0f-4be8-a8eb-5577f858be94",
+        "id": "8ddac2c1-9306-47b4-8fa0-9c3a7d9b48f1",
         "start": "2026-11-27T16:00",
         "end": "2026-11-27T17:00",
         "name": "Family Stick and Puck (ages 4-10 w/adult)",
@@ -171,7 +181,7 @@
         "ticket": 17.5
       },
       {
-        "id": "c0b45744-e448-45a3-9398-7663c604913e",
+        "id": "3745db84-c02c-4333-91ec-c168e5efb112",
         "start": "2026-11-27T16:15",
         "end": "2026-11-27T17:15",
         "name": "Youth Shinny (11-14 years)",
@@ -179,7 +189,7 @@
         "ticket": 5.5
       },
       {
-        "id": "08feabf5-b9b1-4b1d-9f17-291559b56f9c",
+        "id": "aecaa67f-d001-4aec-85a7-7620d9c5754b",
         "start": "2026-11-28T15:00",
         "end": "2026-11-28T17:00",
         "name": "Public Skate",
@@ -187,7 +197,7 @@
         "ticket": 5.5
       },
       {
-        "id": "3b8dc604-bc57-4020-b049-880f44333210",
+        "id": "18746538-d2cd-446e-a0c4-104802807b4f",
         "start": "2026-11-30T16:15",
         "end": "2026-11-30T17:15",
         "name": "Family Stick and Puck (ages 4-10 w/adult)",
@@ -195,7 +205,7 @@
         "ticket": 17.5
       },
       {
-        "id": "14f61a7f-8974-4cc2-825f-fa14adf7ea4a",
+        "id": "49fe15c1-3eb0-431d-a82f-abf03044fdce",
         "start": "2026-12-03T16:15",
         "end": "2026-12-03T17:15",
         "name": "Family Stick and Puck (4-10 years w/adult)",
@@ -203,7 +213,7 @@
         "ticket": 17.5
       },
       {
-        "id": "22dfccaa-9ba1-4ceb-86fb-8fdaa5e309e4",
+        "id": "d57f42b7-335e-4052-ba5c-a738a8bf9251",
         "start": "2026-12-04T16:00",
         "end": "2026-12-04T17:00",
         "name": "Family Stick and Puck (ages 4-10 w/adult)",
@@ -211,7 +221,7 @@
         "ticket": 17.5
       },
       {
-        "id": "0c58a22f-d882-4a57-88d6-5fdd9e6beea4",
+        "id": "3cd46f61-5c27-49c5-b67d-53a5134a22aa",
         "start": "2026-12-04T16:15",
         "end": "2026-12-04T17:15",
         "name": "Youth Shinny (11-14 years)",
@@ -219,7 +229,7 @@
         "ticket": 5.5
       },
       {
-        "id": "284a313d-ff8f-4984-a207-3c762f196b02",
+        "id": "ef8504d5-6f5d-4bcf-9009-6b71e4d76221",
         "start": "2026-12-05T15:00",
         "end": "2026-12-05T17:00",
         "name": "Public Skate",

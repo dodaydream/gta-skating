@@ -7,11 +7,17 @@
     "lat": 43.873298,
     "lon": -79.258153
   },
+  "rinks": [
+    {
+      "name": "Rink 1",
+      "type": "North American / NHL"
+    }
+  ],
   "schedule": {
-    "updatedAt": "2026-11-03T02:28:49.346Z",
+    "updatedAt": "2026-11-05T02:58:23.376Z",
     "programs": [
       {
-        "id": "3e8d461e-7609-47bd-9239-75e92bc93c11",
+        "id": "71d4d2d2-f429-44f0-8f41-775a82ead2d4",
         "start": "2026-11-07T14:00",
         "end": "2026-11-07T15:50",
         "name": "Recreational Skate",
@@ -19,7 +25,7 @@
         "ticket": 5.17
       },
       {
-        "id": "f14e0817-a9bf-46da-bee6-a0597e0ed51b",
+        "id": "a4556577-10e0-4045-8b3a-2d1be1c5d0ca",
         "start": "2026-11-14T14:00",
         "end": "2026-11-14T15:50",
         "name": "Recreational Skate",
@@ -27,7 +33,7 @@
         "ticket": 5.17
       },
       {
-        "id": "2223b960-5adb-4512-a0e0-9921e5066889",
+        "id": "d328ef1e-7d26-401e-a9b6-09eb28075d69",
         "start": "2026-11-21T14:00",
         "end": "2026-11-21T15:50",
         "name": "Recreational Skate",
@@ -35,7 +41,7 @@
         "ticket": 5.17
       },
       {
-        "id": "10a7aa97-a998-4244-882c-835c6ecb70bc",
+        "id": "39d0ec9e-5694-45e7-907e-356072c60b28",
         "start": "2026-11-28T14:00",
         "end": "2026-11-28T15:50",
         "name": "Recreational Skate",
@@ -43,7 +49,7 @@
         "ticket": 5.17
       },
       {
-        "id": "6f8cd34c-ce94-49d7-ba31-5c40e8ae1a81",
+        "id": "53dfc816-c3c3-4506-b10e-2874a25dcf01",
         "start": "2026-12-05T14:00",
         "end": "2026-12-05T15:50",
         "name": "Recreational Skate",
@@ -51,7 +57,7 @@
         "ticket": 5.17
       },
       {
-        "id": "e54fef04-2c07-4a8a-8682-de47afa59c48",
+        "id": "8f2a05a2-d01e-4e6c-8ce8-678a6d7c19c8",
         "start": "2026-12-12T14:00",
         "end": "2026-12-12T15:50",
         "name": "Recreational Skate",
@@ -59,7 +65,7 @@
         "ticket": 5.17
       },
       {
-        "id": "a1476731-1627-4b1b-85eb-2ae4f280417e",
+        "id": "acb6cf47-37ad-4bf3-aaa4-0a6b85de7d3c",
         "start": "2026-12-19T14:00",
         "end": "2026-12-19T15:50",
         "name": "Recreational Skate",

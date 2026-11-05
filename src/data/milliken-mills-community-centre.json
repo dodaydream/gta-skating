@@ -7,27 +7,17 @@
     "lat": 43.840228,
     "lon": -79.305006
   },
+  "rinks": [
+    {
+      "name": "Rink 1",
+      "type": "North American / NHL"
+    }
+  ],
   "schedule": {
-    "updatedAt": "2026-11-03T02:28:49.346Z",
+    "updatedAt": "2026-11-05T02:58:23.376Z",
     "programs": [
       {
-        "id": "8a77d120-d527-41e1-becc-05ff6e76c916",
-        "start": "2026-11-03T16:10",
-        "end": "2026-11-03T16:55",
-        "name": "Stick & Ring",
-        "type": "Ringette",
-        "ticket": 5.17
-      },
-      {
-        "id": "9c7f7520-9550-4f08-ad43-ee4990665c92",
-        "start": "2026-11-04T13:00",
-        "end": "2026-11-04T14:30",
-        "name": "Stick & Puck (16+)",
-        "type": "Stick and Puck",
-        "ticket": 5.17
-      },
-      {
-        "id": "b8221274-3cde-4a62-838f-5e80977e7a53",
+        "id": "29d64608-a044-41b5-8ac0-60440124bd23",
         "start": "2026-11-05T12:00",
         "end": "2026-11-05T13:30",
         "name": "Shinny: Adults",
@@ -35,7 +25,7 @@
         "ticket": 5.17
       },
       {
-        "id": "529501fb-b6f6-4723-9075-92a8f3f55eb6",
+        "id": "6d60ec92-6931-4999-9d05-91cab228cde2",
         "start": "2026-11-06T09:00",
         "end": "2026-11-06T10:30",
         "name": "Stick & Puck (16+)",
@@ -43,7 +33,7 @@
         "ticket": 5.17
       },
       {
-        "id": "9b270792-c121-4c04-b365-324c094db59a",
+        "id": "ccd1e7d5-5dde-4834-9de3-3e93e32b4eae",
         "start": "2026-11-06T16:10",
         "end": "2026-11-06T18:00",
         "name": "Recreational Skate",
@@ -51,7 +41,7 @@
         "ticket": 5.17
       },
       {
-        "id": "47a277cc-64e1-4e11-8f13-14f6260adac8",
+        "id": "3962dcaf-d7af-40c9-a81a-0a92b1218848",
         "start": "2026-11-08T12:10",
         "end": "2026-11-08T14:00",
         "name": "Recreational Skate",
@@ -59,7 +49,7 @@
         "ticket": 5.17
       },
       {
-        "id": "7af7e30a-12ca-4d78-8630-137eae570ec7",
+        "id": "5b374a7e-aaae-41ef-9437-0ca3631205ac",
         "start": "2026-11-09T09:00",
         "end": "2026-11-09T10:30",
         "name": "Stick & Puck (16+)",
@@ -67,7 +57,7 @@
         "ticket": 5.17
       },
       {
-        "id": "dc2dc385-9200-4183-986c-a9cbf975e2ca",
+        "id": "58041ebb-b104-4415-8aeb-97e8ecf36dc6",
         "start": "2026-11-10T16:10",
         "end": "2026-11-10T16:55",
         "name": "Stick & Ring",
@@ -75,7 +65,7 @@
         "ticket": 5.17
       },
       {
-        "id": "ef977944-7e2b-4ecc-b7b1-660d45b35fa7",
+        "id": "bb5dce79-70b0-49f8-a899-479cba716b52",
         "start": "2026-11-11T13:00",
         "end": "2026-11-11T14:30",
         "name": "Stick & Puck (16+)",
@@ -83,7 +73,7 @@
         "ticket": 5.17
       },
       {
-        "id": "43fffa6c-9f37-46e4-8b04-30d252f4eb44",
+        "id": "b0db8afb-7459-44db-b559-268028708e75",
         "start": "2026-11-12T12:00",
         "end": "2026-11-12T13:30",
         "name": "Shinny: Adults",
@@ -91,7 +81,7 @@
         "ticket": 5.17
       },
       {
-        "id": "f4b5add8-30bc-4fcf-8cce-0d4ac370e61d",
+        "id": "bc775ebf-8d05-4676-a2d9-a855883109ea",
         "start": "2026-11-13T09:00",
         "end": "2026-11-13T10:30",
         "name": "Stick & Puck (16+)",
@@ -99,7 +89,7 @@
         "ticket": 5.17
       },
       {
-        "id": "14bffb47-30ae-4fd0-8d4f-6e29c842c0a5",
+        "id": "92df02bb-2be5-4fd1-a774-5ab40e2daafa",
         "start": "2026-11-13T16:10",
         "end": "2026-11-13T18:00",
         "name": "Recreational Skate",
@@ -107,7 +97,7 @@
         "ticket": 5.17
       },
       {
-        "id": "640d7bf3-44cf-4f03-9e34-abc5a030aa84",
+        "id": "8fd84eb8-b664-4c23-9e55-1674ea7abc6e",
         "start": "2026-11-15T12:10",
         "end": "2026-11-15T14:00",
         "name": "Recreational Skate",
@@ -115,7 +105,7 @@
         "ticket": 5.17
       },
       {
-        "id": "2e078c80-c0d3-43ed-9cdb-de5fc48f1863",
+        "id": "fbdfecef-8fd7-4afd-8744-b0e84a05779a",
         "start": "2026-11-16T09:00",
         "end": "2026-11-16T10:30",
         "name": "Stick & Puck (16+)",
@@ -123,7 +113,7 @@
         "ticket": 5.17
       },
       {
-        "id": "bb8a0549-b42a-4ace-ad0b-19ca0b28e3f1",
+        "id": "6f639187-d6ef-462b-b7d2-ab1f605ce9a0",
         "start": "2026-11-17T16:10",
         "end": "2026-11-17T16:55",
         "name": "Stick & Ring",
@@ -131,7 +121,7 @@
         "ticket": 5.17
       },
       {
-        "id": "5b8cd0de-0997-4bd4-bc18-e2e442fd5302",
+        "id": "67c8945a-eeab-40f6-aa50-668f22d86b5d",
         "start": "2026-11-18T13:00",
         "end": "2026-11-18T14:30",
         "name": "Stick & Puck (16+)",
@@ -139,7 +129,7 @@
         "ticket": 5.17
       },
       {
-        "id": "50bde563-257d-4d25-9c35-118066166729",
+        "id": "bee5ab23-9c99-43c8-883b-0c3037c56950",
         "start": "2026-11-19T12:00",
         "end": "2026-11-19T13:30",
         "name": "Shinny: Adults",
@@ -147,7 +137,7 @@
         "ticket": 5.17
       },
       {
-        "id": "a9537d1d-c554-4d02-a98a-f5caea4d4822",
+        "id": "49fefc75-8ca5-4d14-8c9a-25a57fe7147a",
         "start": "2026-11-20T09:00",
         "end": "2026-11-20T10:30",
         "name": "Stick & Puck (16+)",
@@ -155,7 +145,7 @@
         "ticket": 5.17
       },
       {
-        "id": "af71ae59-da5d-4449-b2ae-e2a21d1bc315",
+        "id": "f4197497-c234-4254-bcb5-904032c4384d",
         "start": "2026-11-20T11:00",
         "end": "2026-11-20T12:00",
         "name": "Parent & Tot Skate",
@@ -163,7 +153,7 @@
         "ticket": 5.17
       },
       {
-        "id": "8bb3dd8d-83a0-48be-8d78-61ef06147577",
+        "id": "3c819cbc-73fc-4505-a097-5d4707d6cc81",
         "start": "2026-11-20T12:10",
         "end": "2026-11-20T14:00",
         "name": "Recreational Skate",
@@ -171,7 +161,7 @@
         "ticket": 5.17
       },
       {
-        "id": "f820a863-dbfc-46bc-8ba0-4de50fe1c1a3",
+        "id": "ad8f5681-5303-4048-8f72-dc21182c3a14",
         "start": "2026-11-20T14:10",
         "end": "2026-11-20T14:55",
         "name": "Stick & Puck",
@@ -179,7 +169,7 @@
         "ticket": 5.17
       },
       {
-        "id": "441f8eb2-acad-4200-8232-385665b35df3",
+        "id": "6d15c22c-6888-40a8-a04d-d23c1cf2824c",
         "start": "2026-11-20T15:10",
         "end": "2026-11-20T15:55",
         "name": "Stick & Puck",
@@ -187,7 +177,7 @@
         "ticket": 5.17
       },
       {
-        "id": "ed27e780-6f1f-43f4-b7af-785f9ef93d9a",
+        "id": "3bc1c92e-c9b2-408f-8c8f-d261ba40bbd6",
         "start": "2026-11-20T16:10",
         "end": "2026-11-20T18:00",
         "name": "Recreational Skate",
@@ -195,7 +185,7 @@
         "ticket": 5.17
       },
       {
-        "id": "fa4bebc7-2092-45bf-91f7-6d16349328bb",
+        "id": "5b9c029c-b4c9-406e-a632-a345492b2ba7",
         "start": "2026-11-22T12:10",
         "end": "2026-11-22T14:00",
         "name": "Recreational Skate",
@@ -203,7 +193,7 @@
         "ticket": 5.17
       },
       {
-        "id": "e07dfb30-0399-4bc7-aede-1b9370e1c65b",
+        "id": "6afa2116-dda9-4d26-a2f2-764c322c5a62",
         "start": "2026-11-23T09:00",
         "end": "2026-11-23T10:30",
         "name": "Stick & Puck (16+)",
@@ -211,7 +201,7 @@
         "ticket": 5.17
       },
       {
-        "id": "b699a392-45ec-48bd-a3f4-e436b37721d4",
+        "id": "94a84d5c-a69e-4cc7-b8b5-468851307b76",
         "start": "2026-11-24T16:10",
         "end": "2026-11-24T16:55",
         "name": "Stick & Ring",
@@ -219,7 +209,7 @@
         "ticket": 5.17
       },
       {
-        "id": "b618caf2-041e-4f99-9c47-7b39e9df162b",
+        "id": "6fef6f69-0194-4179-904d-198fd8a230d6",
         "start": "2026-11-25T13:00",
         "end": "2026-11-25T14:30",
         "name": "Stick & Puck (16+)",
@@ -227,7 +217,7 @@
         "ticket": 5.17
       },
       {
-        "id": "b276ea47-df71-46ed-997a-82de61474125",
+        "id": "b2b54a28-2dc1-4961-9fa1-98dcdd392643",
         "start": "2026-11-26T12:00",
         "end": "2026-11-26T13:30",
         "name": "Shinny: Adults",
@@ -235,7 +225,7 @@
         "ticket": 5.17
       },
       {
-        "id": "a7471928-0542-4d6f-874c-9306061b1527",
+        "id": "4c872ce4-e96d-4b59-914e-54cdf644bdc9",
         "start": "2026-11-27T09:00",
         "end": "2026-11-27T10:30",
         "name": "Stick & Puck (16+)",
@@ -243,7 +233,7 @@
         "ticket": 5.17
       },
       {
-        "id": "590aaab4-9a75-42d8-b135-a6e7c99d54cd",
+        "id": "07dee69f-c010-4be8-ac56-737b010493ff",
         "start": "2026-11-27T16:10",
         "end": "2026-11-27T18:00",
         "name": "Recreational Skate",
@@ -251,7 +241,7 @@
         "ticket": 5.17
       },
       {
-        "id": "ea828a81-9081-4f1d-8827-b6343ba0e612",
+        "id": "eb3b1c70-ca6a-4ba2-8e5d-120f77c9de0b",
         "start": "2026-11-29T12:10",
         "end": "2026-11-29T14:00",
         "name": "Recreational Skate",
@@ -259,7 +249,7 @@
         "ticket": 5.17
       },
       {
-        "id": "4b3f2a5f-2171-41d9-ace7-20c65d689489",
+        "id": "bb62283e-9960-49e6-aef1-c8b2e0f52147",
         "start": "2026-11-30T09:00",
         "end": "2026-11-30T10:30",
         "name": "Stick & Puck (16+)",
@@ -267,7 +257,7 @@
         "ticket": 5.17
       },
       {
-        "id": "25c1dcaf-b27c-4ab7-a151-4f47b38dd28e",
+        "id": "ccbc005d-f87f-4189-a488-542619319851",
         "start": "2026-12-01T16:10",
         "end": "2026-12-01T16:55",
         "name": "Stick & Ring",
@@ -275,7 +265,7 @@
         "ticket": 5.17
       },
       {
-        "id": "d3fc6665-f343-426a-adfa-45db408d13f4",
+        "id": "a185c53a-5d6a-4786-98ec-900f7e23e5b1",
         "start": "2026-12-02T13:00",
         "end": "2026-12-02T14:30",
         "name": "Stick & Puck (16+)",
@@ -283,7 +273,7 @@
         "ticket": 5.17
       },
       {
-        "id": "eace8c13-0660-421b-bcf0-d1e53aa1b7e9",
+        "id": "df228676-523e-4223-8121-ec06b5746420",
         "start": "2026-12-03T12:00",
         "end": "2026-12-03T13:30",
         "name": "Shinny: Adults",
@@ -291,7 +281,7 @@
         "ticket": 5.17
       },
       {
-        "id": "f326f5f7-9bb8-4768-82fe-1f3e63a666e6",
+        "id": "ac58c976-b195-47ca-9ee8-8f4f87baf293",
         "start": "2026-12-04T09:00",
         "end": "2026-12-04T10:30",
         "name": "Stick & Puck (16+)",
@@ -299,7 +289,7 @@
         "ticket": 5.17
       },
       {
-        "id": "c6cb4033-a340-494a-b4a2-7f22cae1ba95",
+        "id": "24c3d182-f8e7-4fef-b5cf-2fcc5fccf3a7",
         "start": "2026-12-04T16:10",
         "end": "2026-12-04T18:00",
         "name": "Recreational Skate",
@@ -307,7 +297,7 @@
         "ticket": 5.17
       },
       {
-        "id": "8693ec90-e345-4456-bf94-954ca603505e",
+        "id": "40574fb6-6890-44d2-a284-b27dbd3fdce4",
         "start": "2026-12-06T12:10",
         "end": "2026-12-06T14:00",
         "name": "Recreational Skate",
@@ -315,7 +305,7 @@
         "ticket": 5.17
       },
       {
-        "id": "e0c4eb5d-52d5-4df0-8283-bbba532a75ec",
+        "id": "4dc954a3-8b58-43f1-87e8-768fa7e8c1a8",
         "start": "2026-12-07T09:00",
         "end": "2026-12-07T10:30",
         "name": "Stick & Puck (16+)",
@@ -323,7 +313,7 @@
         "ticket": 5.17
       },
       {
-        "id": "97b7ac81-bd6e-4c81-b088-0c2314db3b68",
+        "id": "8b94560b-c9b8-4d6e-b888-acaacc60f178",
         "start": "2026-12-08T16:10",
         "end": "2026-12-08T16:55",
         "name": "Stick & Ring",
@@ -331,7 +321,7 @@
         "ticket": 5.17
       },
       {
-        "id": "b94aeb7b-4c71-45fe-9d3d-9ff49597bcae",
+        "id": "90e241d7-4503-45a4-a026-0910f17141a3",
         "start": "2026-12-09T13:00",
         "end": "2026-12-09T14:30",
         "name": "Stick & Puck (16+)",
@@ -339,7 +329,7 @@
         "ticket": 5.17
       },
       {
-        "id": "7f47abd2-7982-4a97-b72f-ba71b10a4814",
+        "id": "1e09a0da-7a3c-477e-9c55-1dd564b46bf4",
         "start": "2026-12-10T12:00",
         "end": "2026-12-10T13:30",
         "name": "Shinny: Adults",
@@ -347,7 +337,7 @@
         "ticket": 5.17
       },
       {
-        "id": "23c07ff9-37e6-4cda-937c-3e8379e0964d",
+        "id": "fa137dc7-344f-456a-a861-250b49e00c54",
         "start": "2026-12-11T09:00",
         "end": "2026-12-11T10:30",
         "name": "Stick & Puck (16+)",
@@ -355,7 +345,7 @@
         "ticket": 5.17
       },
       {
-        "id": "54706c31-131e-4d67-b061-7c0fb56a2261",
+        "id": "1971b9f3-e7ed-4574-a853-7005f9a1a5ee",
         "start": "2026-12-11T16:10",
         "end": "2026-12-11T18:00",
         "name": "Recreational Skate",
@@ -363,7 +353,7 @@
         "ticket": 5.17
       },
       {
-        "id": "e61a011f-6725-455e-9955-7681302bed49",
+        "id": "f36f6001-b614-4944-9e24-07a4ab929b7e",
         "start": "2026-12-13T12:10",
         "end": "2026-12-13T14:00",
         "name": "Recreational Skate",
@@ -371,7 +361,7 @@
         "ticket": 5.17
       },
       {
-        "id": "21f5cc66-e397-4d55-8257-7abb094815d4",
+        "id": "2bc407b1-1909-4a8e-909c-455a85e7569c",
         "start": "2026-12-14T09:00",
         "end": "2026-12-14T10:30",
         "name": "Stick & Puck (16+)",
@@ -379,7 +369,7 @@
         "ticket": 5.17
       },
       {
-        "id": "e44c6812-b063-4997-9600-d5e44fa27697",
+        "id": "faca8da4-617c-4bf1-856e-b6ff360a2f9d",
         "start": "2026-12-15T16:10",
         "end": "2026-12-15T16:55",
         "name": "Stick & Ring",
@@ -387,7 +377,7 @@
         "ticket": 5.17
       },
       {
-        "id": "045d7fbc-271e-4a49-b1c5-ec9fbb7c988c",
+        "id": "f0494921-e680-44ae-91da-6a9b29d5a25f",
         "start": "2026-12-16T13:00",
         "end": "2026-12-16T14:30",
         "name": "Stick & Puck (16+)",
@@ -395,7 +385,7 @@
         "ticket": 5.17
       },
       {
-        "id": "46f36337-7885-4820-a7cb-ec5189de8b3a",
+        "id": "5b61e1f8-3848-41cf-bb9a-81a262a2ba45",
         "start": "2026-12-17T12:00",
         "end": "2026-12-17T13:30",
         "name": "Shinny: Adults",
@@ -403,7 +393,7 @@
         "ticket": 5.17
       },
       {
-        "id": "2ba75ae6-4b00-4a48-80bc-302addf4e57a",
+        "id": "7b76ce2d-70f0-44e9-ba38-2d7132aa6c0a",
         "start": "2026-12-18T09:00",
         "end": "2026-12-18T10:30",
         "name": "Stick & Puck (16+)",
@@ -411,7 +401,7 @@
         "ticket": 5.17
       },
       {
-        "id": "5f4e9274-2ff5-483b-962d-a23b0a9f1184",
+        "id": "82374682-630c-4dec-a44d-80567eb96d28",
         "start": "2026-12-18T16:10",
         "end": "2026-12-18T18:00",
         "name": "Recreational Skate",
@@ -419,7 +409,7 @@
         "ticket": 5.17
       },
       {
-        "id": "8c0c19bb-ff36-46e5-a69b-216401ec5e1a",
+        "id": "feb90022-ca4e-4859-b745-5531b85310a6",
         "start": "2026-12-20T12:10",
         "end": "2026-12-20T14:00",
         "name": "Recreational Skate",
@@ -427,9 +417,169 @@
         "ticket": 5.17
       },
       {
-        "id": "0fd6e055-0e63-498e-948f-b1e012d799ee",
+        "id": "b176b0c2-a691-42a8-81f4-981ef523fdbe",
+        "start": "2026-12-21T12:10",
+        "end": "2026-12-21T14:00",
+        "name": "Recreational Skate",
+        "type": "Public Skate",
+        "ticket": 5.17
+      },
+      {
+        "id": "72c11ab3-1363-4561-8efc-f55797539dec",
+        "start": "2026-12-21T14:15",
+        "end": "2026-12-21T15:00",
+        "name": "Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 5.17
+      },
+      {
+        "id": "d8cd18db-0bcf-4735-8de6-c648e508b35a",
+        "start": "2026-12-21T15:15",
+        "end": "2026-12-21T16:00",
+        "name": "Parent & Tot Skate",
+        "type": "Public Skate",
+        "ticket": 5.17
+      },
+      {
+        "id": "3223a671-a229-401c-8d50-9dbffeb8d82f",
+        "start": "2026-12-21T16:10",
+        "end": "2026-12-21T18:00",
+        "name": "Recreational Skate",
+        "type": "Public Skate",
+        "ticket": 5.17
+      },
+      {
+        "id": "a1630369-41d9-4343-b96b-df4c00cff5e5",
+        "start": "2026-12-22T12:10",
+        "end": "2026-12-22T14:00",
+        "name": "Recreational Skate",
+        "type": "Public Skate",
+        "ticket": 5.17
+      },
+      {
+        "id": "78d65346-eb8f-4378-b0d3-8559a630a874",
+        "start": "2026-12-22T14:15",
+        "end": "2026-12-22T15:00",
+        "name": "Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 5.17
+      },
+      {
+        "id": "52497d9b-09ae-468b-871e-ee15f9c8674f",
+        "start": "2026-12-22T15:15",
+        "end": "2026-12-22T16:00",
+        "name": "Parent & Tot Skate",
+        "type": "Public Skate",
+        "ticket": 5.17
+      },
+      {
+        "id": "cb1252a3-66d3-42ce-a392-aefb3d04fd84",
+        "start": "2026-12-23T12:10",
+        "end": "2026-12-23T14:00",
+        "name": "Recreational Skate",
+        "type": "Public Skate",
+        "ticket": 5.17
+      },
+      {
+        "id": "13546a56-8232-43e6-8298-6dd3b950e72b",
+        "start": "2026-12-23T14:15",
+        "end": "2026-12-23T15:00",
+        "name": "Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 5.17
+      },
+      {
+        "id": "da8664bf-78ae-4d31-87bb-252f46bede37",
+        "start": "2026-12-23T15:15",
+        "end": "2026-12-23T16:00",
+        "name": "Parent & Tot Skate",
+        "type": "Public Skate",
+        "ticket": 5.17
+      },
+      {
+        "id": "613a93bd-f440-49f6-8561-1d05d862af41",
+        "start": "2026-12-23T16:10",
+        "end": "2026-12-23T18:00",
+        "name": "Recreational Skate",
+        "type": "Public Skate",
+        "ticket": 5.17
+      },
+      {
+        "id": "1803d3b7-7e23-479d-843c-154634679bb3",
         "start": "2026-12-27T12:10",
         "end": "2026-12-27T14:00",
+        "name": "Recreational Skate",
+        "type": "Public Skate",
+        "ticket": 5.17
+      },
+      {
+        "id": "3c7be2cd-0634-4b0e-bada-68f5891571fb",
+        "start": "2026-12-27T14:15",
+        "end": "2026-12-27T15:00",
+        "name": "Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 5.17
+      },
+      {
+        "id": "a64582f6-5276-4b2f-9420-e04c0240eb1f",
+        "start": "2026-12-27T15:15",
+        "end": "2026-12-27T16:00",
+        "name": "Parent & Tot Skate",
+        "type": "Public Skate",
+        "ticket": 5.17
+      },
+      {
+        "id": "fb0fc53b-437c-44c7-884a-9abe07b8dac5",
+        "start": "2026-12-29T12:10",
+        "end": "2026-12-29T14:00",
+        "name": "Recreational Skate",
+        "type": "Public Skate",
+        "ticket": 5.17
+      },
+      {
+        "id": "7f66e478-eeb5-40d1-a880-9cb2b109bcbc",
+        "start": "2026-12-29T14:15",
+        "end": "2026-12-29T15:00",
+        "name": "Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 5.17
+      },
+      {
+        "id": "392ff0de-3df2-4c96-81cc-91730681c573",
+        "start": "2026-12-29T15:15",
+        "end": "2026-12-29T16:00",
+        "name": "Parent & Tot Skate",
+        "type": "Public Skate",
+        "ticket": 5.17
+      },
+      {
+        "id": "02cc8a75-caa9-4c02-a8b5-e3a81eb6c457",
+        "start": "2026-12-30T12:10",
+        "end": "2026-12-30T14:00",
+        "name": "Recreational Skate",
+        "type": "Public Skate",
+        "ticket": 5.17
+      },
+      {
+        "id": "18e2c99a-9798-4532-894b-47b8e09e239c",
+        "start": "2026-12-30T14:15",
+        "end": "2026-12-30T15:00",
+        "name": "Stick & Puck",
+        "type": "Stick and Puck",
+        "ticket": 5.17
+      },
+      {
+        "id": "caf7711d-5bd8-4408-947c-4c39f683d730",
+        "start": "2026-12-30T15:15",
+        "end": "2026-12-30T16:00",
+        "name": "Parent & Tot Skate",
+        "type": "Public Skate",
+        "ticket": 5.17
+      },
+      {
+        "id": "b2b4d6f0-57a2-4417-aa15-507a3c271e0b",
+        "start": "2026-12-30T16:10",
+        "end": "2026-12-30T18:00",
         "name": "Recreational Skate",
         "type": "Public Skate",
         "ticket": 5.17

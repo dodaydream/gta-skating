@@ -4,5 +4,18 @@
   "type": "Indoor",
   "url": "https://leasidegardens.com/arenas/public-skate-times/",
   "address": "1073 Millwood Rd, Toronto, ON",
-  "coordinates": { "lat": 43.701874, "lon": -79.360766 }
+  "coordinates": {
+    "lat": 43.701874,
+    "lon": -79.360766
+  },
+  "rinks": [
+    {
+      "name": "Dr. Tom Pashby Play Safely Rink (Rink A)",
+      "type": "North American / NHL"
+    },
+    {
+      "name": "Bert F. Grant Rink (Rink B)",
+      "type": "North American / NHL"
+    }
+  ]
 }

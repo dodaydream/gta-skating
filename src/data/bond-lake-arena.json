@@ -7,11 +7,17 @@
     "lat": 43.940667,
     "lon": -79.450453
   },
+  "rinks": [
+    {
+      "name": "Rink 1",
+      "type": "North American / NHL"
+    }
+  ],
   "schedule": {
-    "updatedAt": "2026-11-05T02:39:26.322Z",
+    "updatedAt": "2026-11-05T02:58:59.481Z",
     "programs": [
       {
-        "id": "7556c9c8-47fa-41c9-be0b-7cdb4b08b8c7",
+        "id": "9eb7a8cb-2cab-4690-a8c0-97913db70057",
         "start": "2026-11-07T18:30",
         "end": "2026-11-07T20:00",
         "name": "Public Skate",
@@ -19,7 +25,7 @@
         "ticket": 5.9
       },
       {
-        "id": "10060ffb-98e2-4572-9a09-6a0c63198644",
+        "id": "60bacc87-198c-4033-8e4a-ae35fb0fa650",
         "start": "2026-11-07T20:00",
         "end": "2026-11-07T21:30",
         "name": "Shinny",
@@ -27,7 +33,7 @@
         "ticket": 8.7
       },
       {
-        "id": "ad66d840-4d14-4381-a94b-8d9e28bed213",
+        "id": "fbcdc607-af9d-4b12-88e7-c8491f2e0c10",
         "start": "2026-11-08T14:30",
         "end": "2026-11-08T16:00",
         "name": "Public Skate",
@@ -35,7 +41,7 @@
         "ticket": 5.9
       },
       {
-        "id": "bcb7827b-66cf-42f0-b64e-feba8294ddc9",
+        "id": "f089a9e7-607b-4aa2-b7f9-b38ab6e2b12f",
         "start": "2026-11-14T18:30",
         "end": "2026-11-14T20:00",
         "name": "Public Skate",
@@ -43,7 +49,7 @@
         "ticket": 5.9
       },
       {
-        "id": "01f89899-e25d-4dc5-9755-5dfd11f58463",
+        "id": "d763b6a9-a8d9-4270-90cd-ecc9a2c630bd",
         "start": "2026-11-14T20:00",
         "end": "2026-11-14T21:30",
         "name": "Shinny",
@@ -51,7 +57,7 @@
         "ticket": 8.7
       },
       {
-        "id": "932ea42b-397f-4179-8225-a3f14dd3a9c5",
+        "id": "44d31fe5-b591-4e7d-942a-3f2a98bef873",
         "start": "2026-11-15T14:30",
         "end": "2026-11-15T16:00",
         "name": "Public Skate",
@@ -59,7 +65,7 @@
         "ticket": 5.9
       },
       {
-        "id": "a02f94d5-9169-4e5a-9b15-6367bd7a6ad6",
+        "id": "e8ff0438-8593-443a-9edf-cc6f152f1bf1",
         "start": "2026-11-21T18:30",
         "end": "2026-11-21T20:00",
         "name": "Public Skate",
@@ -67,7 +73,7 @@
         "ticket": 5.9
       },
       {
-        "id": "e14633a4-977b-4575-93e7-50bc99b26429",
+        "id": "481bcf8a-1a4d-4337-a708-75680fcfdbb8",
         "start": "2026-11-21T20:00",
         "end": "2026-11-21T21:30",
         "name": "Shinny",
@@ -75,7 +81,7 @@
         "ticket": 8.7
       },
       {
-        "id": "6d7a6821-1780-4013-a4fb-c3dccfe700cc",
+        "id": "c9368682-eee8-4e42-b34c-2c269acd6df9",
         "start": "2026-11-22T14:30",
         "end": "2026-11-22T16:00",
         "name": "Public Skate",
@@ -83,7 +89,7 @@
         "ticket": 5.9
       },
       {
-        "id": "8904a5f8-e8da-49e9-afbc-da8146ac2bf5",
+        "id": "ea44f84f-67a3-4f75-950e-b5d97a029190",
         "start": "2026-11-28T18:30",
         "end": "2026-11-28T20:00",
         "name": "Public Skate",
@@ -91,7 +97,7 @@
         "ticket": 5.9
       },
       {
-        "id": "8d9adc76-99cc-4c78-97f3-c82b78027d00",
+        "id": "a1fed746-f232-4b4b-9828-40bb18c0e132",
         "start": "2026-11-28T20:00",
         "end": "2026-11-28T21:30",
         "name": "Shinny",
@@ -99,7 +105,7 @@
         "ticket": 8.7
       },
       {
-        "id": "5c632f13-d175-45a1-894d-d65eaae9d9ea",
+        "id": "45b3a438-eac5-4dcd-a161-525b64cbc850",
         "start": "2026-11-29T14:30",
         "end": "2026-11-29T16:00",
         "name": "Public Skate",
@@ -107,7 +113,7 @@
         "ticket": 5.9
       },
       {
-        "id": "9012717b-b33b-485a-8d0f-f1a8e308b8a1",
+        "id": "96fe2887-4867-4bd5-8488-446cbf90fd8d",
         "start": "2026-12-05T18:30",
         "end": "2026-12-05T20:00",
         "name": "Public Skate",
@@ -115,7 +121,7 @@
         "ticket": 5.9
       },
       {
-        "id": "447556dc-663b-4802-b0eb-f48b73c73b57",
+        "id": "d00d9422-f4d3-492c-a8f6-4169f8561fb2",
         "start": "2026-12-05T20:00",
         "end": "2026-12-05T21:30",
         "name": "Shinny",

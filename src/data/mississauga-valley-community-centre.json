@@ -7,59 +7,17 @@
     "lat": 43.596844,
     "lon": -79.623704
   },
+  "rinks": [
+    {
+      "name": "Mississauga Valley Arena",
+      "type": "Recreational (180' x 80')"
+    }
+  ],
   "schedule": {
-    "updatedAt": "2026-11-03T00:11:47.502Z",
+    "updatedAt": "2026-11-05T02:58:24.645Z",
     "programs": [
       {
-        "id": "1c78db4d-a0ef-486a-88b7-35003130a467",
-        "start": "2026-11-02T15:30",
-        "end": "2026-11-02T16:20",
-        "name": "Hockey Stick & Puck With Adult (9-13 yrs)",
-        "type": "Stick and Puck",
-        "ticket": 3.98
-      },
-      {
-        "id": "f4b36b37-02bf-43bc-8dc4-ce8177cb0275",
-        "start": "2026-11-02T16:30",
-        "end": "2026-11-02T17:20",
-        "name": "Youth Hockey Shinny (13-17 yrs)",
-        "type": "Pickup Hockey",
-        "ticket": 0
-      },
-      {
-        "id": "06e1d128-1a3c-42c6-8faa-70c4c8b4b397",
-        "start": "2026-11-03T09:30",
-        "end": "2026-11-03T11:00",
-        "name": "Fun Skate",
-        "type": "Public Skate",
-        "ticket": 4.61
-      },
-      {
-        "id": "d284258d-b248-4ce8-af2c-05a3d42afdec",
-        "start": "2026-11-03T11:30",
-        "end": "2026-11-03T13:00",
-        "name": "Hockey Shinny (18+)",
-        "type": "Pickup Hockey",
-        "ticket": 6.96
-      },
-      {
-        "id": "d9809ae9-2c98-4a10-863d-919fb68e92ab",
-        "start": "2026-11-03T15:30",
-        "end": "2026-11-03T16:45",
-        "name": "Youth Sauga At Play Skate (10 - 17 yrs)",
-        "type": "Public Skate",
-        "ticket": 0
-      },
-      {
-        "id": "caa46ddd-a04c-47c3-950c-c27caddfc4cd",
-        "start": "2026-11-03T17:00",
-        "end": "2026-11-03T17:50",
-        "name": "Hockey Stick & Puck (18+)",
-        "type": "Stick and Puck",
-        "ticket": 3.98
-      },
-      {
-        "id": "78636dfa-36ee-44da-9f94-3765e6643ec2",
+        "id": "134b736a-ef8d-48ab-807b-a7c825fcef18",
         "start": "2026-11-04T09:30",
         "end": "2026-11-04T11:00",
         "name": "Adult & Older Adult Skate",
@@ -67,7 +25,7 @@
         "ticket": 4.61
       },
       {
-        "id": "3031ca65-b5d1-431c-991a-a1a2f2bb6714",
+        "id": "fc87a1ac-b55d-4450-9c56-c157a06d2fcb",
         "start": "2026-11-04T16:00",
         "end": "2026-11-04T16:50",
         "name": "Hockey Stick & Puck with Adult (3-8 yrs)",
@@ -75,7 +33,7 @@
         "ticket": 3.98
       },
       {
-        "id": "bac774f5-3a84-4adc-a326-a463387e850d",
+        "id": "ed4ed406-fcbb-40f2-8659-5b8509df7c17",
         "start": "2026-11-04T17:00",
         "end": "2026-11-04T17:50",
         "name": "Hockey Stick & Puck With Adult (9-13 yrs)",
@@ -83,7 +41,7 @@
         "ticket": 3.98
       },
       {
-        "id": "af64f5ef-3a13-4e8d-8cb4-0b7b0de671e2",
+        "id": "fd8bb8c4-7b4f-4aea-af33-085216af7c6e",
         "start": "2026-11-05T09:30",
         "end": "2026-11-05T11:00",
         "name": "Hockey Shinny (18+)",
@@ -91,7 +49,7 @@
         "ticket": 6.96
       },
       {
-        "id": "2f18615a-6984-426e-b8ae-e7ad0d95d618",
+        "id": "d473b43a-a24e-427d-a408-3b505db0db1b",
         "start": "2026-11-05T13:00",
         "end": "2026-11-05T14:30",
         "name": "Adult & Older Adult Skate",
@@ -99,7 +57,7 @@
         "ticket": 4.61
       },
       {
-        "id": "eb9e46a6-a463-4664-a1ff-e279814fae54",
+        "id": "31b8019f-5929-4753-a003-304599f572f4",
         "start": "2026-11-05T17:00",
         "end": "2026-11-05T18:30",
         "name": "Fun Skate",
@@ -107,7 +65,7 @@
         "ticket": 4.61
       },
       {
-        "id": "b78d6416-03ef-4599-897e-5f0eba34680e",
+        "id": "afb7c8c2-e044-43fa-a38d-2c5ad5457c22",
         "start": "2026-11-06T09:30",
         "end": "2026-11-06T11:00",
         "name": "Adult & Older Adult Skate",
@@ -115,7 +73,7 @@
         "ticket": 4.61
       },
       {
-        "id": "7e1c7fbe-6917-4c07-9548-f3e7e866514d",
+        "id": "9e427f62-eb9a-406b-b762-e3f4998bffca",
         "start": "2026-11-06T15:30",
         "end": "2026-11-06T16:45",
         "name": "Youth Sauga At Play Skate (10 - 17 yrs)",
@@ -123,7 +81,7 @@
         "ticket": 0
       },
       {
-        "id": "87e6759f-fda9-45af-b8d7-ee4a8f5376be",
+        "id": "67a6aa9d-5619-4003-8311-7ab572575671",
         "start": "2026-11-07T19:00",
         "end": "2026-11-07T20:30",
         "name": "Fun Skate",
@@ -131,7 +89,7 @@
         "ticket": 4.61
       },
       {
-        "id": "8476d862-5c9c-47cc-9660-03a6af82493b",
+        "id": "4a13ad52-671e-4d84-a39b-431f1bfde205",
         "start": "2026-11-08T13:30",
         "end": "2026-11-08T15:00",
         "name": "Fun Skate",
@@ -139,7 +97,7 @@
         "ticket": 4.61
       },
       {
-        "id": "9e38a8ce-54cb-4970-9c56-2558bd9353c3",
+        "id": "718f345a-2181-4151-8d16-3cf935bbbe37",
         "start": "2026-11-09T15:30",
         "end": "2026-11-09T16:20",
         "name": "Hockey Stick & Puck With Adult (9-13 yrs)",
@@ -147,7 +105,7 @@
         "ticket": 3.98
       },
       {
-        "id": "133bc1c3-6c26-4a5a-b530-f454bd6258e1",
+        "id": "d28b58af-a782-424e-a007-7d837d090e8e",
         "start": "2026-11-09T16:30",
         "end": "2026-11-09T17:20",
         "name": "Youth Hockey Shinny (13-17 yrs)",
@@ -155,7 +113,7 @@
         "ticket": 0
       },
       {
-        "id": "d346f31d-b0ef-4023-811e-3666a7f051cf",
+        "id": "34e4d5c4-b78d-4823-b4d7-2781148d499a",
         "start": "2026-11-10T09:30",
         "end": "2026-11-10T11:00",
         "name": "Fun Skate",
@@ -163,7 +121,7 @@
         "ticket": 4.61
       },
       {
-        "id": "9e4c3c17-8c98-4de2-abb5-a1749a5a1f96",
+        "id": "caecf6ca-f8e3-44ac-94b2-c6fb09be9678",
         "start": "2026-11-10T11:30",
         "end": "2026-11-10T13:00",
         "name": "Hockey Shinny (18+)",
@@ -171,7 +129,7 @@
         "ticket": 6.96
       },
       {
-        "id": "adbda848-849f-4f15-8467-570bf59905d6",
+        "id": "c6a5651e-f1d5-4cff-bba1-b1d77122ba3e",
         "start": "2026-11-10T15:30",
         "end": "2026-11-10T16:45",
         "name": "Youth Sauga At Play Skate (10 - 17 yrs)",
@@ -179,7 +137,7 @@
         "ticket": 0
       },
       {
-        "id": "1c64d507-34d1-4236-8ddd-d67056c4de95",
+        "id": "a1e45fdd-0b5f-4ba8-9dd2-56e227800486",
         "start": "2026-11-10T17:00",
         "end": "2026-11-10T17:50",
         "name": "Hockey Stick & Puck (18+)",
@@ -187,7 +145,7 @@
         "ticket": 3.98
       },
       {
-        "id": "d7863fec-a8ec-409b-8b5e-a677ee0aa3e3",
+        "id": "13d12b67-ba72-43b8-9412-3e24c98b2dea",
         "start": "2026-11-11T09:30",
         "end": "2026-11-11T11:00",
         "name": "Adult & Older Adult Skate",
@@ -195,7 +153,7 @@
         "ticket": 4.61
       },
       {
-        "id": "c5a5a790-0d12-4ec0-86fd-9d1473f39e32",
+        "id": "46b13bdb-6b41-4163-aab0-31379fa759c5",
         "start": "2026-11-11T16:00",
         "end": "2026-11-11T16:50",
         "name": "Hockey Stick & Puck with Adult (3-8 yrs)",
@@ -203,7 +161,7 @@
         "ticket": 3.98
       },
       {
-        "id": "59be08cc-69fc-4099-b304-772863a49416",
+        "id": "1a04d960-6698-42ff-b208-682faf7b8513",
         "start": "2026-11-11T17:00",
         "end": "2026-11-11T17:50",
         "name": "Hockey Stick & Puck With Adult (9-13 yrs)",
@@ -211,7 +169,7 @@
         "ticket": 3.98
       },
       {
-        "id": "f096b45b-9228-4efc-bb80-6c24326a9a98",
+        "id": "f5ac9d3e-5790-422b-bfe7-63f20d703065",
         "start": "2026-11-12T09:30",
         "end": "2026-11-12T11:00",
         "name": "Hockey Shinny (18+)",
@@ -219,7 +177,7 @@
         "ticket": 6.96
       },
       {
-        "id": "6fca6e97-4fdb-4adf-a469-4eb03cd34fe9",
+        "id": "01643518-793e-4da9-b678-3190bc61dc50",
         "start": "2026-11-12T13:00",
         "end": "2026-11-12T14:30",
         "name": "Adult & Older Adult Skate",
@@ -227,7 +185,7 @@
         "ticket": 4.61
       },
       {
-        "id": "5b6d73c8-8671-40bd-a473-ff5bc08c822d",
+        "id": "c7a40bf9-963a-46ec-9d72-969fd5660538",
         "start": "2026-11-12T17:00",
         "end": "2026-11-12T18:30",
         "name": "Fun Skate",
@@ -235,7 +193,7 @@
         "ticket": 4.61
       },
       {
-        "id": "92503624-3eea-434a-9e11-1cf12821a509",
+        "id": "0e8af178-302d-4b3c-aa88-992b2f4456d9",
         "start": "2026-11-13T09:30",
         "end": "2026-11-13T11:00",
         "name": "Adult & Older Adult Skate",
@@ -243,7 +201,7 @@
         "ticket": 4.61
       },
       {
-        "id": "4368ee88-c09d-4dfa-8955-67de37aaac67",
+        "id": "4a546bbe-b7ea-4383-8f84-ee75d7042d32",
         "start": "2026-11-13T15:30",
         "end": "2026-11-13T16:45",
         "name": "Youth Sauga At Play Skate (10 - 17 yrs)",
@@ -251,7 +209,7 @@
         "ticket": 0
       },
       {
-        "id": "7aa95596-42d8-4ffc-9413-a24a5e9795d7",
+        "id": "d7bcc6f4-893f-43b1-a9da-3d0e87b680d7",
         "start": "2026-11-14T19:00",
         "end": "2026-11-14T20:30",
         "name": "Fun Skate",
@@ -259,7 +217,7 @@
         "ticket": 4.61
       },
       {
-        "id": "03af0b3a-1676-4353-80c3-7c3bad76c9f8",
+        "id": "0f7a7e64-c61f-4901-bc26-8117abc4881c",
         "start": "2026-11-15T13:30",
         "end": "2026-11-15T15:00",
         "name": "Fun Skate",
@@ -267,7 +225,7 @@
         "ticket": 4.61
       },
       {
-        "id": "2b0fc5a6-f4b8-4fb0-83ce-619722de1174",
+        "id": "58b97359-7f92-4064-bb77-6069406acd80",
         "start": "2026-11-16T15:30",
         "end": "2026-11-16T16:20",
         "name": "Hockey Stick & Puck With Adult (9-13 yrs)",
@@ -275,7 +233,7 @@
         "ticket": 3.98
       },
       {
-        "id": "9df6b778-7a69-4041-93a3-d200245c2464",
+        "id": "1a4e65a1-04a3-4656-aa13-13423a17b5ca",
         "start": "2026-11-16T16:30",
         "end": "2026-11-16T17:20",
         "name": "Youth Hockey Shinny (13-17 yrs)",
@@ -283,7 +241,7 @@
         "ticket": 0
       },
       {
-        "id": "4cafa9f6-5578-4fab-91a8-c86232465823",
+        "id": "c308c821-17ab-4401-9936-e239e972a91e",
         "start": "2026-11-17T09:30",
         "end": "2026-11-17T11:00",
         "name": "Fun Skate",
@@ -291,7 +249,7 @@
         "ticket": 4.61
       },
       {
-        "id": "a0c333e5-8f1f-4bc5-8f8f-75530ce8cf42",
+        "id": "c019f834-0e09-4dd9-bdf9-0b04fb84479b",
         "start": "2026-11-17T11:30",
         "end": "2026-11-17T13:00",
         "name": "Hockey Shinny (18+)",
@@ -299,7 +257,7 @@
         "ticket": 6.96
       },
       {
-        "id": "c37250b9-1da6-4d14-a81b-856ca92f3f47",
+        "id": "227e1ea9-784a-4b27-a8d8-29a82115f3ba",
         "start": "2026-11-17T15:30",
         "end": "2026-11-17T16:45",
         "name": "Youth Sauga At Play Skate (10 - 17 yrs)",
@@ -307,7 +265,7 @@
         "ticket": 0
       },
       {
-        "id": "1d52d266-f032-4413-aebd-66fc3561e4bd",
+        "id": "96bb6a24-d910-42b6-9794-ff819630e025",
         "start": "2026-11-17T17:00",
         "end": "2026-11-17T17:50",
         "name": "Hockey Stick & Puck (18+)",
@@ -315,7 +273,7 @@
         "ticket": 3.98
       },
       {
-        "id": "f3502763-35fd-40ec-bd5a-bcf07491d15b",
+        "id": "f675bd99-2b82-40b5-956c-e31f682231c6",
         "start": "2026-11-18T09:30",
         "end": "2026-11-18T11:00",
         "name": "Adult & Older Adult Skate",
@@ -323,7 +281,7 @@
         "ticket": 4.61
       },
       {
-        "id": "73075b1b-d6da-44ff-bc87-6816c6a03a28",
+        "id": "ab424046-5576-4b1d-84cc-20340c7d02f3",
         "start": "2026-11-18T16:00",
         "end": "2026-11-18T16:50",
         "name": "Hockey Stick & Puck with Adult (3-8 yrs)",
@@ -331,7 +289,7 @@
         "ticket": 3.98
       },
       {
-        "id": "88228788-37d1-4a5b-9760-ff5a0d9c053e",
+        "id": "5842e57a-a824-4bcf-8e16-06183c39bf23",
         "start": "2026-11-18T17:00",
         "end": "2026-11-18T17:50",
         "name": "Hockey Stick & Puck With Adult (9-13 yrs)",
@@ -339,7 +297,7 @@
         "ticket": 3.98
       },
       {
-        "id": "1e19570f-8a09-4ea4-bd09-95943b177545",
+        "id": "8fcb3a96-3cf1-4da0-b5f6-b7adb3167bed",
         "start": "2026-11-19T09:30",
         "end": "2026-11-19T11:00",
         "name": "Hockey Shinny (18+)",
@@ -347,7 +305,7 @@
         "ticket": 6.96
       },
       {
-        "id": "5148378f-73f0-41dd-b439-d59aefc1ede4",
+        "id": "b9e1abb4-b9d3-4bf0-aa10-48b70683bb10",
         "start": "2026-11-19T13:00",
         "end": "2026-11-19T14:30",
         "name": "Adult & Older Adult Skate",
@@ -355,7 +313,7 @@
         "ticket": 4.61
       },
       {
-        "id": "0d8bdfae-cba3-4359-ba63-a1cfd5ad2937",
+        "id": "4ffae905-ae84-4cac-b507-c1a0a0a00255",
         "start": "2026-11-19T17:00",
         "end": "2026-11-19T18:30",
         "name": "Fun Skate",
@@ -363,7 +321,7 @@
         "ticket": 4.61
       },
       {
-        "id": "552f10e5-2ab8-4e08-8e28-8c94a37490bf",
+        "id": "50cc422b-29c8-48ad-a3d9-810256694591",
         "start": "2026-11-20T09:30",
         "end": "2026-11-20T11:00",
         "name": "Adult & Older Adult Skate",
@@ -371,7 +329,7 @@
         "ticket": 4.61
       },
       {
-        "id": "cf60a9af-f6c0-4f09-bde5-407c9dff7d73",
+        "id": "a639dac2-74f2-4b67-bf45-296929f1f27a",
         "start": "2026-11-20T15:30",
         "end": "2026-11-20T16:45",
         "name": "Youth Sauga At Play Skate (10 - 17 yrs)",
@@ -379,7 +337,7 @@
         "ticket": 0
       },
       {
-        "id": "34b8bf14-49eb-46db-8f79-363915e4d279",
+        "id": "67d4b38f-70b7-4457-9cf6-97f7df15e4a2",
         "start": "2026-11-21T19:00",
         "end": "2026-11-21T20:30",
         "name": "Fun Skate",
@@ -387,7 +345,7 @@
         "ticket": 4.61
       },
       {
-        "id": "68143e42-9980-43f4-8f4e-ac50b7c61b9a",
+        "id": "6f42275b-5f5b-46f1-b55c-4d252b747ec1",
         "start": "2026-11-22T13:30",
         "end": "2026-11-22T15:00",
         "name": "Fun Skate",
@@ -395,7 +353,7 @@
         "ticket": 4.61
       },
       {
-        "id": "f3ebc9c4-8504-4349-8c27-6d829a58021b",
+        "id": "f1eb9f2a-6fdf-4f26-ae20-00d7dda3fa3a",
         "start": "2026-11-23T15:30",
         "end": "2026-11-23T16:20",
         "name": "Hockey Stick & Puck With Adult (9-13 yrs)",
@@ -403,7 +361,7 @@
         "ticket": 3.98
       },
       {
-        "id": "3e5fff37-d237-40e6-a27b-ef48141f941a",
+        "id": "b443b0b0-6a04-4fd5-9983-821f958b02f5",
         "start": "2026-11-23T16:30",
         "end": "2026-11-23T17:20",
         "name": "Youth Hockey Shinny (13-17 yrs)",
@@ -411,7 +369,7 @@
         "ticket": 0
       },
       {
-        "id": "81d62c56-e149-42fd-b6c6-fc475a022908",
+        "id": "069e8eb6-48aa-4fa0-be74-d67f0fe2843f",
         "start": "2026-11-24T09:30",
         "end": "2026-11-24T11:00",
         "name": "Fun Skate",
@@ -419,7 +377,7 @@
         "ticket": 4.61
       },
       {
-        "id": "c339d2ba-159d-415e-94e2-98b88d4a7b17",
+        "id": "af59087d-b130-4b6c-9b68-d0a998036997",
         "start": "2026-11-24T11:30",
         "end": "2026-11-24T13:00",
         "name": "Hockey Shinny (18+)",
@@ -427,7 +385,7 @@
         "ticket": 6.96
       },
       {
-        "id": "3bc432fc-8335-4448-bfc1-0ca56e6a9cf2",
+        "id": "f35944ed-1f1e-408d-b2de-54fad3e3ef3e",
         "start": "2026-11-24T15:30",
         "end": "2026-11-24T16:45",
         "name": "Youth Sauga At Play Skate (10 - 17 yrs)",
@@ -435,7 +393,7 @@
         "ticket": 0
       },
       {
-        "id": "3743f653-51ab-4c1a-9dcd-1fc12810eae5",
+        "id": "9925a9f2-657c-4ec4-9918-fbb6c89cf854",
         "start": "2026-11-24T17:00",
         "end": "2026-11-24T17:50",
         "name": "Hockey Stick & Puck (18+)",
@@ -443,7 +401,7 @@
         "ticket": 3.98
       },
       {
-        "id": "1e2a0f4a-e6d9-4c52-9d5f-814383d5ef25",
+        "id": "c443c943-bb18-4c70-b48b-e0d764b82536",
         "start": "2026-11-25T09:30",
         "end": "2026-11-25T11:00",
         "name": "Adult & Older Adult Skate",
@@ -451,7 +409,7 @@
         "ticket": 4.61
       },
       {
-        "id": "5a679979-c6ef-473d-a0c1-37c3ab463cb8",
+        "id": "ed3fcdf0-222a-4e0b-b317-69b82221ac5f",
         "start": "2026-11-25T16:00",
         "end": "2026-11-25T16:50",
         "name": "Hockey Stick & Puck with Adult (3-8 yrs)",
@@ -459,7 +417,7 @@
         "ticket": 3.98
       },
       {
-        "id": "5502174c-79df-4fa1-b91d-94a84834648c",
+        "id": "781ca474-525a-4d85-87ba-c223e20f08be",
         "start": "2026-11-25T17:00",
         "end": "2026-11-25T17:50",
         "name": "Hockey Stick & Puck With Adult (9-13 yrs)",
@@ -467,7 +425,7 @@
         "ticket": 3.98
       },
       {
-        "id": "9de1beee-0476-4db6-a3bb-131c9d91fe4e",
+        "id": "699bd744-b2a9-4223-a784-3d3512bade19",
         "start": "2026-11-26T09:30",
         "end": "2026-11-26T11:00",
         "name": "Hockey Shinny (18+)",
@@ -475,7 +433,7 @@
         "ticket": 6.96
       },
       {
-        "id": "e87b8175-2983-4ba3-a956-cb2c07cebbde",
+        "id": "3fddad3b-df0d-4fd0-b54a-21d1df370b8c",
         "start": "2026-11-26T13:00",
         "end": "2026-11-26T14:30",
         "name": "Adult & Older Adult Skate",
@@ -483,7 +441,7 @@
         "ticket": 4.61
       },
       {
-        "id": "14f289b7-85c7-481c-9db0-d3248f873c48",
+        "id": "a12da1fc-9c0b-404f-9843-2d5bc2b769bf",
         "start": "2026-11-26T17:00",
         "end": "2026-11-26T18:30",
         "name": "Fun Skate",
@@ -491,7 +449,7 @@
         "ticket": 4.61
       },
       {
-        "id": "467b9e1e-66f4-4bca-88eb-d57a44f84c81",
+        "id": "8a389c57-d5b0-4362-ba54-7cd24f26f5e3",
         "start": "2026-11-27T09:30",
         "end": "2026-11-27T11:00",
         "name": "Adult & Older Adult Skate",
@@ -499,7 +457,7 @@
         "ticket": 4.61
       },
       {
-        "id": "8a7676ea-1ed4-43a0-a61e-272c3e217919",
+        "id": "7d6ecdcc-150f-434b-8a9c-611a5cc3fe3a",
         "start": "2026-11-27T15:30",
         "end": "2026-11-27T16:45",
         "name": "Youth Sauga At Play Skate (10 - 17 yrs)",
@@ -507,7 +465,7 @@
         "ticket": 0
       },
       {
-        "id": "88626d0c-7247-44cd-87b7-765e4df3f495",
+        "id": "2fc47493-b1e5-464e-9998-df0001e2e76d",
         "start": "2026-11-28T19:00",
         "end": "2026-11-28T20:30",
         "name": "Fun Skate",
@@ -515,7 +473,7 @@
         "ticket": 4.61
       },
       {
-        "id": "5ea0a130-365d-4b75-a35b-0232e227175a",
+        "id": "5f44e6df-0829-4bef-900d-447c36beb2ae",
         "start": "2026-11-29T13:30",
         "end": "2026-11-29T15:00",
         "name": "Fun Skate",
@@ -523,7 +481,7 @@
         "ticket": 4.61
       },
       {
-        "id": "c4ca8b31-dce4-4bb9-9283-3778600bad0a",
+        "id": "41daee7b-528d-4849-b203-77d9abcbb90a",
         "start": "2026-11-30T15:30",
         "end": "2026-11-30T16:20",
         "name": "Hockey Stick & Puck With Adult (9-13 yrs)",
@@ -531,7 +489,7 @@
         "ticket": 3.98
       },
       {
-        "id": "2595bf7e-e1e3-4f0b-ad85-7bbaf92feae6",
+        "id": "c8f4a7ba-d777-4e86-ae7b-66dcc5c85606",
         "start": "2026-11-30T16:30",
         "end": "2026-11-30T17:20",
         "name": "Youth Hockey Shinny (13-17 yrs)",
@@ -539,7 +497,7 @@
         "ticket": 0
       },
       {
-        "id": "61653e12-080c-46f6-990b-695398b5f39d",
+        "id": "742aaa56-dc70-4afc-a542-e3a1e0aaa02e",
         "start": "2026-12-01T09:30",
         "end": "2026-12-01T11:00",
         "name": "Fun Skate",
@@ -547,7 +505,7 @@
         "ticket": 4.61
       },
       {
-        "id": "6cc44ebe-f84c-437c-a462-15f2889fd320",
+        "id": "6468cdf6-55e7-4822-9620-71248e7becb4",
         "start": "2026-12-01T11:30",
         "end": "2026-12-01T13:00",
         "name": "Hockey Shinny (18+)",
@@ -555,7 +513,7 @@
         "ticket": 6.96
       },
       {
-        "id": "583b1418-0dd5-4d33-972e-b50567943582",
+        "id": "82152db5-776f-42e4-a1da-192e6b6fc97a",
         "start": "2026-12-01T15:30",
         "end": "2026-12-01T16:45",
         "name": "Youth Sauga At Play Skate (10 - 17 yrs)",
@@ -563,7 +521,7 @@
         "ticket": 0
       },
       {
-        "id": "0a496219-d209-4f74-9fa6-f7bf7ec4e288",
+        "id": "70237cb0-40ee-4961-a04c-49662fe9dddc",
         "start": "2026-12-01T17:00",
         "end": "2026-12-01T17:50",
         "name": "Hockey Stick & Puck (18+)",
@@ -571,7 +529,7 @@
         "ticket": 3.98
       },
       {
-        "id": "9bba62e9-c831-49ff-8323-2b8f6a535de9",
+        "id": "403e6f7b-1261-4525-9b75-dac38deb88b3",
         "start": "2026-12-02T09:30",
         "end": "2026-12-02T11:00",
         "name": "Adult & Older Adult Skate",
@@ -579,7 +537,7 @@
         "ticket": 4.61
       },
       {
-        "id": "8ccd68f9-3aef-4d0b-b67c-2f343e775cd1",
+        "id": "7b444bf8-5b28-4289-bb91-89f952c500e9",
         "start": "2026-12-02T16:00",
         "end": "2026-12-02T16:50",
         "name": "Hockey Stick & Puck with Adult (3-8 yrs)",
@@ -587,7 +545,7 @@
         "ticket": 3.98
       },
       {
-        "id": "68a82a14-3d45-4b16-ba2d-df0a40807403",
+        "id": "864e2307-7423-43e4-a2fa-74aa346aaa6d",
         "start": "2026-12-02T17:00",
         "end": "2026-12-02T17:50",
         "name": "Hockey Stick & Puck With Adult (9-13 yrs)",
@@ -595,7 +553,7 @@
         "ticket": 3.98
       },
       {
-        "id": "a7bd5a3d-d871-4b55-a3d6-a910c1f7b338",
+        "id": "c9ad914b-9b7f-48ae-9d2e-b6d317043b29",
         "start": "2026-12-03T09:30",
         "end": "2026-12-03T11:00",
         "name": "Hockey Shinny (18+)",
@@ -603,7 +561,7 @@
         "ticket": 6.96
       },
       {
-        "id": "109a5d96-0c2a-47cf-90e7-4cf55b803351",
+        "id": "cd08748e-5efa-4c32-9aab-f6f4f0640c6e",
         "start": "2026-12-03T13:00",
         "end": "2026-12-03T14:30",
         "name": "Adult & Older Adult Skate",
@@ -611,7 +569,7 @@
         "ticket": 4.61
       },
       {
-        "id": "565be3f5-ee09-417d-8375-3409751c3498",
+        "id": "baf3f3ae-ad5c-42ee-bc34-1ae90e38575c",
         "start": "2026-12-03T17:00",
         "end": "2026-12-03T18:30",
         "name": "Fun Skate",
@@ -619,7 +577,7 @@
         "ticket": 4.61
       },
       {
-        "id": "98a5a013-aab5-46e7-9712-42d0e285eafa",
+        "id": "3aabedab-3bfd-4224-ab59-b8b952a22660",
         "start": "2026-12-04T09:30",
         "end": "2026-12-04T11:00",
         "name": "Adult & Older Adult Skate",
@@ -627,7 +585,7 @@
         "ticket": 4.61
       },
       {
-        "id": "b664f6c1-09b7-4058-80ff-8c69b4b9b939",
+        "id": "4079adc4-112e-48a8-82b3-ea996512a40b",
         "start": "2026-12-04T15:30",
         "end": "2026-12-04T16:45",
         "name": "Youth Sauga At Play Skate (10 - 17 yrs)",
@@ -635,7 +593,7 @@
         "ticket": 0
       },
       {
-        "id": "757c0799-24b2-4de8-96c7-aef06580629a",
+        "id": "14610242-b105-47e4-9c9d-6a4b634e437c",
         "start": "2026-12-05T19:00",
         "end": "2026-12-05T20:30",
         "name": "Fun Skate",
@@ -643,7 +601,7 @@
         "ticket": 4.61
       },
       {
-        "id": "63133273-8c95-45e2-a894-3cdc02585bb3",
+        "id": "8faba32a-ce99-4033-9c07-b375b0d031f8",
         "start": "2026-12-06T13:30",
         "end": "2026-12-06T15:00",
         "name": "Fun Skate",
@@ -651,7 +609,7 @@
         "ticket": 4.61
       },
       {
-        "id": "c659d805-d97a-4c89-aca9-f0f62b86dfda",
+        "id": "886580e7-3aff-4c3c-b142-bed7016e0065",
         "start": "2026-12-07T15:30",
         "end": "2026-12-07T16:20",
         "name": "Hockey Stick & Puck With Adult (9-13 yrs)",
@@ -659,7 +617,7 @@
         "ticket": 3.98
       },
       {
-        "id": "d4bd7ebd-6dc7-4f46-9fbd-74d7aeead52a",
+        "id": "8e735a6d-8f62-4688-b590-cd778a727b65",
         "start": "2026-12-07T16:30",
         "end": "2026-12-07T17:20",
         "name": "Youth Hockey Shinny (13-17 yrs)",
@@ -667,7 +625,7 @@
         "ticket": 0
       },
       {
-        "id": "6b0819b7-a49d-4384-a713-c564100c2c0a",
+        "id": "25e4ffe5-aa09-44b8-b5c6-a9611a268bd5",
         "start": "2026-12-08T09:30",
         "end": "2026-12-08T11:00",
         "name": "Fun Skate",
@@ -675,7 +633,7 @@
         "ticket": 4.61
       },
       {
-        "id": "13755e38-4264-4ae4-81f8-b5df0fb2a301",
+        "id": "d65e4802-c3ca-4ef7-94c2-f3f37c3c5354",
         "start": "2026-12-08T11:30",
         "end": "2026-12-08T13:00",
         "name": "Hockey Shinny (18+)",
@@ -683,7 +641,7 @@
         "ticket": 6.96
       },
       {
-        "id": "d4b3badd-e625-417b-86be-27dbf5f9231c",
+        "id": "64be3c68-2f2a-4c12-9747-316ab81760da",
         "start": "2026-12-08T15:30",
         "end": "2026-12-08T16:45",
         "name": "Youth Sauga At Play Skate (10 - 17 yrs)",
@@ -691,7 +649,7 @@
         "ticket": 0
       },
       {
-        "id": "b40069f6-570b-4c99-9888-8ef4dc2521aa",
+        "id": "436c07dd-fffd-4b7e-a981-39f266aab2f7",
         "start": "2026-12-08T17:00",
         "end": "2026-12-08T17:50",
         "name": "Hockey Stick & Puck (18+)",
@@ -699,7 +657,7 @@
         "ticket": 3.98
       },
       {
-        "id": "e4599ebc-f82d-412c-9eff-8720caca180b",
+        "id": "5d58531c-ee92-45f8-a03e-9fec1c3fb34e",
         "start": "2026-12-09T09:30",
         "end": "2026-12-09T11:00",
         "name": "Adult & Older Adult Skate",
@@ -707,7 +665,7 @@
         "ticket": 4.61
       },
       {
-        "id": "ca2b1bc7-a23c-493a-9558-86d019280e58",
+        "id": "02d0e3cf-9a88-4e18-a9f8-be6de352fcb9",
         "start": "2026-12-09T16:00",
         "end": "2026-12-09T16:50",
         "name": "Hockey Stick & Puck with Adult (3-8 yrs)",
@@ -715,7 +673,7 @@
         "ticket": 3.98
       },
       {
-        "id": "d540aadd-7605-4f18-a8f1-c231462c8579",
+        "id": "76681ea8-0e1e-45a6-9b25-1ce7fd2c884c",
         "start": "2026-12-09T17:00",
         "end": "2026-12-09T17:50",
         "name": "Hockey Stick & Puck With Adult (9-13 yrs)",
@@ -723,7 +681,7 @@
         "ticket": 3.98
       },
       {
-        "id": "05e59cf1-aa51-4837-9fed-1fcb3e32690d",
+        "id": "bee7e9c7-d750-4b95-8a20-e42bdb9aa046",
         "start": "2026-12-10T09:30",
         "end": "2026-12-10T11:00",
         "name": "Hockey Shinny (18+)",
@@ -731,7 +689,7 @@
         "ticket": 6.96
       },
       {
-        "id": "670ccd22-8c4e-40b7-8e13-27a3f8106fad",
+        "id": "86d8506e-187a-4380-8dce-93c95ca7968a",
         "start": "2026-12-10T13:00",
         "end": "2026-12-10T14:30",
         "name": "Adult & Older Adult Skate",
@@ -739,7 +697,7 @@
         "ticket": 4.61
       },
       {
-        "id": "3c0e9481-8364-4093-8a09-ba42a768bb25",
+        "id": "43f709a3-aa7a-45ce-bade-7fa5be52cb73",
         "start": "2026-12-10T17:00",
         "end": "2026-12-10T18:30",
         "name": "Fun Skate",
@@ -747,7 +705,7 @@
         "ticket": 4.61
       },
       {
-        "id": "1ade019a-199d-46b4-8eba-ebeac613d715",
+        "id": "7db0f395-be8b-4817-bcc6-cf9e3be720df",
         "start": "2026-12-11T09:30",
         "end": "2026-12-11T11:00",
         "name": "Adult & Older Adult Skate",
@@ -755,7 +713,7 @@
         "ticket": 4.61
       },
       {
-        "id": "5e712def-0ff7-44fd-bd3e-b67f38a68c0c",
+        "id": "d89d7326-1049-4722-9353-ffa842932852",
         "start": "2026-12-11T15:30",
         "end": "2026-12-11T16:45",
         "name": "Youth Sauga At Play Skate (10 - 17 yrs)",
@@ -763,7 +721,7 @@
         "ticket": 0
       },
       {
-        "id": "f4a6bce3-bb18-493e-b203-d6a2ca9faa8b",
+        "id": "f52ca66d-22bc-488f-9d20-458d15792e10",
         "start": "2026-12-12T19:00",
         "end": "2026-12-12T20:30",
         "name": "Fun Skate",
@@ -771,7 +729,7 @@
         "ticket": 4.61
       },
       {
-        "id": "84ddbadf-a273-47d3-ae31-54d8311fc39b",
+        "id": "3466e5f8-993d-49df-a4d1-ff88a291fa76",
         "start": "2026-12-13T13:30",
         "end": "2026-12-13T15:00",
         "name": "Fun Skate",
@@ -779,7 +737,7 @@
         "ticket": 4.61
       },
       {
-        "id": "a514eea8-dd06-44c7-a55e-a808e57bc03d",
+        "id": "9c12eaad-4459-49c8-9be2-40c517528c07",
         "start": "2026-12-14T15:30",
         "end": "2026-12-14T16:20",
         "name": "Hockey Stick & Puck With Adult (9-13 yrs)",
@@ -787,7 +745,7 @@
         "ticket": 3.98
       },
       {
-        "id": "1c194eae-6457-46b1-b5b6-77c282bf9457",
+        "id": "ea23b07c-ce01-424f-b63e-41eacc579475",
         "start": "2026-12-14T16:30",
         "end": "2026-12-14T17:20",
         "name": "Youth Hockey Shinny (13-17 yrs)",
@@ -795,7 +753,7 @@
         "ticket": 0
       },
       {
-        "id": "e8cd0f90-8556-4e22-b952-feb483d38b05",
+        "id": "6bd8e9d2-4786-4588-ba28-579f603deab9",
         "start": "2026-12-15T09:30",
         "end": "2026-12-15T11:00",
         "name": "Fun Skate",
@@ -803,7 +761,7 @@
         "ticket": 4.61
       },
       {
-        "id": "30bcfd35-722f-4aa4-b91c-0712a9d29b61",
+        "id": "51066d9e-83e7-4d26-8b3d-440f842fc44d",
         "start": "2026-12-15T11:30",
         "end": "2026-12-15T13:00",
         "name": "Hockey Shinny (18+)",
@@ -811,7 +769,7 @@
         "ticket": 6.96
       },
       {
-        "id": "12115f6c-e27d-49a2-86c5-38a956975d11",
+        "id": "5a8d420a-9f14-483c-8f95-0495977f0ecc",
         "start": "2026-12-15T15:30",
         "end": "2026-12-15T16:45",
         "name": "Youth Sauga At Play Skate (10 - 17 yrs)",
@@ -819,7 +777,7 @@
         "ticket": 0
       },
       {
-        "id": "6f7ace1f-eaee-4f9d-b4db-4d253d7bdf47",
+        "id": "16bbd4c7-a9a4-4514-9c7a-6662be834db0",
         "start": "2026-12-15T17:00",
         "end": "2026-12-15T17:50",
         "name": "Hockey Stick & Puck (18+)",
@@ -827,7 +785,7 @@
         "ticket": 3.98
       },
       {
-        "id": "1fd48c7e-a875-4e33-ad72-b910399b187c",
+        "id": "b33524f0-0bf1-47d1-81fa-d682b0ca20a5",
         "start": "2026-12-16T09:30",
         "end": "2026-12-16T11:00",
         "name": "Adult & Older Adult Skate",
@@ -835,7 +793,7 @@
         "ticket": 4.61
       },
       {
-        "id": "04a8b904-f333-478e-b64a-9a7962f8d108",
+        "id": "c35cfac3-890f-4139-a454-6c5cbb6343fb",
         "start": "2026-12-16T16:00",
         "end": "2026-12-16T16:50",
         "name": "Hockey Stick & Puck with Adult (3-8 yrs)",
@@ -843,7 +801,7 @@
         "ticket": 3.98
       },
       {
-        "id": "6a6a5ec3-e3ea-4768-a75a-fdf3173b8342",
+        "id": "ad5ceafa-eb49-40e0-9960-9968c574dc9e",
         "start": "2026-12-16T17:00",
         "end": "2026-12-16T17:50",
         "name": "Hockey Stick & Puck With Adult (9-13 yrs)",
@@ -851,7 +809,7 @@
         "ticket": 3.98
       },
       {
-        "id": "003948f6-1563-444d-b1ae-97abdcab5911",
+        "id": "1f21ed0a-e418-441b-b8b4-f7bf426fb199",
         "start": "2026-12-17T09:30",
         "end": "2026-12-17T11:00",
         "name": "Hockey Shinny (18+)",
@@ -859,7 +817,7 @@
         "ticket": 6.96
       },
       {
-        "id": "67e93b27-abb8-43c2-a5b2-d3b04e8fc81b",
+        "id": "94857da2-ee1d-42b6-a3b6-2002b46f1d83",
         "start": "2026-12-17T13:00",
         "end": "2026-12-17T14:30",
         "name": "Adult & Older Adult Skate",
@@ -867,7 +825,7 @@
         "ticket": 4.61
       },
       {
-        "id": "601c6586-172e-4b24-b89b-092efd8f34dd",
+        "id": "3129cf02-94cd-452d-8fa1-2fb6602c91be",
         "start": "2026-12-17T17:00",
         "end": "2026-12-17T18:30",
         "name": "Fun Skate",
@@ -875,7 +833,7 @@
         "ticket": 4.61
       },
       {
-        "id": "9d0ce47c-e1bd-47f5-840a-b555b42389e1",
+        "id": "3fc1bcc1-d240-4756-8a90-4e00f4f9ea0d",
         "start": "2026-12-18T09:30",
         "end": "2026-12-18T11:00",
         "name": "Adult & Older Adult Skate",
@@ -883,7 +841,7 @@
         "ticket": 4.61
       },
       {
-        "id": "8167fa08-96a1-441e-857d-a943ec79ec55",
+        "id": "f4dce895-b871-4f0f-9ba4-9b62dc26781e",
         "start": "2026-12-18T15:30",
         "end": "2026-12-18T16:45",
         "name": "Youth Sauga At Play Skate (10 - 17 yrs)",
@@ -891,7 +849,7 @@
         "ticket": 0
       },
       {
-        "id": "17802991-be1b-4eac-8f35-39555ea02a6e",
+        "id": "fb49bcfd-7194-40a7-9dc7-0114dac42163",
         "start": "2026-12-19T19:00",
         "end": "2026-12-19T20:30",
         "name": "Fun Skate",
@@ -899,7 +857,7 @@
         "ticket": 4.61
       },
       {
-        "id": "fbe3e815-6acb-4a90-a6f0-70cf795ad55e",
+        "id": "aa389506-5c89-43a5-98c3-301f7c78f326",
         "start": "2026-12-20T13:30",
         "end": "2026-12-20T15:00",
         "name": "Fun Skate",
@@ -907,7 +865,7 @@
         "ticket": 4.61
       },
       {
-        "id": "411d9010-ab27-4d7f-9109-38159f78e870",
+        "id": "dbff281c-a48f-4b08-a0f1-994b79f1eabf",
         "start": "2026-12-21T15:30",
         "end": "2026-12-21T16:20",
         "name": "Hockey Stick & Puck With Adult (9-13 yrs)",
@@ -915,7 +873,7 @@
         "ticket": 3.98
       },
       {
-        "id": "6de9e623-989d-4e1c-b857-1143f982187d",
+        "id": "744f00a2-8555-4240-b7ec-0bc260e3ebc2",
         "start": "2026-12-21T16:30",
         "end": "2026-12-21T17:20",
         "name": "Youth Hockey Shinny (13-17 yrs)",
@@ -923,7 +881,7 @@
         "ticket": 0
       },
       {
-        "id": "8dc04f7f-58db-4b55-96ee-6349d70e7ddb",
+        "id": "477c144b-4fcb-4a5c-9d80-47e7ea3ad991",
         "start": "2026-12-22T09:30",
         "end": "2026-12-22T11:00",
         "name": "Fun Skate",
@@ -931,7 +889,7 @@
         "ticket": 4.61
       },
       {
-        "id": "b00377f4-7eaf-4687-b956-71519e18cd0f",
+        "id": "f70354b0-a9bc-451f-9a65-8f8d44f89cd2",
         "start": "2026-12-22T11:30",
         "end": "2026-12-22T13:00",
         "name": "Hockey Shinny (18+)",
@@ -939,7 +897,7 @@
         "ticket": 6.96
       },
       {
-        "id": "c34ddc5c-3191-446b-83d5-70d2216c00f8",
+        "id": "b12132aa-88e7-4661-a273-8bce1b706e92",
         "start": "2026-12-22T17:00",
         "end": "2026-12-22T17:50",
         "name": "Hockey Stick & Puck (18+)",
@@ -947,7 +905,7 @@
         "ticket": 3.98
       },
       {
-        "id": "f32b147d-25f5-4321-8b66-10e0fe64adc6",
+        "id": "7df28325-adb2-4a6c-b646-27b11f703fa4",
         "start": "2026-12-23T09:30",
         "end": "2026-12-23T11:00",
         "name": "Adult & Older Adult Skate",
@@ -955,7 +913,7 @@
         "ticket": 4.61
       },
       {
-        "id": "c304d132-b6b8-41b4-a465-462cd6c7d58e",
+        "id": "fd9df055-8b7b-48b0-95ec-b78efaf69af5",
         "start": "2026-12-23T16:00",
         "end": "2026-12-23T16:50",
         "name": "Hockey Stick & Puck with Adult (3-8 yrs)",
@@ -963,7 +921,7 @@
         "ticket": 3.98
       },
       {
-        "id": "f8ef9af6-39ef-460b-bbdf-d7811febbbec",
+        "id": "b5152ca4-f083-4b4a-86dc-00d87224963c",
         "start": "2026-12-23T17:00",
         "end": "2026-12-23T17:50",
         "name": "Hockey Stick & Puck With Adult (9-13 yrs)",
@@ -971,7 +929,7 @@
         "ticket": 3.98
       },
       {
-        "id": "480e30de-4eac-4b81-8133-d00b3fa585b5",
+        "id": "1fc6716f-3c07-4f67-a93d-00c6161b510a",
         "start": "2026-12-27T13:30",
         "end": "2026-12-27T15:00",
         "name": "Fun Skate",
@@ -979,7 +937,7 @@
         "ticket": 4.61
       },
       {
-        "id": "8fc4c69e-c7ac-4177-b69d-a4e101eeb811",
+        "id": "acc0d4f9-0e8b-40de-a27e-c8512c691fe4",
         "start": "2026-12-28T15:30",
         "end": "2026-12-28T16:20",
         "name": "Hockey Stick & Puck With Adult (9-13 yrs)",
@@ -987,7 +945,7 @@
         "ticket": 3.98
       },
       {
-        "id": "fb6f6fc1-577f-48bd-b43b-a242a5fe504f",
+        "id": "d8ef79fa-2a42-4911-a2fa-b337f08bc52d",
         "start": "2026-12-28T16:30",
         "end": "2026-12-28T17:20",
         "name": "Youth Hockey Shinny (13-17 yrs)",
@@ -995,7 +953,7 @@
         "ticket": 0
       },
       {
-        "id": "dc442258-4d17-492e-b4bc-78bdfcce1fd9",
+        "id": "3855d525-6d0a-4bad-9a7d-0f2855188564",
         "start": "2026-12-29T09:30",
         "end": "2026-12-29T11:00",
         "name": "Free Fun Skate",
@@ -1003,7 +961,7 @@
         "ticket": 0
       },
       {
-        "id": "a67e1993-18d6-4ce2-9100-e441a699a8de",
+        "id": "0bd6bf7e-5e43-450b-bc24-723542079050",
         "start": "2026-12-29T11:30",
         "end": "2026-12-29T13:00",
         "name": "Hockey Shinny (18+)",
@@ -1011,7 +969,7 @@
         "ticket": 6.96
       },
       {
-        "id": "ff3fade9-2391-4598-84ed-31973bc12f7f",
+        "id": "747e7f23-9cb0-4731-979e-7e13e035bcbf",
         "start": "2026-12-29T17:00",
         "end": "2026-12-29T17:50",
         "name": "Hockey Stick & Puck (18+)",
@@ -1019,7 +977,7 @@
         "ticket": 3.98
       },
       {
-        "id": "d74c072e-3ace-4d58-8a66-be2f8e171bf6",
+        "id": "1ca545aa-cb2c-4c64-a629-ed6a4a2f04b7",
         "start": "2026-12-30T09:30",
         "end": "2026-12-30T11:00",
         "name": "Adult & Older Adult Skate",
@@ -1027,7 +985,7 @@
         "ticket": 4.61
       },
       {
-        "id": "fd72f832-4751-494c-96ae-9c3616061d45",
+        "id": "8163df4a-729b-49c4-b6dc-655946bd291d",
         "start": "2026-12-30T16:00",
         "end": "2026-12-30T16:50",
         "name": "Hockey Stick & Puck with Adult (3-8 yrs)",
@@ -1035,7 +993,7 @@
         "ticket": 3.98
       },
       {
-        "id": "ee0ef148-d565-4515-85a4-01504d7c2e32",
+        "id": "782fb820-67af-49a6-a0b4-e993ef57d88f",
         "start": "2026-12-30T17:00",
         "end": "2026-12-30T17:50",
         "name": "Hockey Stick & Puck With Adult (9-13 yrs)",

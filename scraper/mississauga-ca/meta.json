@@ -5,90 +5,212 @@
       "name": "Burnhamthorpe Community Centre",
       "url": "https://anc.ca.apm.activecommunities.com/activemississauga/calendars?defaultCalendarId=1&locationId=290&categoryIds=52&view=2",
       "address": "1500 Gulleden Drive, Mississauga, ON L4X 2T7",
-      "coordinates": { "lat": 43.622781, "lon": -79.598509 },
+      "coordinates": {
+        "lat": 43.622781,
+        "lon": -79.598509
+      },
       "centerId": 290,
-      "type": "indoor"
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Chic Murray Arena",
+          "type": "North American / NHL"
+        }
+      ]
     },
     {
       "id": "carmen-corbasson-community-centre",
       "name": "Carmen Corbasson Community Centre",
       "url": "https://anc.ca.apm.activecommunities.com/activemississauga/calendars?defaultCalendarId=1&locationId=248&categoryIds=52&view=2",
       "address": "1399 Cawthra Road, Mississauga, ON L5G 4L1",
-      "coordinates": { "lat": 43.578265, "lon": -79.576635 },
+      "coordinates": {
+        "lat": 43.578265,
+        "lon": -79.576635
+      },
       "centerId": 248,
-      "type": "indoor"
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Warren Marshall Arena",
+          "type": "North American / NHL"
+        },
+        {
+          "name": "Ron Searle Arena",
+          "type": "North American / NHL"
+        }
+      ]
     },
     {
       "id": "clarkson-community-centre",
       "name": "Clarkson Community Centre",
       "url": "https://anc.ca.apm.activecommunities.com/activemississauga/calendars?defaultCalendarId=1&locationId=240&categoryIds=52&view=2",
       "address": "2475 Truscott Drive, Mississauga, ON L5J 2B3",
-      "coordinates": { "lat": 43.511592, "lon": -79.650285 },
+      "coordinates": {
+        "lat": 43.511592,
+        "lon": -79.650285
+      },
       "centerId": 240,
-      "type": "indoor"
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Clarkson Arena",
+          "type": "North American / NHL"
+        }
+      ]
     },
     {
       "id": "erin-mills-twin-arena",
       "name": "Erin Mills Twin Arena",
       "url": "https://anc.ca.apm.activecommunities.com/activemississauga/calendars?defaultCalendarId=1&locationId=250&categoryIds=52&view=2",
       "address": "3205 Unity Drive, Mississauga, ON L5L 4L5",
-      "coordinates": { "lat": 43.536904, "lon": -79.711566 },
+      "coordinates": {
+        "lat": 43.536904,
+        "lon": -79.711566
+      },
       "centerId": 250,
-      "type": "indoor"
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Rink 1",
+          "type": "Recreational (180' x 80')"
+        },
+        {
+          "name": "Rink 2",
+          "type": "Recreational (180' x 80')"
+        }
+      ]
     },
     {
       "id": "huron-park-recreation-centre",
       "name": "Huron Park Recreation Centre",
       "url": "https://anc.ca.apm.activecommunities.com/activemississauga/calendars?defaultCalendarId=1&locationId=252&categoryIds=52&view=2",
       "address": "830 Paisley Blvd W, Mississauga, ON L5C 3P5",
-      "coordinates": { "lat": 43.558958, "lon": -79.632996 },
+      "coordinates": {
+        "lat": 43.558958,
+        "lon": -79.632996
+      },
       "centerId": 252,
-      "type": "indoor"
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Huron Park Arena",
+          "type": "North American / NHL"
+        }
+      ]
     },
     {
       "id": "iceland-arena",
       "name": "Iceland Arena",
       "url": "https://anc.ca.apm.activecommunities.com/activemississauga/calendars?defaultCalendarId=1&locationId=253&categoryIds=52&view=2",
       "address": "705 Matheson Blvd E, Mississauga, ON L4Z 3X9",
-      "coordinates": { "lat": 43.628202, "lon": -79.648999 },
+      "coordinates": {
+        "lat": 43.628202,
+        "lon": -79.648999
+      },
       "centerId": 253,
-      "type": "indoor"
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Rink 1",
+          "type": "Olympic"
+        },
+        {
+          "name": "Rink 2",
+          "type": "North American / NHL"
+        },
+        {
+          "name": "Rink 3",
+          "type": "North American / NHL"
+        },
+        {
+          "name": "Rink 4",
+          "type": "North American / NHL"
+        }
+      ]
     },
     {
       "id": "meadowvale-4-rinks",
       "name": "Meadowvale 4 Rinks",
       "url": "https://anc.ca.apm.activecommunities.com/activemississauga/calendars?defaultCalendarId=1&locationId=100&categoryIds=52&view=2",
       "address": "2160 Torquay Mews, Mississauga, ON L5N 2M6",
-      "coordinates": { "lat": 43.595037, "lon": -79.740775 },
+      "coordinates": {
+        "lat": 43.595037,
+        "lon": -79.740775
+      },
       "centerId": 100,
-      "type": "indoor"
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Rink 1",
+          "type": "Recreational (185' x 85')"
+        },
+        {
+          "name": "Rink 2",
+          "type": "Recreational (185' x 85')"
+        },
+        {
+          "name": "Rink 3",
+          "type": "Recreational (185' x 85')"
+        },
+        {
+          "name": "Rink 4",
+          "type": "Recreational (185' x 85')"
+        }
+      ]
     },
     {
       "id": "mississauga-valley-community-centre",
       "name": "Mississauga Valley Community Centre",
       "url": "https://anc.ca.apm.activecommunities.com/activemississauga/calendars?defaultCalendarId=1&locationId=82&categoryIds=52&view=2",
       "address": "1275 Mississauga Valley Blvd, Mississauga, ON L5A 3R8",
-      "coordinates": { "lat": 43.596844, "lon": -79.623704 },
+      "coordinates": {
+        "lat": 43.596844,
+        "lon": -79.623704
+      },
       "centerId": 82,
-      "type": "indoor"
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Mississauga Valley Arena",
+          "type": "Recreational (180' x 80')"
+        }
+      ]
     },
     {
       "id": "paul-coffey-arena",
       "name": "Paul Coffey Arena",
       "url": "https://anc.ca.apm.activecommunities.com/activemississauga/calendars?defaultCalendarId=1&locationId=128&categoryIds=52&view=2",
       "address": "6990 Goreway Drive, Mississauga, ON L4T 1A9",
-      "coordinates": { "lat": 43.712693, "lon": -79.631430 },
+      "coordinates": {
+        "lat": 43.712693,
+        "lon": -79.63143
+      },
       "centerId": 128,
-      "type": "indoor"
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Paul Coffey Arena",
+          "type": "North American / NHL"
+        }
+      ]
     },
     {
       "id": "port-credit-memorial-arena",
       "name": "Port Credit Memorial Arena",
       "url": "https://anc.ca.apm.activecommunities.com/activemississauga/calendars?defaultCalendarId=1&locationId=106&categoryIds=52&view=2",
       "address": "40 Stavebank Road, Mississauga, ON L5G 2T8",
-      "coordinates": { "lat": 43.552996, "lon": -79.589022 },
+      "coordinates": {
+        "lat": 43.552996,
+        "lon": -79.589022
+      },
       "centerId": 106,
-      "type": "indoor"
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Port Credit Memorial Arena",
+          "type": "North American / NHL"
+        }
+      ]
     }
   ]
 }

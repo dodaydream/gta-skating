@@ -10,7 +10,17 @@
         "lat": 43.788414,
         "lon": -79.276293
       },
-      "type": "indoor"
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Ice Rink - 1",
+          "type": "North American / NHL"
+        },
+        {
+          "name": "Ice Rink - 2",
+          "type": "North American / NHL"
+        }
+      ]
     },
     {
       "id": "albert-campbell-square",
@@ -22,7 +32,13 @@
         "lat": 43.772811,
         "lon": -79.257241
       },
-      "type": "outdoor"
+      "type": "outdoor",
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
     },
     {
       "id": "albion",
@@ -34,7 +50,13 @@
         "lat": 43.739651,
         "lon": -79.582815
       },
-      "type": "indoor"
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Ice Rink",
+          "type": "North American / NHL"
+        }
+      ]
     },
     {
       "id": "alexandra-park",
@@ -46,7 +68,13 @@
         "lat": 43.6511,
         "lon": -79.405042
       },
-      "type": "outdoor"
+      "type": "outdoor",
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
     },
     {
       "id": "amesbury-sports-complex",
@@ -58,7 +86,13 @@
         "lat": 43.705951,
         "lon": -79.48716
       },
-      "type": "indoor"
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Ice Rink",
+          "type": "North American / NHL"
+        }
+      ]
     },
     {
       "id": "angela-james",
@@ -70,7 +104,13 @@
         "lat": 43.713206,
         "lon": -79.327599
       },
-      "type": "indoor"
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Ice Rink",
+          "type": "North American / NHL"
+        }
+      ]
     },
     {
       "id": "baycrest",
@@ -82,7 +122,13 @@
         "lat": 43.728911,
         "lon": -79.443129
       },
-      "type": "indoor"
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Ice Rink",
+          "type": "North American / NHL"
+        }
+      ]
     },
     {
       "id": "bayview",
@@ -94,7 +140,13 @@
         "lat": 43.787938,
         "lon": -79.393726
       },
-      "type": "indoor"
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Ice Rink",
+          "type": "North American / NHL"
+        }
+      ]
     },
     {
       "id": "broadlands",
@@ -106,7 +158,13 @@
         "lat": 43.745671,
         "lon": -79.322758
       },
-      "type": "outdoor"
+      "type": "outdoor",
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
     },
     {
       "id": "buttonwood-park",
@@ -118,7 +176,13 @@
         "lat": 43.681967,
         "lon": -79.518986
       },
-      "type": "outdoor"
+      "type": "outdoor",
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
     },
     {
       "id": "campbell-avenue-park",
@@ -130,7 +194,13 @@
         "lat": 43.662985,
         "lon": -79.448438
       },
-      "type": "outdoor"
+      "type": "outdoor",
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
     },
     {
       "id": "cedarvale-park",
@@ -142,7 +212,13 @@
         "lat": 43.691283,
         "lon": -79.432609
       },
-      "type": "outdoor"
+      "type": "outdoor",
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
     },
     {
       "id": "centennial-park-etobicoke",
@@ -154,7 +230,17 @@
         "lat": 43.656924,
         "lon": -79.58633
       },
-      "type": "indoor"
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Ice Rink - East",
+          "type": "North American / NHL"
+        },
+        {
+          "name": "Ice Rink - West",
+          "type": "North American / NHL"
+        }
+      ]
     },
     {
       "id": "centennial-scarborough",
@@ -166,7 +252,17 @@
         "lat": 43.775532,
         "lon": -79.235108
       },
-      "type": "indoor"
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Ice Rink",
+          "type": "North American / NHL"
+        },
+        {
+          "name": "Ice Rink - Ice Galaxy",
+          "type": "North American / NHL"
+        }
+      ]
     },
     {
       "id": "central",
@@ -178,7 +274,13 @@
         "lat": 43.648455,
         "lon": -79.520052
       },
-      "type": "indoor"
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Ice Rink",
+          "type": "North American / NHL"
+        }
+      ]
     },
     {
       "id": "chris-tonks",
@@ -190,7 +292,13 @@
         "lat": 43.68702,
         "lon": -79.48157
       },
-      "type": "indoor"
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Ice Rink",
+          "type": "North American / NHL"
+        }
+      ]
     },
     {
       "id": "christie-pits",
@@ -202,7 +310,13 @@
         "lat": 43.663462,
         "lon": -79.419974
       },
-      "type": "outdoor"
+      "type": "outdoor",
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
     },
     {
       "id": "college-park",
@@ -214,7 +328,13 @@
         "lat": 43.659914,
         "lon": -79.383825
       },
-      "type": "outdoor"
+      "type": "outdoor",
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
     },
     {
       "id": "colonel-samuel-smith-park",
@@ -226,7 +346,13 @@
         "lat": 43.593162,
         "lon": -79.515553
       },
-      "type": "outdoor"
+      "type": "outdoor",
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
     },
     {
       "id": "commander",
@@ -238,7 +364,17 @@
         "lat": 43.795039,
         "lon": -79.267814
       },
-      "type": "indoor"
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Ice Rink - 1",
+          "type": "North American / NHL"
+        },
+        {
+          "name": "Ice Rink - 2",
+          "type": "North American / NHL"
+        }
+      ]
     },
     {
       "id": "cummer-park",
@@ -250,7 +386,13 @@
         "lat": 43.800104,
         "lon": -79.371262
       },
-      "type": "indoor"
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Ice Rink",
+          "type": "North American / NHL"
+        }
+      ]
     },
     {
       "id": "dieppe-park",
@@ -262,7 +404,13 @@
         "lat": 43.691988,
         "lon": -79.335491
       },
-      "type": "outdoor"
+      "type": "outdoor",
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
     },
     {
       "id": "don-mills-civitan",
@@ -274,7 +422,13 @@
         "lat": 43.733023,
         "lon": -79.343745
       },
-      "type": "indoor"
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Ice Rink",
+          "type": "North American / NHL"
+        }
+      ]
     },
     {
       "id": "don-montgomery",
@@ -286,7 +440,17 @@
         "lat": 43.732663,
         "lon": -79.261665
       },
-      "type": "indoor"
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Ice Rink - 1",
+          "type": "North American / NHL"
+        },
+        {
+          "name": "Ice Rink - 2",
+          "type": "North American / NHL"
+        }
+      ]
     },
     {
       "id": "downsview",
@@ -298,7 +462,13 @@
         "lat": 43.719835,
         "lon": -79.512771
       },
-      "type": "indoor"
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Ice Rink",
+          "type": "North American / NHL"
+        }
+      ]
     },
     {
       "id": "dufferin-grove",
@@ -310,7 +480,13 @@
         "lat": 43.657042,
         "lon": -79.433601
       },
-      "type": "outdoor"
+      "type": "outdoor",
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
     },
     {
       "id": "east-york-memorial",
@@ -322,7 +498,13 @@
         "lat": 43.697431,
         "lon": -79.315293
       },
-      "type": "indoor"
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Ice Rink",
+          "type": "North American / NHL"
+        }
+      ]
     },
     {
       "id": "ethennonnhawahstihnen-park",
@@ -334,7 +516,13 @@
         "lat": 43.767405,
         "lon": -79.372401
       },
-      "type": "outdoor"
+      "type": "outdoor",
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
     },
     {
       "id": "fenside",
@@ -346,7 +534,13 @@
         "lat": 43.763836,
         "lon": -79.326824
       },
-      "type": "indoor"
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Ice Rink",
+          "type": "North American / NHL"
+        }
+      ]
     },
     {
       "id": "ford-performance-centre",
@@ -358,7 +552,13 @@
         "lat": 43.602865,
         "lon": -79.519916
       },
-      "type": "indoor"
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Ice Rink",
+          "type": "North American / NHL"
+        }
+      ]
     },
     {
       "id": "giovanni-caboto",
@@ -370,7 +570,13 @@
         "lat": 43.675653,
         "lon": -79.451657
       },
-      "type": "outdoor"
+      "type": "outdoor",
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
     },
     {
       "id": "glen-long",
@@ -382,7 +588,13 @@
         "lat": 43.708626,
         "lon": -79.455802
       },
-      "type": "outdoor"
+      "type": "outdoor",
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
     },
     {
       "id": "gord-and-irene-risk",
@@ -394,7 +606,13 @@
         "lat": 43.747437,
         "lon": -79.566545
       },
-      "type": "indoor"
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Ice Rink",
+          "type": "North American / NHL"
+        }
+      ]
     },
     {
       "id": "goulding",
@@ -406,7 +624,13 @@
         "lat": 43.790912,
         "lon": -79.422143
       },
-      "type": "indoor"
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Ice Rink",
+          "type": "North American / NHL"
+        }
+      ]
     },
     {
       "id": "grandravine-community",
@@ -418,7 +642,13 @@
         "lat": 43.751753,
         "lon": -79.489716
       },
-      "type": "indoor"
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Ice Rink",
+          "type": "North American / NHL"
+        }
+      ]
     },
     {
       "id": "greenwood-park",
@@ -430,7 +660,13 @@
         "lat": 43.66948,
         "lon": -79.329218
       },
-      "type": "outdoor"
+      "type": "outdoor",
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
     },
     {
       "id": "habitant",
@@ -442,7 +678,13 @@
         "lat": 43.747019,
         "lon": -79.540243
       },
-      "type": "indoor"
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Ice Rink",
+          "type": "North American / NHL"
+        }
+      ]
     },
     {
       "id": "herbert-h-carnegie-centennial-centre",
@@ -454,7 +696,13 @@
         "lat": 43.773357,
         "lon": -79.450052
       },
-      "type": "indoor"
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Ice Rink",
+          "type": "North American / NHL"
+        }
+      ]
     },
     {
       "id": "heron-park-community",
@@ -466,7 +714,17 @@
         "lat": 43.768856,
         "lon": -79.176938
       },
-      "type": "indoor"
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Ice Rink - 1",
+          "type": "North American / NHL"
+        },
+        {
+          "name": "Ice Rink - 2",
+          "type": "North American / NHL"
+        }
+      ]
     },
     {
       "id": "high-park",
@@ -478,7 +736,13 @@
         "lat": 43.649865,
         "lon": -79.46528
       },
-      "type": "outdoor"
+      "type": "outdoor",
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
     },
     {
       "id": "hodgson-leisure-school-grounds",
@@ -490,7 +754,13 @@
         "lat": 43.700978,
         "lon": -79.385376
       },
-      "type": "outdoor"
+      "type": "outdoor",
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
     },
     {
       "id": "humber-valley-rink",
@@ -502,7 +772,13 @@
         "lat": 43.664191,
         "lon": -79.524922
       },
-      "type": "outdoor"
+      "type": "outdoor",
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
     },
     {
       "id": "irving-w-chapley",
@@ -514,7 +790,13 @@
         "lat": 43.761351,
         "lon": -79.45575
       },
-      "type": "outdoor"
+      "type": "outdoor",
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
     },
     {
       "id": "jimmie-simpson-park",
@@ -526,7 +808,13 @@
         "lat": 43.660444,
         "lon": -79.34533
       },
-      "type": "outdoor"
+      "type": "outdoor",
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
     },
     {
       "id": "john-booth-memorial",
@@ -538,7 +826,13 @@
         "lat": 43.7697,
         "lon": -79.524189
       },
-      "type": "indoor"
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Ice Rink",
+          "type": "North American / NHL"
+        }
+      ]
     },
     {
       "id": "joseph-bannon-park",
@@ -550,7 +844,13 @@
         "lat": 43.732362,
         "lon": -79.534949
       },
-      "type": "outdoor"
+      "type": "outdoor",
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
     },
     {
       "id": "kew-gardens",
@@ -562,7 +862,13 @@
         "lat": 43.66999,
         "lon": -79.299293
       },
-      "type": "outdoor"
+      "type": "outdoor",
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
     },
     {
       "id": "lambton",
@@ -574,7 +880,13 @@
         "lat": 43.664913,
         "lon": -79.50588
       },
-      "type": "indoor"
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Ice Rink",
+          "type": "North American / NHL"
+        }
+      ]
     },
     {
       "id": "lambton-kingsway-rink",
@@ -586,7 +898,13 @@
         "lat": 43.658141,
         "lon": -79.507339
       },
-      "type": "outdoor"
+      "type": "outdoor",
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
     },
     {
       "id": "ledbury-park",
@@ -598,7 +916,13 @@
         "lat": 43.727922,
         "lon": -79.424452
       },
-      "type": "outdoor"
+      "type": "outdoor",
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
     },
     {
       "id": "long-branch",
@@ -610,7 +934,13 @@
         "lat": 43.591779,
         "lon": -79.527833
       },
-      "type": "indoor"
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Ice Rink",
+          "type": "North American / NHL"
+        }
+      ]
     },
     {
       "id": "malvern",
@@ -622,7 +952,17 @@
         "lat": 43.808568,
         "lon": -79.216386
       },
-      "type": "indoor"
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Ice Rink - 1",
+          "type": "North American / NHL"
+        },
+        {
+          "name": "Ice Rink - 2",
+          "type": "North American / NHL"
+        }
+      ]
     },
     {
       "id": "mccormick",
@@ -634,7 +974,13 @@
         "lat": 43.647219,
         "lon": -79.434101
       },
-      "type": "indoor"
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Ice Rink",
+          "type": "North American / NHL"
+        }
+      ]
     },
     {
       "id": "mccowan-district-park",
@@ -646,7 +992,13 @@
         "lat": 43.733195,
         "lon": -79.236554
       },
-      "type": "outdoor"
+      "type": "outdoor",
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
     },
     {
       "id": "mcgregor-park",
@@ -658,7 +1010,17 @@
         "lat": 43.747629,
         "lon": -79.280149
       },
-      "type": "indoor"
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Ice Rink - 1",
+          "type": "North American / NHL"
+        },
+        {
+          "name": "Ice Rink - 2",
+          "type": "North American / NHL"
+        }
+      ]
     },
     {
       "id": "mel-lastman-square",
@@ -670,7 +1032,13 @@
         "lat": 43.767268,
         "lon": -79.414889
       },
-      "type": "outdoor"
+      "type": "outdoor",
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
     },
     {
       "id": "mimico",
@@ -682,7 +1050,13 @@
         "lat": 43.612393,
         "lon": -79.498829
       },
-      "type": "indoor"
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Ice Rink",
+          "type": "North American / NHL"
+        }
+      ]
     },
     {
       "id": "mitchell-field",
@@ -694,7 +1068,13 @@
         "lat": 43.774644,
         "lon": -79.408537
       },
-      "type": "indoor"
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Ice Rink",
+          "type": "North American / NHL"
+        }
+      ]
     },
     {
       "id": "monarch-park",
@@ -706,7 +1086,13 @@
         "lat": 43.67881,
         "lon": -79.326098
       },
-      "type": "outdoor"
+      "type": "outdoor",
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
     },
     {
       "id": "nathan-phillips-square",
@@ -718,7 +1104,13 @@
         "lat": 43.652236,
         "lon": -79.383405
       },
-      "type": "outdoor"
+      "type": "outdoor",
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
     },
     {
       "id": "north-toronto-memorial",
@@ -730,7 +1122,13 @@
         "lat": 43.707029,
         "lon": -79.404504
       },
-      "type": "indoor"
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Ice Rink",
+          "type": "North American / NHL"
+        }
+      ]
     },
     {
       "id": "north-toronto-memorial-community-eglinton-park",
@@ -742,7 +1140,13 @@
         "lat": 43.706106,
         "lon": -79.404623
       },
-      "type": "outdoor"
+      "type": "outdoor",
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
     },
     {
       "id": "oriole",
@@ -754,7 +1158,13 @@
         "lat": 43.78181,
         "lon": -79.351281
       },
-      "type": "indoor"
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Ice Rink",
+          "type": "North American / NHL"
+        }
+      ]
     },
     {
       "id": "otter-creek-centre",
@@ -766,7 +1176,13 @@
         "lat": 43.721407,
         "lon": -79.409747
       },
-      "type": "outdoor"
+      "type": "outdoor",
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
     },
     {
       "id": "park-lawn-bubble-rink",
@@ -778,7 +1194,13 @@
         "lat": 43.638584,
         "lon": -79.495672
       },
-      "type": "indoor"
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Ice Rink",
+          "type": "North American / NHL"
+        }
+      ]
     },
     {
       "id": "phil-white",
@@ -790,7 +1212,13 @@
         "lat": 43.691283,
         "lon": -79.432609
       },
-      "type": "indoor"
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Ice Rink",
+          "type": "North American / NHL"
+        }
+      ]
     },
     {
       "id": "pine-point",
@@ -802,7 +1230,13 @@
         "lat": 43.712827,
         "lon": -79.542782
       },
-      "type": "indoor"
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Ice Rink",
+          "type": "North American / NHL"
+        }
+      ]
     },
     {
       "id": "pleasantview",
@@ -814,7 +1248,13 @@
         "lat": 43.787003,
         "lon": -79.336705
       },
-      "type": "indoor"
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Ice Rink",
+          "type": "North American / NHL"
+        }
+      ]
     },
     {
       "id": "prince-of-wales-rink",
@@ -826,7 +1266,13 @@
         "lat": 43.598919,
         "lon": -79.499122
       },
-      "type": "outdoor"
+      "type": "outdoor",
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
     },
     {
       "id": "queensway-rink",
@@ -838,7 +1284,13 @@
         "lat": 43.626576,
         "lon": -79.505604
       },
-      "type": "outdoor"
+      "type": "outdoor",
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
     },
     {
       "id": "ramsden-park",
@@ -850,7 +1302,13 @@
         "lat": 43.676526,
         "lon": -79.389799
       },
-      "type": "outdoor"
+      "type": "outdoor",
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
     },
     {
       "id": "regent-park-athletic-grounds",
@@ -862,7 +1320,13 @@
         "lat": 43.65857,
         "lon": -79.359431
       },
-      "type": "outdoor"
+      "type": "outdoor",
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
     },
     {
       "id": "rennie-park",
@@ -874,7 +1338,13 @@
         "lat": 43.644413,
         "lon": -79.473399
       },
-      "type": "outdoor"
+      "type": "outdoor",
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
     },
     {
       "id": "rivercrest-rink",
@@ -886,7 +1356,13 @@
         "lat": 43.729716,
         "lon": -79.569518
       },
-      "type": "outdoor"
+      "type": "outdoor",
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
     },
     {
       "id": "riverdale-park-east",
@@ -898,7 +1374,13 @@
         "lat": 43.670821,
         "lon": -79.354585
       },
-      "type": "outdoor"
+      "type": "outdoor",
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
     },
     {
       "id": "roding",
@@ -910,7 +1392,13 @@
         "lat": 43.729092,
         "lon": -79.492501
       },
-      "type": "indoor"
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Ice Rink",
+          "type": "North American / NHL"
+        }
+      ]
     },
     {
       "id": "rosedale-park",
@@ -922,7 +1410,13 @@
         "lat": 43.683047,
         "lon": -79.379473
       },
-      "type": "outdoor"
+      "type": "outdoor",
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
     },
     {
       "id": "royalcrest-rink",
@@ -934,7 +1428,13 @@
         "lat": 43.752704,
         "lon": -79.604747
       },
-      "type": "outdoor"
+      "type": "outdoor",
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
     },
     {
       "id": "scarborough-gardens",
@@ -946,7 +1446,13 @@
         "lat": 43.694811,
         "lon": -79.262009
       },
-      "type": "indoor"
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Ice Rink",
+          "type": "North American / NHL"
+        }
+      ]
     },
     {
       "id": "scarborough-village",
@@ -958,7 +1464,13 @@
         "lat": 43.739991,
         "lon": -79.216758
       },
-      "type": "indoor"
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Ice Rink",
+          "type": "North American / NHL"
+        }
+      ]
     },
     {
       "id": "sherbourne-common",
@@ -970,7 +1482,13 @@
         "lat": 43.645864,
         "lon": -79.365527
       },
-      "type": "outdoor"
+      "type": "outdoor",
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
     },
     {
       "id": "sir-adam-beck-rink",
@@ -982,7 +1500,13 @@
         "lat": 43.602303,
         "lon": -79.54792
       },
-      "type": "outdoor"
+      "type": "outdoor",
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
     },
     {
       "id": "summerlea-rink",
@@ -994,7 +1518,13 @@
         "lat": 43.727133,
         "lon": -79.551907
       },
-      "type": "outdoor"
+      "type": "outdoor",
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
     },
     {
       "id": "sunnydale-acres-rink",
@@ -1006,7 +1536,13 @@
         "lat": 43.724973,
         "lon": -79.578025
       },
-      "type": "outdoor"
+      "type": "outdoor",
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
     },
     {
       "id": "ted-reeve-community",
@@ -1018,7 +1554,13 @@
         "lat": 43.684435,
         "lon": -79.299606
       },
-      "type": "indoor"
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Ice Rink",
+          "type": "North American / NHL"
+        }
+      ]
     },
     {
       "id": "toronto-metropolitan-university-square",
@@ -1030,7 +1572,13 @@
         "lat": 43.657524,
         "lon": -79.379745
       },
-      "type": "outdoor"
+      "type": "outdoor",
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
     },
     {
       "id": "trinity-bellwoods-park",
@@ -1042,7 +1590,13 @@
         "lat": 43.649125,
         "lon": -79.413348
       },
-      "type": "outdoor"
+      "type": "outdoor",
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
     },
     {
       "id": "valleyfield-park",
@@ -1054,7 +1608,13 @@
         "lat": 43.695196,
         "lon": -79.53428
       },
-      "type": "outdoor"
+      "type": "outdoor",
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
     },
     {
       "id": "van-horne-park",
@@ -1066,7 +1626,13 @@
         "lat": 43.787271,
         "lon": -79.337537
       },
-      "type": "outdoor"
+      "type": "outdoor",
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
     },
     {
       "id": "victoria-village",
@@ -1078,7 +1644,13 @@
         "lat": 43.72309,
         "lon": -79.31579
       },
-      "type": "indoor"
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Ice Rink",
+          "type": "North American / NHL"
+        }
+      ]
     },
     {
       "id": "wallace-emerson-park",
@@ -1090,7 +1662,13 @@
         "lat": 43.667315,
         "lon": -79.439271
       },
-      "type": "outdoor"
+      "type": "outdoor",
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
     },
     {
       "id": "wedgewood-park-etobicoke",
@@ -1102,7 +1680,13 @@
         "lat": 43.644313,
         "lon": -79.547462
       },
-      "type": "outdoor"
+      "type": "outdoor",
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
     },
     {
       "id": "west-deane-park",
@@ -1114,7 +1698,13 @@
         "lat": 43.663391,
         "lon": -79.559069
       },
-      "type": "outdoor"
+      "type": "outdoor",
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
     },
     {
       "id": "west-mall-outdoor-rink-dennis-flynn-park",
@@ -1126,7 +1716,13 @@
         "lat": 43.641695,
         "lon": -79.566014
       },
-      "type": "outdoor"
+      "type": "outdoor",
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
     },
     {
       "id": "westgrove-rink",
@@ -1138,7 +1734,13 @@
         "lat": 43.682904,
         "lon": -79.568114
       },
-      "type": "outdoor"
+      "type": "outdoor",
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
     },
     {
       "id": "weston-lions",
@@ -1150,7 +1752,13 @@
         "lat": 43.698563,
         "lon": -79.518096
       },
-      "type": "indoor"
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Ice Rink",
+          "type": "North American / NHL"
+        }
+      ]
     },
     {
       "id": "westway-outdoor-rink",
@@ -1162,7 +1770,13 @@
         "lat": 43.688658,
         "lon": -79.541722
       },
-      "type": "outdoor"
+      "type": "outdoor",
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
     },
     {
       "id": "william-h-bolton",
@@ -1174,7 +1788,13 @@
         "lat": 43.671227,
         "lon": -79.415168
       },
-      "type": "indoor"
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Ice Rink",
+          "type": "North American / NHL"
+        }
+      ]
     },
     {
       "id": "withrow-park",
@@ -1186,7 +1806,13 @@
         "lat": 43.674583,
         "lon": -79.34801
       },
-      "type": "outdoor"
+      "type": "outdoor",
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
     },
     {
       "id": "york-mills",
@@ -1198,7 +1824,13 @@
         "lat": 43.747598,
         "lon": -79.383509
       },
-      "type": "indoor"
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Ice Rink",
+          "type": "North American / NHL"
+        }
+      ]
     }
   ]
 }

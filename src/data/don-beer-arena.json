@@ -7,11 +7,25 @@
     "lat": 43.8246138,
     "lon": -79.067142
   },
+  "rinks": [
+    {
+      "name": "DB1",
+      "type": "North American / NHL"
+    },
+    {
+      "name": "DB2",
+      "type": "North American / NHL"
+    },
+    {
+      "name": "DB3",
+      "type": "North American / NHL"
+    }
+  ],
   "schedule": {
-    "updatedAt": "2026-11-05T01:40:31.975Z",
+    "updatedAt": "2026-11-05T02:58:30.600Z",
     "programs": [
       {
-        "id": "6c75d83f-43ac-414b-9a72-b53534b13151",
+        "id": "7126e721-3590-4930-8b6d-47ab1cc5833a",
         "start": "2026-11-04T11:00",
         "end": "2026-11-04T13:00",
         "name": "Shinny Hockey",
@@ -19,7 +33,7 @@
         "ticket": 5.15
       },
       {
-        "id": "7cf59815-8491-4488-8d45-68fec84fc977",
+        "id": "ef6f47e3-b8a0-450b-8128-a90b777ffa6d",
         "start": "2026-11-06T11:00",
         "end": "2026-11-06T13:00",
         "name": "Shinny Hockey",
@@ -27,7 +41,7 @@
         "ticket": 5.15
       },
       {
-        "id": "213fa578-896c-4b8d-b01a-f7412fa19a33",
+        "id": "7e9c3fbb-b66b-4fa7-8717-3fa5a5035a85",
         "start": "2026-11-09T11:00",
         "end": "2026-11-09T13:00",
         "name": "Shinny Hockey",
@@ -35,7 +49,7 @@
         "ticket": 5.15
       },
       {
-        "id": "df072f51-c952-44aa-9b29-7bc16fb45011",
+        "id": "c000dfb4-abb7-47db-86d6-6482533a1c85",
         "start": "2026-11-11T11:00",
         "end": "2026-11-11T13:00",
         "name": "Shinny Hockey",
@@ -43,7 +57,7 @@
         "ticket": 5.15
       },
       {
-        "id": "7e1fc813-1928-474c-8776-e95b2bbdff13",
+        "id": "607f7a12-352d-4cce-9a8d-c53ec0ba2b33",
         "start": "2026-11-13T11:00",
         "end": "2026-11-13T13:00",
         "name": "Shinny Hockey",
@@ -51,7 +65,7 @@
         "ticket": 5.15
       },
       {
-        "id": "42364c57-1aad-46f0-8951-fb394d658a57",
+        "id": "0bfa7084-c6dc-4e4a-aede-1e233acc0768",
         "start": "2026-11-15T14:30",
         "end": "2026-11-15T16:00",
         "name": "Parent & Child Skate",
@@ -59,7 +73,7 @@
         "ticket": 0
       },
       {
-        "id": "1bda238e-833d-4f21-b15c-139c855fc120",
+        "id": "348b2ea1-876f-41f0-b42e-81edcb93a31f",
         "start": "2026-11-15T16:00",
         "end": "2026-11-15T17:30",
         "name": "Parent & Child Stick & Puck",
@@ -67,7 +81,7 @@
         "ticket": 0
       },
       {
-        "id": "d4d52eb7-074f-4dea-952e-52c307796614",
+        "id": "7b64c79c-3da1-493a-b40f-94cb3b49aa76",
         "start": "2026-11-15T17:30",
         "end": "2026-11-15T19:30",
         "name": "Public Skate",
@@ -75,7 +89,7 @@
         "ticket": 0
       },
       {
-        "id": "7c628f2e-4dc0-4af5-b67c-9f7d66e4c42a",
+        "id": "718943ce-602b-454d-ac8e-f3363dca543b",
         "start": "2026-11-16T11:00",
         "end": "2026-11-16T13:00",
         "name": "Shinny Hockey",
@@ -83,7 +97,7 @@
         "ticket": 5.15
       },
       {
-        "id": "3a8cb0df-624b-4461-b5e1-4ea1bb460b30",
+        "id": "f7ef8b4a-7694-4595-9e0b-f90ad61181bd",
         "start": "2026-11-18T11:00",
         "end": "2026-11-18T13:00",
         "name": "Shinny Hockey",
@@ -91,7 +105,7 @@
         "ticket": 5.15
       },
       {
-        "id": "c06b1467-6c1e-47d0-97da-a156d5e03c7f",
+        "id": "c40d6285-2741-42b4-a8cb-8aa97da1e656",
         "start": "2026-11-20T11:00",
         "end": "2026-11-20T13:00",
         "name": "Shinny Hockey",
@@ -99,7 +113,7 @@
         "ticket": 5.15
       },
       {
-        "id": "52e7972b-002f-494d-9987-fa25054fadcf",
+        "id": "a089bf96-1799-46c3-9cd8-8813b653a3da",
         "start": "2026-11-22T14:30",
         "end": "2026-11-22T16:00",
         "name": "Parent & Child Skate",
@@ -107,7 +121,7 @@
         "ticket": 0
       },
       {
-        "id": "e0c236f1-25d2-451c-8917-ef115fa443db",
+        "id": "a2524fdb-2fa1-4d3c-b199-d17438bda07e",
         "start": "2026-11-22T16:00",
         "end": "2026-11-22T17:30",
         "name": "Parent & Child Stick & Puck",
@@ -115,7 +129,7 @@
         "ticket": 0
       },
       {
-        "id": "005f881d-d947-4b61-983a-920930c7182e",
+        "id": "fb264601-a31f-42a3-b96e-3abc3e65d008",
         "start": "2026-11-22T17:30",
         "end": "2026-11-22T19:30",
         "name": "Public Skate",
@@ -123,7 +137,7 @@
         "ticket": 0
       },
       {
-        "id": "63acf3af-bcb2-41f1-a064-82d73685e3c1",
+        "id": "e8893e74-f52d-4c70-99bb-8b9ebe3d6b8c",
         "start": "2026-11-23T11:00",
         "end": "2026-11-23T13:00",
         "name": "Shinny Hockey",
@@ -131,7 +145,7 @@
         "ticket": 5.15
       },
       {
-        "id": "4cf3ca73-b694-4ef9-b298-823deb162d08",
+        "id": "ebaec2cb-8803-4c4d-8a3f-b16d48409f35",
         "start": "2026-11-25T11:00",
         "end": "2026-11-25T13:00",
         "name": "Shinny Hockey",
@@ -139,7 +153,7 @@
         "ticket": 5.15
       },
       {
-        "id": "d99a3bea-9376-4903-8de1-e985c28b40ce",
+        "id": "460a3062-4865-4b16-af48-7040bb7a858f",
         "start": "2026-11-27T11:00",
         "end": "2026-11-27T13:00",
         "name": "Shinny Hockey",
@@ -147,7 +161,7 @@
         "ticket": 5.15
       },
       {
-        "id": "91a1c840-8501-4e70-b85f-8bae922e3fda",
+        "id": "3c00c9d4-6952-4bf1-84c4-81591c6d39bc",
         "start": "2026-11-29T14:30",
         "end": "2026-11-29T16:00",
         "name": "Parent & Child Skate",
@@ -155,7 +169,7 @@
         "ticket": 0
       },
       {
-        "id": "27a42f0f-e8dc-488c-a71d-c02fffbbb521",
+        "id": "69b19755-1cb7-47b5-80c8-089ff3788dce",
         "start": "2026-11-29T16:00",
         "end": "2026-11-29T17:30",
         "name": "Parent & Child Stick & Puck",
@@ -163,7 +177,7 @@
         "ticket": 0
       },
       {
-        "id": "97710de0-bc7e-46e0-a09e-d11c5df9ed1b",
+        "id": "59118a92-7fec-4a6f-b885-631ee713394b",
         "start": "2026-11-29T17:30",
         "end": "2026-11-29T19:30",
         "name": "Public Skate",
@@ -171,7 +185,7 @@
         "ticket": 0
       },
       {
-        "id": "5ac0e170-2aeb-4360-9f5c-fa898b497306",
+        "id": "06b5231f-d38f-482c-b2f9-247c73994290",
         "start": "2026-11-30T11:00",
         "end": "2026-11-30T13:00",
         "name": "Shinny Hockey",
@@ -179,7 +193,7 @@
         "ticket": 5.15
       },
       {
-        "id": "a33ea12e-b1c4-433d-ab10-42d773255579",
+        "id": "4ef60b1d-486e-4523-8a12-0e03836b94a8",
         "start": "2026-12-02T11:00",
         "end": "2026-12-02T13:00",
         "name": "Shinny Hockey",
@@ -187,7 +201,7 @@
         "ticket": 5.15
       },
       {
-        "id": "8662176e-2e7c-4981-90bd-d93fa492a3a1",
+        "id": "caf6822e-7d30-4951-bce2-d6c7968b9f89",
         "start": "2026-12-04T11:00",
         "end": "2026-12-04T13:00",
         "name": "Shinny Hockey",
@@ -195,7 +209,7 @@
         "ticket": 5.15
       },
       {
-        "id": "10c0f670-2952-4723-b196-a425c0206164",
+        "id": "48d3652f-9628-4615-bfdd-f9d98263e56b",
         "start": "2026-12-07T11:00",
         "end": "2026-12-07T13:00",
         "name": "Shinny Hockey",
@@ -203,7 +217,7 @@
         "ticket": 5.15
       },
       {
-        "id": "b0bd7bb5-d961-46fa-93e7-300ccab9054f",
+        "id": "b074345e-7eef-46c4-bc5f-4ed95f5307ac",
         "start": "2026-12-09T11:00",
         "end": "2026-12-09T13:00",
         "name": "Shinny Hockey",
@@ -211,7 +225,7 @@
         "ticket": 5.15
       },
       {
-        "id": "c8f3a0ad-6369-4f6a-9189-411ac90abbc4",
+        "id": "0eab242e-37c4-4e85-86d2-9333a9a02b0d",
         "start": "2026-12-11T11:00",
         "end": "2026-12-11T13:00",
         "name": "Shinny Hockey",
@@ -219,7 +233,7 @@
         "ticket": 5.15
       },
       {
-        "id": "c73347d2-3c3e-4b50-87f7-b6d629253647",
+        "id": "9078ebd0-6c4b-4f87-bd87-8aa5ca3d52d4",
         "start": "2026-12-14T11:00",
         "end": "2026-12-14T13:00",
         "name": "Shinny Hockey",
@@ -227,7 +241,7 @@
         "ticket": 5.15
       },
       {
-        "id": "42730b94-34f8-412b-a87d-64e272aa3cde",
+        "id": "7f716071-80eb-44da-aa84-a20251f44771",
         "start": "2026-12-16T11:00",
         "end": "2026-12-16T13:00",
         "name": "Shinny Hockey",
@@ -235,7 +249,7 @@
         "ticket": 5.15
       },
       {
-        "id": "7461bb4e-384e-4a55-a8d3-1f1975aa5253",
+        "id": "54d61a8c-fb87-4aec-a1cb-e2f1580d207a",
         "start": "2026-12-18T11:00",
         "end": "2026-12-18T13:00",
         "name": "Shinny Hockey",
@@ -243,7 +257,7 @@
         "ticket": 5.15
       },
       {
-        "id": "8d4d4b86-546a-46aa-b4c3-54b4adb74c60",
+        "id": "e570b858-d663-4a82-b12b-04cab5e57b3e",
         "start": "2026-12-20T14:30",
         "end": "2026-12-20T16:00",
         "name": "Parent & Child Skate",
@@ -251,7 +265,7 @@
         "ticket": 0
       },
       {
-        "id": "a0fe082e-6409-41cf-b1a8-6d55b9bb56e4",
+        "id": "e41a4752-a730-4620-9e72-aacda88a8bee",
         "start": "2026-12-20T16:00",
         "end": "2026-12-20T17:30",
         "name": "Parent & Child Stick & Puck",
@@ -259,7 +273,7 @@
         "ticket": 0
       },
       {
-        "id": "0b75c1d4-06de-4941-9936-56b29f3787f6",
+        "id": "206dd0e4-1a09-46d9-b12e-2e7224e585f9",
         "start": "2026-12-20T17:30",
         "end": "2026-12-20T19:30",
         "name": "Public Skate",

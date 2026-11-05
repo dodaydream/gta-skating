@@ -65,6 +65,7 @@ const en = {
     emptyProgramsFiltered: "No upcoming programs match your current filters.",
     showAllPrograms: "Show all programs",
     rinks: "Rinks",
+    reportRink: "Report an issue",
     share: "Share venue",
     shareText: "Skating schedule for {{name}}",
     shareCopied: "Link copied",

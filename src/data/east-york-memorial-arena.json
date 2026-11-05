@@ -7,20 +7,17 @@
     "lat": 43.697431,
     "lon": -79.315293
   },
+  "rinks": [
+    {
+      "name": "Ice Rink",
+      "type": "North American / NHL"
+    }
+  ],
   "schedule": {
-    "updatedAt": "2026-11-02T06:09:03.724Z",
+    "updatedAt": "2026-11-05T02:58:32.763Z",
     "programs": [
       {
-        "id": "2c9dbccd-0412-4549-99a6-77c9b4859ac5",
-        "start": "2026-11-02T13:30",
-        "end": "2026-11-02T15:00",
-        "name": "Leisure Skate: Older Adult",
-        "type": "Public Skate",
-        "notes": "60 years and over",
-        "ticket": 0
-      },
-      {
-        "id": "d1e175bd-cd5f-439d-91b9-5065df7744df",
+        "id": "fe19694d-a671-49d3-8914-4b262ab1602c",
         "start": "2026-11-05T13:30",
         "end": "2026-11-05T15:00",
         "name": "Leisure Skate: Older Adult",
@@ -29,7 +26,7 @@
         "ticket": 0
       },
       {
-        "id": "b5b86966-1ba4-4a7c-9cfa-d63f74183858",
+        "id": "ded629b5-a6e3-4338-a422-27d5c6e231a7",
         "start": "2026-11-08T12:00",
         "end": "2026-11-08T13:30",
         "name": "Leisure Skate",

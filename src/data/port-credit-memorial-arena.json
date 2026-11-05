@@ -7,11 +7,17 @@
     "lat": 43.552996,
     "lon": -79.589022
   },
+  "rinks": [
+    {
+      "name": "Port Credit Memorial Arena",
+      "type": "North American / NHL"
+    }
+  ],
   "schedule": {
-    "updatedAt": "2026-11-03T00:11:47.503Z",
+    "updatedAt": "2026-11-05T02:58:24.647Z",
     "programs": [
       {
-        "id": "6a046bd7-5c60-4408-b58e-b8df41de9201",
+        "id": "aa7e2aaa-811b-48ec-9116-c38035f1f1be",
         "start": "2026-11-06T11:00",
         "end": "2026-11-06T11:50",
         "name": "Hockey Stick & Puck (18+)",
@@ -19,7 +25,7 @@
         "ticket": 3.98
       },
       {
-        "id": "b2674068-5e0a-41d1-bbd4-634f0b272a3f",
+        "id": "d0009f63-bf00-42bc-9803-25e7d133f606",
         "start": "2026-11-06T12:00",
         "end": "2026-11-06T13:30",
         "name": "Fun Skate",
@@ -27,7 +33,7 @@
         "ticket": 4.61
       },
       {
-        "id": "fc46cc58-55c6-4b0e-b735-5ac9c25af128",
+        "id": "d458d13b-0951-440c-ba97-e315729a9eb9",
         "start": "2026-11-06T19:15",
         "end": "2026-11-06T20:45",
         "name": "Fun Skate",
@@ -35,7 +41,7 @@
         "ticket": 4.61
       },
       {
-        "id": "44db02b7-eb03-4a9b-b10f-db0110837ada",
+        "id": "5476927c-88fa-4633-b989-3559063e3eb8",
         "start": "2026-11-08T13:30",
         "end": "2026-11-08T15:00",
         "name": "Fun Skate",
@@ -43,7 +49,7 @@
         "ticket": 4.61
       },
       {
-        "id": "a3008013-709f-4cbe-badd-8cde620a7a91",
+        "id": "fd502d84-dfc8-4116-a95a-eb22a4756a76",
         "start": "2026-11-13T11:00",
         "end": "2026-11-13T11:50",
         "name": "Hockey Stick & Puck (18+)",
@@ -51,7 +57,7 @@
         "ticket": 3.98
       },
       {
-        "id": "81a51d4a-739c-4d10-9a07-186e4c893d7f",
+        "id": "31e981f3-7721-4521-ba92-8c07168cd51a",
         "start": "2026-11-13T12:00",
         "end": "2026-11-13T13:30",
         "name": "Fun Skate",
@@ -59,7 +65,7 @@
         "ticket": 4.61
       },
       {
-        "id": "983f6c9f-e369-46df-98c3-b3b6a3d26532",
+        "id": "b01dee4d-8e53-4b81-8d40-01b8f396e230",
         "start": "2026-11-13T19:15",
         "end": "2026-11-13T20:45",
         "name": "Fun Skate",
@@ -67,7 +73,7 @@
         "ticket": 4.61
       },
       {
-        "id": "ef8a522d-1b54-401e-bdba-08cd6df20af3",
+        "id": "9be8976f-0274-4114-8205-7207b9cf5fac",
         "start": "2026-11-15T13:30",
         "end": "2026-11-15T15:00",
         "name": "Fun Skate",
@@ -75,7 +81,7 @@
         "ticket": 4.61
       },
       {
-        "id": "bceb110f-c02b-4e25-b60c-017f56d0c1b3",
+        "id": "ca94353a-9877-42f4-b426-7a9c77acb490",
         "start": "2026-11-20T11:00",
         "end": "2026-11-20T11:50",
         "name": "Hockey Stick & Puck (18+)",
@@ -83,7 +89,7 @@
         "ticket": 3.98
       },
       {
-        "id": "aafa1066-9f41-4913-8105-1527e49dca91",
+        "id": "e651729b-56ca-41d8-9148-caf43f6d3ff6",
         "start": "2026-11-20T12:00",
         "end": "2026-11-20T13:30",
         "name": "Fun Skate",
@@ -91,7 +97,7 @@
         "ticket": 4.61
       },
       {
-        "id": "a62714bd-ac96-4e1f-a7ca-5c85a1847404",
+        "id": "9291c6ce-b3fa-4a3e-8016-b5a93fb37564",
         "start": "2026-11-20T19:15",
         "end": "2026-11-20T20:45",
         "name": "Fun Skate",
@@ -99,7 +105,7 @@
         "ticket": 4.61
       },
       {
-        "id": "91bc9406-618e-4851-a605-1d6dea9e3fc7",
+        "id": "fc5b352e-a5c5-4eeb-8be4-52d64fbbbd90",
         "start": "2026-11-22T13:30",
         "end": "2026-11-22T15:00",
         "name": "Fun Skate",
@@ -107,7 +113,7 @@
         "ticket": 4.61
       },
       {
-        "id": "f74ab4d3-2793-4984-8659-00ec3a2140b3",
+        "id": "6536c3de-d1db-449e-82a9-b03b033caa1f",
         "start": "2026-11-27T11:00",
         "end": "2026-11-27T11:50",
         "name": "Hockey Stick & Puck (18+)",
@@ -115,7 +121,7 @@
         "ticket": 3.98
       },
       {
-        "id": "cd957380-5d4a-427c-8b36-3c9b75c65f22",
+        "id": "bdbc2d17-dd65-43a4-b367-95321a9204d0",
         "start": "2026-11-27T12:00",
         "end": "2026-11-27T13:30",
         "name": "Fun Skate",
@@ -123,7 +129,7 @@
         "ticket": 4.61
       },
       {
-        "id": "eb75be66-0c18-402b-a730-8da3587eb07f",
+        "id": "2f44cc4d-3ace-4d7f-a163-cfd8b05937e5",
         "start": "2026-11-27T19:15",
         "end": "2026-11-27T20:45",
         "name": "Fun Skate",
@@ -131,7 +137,7 @@
         "ticket": 4.61
       },
       {
-        "id": "e91efbb2-ffa4-4ef9-8617-ca9cfdb8663c",
+        "id": "e46efc47-d35e-471d-9701-354405218a5c",
         "start": "2026-11-29T13:30",
         "end": "2026-11-29T15:00",
         "name": "Fun Skate",
@@ -139,7 +145,7 @@
         "ticket": 4.61
       },
       {
-        "id": "7c7c1c41-6529-40f8-baa9-05e9777cf343",
+        "id": "1314b293-dcef-4972-a71c-dcc08f7e7bd6",
         "start": "2026-12-04T11:00",
         "end": "2026-12-04T11:50",
         "name": "Hockey Stick & Puck (18+)",
@@ -147,7 +153,7 @@
         "ticket": 3.98
       },
       {
-        "id": "aa716e8e-54a8-4ca3-b087-7cfafd67787f",
+        "id": "ee4f7f2c-2806-4310-add8-55192c36407b",
         "start": "2026-12-04T12:00",
         "end": "2026-12-04T13:30",
         "name": "Fun Skate",
@@ -155,7 +161,7 @@
         "ticket": 4.61
       },
       {
-        "id": "14760e10-f53c-4ec7-935a-8819f7ebc68f",
+        "id": "d1f5bc47-10bc-4732-9c90-7d02eb01b0bc",
         "start": "2026-12-04T19:15",
         "end": "2026-12-04T20:45",
         "name": "Fun Skate",
@@ -163,7 +169,7 @@
         "ticket": 4.61
       },
       {
-        "id": "1a3885a7-81e0-486a-933c-d4a0f2c5ae40",
+        "id": "85da3d1e-6eb1-4dd4-868a-01da32f7dd7b",
         "start": "2026-12-06T13:30",
         "end": "2026-12-06T15:00",
         "name": "Fun Skate",
@@ -171,7 +177,7 @@
         "ticket": 4.61
       },
       {
-        "id": "aec79cfc-c1b5-4474-8c4e-77906586d5df",
+        "id": "122743a5-ebf5-4caa-bf3c-114f1420f7ba",
         "start": "2026-12-11T11:00",
         "end": "2026-12-11T11:50",
         "name": "Hockey Stick & Puck (18+)",
@@ -179,7 +185,7 @@
         "ticket": 3.98
       },
       {
-        "id": "8a3415d0-26a5-4abc-9e48-aa219afae85e",
+        "id": "810f2203-3d5f-4222-bb87-e631deec8def",
         "start": "2026-12-11T12:00",
         "end": "2026-12-11T13:30",
         "name": "Fun Skate",
@@ -187,7 +193,7 @@
         "ticket": 4.61
       },
       {
-        "id": "c8d1a818-4102-4f43-b6da-eccb44ebc181",
+        "id": "8a6dc88e-87d8-4ea4-ac99-632fe2c46048",
         "start": "2026-12-11T19:15",
         "end": "2026-12-11T20:45",
         "name": "Fun Skate",
@@ -195,7 +201,7 @@
         "ticket": 4.61
       },
       {
-        "id": "cef516e1-e1b9-4fd8-8736-f4a61e499696",
+        "id": "baf5d4b0-a6ec-44c3-9b0c-b8aa68492845",
         "start": "2026-12-13T13:30",
         "end": "2026-12-13T15:00",
         "name": "Free Fun Skate",
@@ -203,7 +209,7 @@
         "ticket": 0
       },
       {
-        "id": "0e1cd73e-b09f-401a-a3ce-3a7818623aa4",
+        "id": "76bb151d-1905-4ce3-bb39-f730b0fb1def",
         "start": "2026-12-18T11:00",
         "end": "2026-12-18T11:50",
         "name": "Hockey Stick & Puck (18+)",
@@ -211,7 +217,7 @@
         "ticket": 3.98
       },
       {
-        "id": "cbdb1c8a-2397-403a-9506-241cad52135f",
+        "id": "124bb34b-5a6d-4749-a19c-a76163ce2d1e",
         "start": "2026-12-18T12:00",
         "end": "2026-12-18T13:30",
         "name": "Fun Skate",
@@ -219,7 +225,7 @@
         "ticket": 4.61
       },
       {
-        "id": "ba4c6104-9141-42d8-b6d6-54cce183c217",
+        "id": "dd87fa59-509f-4635-b4af-254290fad768",
         "start": "2026-12-18T19:15",
         "end": "2026-12-18T20:45",
         "name": "Fun Skate",

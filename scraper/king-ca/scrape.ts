@@ -258,6 +258,7 @@ async function writeSchedule(
     timezone: TIMEZONE,
     address: venue.address,
     coordinates: venue.coordinates,
+    rinks: venue.rinks,
     schedule: {
       updatedAt: new Date().toISOString(),
       programs,

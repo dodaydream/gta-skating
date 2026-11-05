@@ -7,11 +7,17 @@
     "lat": 43.747437,
     "lon": -79.566545
   },
+  "rinks": [
+    {
+      "name": "Ice Rink",
+      "type": "North American / NHL"
+    }
+  ],
   "schedule": {
-    "updatedAt": "2026-11-02T06:09:04.203Z",
+    "updatedAt": "2026-11-05T02:58:33.047Z",
     "programs": [
       {
-        "id": "3d4b2e53-aeea-4f1b-8309-7ae78645db15",
+        "id": "af3757c2-cff2-4fbc-9d76-d3fa52ba99af",
         "start": "2026-11-04T16:30",
         "end": "2026-11-04T18:15",
         "name": "Shinny: Early Years with Caregiver",
@@ -20,7 +26,7 @@
         "ticket": 0
       },
       {
-        "id": "4a8e5801-c324-42dd-974f-d66f99fc927b",
+        "id": "014506b7-3405-4d3f-b319-e118cac2f3b4",
         "start": "2026-11-04T18:15",
         "end": "2026-11-04T20:15",
         "name": "Leisure Skate",
@@ -29,7 +35,7 @@
         "ticket": 0
       },
       {
-        "id": "55be4136-d0e3-4ee6-9724-421e18330572",
+        "id": "8feb4c5c-d978-4894-9312-80f6c5f9e3f8",
         "start": "2026-11-05T10:00",
         "end": "2026-11-05T12:00",
         "name": "Leisure Skate: Adult",
@@ -38,7 +44,7 @@
         "ticket": 0
       },
       {
-        "id": "e97e7cda-d031-40ed-9009-80ad32657997",
+        "id": "5bb49e2e-d8d5-44b3-bfdc-3581e7b77e2e",
         "start": "2026-11-07T15:30",
         "end": "2026-11-07T17:30",
         "name": "Leisure Skate",

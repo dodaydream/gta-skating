@@ -4,5 +4,14 @@
   "type": "Indoor",
   "url": "https://www.mattamyathleticcentre.ca/venue-info/community-skates",
   "address": "50 Carlton Street, Toronto, ON M5B 1J2",
-  "coordinates": { "lat": 43.662175, "lon": -79.380568 }
+  "coordinates": {
+    "lat": 43.662175,
+    "lon": -79.380568
+  },
+  "rinks": [
+    {
+      "name": "Mattamy Homes Home Ice",
+      "type": "North American / NHL"
+    }
+  ]
 }
