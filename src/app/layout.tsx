@@ -45,6 +45,10 @@ export const metadata: Metadata = {
     statusBarStyle: "default",
   },
   icons: {
+    icon: [
+      { url: "/icon.svg", type: "image/svg+xml" },
+      { url: "/icons/icon-192x192.png", type: "image/png", sizes: "192x192" },
+    ],
     apple: [
       { url: "/icons/icon-192x192.png", sizes: "192x192" },
       { url: "/icons/icon-512x512.png", sizes: "512x512" },
@@ -92,7 +96,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             async
             crossOrigin="anonymous"
             src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adsenseClient}`}
-            strategy="beforeInteractive"
+            strategy="afterInteractive"
           />
         ) : null}
         {gaId ? <GoogleAnalytics gaId={gaId} /> : null}
