@@ -13,11 +13,16 @@
       "type": "North American / NHL"
     }
   ],
+  "amenities": [
+    "wifi",
+    "dressing_rooms",
+    "lockers"
+  ],
   "schedule": {
-    "updatedAt": "2026-11-05T03:21:55.359Z",
+    "updatedAt": "2026-11-05T03:27:46.621Z",
     "programs": [
       {
-        "id": "a77e449a-c5e6-44a8-8a1e-40634a661aac",
+        "id": "4ebed1ac-f5b0-48e5-8fcb-87a056b52483",
         "start": "2026-11-04T10:00",
         "end": "2026-11-04T12:00",
         "name": "Leisure Skate: Adult",
@@ -26,7 +31,7 @@
         "ticket": 0
       },
       {
-        "id": "c4226dbc-d855-4c79-ae44-9c5f9aad75f9",
+        "id": "ea6b76e8-69f6-4e8f-8234-6761e3c5a7c9",
         "start": "2026-11-05T10:00",
         "end": "2026-11-05T12:00",
         "name": "Leisure Skate: Adult",
@@ -35,7 +40,7 @@
         "ticket": 0
       },
       {
-        "id": "2fb838c7-3735-4129-8f6f-bb4dfcbe0cf9",
+        "id": "8edde72b-b1f5-4ee5-89e9-ffd18353fdd2",
         "start": "2026-11-06T10:00",
         "end": "2026-11-06T12:00",
         "name": "Shinny: Child with Caregiver",
@@ -44,7 +49,7 @@
         "ticket": 0
       },
       {
-        "id": "36bf3913-fc06-4dcb-9d5e-e97f58915dd3",
+        "id": "dcdbd028-ae17-4188-a711-73ff2b91d999",
         "start": "2026-11-06T16:30",
         "end": "2026-11-06T17:45",
         "name": "Leisure Skate",
@@ -53,7 +58,7 @@
         "ticket": 0
       },
       {
-        "id": "66fb1023-da9f-4cdc-bb87-13e44efb52b4",
+        "id": "17230286-a225-4697-b491-2036d4f3ec67",
         "start": "2026-11-07T14:15",
         "end": "2026-11-07T15:30",
         "name": "Leisure Skate",
@@ -62,7 +67,7 @@
         "ticket": 0
       },
       {
-        "id": "74b1bf9c-dabd-4b65-9e1e-a04695715f69",
+        "id": "d884c86f-bc82-4e38-a725-63460e731616",
         "start": "2026-11-08T14:45",
         "end": "2026-11-08T16:45",
         "name": "Leisure Skate",

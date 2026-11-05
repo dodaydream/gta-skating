@@ -5,6 +5,7 @@
   "rinks": [
     { "name": "Ice Rink", "type": "North American / NHL" }
   ],
+  "amenities": ["wifi", "dressing_rooms", "lockers"],
   "address": "95 Black Creek Dr, Toronto, ON",
   "coordinates": {
     "lat": 43.68702,

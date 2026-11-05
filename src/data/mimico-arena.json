@@ -13,11 +13,16 @@
       "type": "North American / NHL"
     }
   ],
+  "amenities": [
+    "wifi",
+    "dressing_rooms",
+    "lockers"
+  ],
   "schedule": {
-    "updatedAt": "2026-11-05T03:21:58.156Z",
+    "updatedAt": "2026-11-05T03:27:48.925Z",
     "programs": [
       {
-        "id": "0d8358d2-6991-4f8b-8b33-ab1b4e1b137e",
+        "id": "033230a2-8398-4f2b-ad4b-39c15a0ce599",
         "start": "2026-11-04T11:45",
         "end": "2026-11-04T13:30",
         "name": "Leisure Skate: Adult (Unsupervised)",
@@ -26,7 +31,7 @@
         "ticket": 0
       },
       {
-        "id": "826ea188-5772-4f79-9685-352e2f6b1afe",
+        "id": "cd02daec-e824-41cd-9bf4-691d58ce0916",
         "start": "2026-11-05T10:00",
         "end": "2026-11-05T11:30",
         "name": "Leisure Skate: Adult (Unsupervised)",
@@ -35,7 +40,7 @@
         "ticket": 0
       },
       {
-        "id": "315d743e-eb1d-43bb-86b2-4888c8f287a4",
+        "id": "9fdeb7c5-08fd-4571-82bd-067c157161e1",
         "start": "2026-11-06T10:00",
         "end": "2026-11-06T11:30",
         "name": "Leisure Skate: Adult (Unsupervised)",
@@ -44,7 +49,7 @@
         "ticket": 0
       },
       {
-        "id": "47fb0662-9bba-4d4b-a60f-7785959e989f",
+        "id": "f2056cea-22f9-4289-859f-1a57e2ce8463",
         "start": "2026-11-06T11:45",
         "end": "2026-11-06T12:45",
         "name": "Leisure Skate",
@@ -53,7 +58,7 @@
         "ticket": 0
       },
       {
-        "id": "57ccdfc6-67ff-4f48-9ca8-99a09d2f7d60",
+        "id": "bced5ce3-4787-485d-8d2e-86f0ffcc009c",
         "start": "2026-11-06T18:15",
         "end": "2026-11-06T19:45",
         "name": "Leisure Skate",
@@ -62,7 +67,7 @@
         "ticket": 0
       },
       {
-        "id": "60c6c752-a220-4c11-8e8b-f4b76afd9f1f",
+        "id": "f9a57611-3887-48ed-ab57-d278881aea49",
         "start": "2026-11-07T13:00",
         "end": "2026-11-07T14:00",
         "name": "Leisure Skate",
@@ -71,7 +76,7 @@
         "ticket": 0
       },
       {
-        "id": "e344c70b-5cea-4f5a-8e3e-cb361d23e5ab",
+        "id": "6b2d8054-54fb-4e72-a87f-e0ec7eccb1e5",
         "start": "2026-11-08T15:15",
         "end": "2026-11-08T16:45",
         "name": "Leisure Skate",

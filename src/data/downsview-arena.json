@@ -13,11 +13,16 @@
       "type": "North American / NHL"
     }
   ],
+  "amenities": [
+    "wifi",
+    "dressing_rooms",
+    "lockers"
+  ],
   "schedule": {
-    "updatedAt": "2026-11-05T03:21:56.348Z",
+    "updatedAt": "2026-11-05T03:27:47.671Z",
     "programs": [
       {
-        "id": "68a64164-24f0-4c3f-9083-058a87b9726e",
+        "id": "ad016b9c-8fe9-41ff-ac53-0aa0664cfe0c",
         "start": "2026-11-04T19:15",
         "end": "2026-11-04T21:15",
         "name": "Leisure Skate",
@@ -26,7 +31,7 @@
         "ticket": 0
       },
       {
-        "id": "8f9ecfc0-9878-48fc-b740-6ac35054bece",
+        "id": "c8e5386b-6ef0-4cd8-aaa4-97388076fe6f",
         "start": "2026-11-07T19:00",
         "end": "2026-11-07T21:00",
         "name": "Leisure Skate",
@@ -35,7 +40,7 @@
         "ticket": 0
       },
       {
-        "id": "e3f1fb14-4281-46f8-a85a-a7089d63d14a",
+        "id": "7915e684-e091-473f-8ea7-afc40d7d657b",
         "start": "2026-11-08T14:45",
         "end": "2026-11-08T15:30",
         "name": "Leisure Skate: Child with Caregiver",
@@ -44,7 +49,7 @@
         "ticket": 0
       },
       {
-        "id": "5ecdf62a-e413-414c-87d3-0d1fc5c052f5",
+        "id": "905c9d39-bf90-479f-9e9b-a50506bb443d",
         "start": "2026-11-08T15:30",
         "end": "2026-11-08T17:00",
         "name": "Leisure Skate",

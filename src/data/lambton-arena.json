@@ -5,6 +5,7 @@
   "rinks": [
     { "name": "Ice Rink", "type": "North American / NHL" }
   ],
+  "amenities": ["wifi", "dressing_rooms", "lockers"],
   "address": "4100 Dundas St W, Toronto, ON",
   "coordinates": {
     "lat": 43.664913,

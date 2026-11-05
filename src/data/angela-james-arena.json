@@ -13,11 +13,16 @@
       "type": "North American / NHL"
     }
   ],
+  "amenities": [
+    "wifi",
+    "dressing_rooms",
+    "lockers"
+  ],
   "schedule": {
-    "updatedAt": "2026-11-05T03:21:55.484Z",
+    "updatedAt": "2026-11-05T03:27:46.810Z",
     "programs": [
       {
-        "id": "2284c755-b956-4524-8518-84fd75713c50",
+        "id": "ad00e04b-8354-4b2e-bb25-114b32dc17ad",
         "start": "2026-11-07T17:00",
         "end": "2026-11-07T19:00",
         "name": "Leisure Skate",
@@ -26,7 +31,7 @@
         "ticket": 0
       },
       {
-        "id": "69f2f92d-37f2-49bf-88cf-f9373a850a2c",
+        "id": "013baf44-8e9a-4558-b7df-b5a957e4d01d",
         "start": "2026-11-08T13:00",
         "end": "2026-11-08T15:00",
         "name": "Leisure Skate",
