@@ -9,6 +9,8 @@ export interface FetchProgramsQuery {
   types?: ProgramType[];
   amenities?: string[];
   bounds?: MapBounds | null;
+  favoritesOnly?: boolean;
+  favoriteSlugs?: readonly string[];
 }
 
 export interface FetchProgramsResult {
@@ -49,8 +51,17 @@ export async function fetchPrograms(
   const matchesAmenities = (venue: Venue) =>
     amenities.length === 0 ||
     amenities.every((a) => (venue.amenities ?? []).includes(a));
-  const { venues: scheduleVenues } = await import("@/data/schedules");
-  const allVenues = scheduleVenues.filter(matchesAmenities);
+  const favoriteSet = query.favoritesOnly
+    ? new Set(query.favoriteSlugs ?? [])
+    : null;
+  const { venues: scheduleVenues, getSlugForVenue } = await import(
+    "@/data/schedules"
+  );
+  const allVenues = scheduleVenues
+    .filter(matchesAmenities)
+    .filter(
+      (venue) => !favoriteSet || favoriteSet.has(getSlugForVenue(venue.name))
+    );
 
   const matches: ProgramItem[] = [];
   for (const venue of allVenues) {

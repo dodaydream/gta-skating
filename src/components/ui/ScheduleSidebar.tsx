@@ -18,8 +18,6 @@ import {
 type ScheduleSidebarProps = {
   loading: boolean;
   items: ProgramItem[];
-  hideEmpty: boolean;
-  onHideEmptyChange: (value: boolean) => void;
   userLocation?: { lat: number; lon: number } | null;
   onSelectVenue: (venue: Venue) => void;
   detailOpen: boolean;

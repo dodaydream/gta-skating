@@ -76,19 +76,24 @@ test.describe("schedule filters", () => {
     expect(expected).toBeLessThanOrEqual(allPrograms);
   });
 
-  test("hide-empty toggle flips its label", async ({ page }) => {
+  test("venue display toggle cycles through the three modes", async ({
+    page,
+  }) => {
     await openDensestDay(page);
 
-    const showAll = page.getByRole("button", { name: "Show all venues" });
-    await expect(showAll).toBeVisible();
-    await showAll.click();
+    const toggle = page.locator('[data-slot="venue-display"]');
+    await expect(toggle).toHaveAttribute("aria-label", "Arenas with programs");
 
-    const hideEmpty = page.getByRole("button", {
-      name: "Hide venues without programs",
-    });
-    await expect(hideEmpty).toBeVisible();
-    await hideEmpty.click();
+    await toggle.click();
+    await expect(toggle).toHaveAttribute("aria-label", "All arenas");
 
-    await expect(page.getByRole("button", { name: "Show all venues" })).toBeVisible();
+    await toggle.click();
+    await expect(toggle).toHaveAttribute(
+      "aria-label",
+      "Favourite venues only"
+    );
+
+    await toggle.click();
+    await expect(toggle).toHaveAttribute("aria-label", "Arenas with programs");
   });
 });

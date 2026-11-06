@@ -40,6 +40,7 @@ import { TicketBadge } from "@/components/schedule/TicketBadge";
 import { BusyBadge } from "@/components/schedule/BusyBadge";
 import { BusynessInput } from "@/components/schedule/BusynessInput";
 import { trackEvent } from "@/lib/analytics";
+import { toggleFavorite, useFavorites } from "@/lib/favorites";
 import { amenityIcon } from "@/lib/amenities";
 import { SITE_REPO } from "@/lib/site";
 import { normalizeLocale } from "@/i18n/config";
@@ -48,6 +49,8 @@ import {
   IconCheck,
   IconShare2,
   IconSnowflake,
+  IconStar,
+  IconStarFilled,
   IconX,
 } from "@tabler/icons-react";
 import {
@@ -312,6 +315,46 @@ function ShareButton({
   );
 }
 
+function FavouriteButton({
+  slug,
+  className,
+}: {
+  slug: string;
+  className?: string;
+}) {
+  const { t } = useTranslation();
+  const favorites = useFavorites();
+  const favorite = favorites.includes(slug);
+
+  return (
+    <button
+      type="button"
+      onClick={() => {
+        toggleFavorite(slug);
+        trackEvent(favorite ? "venue_unfavorite" : "venue_favorite", {
+          venue: slug,
+        });
+      }}
+      aria-pressed={favorite}
+      aria-label={favorite ? t("venue.unfavorite") : t("venue.favorite")}
+      title={favorite ? t("venue.unfavorite") : t("venue.favorite")}
+      className={cn(
+        "rounded-lg p-1.5 transition-colors hover:bg-zinc-100 dark:hover:bg-zinc-800",
+        favorite
+          ? "text-amber-500 hover:text-amber-600 dark:hover:text-amber-400"
+          : "text-zinc-500 hover:text-black dark:hover:text-zinc-50",
+        className
+      )}
+    >
+      {favorite ? (
+        <IconStarFilled className="h-5 w-5" />
+      ) : (
+        <IconStar className="h-5 w-5" />
+      )}
+    </button>
+  );
+}
+
 export function VenueDetailModal({
   slug,
   onClose,
@@ -516,6 +559,7 @@ export function VenueDetailModal({
             </PanelDescription>
           </div>
           <div className="flex items-center gap-1">
+            <FavouriteButton slug={slug} />
             <ShareButton slug={slug} name={venue.name} />
             <CloseButton onClick={onClose} />
           </div>

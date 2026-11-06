@@ -21,6 +21,10 @@ interface VenueMapProps {
   userLocation?: { lat: number; lon: number } | null;
   locateRef: React.MutableRefObject<(() => void) | null>;
   focusVenue?: { lat: number; lon: number } | null;
+  // When set (favourites-only filter), the map scales to fit these [lng, lat]
+  // points. Changes are keyed by the point set, so panning is preserved until
+  // the set itself changes.
+  fitTo?: [number, number][] | null;
 }
 
 const LIGHT_STYLE = "https://tiles.openfreemap.org/styles/liberty";
@@ -71,6 +75,20 @@ function offsetForDrawer(
 
 function isMobileViewport(): boolean {
   return typeof window !== "undefined" && window.innerWidth < DESKTOP_WIDTH;
+}
+
+// Padding used when fitting the camera to a set of venues: keep markers clear
+// of the floating filter bar at the top and, on mobile, of the list drawer at
+// the bottom.
+function fitPadding(map: maplibregl.Map): maplibregl.PaddingOptions {
+  const horizontal = 48;
+  const top = 80;
+  if (isMobileViewport()) {
+    const bottom =
+      Math.max(0, map.getCanvas().clientHeight - visibleMapHeight(map)) + 24;
+    return { top, bottom, left: horizontal, right: horizontal };
+  }
+  return { top, bottom: 48, left: horizontal, right: horizontal };
 }
 
 function createMarkerElement(
@@ -331,12 +349,14 @@ export default function VenueMap({
   userLocation,
   locateRef,
   focusVenue,
+  fitTo,
 }: VenueMapProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<maplibregl.Map | null>(null);
   const markersRef = useRef<maplibregl.Marker[]>([]);
   const userMarkerRef = useRef<maplibregl.Marker | null>(null);
   const centeredOnUserRef = useRef(false);
+  const fitSignatureRef = useRef<string | null>(null);
   const boundsTrackTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const appliedStyleRef = useRef<string | null>(null);
   const [dark, setDark] = useState(() => isDarkMode());
@@ -584,6 +604,38 @@ export default function VenueMap({
       zoom: DEFAULT_ZOOM,
     });
   }, [focusVenue, mapReady]);
+
+  useEffect(() => {
+    const map = mapRef.current;
+    if (!map || !mapReady) return;
+    if (!fitTo || fitTo.length === 0) {
+      fitSignatureRef.current = null;
+      return;
+    }
+    const signature = fitTo.map((p) => `${p[0]},${p[1]}`).join(";");
+    if (fitSignatureRef.current === signature) return;
+    fitSignatureRef.current = signature;
+
+    // Fitting to the favourites takes the camera, so suppress the one-shot
+    // user-location centering that may still be pending.
+    centeredOnUserRef.current = true;
+
+    if (fitTo.length === 1) {
+      map.easeTo({
+        center: offsetForDrawer(map, fitTo[0]),
+        zoom: DEFAULT_ZOOM,
+        duration: 600,
+      });
+      return;
+    }
+    const bounds = new maplibregl.LngLatBounds(fitTo[0], fitTo[0]);
+    for (const point of fitTo) bounds.extend(point);
+    map.fitBounds(bounds, {
+      padding: fitPadding(map),
+      maxZoom: DEFAULT_ZOOM,
+      duration: 800,
+    });
+  }, [fitTo, mapReady]);
 
   return (
     <div

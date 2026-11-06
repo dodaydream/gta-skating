@@ -7,6 +7,7 @@ import type { TFunction } from "i18next";
 import { useTranslation } from "react-i18next";
 import type { DateRange } from "react-day-picker";
 import type { ProgramType } from "@/types/schedule";
+import type { VenueDisplay } from "@/types/venue";
 import { Button } from "@/components/ui/button";
 import { DateRangePicker } from "@/components/ui/date-picker";
 import { FiltersControl } from "@/components/ui/FiltersControl";
@@ -17,6 +18,7 @@ import {
   IconCalendar,
   IconEyeFilled,
   IconEyeOff,
+  IconStarFilled,
 } from "@tabler/icons-react";
 
 interface FilterChipsProps {
@@ -25,8 +27,8 @@ interface FilterChipsProps {
   onFromChange: (v: string) => void;
   onToChange: (v: string) => void;
   onClear: () => void;
-  hideEmpty: boolean;
-  onHideEmptyChange: (v: boolean) => void;
+  venueDisplay: VenueDisplay;
+  onVenueDisplayChange: (venueDisplay: VenueDisplay) => void;
   types: ProgramType[];
   onTypesChange: (types: ProgramType[]) => void;
   amenities: string[];
@@ -43,6 +45,22 @@ interface FilterChipsProps {
  * endpoints, so seven inclusive days corresponds to a difference of six.
  */
 const MAX_RANGE_DAYS = 7;
+
+const VENUE_DISPLAY_OPTIONS: { value: VenueDisplay; labelKey: string }[] = [
+  { value: "favorites", labelKey: "filters.favoritesOnly" },
+  { value: "withPrograms", labelKey: "filters.withPrograms" },
+  { value: "all", labelKey: "filters.allVenues" },
+];
+
+function VenueDisplayIcon({ value }: { value: VenueDisplay }) {
+  if (value === "favorites") {
+    return <IconStarFilled className="size-4 text-amber-500" />;
+  }
+  if (value === "withPrograms") {
+    return <IconEyeOff className="size-4" />;
+  }
+  return <IconEyeFilled className="size-4 text-blue-500" />;
+}
 
 function parseDate(value: string): Date | undefined {
   if (!value) return undefined;
@@ -109,8 +127,8 @@ export function FilterChips({
   onFromChange,
   onToChange,
   onClear,
-  hideEmpty,
-  onHideEmptyChange,
+  venueDisplay,
+  onVenueDisplayChange,
   types,
   onTypesChange,
   amenities,
@@ -125,6 +143,12 @@ export function FilterChips({
   const [open, setOpen] = useState(false);
   const [now, setNow] = useState<Date | null>(null);
   const active = Boolean(from || to);
+
+  const venueDisplayIndex = VENUE_DISPLAY_OPTIONS.findIndex(
+    (option) => option.value === venueDisplay
+  );
+  const currentVenueDisplay =
+    VENUE_DISPLAY_OPTIONS[venueDisplayIndex] ?? VENUE_DISPLAY_OPTIONS[0];
 
   const fromDate = parseDate(from);
   const toDate = parseDate(to);
@@ -268,16 +292,18 @@ export function FilterChips({
         variant="secondary"
         size="icon-lg"
         className="shadow-xs"
-        aria-pressed={!hideEmpty}
-        aria-label={hideEmpty ? t("filters.showAll") : t("filters.hideEmpty")}
-        title={hideEmpty ? t("filters.showAll") : t("filters.hideEmpty")}
-        onClick={() => onHideEmptyChange(!hideEmpty)}
+        data-slot="venue-display"
+        aria-label={t(currentVenueDisplay.labelKey)}
+        title={t(currentVenueDisplay.labelKey)}
+        onClick={() => {
+          const next =
+            VENUE_DISPLAY_OPTIONS[
+              (venueDisplayIndex + 1) % VENUE_DISPLAY_OPTIONS.length
+            ];
+          onVenueDisplayChange(next.value);
+        }}
       >
-        {hideEmpty ? (
-          <IconEyeOff className="size-4" />
-        ) : (
-          <IconEyeFilled className="size-4 text-blue-500" />
-        )}
+        <VenueDisplayIcon value={currentVenueDisplay.value} />
       </Button>
     </div>
   );

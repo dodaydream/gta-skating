@@ -25,3 +25,6 @@ export interface Venue {
   amenities?: string[];
   schedule: Schedule;
 }
+
+/** Which venues the schedule list and map should show. */
+export type VenueDisplay = "favorites" | "withPrograms" | "all";
