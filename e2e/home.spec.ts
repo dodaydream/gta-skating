@@ -2,8 +2,8 @@ import { expect, test } from "./fixtures";
 import {
   addDays,
   countInRange,
-  densestDay,
   freezeToDay,
+  lastProgramDay,
   loadVenues,
   openDensestDay,
   programCount,
@@ -83,7 +83,7 @@ test.describe("home schedule", () => {
 
   test("shows the empty state when no program falls in the range", async ({ page }) => {
     const venues = loadVenues();
-    await freezeToDay(page, addDays(densestDay(venues), 60));
+    await freezeToDay(page, addDays(lastProgramDay(venues), 30));
     await page.goto("/");
 
     await expect.poll(() => programCount(page)).toBe(0);

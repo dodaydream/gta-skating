@@ -3,8 +3,8 @@
  *
  * Fetches the KPE drop-in ice page, reads the weekly schedule table for the
  * Varsity Centre arena, expands it into explicit dated events for the season,
- * and writes the result to src/data/varsity-centre-arena.json in the shape
- * consumed by src/data/schedule.ts.
+ * and writes the result to out/scraped-data/varsity-centre-arena.json in the shape
+ * consumed by scraper/build-client-data.ts.
  *
  * Venue metadata lives in ./meta.json (generic, reusable). Anything specific to
  * this crawl (timezone, season window) is kept here so meta.json stays metadata
@@ -23,7 +23,7 @@ import { ProgramType } from "../types.ts";
 import { classifyProgram } from "../classify.ts";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const OUT_DIR = path.resolve(__dirname, "../../src/data");
+const OUT_DIR = path.resolve(__dirname, "../../out/scraped-data");
 
 // --- Crawl settings (specific to this venue) ----------------------------
 

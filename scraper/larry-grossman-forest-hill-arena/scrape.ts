@@ -4,8 +4,8 @@
  * Fetches the venue's Elementor/WordPress recreational-skating page, extracts
  * the recurring weekly "Pleasure Skating" hours, expands them into explicit
  * dated events for the season, and writes the result to
- * src/data/larry-grossman-forest-hill-arena.json in the shape consumed by
- * src/data/schedule.ts.
+ * out/scraped-data/larry-grossman-forest-hill-arena.json in the shape consumed by
+ * scraper/build-client-data.ts.
  *
  * Venue metadata lives in ./meta.json (generic, reusable). Anything specific to
  * this crawl (season window, timezone, walk-in price) is kept here so meta.json
@@ -23,7 +23,7 @@ import { normalizeRinkType } from "../types.ts";
 import { classifyProgram } from "../classify.ts";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const OUT_DIR = path.resolve(__dirname, "../../src/data");
+const OUT_DIR = path.resolve(__dirname, "../../out/scraped-data");
 
 // --- Crawl settings (specific to this venue) ----------------------------
 

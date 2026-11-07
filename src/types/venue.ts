@@ -31,5 +31,17 @@ export interface Venue {
   schedule: Schedule;
 }
 
+/**
+ * Venue facts without the (large, separately fetched) program schedule. This is
+ * the shape baked into the client bundle for slug/coordinate lookups; the
+ * program schedule is loaded on demand and merged back into a full {@link Venue}.
+ */
+export type VenueMeta = Omit<Venue, "schedule"> & {
+  /** Stable id (UUID) used to join programs to their venue. */
+  id: string;
+  /** ISO timestamp of the last schedule update, kept for display/metadata. */
+  updatedAt: string;
+};
+
 /** Which venues the schedule list and map should show. */
 export type VenueDisplay = "favorites" | "withPrograms" | "all";

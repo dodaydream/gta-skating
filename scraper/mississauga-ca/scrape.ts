@@ -13,8 +13,8 @@
  * `activity_category_ids: [52]` is the Skating category, so the response holds
  * every skating drop-in (public/fun skate, shinny, stick & puck, figure skating
  * and skate fit) at the centers listed in ./meta.json, grouped by center. Each
- * center with data is written to src/data/<slug>.json in the shape consumed by
- * src/data/schedules.ts; centers with no data in the window are skipped so we
+ * center with data is written to out/scraped-data/<slug>.json in the shape consumed by
+ * scraper/build-client-data.ts; centers with no data in the window are skipped so we
  * never emit an empty schedule.
  *
  * Ticket prices come from the published 2026 admission rates (effective
@@ -35,7 +35,7 @@ import { classifyProgram } from "../classify.ts";
 import { slugify } from "../../src/lib/slug.ts";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const OUT_DIR = path.resolve(__dirname, "../../src/data");
+const OUT_DIR = path.resolve(__dirname, "../../out/scraped-data");
 
 const TIMEZONE = "America/Toronto";
 

@@ -13,7 +13,7 @@
  *
  * The skating calendar holds public/family/adult skates, parent-and-tot,
  * shinny and stick & puck, grouped by center.  Each center with data is written
- * to src/data/<slug>.json in the shape consumed by src/data/schedules.ts;
+ * to out/scraped-data/<slug>.json in the shape consumed by scraper/build-client-data.ts;
  * centers with no data in the window are skipped so we never emit an empty
  * schedule.
  *
@@ -35,7 +35,7 @@ import { classifyProgram } from "../classify.ts";
 import { slugify } from "../../src/lib/slug.ts";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const OUT_DIR = path.resolve(__dirname, "../../src/data");
+const OUT_DIR = path.resolve(__dirname, "../../out/scraped-data");
 
 const TIMEZONE = "America/Toronto";
 

@@ -21,13 +21,61 @@ export interface VenueData {
   schedule: { updatedAt: string; programs: ProgramData[] };
 }
 
-const DATA_DIR = resolve(process.cwd(), "src/data");
+const META_FILE = resolve(process.cwd(), "src/data/generated/venue-meta.json");
+const SHARDS_DIR = resolve(process.cwd(), "public/data");
+const SHARD_PATTERN = /^programs-\d{4}-\d{2}\.json$/;
 
-/** Read the scraped venue JSON that the app serves from `src/data`. */
+interface VenueMetaFile {
+  months: string[];
+  venues: {
+    id: string;
+    name: string;
+    url?: string;
+    timezone: string;
+    address: string;
+    coordinates?: { lat: number; lon: number };
+    updatedAt: string;
+  }[];
+}
+
+/**
+ * Reconstruct the venue data the app serves from the committed generated
+ * artifacts (baked metadata + monthly program shards), mirroring
+ * `src/data/schedules.ts`. The raw per-venue scraped JSON is not committed.
+ */
 export function loadVenues(): VenueData[] {
-  return readdirSync(DATA_DIR)
-    .filter((file) => file.endsWith(".json"))
-    .map((file) => JSON.parse(readFileSync(resolve(DATA_DIR, file), "utf8")) as VenueData);
+  const meta = JSON.parse(readFileSync(META_FILE, "utf8")) as VenueMetaFile;
+
+  const byId = new Map<string, ProgramData[]>();
+  const seen = new Set<string>();
+  for (const file of readdirSync(SHARDS_DIR)) {
+    if (!SHARD_PATTERN.test(file)) continue;
+    const rows = JSON.parse(
+      readFileSync(resolve(SHARDS_DIR, file), "utf8")
+    ) as (ProgramData & { venueId: string })[];
+    for (const row of rows) {
+      if (seen.has(row.id)) continue;
+      seen.add(row.id);
+      let list = byId.get(row.venueId);
+      if (!list) {
+        list = [];
+        byId.set(row.venueId, list);
+      }
+      list.push(row);
+    }
+  }
+
+  return meta.venues.map((venue) => ({
+    name: venue.name,
+    url: venue.url,
+    timezone: venue.timezone,
+    address: venue.address,
+    coordinates: venue.coordinates,
+    schedule: {
+      updatedAt: venue.updatedAt,
+      programs: byId.get(venue.id) ?? [],
+    },
+  }));
 }
 
 export function slugify(name: string): string {
@@ -68,6 +116,12 @@ export function densestDay(venues: VenueData[]): string {
   }
   const [day] = [...counts.entries()].sort((a, b) => b[1] - a[1])[0];
   return day;
+}
+
+/** The latest calendar day that has any program, so "empty" ranges are truly empty. */
+export function lastProgramDay(venues: VenueData[]): string {
+  const days = allPrograms(venues).map((program) => program.start.slice(0, 10));
+  return days.sort()[days.length - 1];
 }
 
 /** The most common program type, used to keep filtered result sets non-empty. */

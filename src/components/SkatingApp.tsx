@@ -15,7 +15,7 @@ import { VenueDetailModal } from "@/components/schedule/VenueDetailModal";
 import { fetchPrograms } from "@/api/programs";
 import { trackEvent } from "@/lib/analytics";
 import { useFavorites } from "@/lib/favorites";
-import { getVenueBySlug, getSlugForVenue } from "@/data/schedules";
+import { getVenueBySlug, getSlugForVenue } from "@/data/venue-meta";
 
 const VenueMap = dynamic(() => import("@/components/map/VenueMap"), {
   ssr: false,

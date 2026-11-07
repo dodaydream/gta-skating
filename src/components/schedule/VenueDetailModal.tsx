@@ -7,6 +7,7 @@ import type { InfoItem, Rink, Venue } from "@/types/venue";
 import type { Program, ProgramType } from "@/types/schedule";
 import type { BusyReport } from "@/types/feedback";
 import { fetchVenueDetails } from "@/api/venues";
+import { getVenueBySlug } from "@/data/venue-meta";
 import { loadVenueReports } from "@/api/busyness";
 import { isFirebaseConfigured } from "@/lib/firebase";
 import { predictBusy } from "@/lib/feedback";
@@ -395,7 +396,7 @@ export function VenueDetailModal({
 
   useEffect(() => {
     let cancelled = false;
-    fetchVenueDetails(slug)
+    fetchVenueDetails(slug, { from: filterFrom, to: filterTo })
       .then((data) => {
         if (cancelled) return;
         setVenue(data);
@@ -415,7 +416,7 @@ export function VenueDetailModal({
         trackEvent("arena_detail_close", { arena_name: slug });
       }
     };
-  }, [slug]);
+  }, [slug, filterFrom, filterTo]);
 
   const reloadReports = useCallback(() => {
     if (!FIREBASE_CONFIGURED) return;
@@ -483,6 +484,7 @@ export function VenueDetailModal({
   }
 
   if (!venue) {
+    const meta = getVenueBySlug(slug);
     return (
       <Panel
         isDesktop={isDesktop}
@@ -491,6 +493,8 @@ export function VenueDetailModal({
           <VenueDetailSkeletonHeader
             isDesktop={isDesktop}
             onClose={onClose}
+            name={meta?.name}
+            address={meta?.address}
           />
         }
       >
@@ -854,19 +858,38 @@ function AmenitiesSection({ amenities }: { amenities?: string[] }) {
 function VenueDetailSkeletonHeader({
   isDesktop,
   onClose,
+  name,
+  address,
 }: {
   isDesktop: boolean;
   onClose: () => void;
+  name?: string;
+  address?: string;
 }) {
   const { t } = useTranslation();
   return (
     <header className="flex items-start justify-between gap-3 px-5 pt-5">
       <div className="flex flex-col gap-2">
-        <PanelTitle isDesktop={isDesktop} className="sr-only">
-          {t("venue.loading")}
-        </PanelTitle>
-        <div className="h-6 w-48 animate-pulse rounded bg-black/[.08] dark:bg-white/[.1]" />
-        <div className="h-4 w-64 animate-pulse rounded bg-black/[.06] dark:bg-white/[.08]" />
+        {name ? (
+          <>
+            <PanelTitle isDesktop={isDesktop} className="text-lg">
+              {name}
+            </PanelTitle>
+            {address ? (
+              <PanelDescription isDesktop={isDesktop}>{address}</PanelDescription>
+            ) : (
+              <div className="h-4 w-64 animate-pulse rounded bg-black/[.06] dark:bg-white/[.08]" />
+            )}
+          </>
+        ) : (
+          <>
+            <PanelTitle isDesktop={isDesktop} className="sr-only">
+              {t("venue.loading")}
+            </PanelTitle>
+            <div className="h-6 w-48 animate-pulse rounded bg-black/[.08] dark:bg-white/[.1]" />
+            <div className="h-4 w-64 animate-pulse rounded bg-black/[.06] dark:bg-white/[.08]" />
+          </>
+        )}
       </div>
       <CloseButton onClick={onClose} />
     </header>

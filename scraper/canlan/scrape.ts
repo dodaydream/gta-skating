@@ -18,8 +18,8 @@
  *      from its `summary`, its price from the home team's product, and its
  *      start/end are already in the venue's local time.
  *
- * Each venue with data is written to src/data/<slug>.json in the shape consumed
- * by src/data/schedules.ts; venues with no data in the window are skipped so we
+ * Each venue with data is written to out/scraped-data/<slug>.json in the shape consumed
+ * by scraper/build-client-data.ts; venues with no data in the window are skipped so we
  * never emit an empty schedule.
  *
  * Usage:  node scrape.ts
@@ -36,7 +36,7 @@ import { classifyProgram } from "../classify.ts";
 import { slugify } from "../../src/lib/slug.ts";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const OUT_DIR = path.resolve(__dirname, "../../src/data");
+const OUT_DIR = path.resolve(__dirname, "../../out/scraped-data");
 
 const TIMEZONE = "America/Toronto";
 

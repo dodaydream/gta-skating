@@ -3,8 +3,8 @@
  *
  * Fetches the venue's public-skating page, extracts the recurring weekly
  * programs, expands them into explicit dated events for the season, and writes
- * the result to src/data/bill-bolton-arena.json in the shape consumed by
- * src/data/schedule.ts.
+ * the result to out/scraped-data/bill-bolton-arena.json in the shape consumed by
+ * scraper/build-client-data.ts.
  *
  * Venue metadata lives in ./meta.json (generic, reusable). Anything specific to
  * this crawl (season window, timezone) is kept here so meta.json
@@ -28,7 +28,7 @@ import { normalizeRinkType } from "../types.ts";
 import { classifyProgram } from "../classify.ts";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const OUT_DIR = path.resolve(__dirname, "../../src/data");
+const OUT_DIR = path.resolve(__dirname, "../../out/scraped-data");
 
 // --- Crawl settings (specific to this venue) ----------------------------
 

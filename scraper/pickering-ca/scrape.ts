@@ -6,8 +6,8 @@
  * HTML table per arena listing the recurring weekly times, plus prose
  * cancellation dates.  We fetch the page, parse those tables and date ranges,
  * expand each weekly slot into explicit dated events for the season, drop the
- * published cancellation dates, and write src/data/<slug>.json in the shape
- * consumed by src/data/schedules.ts.
+ * published cancellation dates, and write out/scraped-data/<slug>.json in the shape
+ * consumed by scraper/build-client-data.ts.
  *
  * Any specific-to-this-crawl constants (page URL, shinny admission) live here
  * so meta.json stays metadata only.
@@ -31,7 +31,7 @@ import { classifyProgram } from "../classify.ts";
 import { slugify } from "../../src/lib/slug.ts";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const OUT_DIR = path.resolve(__dirname, "../../src/data");
+const OUT_DIR = path.resolve(__dirname, "../../out/scraped-data");
 
 const TIMEZONE = "America/Toronto";
 
@@ -369,7 +369,7 @@ async function main(): Promise<void> {
     written.push(venue.id);
     console.log(
       `[pickering-ca] ${venue.name}: ${programs.length} program(s) -> ` +
-        `src/data/${slugify(venue.name)}.json`
+        `out/scraped-data/${slugify(venue.name)}.json`
     );
   }
 

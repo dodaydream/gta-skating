@@ -3,8 +3,8 @@
  *
  * Fetches the venue's community-skates page, reads the published one-off
  * Community Skate dates, and writes the result to
- * src/data/mattamy-athletic-centre.json in the shape consumed by
- * src/data/schedule.ts.
+ * out/scraped-data/mattamy-athletic-centre.json in the shape consumed by
+ * scraper/build-client-data.ts.
  *
  * The page also lists a TMU student/faculty/staff skate, but that is limited to
  * the Toronto Metropolitan University community, so it is not a public drop-in
@@ -25,7 +25,7 @@ import { normalizeRinkType } from "../types.ts";
 import { classifyProgram } from "../classify.ts";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const OUT_DIR = path.resolve(__dirname, "../../src/data");
+const OUT_DIR = path.resolve(__dirname, "../../out/scraped-data");
 
 // --- Crawl settings (specific to this venue) ----------------------------
 

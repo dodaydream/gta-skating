@@ -14,7 +14,7 @@ import { classifyProgram } from "../classify.ts";
 import { slugify } from "../../src/lib/slug.ts";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const OUT_DIR = path.resolve(__dirname, "../../src/data");
+const OUT_DIR = path.resolve(__dirname, "../../out/scraped-data");
 
 const TIMEZONE = "America/Toronto";
 

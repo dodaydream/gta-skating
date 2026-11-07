@@ -52,6 +52,26 @@ function runVenue(id: string): Promise<Result> {
   });
 }
 
+/**
+ * Regenerate the client-facing artifacts (baked venue metadata + program
+ * shards) from the freshly scraped out/scraped-data JSON.
+ */
+function buildClientData(): Promise<number | null> {
+  const file = path.join(HERE, "build-client-data.ts");
+  return new Promise((resolve) => {
+    const child = spawn(process.execPath, [file], {
+      cwd: HERE,
+      env: process.env,
+      stdio: ["ignore", "inherit", "inherit"],
+    });
+    child.on("error", (err) => {
+      console.error(`[build-client-data] failed to start: ${err.message}`);
+      resolve(-1);
+    });
+    child.on("close", (code) => resolve(code));
+  });
+}
+
 async function main(): Promise<void> {
   const want = process.argv[2];
   let venues = await discoverVenues();
@@ -75,6 +95,13 @@ async function main(): Promise<void> {
     const ok = r.code === 0 ? "ok" : `failed (${r.code})`;
     console.log(`[${r.id}] ${ok}`);
   }
+
+  const buildCode = await buildClientData();
+  if (buildCode !== 0) {
+    console.error(`[build-client-data] failed (${buildCode}).`);
+    process.exitCode = 1;
+  }
+
   if (failures.length > 0) {
     console.error(`Scraped ${results.length} venue(s); ${failures.length} failed.`);
     process.exitCode = 1;

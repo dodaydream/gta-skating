@@ -9,7 +9,7 @@
  * January 1 and March 26".  We fetch the page, parse each arena's table, expand
  * every weekly slot into explicit dated events for the season window (from the
  * accordion heading), drop the published cancellation dates, and write
- * src/data/<slug>.json in the shape consumed by src/data/schedules.ts.
+ * out/scraped-data/<slug>.json in the shape consumed by scraper/build-client-data.ts.
  *
  * Admission is taken from the published Skating Fees section and keyed by
  * program name (see ticketFor).  Any specific-to-this-crawl constants (page
@@ -35,7 +35,7 @@ import { classifyProgram } from "../classify.ts";
 import { slugify } from "../../src/lib/slug.ts";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const OUT_DIR = path.resolve(__dirname, "../../src/data");
+const OUT_DIR = path.resolve(__dirname, "../../out/scraped-data");
 
 const TIMEZONE = "America/Toronto";
 
@@ -371,7 +371,7 @@ async function main(): Promise<void> {
     written.push(venue.id);
     console.log(
       `[whitby-ca] ${venue.name}: ${programs.length} program(s) -> ` +
-        `src/data/${slugify(venue.name)}.json`
+        `out/scraped-data/${slugify(venue.name)}.json`
     );
   }
 

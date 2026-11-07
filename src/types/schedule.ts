@@ -29,6 +29,14 @@ export interface ProgramItem extends Program {
   venue: import("./venue").Venue;
 }
 
+/**
+ * A program as stored in the fetched shards: flat, carrying the id of the venue
+ * it belongs to so it can be joined to venue metadata after loading.
+ */
+export interface VenueProgram extends Program {
+  venueId: string;
+}
+
 export interface Schedule {
   updatedAt: string;
   programs: Program[];

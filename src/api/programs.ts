@@ -1,6 +1,8 @@
-import type { RinkEnvironment, Venue } from "@/types/venue";
+import type { RinkEnvironment, Venue, VenueMeta } from "@/types/venue";
 import type { MapBounds } from "@/types/map";
 import type { Program, ProgramItem, ProgramType } from "@/types/schedule";
+import { getSlugForVenue, toVenue, venueMeta } from "@/data/venue-meta";
+import { loadProgramsForRange } from "@/api/program-shards";
 
 export interface FetchProgramsQuery {
   from: string;
@@ -49,22 +51,22 @@ export async function fetchPrograms(
   const matchesType = (program: Program) =>
     !typeFilter || typeFilter.has(program.type);
   const amenities = query.amenities ?? [];
-  const matchesAmenities = (venue: Venue) =>
+  const matchesAmenities = (venue: VenueMeta) =>
     amenities.length === 0 ||
     amenities.every((a) => (venue.amenities ?? []).includes(a));
   const rinkTypes = query.rinkTypes ?? [];
   // Venues without an explicit type default to indoor (only Toronto publishes
   // outdoor rinks; every other source we scrape is an indoor arena).
-  const matchesRinkType = (venue: Venue) =>
+  const matchesRinkType = (venue: VenueMeta) =>
     rinkTypes.length === 0 ||
     rinkTypes.includes(venue.type ?? "indoor");
   const favoriteSet = query.favoritesOnly
     ? new Set(query.favoriteSlugs ?? [])
     : null;
-  const { venues: scheduleVenues, getSlugForVenue } = await import(
-    "@/data/schedules"
-  );
-  const allVenues = scheduleVenues
+
+  const programsById = await loadProgramsForRange(from, to);
+
+  const allVenues = venueMeta
     .filter(matchesAmenities)
     .filter(matchesRinkType)
     .filter(
@@ -72,8 +74,12 @@ export async function fetchPrograms(
     );
 
   const matches: ProgramItem[] = [];
-  for (const venue of allVenues) {
-    for (const program of venue.schedule.programs) {
+  const venuesById = new Map<string, Venue>();
+  for (const meta of allVenues) {
+    const programs = programsById.get(meta.id) ?? [];
+    const venue = toVenue(meta, programs);
+    venuesById.set(meta.id, venue);
+    for (const program of programs) {
       if (matchesType(program) && inRange(program.start, program.end, from, to)) {
         matches.push({ ...program, venue });
       }
@@ -98,7 +104,10 @@ export async function fetchPrograms(
   };
   for (const item of matches) addVenue(item.venue);
   if (!hideEmpty) {
-    for (const venue of allVenues) addVenue(venue);
+    for (const meta of allVenues) {
+      const venue = venuesById.get(meta.id);
+      if (venue) addVenue(venue);
+    }
   }
 
   const items = bounds

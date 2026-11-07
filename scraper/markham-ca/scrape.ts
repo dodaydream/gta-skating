@@ -17,8 +17,8 @@
  * Every class carries its own Location, so the single feed is grouped by
  * location and matched to the venue list in ./meta.json (the venue list follows
  * the same shape as the other multi-venue scrapers).  Each venue with data is
- * written to src/data/<slug>.json in the shape consumed by
- * src/data/schedules.ts; venues with no data are skipped so we never emit an
+ * written to out/scraped-data/<slug>.json in the shape consumed by
+ * scraper/build-client-data.ts; venues with no data are skipped so we never emit an
  * empty schedule.
  *
  * The feed reports price as a range (e.g. "$0.00 - $13.45") whose maximum is
@@ -42,7 +42,7 @@ import { classifyProgram } from "../classify.ts";
 import { slugify } from "../../src/lib/slug.ts";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const OUT_DIR = path.resolve(__dirname, "../../src/data");
+const OUT_DIR = path.resolve(__dirname, "../../out/scraped-data");
 
 const TIMEZONE = "America/Toronto";
 

@@ -18,7 +18,7 @@ import {
 } from "@/components/ui/drawer";
 import { LanguageToggle } from "@/components/LanguageToggle";
 import { ThemeToggle } from "@/components/ThemeToggle";
-import { getVenueBySlug } from "@/data/schedules";
+import { getVenueBySlug } from "@/data/venue-meta";
 import { toggleFavorite, useFavorites } from "@/lib/favorites";
 import {
   IconInfoCircle,

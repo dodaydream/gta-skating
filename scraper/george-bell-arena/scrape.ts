@@ -3,8 +3,8 @@
  *
  * Fetches the venue's public-skating page, extracts the recurring weekly
  * programs, expands them into explicit dated events, and writes the result to
- * src/data/george-bell-arena.json in the shape consumed by
- * src/data/schedule.ts.
+ * out/scraped-data/george-bell-arena.json in the shape consumed by
+ * scraper/build-client-data.ts.
  *
  * Venue metadata lives in ./meta.json (generic, reusable). Anything specific to
  * this crawl (timezone) is kept here so meta.json stays metadata only.
@@ -21,7 +21,7 @@ import { normalizeRinkType } from "../types.ts";
 import { classifyProgram } from "../classify.ts";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const OUT_DIR = path.resolve(__dirname, "../../src/data");
+const OUT_DIR = path.resolve(__dirname, "../../out/scraped-data");
 
 // --- Crawl settings (specific to this venue) ----------------------------
 

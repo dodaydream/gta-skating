@@ -9,6 +9,7 @@
     "start": "npx serve@latest out",
     "lint": "eslint",
     "scrape": "node scraper/index.ts",
+    "build:data": "node scraper/build-client-data.ts",
     "scrape:check": "tsc --noEmit",
     "test:e2e": "playwright test",
     "test:e2e:ui": "playwright test --ui"

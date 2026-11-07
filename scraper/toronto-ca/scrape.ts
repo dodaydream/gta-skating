@@ -16,8 +16,8 @@
  * Each datastore row is one occurrence (`First Date` == `Last Date`), so no
  * recurrence expansion is needed.  Rows are grouped by `Location ID` and
  * matched to meta.json venues.  Every venue in meta.json is written to its own
- * output file at src/data/<slug>.json (the full slug of the venue name) in the
- * shape consumed by src/data/schedules.ts — including venues with no programs
+ * output file at out/scraped-data/<slug>.json (the full slug of the venue name) in the
+ * shape consumed by scraper/build-client-data.ts — including venues with no programs
  * right now, so the app can show "no upcoming sessions" instead of hiding them.
  *
  * Freshness: the Open Data dataset refreshes weekly (~1 day behind the City's
@@ -37,7 +37,7 @@ import { classifyProgram } from "../classify.ts";
 import { slugify } from "../../src/lib/slug.ts";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const OUT_DIR = path.resolve(__dirname, "../../src/data");
+const OUT_DIR = path.resolve(__dirname, "../../out/scraped-data");
 
 const TIMEZONE = "America/Toronto";
 

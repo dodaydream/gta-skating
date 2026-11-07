@@ -1,0 +1,4664 @@
+{
+  "months": [
+    "2026-11",
+    "2026-12",
+    "2027-01",
+    "2027-02",
+    "2027-03"
+  ],
+  "venues": [
+    {
+      "id": "2496772b-5a98-516e-a8ec-21d1d6aa77d6",
+      "name": "Agincourt Recreation Centre",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=523",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.788414,
+        "lon": -79.276293
+      },
+      "address": "31 Glen Watford Dr, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.930Z",
+      "type": "indoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-396-4037"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=523"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Ice Rink - 1",
+          "type": "North American / NHL"
+        },
+        {
+          "name": "Ice Rink - 2",
+          "type": "North American / NHL"
+        }
+      ],
+      "amenities": [
+        "wifi",
+        "dressing_rooms",
+        "lockers"
+      ]
+    },
+    {
+      "id": "16755d84-0727-5904-a5a3-85d89d7e08e6",
+      "name": "Al Palladini Community Centre",
+      "url": "https://vaughan.perfectmind.com/25076/Clients/BookMe4BookingPages/Classes?calendarId=84142d20-1da8-48ed-800d-31dc0c30121d&widgetId=dff88c8a-0b78-4a94-9dde-250040385300&embed=False",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.816528,
+        "lon": -79.597205
+      },
+      "address": "9201 Islington Ave., Woodbridge, ON L4L 1A7",
+      "updatedAt": "2026-11-05T02:58:41.309Z",
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Arena A (East)",
+          "type": "North American / NHL"
+        },
+        {
+          "name": "Arena B (West)",
+          "type": "North American / NHL"
+        }
+      ]
+    },
+    {
+      "id": "db1db5ee-eb78-5cb3-ab15-f6a8878c1079",
+      "name": "Albert Campbell Square",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=2155",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.772811,
+        "lon": -79.257241
+      },
+      "address": "150 Borough Dr, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.931Z",
+      "type": "outdoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=2155"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ],
+      "amenities": [
+        "wifi"
+      ]
+    },
+    {
+      "id": "f1a0a29c-5f93-5e20-a35c-1bd26388881d",
+      "name": "Albion Arena",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=800",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.739651,
+        "lon": -79.582815
+      },
+      "address": "1501 Albion Rd, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.932Z",
+      "type": "indoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-394-8690"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=800"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Ice Rink",
+          "type": "North American / NHL"
+        }
+      ],
+      "amenities": [
+        "wifi",
+        "dressing_rooms",
+        "lockers"
+      ]
+    },
+    {
+      "id": "66db04e4-f43a-5931-8835-26e659b37bf8",
+      "name": "Alexandra Park",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=31",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.6511,
+        "lon": -79.405042
+      },
+      "address": "275 Bathurst St, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.932Z",
+      "type": "outdoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-392-7686"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=31"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
+    },
+    {
+      "id": "4d2ae6b1-d61a-56ec-9352-6e6e2815f937",
+      "name": "Amesbury Sports Complex",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=480",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.705951,
+        "lon": -79.48716
+      },
+      "address": "155 Culford Rd, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.933Z",
+      "type": "indoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-395-6683"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=480"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Ice Rink",
+          "type": "North American / NHL"
+        }
+      ],
+      "amenities": [
+        "wifi",
+        "dressing_rooms",
+        "lockers"
+      ]
+    },
+    {
+      "id": "87f7880a-fb1e-5bcf-a43e-0f3935b59e5f",
+      "name": "Angela James Arena",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=582",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.713206,
+        "lon": -79.327599
+      },
+      "address": "165 Grenoble Dr, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.933Z",
+      "type": "indoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-395-7838"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=582"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Ice Rink",
+          "type": "North American / NHL"
+        }
+      ],
+      "amenities": [
+        "wifi",
+        "dressing_rooms",
+        "lockers"
+      ]
+    },
+    {
+      "id": "689de18e-3ccb-5fab-bd59-447af55dc860",
+      "name": "Angus Glen Community Centre",
+      "url": "https://www.markham.ca/sports-recreation-fitness/community-centres-libraries/angus-glen-community-centre-library",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.895354,
+        "lon": -79.336539
+      },
+      "address": "3990 Major Mackenzie Drive, Markham, ON L6C 1P8",
+      "updatedAt": "2026-11-05T02:58:23.370Z",
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Arena 1",
+          "type": "North American / NHL"
+        },
+        {
+          "name": "Arena 2",
+          "type": "North American / NHL"
+        }
+      ]
+    },
+    {
+      "id": "88fe037f-1092-51ce-a5da-6758b67d9e31",
+      "name": "Baycrest Arena",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=512",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.728911,
+        "lon": -79.443129
+      },
+      "address": "160 Neptune Dr, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.935Z",
+      "type": "indoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-395-7960"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=512"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Ice Rink",
+          "type": "North American / NHL"
+        }
+      ],
+      "amenities": [
+        "wifi",
+        "dressing_rooms",
+        "lockers"
+      ]
+    },
+    {
+      "id": "7da0c404-d8e7-519a-b25f-682a57f14314",
+      "name": "Bayview Arena",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=515",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.787938,
+        "lon": -79.393726
+      },
+      "address": "3230 Bayview Ave, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.937Z",
+      "type": "indoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-395-7825"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=515"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Ice Rink",
+          "type": "North American / NHL"
+        }
+      ],
+      "amenities": [
+        "wifi",
+        "dressing_rooms",
+        "lockers"
+      ]
+    },
+    {
+      "id": "140478d8-a762-50fd-81ba-cde69b7226b2",
+      "name": "Bill Bolton Arena",
+      "url": "https://www.billboltonarena.ca/public-skating",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.671332,
+        "lon": -79.415243
+      },
+      "address": "40 Rossmore Road, Toronto, ON M5R 3G7",
+      "updatedAt": "2026-11-05T03:58:13.177Z",
+      "type": "indoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "Bill Bolton Arena"
+        },
+        {
+          "key": "year_built",
+          "value": "1971"
+        },
+        {
+          "key": "phone",
+          "value": "416-392-0088"
+        },
+        {
+          "key": "website",
+          "value": "https://www.billboltonarena.ca"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Rink 1",
+          "type": "North American / NHL"
+        }
+      ],
+      "amenities": [
+        "skate_sharpening",
+        "equipment_gear_purchase",
+        "snack_bar"
+      ]
+    },
+    {
+      "id": "579356a2-9ece-59ff-9ba1-5340d2af163f",
+      "name": "Bond Lake Arena",
+      "url": "https://www.richmondhill.ca/en/online-services/Arenas.aspx",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.940667,
+        "lon": -79.450453
+      },
+      "address": "70 Old Colony Road, Richmond Hill, ON L4E 3G4",
+      "updatedAt": "2026-11-05T03:58:14.119Z",
+      "type": "indoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Richmond Hill"
+        },
+        {
+          "key": "phone",
+          "value": "905-773-4571"
+        },
+        {
+          "key": "website",
+          "value": "https://www.richmondhill.ca/en/online-services/Arenas.aspx"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Rink 1",
+          "type": "North American / NHL"
+        }
+      ]
+    },
+    {
+      "id": "671c6992-73f7-5ab0-806c-7f692b4123a9",
+      "name": "Broadlands Community Centre",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=7",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.745671,
+        "lon": -79.322758
+      },
+      "address": "19 Castlegrove Blvd, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.938Z",
+      "type": "outdoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-395-7966"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=7"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ],
+      "amenities": [
+        "wifi"
+      ]
+    },
+    {
+      "id": "5641ef8c-a249-596e-82fe-302e4e688f6f",
+      "name": "Burnhamthorpe Community Centre",
+      "url": "https://anc.ca.apm.activecommunities.com/activemississauga/calendars?defaultCalendarId=1&locationId=290&categoryIds=52&view=2",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.622781,
+        "lon": -79.598509
+      },
+      "address": "1500 Gulleden Drive, Mississauga, ON L4X 2T7",
+      "updatedAt": "2026-11-05T02:58:24.629Z",
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Chic Murray Arena",
+          "type": "North American / NHL"
+        }
+      ]
+    },
+    {
+      "id": "049a3595-b90f-589b-98c9-e87ff54e623f",
+      "name": "Buttonwood Park",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=813",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.681967,
+        "lon": -79.518986
+      },
+      "address": "30 Mulham Pl, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.938Z",
+      "type": "outdoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=813"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
+    },
+    {
+      "id": "2e3322cb-7f30-5769-a832-21f2266f3c71",
+      "name": "Campbell Avenue Park",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=1053",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.662985,
+        "lon": -79.448438
+      },
+      "address": "225 Campbell Ave, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.939Z",
+      "type": "outdoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=1053"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
+    },
+    {
+      "id": "ba590c53-1317-52ca-a59a-e2e1b4d36856",
+      "name": "Canlan - CWENCH Centre (Etobicoke)",
+      "url": "https://apps.daysmartrecreation.com/dash/x/canlan/event-registration?facility_ids=3",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.7002961,
+        "lon": -79.5750312
+      },
+      "address": "1120 Martin Grove Rd, Etobicoke, ON M9W 4W1",
+      "updatedAt": "2026-11-05T03:45:15.924Z",
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Rink 1",
+          "type": "North American / NHL"
+        },
+        {
+          "name": "Rink 2",
+          "type": "North American / NHL"
+        },
+        {
+          "name": "Rink 3",
+          "type": "North American / NHL"
+        },
+        {
+          "name": "Rink 4",
+          "type": "North American / NHL"
+        }
+      ],
+      "amenities": [
+        "wifi",
+        "dressing_rooms",
+        "onsite_free_parking",
+        "snack_bar",
+        "equipment_gear_purchase",
+        "skate_sharpening",
+        "live_streaming",
+        "wheelchair_accessible"
+      ]
+    },
+    {
+      "id": "e8818b06-cfd0-5929-bc79-96d3da20a443",
+      "name": "Canlan - Entripy Centre (Oakville)",
+      "url": "https://apps.daysmartrecreation.com/dash/x/canlan/event-registration?facility_ids=13",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.488218,
+        "lon": -79.650145
+      },
+      "address": "2300 Cornwall Rd, Oakville, ON L6J 7T9",
+      "updatedAt": "2026-11-05T03:45:15.926Z",
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Rink 1",
+          "type": "North American / NHL"
+        },
+        {
+          "name": "Rink 2",
+          "type": "North American / NHL"
+        },
+        {
+          "name": "Rink 3",
+          "type": "North American / NHL"
+        },
+        {
+          "name": "Rink 4",
+          "type": "North American / NHL"
+        }
+      ],
+      "amenities": [
+        "wifi",
+        "dressing_rooms",
+        "onsite_free_parking",
+        "snack_bar",
+        "equipment_gear_purchase",
+        "skate_sharpening",
+        "live_streaming",
+        "wheelchair_accessible"
+      ]
+    },
+    {
+      "id": "f79cb559-622c-5b9b-a3e1-3db5d8d0b316",
+      "name": "Canlan - NFP Athletic Centre (York)",
+      "url": "https://apps.daysmartrecreation.com/dash/x/canlan/event-registration?facility_ids=5",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.776161,
+        "lon": -79.516738
+      },
+      "address": "989 Murray Ross Pkwy, North York, ON M3J 3M4",
+      "updatedAt": "2026-11-05T03:45:15.927Z",
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Rink 1",
+          "type": "North American / NHL"
+        },
+        {
+          "name": "Rink 2",
+          "type": "North American / NHL"
+        },
+        {
+          "name": "Rink 3",
+          "type": "North American / NHL"
+        },
+        {
+          "name": "Rink 4",
+          "type": "North American / NHL"
+        },
+        {
+          "name": "Rink 5",
+          "type": "North American / NHL"
+        },
+        {
+          "name": "Rink 6",
+          "type": "Olympic"
+        }
+      ],
+      "amenities": [
+        "wifi",
+        "dressing_rooms",
+        "onsite_free_parking",
+        "snack_bar",
+        "equipment_gear_purchase",
+        "skate_sharpening",
+        "live_streaming",
+        "wheelchair_accessible"
+      ]
+    },
+    {
+      "id": "ec090755-6efc-5fbb-b05a-4bc4d7eaf3d2",
+      "name": "Canlan - Oshawa",
+      "url": "https://apps.daysmartrecreation.com/dash/x/canlan/event-registration?facility_ids=14",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.854682,
+        "lon": -78.880942
+      },
+      "address": "1401 Phillip Murray Ave, Oshawa, ON L1J 8C4",
+      "updatedAt": "2026-11-05T03:45:15.926Z",
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Rink 1",
+          "type": "North American / NHL"
+        },
+        {
+          "name": "Rink 2",
+          "type": "North American / NHL"
+        }
+      ]
+    },
+    {
+      "id": "3e03f28b-6b21-50b4-ac8e-8fcd99489627",
+      "name": "Canlan - Scarborough",
+      "url": "https://apps.daysmartrecreation.com/dash/x/canlan/event-registration?facility_ids=15",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.829787,
+        "lon": -79.253267
+      },
+      "address": "159 Dynamic Dr, Scarborough, ON M1V 5L8",
+      "updatedAt": "2026-11-05T03:45:15.926Z",
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Rink 1",
+          "type": "North American / NHL"
+        },
+        {
+          "name": "Rink 2",
+          "type": "North American / NHL"
+        },
+        {
+          "name": "Rink 3",
+          "type": "North American / NHL"
+        },
+        {
+          "name": "Rink 4",
+          "type": "North American / NHL"
+        }
+      ],
+      "amenities": [
+        "wifi",
+        "dressing_rooms",
+        "onsite_free_parking",
+        "snack_bar",
+        "equipment_gear_purchase",
+        "skate_sharpening",
+        "live_streaming",
+        "wheelchair_accessible"
+      ]
+    },
+    {
+      "id": "29123653-b78c-5e97-9f0d-0944f26f05d8",
+      "name": "Carmen Corbasson Community Centre",
+      "url": "https://anc.ca.apm.activecommunities.com/activemississauga/calendars?defaultCalendarId=1&locationId=248&categoryIds=52&view=2",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.578265,
+        "lon": -79.576635
+      },
+      "address": "1399 Cawthra Road, Mississauga, ON L5G 4L1",
+      "updatedAt": "2026-11-05T02:58:24.632Z",
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Warren Marshall Arena",
+          "type": "North American / NHL"
+        },
+        {
+          "name": "Ron Searle Arena",
+          "type": "North American / NHL"
+        }
+      ]
+    },
+    {
+      "id": "f50314d8-a971-51db-9dc1-14e1d1da11f7",
+      "name": "Cedarvale Park",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=629",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.691283,
+        "lon": -79.432609
+      },
+      "address": "443 Arlington Ave, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.939Z",
+      "type": "outdoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=629"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
+    },
+    {
+      "id": "a5e18113-4665-51f9-a9c5-eb03ee30ccdb",
+      "name": "Centennial Community Centre",
+      "url": "https://www.markham.ca/sports-recreation-fitness/community-centres-libraries/centennial-community-centre",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.873185,
+        "lon": -79.287161
+      },
+      "address": "8600 McCowan Road, Markham, ON L3P 3M2",
+      "updatedAt": "2026-11-05T02:58:23.373Z",
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Rink 1",
+          "type": "North American / NHL"
+        }
+      ]
+    },
+    {
+      "id": "00180d59-1e7f-5cce-83da-a42969926592",
+      "name": "Centennial Park Arena - Etobicoke",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=913",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.656924,
+        "lon": -79.58633
+      },
+      "address": "156 Centennial Park Rd, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.940Z",
+      "type": "indoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-394-8758"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=913"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Ice Rink - East",
+          "type": "North American / NHL"
+        },
+        {
+          "name": "Ice Rink - West",
+          "type": "North American / NHL"
+        }
+      ],
+      "amenities": [
+        "wifi",
+        "dressing_rooms",
+        "lockers"
+      ]
+    },
+    {
+      "id": "7e54bd60-c00f-5475-bd86-cb5982bcd9f0",
+      "name": "Centennial Recreation Centre - Scarborough",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=537",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.775532,
+        "lon": -79.235108
+      },
+      "address": "1967 Ellesmere Rd, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.940Z",
+      "type": "indoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-396-4057"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=537"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Ice Rink",
+          "type": "North American / NHL"
+        },
+        {
+          "name": "Ice Rink - Ice Galaxy",
+          "type": "North American / NHL"
+        }
+      ],
+      "amenities": [
+        "wifi",
+        "dressing_rooms",
+        "onsite_free_parking",
+        "lockers"
+      ]
+    },
+    {
+      "id": "fe65f01f-ab34-54da-b497-1291c4846099",
+      "name": "Central Arena",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=824",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.648455,
+        "lon": -79.520052
+      },
+      "address": "50 Montgomery Rd, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.941Z",
+      "type": "indoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-394-5439"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=824"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Ice Rink",
+          "type": "North American / NHL"
+        }
+      ],
+      "amenities": [
+        "wifi",
+        "dressing_rooms",
+        "lockers"
+      ]
+    },
+    {
+      "id": "f9f1e0c4-1500-5fb4-9938-7ac8bfad50ab",
+      "name": "Chestnut Hill Developments Recreation Complex",
+      "url": "https://www.pickering.ca/parks-recreation-culture/arenas-and-skating/",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.8392345,
+        "lon": -79.0814572
+      },
+      "address": "1867 Valley Farm Road, Pickering, ON L1V 1C1",
+      "updatedAt": "2026-11-05T02:58:30.598Z",
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Delaney",
+          "type": "North American / NHL"
+        },
+        {
+          "name": "O'Brien",
+          "type": "North American / NHL"
+        }
+      ]
+    },
+    {
+      "id": "bcb608f4-969d-5eed-a95d-73d8c61c27aa",
+      "name": "Chris Tonks Arena",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=476",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.68702,
+        "lon": -79.48157
+      },
+      "address": "95 Black Creek Dr, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.941Z",
+      "type": "indoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-394-2733"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=476"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Ice Rink",
+          "type": "North American / NHL"
+        }
+      ],
+      "amenities": [
+        "wifi",
+        "dressing_rooms",
+        "lockers"
+      ]
+    },
+    {
+      "id": "84723a63-da73-5821-8001-421d4e52fa5f",
+      "name": "Christie Pits",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=196",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.663462,
+        "lon": -79.419974
+      },
+      "address": "750 Bloor St W, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.942Z",
+      "type": "outdoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=196"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
+    },
+    {
+      "id": "69791ad6-3cfa-5181-8f09-80b022daaf46",
+      "name": "Clarkson Community Centre",
+      "url": "https://anc.ca.apm.activecommunities.com/activemississauga/calendars?defaultCalendarId=1&locationId=240&categoryIds=52&view=2",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.511592,
+        "lon": -79.650285
+      },
+      "address": "2475 Truscott Drive, Mississauga, ON L5J 2B3",
+      "updatedAt": "2026-11-05T02:58:24.634Z",
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Clarkson Arena",
+          "type": "North American / NHL"
+        }
+      ]
+    },
+    {
+      "id": "ece65c8a-0ed0-5e13-8e7a-f23acdeec98c",
+      "name": "Clatworthy Arena",
+      "url": "https://www.markham.ca/sports-recreation-fitness/community-centres-libraries/rj-clatworthy-arena",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.823602,
+        "lon": -79.368555
+      },
+      "address": "2400 John Street, Markham, ON L3T 6G6",
+      "updatedAt": "2026-11-05T02:58:23.375Z",
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Rink 1",
+          "type": "North American / NHL"
+        }
+      ]
+    },
+    {
+      "id": "8c3a487c-35c8-5d48-9db0-20b87c36a1be",
+      "name": "College Park",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=223",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.659914,
+        "lon": -79.383825
+      },
+      "address": "420 Yonge St, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.942Z",
+      "type": "outdoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=223"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
+    },
+    {
+      "id": "07850f38-ce66-5f31-8ef2-3bf5ce22135e",
+      "name": "Colonel Samuel Smith Park",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=466",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.593162,
+        "lon": -79.515553
+      },
+      "address": "3145 Lake Shore Blvd W, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.942Z",
+      "type": "outdoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=466"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
+    },
+    {
+      "id": "823a5019-2739-5f55-b49c-c63457cca423",
+      "name": "Commander Recreation Centre",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=558",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.795039,
+        "lon": -79.267814
+      },
+      "address": "140 Commander Blvd, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.942Z",
+      "type": "indoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-396-4024"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=558"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Ice Rink - 1",
+          "type": "North American / NHL"
+        },
+        {
+          "name": "Ice Rink - 2",
+          "type": "North American / NHL"
+        }
+      ],
+      "amenities": [
+        "wifi",
+        "dressing_rooms",
+        "lockers"
+      ]
+    },
+    {
+      "id": "01b814f2-c047-5643-80ad-96e6deaae3ca",
+      "name": "Crosby Community Centre",
+      "url": "https://www.markham.ca/sports-recreation-fitness/community-centres-libraries/crosby-community-centre",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.868535,
+        "lon": -79.313304
+      },
+      "address": "210 Main Street Unionville, Markham, ON L3R 2G9",
+      "updatedAt": "2026-11-05T02:58:23.375Z",
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Rink 1",
+          "type": "Non-standard (79' x 185')"
+        }
+      ]
+    },
+    {
+      "id": "7a28b3cf-6b02-5f48-9e58-9ef195b5e2d9",
+      "name": "Cummer Park Community Centre",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=499",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.800104,
+        "lon": -79.371262
+      },
+      "address": "6000 Leslie St, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.943Z",
+      "type": "indoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-395-7803"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=499"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Ice Rink",
+          "type": "North American / NHL"
+        }
+      ],
+      "amenities": [
+        "wifi",
+        "dressing_rooms",
+        "lockers"
+      ]
+    },
+    {
+      "id": "49fb51fb-56c6-538c-a431-1eab6b8b7c80",
+      "name": "Dieppe Park",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=327",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.691988,
+        "lon": -79.335491
+      },
+      "address": "455 Cosburn Ave, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.943Z",
+      "type": "outdoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=327"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
+    },
+    {
+      "id": "e6537b9d-9cf2-58fe-8ce5-55668064630e",
+      "name": "Don Beer Arena",
+      "url": "https://www.pickering.ca/parks-recreation-culture/arenas-and-skating/",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.8246138,
+        "lon": -79.067142
+      },
+      "address": "940 Dillingham Road, Pickering, ON L1W 3R7",
+      "updatedAt": "2026-11-05T02:58:30.600Z",
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "DB1",
+          "type": "North American / NHL"
+        },
+        {
+          "name": "DB2",
+          "type": "North American / NHL"
+        },
+        {
+          "name": "DB3",
+          "type": "North American / NHL"
+        }
+      ]
+    },
+    {
+      "id": "1dd1c7a8-0efc-5a05-944c-aeaa405ba7b1",
+      "name": "Don Mills Civitan Arena",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=548",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.733023,
+        "lon": -79.343745
+      },
+      "address": "1030 Don Mills Rd, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.944Z",
+      "type": "indoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-395-7843"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=548"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Ice Rink",
+          "type": "North American / NHL"
+        }
+      ],
+      "amenities": [
+        "wifi",
+        "dressing_rooms",
+        "lockers"
+      ]
+    },
+    {
+      "id": "5a3db0a5-3f15-593f-9350-3e138a5d69ec",
+      "name": "Don Montgomery Community Centre",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=712",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.732663,
+        "lon": -79.261665
+      },
+      "address": "2467 Eglinton Ave E, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.945Z",
+      "type": "indoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-396-4043"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=712"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Ice Rink - 1",
+          "type": "North American / NHL"
+        },
+        {
+          "name": "Ice Rink - 2",
+          "type": "North American / NHL"
+        }
+      ],
+      "amenities": [
+        "wifi",
+        "dressing_rooms",
+        "lockers"
+      ]
+    },
+    {
+      "id": "3892ea9a-135c-5bd3-929f-1ebdbf3dcbfc",
+      "name": "Downsview Arena",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=568",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.719835,
+        "lon": -79.512771
+      },
+      "address": "1633 Wilson Ave, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.946Z",
+      "type": "indoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-395-7831"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=568"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Ice Rink",
+          "type": "North American / NHL"
+        }
+      ],
+      "amenities": [
+        "wifi",
+        "dressing_rooms",
+        "lockers"
+      ]
+    },
+    {
+      "id": "aa4b5ced-1bac-52e8-9417-817fc6ffe307",
+      "name": "Dufferin Grove",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=87",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.657042,
+        "lon": -79.433601
+      },
+      "address": "875 Dufferin St, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.946Z",
+      "type": "outdoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=87"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
+    },
+    {
+      "id": "bcf4e19c-40cd-569e-9a05-1775188b30f8",
+      "name": "East York Memorial Arena",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=330",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.697431,
+        "lon": -79.315293
+      },
+      "address": "888 Cosburn Ave, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.947Z",
+      "type": "indoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-396-2869"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=330"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Ice Rink",
+          "type": "North American / NHL"
+        }
+      ],
+      "amenities": [
+        "wifi",
+        "dressing_rooms",
+        "lockers"
+      ]
+    },
+    {
+      "id": "33ba3c6f-d273-5da7-b660-b735d51b010e",
+      "name": "Ed Sackfield Arena",
+      "url": "https://www.richmondhill.ca/en/things-to-do/Ed-Sackfield-Arena-and-Fitness-Centre.aspx",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.855906,
+        "lon": -79.397721
+      },
+      "address": "311 Valleymede Drive, Richmond Hill, ON L4B 2E1",
+      "updatedAt": "2026-11-05T03:58:14.127Z",
+      "type": "indoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Richmond Hill"
+        },
+        {
+          "key": "phone",
+          "value": "905-771-8333"
+        },
+        {
+          "key": "website",
+          "value": "https://www.richmondhill.ca/en/things-to-do/Ed-Sackfield-Arena-and-Fitness-Centre.aspx"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "South Arena Ice Pad",
+          "type": "North American / NHL"
+        },
+        {
+          "name": "North Arena Ice Pad",
+          "type": "Olympic"
+        }
+      ],
+      "amenities": [
+        "wifi",
+        "dressing_rooms",
+        "gender_neutral_washrooms",
+        "onsite_free_parking"
+      ]
+    },
+    {
+      "id": "2258d8e0-00d1-5e12-9756-79d9a0093c1b",
+      "name": "Elgin Barrow Arena",
+      "url": "https://www.richmondhill.ca/en/online-services/Arenas.aspx",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.874834,
+        "lon": -79.436087
+      },
+      "address": "43 Church Street South, Richmond Hill, ON L4C 1W1",
+      "updatedAt": "2026-11-05T03:58:14.129Z",
+      "type": "indoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Richmond Hill"
+        },
+        {
+          "key": "phone",
+          "value": "905-884-1368"
+        },
+        {
+          "key": "website",
+          "value": "https://www.richmondhill.ca/en/online-services/Arenas.aspx"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "West Pad",
+          "type": "North American / NHL"
+        },
+        {
+          "name": "East Pad",
+          "type": "North American / NHL"
+        }
+      ]
+    },
+    {
+      "id": "466a20ed-ef82-58ce-b41c-63b6e830d4f3",
+      "name": "Erin Mills Twin Arena",
+      "url": "https://anc.ca.apm.activecommunities.com/activemississauga/calendars?defaultCalendarId=1&locationId=250&categoryIds=52&view=2",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.536904,
+        "lon": -79.711566
+      },
+      "address": "3205 Unity Drive, Mississauga, ON L5L 4L5",
+      "updatedAt": "2026-11-05T02:58:24.636Z",
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Rink 1",
+          "type": "Recreational (180' x 80')"
+        },
+        {
+          "name": "Rink 2",
+          "type": "Recreational (180' x 80')"
+        }
+      ]
+    },
+    {
+      "id": "e4d0e0ca-f4d1-50da-bdc7-cba7d73a9d3e",
+      "name": "Ethennonnhawahstihnen Park",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=2597",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.767405,
+        "lon": -79.372401
+      },
+      "address": "80 McMahon Dr E, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.947Z",
+      "type": "outdoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=2597"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
+    },
+    {
+      "id": "2775613b-0a2f-56cf-88ec-8c8e9c62d121",
+      "name": "Fenside Arena",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=303",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.763836,
+        "lon": -79.326824
+      },
+      "address": "30 Slidell Cres, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.947Z",
+      "type": "indoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-395-7846"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=303"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Ice Rink",
+          "type": "North American / NHL"
+        }
+      ],
+      "amenities": [
+        "wifi",
+        "dressing_rooms",
+        "lockers"
+      ]
+    },
+    {
+      "id": "c22f6ec8-8bdc-5aa9-8745-9739cd8e307d",
+      "name": "Fieldgate Sports Complex",
+      "url": "https://www.whitby.ca/explore-and-enjoy/parks-and-recreation/skating-schedules-and-arenas/",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.9429379,
+        "lon": -78.9632445
+      },
+      "address": "2 Gathering Place, Whitby, ON L1M 1T4",
+      "updatedAt": "2026-11-05T02:58:41.672Z",
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Rink 1",
+          "type": "North American / NHL"
+        },
+        {
+          "name": "Rink 2",
+          "type": "North American / NHL"
+        }
+      ]
+    },
+    {
+      "id": "bb345f20-abcb-557b-b38c-9663719336ba",
+      "name": "Ford Performance Centre",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=3782",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.602865,
+        "lon": -79.519916
+      },
+      "address": "400 Kipling Ave, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.948Z",
+      "type": "indoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-251-5219"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=3782"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Ice Rink",
+          "type": "North American / NHL"
+        }
+      ],
+      "amenities": [
+        "dressing_rooms",
+        "spectator_seating",
+        "snack_bar",
+        "skate_sharpening",
+        "equipment_gear_purchase",
+        "lockers"
+      ]
+    },
+    {
+      "id": "02a7c4c5-9283-5361-8d3e-aa14053b358e",
+      "name": "Garnet A. Williams Community Centre",
+      "url": "https://vaughan.perfectmind.com/25076/Clients/BookMe4BookingPages/Classes?calendarId=84142d20-1da8-48ed-800d-31dc0c30121d&widgetId=dff88c8a-0b78-4a94-9dde-250040385300&embed=False",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.803966,
+        "lon": -79.439973
+      },
+      "address": "501 Clark Ave. West, Thornhill, ON L4J 4E5",
+      "updatedAt": "2026-11-05T02:58:41.312Z",
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Rink 1",
+          "type": "North American / NHL"
+        }
+      ]
+    },
+    {
+      "id": "f3f5c7a9-3593-5eae-b3ad-cb16f9114a0e",
+      "name": "George Bell Arena",
+      "url": "https://georgebellarena.com/public-skating",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.668518,
+        "lon": -79.477155
+      },
+      "address": "215 Ryding Ave, Toronto, ON",
+      "updatedAt": "2026-11-05T02:58:00.653Z",
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "George Bell Arena Rink",
+          "type": "North American / NHL"
+        }
+      ]
+    },
+    {
+      "id": "9bb14559-1ff0-56e1-997e-9e26a2945785",
+      "name": "Giovanni Caboto",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=514",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.675653,
+        "lon": -79.451657
+      },
+      "address": "1367 St Clair Ave W, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.948Z",
+      "type": "outdoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=514"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
+    },
+    {
+      "id": "b116a3e6-ae2c-594a-ac8d-ae18395e9113",
+      "name": "Glen Long Community Centre",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=638",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.708626,
+        "lon": -79.455802
+      },
+      "address": "35 Glen Long Ave, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.949Z",
+      "type": "outdoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-395-7921"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=638"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ],
+      "amenities": [
+        "wifi"
+      ]
+    },
+    {
+      "id": "0e6a7dac-cbf9-51d8-aab7-db04bae448c2",
+      "name": "Gord and Irene Risk Community Centre",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=642",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.747437,
+        "lon": -79.566545
+      },
+      "address": "2650 Finch Ave W, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.949Z",
+      "type": "indoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-395-0355"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=642"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Ice Rink",
+          "type": "North American / NHL"
+        }
+      ],
+      "amenities": [
+        "wifi",
+        "dressing_rooms",
+        "lockers"
+      ]
+    },
+    {
+      "id": "17767685-aeb8-5d9a-aecd-46bd398673a7",
+      "name": "Goulding Community Centre",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=643",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.790912,
+        "lon": -79.422143
+      },
+      "address": "45 Goulding Ave, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.949Z",
+      "type": "indoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-395-0123"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=643"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Ice Rink",
+          "type": "North American / NHL"
+        }
+      ],
+      "amenities": [
+        "wifi",
+        "dressing_rooms",
+        "lockers"
+      ]
+    },
+    {
+      "id": "cdb1aa92-c11e-5d05-8b75-3875be254bd2",
+      "name": "Grandravine Community Recreation Centre",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=647",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.751753,
+        "lon": -79.489716
+      },
+      "address": "23 Grandravine Dr, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.950Z",
+      "type": "indoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-395-6171"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=647"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Ice Rink",
+          "type": "North American / NHL"
+        }
+      ],
+      "amenities": [
+        "wifi",
+        "dressing_rooms",
+        "lockers"
+      ]
+    },
+    {
+      "id": "eea204a7-49a1-52e3-a266-2e3a850c5736",
+      "name": "Greenwood Park",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=70",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.66948,
+        "lon": -79.329218
+      },
+      "address": "150 Greenwood Ave, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.950Z",
+      "type": "outdoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-392-7804"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=70"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
+    },
+    {
+      "id": "52ee568e-c974-5466-aa66-d2c211da1074",
+      "name": "Habitant Arena",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=652",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.747019,
+        "lon": -79.540243
+      },
+      "address": "3383 Weston Rd, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.950Z",
+      "type": "indoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-395-7949"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=652"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Ice Rink",
+          "type": "North American / NHL"
+        }
+      ],
+      "amenities": [
+        "wifi",
+        "dressing_rooms",
+        "lockers"
+      ]
+    },
+    {
+      "id": "9a03d4f3-3401-5cd6-8c41-e18e164b62e6",
+      "name": "Herbert H. Carnegie Centennial Centre",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=483",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.773357,
+        "lon": -79.450052
+      },
+      "address": "580 Finch Ave W, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.951Z",
+      "type": "indoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-395-6067"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=483"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Ice Rink",
+          "type": "North American / NHL"
+        }
+      ],
+      "amenities": [
+        "wifi",
+        "dressing_rooms",
+        "lockers"
+      ]
+    },
+    {
+      "id": "54e95f7c-55fc-5352-8f8a-418374aca2d7",
+      "name": "Heron Park Community Recreation Centre",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=633",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.768856,
+        "lon": -79.176938
+      },
+      "address": "292 Manse Rd, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.951Z",
+      "type": "indoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-396-4035"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=633"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Ice Rink - 1",
+          "type": "North American / NHL"
+        },
+        {
+          "name": "Ice Rink - 2",
+          "type": "North American / NHL"
+        }
+      ],
+      "amenities": [
+        "wifi",
+        "dressing_rooms",
+        "lockers"
+      ]
+    },
+    {
+      "id": "d2cba9bb-6bcf-53ea-9954-ef64adfbd99d",
+      "name": "High Park",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=77",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.649865,
+        "lon": -79.46528
+      },
+      "address": "1873 Bloor St W, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.951Z",
+      "type": "outdoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-392-7807"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=77"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
+    },
+    {
+      "id": "c9a9f841-3bbe-5fc0-931a-31d3ab62f9ef",
+      "name": "Hodgson Leisure School Grounds",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=1220",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.700978,
+        "lon": -79.385376
+      },
+      "address": "276 Davisville Ave, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.952Z",
+      "type": "outdoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=1220"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
+    },
+    {
+      "id": "b2775883-e42e-5a6b-bf09-3cd37fcf4f40",
+      "name": "Honey & Barry Memorial Arena",
+      "url": "https://vaughan.perfectmind.com/25076/Clients/BookMe4BookingPages/Classes?calendarId=84142d20-1da8-48ed-800d-31dc0c30121d&widgetId=dff88c8a-0b78-4a94-9dde-250040385300&embed=False",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.85414,
+        "lon": -79.462445
+      },
+      "address": "9600 Bathurst St, Maple, ON L6A 3Z8",
+      "updatedAt": "2026-11-05T02:58:41.312Z",
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "North Rink",
+          "type": "North American / NHL"
+        },
+        {
+          "name": "South Rink",
+          "type": "North American / NHL"
+        }
+      ]
+    },
+    {
+      "id": "1bb16cc1-3586-5631-82c3-beba52bb701b",
+      "name": "Humber Valley Rink",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=1012",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.664191,
+        "lon": -79.524922
+      },
+      "address": "50 Anglesey Blvd, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.952Z",
+      "type": "outdoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=1012"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
+    },
+    {
+      "id": "52db7c0d-d085-5643-a1ef-629f511fd49a",
+      "name": "Huron Park Recreation Centre",
+      "url": "https://anc.ca.apm.activecommunities.com/activemississauga/calendars?defaultCalendarId=1&locationId=252&categoryIds=52&view=2",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.558958,
+        "lon": -79.632996
+      },
+      "address": "830 Paisley Blvd W, Mississauga, ON L5C 3P5",
+      "updatedAt": "2026-11-05T02:58:24.638Z",
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Huron Park Arena",
+          "type": "North American / NHL"
+        }
+      ]
+    },
+    {
+      "id": "293c5c5a-960e-5f69-8eb9-5ef4bca45435",
+      "name": "Iceland Arena",
+      "url": "https://anc.ca.apm.activecommunities.com/activemississauga/calendars?defaultCalendarId=1&locationId=253&categoryIds=52&view=2",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.628202,
+        "lon": -79.648999
+      },
+      "address": "705 Matheson Blvd E, Mississauga, ON L4Z 3X9",
+      "updatedAt": "2026-11-05T02:58:24.639Z",
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Rink 1",
+          "type": "Olympic"
+        },
+        {
+          "name": "Rink 2",
+          "type": "North American / NHL"
+        },
+        {
+          "name": "Rink 3",
+          "type": "North American / NHL"
+        },
+        {
+          "name": "Rink 4",
+          "type": "North American / NHL"
+        }
+      ]
+    },
+    {
+      "id": "e354b6bf-421c-5998-acce-4267e7d4a604",
+      "name": "Iroquois Park Sports Centre",
+      "url": "https://www.whitby.ca/explore-and-enjoy/parks-and-recreation/skating-schedules-and-arenas/",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.860281,
+        "lon": -78.944613
+      },
+      "address": "500 Victoria St. W., Whitby, ON L1N 9G4",
+      "updatedAt": "2026-11-05T02:58:41.676Z",
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Pad 1",
+          "type": "North American / NHL"
+        },
+        {
+          "name": "Pad 2",
+          "type": "North American / NHL"
+        },
+        {
+          "name": "Pad 3",
+          "type": "North American / NHL"
+        },
+        {
+          "name": "Pad 4",
+          "type": "North American / NHL"
+        },
+        {
+          "name": "Pad 5",
+          "type": "North American / NHL"
+        },
+        {
+          "name": "Pad 6",
+          "type": "North American / NHL"
+        }
+      ]
+    },
+    {
+      "id": "198dfebd-7371-5edc-a9cd-3f327b7d88d1",
+      "name": "Irving W Chapley Community Centre",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=664",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.761351,
+        "lon": -79.45575
+      },
+      "address": "205 Wilmington Ave, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.953Z",
+      "type": "outdoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-395-7880"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=664"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
+    },
+    {
+      "id": "ba45457e-dad7-5539-95a7-7272885c29ec",
+      "name": "Jimmie Simpson Park",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=155",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.660444,
+        "lon": -79.34533
+      },
+      "address": "870 Queen St E, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.953Z",
+      "type": "outdoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=155"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
+    },
+    {
+      "id": "1fa2ae65-5c4d-5a0f-b061-5210996c8b96",
+      "name": "John Booth Memorial Arena",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=667",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.7697,
+        "lon": -79.524189
+      },
+      "address": "230 Gosford Blvd, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.953Z",
+      "type": "indoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-395-7942"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=667"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Ice Rink",
+          "type": "North American / NHL"
+        }
+      ],
+      "amenities": [
+        "wifi",
+        "dressing_rooms",
+        "lockers"
+      ]
+    },
+    {
+      "id": "9bdba456-a969-544c-bc9f-bfaec474a018",
+      "name": "Joseph Bannon Park",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=2715",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.732362,
+        "lon": -79.534949
+      },
+      "address": "65 Mary Chapman Blvd, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.954Z",
+      "type": "outdoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=2715"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
+    },
+    {
+      "id": "9a317668-a856-5bf1-a6fd-04429d9eb7e5",
+      "name": "Kew Gardens",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=107",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.66999,
+        "lon": -79.299293
+      },
+      "address": "2075 Queen St E, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.954Z",
+      "type": "outdoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=107"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
+    },
+    {
+      "id": "a8cdd630-979c-5099-aa85-6a652971f61c",
+      "name": "Lambton Arena",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=479",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.664913,
+        "lon": -79.50588
+      },
+      "address": "4100 Dundas St W, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.954Z",
+      "type": "indoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-394-2735"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=479"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Ice Rink",
+          "type": "North American / NHL"
+        }
+      ],
+      "amenities": [
+        "wifi",
+        "dressing_rooms",
+        "lockers"
+      ]
+    },
+    {
+      "id": "58605d40-3433-5ce7-905b-9f770fdb0580",
+      "name": "Lambton-Kingsway Rink",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=847",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.658141,
+        "lon": -79.507339
+      },
+      "address": "37 Marquis Ave, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.955Z",
+      "type": "outdoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=847"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
+    },
+    {
+      "id": "b815604b-9431-5964-8e1c-4f4708b3e2bf",
+      "name": "Larry Grossman Forest Hill Arena",
+      "url": "https://larrygrossmanforesthillarena.com/recreational-skating-hours/",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.704191,
+        "lon": -79.420034
+      },
+      "address": "340 Chaplin Crescent, Toronto, ON M5N 2N3",
+      "updatedAt": "2026-11-05T02:58:15.374Z",
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Larry Grossman Forest Hill Arena Rink",
+          "type": "North American / NHL"
+        }
+      ]
+    },
+    {
+      "id": "a219a1ab-ea04-5cd8-9541-82b1759f0541",
+      "name": "Leaside Gardens",
+      "url": "https://leasidegardens.com/arenas/public-skate-times/",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.701874,
+        "lon": -79.360766
+      },
+      "address": "1073 Millwood Rd, Toronto, ON",
+      "updatedAt": "2026-11-05T02:58:15.957Z",
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Dr. Tom Pashby Play Safely Rink (Rink A)",
+          "type": "North American / NHL"
+        },
+        {
+          "name": "Bert F. Grant Rink (Rink B)",
+          "type": "North American / NHL"
+        }
+      ]
+    },
+    {
+      "id": "ccfd3a9b-bf3c-5622-98de-a6a0ea2bde29",
+      "name": "Ledbury Park",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=678",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.727922,
+        "lon": -79.424452
+      },
+      "address": "160 Ledbury St, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.955Z",
+      "type": "outdoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-395-6688"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=678"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
+    },
+    {
+      "id": "3cdab484-403e-5c17-80f7-1875e21cbd28",
+      "name": "Long Branch Arena",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=803",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.591779,
+        "lon": -79.527833
+      },
+      "address": "75 Arcadian Cir, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.955Z",
+      "type": "indoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-394-8694"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=803"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Ice Rink",
+          "type": "North American / NHL"
+        }
+      ],
+      "amenities": [
+        "wifi",
+        "dressing_rooms",
+        "lockers"
+      ]
+    },
+    {
+      "id": "207fc744-3e3a-5783-9fbc-ecae3638a1f6",
+      "name": "Malvern Recreation Centre",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=702",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.808568,
+        "lon": -79.216386
+      },
+      "address": "30 Sewells Rd, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.956Z",
+      "type": "indoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-396-4054"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=702"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Ice Rink - 1",
+          "type": "North American / NHL"
+        },
+        {
+          "name": "Ice Rink - 2",
+          "type": "North American / NHL"
+        }
+      ],
+      "amenities": [
+        "wifi",
+        "dressing_rooms",
+        "lockers"
+      ]
+    },
+    {
+      "id": "250d34b7-82c8-560e-a3c1-9be63ccabbad",
+      "name": "Maple Community Centre",
+      "url": "https://vaughan.perfectmind.com/25076/Clients/BookMe4BookingPages/Classes?calendarId=84142d20-1da8-48ed-800d-31dc0c30121d&widgetId=dff88c8a-0b78-4a94-9dde-250040385300&embed=False",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.859882,
+        "lon": -79.514834
+      },
+      "address": "10190 Keele St., Maple, ON L6A 1R7",
+      "updatedAt": "2026-11-05T02:58:41.313Z",
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Rink 1",
+          "type": "North American / NHL"
+        }
+      ]
+    },
+    {
+      "id": "4a65b0c3-c8c5-5a1b-8f3e-6b946053a4e3",
+      "name": "Markham Village Community Centre",
+      "url": "https://www.markham.ca/sports-recreation-fitness/community-centres-libraries/markham-village-community-centre-library",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.873298,
+        "lon": -79.258153
+      },
+      "address": "6041 Highway 7, Markham, ON L3P 3A7",
+      "updatedAt": "2026-11-05T02:58:23.376Z",
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Rink 1",
+          "type": "North American / NHL"
+        }
+      ]
+    },
+    {
+      "id": "c1e88c4a-dd50-5dfc-9f00-a32dff7755e2",
+      "name": "Mattamy Athletic Centre",
+      "url": "https://www.mattamyathleticcentre.ca/venue-info/community-skates",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.662175,
+        "lon": -79.380568
+      },
+      "address": "50 Carlton Street, Toronto, ON M5B 1J2",
+      "updatedAt": "2026-11-05T02:58:24.046Z",
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Mattamy Homes Home Ice",
+          "type": "North American / NHL"
+        }
+      ]
+    },
+    {
+      "id": "c236cd81-d8fb-5022-a411-1296c380ef11",
+      "name": "McCormick Arena",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=3490",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.647219,
+        "lon": -79.434101
+      },
+      "address": "179 Brock Ave, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.956Z",
+      "type": "indoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-392-0647"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=3490"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Ice Rink",
+          "type": "North American / NHL"
+        }
+      ],
+      "amenities": [
+        "dressing_rooms",
+        "lockers"
+      ]
+    },
+    {
+      "id": "db8b3957-7437-5812-afeb-6089f2d7f658",
+      "name": "McCowan District Park",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=1500",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.733195,
+        "lon": -79.236554
+      },
+      "address": "150 Mccowan Rd, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.956Z",
+      "type": "outdoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=1500"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
+    },
+    {
+      "id": "a4640f5d-948a-5df1-9d28-ea8e6ad11e6a",
+      "name": "McGregor Park Community Centre",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=506",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.747629,
+        "lon": -79.280149
+      },
+      "address": "2231 Lawrence Ave E, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.957Z",
+      "type": "indoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-396-4023"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=506"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Ice Rink - 1",
+          "type": "North American / NHL"
+        },
+        {
+          "name": "Ice Rink - 2",
+          "type": "North American / NHL"
+        }
+      ],
+      "amenities": [
+        "wifi",
+        "dressing_rooms",
+        "lockers"
+      ]
+    },
+    {
+      "id": "599789f2-fdcb-50b7-ba60-29c5ffb547f2",
+      "name": "McKinney Centre",
+      "url": "https://www.whitby.ca/explore-and-enjoy/parks-and-recreation/skating-schedules-and-arenas/",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.920905,
+        "lon": -78.9553679
+      },
+      "address": "222 McKinney Dr., Whitby, ON L1R 3M3",
+      "updatedAt": "2026-11-05T02:58:41.676Z",
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Pad 1",
+          "type": "North American / NHL"
+        },
+        {
+          "name": "Pad 2",
+          "type": "North American / NHL"
+        },
+        {
+          "name": "Figure Skating Pad",
+          "type": "Figure Skating"
+        }
+      ]
+    },
+    {
+      "id": "e89511c0-0f14-5df3-9d80-7b57b12e60a5",
+      "name": "Meadowvale 4 Rinks",
+      "url": "https://anc.ca.apm.activecommunities.com/activemississauga/calendars?defaultCalendarId=1&locationId=100&categoryIds=52&view=2",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.595037,
+        "lon": -79.740775
+      },
+      "address": "2160 Torquay Mews, Mississauga, ON L5N 2M6",
+      "updatedAt": "2026-11-05T02:58:24.640Z",
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Rink 1",
+          "type": "Recreational (185' x 85')"
+        },
+        {
+          "name": "Rink 2",
+          "type": "Recreational (185' x 85')"
+        },
+        {
+          "name": "Rink 3",
+          "type": "Recreational (185' x 85')"
+        },
+        {
+          "name": "Rink 4",
+          "type": "Recreational (185' x 85')"
+        }
+      ]
+    },
+    {
+      "id": "d247bb87-f5d8-59a5-b83b-5d36ab29226e",
+      "name": "Mel Lastman Square",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=956",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.767268,
+        "lon": -79.414889
+      },
+      "address": "5100 Yonge St, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.957Z",
+      "type": "outdoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-395-7584"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=956"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ],
+      "amenities": [
+        "wifi"
+      ]
+    },
+    {
+      "id": "c41b2e7f-d217-5ba2-b7c2-1666cc89ddbf",
+      "name": "Milliken Mills Community Centre",
+      "url": "https://www.markham.ca/sports-recreation-fitness/community-centres-libraries/milliken-mills-community-centre",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.840228,
+        "lon": -79.305006
+      },
+      "address": "7600 Kennedy Road, Markham, ON L3R 9S5",
+      "updatedAt": "2026-11-05T02:58:23.376Z",
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Rink 1",
+          "type": "North American / NHL"
+        }
+      ]
+    },
+    {
+      "id": "bda42c25-e369-595a-8a14-b61f1851658d",
+      "name": "Mimico Arena",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=802",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.612393,
+        "lon": -79.498829
+      },
+      "address": "31 Drummond St, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.958Z",
+      "type": "indoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-394-8695"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=802"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Ice Rink",
+          "type": "North American / NHL"
+        }
+      ],
+      "amenities": [
+        "wifi",
+        "dressing_rooms",
+        "lockers"
+      ]
+    },
+    {
+      "id": "d7077969-64d9-5074-9e47-7b8e33b529f9",
+      "name": "Mississauga Valley Community Centre",
+      "url": "https://anc.ca.apm.activecommunities.com/activemississauga/calendars?defaultCalendarId=1&locationId=82&categoryIds=52&view=2",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.596844,
+        "lon": -79.623704
+      },
+      "address": "1275 Mississauga Valley Blvd, Mississauga, ON L5A 3R8",
+      "updatedAt": "2026-11-05T02:58:24.645Z",
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Mississauga Valley Arena",
+          "type": "Recreational (180' x 80')"
+        }
+      ]
+    },
+    {
+      "id": "b2a77b14-72ad-5714-ba2f-25e72a4feed1",
+      "name": "Mitchell Field Community Centre",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=693",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.774644,
+        "lon": -79.408537
+      },
+      "address": "89 Church Ave, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.958Z",
+      "type": "indoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-395-0265"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=693"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Ice Rink",
+          "type": "North American / NHL"
+        }
+      ],
+      "amenities": [
+        "wifi",
+        "dressing_rooms",
+        "lockers"
+      ]
+    },
+    {
+      "id": "5872ff6b-fa41-58c1-9d1a-65bceb848f5f",
+      "name": "Monarch Park",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=145",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.67881,
+        "lon": -79.326098
+      },
+      "address": "115 Felstead Ave, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.958Z",
+      "type": "outdoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-392-7831"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=145"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
+    },
+    {
+      "id": "d62141b4-9fa5-52d5-8a6e-57b839d4baec",
+      "name": "Moss Park Arena",
+      "url": "https://mossparkarena.com/home/skating/public-skating/",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.655024,
+        "lon": -79.370213
+      },
+      "address": "140 Sherbourne St, Toronto, ON",
+      "updatedAt": "2026-11-05T02:58:30.246Z",
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Moss Park Arena Rink",
+          "type": "Indoor (non-standard) 170' x 80'"
+        }
+      ]
+    },
+    {
+      "id": "9a0ffacc-efe6-50ca-a972-b96a37b546d2",
+      "name": "Mount Joy Community Centre",
+      "url": "https://www.markham.ca/sports-recreation-fitness/community-centres-libraries/mount-joy-community-centre",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.895012,
+        "lon": -79.262293
+      },
+      "address": "6140 16th Avenue East, Markham, ON L3P 3K8",
+      "updatedAt": "2026-11-05T02:58:23.376Z",
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Rink 1",
+          "type": "North American / NHL"
+        }
+      ]
+    },
+    {
+      "id": "ab167c71-f600-5471-8981-519bba9c4a9e",
+      "name": "Nathan Phillips Square",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=1089",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.652236,
+        "lon": -79.383405
+      },
+      "address": "100 Queen St W, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.959Z",
+      "type": "outdoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=1089"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ],
+      "amenities": [
+        "wifi"
+      ]
+    },
+    {
+      "id": "ace18ec2-1cf1-5a0b-9a9f-838f283485f7",
+      "name": "Nobleton Arena & Community Centre",
+      "url": "https://townshipofking.perfectmind.com/23793/Clients/BookMe4BookingPages/Classes?calendarId=2fd6d540-75aa-416b-9a70-a78b8f598e7d&widgetId=15f6af07-39c5-473e-b053-96653f77a406&embed=False",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.901062,
+        "lon": -79.650908
+      },
+      "address": "15 Old King Rd, Nobleton, ON L0G 1N0",
+      "updatedAt": "2026-11-05T02:58:59.013Z",
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Rink 1",
+          "type": "North American / NHL"
+        }
+      ]
+    },
+    {
+      "id": "4e414ea5-e8e3-59f0-b3d5-fec7c0a8da53",
+      "name": "North Toronto Memorial Arena",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=3492",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.707029,
+        "lon": -79.404504
+      },
+      "address": "174 Orchard View Blvd, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.959Z",
+      "type": "indoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-485-0301"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=3492"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Ice Rink",
+          "type": "North American / NHL"
+        }
+      ],
+      "amenities": [
+        "dressing_rooms",
+        "lockers"
+      ]
+    },
+    {
+      "id": "88df1a11-6233-565a-a7e7-70ede4d0c48a",
+      "name": "North Toronto Memorial Community Recreation Centre/Eglinton Park",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=189",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.706106,
+        "lon": -79.404623
+      },
+      "address": "200 Eglinton Ave W, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.959Z",
+      "type": "outdoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-392-6591"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=189"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ],
+      "amenities": [
+        "wifi"
+      ]
+    },
+    {
+      "id": "13af83f1-b754-551d-a96a-c04b6d98a4ec",
+      "name": "Oriole Community Centre",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=714",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.78181,
+        "lon": -79.351281
+      },
+      "address": "2975 Don Mills Rd W, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.960Z",
+      "type": "indoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-395-6005"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=714"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Ice Rink",
+          "type": "North American / NHL"
+        }
+      ],
+      "amenities": [
+        "wifi",
+        "dressing_rooms",
+        "lockers"
+      ]
+    },
+    {
+      "id": "f526cafc-e60f-59af-b562-43ca6b9c000b",
+      "name": "Otter Creek Centre",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=251",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.721407,
+        "lon": -79.409747
+      },
+      "address": "140 Cheritan Ave, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.960Z",
+      "type": "outdoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=251"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
+    },
+    {
+      "id": "78c5ed25-7309-58cd-a19a-d2197eca632e",
+      "name": "Park Lawn Bubble Rink",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=858",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.638584,
+        "lon": -79.495672
+      },
+      "address": "340 Park Lawn Rd, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.961Z",
+      "type": "indoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-394-8491"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=858"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Ice Rink",
+          "type": "North American / NHL"
+        }
+      ],
+      "amenities": [
+        "dressing_rooms",
+        "lockers"
+      ]
+    },
+    {
+      "id": "14b55268-e86a-5ded-b24d-727d7975e0a3",
+      "name": "Paul Coffey Arena",
+      "url": "https://anc.ca.apm.activecommunities.com/activemississauga/calendars?defaultCalendarId=1&locationId=128&categoryIds=52&view=2",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.712693,
+        "lon": -79.63143
+      },
+      "address": "6990 Goreway Drive, Mississauga, ON L4T 1A9",
+      "updatedAt": "2026-11-05T02:58:24.646Z",
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Paul Coffey Arena",
+          "type": "North American / NHL"
+        }
+      ]
+    },
+    {
+      "id": "cc622d20-2925-5814-b2da-64dec890eddc",
+      "name": "Phil White Arena",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=477",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.691283,
+        "lon": -79.432609
+      },
+      "address": "443 Arlington Ave, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.961Z",
+      "type": "indoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-394-2734"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=477"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Ice Rink",
+          "type": "North American / NHL"
+        }
+      ],
+      "amenities": [
+        "wifi",
+        "dressing_rooms",
+        "lockers"
+      ]
+    },
+    {
+      "id": "0d4e4647-cc3e-53ab-be4c-238f5ca2d81b",
+      "name": "Pine Point Arena",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=801",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.712827,
+        "lon": -79.542782
+      },
+      "address": "15 Grierson Rd, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.962Z",
+      "type": "indoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-394-8692"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=801"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Ice Rink",
+          "type": "North American / NHL"
+        }
+      ],
+      "amenities": [
+        "wifi",
+        "dressing_rooms",
+        "lockers"
+      ]
+    },
+    {
+      "id": "5537dc80-5b3a-5c63-bc1f-537a472d6499",
+      "name": "Pleasantview Community Centre",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=732",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.787003,
+        "lon": -79.336705
+      },
+      "address": "545 Van Horne Ave, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.962Z",
+      "type": "indoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-395-6013"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=732"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Ice Rink",
+          "type": "North American / NHL"
+        }
+      ],
+      "amenities": [
+        "wifi",
+        "dressing_rooms",
+        "lockers"
+      ]
+    },
+    {
+      "id": "6f3c7272-34ca-58a1-922b-0779d840a53b",
+      "name": "Port Credit Memorial Arena",
+      "url": "https://anc.ca.apm.activecommunities.com/activemississauga/calendars?defaultCalendarId=1&locationId=106&categoryIds=52&view=2",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.552996,
+        "lon": -79.589022
+      },
+      "address": "40 Stavebank Road, Mississauga, ON L5G 2T8",
+      "updatedAt": "2026-11-05T02:58:24.647Z",
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Port Credit Memorial Arena",
+          "type": "North American / NHL"
+        }
+      ]
+    },
+    {
+      "id": "67c6496c-88c5-592f-9435-a96c714d7061",
+      "name": "Prince of Wales Rink",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=924",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.598919,
+        "lon": -79.499122
+      },
+      "address": "1 Third St, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.963Z",
+      "type": "outdoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=924"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
+    },
+    {
+      "id": "c111bfa7-cbb8-5f5c-bb68-e70b786feacd",
+      "name": "Queensway Rink",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=861",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.626576,
+        "lon": -79.505604
+      },
+      "address": "8 Avon Park Dr, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.963Z",
+      "type": "outdoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=861"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
+    },
+    {
+      "id": "3be3041e-f43e-55d4-a50e-518db1147c58",
+      "name": "Ramsden Park",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=167",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.676526,
+        "lon": -79.389799
+      },
+      "address": "1020 Yonge St, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.964Z",
+      "type": "outdoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=167"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
+    },
+    {
+      "id": "62d0d0e2-d08e-57d7-8cb0-cbe7fab45529",
+      "name": "Regent Park Athletic Grounds",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=419",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.65857,
+        "lon": -79.359431
+      },
+      "address": "480 Shuter St, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.964Z",
+      "type": "outdoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=419"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
+    },
+    {
+      "id": "7e2a4af3-102e-58c8-91f9-d34cb9f7bcb1",
+      "name": "Rennie Park",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=181",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.644413,
+        "lon": -79.473399
+      },
+      "address": "1 Rennie Ter, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.965Z",
+      "type": "outdoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=181"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
+    },
+    {
+      "id": "640bda1a-4ea9-5979-960e-e439488933ab",
+      "name": "Rivercrest Rink",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=355",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.729716,
+        "lon": -79.569518
+      },
+      "address": "30 Harefield Dr, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.965Z",
+      "type": "outdoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=355"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
+    },
+    {
+      "id": "ce581288-b14b-5802-a5ab-fdf10669b169",
+      "name": "Riverdale Park East",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=343",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.670821,
+        "lon": -79.354585
+      },
+      "address": "550 Broadview Ave, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.965Z",
+      "type": "outdoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=343"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
+    },
+    {
+      "id": "d3d0f70a-0d44-563f-8d4b-a54b72fe3393",
+      "name": "Roding Community Centre",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=744",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.729092,
+        "lon": -79.492501
+      },
+      "address": "600 Roding St, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.966Z",
+      "type": "indoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-395-7964"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=744"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Ice Rink",
+          "type": "North American / NHL"
+        }
+      ],
+      "amenities": [
+        "wifi",
+        "dressing_rooms",
+        "lockers"
+      ]
+    },
+    {
+      "id": "5eb98ce3-9bce-5272-9da3-1e18f0545dcc",
+      "name": "Rosedale Park",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=210",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.683047,
+        "lon": -79.379473
+      },
+      "address": "20 Scholfield Ave, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.966Z",
+      "type": "outdoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=210"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
+    },
+    {
+      "id": "65ba8ffa-8b5f-51ed-a3f4-7667323b4394",
+      "name": "Rosemount Community Centre",
+      "url": "https://vaughan.perfectmind.com/25076/Clients/BookMe4BookingPages/Classes?calendarId=84142d20-1da8-48ed-800d-31dc0c30121d&widgetId=dff88c8a-0b78-4a94-9dde-250040385300&embed=False",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.817858,
+        "lon": -79.453424
+      },
+      "address": "1000 New Westminster Dr., Thornhill, ON L4J 8G3",
+      "updatedAt": "2026-11-05T02:58:41.314Z",
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Rink 1",
+          "type": "North American / NHL"
+        }
+      ]
+    },
+    {
+      "id": "2efbc4f7-dfd0-594f-b061-9f8cb2480fdc",
+      "name": "Royalcrest Rink",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=878",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.752704,
+        "lon": -79.604747
+      },
+      "address": "50 Cabernet Cir, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.967Z",
+      "type": "outdoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=878"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
+    },
+    {
+      "id": "0cbf0c8f-d08a-5a57-a860-a1e319867f0d",
+      "name": "Scarborough Arena Gardens",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=3493",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.694811,
+        "lon": -79.262009
+      },
+      "address": "75 Birchmount Rd, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.967Z",
+      "type": "indoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-396-4953"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=3493"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Ice Rink",
+          "type": "North American / NHL"
+        }
+      ],
+      "amenities": [
+        "wifi",
+        "dressing_rooms",
+        "lockers"
+      ]
+    },
+    {
+      "id": "860a79fe-7277-54c6-9c4e-1407fd6d271c",
+      "name": "Scarborough Village Recreation Centre",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=743",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.739991,
+        "lon": -79.216758
+      },
+      "address": "3600 Kingston Rd, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.967Z",
+      "type": "indoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-396-4048"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=743"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Ice Rink",
+          "type": "North American / NHL"
+        }
+      ],
+      "amenities": [
+        "wifi",
+        "dressing_rooms",
+        "lockers"
+      ]
+    },
+    {
+      "id": "d9c34ca1-1b2b-5c64-a887-785cf1303b8d",
+      "name": "Sherbourne Common",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=1860",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.645864,
+        "lon": -79.365527
+      },
+      "address": "5 Lower Sherbourne St, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.968Z",
+      "type": "outdoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=1860"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
+    },
+    {
+      "id": "8a0040d5-927d-5f60-8eea-679349fb4026",
+      "name": "Sir Adam Beck Rink",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=2065",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.602303,
+        "lon": -79.54792
+      },
+      "address": "55 Eltham Dr, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.968Z",
+      "type": "outdoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=2065"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
+    },
+    {
+      "id": "d9834895-7560-5a5a-935a-a9789b74a7f5",
+      "name": "Stouffville Arena",
+      "url": "https://anc.ca.apm.activecommunities.com/townofws/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=13&displayType=0&view=2",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.9742243,
+        "lon": -79.2553137
+      },
+      "address": "12483 Ninth Line, Stouffville, ON L4A 0Z6",
+      "updatedAt": "2026-11-05T02:58:36.356Z",
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Pad A",
+          "type": "North American / NHL"
+        },
+        {
+          "name": "Pad B",
+          "type": "North American / NHL"
+        }
+      ]
+    },
+    {
+      "id": "f13a4e54-373f-59ac-aef4-21e73a85cb9d",
+      "name": "Stouffville Clippers Sports Complex",
+      "url": "https://anc.ca.apm.activecommunities.com/townofws/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=14&displayType=0&view=2",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.9650556,
+        "lon": -79.2617345
+      },
+      "address": "120 Weldon Road, Stouffville, ON L4A 1N2",
+      "updatedAt": "2026-11-05T02:58:36.359Z",
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Pad 1",
+          "type": "North American / NHL"
+        },
+        {
+          "name": "Pad 2",
+          "type": "North American / NHL"
+        }
+      ]
+    },
+    {
+      "id": "7fdd442e-392f-592d-b7b9-493cad9459e4",
+      "name": "Summerlea Rink",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=870",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.727133,
+        "lon": -79.551907
+      },
+      "address": "2 Arcot Blvd, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.968Z",
+      "type": "outdoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=870"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
+    },
+    {
+      "id": "8d752232-d78c-55df-b819-abc29c078aa8",
+      "name": "Sunnydale Acres Rink",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=871",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.724973,
+        "lon": -79.578025
+      },
+      "address": "50 Amoro Dr, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.969Z",
+      "type": "outdoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=871"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
+    },
+    {
+      "id": "45f88588-e6cb-5549-9a4b-da0afcaca711",
+      "name": "Ted Reeve Community Arena",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=3494",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.684435,
+        "lon": -79.299606
+      },
+      "address": "175 Main St, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.969Z",
+      "type": "indoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-694-6893"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=3494"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Ice Rink",
+          "type": "North American / NHL"
+        }
+      ],
+      "amenities": [
+        "dressing_rooms",
+        "lockers"
+      ]
+    },
+    {
+      "id": "d291e81e-caa5-5de2-aa86-439d966df4f2",
+      "name": "Thornhill Community Centre",
+      "url": "https://www.markham.ca/sports-recreation-fitness/community-centres-libraries/thornhill-community-centre-library-fitness-centre",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.820032,
+        "lon": -79.399873
+      },
+      "address": "7755 Bayview Avenue, Markham, ON L3T 4P1",
+      "updatedAt": "2026-11-05T02:58:23.377Z",
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Pad A",
+          "type": "North American / NHL"
+        },
+        {
+          "name": "Pad B",
+          "type": "North American / NHL"
+        }
+      ]
+    },
+    {
+      "id": "e631e177-7337-59d5-a077-4703dbab9013",
+      "name": "Tom Graham Arena",
+      "url": "https://www.richmondhill.ca/en/online-services/Arenas.aspx",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.898905,
+        "lon": -79.402495
+      },
+      "address": "1300 Elgin Mills Road East, Richmond Hill, ON L4S 1M5",
+      "updatedAt": "2026-11-05T03:58:14.131Z",
+      "type": "indoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Richmond Hill"
+        },
+        {
+          "key": "phone",
+          "value": "905-883-4710"
+        },
+        {
+          "key": "website",
+          "value": "https://www.richmondhill.ca/en/online-services/Arenas.aspx"
+        }
+      ]
+    },
+    {
+      "id": "288310f2-214b-5b77-bc13-5bfe093c5a2e",
+      "name": "Toronto Metropolitan University Square",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=240",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.657524,
+        "lon": -79.379745
+      },
+      "address": "50 Gould St, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.969Z",
+      "type": "outdoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=240"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
+    },
+    {
+      "id": "e15aa3bd-b89b-5f7d-8219-f765e3dd1c06",
+      "name": "Trinity Bellwoods Park",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=241",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.649125,
+        "lon": -79.413348
+      },
+      "address": "790 Queen St W, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.970Z",
+      "type": "outdoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=241"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
+    },
+    {
+      "id": "feed34e5-822e-5787-99fb-5b9ef37dc8ac",
+      "name": "Trisan Centre",
+      "url": "https://townshipofking.perfectmind.com/23793/Clients/BookMe4BookingPages/Classes?calendarId=2fd6d540-75aa-416b-9a70-a78b8f598e7d&widgetId=15f6af07-39c5-473e-b053-96653f77a406&embed=False",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 44.007546,
+        "lon": -79.673178
+      },
+      "address": "25 Dillane Dr, Schomberg, ON L0G 1T0",
+      "updatedAt": "2026-11-05T02:58:59.012Z",
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Rink 1",
+          "type": "North American / NHL"
+        }
+      ]
+    },
+    {
+      "id": "4cbf65fc-37ff-5f3d-abb4-dde2a42d1845",
+      "name": "Valleyfield Park",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=812",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.695196,
+        "lon": -79.53428
+      },
+      "address": "35 The Westway, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.970Z",
+      "type": "outdoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=812"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
+    },
+    {
+      "id": "5d0b1a09-3fa1-54ff-a99a-6bb1c0be6af0",
+      "name": "Van Horne Park",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=770",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.787271,
+        "lon": -79.337537
+      },
+      "address": "561 Van Horne Ave, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.970Z",
+      "type": "outdoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=770"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
+    },
+    {
+      "id": "b8dcfac8-62a0-5eae-8802-985337c8dfc9",
+      "name": "Varsity Centre Arena",
+      "url": "https://kpe.utoronto.ca/sport-recreationrecreational-fitness-drop-sportsdrop-sports-activities/drop-ice-skate-ice-sports",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.6670621,
+        "lon": -79.3961168
+      },
+      "address": "299 Bloor St W, Toronto, ON M5S 1W2",
+      "updatedAt": "2026-11-07T16:30:17.366Z",
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Varsity Arena",
+          "type": "North American / NHL"
+        }
+      ],
+      "amenities": [
+        "skate_sharpening"
+      ]
+    },
+    {
+      "id": "303752b9-09fe-575f-ba28-0fede6c5e59f",
+      "name": "Victoria Village Arena",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=771",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.72309,
+        "lon": -79.31579
+      },
+      "address": "190 Bermondsey Rd, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.970Z",
+      "type": "indoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-395-0143"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=771"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Ice Rink",
+          "type": "North American / NHL"
+        }
+      ],
+      "amenities": [
+        "wifi",
+        "dressing_rooms",
+        "lockers"
+      ]
+    },
+    {
+      "id": "1be79f79-7dea-5312-83bb-171970951c0e",
+      "name": "Wallace Emerson Park",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=260",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.667315,
+        "lon": -79.439271
+      },
+      "address": "1260 Dufferin St, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.971Z",
+      "type": "outdoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=260"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
+    },
+    {
+      "id": "0bbebff7-1898-57f3-9a55-23a3b0c796cd",
+      "name": "Wedgewood Park - Etobicoke",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=773",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.644313,
+        "lon": -79.547462
+      },
+      "address": "15 Swan Ave, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.971Z",
+      "type": "outdoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=773"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
+    },
+    {
+      "id": "0d8cb33d-79f6-5a13-abe5-3db6d4586d38",
+      "name": "West Deane Park",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=873",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.663391,
+        "lon": -79.559069
+      },
+      "address": "400 Martin Grove Road, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.972Z",
+      "type": "outdoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=873"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
+    },
+    {
+      "id": "369dab1e-f4fa-56aa-9475-87f87028d066",
+      "name": "West Mall Outdoor Rink - Dennis Flynn Park",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=2642",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.641695,
+        "lon": -79.566014
+      },
+      "address": "370 The West Mall, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.972Z",
+      "type": "outdoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=2642"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
+    },
+    {
+      "id": "4e934402-a4ec-5f98-b68a-234e36864870",
+      "name": "Westgrove Rink",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=876",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.682904,
+        "lon": -79.568114
+      },
+      "address": "15 Redgrave Dr, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.972Z",
+      "type": "outdoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=876"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
+    },
+    {
+      "id": "8a7081a6-8e34-5c2e-955d-28bf9808a201",
+      "name": "Weston Lions Recreation Arena",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=2007",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.698563,
+        "lon": -79.518096
+      },
+      "address": "2125 Lawrence Ave W, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.973Z",
+      "type": "indoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-241-0502"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=2007"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Ice Rink",
+          "type": "North American / NHL"
+        }
+      ],
+      "amenities": [
+        "dressing_rooms",
+        "lockers"
+      ]
+    },
+    {
+      "id": "a5074815-2b05-5786-b06c-d50d3523c085",
+      "name": "Westway - Outdoor Rink",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=874",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.688658,
+        "lon": -79.541722
+      },
+      "address": "175 The Westway, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.973Z",
+      "type": "outdoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=874"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ]
+    },
+    {
+      "id": "d03e2dc4-2cde-5145-be31-56c15bf0ea77",
+      "name": "William H. Bolton Arena",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=3495",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.671227,
+        "lon": -79.415168
+      },
+      "address": "40 Rossmore Rd, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.973Z",
+      "type": "indoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-392-0088"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=3495"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Ice Rink",
+          "type": "North American / NHL"
+        }
+      ],
+      "amenities": [
+        "dressing_rooms",
+        "lockers"
+      ]
+    },
+    {
+      "id": "13d9ed70-ae4a-55bf-8830-c032b9d49d4e",
+      "name": "Withrow Park",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=306",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.674583,
+        "lon": -79.34801
+      },
+      "address": "725 Logan Ave, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.974Z",
+      "type": "outdoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=306"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Outdoor Rink",
+          "type": "Outdoor (non-standard)"
+        }
+      ],
+      "amenities": [
+        "wifi"
+      ]
+    },
+    {
+      "id": "7c59eb1f-81cc-5828-9113-c6341f728d23",
+      "name": "Woodbridge Pool & Memorial Arena",
+      "url": "https://vaughan.perfectmind.com/25076/Clients/BookMe4BookingPages/Classes?calendarId=84142d20-1da8-48ed-800d-31dc0c30121d&widgetId=dff88c8a-0b78-4a94-9dde-250040385300&embed=False",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.7802455,
+        "lon": -79.5916837
+      },
+      "address": "5020 Highway #7, Woodbridge, ON L4L 1T1",
+      "updatedAt": "2026-11-05T02:58:41.314Z",
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Rink 1",
+          "type": "North American / NHL"
+        }
+      ]
+    },
+    {
+      "id": "9f14de56-d33b-5fec-9069-16a809ec0216",
+      "name": "York Mills Arena",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=778",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.747598,
+        "lon": -79.383509
+      },
+      "address": "2539 Bayview Ave, Toronto, ON",
+      "updatedAt": "2026-11-07T16:26:32.974Z",
+      "type": "indoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "City of Toronto"
+        },
+        {
+          "key": "phone",
+          "value": "416-395-7844"
+        },
+        {
+          "key": "website",
+          "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=778"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Ice Rink",
+          "type": "North American / NHL"
+        }
+      ],
+      "amenities": [
+        "wifi",
+        "dressing_rooms",
+        "lockers"
+      ]
+    },
+    {
+      "id": "69517287-99fc-52ea-b25e-e4a803d47e1a",
+      "name": "Zancor Centre",
+      "url": "https://townshipofking.perfectmind.com/23793/Clients/BookMe4BookingPages/Classes?calendarId=2fd6d540-75aa-416b-9a70-a78b8f598e7d&widgetId=15f6af07-39c5-473e-b053-96653f77a406&embed=False",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.952145,
+        "lon": -79.510327
+      },
+      "address": "1600 15th Sideroad, King City, ON L7B 1A3",
+      "updatedAt": "2026-11-05T02:58:59.011Z",
+      "type": "indoor",
+      "rinks": [
+        {
+          "name": "Ice Pad 1",
+          "type": "North American / NHL"
+        },
+        {
+          "name": "Ice Pad 2",
+          "type": "North American / NHL"
+        }
+      ]
+    }
+  ]
+}
