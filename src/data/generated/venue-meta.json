@@ -389,7 +389,9 @@
       "amenities": [
         "skate_sharpening",
         "proshop",
-        "snack_bar"
+        "snack_bar",
+        "dressing_rooms",
+        "washrooms"
       ]
     },
     {
@@ -886,7 +888,8 @@
         "wifi",
         "dressing_rooms",
         "onsite_free_parking",
-        "lockers"
+        "lockers",
+        "washrooms"
       ]
     },
     {
@@ -1493,7 +1496,8 @@
         "wifi",
         "dressing_rooms",
         "gender_neutral_washrooms",
-        "onsite_free_parking"
+        "onsite_free_parking",
+        "washrooms"
       ]
     },
     {

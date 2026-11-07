@@ -16,6 +16,7 @@ export const AMENITIES = [
   "lockers",
   "onsite_free_parking",
   "onsite_paid_parking",
+  "washrooms",
   "gender_neutral_washrooms",
   "wheelchair_accessible",
   "spectator_seating",

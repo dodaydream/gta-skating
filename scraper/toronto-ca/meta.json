@@ -474,7 +474,8 @@
         "wifi",
         "dressing_rooms",
         "onsite_free_parking",
-        "lockers"
+        "lockers",
+        "washrooms"
       ],
       "info": [
         {

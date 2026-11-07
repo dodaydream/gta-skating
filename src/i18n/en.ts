@@ -121,6 +121,7 @@ const en = {
     lockers: "Lockers",
     onsite_free_parking: "Onsite free parking",
     onsite_paid_parking: "Onsite paid parking",
+    washrooms: "Washrooms",
     gender_neutral_washrooms: "Gender-neutral washrooms",
     wheelchair_accessible: "Wheelchair accessible",
     spectator_seating: "Spectator seating",

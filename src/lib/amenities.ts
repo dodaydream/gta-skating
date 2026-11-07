@@ -31,6 +31,7 @@ const AMENITY_ICONS: Record<Amenity, AmenityIcon> = {
   lockers: IconLock,
   onsite_free_parking: IconParking,
   onsite_paid_parking: IconParking,
+  washrooms: IconBadgeWc,
   gender_neutral_washrooms: IconBadgeWc,
   wheelchair_accessible: IconAccessible,
   spectator_seating: IconArmchair,
