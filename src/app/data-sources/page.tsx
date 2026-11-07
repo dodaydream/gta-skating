@@ -184,6 +184,30 @@ export default function DataSourcesPage() {
           </ul>
         </Section>
 
+        <Section id="licensing" title="Licensing and attribution">
+          <p>
+            City of Toronto schedules are derived from the City of Toronto&rsquo;s{" "}
+            <SourceLink
+              name="Registered Programs and Drop In Courses Offering"
+              href="https://open.toronto.ca/dataset/registered-programs-and-drop-in-courses-offering/"
+            />{" "}
+            open dataset, used under the{" "}
+            <SourceLink
+              name="Open Government Licence – Toronto"
+              href="https://www.toronto.ca/city-government/data-research-maps/open-data/open-data-licence/"
+            />
+            .
+          </p>
+          <p>
+            Contains information licensed under the Open Government Licence –
+            Toronto.
+          </p>
+          <p>
+            All other schedules are published publicly by their respective
+            organizations, and their own terms of use may apply.
+          </p>
+        </Section>
+
         <Section id="accuracy" title="Accuracy and verification">
           <p>
             Schedules can change at short notice — holidays, tournaments, and
