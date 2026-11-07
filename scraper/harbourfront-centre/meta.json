@@ -1,0 +1,33 @@
+{
+  "id": "harbourfront-centre",
+  "name": "Harbourfront Centre",
+  "type": "Outdoor",
+  "url": "https://harbourfrontcentre.com/program/skate/",
+  "address": "235 Queens Quay W, Toronto, ON M5J 2G8",
+  "coordinates": {
+    "lat": 43.638665,
+    "lon": -79.381569
+  },
+  "rinks": [
+    {
+      "name": "Jumpstart Community Rink",
+      "type": "Outdoor"
+    }
+  ],
+  "amenities": [
+    "skate_rentals",
+    "helmet_rentals",
+    "skate_sharpening",
+    "proshop"
+  ],
+  "info": [
+    {
+      "key": "operator",
+      "value": "Harbourfront Centre"
+    },
+    {
+      "key": "phone",
+      "value": "(416) 973-4000"
+    }
+  ]
+}

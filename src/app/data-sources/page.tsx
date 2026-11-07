@@ -57,6 +57,11 @@ const SOURCES: {
     title: "Public Skating",
   },
   {
+    name: "Harbourfront Centre",
+    href: "https://harbourfrontcentre.com/program/skate/",
+    title: "Skate by the Lake – Harbourfront Centre",
+  },
+  {
     name: "Larry Grossman Forest Hill Memorial Arena",
     href: "https://larrygrossmanforesthillarena.com/recreational-skating-hours/",
     title: "Recreational Skating Hours - Larry Grossman",

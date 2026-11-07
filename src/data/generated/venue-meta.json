@@ -388,7 +388,7 @@
       ],
       "amenities": [
         "skate_sharpening",
-        "equipment_gear_purchase",
+        "proshop",
         "snack_bar"
       ]
     },
@@ -573,7 +573,7 @@
         "dressing_rooms",
         "onsite_free_parking",
         "snack_bar",
-        "equipment_gear_purchase",
+        "proshop",
         "skate_sharpening",
         "live_streaming",
         "wheelchair_accessible"
@@ -614,7 +614,7 @@
         "dressing_rooms",
         "onsite_free_parking",
         "snack_bar",
-        "equipment_gear_purchase",
+        "proshop",
         "skate_sharpening",
         "live_streaming",
         "wheelchair_accessible"
@@ -663,7 +663,7 @@
         "dressing_rooms",
         "onsite_free_parking",
         "snack_bar",
-        "equipment_gear_purchase",
+        "proshop",
         "skate_sharpening",
         "live_streaming",
         "wheelchair_accessible"
@@ -727,7 +727,7 @@
         "dressing_rooms",
         "onsite_free_parking",
         "snack_bar",
-        "equipment_gear_purchase",
+        "proshop",
         "skate_sharpening",
         "live_streaming",
         "wheelchair_accessible"
@@ -1683,7 +1683,7 @@
         "spectator_seating",
         "snack_bar",
         "skate_sharpening",
-        "equipment_gear_purchase",
+        "proshop",
         "lockers"
       ]
     },
@@ -1973,6 +1973,41 @@
         "wifi",
         "dressing_rooms",
         "lockers"
+      ]
+    },
+    {
+      "id": "00e34951-aad4-58f4-a871-caa61e3f14a3",
+      "name": "Harbourfront Centre",
+      "url": "https://harbourfrontcentre.com/program/skate/",
+      "timezone": "America/Toronto",
+      "coordinates": {
+        "lat": 43.638665,
+        "lon": -79.381569
+      },
+      "address": "235 Queens Quay W, Toronto, ON M5J 2G8",
+      "updatedAt": "2026-11-07T18:16:02.772Z",
+      "type": "outdoor",
+      "info": [
+        {
+          "key": "operator",
+          "value": "Harbourfront Centre"
+        },
+        {
+          "key": "phone",
+          "value": "(416) 973-4000"
+        }
+      ],
+      "rinks": [
+        {
+          "name": "Jumpstart Community Rink",
+          "type": "Outdoor"
+        }
+      ],
+      "amenities": [
+        "skate_rentals",
+        "helmet_rentals",
+        "skate_sharpening",
+        "proshop"
       ]
     },
     {

@@ -72,7 +72,34 @@ function buildClientData(): Promise<number | null> {
   });
 }
 
+/**
+ * Validate venue amenity metadata against the predefined keys before scraping,
+ * so malformed data never reaches the committed artifacts.
+ */
+function validateMeta(): Promise<number | null> {
+  const file = path.join(HERE, "validate-meta.ts");
+  return new Promise((resolve) => {
+    const child = spawn(process.execPath, [file], {
+      cwd: HERE,
+      env: process.env,
+      stdio: ["ignore", "inherit", "inherit"],
+    });
+    child.on("error", (err) => {
+      console.error(`[validate-meta] failed to start: ${err.message}`);
+      resolve(-1);
+    });
+    child.on("close", (code) => resolve(code));
+  });
+}
+
 async function main(): Promise<void> {
+  const validateCode = await validateMeta();
+  if (validateCode !== 0) {
+    console.error("[validate-meta] failed; aborting scrape.");
+    process.exitCode = 1;
+    return;
+  }
+
   const want = process.argv[2];
   let venues = await discoverVenues();
   if (want) {

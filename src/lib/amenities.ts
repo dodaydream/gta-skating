@@ -10,35 +10,13 @@ import {
   IconLock,
   IconParking,
   IconPointFilled,
-  IconRepeat,
   IconShoppingCart,
   IconToolsKitchen2,
   IconWifi,
 } from "@tabler/icons-react";
+import { AMENITIES, type Amenity } from "@/lib/amenity-keys";
 
-/**
- * Standardized amenity keys, stored in data as snake_case and translated at
- * render time via the `amenities.*` i18n namespace.
- */
-export const AMENITIES = [
-  "skate_rentals",
-  "helmet_rentals",
-  "skate_sharpening",
-  "equipment_gear_purchase",
-  "equipment_gear_rental",
-  "snack_bar",
-  "wifi",
-  "dressing_rooms",
-  "lockers",
-  "onsite_free_parking",
-  "onsite_paid_parking",
-  "gender_neutral_washrooms",
-  "wheelchair_accessible",
-  "spectator_seating",
-  "live_streaming",
-] as const;
-
-export type Amenity = (typeof AMENITIES)[number];
+export { AMENITIES, type Amenity };
 
 type AmenityIcon = ComponentType<{ className?: string }>;
 
@@ -46,8 +24,7 @@ const AMENITY_ICONS: Record<Amenity, AmenityIcon> = {
   skate_rentals: IconIceSkating,
   helmet_rentals: IconHelmet,
   skate_sharpening: IconIceSkating,
-  equipment_gear_purchase: IconShoppingCart,
-  equipment_gear_rental: IconRepeat,
+  proshop: IconShoppingCart,
   snack_bar: IconToolsKitchen2,
   wifi: IconWifi,
   dressing_rooms: IconDoorEnter,
