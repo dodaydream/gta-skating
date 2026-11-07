@@ -1,28 +1,38 @@
 "use client";
 
-import { usePathname, useRouter } from "next/navigation";
 import { useTranslation } from "react-i18next";
 import { cn } from "cn";
-import { useLocale } from "@/i18n/LocaleProvider";
-import { LOCALE_STORAGE_KEY, SUPPORTED_LOCALES } from "@/i18n/locales";
+import { useLocale, useSetLocale } from "@/i18n/LocaleProvider";
+import { LOCALE_STORAGE_KEY, SUPPORTED_LOCALES, type Locale } from "@/i18n/locales";
 
-export function LanguageToggle({ className }: { className?: string }) {
+export function LanguageToggle({
+  className,
+  onSelect,
+}: {
+  className?: string;
+  /** Called after the locale is switched (e.g. to dismiss a settings panel). */
+  onSelect?: () => void;
+}) {
   const { t } = useTranslation();
   const current = useLocale();
-  const pathname = usePathname();
-  const router = useRouter();
+  const setLocale = useSetLocale();
 
-  const select = (locale: string) => {
+  const select = (locale: Locale) => {
+    if (locale === current) return;
     try {
       window.localStorage.setItem(LOCALE_STORAGE_KEY, locale);
     } catch {
-      // Storage unavailable (private mode, blocked): navigation still applies.
+      // Storage unavailable (private mode, blocked): switching still applies.
     }
-    if (locale === current) return;
-    // Swap the leading locale segment, keeping the rest of the path (e.g.
-    // /en/venue/moss-park -> /fr/venue/moss-park).
+    // Swap the leading locale segment in place. This deliberately avoids a
+    // router navigation: changing the `[lang]` root param would remount the
+    // route (reloading the map and the program list), so instead the URL and
+    // the client locale are updated together without a route change.
+    const { pathname, search, hash } = window.location;
     const rest = pathname.replace(/^\/[^/]+/, "");
-    router.push(`/${locale}${rest}`);
+    window.history.replaceState(null, "", `/${locale}${rest}${search}${hash}`);
+    setLocale(locale);
+    onSelect?.();
   };
 
   return (

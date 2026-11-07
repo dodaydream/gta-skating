@@ -222,7 +222,7 @@ function FavouritesSection() {
   );
 }
 
-function SettingsSection() {
+function SettingsSection({ onClose }: { onClose: () => void }) {
   const { t } = useTranslation();
   return (
     <section className="px-5 pt-5">
@@ -234,7 +234,7 @@ function SettingsSection() {
           <span className="text-sm text-black dark:text-zinc-50">
             {t("language.label")}
           </span>
-          <LanguageToggle />
+          <LanguageToggle onSelect={onClose} />
         </div>
         <div className="flex items-center justify-between gap-3 px-3 py-2">
           <span className="text-sm text-black dark:text-zinc-50">
@@ -272,7 +272,7 @@ export function UserCentre({
       </PanelDescription>
       <div className="flex flex-1 flex-col">
         <FavouritesSection />
-        <SettingsSection />
+        <SettingsSection onClose={onClose} />
         <p className="mt-auto flex items-start gap-1.5 px-5 py-4 text-xs text-zinc-400 dark:text-zinc-500">
           <IconInfoCircle className="mt-px size-3.5 shrink-0" />
           <span>{t("user.localNote")}</span>
