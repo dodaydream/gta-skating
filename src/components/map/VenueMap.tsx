@@ -335,10 +335,11 @@ class ZoomControl implements maplibregl.IControl {
 
 function isDarkMode(): boolean {
   if (typeof document === "undefined") return false;
-  return (
-    document.documentElement.classList.contains("dark") ||
-    window.matchMedia("(prefers-color-scheme: dark)").matches
-  );
+  // The app always reflects the active theme as a `dark` class on <html> (set by
+  // the inline boot script and by setTheme), so that class is the single source
+  // of truth. Consulting `prefers-color-scheme` here would pin the map to the OS
+  // preference and ignore the in-app toggle.
+  return document.documentElement.classList.contains("dark");
 }
 
 export default function VenueMap({
@@ -530,17 +531,14 @@ export default function VenueMap({
   }, []);
 
   useEffect(() => {
-    const mq = window.matchMedia("(prefers-color-scheme: dark)");
     const observer = new MutationObserver(() => setDark(isDarkMode()));
     observer.observe(document.documentElement, {
       attributes: true,
       attributeFilter: ["class"],
     });
-    mq.addEventListener("change", () => setDark(isDarkMode()));
 
     return () => {
       observer.disconnect();
-      mq.removeEventListener("change", () => setDark(isDarkMode()));
     };
   }, []);
 
