@@ -13,7 +13,18 @@ const nextConfig: NextConfig = {
   allowedDevOrigins: ["172.16.100.139"],
   // Static export for GitHub Pages: the build emits plain HTML/CSS/JS into
   // `out/`. Cache Components/PPR require a Node.js server, so they are off.
-  output: "export",
+  //
+  // Only for `next build` (NODE_ENV=production). A normal dev server renders
+  // unmatched/invalid params and 404s via `notFound()`, whereas `output:
+  // "export"` makes the dev server hard-error on any param that isn't in
+  // `generateStaticParams()`.
+  ...(process.env.NODE_ENV === "production" ? { output: "export" as const } : {}),
+  // The app has two root layouts (`(app)` and `(content)`) and a top-level
+  // `[lang]` segment, so a global 404 can't be composed from a single layout.
+  // `global-not-found.tsx` renders the 404 for unmatched URLs (out/404.html).
+  experimental: {
+    globalNotFound: true,
+  },
   basePath,
   env: {
     NEXT_PUBLIC_BASE_PATH: basePath,

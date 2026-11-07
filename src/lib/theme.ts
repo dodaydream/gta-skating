@@ -42,6 +42,32 @@ export function setTheme(theme: Theme): void {
   for (const listener of listeners) listener();
 }
 
+/**
+ * Re-apply the persisted (or system) theme to `<html>` without persisting it.
+ *
+ * Needed after a client navigation that changes a root parameter (e.g.
+ * `/en` -> `/fr`): the root layout re-renders and React resets `<html>`'s
+ * `className` to the server-rendered value, dropping the `dark` class that
+ * `ThemeScript` applied imperatively.
+ */
+export function syncThemeFromStorage(): void {
+  if (typeof document === "undefined") return;
+  let stored: Theme | null = null;
+  try {
+    const raw = window.localStorage.getItem(THEME_STORAGE_KEY);
+    stored = raw === "dark" || raw === "light" ? raw : null;
+  } catch {
+    stored = null;
+  }
+  const dark =
+    stored !== null
+      ? stored === "dark"
+      : window.matchMedia("(prefers-color-scheme: dark)").matches;
+  current = dark ? "dark" : "light";
+  document.documentElement.classList.toggle("dark", dark);
+  for (const listener of listeners) listener();
+}
+
 export function useTheme(): Theme {
   return useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot);
 }

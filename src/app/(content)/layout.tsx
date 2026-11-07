@@ -4,6 +4,7 @@ import { I18nProvider } from "@/components/I18nProvider";
 import { rootMetadata, rootViewport } from "@/lib/metadata";
 import { fontClassName } from "@/lib/fonts";
 import { ThemeScript } from "@/components/ThemeScript";
+import { ThemeSync } from "@/components/ThemeSync";
 import { SiteScripts } from "@/components/SiteScripts";
 import "../globals.css";
 
@@ -27,6 +28,7 @@ export default function ContentRootLayout({
     >
       <body className="flex h-full flex-col overflow-hidden">
         <ThemeScript />
+        <ThemeSync />
         <I18nProvider>{children}</I18nProvider>
         <SiteScripts />
       </body>
