@@ -17,7 +17,10 @@ interface VenueMapProps {
   venues: Venue[];
   selectedIndex: number | null;
   onSelect: (index: number) => void;
-  onBoundsChange?: (bounds: MapBounds) => void;
+  // `userInitiated` is true only for DOM-driven moves (drag/scroll/rotate),
+  // not for programmatic camera changes (initial framing, geolocation, drawer
+  // resizes). It lets the area pages hand off to the unscoped app on user pan.
+  onBoundsChange?: (bounds: MapBounds, userInitiated: boolean) => void;
   userLocation?: { lat: number; lon: number } | null;
   locateRef: React.MutableRefObject<(() => void) | null>;
   focusVenue?: { lat: number; lon: number } | null;
@@ -481,7 +484,7 @@ export default function VenueMap({
       );
     };
 
-    const emitBounds = () => {
+    const emitBounds = (userInitiated: boolean) => {
       const b = map.getBounds();
       // On mobile the floating drawer covers the bottom of the map. The visible
       // map height is `height - drawerHeight`, so clamp the southern edge to
@@ -497,7 +500,7 @@ export default function VenueMap({
         east: b.getEast(),
         north: b.getNorth(),
       };
-      onBoundsChangeRef.current?.(bounds);
+      onBoundsChangeRef.current?.(bounds, userInitiated);
       if (boundsTrackTimerRef.current) clearTimeout(boundsTrackTimerRef.current);
       boundsTrackTimerRef.current = setTimeout(() => {
         trackEvent("map_bounds_change", {
@@ -511,9 +514,9 @@ export default function VenueMap({
     map.on("load", () => {
       // An area page already seeded these bounds; skip the map's own load emit
       // so the initial frame (`fitBounds` effect below) is what gets emitted.
-      if (!fitBoundsRef.current) emitBounds();
+      if (!fitBoundsRef.current) emitBounds(false);
     });
-    map.on("moveend", emitBounds);
+    map.on("moveend", (e) => emitBounds(Boolean(e.originalEvent)));
 
     // Re-clamp when the drawer's snap detent changes `--drawer-height`.
     let lastDrawerHeight = document.documentElement.style.getPropertyValue(
@@ -525,7 +528,7 @@ export default function VenueMap({
       );
       if (next === lastDrawerHeight) return;
       lastDrawerHeight = next;
-      emitBounds();
+      emitBounds(false);
     });
     drawerObserver.observe(document.documentElement, {
       attributes: true,

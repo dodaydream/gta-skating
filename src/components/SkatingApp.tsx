@@ -109,6 +109,12 @@ export default function SkatingApp({
   const [mapBounds, setMapBounds] = useState<MapBounds | null>(() =>
     area ? getAreaBounds(area) : null
   );
+  // An area page is scoped to its initial bounds only. Once the user changes the
+  // map range (pan/zoom) we drop the area scope: the sidebar heading reverts to
+  // the generic title and the URL returns to the root. This is done in place
+  // (no route change) so the map and drawer are not remounted.
+  const [areaCleared, setAreaCleared] = useState(false);
+  const activeArea = areaCleared ? undefined : area;
   const [userLocation, setUserLocation] = useState<{
     lat: number;
     lon: number;
@@ -227,6 +233,21 @@ export default function SkatingApp({
     favorites,
   ]);
 
+  // An area page is scoped to its initial bounds only. Once the user changes
+  // the map range (pan/zoom), hand off to the unscoped app at the root route so
+  // the sidebar title and list reflect the new, wider scope. The URL is updated
+  // in place rather than via the router, so the map and drawer are not remounted.
+  const handleBoundsChange = useCallback(
+    (bounds: MapBounds, userInitiated: boolean) => {
+      setMapBounds(bounds);
+      if (area && userInitiated) {
+        setAreaCleared(true);
+        window.history.replaceState(null, "", `${BASE_PATH}/${locale}`);
+      }
+    },
+    [area, locale]
+  );
+
   const handleSelect = useCallback(
     (index: number) => {
       const next = selectedIndex === index ? null : index;
@@ -302,7 +323,7 @@ export default function SkatingApp({
             venues={venues}
             selectedIndex={visibleIndex}
             onSelect={handleSelect}
-            onBoundsChange={setMapBounds}
+            onBoundsChange={handleBoundsChange}
             userLocation={userLocation}
             focusVenue={focusVenue}
             fitBounds={areaBounds}
@@ -392,7 +413,9 @@ export default function SkatingApp({
           detailOpen={detailSlug !== null}
           sortBy={sortBy}
           title={
-            area ? t("sidebar.titleArea", { area: area.name }) : undefined
+            activeArea
+              ? t("sidebar.titleArea", { area: activeArea.name })
+              : undefined
           }
         />
       </div>
