@@ -1,9 +1,13 @@
 # GTA Skating
 
+<div align="center">
+
 ![GTA Skating — leisure skating, figure skating, shinny, and hockey at rinks across the GTA](public/opengraph-image.png)
 
 [![Website](https://img.shields.io/website?url=https%3A%2F%2Fgtaskating.com&label=gtaskating.com)](https://gtaskating.com)
 [![GitHub stars](https://img.shields.io/github/stars/dodaydream/gta-skating?style=social)](https://github.com/dodaydream/gta-skating/stargazers)
+
+</div>
 
 Find public skating, figure skating, shinny, and hockey drop-in schedules at
 rinks across the Greater Toronto Area — on an interactive map, with date and
