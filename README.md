@@ -28,8 +28,6 @@ export) deployed to GitHub Pages at [gtaskating.com](https://gtaskating.com).
 - **Busyness reports** — anonymous "how busy is it" ratings, averaged once a
   session has enough reports (optional; requires Firebase).
 - **Bilingual UI** — English and French.
-- **SEO** — server-rendered venue content, JSON-LD structured data, sitemap, and
-  robots.
 
 ## Tech stack
 
