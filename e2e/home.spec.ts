@@ -30,7 +30,7 @@ test.describe("home schedule", () => {
       page.getByRole("button", { name: "Filters", exact: true })
     ).toBeVisible();
     await expect(
-      page.getByRole("button", { name: "Arenas with programs" })
+      page.getByRole("button", { name: "Venues with programs" })
     ).toBeVisible();
 
     // Footer navigation.
@@ -84,7 +84,7 @@ test.describe("home schedule", () => {
   test("shows the empty state when no program falls in the range", async ({ page }) => {
     const venues = loadVenues();
     await freezeToDay(page, addDays(lastProgramDay(venues), 30));
-    await page.goto("/");
+    await page.goto("/en");
 
     await expect.poll(() => programCount(page)).toBe(0);
     await expect(sidebar(page).getByText("No programs found")).toBeVisible();

@@ -12,7 +12,7 @@ import {
   getTodayInVenueTime,
   toMinutes,
 } from "@/lib/schedule";
-import { normalizeLocale, type Locale } from "@/i18n/config";
+import { normalizeLocale, type Locale } from "@/i18n/locales";
 import { IconChevronLeft, IconChevronRight } from "@tabler/icons-react";
 import dayjs from "dayjs";
 import "dayjs/locale/fr-ca";

@@ -47,7 +47,8 @@ import { trackEvent } from "@/lib/analytics";
 import { toggleFavorite, useFavorites } from "@/lib/favorites";
 import { amenityIcon } from "@/lib/amenities";
 import { SITE_REPO } from "@/lib/site";
-import { normalizeLocale } from "@/i18n/config";
+import { normalizeLocale } from "@/i18n/locales";
+import { useLocale } from "@/i18n/LocaleProvider";
 import {
   IconAlertCircle,
   IconCheck,
@@ -262,10 +263,11 @@ function ShareButton({
   className?: string;
 }) {
   const { t } = useTranslation();
+  const locale = useLocale();
   const [copied, setCopied] = useState(false);
 
   const handleClick = async () => {
-    const url = `${window.location.origin}${BASE_PATH}/venue/${slug}`;
+    const url = `${window.location.origin}${BASE_PATH}/${locale}/venue/${slug}`;
     const shareData = {
       title: name,
       text: t("venue.shareText", { name }),

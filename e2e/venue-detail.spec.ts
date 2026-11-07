@@ -21,7 +21,7 @@ test.describe("venue detail", () => {
     await freezeToDay(page, densestDay(venues));
     const venue = venueWithMostPrograms(venues);
 
-    await page.goto(`/venue/${slugify(venue.name)}`);
+    await page.goto(`/en/venue/${slugify(venue.name)}`);
 
     const dialog = page.locator('[data-slot="dialog-content"]');
     await expect(dialog).toBeVisible();
@@ -48,7 +48,7 @@ test.describe("venue detail", () => {
     );
 
     await dialog.getByRole("button", { name: "Close" }).click();
-    await expect(page).toHaveURL(/\/$/);
+    await expect(page).toHaveURL(/\/en$/);
     await expect(dialog).toBeHidden();
   });
 
@@ -62,7 +62,7 @@ test.describe("venue detail", () => {
     await expect(firstProgram).toBeVisible();
     await firstProgram.click();
 
-    await expect(page).toHaveURL(/\/venue\/[^/]+$/);
+    await expect(page).toHaveURL(/\/en\/venue\/[^/]+$/);
 
     const dialog = page.locator('[data-slot="dialog-content"]');
     await expect(dialog).toBeVisible();
@@ -86,7 +86,7 @@ test.describe("venue detail (android)", () => {
     await freezeToDay(page, densestDay(venues));
     const venue = venueWithMostPrograms(venues);
 
-    await page.goto(`/venue/${slugify(venue.name)}`);
+    await page.goto(`/en/venue/${slugify(venue.name)}`);
 
     const dialog = page.locator('[data-slot="dialog-content"]');
     await expect(

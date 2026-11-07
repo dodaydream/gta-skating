@@ -1,18 +1,21 @@
 import { ImageResponse } from "next/og";
 import { getSlugForVenue, getVenueBySlug, venues } from "@/data/schedules";
+import { SUPPORTED_LOCALES } from "@/i18n/locales";
 
 export const alt = "GTA Skating Schedule";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
 export function generateStaticParams() {
-  return venues.map((venue) => ({ slug: getSlugForVenue(venue.name) }));
+  return SUPPORTED_LOCALES.flatMap((lang) =>
+    venues.map((venue) => ({ lang, slug: getSlugForVenue(venue.name) }))
+  );
 }
 
 export default async function OpengraphImage({
   params,
 }: {
-  params: Promise<{ slug: string }>;
+  params: Promise<{ lang: string; slug: string }>;
 }) {
   const { slug } = await params;
   const venue = getVenueBySlug(slug);

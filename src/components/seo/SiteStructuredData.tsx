@@ -2,14 +2,14 @@ import { serializeJsonLd } from "@/lib/jsonld";
 import { SITE_DESCRIPTION, SITE_NAME, SITE_URL } from "@/lib/site";
 
 /** JSON-LD describing the site itself. */
-export function SiteStructuredData() {
+export function SiteStructuredData({ locale }: { locale: string }) {
   const json = serializeJsonLd({
     "@context": "https://schema.org",
     "@type": "WebSite",
     name: SITE_NAME,
-    url: SITE_URL,
+    url: `${SITE_URL}/${locale}`,
     description: SITE_DESCRIPTION,
-    inLanguage: "en-CA",
+    inLanguage: locale === "fr" ? "fr-CA" : "en-CA",
   });
 
   return (

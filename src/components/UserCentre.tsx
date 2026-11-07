@@ -18,6 +18,7 @@ import {
 } from "@/components/ui/drawer";
 import { LanguageToggle } from "@/components/LanguageToggle";
 import { ThemeToggle } from "@/components/ThemeToggle";
+import { useLocale } from "@/i18n/LocaleProvider";
 import { getVenueBySlug } from "@/data/venue-meta";
 import { toggleFavorite, useFavorites } from "@/lib/favorites";
 import {
@@ -170,12 +171,13 @@ function CloseButton({ onClick }: { onClick: () => void }) {
 
 function FavoriteVenueItem({ slug }: { slug: string }) {
   const { t } = useTranslation();
+  const locale = useLocale();
   const venue = getVenueBySlug(slug);
   if (!venue) return null;
 
   return (
     <div className="flex items-center gap-2 px-3 py-2">
-      <Link href={`/venue/${slug}`} className="min-w-0 flex-1">
+      <Link href={`/${locale}/venue/${slug}`} className="min-w-0 flex-1">
         <div className="truncate text-sm font-medium text-black dark:text-zinc-50">
           {venue.name}
         </div>

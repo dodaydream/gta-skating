@@ -1,16 +1,9 @@
-import type { Metadata } from "next";
 import { NotFoundContent } from "@/components/NotFoundContent";
 import { NotFoundTracker } from "@/components/NotFoundTracker";
 import { SiteFooter } from "@/components/ui/SiteFooter";
 
-export const metadata: Metadata = {
-  title: "Page not found — GTA Skating Schedule",
-  description:
-    "The page you were looking for could not be found. Browse skating schedules across the Greater Toronto Area instead.",
-  robots: { index: false, follow: true },
-};
-
-export default function NotFound() {
+/** Shared 404 body, rendered by the `not-found.tsx` of each root layout. */
+export function NotFoundPage() {
   return (
     <main className="flex min-h-0 flex-1 flex-col overflow-y-auto bg-zinc-50 dark:bg-black">
       <NotFoundTracker />

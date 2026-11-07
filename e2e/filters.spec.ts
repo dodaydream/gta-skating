@@ -84,10 +84,10 @@ test.describe("schedule filters", () => {
     await openDensestDay(page);
 
     const toggle = page.locator('[data-slot="venue-display"]');
-    await expect(toggle).toHaveAttribute("aria-label", "Arenas with programs");
+    await expect(toggle).toHaveAttribute("aria-label", "Venues with programs");
 
     await toggle.click();
-    await expect(toggle).toHaveAttribute("aria-label", "All arenas");
+    await expect(toggle).toHaveAttribute("aria-label", "All venues");
 
     await toggle.click();
     await expect(toggle).toHaveAttribute(
@@ -96,6 +96,6 @@ test.describe("schedule filters", () => {
     );
 
     await toggle.click();
-    await expect(toggle).toHaveAttribute("aria-label", "Arenas with programs");
+    await expect(toggle).toHaveAttribute("aria-label", "Venues with programs");
   });
 });

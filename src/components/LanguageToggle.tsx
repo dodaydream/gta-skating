@@ -1,26 +1,28 @@
 "use client";
 
+import { usePathname, useRouter } from "next/navigation";
 import { useTranslation } from "react-i18next";
 import { cn } from "cn";
-import {
-  LOCALE_STORAGE_KEY,
-  normalizeLocale,
-  SUPPORTED_LOCALES,
-} from "@/i18n/config";
+import { useLocale } from "@/i18n/LocaleProvider";
+import { LOCALE_STORAGE_KEY, SUPPORTED_LOCALES } from "@/i18n/locales";
 
 export function LanguageToggle({ className }: { className?: string }) {
-  const { t, i18n } = useTranslation();
-  const current = normalizeLocale(i18n.resolvedLanguage);
+  const { t } = useTranslation();
+  const current = useLocale();
+  const pathname = usePathname();
+  const router = useRouter();
 
   const select = (locale: string) => {
-    if (locale !== current) {
-      void i18n.changeLanguage(locale);
-    }
     try {
       window.localStorage.setItem(LOCALE_STORAGE_KEY, locale);
     } catch {
-      // Storage unavailable (private mode, blocked): language still applies.
+      // Storage unavailable (private mode, blocked): navigation still applies.
     }
+    if (locale === current) return;
+    // Swap the leading locale segment, keeping the rest of the path (e.g.
+    // /en/venue/moss-park -> /fr/venue/moss-park).
+    const rest = pathname.replace(/^\/[^/]+/, "");
+    router.push(`/${locale}${rest}`);
   };
 
   return (

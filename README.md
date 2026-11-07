@@ -27,14 +27,16 @@ export) deployed to GitHub Pages at [gtaskating.com](https://gtaskating.com).
 - **Favourites** — saved in the browser, with a favourites-only map view.
 - **Busyness reports** — anonymous "how busy is it" ratings, averaged once a
   session has enough reports (optional; requires Firebase).
-- **Bilingual UI** — English and French.
+- **Bilingual UI** — English and French, served under locale-prefixed routes
+  (`/en`, `/fr`).
 
 ## Tech stack
 
 - Next.js 16 (App Router, `output: "export"`), React 19, TypeScript
 - Tailwind CSS v4 and shadcn/ui components
 - MapLibre GL JS with [OpenFreeMap](https://openfreemap.org) styles
-- i18next / react-i18next for internationalization
+- i18next / react-i18next for internationalization, with locale-prefixed app
+  routes (`/en`, `/fr`)
 - Firebase (Auth + Firestore) for anonymous busyness reports
 - dayjs for timezone-aware schedule handling
 
@@ -65,11 +67,12 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ```
 src/
-  app/          # routes: /, /venue/[slug], /data-sources, /faq, /privacy, sitemap, robots
+  app/          # routes split into two root layouts: (app)/[lang] for the
+                # localized app, (content) for the English content pages
   api/          # client-side data loading (venue details, program shards, busyness)
   components/   # UI: map, schedule, filters, ads, seo, ui (shadcn), and app shell
   data/         # schedules.ts, venue-meta.ts and generated/venue-meta.json
-  i18n/         # en.ts / fr.ts message catalogues
+  i18n/         # locale config, LocaleProvider, and en.ts / fr.ts message catalogues
   lib/          # theme, favourites, analytics, feedback, firebase, schedule helpers
   types/        # shared TypeScript types
 scraper/        # one folder per source, each with a scrape.ts entry
@@ -79,8 +82,10 @@ scraper/        # one folder per source, each with a scrape.ts entry
 
 ### Routes
 
-- `/` — map plus the schedule sidebar.
-- `/venue/[slug]` — one statically generated page per venue.
+- `/` — redirects to the visitor's stored or browser-preferred locale.
+- `/en`, `/fr` — map plus the schedule sidebar, in that language.
+- `/en/venue/[slug]`, `/fr/venue/[slug]` — one statically generated page per
+  venue.
 - `/data-sources` — where the data comes from, plus licensing and attribution.
 - `/faq` — frequently asked questions.
 - `/privacy` — privacy policy.

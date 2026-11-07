@@ -8,7 +8,7 @@ import {
   formatTimeRange,
   getTodayInVenueTime,
 } from "@/lib/schedule";
-import { normalizeLocale } from "@/i18n/config";
+import { normalizeLocale } from "@/i18n/locales";
 import { TicketBadge } from "@/components/schedule/TicketBadge";
 
 export function ProgramListItem({

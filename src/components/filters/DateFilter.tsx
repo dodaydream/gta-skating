@@ -8,7 +8,7 @@ import { useTranslation } from "react-i18next";
 import type { DateRange } from "react-day-picker";
 import { Button } from "@/components/ui/button";
 import { DateRangePicker } from "@/components/ui/date-picker";
-import { normalizeLocale, type Locale } from "@/i18n/config";
+import { normalizeLocale, type Locale } from "@/i18n/locales";
 import { dayjsLocale, formatTime } from "@/lib/schedule";
 import { IconCalendarWeek, IconCalendar } from "@tabler/icons-react";
 

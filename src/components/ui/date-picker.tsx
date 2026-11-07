@@ -9,7 +9,7 @@ import { enCA, frCA } from "react-day-picker/locale";
 import { cn } from "cn";
 import { Button } from "@/components/ui/button";
 import { Calendar } from "@/components/ui/calendar";
-import { normalizeLocale } from "@/i18n/config";
+import { normalizeLocale } from "@/i18n/locales";
 import {
   Drawer,
   DrawerContent,

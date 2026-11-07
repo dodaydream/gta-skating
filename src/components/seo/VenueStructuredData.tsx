@@ -20,11 +20,13 @@ function parseAddress(address: string): {
 export function VenueStructuredData({
   venue,
   slug,
+  locale,
 }: {
   venue: Venue;
   slug: string;
+  locale: string;
 }) {
-  const url = `${SITE_URL}/venue/${slug}`;
+  const url = `${SITE_URL}/${locale}/venue/${slug}`;
   const { streetAddress, addressLocality, addressRegion } = parseAddress(
     venue.address
   );
@@ -76,7 +78,7 @@ export function VenueStructuredData({
         "@type": "ListItem",
         position: 1,
         name: SITE_NAME,
-        item: SITE_URL,
+        item: `${SITE_URL}/${locale}`,
       },
       {
         "@type": "ListItem",

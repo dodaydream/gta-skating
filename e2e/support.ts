@@ -189,7 +189,7 @@ export async function openDensestDay(
   const venues = loadVenues();
   const day = densestDay(venues);
   await freezeToDay(page, day);
-  await page.goto("/");
+  await page.goto("/en");
   return { venues, day };
 }
 

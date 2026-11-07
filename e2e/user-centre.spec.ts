@@ -22,7 +22,7 @@ test.describe("user centre", () => {
     await expect(dialog).toBeVisible();
     await expect(dialog.getByText("User centre")).toBeVisible();
     await expect(
-      dialog.getByText("Add arenas to your favourites")
+      dialog.getByText("Add venues to your favourites")
     ).toBeVisible();
 
     // The backdrop covers the page; clicking anywhere dismisses the user centre.
@@ -30,7 +30,7 @@ test.describe("user centre", () => {
     await expect(dialog).toHaveCount(0);
   });
 
-  test("lists and manages favourite arenas", async ({ page }) => {
+  test("lists and manages favourite venues", async ({ page }) => {
     const venues = loadVenues();
     const day = densestDay(venues);
     const from = `${day}T00:00`;
@@ -40,16 +40,16 @@ test.describe("user centre", () => {
     const slug = slugify(venue.name);
 
     await freezeToDay(page, day);
-    await page.goto(`/venue/${slug}`);
+    await page.goto(`/en/venue/${slug}`);
     await page.getByRole("button", { name: "Add to favourites" }).click();
 
-    await page.goto("/");
+    await page.goto("/en");
     await page.getByRole("button", { name: "Open user centre" }).click();
 
     const dialog = page.getByRole("dialog");
     await expect(dialog).toBeVisible();
 
-    // The favourite is listed as a link to the arena.
+    // The favourite is listed as a link to the venue.
     const link = dialog.getByRole("link", { name: venue.name });
     await expect(link).toBeVisible();
 
@@ -59,7 +59,7 @@ test.describe("user centre", () => {
       .click();
     await expect(link).toHaveCount(0);
     await expect(
-      dialog.getByText("Add arenas to your favourites")
+      dialog.getByText("Add venues to your favourites")
     ).toBeVisible();
   });
 

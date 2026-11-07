@@ -17,7 +17,7 @@ import {
   CollapsibleTrigger,
   CollapsibleContent,
 } from "@/components/ui/collapsible";
-import { normalizeLocale } from "@/i18n/config";
+import { normalizeLocale } from "@/i18n/locales";
 
 export function ScheduleCard({
   venue,

@@ -9,7 +9,13 @@ const MAX_PROGRAMS = 20;
  * with `sr-only` because the interactive map fills the viewport, but present in
  * the HTML for search engines and assistive technology.
  */
-export function VenueSeoContent({ venue }: { venue: Venue }) {
+export function VenueSeoContent({
+  venue,
+  locale,
+}: {
+  venue: Venue;
+  locale: string;
+}) {
   const programs = getUpcomingEvents(venue).slice(0, MAX_PROGRAMS);
   const types = Array.from(
     new Set(venue.schedule.programs.map((program) => program.type))
@@ -47,7 +53,7 @@ export function VenueSeoContent({ venue }: { venue: Venue }) {
         </p>
       ) : null}
       <p>
-        <Link href="/">Back to all GTA skating venues</Link>
+        <Link href={`/${locale}`}>Back to all GTA skating venues</Link>
       </p>
     </section>
   );

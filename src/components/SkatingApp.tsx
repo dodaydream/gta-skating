@@ -18,6 +18,7 @@ import { fetchPrograms } from "@/api/programs";
 import { trackEvent } from "@/lib/analytics";
 import { useFavorites } from "@/lib/favorites";
 import { getVenueBySlug, getSlugForVenue } from "@/data/venue-meta";
+import { useLocale } from "@/i18n/LocaleProvider";
 
 const VenueMap = dynamic(() => import("@/components/map/VenueMap"), {
   ssr: false,
@@ -40,20 +41,21 @@ function todayRange(): [string, string] {
 
 const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
-function getSlugFromPath(): string | null {
-  const prefix = `${BASE_PATH}/venue/`;
+function getSlugFromPath(locale: string): string | null {
+  const prefix = `${BASE_PATH}/${locale}/venue/`;
   const { pathname } = window.location;
   if (!pathname.startsWith(prefix)) return null;
   const slug = pathname.slice(prefix.length);
   return slug ? decodeURIComponent(slug) : null;
 }
 
-function pushUrl(path: string) {
-  window.history.pushState(null, "", `${BASE_PATH}${path}`);
+function pushUrl(locale: string, path: string) {
+  window.history.pushState(null, "", `${BASE_PATH}/${locale}${path}`);
 }
 
 export default function SkatingApp({ initialSlug }: { initialSlug?: string }) {
   const { t } = useTranslation();
+  const locale = useLocale();
   const locateRef = useRef<(() => void) | null>(null);
   const [fromDate, setFromDate] = useState("");
   const [toDate, setToDate] = useState("");
@@ -103,7 +105,7 @@ export default function SkatingApp({ initialSlug }: { initialSlug?: string }) {
   // handled by the lazy focusVenue initializer above).
   useEffect(() => {
     const onPopState = () => {
-      const slug = getSlugFromPath();
+      const slug = getSlugFromPath(locale);
       if (slug) {
         const venue = getVenueBySlug(slug);
         if (venue) {
@@ -117,7 +119,7 @@ export default function SkatingApp({ initialSlug }: { initialSlug?: string }) {
     };
     window.addEventListener("popstate", onPopState);
     return () => window.removeEventListener("popstate", onPopState);
-  }, [focusSlug]);
+  }, [focusSlug, locale]);
 
   useEffect(() => {
     if (hasSetDate.current) return;
@@ -212,14 +214,14 @@ export default function SkatingApp({ initialSlug }: { initialSlug?: string }) {
       const venue = next === null ? null : venues[next];
       const slug = venue ? getSlugForVenue(venue.name) : null;
       if (slug) {
-        pushUrl(`/venue/${slug}`);
+        pushUrl(locale, `/venue/${slug}`);
         setDetailSlug(slug);
       } else {
-        pushUrl("/");
+        pushUrl(locale, "");
         setDetailSlug(null);
       }
     },
-    [venues, selectedIndex]
+    [venues, selectedIndex, locale]
   );
 
   // Selected pin: the current selection, or (once the list loads) the venue
@@ -250,19 +252,19 @@ export default function SkatingApp({ initialSlug }: { initialSlug?: string }) {
     (venue: Venue) => {
       const slug = getSlugForVenue(venue.name);
       if (!slug) return;
-      pushUrl(`/venue/${slug}`);
+      pushUrl(locale, `/venue/${slug}`);
       setDetailSlug(slug);
       const index = venues.findIndex((v) => v.name === venue.name);
       setSelectedIndex(index >= 0 ? index : null);
     },
-    [venues]
+    [venues, locale]
   );
 
   const handleCloseDetail = useCallback(() => {
-    pushUrl("/");
+    pushUrl(locale, "");
     setDetailSlug(null);
     setSelectedIndex(null);
-  }, []);
+  }, [locale]);
 
   return (
     <div className="flex h-screen flex-col bg-zinc-50 font-sans dark:bg-black">

@@ -7,7 +7,7 @@ import { SITE_DESCRIPTION } from "@/lib/site";
  * every venue. Visually hidden with `sr-only` because the map app fills the
  * viewport, but present in the HTML for search engines.
  */
-export function HomeSeoContent() {
+export function HomeSeoContent({ locale }: { locale: string }) {
   return (
     <section className="sr-only">
       <h1>GTA Skating Schedules</h1>
@@ -16,7 +16,7 @@ export function HomeSeoContent() {
       <ul>
         {venues.map((venue) => (
           <li key={venue.name}>
-            <Link href={`/venue/${getSlugForVenue(venue.name)}`}>
+            <Link href={`/${locale}/venue/${getSlugForVenue(venue.name)}`}>
               {venue.name} — {venue.address}
             </Link>
           </li>

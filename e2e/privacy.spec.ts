@@ -14,7 +14,7 @@ test.describe("privacy policy", () => {
 
     await page.getByRole("link", { name: "← Back to the schedule" }).first().click();
 
-    await expect(page).toHaveURL(/\/$/);
+    await expect(page).toHaveURL(/\/en$/);
     await expect(
       sidebar(page).getByRole("heading", { name: "Skating Programs" })
     ).toBeVisible();

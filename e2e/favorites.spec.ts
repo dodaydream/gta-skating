@@ -20,7 +20,7 @@ test.describe("favourite venues", () => {
     if (!venue) throw new Error("no venue with programs on the densest day");
 
     await freezeToDay(page, day);
-    await page.goto(`/venue/${slugify(venue.name)}`);
+    await page.goto(`/en/venue/${slugify(venue.name)}`);
 
     const add = page.getByRole("button", { name: "Add to favourites" });
     await expect(add).toBeVisible();
@@ -29,7 +29,7 @@ test.describe("favourite venues", () => {
     const remove = page.getByRole("button", { name: "Remove from favourites" });
     await expect(remove).toHaveAttribute("aria-pressed", "true");
 
-    await page.goto("/");
+    await page.goto("/en");
 
     // With a saved favourite, the app defaults to the favourites view.
     const toggle = page.locator('[data-slot="venue-display"]');
@@ -45,7 +45,7 @@ test.describe("favourite venues", () => {
   }) => {
     const day = densestDay(loadVenues());
     await freezeToDay(page, day);
-    await page.goto("/");
+    await page.goto("/en");
 
     const toggle = page.locator('[data-slot="venue-display"]');
     await toggle.click();

@@ -3,18 +3,12 @@ import LanguageDetector from "i18next-browser-languagedetector";
 import { initReactI18next } from "react-i18next";
 import en from "@/i18n/en";
 import fr from "@/i18n/fr";
-
-export const SUPPORTED_LOCALES = ["en", "fr"] as const;
-export type Locale = (typeof SUPPORTED_LOCALES)[number];
-export const DEFAULT_LOCALE: Locale = "en";
-export const LOCALE_STORAGE_KEY = "gta-skating-locale";
-
-export function normalizeLocale(lng: string | undefined | null): Locale {
-  const base = (lng ?? "").toLowerCase().split(/[-_]/)[0];
-  return (SUPPORTED_LOCALES as readonly string[]).includes(base)
-    ? (base as Locale)
-    : DEFAULT_LOCALE;
-}
+import {
+  DEFAULT_LOCALE,
+  LOCALE_STORAGE_KEY,
+  SUPPORTED_LOCALES,
+  type Locale,
+} from "@/i18n/locales";
 
 export const resources = {
   en: { translation: en },
@@ -44,6 +38,27 @@ if (!i18n.isInitialized) {
       },
       react: { useSuspense: false },
     });
+}
+
+/**
+ * Create a standalone i18next instance pinned to a locale. Used by the
+ * `[lang]` route, where the URL — not detection — decides the language, so the
+ * server-rendered HTML and the first client render are already in the right
+ * language. A fresh instance per request avoids locale leaking between pages.
+ */
+export function createI18nInstance(locale: Locale) {
+  const instance = i18n.createInstance();
+  instance.init({
+    resources,
+    lng: locale,
+    fallbackLng: DEFAULT_LOCALE,
+    supportedLngs: SUPPORTED_LOCALES,
+    nonExplicitSupportedLngs: true,
+    initAsync: false,
+    interpolation: { escapeValue: false },
+    react: { useSuspense: false },
+  });
+  return instance;
 }
 
 export default i18n;
