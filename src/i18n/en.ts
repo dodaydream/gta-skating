@@ -28,6 +28,7 @@ const en = {
       "Times, prices, and other details may be inaccurate or out of date — always check the venue’s website before you go.",
     privacy: "Privacy Policy",
     dataSources: "Data Sources",
+    faq: "FAQ",
   },
   filters: {
     locate: "Centre on your location",

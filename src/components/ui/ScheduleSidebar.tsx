@@ -85,6 +85,15 @@ function ScheduleFooter() {
         <span aria-hidden="true" className="text-zinc-300 dark:text-zinc-600">
           ·
         </span>
+        <Link
+          href="/faq"
+          className="whitespace-nowrap hover:text-blue-600 dark:hover:text-blue-400"
+        >
+          {t("sidebar.faq")}
+        </Link>
+        <span aria-hidden="true" className="text-zinc-300 dark:text-zinc-600">
+          ·
+        </span>
         {SUPPORT_URL ? (
           <>
             <a

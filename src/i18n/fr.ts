@@ -31,6 +31,7 @@ const fr: Messages = {
       "Les horaires, les prix et d’autres renseignements peuvent être inexacts ou périmés — vérifiez toujours le site Web de l’aréna avant de vous déplacer.",
     privacy: "Politique de confidentialité",
     dataSources: "Sources des données",
+    faq: "FAQ",
   },
   filters: {
     locate: "Centrer sur votre position",

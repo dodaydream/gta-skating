@@ -26,6 +26,9 @@ export function HomeSeoContent() {
         <Link href="/data-sources">Data sources</Link>
       </p>
       <p>
+        <Link href="/faq">FAQ</Link>
+      </p>
+      <p>
         <Link href="/privacy">Privacy policy</Link>
       </p>
     </section>
