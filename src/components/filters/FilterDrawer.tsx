@@ -68,7 +68,7 @@ function useIsDesktop() {
   return useSyncExternalStore(subscribeDesktop, getDesktopSnapshot, () => true);
 }
 
-interface FiltersControlProps {
+interface FilterDrawerProps {
   types: ProgramType[];
   onTypesChange: (types: ProgramType[]) => void;
   rinkTypes: RinkEnvironment[];
@@ -111,7 +111,7 @@ function FilterSection({
   );
 }
 
-export function FiltersControl({
+export function FilterDrawer({
   types,
   onTypesChange,
   rinkTypes,
@@ -122,7 +122,7 @@ export function FiltersControl({
   onSortChange,
   hasLocation,
   className = "",
-}: FiltersControlProps) {
+}: FilterDrawerProps) {
   const { t } = useTranslation();
   const [open, setOpen] = useState(false);
   const isDesktop = useIsDesktop();
@@ -169,10 +169,7 @@ export function FiltersControl({
         </ToggleGroup>
       </FilterSection>
 
-      <FilterSection
-        title={t("filters.rinkType")}
-        defaultOpen={rinkTypes.length > 0}
-      >
+      <FilterSection title={t("filters.rinkType")}>
         <ToggleGroup
           multiple
           aria-label={t("filters.rinkType")}

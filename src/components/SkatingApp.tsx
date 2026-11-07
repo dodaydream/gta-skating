@@ -8,7 +8,9 @@ import dynamic from "next/dynamic";
 import { useTranslation } from "react-i18next";
 import { IconLocation } from "@tabler/icons-react";
 import { Button } from "@/components/ui/button";
-import { FilterChips } from "@/components/ui/DateFilter";
+import { DateFilter } from "@/components/filters/DateFilter";
+import { FilterDrawer } from "@/components/filters/FilterDrawer";
+import { VenueDisplayOption } from "@/components/filters/VenueDisplayOption";
 import { FilterBar } from "@/components/ui/FilterBar";
 import { ScheduleSidebar } from "@/components/ui/ScheduleSidebar";
 import { VenueDetailModal } from "@/components/schedule/VenueDetailModal";
@@ -291,8 +293,7 @@ export default function SkatingApp({ initialSlug }: { initialSlug?: string }) {
               >
                 <IconLocation className="size-4" />
               </Button>
-              <FilterChips
-                className="min-w-0 flex-1 md:flex-none"
+              <DateFilter
                 from={fromDate}
                 to={toDate}
                 onFromChange={(v) => {
@@ -313,11 +314,8 @@ export default function SkatingApp({ initialSlug }: { initialSlug?: string }) {
                     source: "clear",
                   });
                 }}
-                venueDisplay={venueDisplay}
-                onVenueDisplayChange={(next) => {
-                  setVenueDisplayOverride(next);
-                  trackEvent("venue_display_change", { mode: next });
-                }}
+              />
+              <FilterDrawer
                 types={types}
                 onTypesChange={(next) => {
                   setTypes(next);
@@ -343,6 +341,13 @@ export default function SkatingApp({ initialSlug }: { initialSlug?: string }) {
                   trackEvent("sort_change", { sort: next });
                 }}
                 hasLocation={!!userLocation}
+              />
+              <VenueDisplayOption
+                venueDisplay={venueDisplay}
+                onVenueDisplayChange={(next) => {
+                  setVenueDisplayOverride(next);
+                  trackEvent("venue_display_change", { mode: next });
+                }}
               />
             </FilterBar>
           </div>
