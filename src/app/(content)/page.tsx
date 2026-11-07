@@ -1,32 +1,23 @@
-"use client";
-
-import { useEffect } from "react";
 import {
   DEFAULT_LOCALE,
   LOCALE_STORAGE_KEY,
   SUPPORTED_LOCALES,
-  type Locale,
 } from "@/i18n/locales";
 
-function matchLocale(tag: string | null | undefined): Locale | null {
-  const base = (tag ?? "").toLowerCase().split(/[-_]/)[0];
-  return (SUPPORTED_LOCALES as readonly string[]).includes(base)
-    ? (base as Locale)
-    : null;
-}
-
-function detectLocale(): Locale {
-  try {
-    const stored = matchLocale(window.localStorage.getItem(LOCALE_STORAGE_KEY));
-    if (stored) return stored;
-  } catch {
-    // Storage unavailable (private mode, blocked): fall through to the browser.
-  }
-  for (const language of navigator.languages ?? [navigator.language]) {
-    const match = matchLocale(language);
-    if (match) return match;
-  }
-  return DEFAULT_LOCALE;
+/**
+ * Redirect to the visitor's stored or browser-preferred locale, before the
+ * browser paints. GitHub Pages (a static export) has no server to issue a
+ * redirect, so this must run client-side; running it as an inline script in the
+ * initial HTML avoids the visible flash a post-hydration effect would cause.
+ */
+function redirectScript(): string {
+  return `(function(){var locales=${JSON.stringify(
+    SUPPORTED_LOCALES
+  )};function match(t){var b=String(t||"").toLowerCase().split(/[-_]/)[0];return locales.indexOf(b)>=0?b:null}var locale=null;try{locale=match(localStorage.getItem(${JSON.stringify(
+    LOCALE_STORAGE_KEY
+  )}))}catch(e){}if(!locale){var langs=navigator.languages||[navigator.language];for(var i=0;i<langs.length;i++){var m=match(langs[i]);if(m){locale=m;break}}}if(!locale){locale=${JSON.stringify(
+    DEFAULT_LOCALE
+  )}}location.replace("/"+locale+location.search+location.hash)})();`;
 }
 
 /**
@@ -35,24 +26,12 @@ function detectLocale(): Locale {
  * their stored or browser-preferred locale on the client.
  */
 export default function RootRedirect() {
-  useEffect(() => {
-    const locale = detectLocale();
-    window.location.replace(
-      `/${locale}${window.location.search}${window.location.hash}`
-    );
-  }, []);
-
   return (
-    <main className="flex min-h-dvh items-center justify-center bg-zinc-50 dark:bg-black">
+    <>
+      <script dangerouslySetInnerHTML={{ __html: redirectScript() }} />
       <noscript>
         <meta httpEquiv="refresh" content={`0;url=/${DEFAULT_LOCALE}`} />
       </noscript>
-      <a
-        href={`/${DEFAULT_LOCALE}`}
-        className="text-sm font-medium text-blue-600 hover:underline dark:text-blue-400"
-      >
-        Continue to GTA Skating →
-      </a>
-    </main>
+    </>
   );
 }
