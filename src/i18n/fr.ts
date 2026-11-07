@@ -6,6 +6,15 @@ const fr: Messages = {
     en: "English",
     fr: "Français",
   },
+  user: {
+    title: "Centre utilisateur",
+    open: "Ouvrir le centre utilisateur",
+    description: "Tous les programmes de vos arénas favoris.",
+    loading: "Chargement de vos favoris…",
+    noFavorites:
+      "Ajoutez des arénas à vos favoris pour voir leurs programmes ici.",
+    noPrograms: "Aucun programme à venir dans vos arénas favoris.",
+  },
   sidebar: {
     title: "Programmes de patinage",
     programsFound_one: "{{count}} programme trouvé",

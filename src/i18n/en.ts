@@ -4,6 +4,14 @@ const en = {
     en: "English",
     fr: "Français",
   },
+  user: {
+    title: "User centre",
+    open: "Open user centre",
+    description: "All programs from your favourite arenas.",
+    loading: "Loading your favourites…",
+    noFavorites: "Add arenas to your favourites to see their programs here.",
+    noPrograms: "No upcoming programs in your favourite arenas.",
+  },
   sidebar: {
     title: "Skating Programs",
     programsFound_one: "{{count}} program found",

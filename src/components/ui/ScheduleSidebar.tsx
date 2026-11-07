@@ -7,6 +7,7 @@ import type { Venue } from "@/types/venue";
 import type { ProgramItem } from "@/types/schedule";
 import { ProgramList } from "@/components/schedule/ProgramList";
 import { LanguageToggle } from "@/components/LanguageToggle";
+import { UserAvatarButton, UserCentre } from "@/components/UserCentre";
 import { distanceKm } from "@/lib/schedule";
 import {
   Drawer,
@@ -140,6 +141,7 @@ export function ScheduleSidebar({
 }: ScheduleSidebarProps) {
   const { t } = useTranslation();
   const [open, setOpen] = useState(true);
+  const [userCentreOpen, setUserCentreOpen] = useState(false);
   const isDesktop = useIsDesktop();
   const snapPoints = useSnapPoints();
 
@@ -174,7 +176,10 @@ export function ScheduleSidebar({
                 {programCount}
               </span>
             </div>
-            <LanguageToggle />
+            <div className="flex items-center gap-2">
+              <LanguageToggle />
+              <UserAvatarButton onClick={() => setUserCentreOpen(true)} />
+            </div>
           </div>
 
           <ProgramList
@@ -214,7 +219,10 @@ export function ScheduleSidebar({
                   {programCount}
                 </DrawerDescription>
               </div>
-              <LanguageToggle />
+              <div className="flex items-center gap-2">
+                <LanguageToggle />
+                <UserAvatarButton onClick={() => setUserCentreOpen(true)} />
+              </div>
             </div>
           }
         >
@@ -229,6 +237,11 @@ export function ScheduleSidebar({
           </div>
         </DrawerContent>
       </Drawer>
+
+      <UserCentre
+        open={userCentreOpen}
+        onClose={() => setUserCentreOpen(false)}
+      />
     </>
   );
 }

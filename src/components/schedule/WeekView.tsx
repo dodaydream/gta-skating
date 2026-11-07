@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState } from "react";
 import type { RefObject } from "react";
 import { useTranslation } from "react-i18next";
 import type { Program } from "@/types/schedule";
+import type { Venue } from "@/types/venue";
 import {
   dayjsLocale,
   formatHourLabel,
@@ -13,7 +14,9 @@ import {
   toMinutes,
 } from "@/lib/schedule";
 import { normalizeLocale, type Locale } from "@/i18n/config";
-import { IconChevronLeft, IconChevronRight } from "@tabler/icons-react";
+import { getSlugForVenue } from "@/data/schedules";
+import { IconChevronLeft, IconChevronRight, IconMapPin } from "@tabler/icons-react";
+import Link from "next/link";
 import dayjs from "dayjs";
 import "dayjs/locale/fr-ca";
 
@@ -22,23 +25,93 @@ const SHORT_DATE_FORMAT: Record<Locale, string> = {
   fr: "D MMM",
 };
 
-function getWeekStartISO(programs: Program[]): string {
+type WeekProgram = Program & { venue?: Venue };
+
+function getWeekStartISO(programs: WeekProgram[]): string {
   return dayjs(programs[0].start)
     .startOf("week")
     .format("YYYY-MM-DD");
 }
 
+type PositionedProgram = {
+  program: WeekProgram;
+  /** Zero-based column within its overlap group. */
+  lane: number;
+  /** Number of columns in its overlap group. */
+  lanes: number;
+};
+
 type WeekColumn = {
   key: string;
   date: string;
-  programs: Program[];
+  programs: PositionedProgram[];
 };
 
+const startMinutes = (program: WeekProgram) =>
+  toMinutes(program.start.slice(11, 16));
+const endMinutes = (program: WeekProgram) =>
+  toMinutes(program.end.slice(11, 16));
+
+/**
+ * Assigns overlapping programs to side-by-side lanes so concurrent programs
+ * render next to each other instead of on top of one another. Overlapping
+ * programs are clustered first, then greedily packed into the first lane that
+ * is free; every program in a cluster shares the cluster's lane count so they
+ * all have the same width.
+ */
+function layoutPrograms(programs: WeekProgram[]): PositionedProgram[] {
+  const sorted = [...programs].sort(
+    (a, b) =>
+      startMinutes(a) - startMinutes(b) ||
+      endMinutes(b) - endMinutes(a) ||
+      a.name.localeCompare(b.name)
+  );
+
+  const result: PositionedProgram[] = [];
+  let cluster: WeekProgram[] = [];
+  let clusterEnd = -1;
+
+  const flush = () => {
+    if (cluster.length === 0) return;
+    const laneEnds: number[] = [];
+    const laneOf = new Map<string, number>();
+    for (const program of cluster) {
+      const start = startMinutes(program);
+      let lane = laneEnds.findIndex((end) => end <= start);
+      if (lane === -1) {
+        lane = laneEnds.length;
+        laneEnds.push(endMinutes(program));
+      } else {
+        laneEnds[lane] = endMinutes(program);
+      }
+      laneOf.set(program.id, lane);
+    }
+    const lanes = laneEnds.length;
+    for (const program of cluster) {
+      result.push({ program, lane: laneOf.get(program.id) ?? 0, lanes });
+    }
+    cluster = [];
+  };
+
+  for (const program of sorted) {
+    const start = startMinutes(program);
+    if (cluster.length > 0 && start >= clusterEnd) {
+      flush();
+      clusterEnd = -1;
+    }
+    cluster.push(program);
+    clusterEnd = Math.max(clusterEnd, endMinutes(program));
+  }
+  flush();
+
+  return result;
+}
+
 function buildWeekColumns(
-  programs: Program[],
+  programs: WeekProgram[],
   weekOffset = 0
 ): WeekColumn[] {
-  const byDate = new Map<string, Program[]>();
+  const byDate = new Map<string, WeekProgram[]>();
   for (const p of programs) {
     const date = p.start.slice(0, 10);
     if (!byDate.has(date)) byDate.set(date, []);
@@ -51,15 +124,11 @@ function buildWeekColumns(
   for (let i = 0; i < 7; i++) {
     const d = start.add(i, "day");
     const iso = d.format("YYYY-MM-DD");
-    const programs = byDate.get(iso) ?? [];
-    if (programs.length > 0) {
-      programs.sort(
-        (a, b) =>
-          toMinutes(a.start) - toMinutes(b.start) ||
-          a.name.localeCompare(b.name)
-      );
-    }
-    cols.push({ key: iso, date: iso, programs });
+    cols.push({
+      key: iso,
+      date: iso,
+      programs: layoutPrograms(byDate.get(iso) ?? []),
+    });
   }
   return cols;
 }
@@ -74,9 +143,9 @@ function computeTimeRange(
   let min = 24;
   let max = 0;
   for (const col of columns) {
-    for (const p of col.programs) {
-      const s = parseInt(p.start.slice(11, 13));
-      const e = parseInt(p.end.slice(11, 13));
+    for (const { program } of col.programs) {
+      const s = parseInt(program.start.slice(11, 13));
+      const e = parseInt(program.end.slice(11, 13));
       if (s < min) min = s;
       if (e > max) max = e;
     }
@@ -98,10 +167,12 @@ export function WeekView({
   programs,
   timezone,
   bodyRef,
+  showVenue = false,
 }: {
-  programs: Program[];
+  programs: WeekProgram[];
   timezone: string;
   bodyRef: RefObject<HTMLDivElement | null>;
+  showVenue?: boolean;
 }) {
   const { t, i18n } = useTranslation();
   const locale = normalizeLocale(i18n.resolvedLanguage);
@@ -268,7 +339,7 @@ export function WeekView({
                 />
               ))}
 
-              {col.programs.map((p) => {
+              {col.programs.map(({ program: p, lane, lanes }) => {
                 const startM = toMinutes(p.start.slice(11, 16));
                 const endM = toMinutes(p.end.slice(11, 16));
                 const topPct = ((startM - rangeStartMinutes) / totalMinutes) * 100;
@@ -276,16 +347,35 @@ export function WeekView({
                   ((endM - startM) / totalMinutes) * 100,
                   2.5
                 );
+                const width = 100 / lanes;
                 return (
                   <div
                     key={p.id}
-                    className="absolute left-0 right-0 overflow-hidden rounded-md border border-black/[.06] bg-white px-1 py-0.5 text-[11px] leading-tight dark:border-white/[.08] dark:bg-zinc-950"
-                    style={{ top: `${topPct}%`, height: `${heightPct}%` }}
+                    className="absolute flex flex-col overflow-hidden rounded-md border border-black/[.06] bg-white px-1 py-0.5 text-[11px] leading-tight dark:border-white/[.08] dark:bg-zinc-950"
+                    style={{
+                      top: `${topPct}%`,
+                      height: `${heightPct}%`,
+                      left: `${lane * width}%`,
+                      width: `calc(${width}% - 1px)`,
+                    }}
                   >
-                    <div className="tabular-nums text-zinc-500 dark:text-zinc-400">
+                    <div className="truncate tabular-nums text-zinc-500 dark:text-zinc-400">
                       {formatTimeRange(p.start, p.end)}
                     </div>
-                    <div className="truncate">{p.name}</div>
+                    <div className="min-h-0 flex-1">
+                      <div className="line-clamp-2">{p.name}</div>
+                    </div>
+                    {showVenue && p.venue ? (
+                      <Link
+                        href={`/venue/${getSlugForVenue(p.venue.name)}`}
+                        className="flex items-start gap-0.5 text-[10px] leading-tight text-zinc-400 transition-colors hover:text-blue-600 dark:text-zinc-500 dark:hover:text-blue-400"
+                      >
+                        <IconMapPin className="mt-px size-2.5 shrink-0" />
+                        <span className="min-w-0">
+                          <span className="line-clamp-2">{p.venue.name}</span>
+                        </span>
+                      </Link>
+                    ) : null}
                   </div>
                 );
               })}
@@ -295,7 +385,7 @@ export function WeekView({
           {showNow && (
             <div
               aria-hidden="true"
-              className="pointer-events-none absolute z-10 -translate-y-1/2 flex items-center"
+              className="pointer-events-none absolute z-0 -translate-y-1/2 flex items-center"
               style={{ top: `${nowPct}%`, left: "2.5rem", right: 0 }}
             >
               <span className="-ml-1 h-2 w-2 shrink-0 rounded-full bg-red-500 dark:bg-red-400" />
