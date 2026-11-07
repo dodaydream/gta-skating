@@ -3,6 +3,7 @@
   "url": "https://www.markham.ca/sports-recreation-fitness/community-centres-libraries/milliken-mills-community-centre",
   "timezone": "America/Toronto",
   "address": "7600 Kennedy Road, Markham, ON L3R 9S5",
+  "type": "indoor",
   "coordinates": {
     "lat": 43.840228,
     "lon": -79.305006

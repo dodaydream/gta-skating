@@ -3,6 +3,7 @@
   "url": "https://vaughan.perfectmind.com/25076/Clients/BookMe4BookingPages/Classes?calendarId=84142d20-1da8-48ed-800d-31dc0c30121d&widgetId=dff88c8a-0b78-4a94-9dde-250040385300&embed=False",
   "timezone": "America/Toronto",
   "address": "501 Clark Ave. West, Thornhill, ON L4J 4E5",
+  "type": "indoor",
   "coordinates": {
     "lat": 43.803966,
     "lon": -79.439973

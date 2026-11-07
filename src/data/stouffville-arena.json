@@ -3,6 +3,7 @@
   "url": "https://anc.ca.apm.activecommunities.com/townofws/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=13&displayType=0&view=2",
   "timezone": "America/Toronto",
   "address": "12483 Ninth Line, Stouffville, ON L4A 0Z6",
+  "type": "indoor",
   "coordinates": {
     "lat": 43.9742243,
     "lon": -79.2553137

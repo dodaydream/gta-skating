@@ -3,6 +3,7 @@
   "url": "https://georgebellarena.com/public-skating",
   "timezone": "America/Toronto",
   "address": "215 Ryding Ave, Toronto, ON",
+  "type": "indoor",
   "coordinates": {
     "lat": 43.668518,
     "lon": -79.477155

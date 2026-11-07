@@ -3,6 +3,7 @@
   "url": "https://www.markham.ca/sports-recreation-fitness/community-centres-libraries/mount-joy-community-centre",
   "timezone": "America/Toronto",
   "address": "6140 16th Avenue East, Markham, ON L3P 3K8",
+  "type": "indoor",
   "coordinates": {
     "lat": 43.895012,
     "lon": -79.262293

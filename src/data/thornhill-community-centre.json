@@ -3,6 +3,7 @@
   "url": "https://www.markham.ca/sports-recreation-fitness/community-centres-libraries/thornhill-community-centre-library-fitness-centre",
   "timezone": "America/Toronto",
   "address": "7755 Bayview Avenue, Markham, ON L3T 4P1",
+  "type": "indoor",
   "coordinates": {
     "lat": 43.820032,
     "lon": -79.399873

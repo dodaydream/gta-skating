@@ -3,6 +3,7 @@
   "url": "https://apps.daysmartrecreation.com/dash/x/canlan/event-registration?facility_ids=15",
   "timezone": "America/Toronto",
   "address": "159 Dynamic Dr, Scarborough, ON M1V 5L8",
+  "type": "indoor",
   "coordinates": {
     "lat": 43.829787,
     "lon": -79.253267

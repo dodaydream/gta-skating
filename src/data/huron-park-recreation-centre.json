@@ -3,6 +3,7 @@
   "url": "https://anc.ca.apm.activecommunities.com/activemississauga/calendars?defaultCalendarId=1&locationId=252&categoryIds=52&view=2",
   "timezone": "America/Toronto",
   "address": "830 Paisley Blvd W, Mississauga, ON L5C 3P5",
+  "type": "indoor",
   "coordinates": {
     "lat": 43.558958,
     "lon": -79.632996

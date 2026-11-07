@@ -3,6 +3,7 @@
   "url": "https://apps.daysmartrecreation.com/dash/x/canlan/event-registration?facility_ids=5",
   "timezone": "America/Toronto",
   "address": "989 Murray Ross Pkwy, North York, ON M3J 3M4",
+  "type": "indoor",
   "coordinates": {
     "lat": 43.776161,
     "lon": -79.516738

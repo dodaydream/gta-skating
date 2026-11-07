@@ -3,6 +3,7 @@
   "url": "https://anc.ca.apm.activecommunities.com/townofws/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=14&displayType=0&view=2",
   "timezone": "America/Toronto",
   "address": "120 Weldon Road, Stouffville, ON L4A 1N2",
+  "type": "indoor",
   "coordinates": {
     "lat": 43.9650556,
     "lon": -79.2617345

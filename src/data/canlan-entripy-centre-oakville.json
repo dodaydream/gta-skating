@@ -3,6 +3,7 @@
   "url": "https://apps.daysmartrecreation.com/dash/x/canlan/event-registration?facility_ids=13",
   "timezone": "America/Toronto",
   "address": "2300 Cornwall Rd, Oakville, ON L6J 7T9",
+  "type": "indoor",
   "coordinates": {
     "lat": 43.488218,
     "lon": -79.650145

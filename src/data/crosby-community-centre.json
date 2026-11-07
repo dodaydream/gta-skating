@@ -3,6 +3,7 @@
   "url": "https://www.markham.ca/sports-recreation-fitness/community-centres-libraries/crosby-community-centre",
   "timezone": "America/Toronto",
   "address": "210 Main Street Unionville, Markham, ON L3R 2G9",
+  "type": "indoor",
   "coordinates": {
     "lat": 43.868535,
     "lon": -79.313304

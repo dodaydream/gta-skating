@@ -3,6 +3,7 @@
   "url": "https://townshipofking.perfectmind.com/23793/Clients/BookMe4BookingPages/Classes?calendarId=2fd6d540-75aa-416b-9a70-a78b8f598e7d&widgetId=15f6af07-39c5-473e-b053-96653f77a406&embed=False",
   "timezone": "America/Toronto",
   "address": "1600 15th Sideroad, King City, ON L7B 1A3",
+  "type": "indoor",
   "coordinates": {
     "lat": 43.952145,
     "lon": -79.510327

@@ -3,6 +3,7 @@
   "url": "https://www.pickering.ca/parks-recreation-culture/arenas-and-skating/",
   "timezone": "America/Toronto",
   "address": "940 Dillingham Road, Pickering, ON L1W 3R7",
+  "type": "indoor",
   "coordinates": {
     "lat": 43.8246138,
     "lon": -79.067142

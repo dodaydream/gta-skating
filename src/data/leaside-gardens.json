@@ -3,6 +3,7 @@
   "url": "https://leasidegardens.com/arenas/public-skate-times/",
   "timezone": "America/Toronto",
   "address": "1073 Millwood Rd, Toronto, ON",
+  "type": "indoor",
   "coordinates": {
     "lat": 43.701874,
     "lon": -79.360766

@@ -3,6 +3,7 @@
   "url": "https://www.richmondhill.ca/en/online-services/Arenas.aspx",
   "timezone": "America/Toronto",
   "address": "1300 Elgin Mills Road East, Richmond Hill, ON L4S 1M5",
+  "type": "indoor",
   "coordinates": {
     "lat": 43.898905,
     "lon": -79.402495

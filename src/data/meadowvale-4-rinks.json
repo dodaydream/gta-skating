@@ -3,6 +3,7 @@
   "url": "https://anc.ca.apm.activecommunities.com/activemississauga/calendars?defaultCalendarId=1&locationId=100&categoryIds=52&view=2",
   "timezone": "America/Toronto",
   "address": "2160 Torquay Mews, Mississauga, ON L5N 2M6",
+  "type": "indoor",
   "coordinates": {
     "lat": 43.595037,
     "lon": -79.740775

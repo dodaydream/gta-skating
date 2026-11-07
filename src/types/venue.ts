@@ -14,12 +14,17 @@ export interface InfoItem {
   value: string;
 }
 
+/** Indoor vs outdoor ice. */
+export type RinkEnvironment = "indoor" | "outdoor";
+
 export interface Venue {
   name: string;
   url: string;
   timezone: string;
   coordinates: Coordinates;
   address: string;
+  /** Indoor vs outdoor ice; omitted by sources that don't distinguish. */
+  type?: RinkEnvironment;
   info?: InfoItem[];
   rinks?: Rink[];
   amenities?: string[];

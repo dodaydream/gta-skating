@@ -3,6 +3,7 @@
   "url": "https://www.mattamyathleticcentre.ca/venue-info/community-skates",
   "timezone": "America/Toronto",
   "address": "50 Carlton Street, Toronto, ON M5B 1J2",
+  "type": "indoor",
   "coordinates": {
     "lat": 43.662175,
     "lon": -79.380568

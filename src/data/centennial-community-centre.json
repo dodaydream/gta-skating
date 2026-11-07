@@ -3,6 +3,7 @@
   "url": "https://www.markham.ca/sports-recreation-fitness/community-centres-libraries/centennial-community-centre",
   "timezone": "America/Toronto",
   "address": "8600 McCowan Road, Markham, ON L3P 3M2",
+  "type": "indoor",
   "coordinates": {
     "lat": 43.873185,
     "lon": -79.287161

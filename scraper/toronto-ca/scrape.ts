@@ -32,6 +32,7 @@ import { readFile, writeFile, mkdir } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import type { Venue, VenueMetaList, Program } from "../types.ts";
+import { normalizeRinkType } from "../types.ts";
 import { classifyProgram } from "../classify.ts";
 import { slugify } from "../../src/lib/slug.ts";
 
@@ -221,6 +222,7 @@ async function writeSchedule(
     url: meta.url,
     timezone: TIMEZONE,
     address: meta.address,
+    type: normalizeRinkType(meta.type),
     coordinates: meta.coordinates,
     rinks: meta.rinks,
     amenities: meta.amenities,

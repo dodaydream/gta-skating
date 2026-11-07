@@ -3,6 +3,7 @@
   "url": "https://www.whitby.ca/explore-and-enjoy/parks-and-recreation/skating-schedules-and-arenas/",
   "timezone": "America/Toronto",
   "address": "222 McKinney Dr., Whitby, ON L1R 3M3",
+  "type": "indoor",
   "coordinates": {
     "lat": 43.920905,
     "lon": -78.9553679

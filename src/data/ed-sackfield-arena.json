@@ -3,6 +3,7 @@
   "url": "https://www.richmondhill.ca/en/things-to-do/Ed-Sackfield-Arena-and-Fitness-Centre.aspx",
   "timezone": "America/Toronto",
   "address": "311 Valleymede Drive, Richmond Hill, ON L4B 2E1",
+  "type": "indoor",
   "coordinates": {
     "lat": 43.855906,
     "lon": -79.397721

@@ -3,6 +3,7 @@
   "url": "https://anc.ca.apm.activecommunities.com/activemississauga/calendars?defaultCalendarId=1&locationId=82&categoryIds=52&view=2",
   "timezone": "America/Toronto",
   "address": "1275 Mississauga Valley Blvd, Mississauga, ON L5A 3R8",
+  "type": "indoor",
   "coordinates": {
     "lat": 43.596844,
     "lon": -79.623704

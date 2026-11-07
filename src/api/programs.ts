@@ -1,4 +1,4 @@
-import type { Venue } from "@/types/venue";
+import type { RinkEnvironment, Venue } from "@/types/venue";
 import type { MapBounds } from "@/types/map";
 import type { Program, ProgramItem, ProgramType } from "@/types/schedule";
 
@@ -7,6 +7,7 @@ export interface FetchProgramsQuery {
   to: string;
   hideEmpty: boolean;
   types?: ProgramType[];
+  rinkTypes?: RinkEnvironment[];
   amenities?: string[];
   bounds?: MapBounds | null;
   favoritesOnly?: boolean;
@@ -51,6 +52,12 @@ export async function fetchPrograms(
   const matchesAmenities = (venue: Venue) =>
     amenities.length === 0 ||
     amenities.every((a) => (venue.amenities ?? []).includes(a));
+  const rinkTypes = query.rinkTypes ?? [];
+  // Venues without an explicit type default to indoor (only Toronto publishes
+  // outdoor rinks; every other source we scrape is an indoor arena).
+  const matchesRinkType = (venue: Venue) =>
+    rinkTypes.length === 0 ||
+    rinkTypes.includes(venue.type ?? "indoor");
   const favoriteSet = query.favoritesOnly
     ? new Set(query.favoriteSlugs ?? [])
     : null;
@@ -59,6 +66,7 @@ export async function fetchPrograms(
   );
   const allVenues = scheduleVenues
     .filter(matchesAmenities)
+    .filter(matchesRinkType)
     .filter(
       (venue) => !favoriteSet || favoriteSet.has(getSlugForVenue(venue.name))
     );

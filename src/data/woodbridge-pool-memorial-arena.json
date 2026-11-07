@@ -3,6 +3,7 @@
   "url": "https://vaughan.perfectmind.com/25076/Clients/BookMe4BookingPages/Classes?calendarId=84142d20-1da8-48ed-800d-31dc0c30121d&widgetId=dff88c8a-0b78-4a94-9dde-250040385300&embed=False",
   "timezone": "America/Toronto",
   "address": "5020 Highway #7, Woodbridge, ON L4L 1T1",
+  "type": "indoor",
   "coordinates": {
     "lat": 43.7802455,
     "lon": -79.5916837

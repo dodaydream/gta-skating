@@ -17,6 +17,8 @@ export interface VenueMeta {
   id: string;
   url: string;
   address: string;
+  /** Indoor vs outdoor ice, when the source declares it (e.g. "Indoor"). */
+  type?: string;
   coordinates: { lat: number; lon: number };
   /** Labelled extra facts (phone, website, year_built, operator, …). */
   info?: InfoItem[];
@@ -24,6 +26,18 @@ export interface VenueMeta {
   rinks?: Rink[];
   /** Free-form facility amenities, e.g. "Skate rentals". */
   amenities?: string[];
+}
+
+/** Indoor vs outdoor ice. */
+export type RinkEnvironment = "indoor" | "outdoor";
+
+/**
+ * Normalize a meta `type` value to a rink environment. Sources spell it
+ * inconsistently ("Indoor", "outdoor", …), and some omit it entirely.
+ */
+export function normalizeRinkType(value?: string): RinkEnvironment | undefined {
+  const v = value?.trim().toLowerCase();
+  return v === "indoor" || v === "outdoor" ? v : undefined;
 }
 
 /** Single-venue entry inside a multi-venue scraper's meta.json. */
@@ -105,6 +119,8 @@ export interface Venue {
   url: string;
   timezone: string;
   address: string;
+  /** Indoor vs outdoor ice; omitted by sources that don't distinguish. */
+  type?: RinkEnvironment;
   coordinates: Coordinates;
   info?: InfoItem[];
   rinks?: Rink[];

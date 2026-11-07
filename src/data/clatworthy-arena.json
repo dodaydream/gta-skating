@@ -3,6 +3,7 @@
   "url": "https://www.markham.ca/sports-recreation-fitness/community-centres-libraries/rj-clatworthy-arena",
   "timezone": "America/Toronto",
   "address": "2400 John Street, Markham, ON L3T 6G6",
+  "type": "indoor",
   "coordinates": {
     "lat": 43.823602,
     "lon": -79.368555

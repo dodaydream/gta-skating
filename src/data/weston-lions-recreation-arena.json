@@ -3,6 +3,7 @@
   "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=2007",
   "timezone": "America/Toronto",
   "address": "2125 Lawrence Ave W, Toronto, ON",
+  "type": "indoor",
   "coordinates": {
     "lat": 43.698563,
     "lon": -79.518096
@@ -32,7 +33,7 @@
     }
   ],
   "schedule": {
-    "updatedAt": "2026-11-07T16:20:03.477Z",
+    "updatedAt": "2026-11-07T16:26:32.973Z",
     "programs": []
   }
 }

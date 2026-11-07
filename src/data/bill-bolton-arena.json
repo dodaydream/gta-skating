@@ -3,6 +3,7 @@
   "url": "https://www.billboltonarena.ca/public-skating",
   "timezone": "America/Toronto",
   "address": "40 Rossmore Road, Toronto, ON M5R 3G7",
+  "type": "indoor",
   "coordinates": {
     "lat": 43.671332,
     "lon": -79.415243

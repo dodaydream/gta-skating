@@ -3,6 +3,7 @@
   "url": "https://vaughan.perfectmind.com/25076/Clients/BookMe4BookingPages/Classes?calendarId=84142d20-1da8-48ed-800d-31dc0c30121d&widgetId=dff88c8a-0b78-4a94-9dde-250040385300&embed=False",
   "timezone": "America/Toronto",
   "address": "10190 Keele St., Maple, ON L6A 1R7",
+  "type": "indoor",
   "coordinates": {
     "lat": 43.859882,
     "lon": -79.514834

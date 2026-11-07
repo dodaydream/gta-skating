@@ -3,6 +3,7 @@
   "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=3494",
   "timezone": "America/Toronto",
   "address": "175 Main St, Toronto, ON",
+  "type": "indoor",
   "coordinates": {
     "lat": 43.684435,
     "lon": -79.299606
@@ -32,7 +33,7 @@
     }
   ],
   "schedule": {
-    "updatedAt": "2026-11-07T16:20:03.474Z",
+    "updatedAt": "2026-11-07T16:26:32.969Z",
     "programs": []
   }
 }

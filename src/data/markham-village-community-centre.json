@@ -3,6 +3,7 @@
   "url": "https://www.markham.ca/sports-recreation-fitness/community-centres-libraries/markham-village-community-centre-library",
   "timezone": "America/Toronto",
   "address": "6041 Highway 7, Markham, ON L3P 3A7",
+  "type": "indoor",
   "coordinates": {
     "lat": 43.873298,
     "lon": -79.258153

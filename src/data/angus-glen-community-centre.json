@@ -3,6 +3,7 @@
   "url": "https://www.markham.ca/sports-recreation-fitness/community-centres-libraries/angus-glen-community-centre-library",
   "timezone": "America/Toronto",
   "address": "3990 Major Mackenzie Drive, Markham, ON L6C 1P8",
+  "type": "indoor",
   "coordinates": {
     "lat": 43.895354,
     "lon": -79.336539

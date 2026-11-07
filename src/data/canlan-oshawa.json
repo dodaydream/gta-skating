@@ -3,6 +3,7 @@
   "url": "https://apps.daysmartrecreation.com/dash/x/canlan/event-registration?facility_ids=14",
   "timezone": "America/Toronto",
   "address": "1401 Phillip Murray Ave, Oshawa, ON L1J 8C4",
+  "type": "indoor",
   "coordinates": {
     "lat": 43.854682,
     "lon": -78.880942

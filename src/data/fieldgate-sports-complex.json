@@ -3,6 +3,7 @@
   "url": "https://www.whitby.ca/explore-and-enjoy/parks-and-recreation/skating-schedules-and-arenas/",
   "timezone": "America/Toronto",
   "address": "2 Gathering Place, Whitby, ON L1M 1T4",
+  "type": "indoor",
   "coordinates": {
     "lat": 43.9429379,
     "lon": -78.9632445

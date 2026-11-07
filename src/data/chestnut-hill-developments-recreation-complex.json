@@ -3,6 +3,7 @@
   "url": "https://www.pickering.ca/parks-recreation-culture/arenas-and-skating/",
   "timezone": "America/Toronto",
   "address": "1867 Valley Farm Road, Pickering, ON L1V 1C1",
+  "type": "indoor",
   "coordinates": {
     "lat": 43.8392345,
     "lon": -79.0814572

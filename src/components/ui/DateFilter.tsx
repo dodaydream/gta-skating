@@ -7,7 +7,7 @@ import type { TFunction } from "i18next";
 import { useTranslation } from "react-i18next";
 import type { DateRange } from "react-day-picker";
 import type { ProgramType } from "@/types/schedule";
-import type { VenueDisplay } from "@/types/venue";
+import type { RinkEnvironment, VenueDisplay } from "@/types/venue";
 import { Button } from "@/components/ui/button";
 import { DateRangePicker } from "@/components/ui/date-picker";
 import { FiltersControl } from "@/components/ui/FiltersControl";
@@ -31,6 +31,8 @@ interface FilterChipsProps {
   onVenueDisplayChange: (venueDisplay: VenueDisplay) => void;
   types: ProgramType[];
   onTypesChange: (types: ProgramType[]) => void;
+  rinkTypes: RinkEnvironment[];
+  onRinkTypesChange: (rinkTypes: RinkEnvironment[]) => void;
   amenities: string[];
   onAmenitiesChange: (amenities: string[]) => void;
   sortBy: "time" | "distance";
@@ -131,6 +133,8 @@ export function FilterChips({
   onVenueDisplayChange,
   types,
   onTypesChange,
+  rinkTypes,
+  onRinkTypesChange,
   amenities,
   onAmenitiesChange,
   sortBy,
@@ -281,6 +285,8 @@ export function FilterChips({
       <FiltersControl
         types={types}
         onTypesChange={onTypesChange}
+        rinkTypes={rinkTypes}
+        onRinkTypesChange={onRinkTypesChange}
         amenities={amenities}
         onAmenitiesChange={onAmenitiesChange}
         sortBy={sortBy}

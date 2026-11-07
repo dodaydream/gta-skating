@@ -3,6 +3,7 @@
   "url": "https://www.richmondhill.ca/en/online-services/Arenas.aspx",
   "timezone": "America/Toronto",
   "address": "70 Old Colony Road, Richmond Hill, ON L4E 3G4",
+  "type": "indoor",
   "coordinates": {
     "lat": 43.940667,
     "lon": -79.450453

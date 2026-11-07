@@ -3,6 +3,7 @@
   "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=3495",
   "timezone": "America/Toronto",
   "address": "40 Rossmore Rd, Toronto, ON",
+  "type": "indoor",
   "coordinates": {
     "lat": 43.671227,
     "lon": -79.415168
@@ -32,7 +33,7 @@
     }
   ],
   "schedule": {
-    "updatedAt": "2026-11-07T16:20:03.478Z",
+    "updatedAt": "2026-11-07T16:26:32.973Z",
     "programs": []
   }
 }

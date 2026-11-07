@@ -5,6 +5,7 @@ import type { ReactNode } from "react";
 import { useTranslation } from "react-i18next";
 import { cn } from "cn";
 import { ProgramType } from "@/types/schedule";
+import type { RinkEnvironment } from "@/types/venue";
 import { AMENITIES } from "@/lib/amenities";
 import { Button } from "@/components/ui/button";
 import {
@@ -29,6 +30,14 @@ import {
 const DESKTOP_QUERY = "(min-width: 1024px)";
 
 const PROGRAM_TYPES = Object.values(ProgramType);
+
+/** Indoor vs outdoor, in display order. */
+const RINK_TYPES: RinkEnvironment[] = ["indoor", "outdoor"];
+
+const RINK_TYPE_KEYS: Record<RinkEnvironment, string> = {
+  indoor: "filters.indoor",
+  outdoor: "filters.outdoor",
+};
 
 const PROGRAM_TYPE_KEYS: Record<ProgramType, string> = {
   [ProgramType.PublicSkate]: "programTypes.publicSkate",
@@ -56,6 +65,8 @@ function useIsDesktop() {
 interface FiltersControlProps {
   types: ProgramType[];
   onTypesChange: (types: ProgramType[]) => void;
+  rinkTypes: RinkEnvironment[];
+  onRinkTypesChange: (rinkTypes: RinkEnvironment[]) => void;
   amenities: string[];
   onAmenitiesChange: (amenities: string[]) => void;
   sortBy: "time" | "distance";
@@ -130,6 +141,8 @@ function Section({
 export function FiltersControl({
   types,
   onTypesChange,
+  rinkTypes,
+  onRinkTypesChange,
   amenities,
   onAmenitiesChange,
   sortBy,
@@ -140,12 +153,20 @@ export function FiltersControl({
   const { t } = useTranslation();
   const [open, setOpen] = useState(false);
   const isDesktop = useIsDesktop();
-  const count = types.length + amenities.length;
+  const count = types.length + rinkTypes.length + amenities.length;
   const active = count > 0;
 
   const toggleType = (type: ProgramType) => {
     onTypesChange(
       types.includes(type) ? types.filter((t) => t !== type) : [...types, type]
+    );
+  };
+
+  const toggleRinkType = (rinkType: RinkEnvironment) => {
+    onRinkTypesChange(
+      rinkTypes.includes(rinkType)
+        ? rinkTypes.filter((r) => r !== rinkType)
+        : [...rinkTypes, rinkType]
     );
   };
 
@@ -159,6 +180,7 @@ export function FiltersControl({
 
   const clearAll = () => {
     onTypesChange([]);
+    onRinkTypesChange([]);
     onAmenitiesChange([]);
   };
 
@@ -185,6 +207,17 @@ export function FiltersControl({
             checked={types.includes(type)}
             label={t(PROGRAM_TYPE_KEYS[type])}
             onClick={() => toggleType(type)}
+          />
+        ))}
+      </Section>
+
+      <Section title={t("filters.rinkType")} count={rinkTypes.length}>
+        {RINK_TYPES.map((rinkType) => (
+          <ToggleRow
+            key={rinkType}
+            checked={rinkTypes.includes(rinkType)}
+            label={t(RINK_TYPE_KEYS[rinkType])}
+            onClick={() => toggleRinkType(rinkType)}
           />
         ))}
       </Section>

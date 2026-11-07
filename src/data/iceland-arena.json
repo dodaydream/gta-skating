@@ -3,6 +3,7 @@
   "url": "https://anc.ca.apm.activecommunities.com/activemississauga/calendars?defaultCalendarId=1&locationId=253&categoryIds=52&view=2",
   "timezone": "America/Toronto",
   "address": "705 Matheson Blvd E, Mississauga, ON L4Z 3X9",
+  "type": "indoor",
   "coordinates": {
     "lat": 43.628202,
     "lon": -79.648999

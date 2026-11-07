@@ -3,6 +3,7 @@
   "url": "https://apps.daysmartrecreation.com/dash/x/canlan/event-registration?facility_ids=3",
   "timezone": "America/Toronto",
   "address": "1120 Martin Grove Rd, Etobicoke, ON M9W 4W1",
+  "type": "indoor",
   "coordinates": {
     "lat": 43.7002961,
     "lon": -79.5750312

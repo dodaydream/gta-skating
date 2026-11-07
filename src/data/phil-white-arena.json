@@ -3,6 +3,7 @@
   "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=477",
   "timezone": "America/Toronto",
   "address": "443 Arlington Ave, Toronto, ON",
+  "type": "indoor",
   "coordinates": {
     "lat": 43.691283,
     "lon": -79.432609
@@ -33,10 +34,10 @@
     }
   ],
   "schedule": {
-    "updatedAt": "2026-11-07T16:20:03.467Z",
+    "updatedAt": "2026-11-07T16:26:32.961Z",
     "programs": [
       {
-        "id": "14625086-fe8a-4bff-ae27-3d75a13b33f2",
+        "id": "73557c45-733f-4abb-8adc-98c35b9c1404",
         "refId": "185874|2026-11-08|13:15",
         "start": "2026-11-08T13:15",
         "end": "2026-11-08T15:00",
@@ -46,7 +47,7 @@
         "ticket": 0
       },
       {
-        "id": "6de8484f-ab83-4fbe-b793-269aebce3c3d",
+        "id": "68f4e563-af23-42ea-9583-bb87ac7a4912",
         "refId": "185874|2026-11-15|13:15",
         "start": "2026-11-15T13:15",
         "end": "2026-11-15T15:00",
@@ -56,7 +57,7 @@
         "ticket": 0
       },
       {
-        "id": "252ac3ce-e6de-4cc8-be96-b88a2cb3dac5",
+        "id": "a338f543-3f7b-41d1-9ab9-b53d9e303e13",
         "refId": "185874|2026-11-22|13:15",
         "start": "2026-11-22T13:15",
         "end": "2026-11-22T15:00",
@@ -66,7 +67,7 @@
         "ticket": 0
       },
       {
-        "id": "57f51782-5361-40d0-9e08-2a226945c399",
+        "id": "d683409c-0865-4509-9579-bd6f2b3fd9e1",
         "refId": "185874|2026-11-29|13:15",
         "start": "2026-11-29T13:15",
         "end": "2026-11-29T15:00",
@@ -76,7 +77,7 @@
         "ticket": 0
       },
       {
-        "id": "ca69bc8a-9e51-478f-bef1-7780987508c8",
+        "id": "dc9126d0-c069-41e2-bddc-5116dd229014",
         "refId": "185874|2026-12-06|13:15",
         "start": "2026-12-06T13:15",
         "end": "2026-12-06T15:00",
@@ -86,7 +87,7 @@
         "ticket": 0
       },
       {
-        "id": "a373863c-37ae-4664-a7c9-49b1b0ec64ef",
+        "id": "136c2b0f-7ce1-41c4-a771-7b9563462aa4",
         "refId": "185874|2026-12-13|13:15",
         "start": "2026-12-13T13:15",
         "end": "2026-12-13T15:00",

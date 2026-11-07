@@ -3,6 +3,7 @@
   "url": "https://anc.ca.apm.activecommunities.com/activemississauga/calendars?defaultCalendarId=1&locationId=106&categoryIds=52&view=2",
   "timezone": "America/Toronto",
   "address": "40 Stavebank Road, Mississauga, ON L5G 2T8",
+  "type": "indoor",
   "coordinates": {
     "lat": 43.552996,
     "lon": -79.589022

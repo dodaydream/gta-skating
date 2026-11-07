@@ -3,6 +3,7 @@
   "url": "https://www.whitby.ca/explore-and-enjoy/parks-and-recreation/skating-schedules-and-arenas/",
   "timezone": "America/Toronto",
   "address": "500 Victoria St. W., Whitby, ON L1N 9G4",
+  "type": "indoor",
   "coordinates": {
     "lat": 43.860281,
     "lon": -78.944613

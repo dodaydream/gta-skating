@@ -3,6 +3,7 @@
   "url": "https://www.richmondhill.ca/en/online-services/Arenas.aspx",
   "timezone": "America/Toronto",
   "address": "43 Church Street South, Richmond Hill, ON L4C 1W1",
+  "type": "indoor",
   "coordinates": {
     "lat": 43.874834,
     "lon": -79.436087

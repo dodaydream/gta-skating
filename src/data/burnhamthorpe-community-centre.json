@@ -3,6 +3,7 @@
   "url": "https://anc.ca.apm.activecommunities.com/activemississauga/calendars?defaultCalendarId=1&locationId=290&categoryIds=52&view=2",
   "timezone": "America/Toronto",
   "address": "1500 Gulleden Drive, Mississauga, ON L4X 2T7",
+  "type": "indoor",
   "coordinates": {
     "lat": 43.622781,
     "lon": -79.598509

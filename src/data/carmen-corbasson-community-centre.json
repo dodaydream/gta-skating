@@ -3,6 +3,7 @@
   "url": "https://anc.ca.apm.activecommunities.com/activemississauga/calendars?defaultCalendarId=1&locationId=248&categoryIds=52&view=2",
   "timezone": "America/Toronto",
   "address": "1399 Cawthra Road, Mississauga, ON L5G 4L1",
+  "type": "indoor",
   "coordinates": {
     "lat": 43.578265,
     "lon": -79.576635

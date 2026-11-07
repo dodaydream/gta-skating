@@ -1,7 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import type { Venue, VenueDisplay } from "@/types/venue";
+import type { RinkEnvironment, Venue, VenueDisplay } from "@/types/venue";
 import type { MapBounds } from "@/types/map";
 import type { ProgramItem, ProgramType } from "@/types/schedule";
 import dynamic from "next/dynamic";
@@ -81,6 +81,7 @@ export default function SkatingApp({ initialSlug }: { initialSlug?: string }) {
   const favoritesOnly = venueDisplay === "favorites";
   const hideEmpty = venueDisplay === "withPrograms";
   const [types, setTypes] = useState<ProgramType[]>([]);
+  const [rinkTypes, setRinkTypes] = useState<RinkEnvironment[]>([]);
   const [amenities, setAmenities] = useState<string[]>([]);
   const [sortBy, setSortBy] = useState<"time" | "distance">("time");
   const [mapBounds, setMapBounds] = useState<MapBounds | null>(null);
@@ -172,6 +173,7 @@ export default function SkatingApp({ initialSlug }: { initialSlug?: string }) {
       to: toDate,
       hideEmpty,
       types,
+      rinkTypes,
       amenities,
       bounds: mapBounds,
       favoritesOnly,
@@ -194,6 +196,7 @@ export default function SkatingApp({ initialSlug }: { initialSlug?: string }) {
     toDate,
     hideEmpty,
     types,
+    rinkTypes,
     amenities,
     mapBounds,
     favoritesOnly,
@@ -319,6 +322,13 @@ export default function SkatingApp({ initialSlug }: { initialSlug?: string }) {
                 onTypesChange={(next) => {
                   setTypes(next);
                   trackEvent("type_filter_change", { types: next.join(",") });
+                }}
+                rinkTypes={rinkTypes}
+                onRinkTypesChange={(next) => {
+                  setRinkTypes(next);
+                  trackEvent("rink_type_filter_change", {
+                    rinkTypes: next.join(","),
+                  });
                 }}
                 amenities={amenities}
                 onAmenitiesChange={(next) => {

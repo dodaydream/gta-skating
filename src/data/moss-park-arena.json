@@ -3,6 +3,7 @@
   "url": "https://mossparkarena.com/home/skating/public-skating/",
   "timezone": "America/Toronto",
   "address": "140 Sherbourne St, Toronto, ON",
+  "type": "indoor",
   "coordinates": {
     "lat": 43.655024,
     "lon": -79.370213

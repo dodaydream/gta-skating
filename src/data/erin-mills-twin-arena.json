@@ -3,6 +3,7 @@
   "url": "https://anc.ca.apm.activecommunities.com/activemississauga/calendars?defaultCalendarId=1&locationId=250&categoryIds=52&view=2",
   "timezone": "America/Toronto",
   "address": "3205 Unity Drive, Mississauga, ON L5L 4L5",
+  "type": "indoor",
   "coordinates": {
     "lat": 43.536904,
     "lon": -79.711566
