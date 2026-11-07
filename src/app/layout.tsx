@@ -1,7 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { GoogleAnalytics } from "@next/third-parties/google";
-import { DeviceCornerRadius } from "@/components/DeviceCornerRadius";
 import { I18nProvider } from "@/components/I18nProvider";
 import { SITE_DESCRIPTION, SITE_URL } from "@/lib/site";
 import "./globals.css";
@@ -94,7 +93,6 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     >
       <body className="flex h-full flex-col overflow-hidden">
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
-        <DeviceCornerRadius />
         <I18nProvider>{children}</I18nProvider>
         {adsenseClient ? (
           <script
