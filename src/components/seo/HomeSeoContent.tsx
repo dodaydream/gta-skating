@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { venues, getSlugForVenue } from "@/data/schedules";
+import { areas } from "@/data/areas";
 import { SITE_DESCRIPTION } from "@/lib/site";
 
 /**
@@ -18,6 +19,16 @@ export function HomeSeoContent({ locale }: { locale: string }) {
           <li key={venue.name}>
             <Link href={`/${locale}/venue/${getSlugForVenue(venue.name)}`}>
               {venue.name} — {venue.address}
+            </Link>
+          </li>
+        ))}
+      </ul>
+      <h2>Skating near</h2>
+      <ul>
+        {areas.map((area) => (
+          <li key={area.slug}>
+            <Link href={`/${locale}/areas/${area.slug}`}>
+              Skating near {area.name}
             </Link>
           </li>
         ))}

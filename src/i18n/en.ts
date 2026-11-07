@@ -22,6 +22,7 @@ const en = {
   },
   sidebar: {
     title: "Skating Programs",
+    titleArea: "Skating near {{area}}",
     programsFound_one: "{{count}} program found",
     programsFound_other: "{{count}} programs found",
     disclaimer:

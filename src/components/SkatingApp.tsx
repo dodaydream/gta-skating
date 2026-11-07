@@ -3,7 +3,8 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import type { RinkEnvironment, Venue, VenueDisplay } from "@/types/venue";
 import type { MapBounds } from "@/types/map";
-import type { ProgramItem, ProgramType } from "@/types/schedule";
+import type { ProgramItem, ProgramType, Coordinates } from "@/types/schedule";
+import { getAreaBounds } from "@/data/areas";
 import dynamic from "next/dynamic";
 import { useTranslation } from "react-i18next";
 import { IconLocation } from "@tabler/icons-react";
@@ -53,7 +54,21 @@ function pushUrl(locale: string, path: string) {
   window.history.pushState(null, "", `${BASE_PATH}/${locale}${path}`);
 }
 
-export default function SkatingApp({ initialSlug }: { initialSlug?: string }) {
+export default function SkatingApp({
+  initialSlug,
+  area,
+}: {
+  initialSlug?: string;
+  /**
+   * Set only by the `/[lang]/areas/[area]` page. Seeds the map bounds (and the
+   * initial list filter) from the area and overrides the sidebar heading.
+   */
+  area?: {
+    name: string;
+    center: Coordinates;
+    radiusKm: number;
+  };
+}) {
   const { t } = useTranslation();
   const locale = useLocale();
   const locateRef = useRef<(() => void) | null>(null);
@@ -88,7 +103,12 @@ export default function SkatingApp({ initialSlug }: { initialSlug?: string }) {
   const [rinkTypes, setRinkTypes] = useState<RinkEnvironment[]>([]);
   const [amenities, setAmenities] = useState<string[]>([]);
   const [sortBy, setSortBy] = useState<"time" | "distance">("time");
-  const [mapBounds, setMapBounds] = useState<MapBounds | null>(null);
+  // Area pages start with the area's bounds so the first fetch is already
+  // scoped; the map then frames the same bounds (see VenueMap) and every later
+  // pan/zoom updates them through the normal flow.
+  const [mapBounds, setMapBounds] = useState<MapBounds | null>(() =>
+    area ? getAreaBounds(area) : null
+  );
   const [userLocation, setUserLocation] = useState<{
     lat: number;
     lon: number;
@@ -235,9 +255,11 @@ export default function SkatingApp({ initialSlug }: { initialSlug?: string }) {
   }, [detailSlug, venues, selectedIndex]);
 
   // When the favourites-only filter is active the map scales to fit every
-  // favourite venue, regardless of the current date/program filters.
+  // favourite venue, regardless of the current date/program filters. Area pages
+  // suppress this: fitting every favourite could move the camera away from the
+  // area.
   const favoriteFitPoints = useMemo<[number, number][] | null>(() => {
-    if (!favoritesOnly) return null;
+    if (area || !favoritesOnly) return null;
     const points: [number, number][] = [];
     for (const slug of favorites) {
       const coords = getVenueBySlug(slug)?.coordinates;
@@ -246,7 +268,12 @@ export default function SkatingApp({ initialSlug }: { initialSlug?: string }) {
       }
     }
     return points.length > 0 ? points : null;
-  }, [favoritesOnly, favorites]);
+  }, [area, favoritesOnly, favorites]);
+
+  const areaBounds = useMemo(
+    () => (area ? getAreaBounds(area) : null),
+    [area]
+  );
 
   const handleOpenVenue = useCallback(
     (venue: Venue) => {
@@ -278,6 +305,7 @@ export default function SkatingApp({ initialSlug }: { initialSlug?: string }) {
             onBoundsChange={setMapBounds}
             userLocation={userLocation}
             focusVenue={focusVenue}
+            fitBounds={areaBounds}
             fitTo={favoriteFitPoints}
           />
 
@@ -363,6 +391,9 @@ export default function SkatingApp({ initialSlug }: { initialSlug?: string }) {
           onSelectVenue={handleOpenVenue}
           detailOpen={detailSlug !== null}
           sortBy={sortBy}
+          title={
+            area ? t("sidebar.titleArea", { area: area.name }) : undefined
+          }
         />
       </div>
 

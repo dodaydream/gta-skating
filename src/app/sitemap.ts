@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { venues, getSlugForVenue } from "@/data/schedules";
+import { areas } from "@/data/areas";
 import { SITE_URL } from "@/lib/site";
 import { SUPPORTED_LOCALES } from "@/i18n/locales";
 
@@ -41,6 +42,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })
   );
 
+  const areaEntries: MetadataRoute.Sitemap = SUPPORTED_LOCALES.flatMap((locale) =>
+    areas.map((area) => ({
+      url: `${SITE_URL}/${locale}/areas/${area.slug}`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.7,
+      alternates: { languages: languageAlternates(`/areas/${area.slug}`) },
+    }))
+  );
+
   return [
     ...homeEntries,
     {
@@ -62,5 +73,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.3,
     },
     ...venueEntries,
+    ...areaEntries,
   ];
 }

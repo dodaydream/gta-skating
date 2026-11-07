@@ -21,6 +21,9 @@ interface VenueMapProps {
   userLocation?: { lat: number; lon: number } | null;
   locateRef: React.MutableRefObject<(() => void) | null>;
   focusVenue?: { lat: number; lon: number } | null;
+  // Initial camera bounds, e.g. the area a landing page is scoped to. Fitted
+  // once when the map loads; later panning/zooming takes over normally.
+  fitBounds?: MapBounds | null;
   // When set (favourites-only filter), the map scales to fit these [lng, lat]
   // points. Changes are keyed by the point set, so panning is preserved until
   // the set itself changes.
@@ -350,6 +353,7 @@ export default function VenueMap({
   userLocation,
   locateRef,
   focusVenue,
+  fitBounds,
   fitTo,
 }: VenueMapProps) {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -358,6 +362,11 @@ export default function VenueMap({
   const userMarkerRef = useRef<maplibregl.Marker | null>(null);
   const centeredOnUserRef = useRef(false);
   const fitSignatureRef = useRef<string | null>(null);
+  const fitBoundsSignatureRef = useRef<string | null>(null);
+  const fitBoundsRef = useRef(fitBounds);
+  useEffect(() => {
+    fitBoundsRef.current = fitBounds;
+  }, [fitBounds]);
   const boundsTrackTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const appliedStyleRef = useRef<string | null>(null);
   const [dark, setDark] = useState(() => isDarkMode());
@@ -445,8 +454,12 @@ export default function VenueMap({
     }
 
     map.on("load", () => {
-      // Don't override a user-location centering that already happened.
-      if (!centeredOnUserRef.current) {
+      if (fitBoundsRef.current) {
+        // Frame the area (landing pages) once the map is ready; taking the
+        // camera also suppresses the one-shot user-location centering below.
+        centeredOnUserRef.current = true;
+      } else if (!centeredOnUserRef.current) {
+        // Don't override a user-location centering that already happened.
         map.setCenter(offsetForDrawer(map, TORONTO));
       }
       setMapReady(true);
@@ -495,7 +508,11 @@ export default function VenueMap({
         });
       }, 500);
     };
-    map.on("load", emitBounds);
+    map.on("load", () => {
+      // An area page already seeded these bounds; skip the map's own load emit
+      // so the initial frame (`fitBounds` effect below) is what gets emitted.
+      if (!fitBoundsRef.current) emitBounds();
+    });
     map.on("moveend", emitBounds);
 
     // Re-clamp when the drawer's snap detent changes `--drawer-height`.
@@ -602,6 +619,36 @@ export default function VenueMap({
       zoom: DEFAULT_ZOOM,
     });
   }, [focusVenue, mapReady]);
+
+  useEffect(() => {
+    const map = mapRef.current;
+    if (!map || !mapReady || !fitBounds) return;
+    const signature = `${fitBounds.west},${fitBounds.south},${fitBounds.east},${fitBounds.north}`;
+    if (fitBoundsSignatureRef.current === signature) return;
+    fitBoundsSignatureRef.current = signature;
+
+    // Frame the area. The zoom is derived from the area's size (approximate),
+    // not the drawer padding, so the viewport roughly equals the area; the
+    // normal bounds flow then scopes the list to it. Framing takes the camera,
+    // so suppress the one-shot user-location centering too.
+    centeredOnUserRef.current = true;
+    const lat = (fitBounds.north + fitBounds.south) / 2;
+    const lon = (fitBounds.west + fitBounds.east) / 2;
+    const radiusKm = ((fitBounds.north - fitBounds.south) / 2) * 111.32;
+    const targetPx = Math.max(
+      1,
+      Math.min(map.getCanvas().clientWidth, visibleMapHeight(map)) * 0.9,
+    );
+    // MapLibre tiles are 512px, so meters/px = (156543/2) * cos(lat) / 2^zoom.
+    const metersPerPixel = (radiusKm * 2000) / targetPx;
+    const zoom = Math.min(
+      16,
+      Math.log2(
+        (78271.5 * Math.cos((lat * Math.PI) / 180)) / metersPerPixel,
+      ),
+    );
+    map.jumpTo({ center: offsetForDrawer(map, [lon, lat]), zoom });
+  }, [fitBounds, mapReady]);
 
   useEffect(() => {
     const map = mapRef.current;

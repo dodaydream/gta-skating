@@ -22,6 +22,8 @@ type ScheduleSidebarProps = {
   onSelectVenue: (venue: Venue) => void;
   detailOpen: boolean;
   sortBy: "time" | "distance";
+  /** Overrides the default heading, e.g. "Skating near Davenport". */
+  title?: string;
 };
 
 const DESKTOP_QUERY = "(min-width: 1024px)";
@@ -146,6 +148,7 @@ export function ScheduleSidebar({
   onSelectVenue,
   detailOpen,
   sortBy,
+  title,
 }: ScheduleSidebarProps) {
   const { t } = useTranslation();
   const [open, setOpen] = useState(true);
@@ -178,7 +181,7 @@ export function ScheduleSidebar({
           <div className="mb-4 flex items-start justify-between gap-2">
             <div className="flex flex-col">
               <h1 className="text-xl font-semibold tracking-tight text-black dark:text-zinc-50">
-                {t("sidebar.title")}
+                {title ?? t("sidebar.title")}
               </h1>
               <span className="text-sm text-zinc-500 dark:text-zinc-400">
                 {programCount}
@@ -220,7 +223,7 @@ export function ScheduleSidebar({
             <div className="flex items-start justify-between gap-2 px-4 pb-3 pt-4">
               <div className="flex flex-col">
                 <DrawerTitle className="text-xl font-semibold tracking-tight">
-                  {t("sidebar.title")}
+                  {title ?? t("sidebar.title")}
                 </DrawerTitle>
                 <DrawerDescription className="text-left text-sm">
                   {programCount}
