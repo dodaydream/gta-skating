@@ -41,7 +41,7 @@ export function LanguageToggle({ className }: { className?: string }) {
             aria-pressed={active}
             onClick={() => select(locale)}
             className={cn(
-              "h-full rounded-md px-2 text-[11px] font-semibold uppercase tracking-wide transition-colors",
+              "h-full min-w-9 rounded-md px-2 text-center text-[11px] font-semibold uppercase tracking-wide transition-colors",
               active
                 ? "bg-black text-white dark:bg-zinc-50 dark:text-black"
                 : "text-muted-foreground hover:text-secondary-foreground"

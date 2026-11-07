@@ -6,7 +6,6 @@ import { useTranslation } from "react-i18next";
 import type { Venue } from "@/types/venue";
 import type { ProgramItem } from "@/types/schedule";
 import { ProgramList } from "@/components/schedule/ProgramList";
-import { LanguageToggle } from "@/components/LanguageToggle";
 import { UserAvatarButton, UserCentre } from "@/components/UserCentre";
 import { distanceKm } from "@/lib/schedule";
 import {
@@ -146,8 +145,8 @@ export function ScheduleSidebar({
   const snapPoints = useSnapPoints();
 
   useEffect(() => {
-    if (!isDesktop) setOpen(!detailOpen);
-  }, [detailOpen, isDesktop]);
+    if (!isDesktop) setOpen(!detailOpen && !userCentreOpen);
+  }, [detailOpen, isDesktop, userCentreOpen]);
 
   const sortedItems = useMemo(() => {
     if (sortBy !== "distance" || !userLocation) return items;
@@ -177,7 +176,6 @@ export function ScheduleSidebar({
               </span>
             </div>
             <div className="flex items-center gap-2">
-              <LanguageToggle />
               <UserAvatarButton onClick={() => setUserCentreOpen(true)} />
             </div>
           </div>
@@ -220,7 +218,6 @@ export function ScheduleSidebar({
                 </DrawerDescription>
               </div>
               <div className="flex items-center gap-2">
-                <LanguageToggle />
                 <UserAvatarButton onClick={() => setUserCentreOpen(true)} />
               </div>
             </div>

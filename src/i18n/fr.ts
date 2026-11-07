@@ -6,14 +6,22 @@ const fr: Messages = {
     en: "English",
     fr: "Français",
   },
+  theme: {
+    label: "Thème",
+    light: "Mode clair",
+    dark: "Mode sombre",
+  },
   user: {
     title: "Centre utilisateur",
     open: "Ouvrir le centre utilisateur",
-    description: "Tous les programmes de vos arénas favoris.",
-    loading: "Chargement de vos favoris…",
-    noFavorites:
-      "Ajoutez des arénas à vos favoris pour voir leurs programmes ici.",
-    noPrograms: "Aucun programme à venir dans vos arénas favoris.",
+    description: "Vos arénas favoris.",
+    sectionTitle: "Arénas favoris",
+    noFavorites: "Ajoutez des arénas à vos favoris et ils apparaîtront ici.",
+    remove: "Retirer des favoris",
+    settings: "Paramètres",
+    appearance: "Apparence",
+    localNote:
+      "Vos favoris sont enregistrés dans votre navigateur sur cet appareil.",
   },
   sidebar: {
     title: "Programmes de patinage",

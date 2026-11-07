@@ -13,13 +13,13 @@ test.describe("language", () => {
       })
     ).toBeVisible();
 
-    await page.getByRole("button", { name: "fr", exact: true }).click();
+    await page.getByRole("button", { name: "Open user centre" }).click();
+    const dialog = page.getByRole("dialog");
+    await dialog
+      .getByRole("button", { name: "fr", exact: true })
+      .click();
 
-    await expect(
-      sidebar(page).getByRole("heading", {
-        name: "Programmes de patinage",
-      })
-    ).toBeVisible();
+    await expect(dialog.getByText("Centre utilisateur")).toBeVisible();
     await expect(page.locator("html")).toHaveAttribute("lang", "fr");
   });
 

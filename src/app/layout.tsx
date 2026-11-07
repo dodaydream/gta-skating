@@ -28,6 +28,10 @@ const ogImage = {
 
 const adsenseClient = process.env.NEXT_PUBLIC_ADSENSE_CLIENT;
 
+// Applied before paint so the stored theme (or the system preference) is set
+// without a flash of the wrong colours.
+const themeScript = `(function(){try{var s=localStorage.getItem("gta-skating-theme");var d=s?s==="dark":window.matchMedia("(prefers-color-scheme: dark)").matches;document.documentElement.classList.toggle("dark",d);}catch(e){}})();`;
+
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: "GTA Skating — Public Skating, Shinny & Figure Skating",
@@ -85,9 +89,11 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
+      suppressHydrationWarning
       className={`${geistSans.variable} ${geistMono.variable} h-dvh overflow-hidden antialiased`}
     >
       <body className="flex h-full flex-col overflow-hidden">
+        <script dangerouslySetInnerHTML={{ __html: themeScript }} />
         <DeviceCornerRadius />
         <I18nProvider>{children}</I18nProvider>
         {adsenseClient ? (

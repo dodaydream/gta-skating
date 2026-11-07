@@ -4,7 +4,6 @@ import { useEffect, useMemo, useState } from "react";
 import type { RefObject } from "react";
 import { useTranslation } from "react-i18next";
 import type { Program } from "@/types/schedule";
-import type { Venue } from "@/types/venue";
 import {
   dayjsLocale,
   formatHourLabel,
@@ -14,9 +13,7 @@ import {
   toMinutes,
 } from "@/lib/schedule";
 import { normalizeLocale, type Locale } from "@/i18n/config";
-import { getSlugForVenue } from "@/data/schedules";
-import { IconChevronLeft, IconChevronRight, IconMapPin } from "@tabler/icons-react";
-import Link from "next/link";
+import { IconChevronLeft, IconChevronRight } from "@tabler/icons-react";
 import dayjs from "dayjs";
 import "dayjs/locale/fr-ca";
 
@@ -25,16 +22,14 @@ const SHORT_DATE_FORMAT: Record<Locale, string> = {
   fr: "D MMM",
 };
 
-type WeekProgram = Program & { venue?: Venue };
-
-function getWeekStartISO(programs: WeekProgram[]): string {
+function getWeekStartISO(programs: Program[]): string {
   return dayjs(programs[0].start)
     .startOf("week")
     .format("YYYY-MM-DD");
 }
 
 type PositionedProgram = {
-  program: WeekProgram;
+  program: Program;
   /** Zero-based column within its overlap group. */
   lane: number;
   /** Number of columns in its overlap group. */
@@ -47,9 +42,9 @@ type WeekColumn = {
   programs: PositionedProgram[];
 };
 
-const startMinutes = (program: WeekProgram) =>
+const startMinutes = (program: Program) =>
   toMinutes(program.start.slice(11, 16));
-const endMinutes = (program: WeekProgram) =>
+const endMinutes = (program: Program) =>
   toMinutes(program.end.slice(11, 16));
 
 /**
@@ -59,7 +54,7 @@ const endMinutes = (program: WeekProgram) =>
  * is free; every program in a cluster shares the cluster's lane count so they
  * all have the same width.
  */
-function layoutPrograms(programs: WeekProgram[]): PositionedProgram[] {
+function layoutPrograms(programs: Program[]): PositionedProgram[] {
   const sorted = [...programs].sort(
     (a, b) =>
       startMinutes(a) - startMinutes(b) ||
@@ -68,7 +63,7 @@ function layoutPrograms(programs: WeekProgram[]): PositionedProgram[] {
   );
 
   const result: PositionedProgram[] = [];
-  let cluster: WeekProgram[] = [];
+  let cluster: Program[] = [];
   let clusterEnd = -1;
 
   const flush = () => {
@@ -108,10 +103,10 @@ function layoutPrograms(programs: WeekProgram[]): PositionedProgram[] {
 }
 
 function buildWeekColumns(
-  programs: WeekProgram[],
+  programs: Program[],
   weekOffset = 0
 ): WeekColumn[] {
-  const byDate = new Map<string, WeekProgram[]>();
+  const byDate = new Map<string, Program[]>();
   for (const p of programs) {
     const date = p.start.slice(0, 10);
     if (!byDate.has(date)) byDate.set(date, []);
@@ -167,12 +162,10 @@ export function WeekView({
   programs,
   timezone,
   bodyRef,
-  showVenue = false,
 }: {
-  programs: WeekProgram[];
+  programs: Program[];
   timezone: string;
   bodyRef: RefObject<HTMLDivElement | null>;
-  showVenue?: boolean;
 }) {
   const { t, i18n } = useTranslation();
   const locale = normalizeLocale(i18n.resolvedLanguage);
@@ -365,17 +358,6 @@ export function WeekView({
                     <div className="min-h-0 flex-1">
                       <div className="line-clamp-2">{p.name}</div>
                     </div>
-                    {showVenue && p.venue ? (
-                      <Link
-                        href={`/venue/${getSlugForVenue(p.venue.name)}`}
-                        className="flex items-start gap-0.5 text-[10px] leading-tight text-zinc-400 transition-colors hover:text-blue-600 dark:text-zinc-500 dark:hover:text-blue-400"
-                      >
-                        <IconMapPin className="mt-px size-2.5 shrink-0" />
-                        <span className="min-w-0">
-                          <span className="line-clamp-2">{p.venue.name}</span>
-                        </span>
-                      </Link>
-                    ) : null}
                   </div>
                 );
               })}

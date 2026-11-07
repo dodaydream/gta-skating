@@ -30,16 +30,17 @@ test.describe("user centre", () => {
     await expect(dialog).toHaveCount(0);
   });
 
-  test("shows a week view of the favourite arenas", async ({ page }) => {
+  test("lists and manages favourite arenas", async ({ page }) => {
     const venues = loadVenues();
     const day = densestDay(venues);
     const from = `${day}T00:00`;
     const to = `${day}T23:59`;
     const venue = venues.find((v) => countInRange([v], from, to) > 0);
     if (!venue) throw new Error("no venue with programs on the densest day");
+    const slug = slugify(venue.name);
 
     await freezeToDay(page, day);
-    await page.goto(`/venue/${slugify(venue.name)}`);
+    await page.goto(`/venue/${slug}`);
     await page.getByRole("button", { name: "Add to favourites" }).click();
 
     await page.goto("/");
@@ -47,16 +48,33 @@ test.describe("user centre", () => {
 
     const dialog = page.getByRole("dialog");
     await expect(dialog).toBeVisible();
-    await expect(
-      dialog.getByRole("button", { name: "Previous week" })
-    ).toBeVisible();
 
-    // Clicking a program's arena link opens that arena.
-    const slug = slugify(venue.name);
-    const link = dialog.locator(`a[href="/venue/${slug}"]`).first();
+    // The favourite is listed as a link to the arena.
+    const link = dialog.getByRole("link", { name: venue.name });
     await expect(link).toBeVisible();
-    await link.scrollIntoViewIfNeeded();
-    await link.click();
-    await expect(page).toHaveURL(new RegExp(`/venue/${slug}$`));
+
+    // It can be removed directly from the user centre.
+    await dialog
+      .getByRole("button", { name: "Remove from favourites" })
+      .click();
+    await expect(link).toHaveCount(0);
+    await expect(
+      dialog.getByText("Add arenas to your favourites")
+    ).toBeVisible();
+  });
+
+  test("settings toggle the colour theme", async ({ page }) => {
+    await openDensestDay(page);
+
+    await page.getByRole("button", { name: "Open user centre" }).click();
+    const dialog = page.getByRole("dialog");
+    await expect(dialog).toBeVisible();
+
+    const html = page.locator("html");
+    await dialog.getByRole("button", { name: "Dark mode" }).click();
+    await expect(html).toHaveClass(/dark/);
+
+    await dialog.getByRole("button", { name: "Light mode" }).click();
+    await expect(html).not.toHaveClass(/dark/);
   });
 });

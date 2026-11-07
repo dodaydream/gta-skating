@@ -1,8 +1,8 @@
 "use client";
 
-import { useEffect, useRef, useState, type RefObject } from "react";
+import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
-import dayjs from "dayjs";
+import Link from "next/link";
 import { cn } from "cn";
 import {
   Dialog,
@@ -16,15 +16,26 @@ import {
   DrawerDescription,
   DrawerTitle,
 } from "@/components/ui/drawer";
-import { WeekView } from "@/components/schedule/WeekView";
-import { fetchPrograms } from "@/api/programs";
-import { useFavorites } from "@/lib/favorites";
-import type { ProgramItem } from "@/types/schedule";
-import { IconUserCircle, IconX } from "@tabler/icons-react";
+import { LanguageToggle } from "@/components/LanguageToggle";
+import { ThemeToggle } from "@/components/ThemeToggle";
+import { getVenueBySlug } from "@/data/schedules";
+import { toggleFavorite, useFavorites } from "@/lib/favorites";
+import {
+  IconInfoCircle,
+  IconStarFilled,
+  IconUserCircle,
+  IconX,
+} from "@tabler/icons-react";
 
 const DESKTOP_QUERY = "(min-width: 1024px)";
 
-const SNAP_POINTS = [0.5, 0.9];
+const SNAP_POINTS = [0.9];
+
+const GROUP_CLASS =
+  "divide-y divide-black/[.08] overflow-hidden rounded-lg border border-black/[.08] dark:divide-white/[.145] dark:border-white/[.145]";
+
+const SECTION_TITLE_CLASS =
+  "text-xs font-semibold uppercase tracking-wide text-zinc-500 dark:text-zinc-400";
 
 function useIsDesktop() {
   const [isDesktop, setIsDesktop] = useState(() =>
@@ -70,19 +81,14 @@ export function UserAvatarButton({
 function Panel({
   isDesktop,
   onClose,
-  bodyRef,
   children,
 }: {
   isDesktop: boolean;
   onClose: () => void;
-  bodyRef?: React.Ref<HTMLDivElement>;
   children: React.ReactNode;
 }) {
   const body = (
-    <div
-      ref={bodyRef}
-      className="flex min-h-0 flex-1 flex-col overflow-y-auto overscroll-contain isolate"
-    >
+    <div className="flex min-h-0 flex-1 flex-col overflow-y-auto overscroll-contain isolate">
       {children}
     </div>
   );
@@ -92,7 +98,7 @@ function Panel({
       <Dialog open onOpenChange={(open) => !open && onClose()}>
         <DialogContent
           showCloseButton={false}
-          className="flex max-h-[85dvh] flex-col overflow-hidden p-0"
+          className="flex h-[85dvh] flex-col overflow-hidden p-0"
           style={{ maxWidth: "28rem" }}
         >
           {body}
@@ -111,9 +117,7 @@ function Panel({
       snapPoints={SNAP_POINTS}
       onOpenChange={(open) => !open && onClose()}
     >
-      <DrawerContent
-        className="data-expanded:shadow-[0_-4px_24px_rgba(0,0,0,0.12)] [&>[data-slot=drawer-content]]:rounded-none"
-      >
+      <DrawerContent className="data-expanded:shadow-[0_-4px_24px_rgba(0,0,0,0.12)] [&>[data-slot=drawer-content]]:rounded-none">
         {body}
       </DrawerContent>
     </Drawer>
@@ -164,74 +168,80 @@ function CloseButton({ onClick }: { onClick: () => void }) {
   );
 }
 
-function UserCentrePrograms({
-  bodyRef,
-}: {
-  bodyRef: RefObject<HTMLDivElement | null>;
-}) {
+function FavoriteVenueItem({ slug }: { slug: string }) {
   const { t } = useTranslation();
-  const favorites = useFavorites();
-  const [items, setItems] = useState<ProgramItem[] | null>(null);
-
-  useEffect(() => {
-    if (favorites.length === 0) return;
-    let cancelled = false;
-    const from = `${dayjs().startOf("month").format("YYYY-MM-DD")}T00:00`;
-    const to = `${dayjs()
-      .add(3, "month")
-      .endOf("month")
-      .format("YYYY-MM-DD")}T23:59`;
-    fetchPrograms({
-      from,
-      to,
-      hideEmpty: true,
-      favoritesOnly: true,
-      favoriteSlugs: favorites,
-    })
-      .then((result) => {
-        if (!cancelled) setItems(result.items);
-      })
-      .catch(() => {
-        if (!cancelled) setItems([]);
-      });
-    return () => {
-      cancelled = true;
-    };
-  }, [favorites]);
-
-  if (favorites.length === 0) {
-    return (
-      <p className="px-5 py-8 text-center text-sm text-zinc-500 dark:text-zinc-400">
-        {t("user.noFavorites")}
-      </p>
-    );
-  }
-
-  if (items === null) {
-    return (
-      <p className="px-5 py-8 text-center text-sm text-zinc-500 dark:text-zinc-400">
-        {t("user.loading")}
-      </p>
-    );
-  }
-
-  if (items.length === 0) {
-    return (
-      <p className="px-5 py-8 text-center text-sm text-zinc-500 dark:text-zinc-400">
-        {t("user.noPrograms")}
-      </p>
-    );
-  }
+  const venue = getVenueBySlug(slug);
+  if (!venue) return null;
 
   return (
-    <div className="flex flex-col px-5">
-      <WeekView
-        programs={items}
-        timezone={items[0].venue.timezone}
-        bodyRef={bodyRef}
-        showVenue
-      />
+    <div className="flex items-center gap-2 px-3 py-2">
+      <Link href={`/venue/${slug}`} className="min-w-0 flex-1">
+        <div className="truncate text-sm font-medium text-black dark:text-zinc-50">
+          {venue.name}
+        </div>
+        <div className="truncate text-xs text-zinc-500 dark:text-zinc-400">
+          {venue.address}
+        </div>
+      </Link>
+      <button
+        type="button"
+        onClick={() => toggleFavorite(slug)}
+        aria-label={t("user.remove")}
+        title={t("user.remove")}
+        className="rounded-lg p-1.5 text-amber-500 transition-colors hover:bg-zinc-100 hover:text-amber-600 dark:hover:bg-zinc-800 dark:hover:text-amber-400"
+      >
+        <IconStarFilled className="size-4" />
+      </button>
     </div>
+  );
+}
+
+function FavouritesSection() {
+  const { t } = useTranslation();
+  const favorites = useFavorites();
+
+  return (
+    <section className="px-5 pt-4">
+      <h3 className={cn(SECTION_TITLE_CLASS, "pb-2")}>
+        {t("user.sectionTitle")}
+      </h3>
+      {favorites.length === 0 ? (
+        <p className="py-4 text-center text-sm text-zinc-500 dark:text-zinc-400">
+          {t("user.noFavorites")}
+        </p>
+      ) : (
+        <div className={GROUP_CLASS}>
+          {favorites.map((slug) => (
+            <FavoriteVenueItem key={slug} slug={slug} />
+          ))}
+        </div>
+      )}
+    </section>
+  );
+}
+
+function SettingsSection() {
+  const { t } = useTranslation();
+  return (
+    <section className="px-5 pt-5">
+      <h3 className={cn(SECTION_TITLE_CLASS, "pb-2")}>
+        {t("user.settings")}
+      </h3>
+      <div className={GROUP_CLASS}>
+        <div className="flex items-center justify-between gap-3 px-3 py-2">
+          <span className="text-sm text-black dark:text-zinc-50">
+            {t("language.label")}
+          </span>
+          <LanguageToggle />
+        </div>
+        <div className="flex items-center justify-between gap-3 px-3 py-2">
+          <span className="text-sm text-black dark:text-zinc-50">
+            {t("user.appearance")}
+          </span>
+          <ThemeToggle />
+        </div>
+      </div>
+    </section>
   );
 }
 
@@ -244,12 +254,11 @@ export function UserCentre({
 }) {
   const { t } = useTranslation();
   const isDesktop = useIsDesktop();
-  const bodyRef = useRef<HTMLDivElement>(null);
 
   if (!open) return null;
 
   return (
-    <Panel isDesktop={isDesktop} onClose={onClose} bodyRef={bodyRef}>
+    <Panel isDesktop={isDesktop} onClose={onClose}>
       <div className="sticky top-0 z-30 flex h-12 shrink-0 items-center justify-between gap-3 bg-popover px-5">
         <PanelTitle isDesktop={isDesktop} className="text-base">
           {t("user.title")}
@@ -259,7 +268,14 @@ export function UserCentre({
       <PanelDescription isDesktop={isDesktop} className="sr-only">
         {t("user.description")}
       </PanelDescription>
-      <UserCentrePrograms bodyRef={bodyRef} />
+      <div className="flex flex-1 flex-col">
+        <FavouritesSection />
+        <SettingsSection />
+        <p className="mt-auto flex items-start gap-1.5 px-5 py-4 text-xs text-zinc-400 dark:text-zinc-500">
+          <IconInfoCircle className="mt-px size-3.5 shrink-0" />
+          <span>{t("user.localNote")}</span>
+        </p>
+      </div>
     </Panel>
   );
 }
