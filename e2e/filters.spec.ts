@@ -63,13 +63,15 @@ test.describe("schedule filters", () => {
 
     const type = mostCommonType(venues);
 
-    await page.getByRole("button", { name: "Type", exact: true }).click();
+    await page.getByRole("button", { name: "Filters", exact: true }).click();
     const option = page.getByRole("button", { name: type, exact: true });
     await expect(option).toHaveAttribute("aria-pressed", "false");
     await option.click();
 
     await expect(option).toHaveAttribute("aria-pressed", "true");
-    await expect(page.getByRole("button", { name: "Type (1)" })).toBeVisible();
+    await expect(
+      page.getByRole("button", { name: "Program type" })
+    ).toBeVisible();
 
     const expected = countInRange(venues, `${day}T00:00`, `${day}T23:59`, type);
     await expect.poll(() => programCount(page)).toBe(expected);

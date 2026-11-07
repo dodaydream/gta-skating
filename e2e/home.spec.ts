@@ -26,9 +26,11 @@ test.describe("home schedule", () => {
     await expect(
       page.getByRole("button", { name: /^Today \d{1,2}:\d\d [AP]M - \d{1,2}:\d\d [AP]M$/ })
     ).toBeVisible();
-    await expect(page.getByRole("button", { name: "Type", exact: true })).toBeVisible();
     await expect(
-      page.getByRole("button", { name: "Show all venues" })
+      page.getByRole("button", { name: "Filters", exact: true })
+    ).toBeVisible();
+    await expect(
+      page.getByRole("button", { name: "Arenas with programs" })
     ).toBeVisible();
 
     // Footer navigation.

@@ -20,6 +20,8 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 import { Drawer, DrawerContent, DrawerTitle } from "@/components/ui/drawer";
+import { Toggle } from "@/components/ui/toggle";
+import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 import {
   IconCheck,
   IconChevronDown,
@@ -48,6 +50,10 @@ const PROGRAM_TYPE_KEYS: Record<ProgramType, string> = {
   [ProgramType.IceBreakdancing]: "programTypes.iceBreakdancing",
 };
 
+const CHIP_CLASS =
+  "rounded-full border-input gap-1.5 aria-pressed:border-blue-600 aria-pressed:bg-blue-600 aria-pressed:text-white aria-pressed:hover:bg-blue-600";
+const CHIP_CHECK_CLASS = "hidden size-3.5 group-data-[pressed]/toggle:block";
+
 function subscribeDesktop(onChange: () => void) {
   const mq = window.matchMedia(DESKTOP_QUERY);
   mq.addEventListener("change", onChange);
@@ -75,40 +81,12 @@ interface FiltersControlProps {
   className?: string;
 }
 
-function ToggleRow({
-  checked,
-  label,
-  onClick,
-  disabled,
-}: {
-  checked: boolean;
-  label: string;
-  onClick: () => void;
-  disabled?: boolean;
-}) {
-  return (
-    <Button
-      variant="ghost"
-      size="sm"
-      className="w-full justify-start font-normal"
-      aria-pressed={checked}
-      disabled={disabled}
-      onClick={onClick}
-    >
-      <span className="flex-1 text-left">{label}</span>
-      {checked ? <IconCheck className="size-4 text-blue-500" /> : null}
-    </Button>
-  );
-}
-
-function Section({
+function FilterSection({
   title,
-  count,
   defaultOpen = true,
   children,
 }: {
   title: string;
-  count?: number;
   defaultOpen?: boolean;
   children: ReactNode;
 }) {
@@ -117,23 +95,18 @@ function Section({
     <Collapsible
       open={open}
       onOpenChange={setOpen}
-      className="flex flex-col gap-1"
+      className="flex flex-col gap-2"
     >
-      <CollapsibleTrigger className="flex w-full items-center justify-between gap-2 px-1 py-1 text-xs font-medium text-muted-foreground hover:text-foreground">
-        <span>
-          {title}
-          {count ? ` (${count})` : ""}
-        </span>
+      <CollapsibleTrigger className="flex w-full items-center justify-between gap-2 py-1 text-sm font-semibold text-foreground">
+        <span>{title}</span>
         <IconChevronDown
           className={cn(
-            "size-3.5 shrink-0 transition-transform",
+            "size-4 shrink-0 transition-transform",
             open && "rotate-180"
           )}
         />
       </CollapsibleTrigger>
-      <CollapsibleContent className="flex flex-col gap-0.5">
-        {children}
-      </CollapsibleContent>
+      <CollapsibleContent>{children}</CollapsibleContent>
     </Collapsible>
   );
 }
@@ -156,18 +129,10 @@ export function FiltersControl({
   const count = types.length + rinkTypes.length + amenities.length;
   const active = count > 0;
 
-  const toggleType = (type: ProgramType) => {
-    onTypesChange(
-      types.includes(type) ? types.filter((t) => t !== type) : [...types, type]
-    );
-  };
-
-  const toggleRinkType = (rinkType: RinkEnvironment) => {
-    onRinkTypesChange(
-      rinkTypes.includes(rinkType)
-        ? rinkTypes.filter((r) => r !== rinkType)
-        : [...rinkTypes, rinkType]
-    );
+  const clearAll = () => {
+    onTypesChange([]);
+    onRinkTypesChange([]);
+    onAmenitiesChange([]);
   };
 
   const toggleAmenity = (amenity: string) => {
@@ -178,60 +143,106 @@ export function FiltersControl({
     );
   };
 
-  const clearAll = () => {
-    onTypesChange([]);
-    onRinkTypesChange([]);
-    onAmenitiesChange([]);
-  };
-
   const body = (
-    <div className="flex min-h-0 flex-1 flex-col gap-4 overflow-y-auto p-4 pt-2">
-      <Section title={t("filters.sortBy")}>
-        <ToggleRow
-          checked={sortBy === "time"}
-          label={t("filters.sortSoonest")}
-          onClick={() => onSortChange("time")}
-        />
-        <ToggleRow
-          checked={sortBy === "distance"}
-          label={t("filters.sortNearest")}
-          disabled={!hasLocation}
-          onClick={() => onSortChange("distance")}
-        />
-      </Section>
+    <div className="flex min-h-0 flex-1 flex-col gap-5 overflow-y-auto p-4 pt-2">
+      <FilterSection title={t("filters.sortBy")}>
+        <ToggleGroup
+          aria-label={t("filters.sortBy")}
+          spacing={0}
+          value={[sortBy]}
+          onValueChange={(value) =>
+            onSortChange(value[0] === "distance" ? "distance" : "time")
+          }
+          className="w-full"
+        >
+          <ToggleGroupItem value="time" variant="outline" className="flex-1">
+            {t("filters.sortSoonest")}
+          </ToggleGroupItem>
+          <ToggleGroupItem
+            value="distance"
+            variant="outline"
+            className="flex-1"
+            disabled={!hasLocation}
+          >
+            {t("filters.sortNearest")}
+          </ToggleGroupItem>
+        </ToggleGroup>
+      </FilterSection>
 
-      <Section title={t("filters.programType")} count={types.length}>
-        {PROGRAM_TYPES.map((type) => (
-          <ToggleRow
-            key={type}
-            checked={types.includes(type)}
-            label={t(PROGRAM_TYPE_KEYS[type])}
-            onClick={() => toggleType(type)}
-          />
-        ))}
-      </Section>
+      <FilterSection
+        title={t("filters.rinkType")}
+        defaultOpen={rinkTypes.length > 0}
+      >
+        <ToggleGroup
+          multiple
+          aria-label={t("filters.rinkType")}
+          value={rinkTypes}
+          onValueChange={(value) =>
+            onRinkTypesChange(value as RinkEnvironment[])
+          }
+          className="flex w-full flex-wrap"
+        >
+          {RINK_TYPES.map((rinkType) => (
+            <ToggleGroupItem
+              key={rinkType}
+              value={rinkType}
+              variant="outline"
+              className={CHIP_CLASS}
+            >
+              <IconCheck className={CHIP_CHECK_CLASS} />
+              {t(RINK_TYPE_KEYS[rinkType])}
+            </ToggleGroupItem>
+          ))}
+        </ToggleGroup>
+      </FilterSection>
 
-      <Section title={t("filters.rinkType")} count={rinkTypes.length}>
-        {RINK_TYPES.map((rinkType) => (
-          <ToggleRow
-            key={rinkType}
-            checked={rinkTypes.includes(rinkType)}
-            label={t(RINK_TYPE_KEYS[rinkType])}
-            onClick={() => toggleRinkType(rinkType)}
-          />
-        ))}
-      </Section>
+      <FilterSection title={t("filters.programType")}>
+        <ToggleGroup
+          multiple
+          aria-label={t("filters.programType")}
+          value={types}
+          onValueChange={(value) => onTypesChange(value as ProgramType[])}
+          className="flex w-full flex-wrap"
+        >
+          {PROGRAM_TYPES.map((type) => (
+            <ToggleGroupItem
+              key={type}
+              value={type}
+              variant="outline"
+              className={CHIP_CLASS}
+            >
+              <IconCheck className={CHIP_CHECK_CLASS} />
+              {t(PROGRAM_TYPE_KEYS[type])}
+            </ToggleGroupItem>
+          ))}
+        </ToggleGroup>
+      </FilterSection>
 
-      <Section title={t("filters.amenities")} count={amenities.length}>
-        {AMENITIES.map((amenity) => (
-          <ToggleRow
-            key={amenity}
-            checked={amenities.includes(amenity)}
-            label={t(`amenities.${amenity}`)}
-            onClick={() => toggleAmenity(amenity)}
-          />
-        ))}
-      </Section>
+      <FilterSection
+        title={t("filters.amenities")}
+        defaultOpen={amenities.length > 0}
+      >
+        <div className="flex flex-col gap-0.5">
+          {AMENITIES.map((amenity) => {
+            const checked = amenities.includes(amenity);
+            return (
+              <Toggle
+                key={amenity}
+                pressed={checked}
+                onPressedChange={() => toggleAmenity(amenity)}
+                className="-mx-2 w-[calc(100%+1rem)] justify-start px-2 font-normal"
+              >
+                <span className="flex-1 text-left">
+                  {t(`amenities.${amenity}`)}
+                </span>
+                {checked ? (
+                  <IconCheck className="size-4 text-blue-500" />
+                ) : null}
+              </Toggle>
+            );
+          })}
+        </div>
+      </FilterSection>
     </div>
   );
 
@@ -314,7 +325,7 @@ export function FiltersControl({
         <DrawerContent
           className="lg:hidden [--drawer-height:80vh]"
           header={
-            <div className="px-6 pb-2 pt-1">
+            <div className="px-4 pb-2 pt-1">
               <DrawerTitle className="text-base">
                 {t("filters.title")}
               </DrawerTitle>
