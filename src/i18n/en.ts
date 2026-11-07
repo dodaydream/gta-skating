@@ -91,6 +91,8 @@ const en = {
     emptyProgramsAll: "This venue has no upcoming programs scheduled.",
     emptyProgramsFiltered: "No upcoming programs match your current filters.",
     showAllPrograms: "Show all programs",
+    filteredAlertDescription:
+      "Only programs matching your selected filters are shown.",
     rinks: "Rinks",
     reportRink: "Report an issue",
     amenities: "Amenities",

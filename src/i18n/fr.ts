@@ -94,6 +94,8 @@ const fr: Messages = {
     emptyProgramsAll: "Cet aréna n’a aucun programme à venir.",
     emptyProgramsFiltered: "Aucun programme à venir ne correspond à vos filtres actuels.",
     showAllPrograms: "Afficher tous les programmes",
+    filteredAlertDescription:
+      "Seuls les programmes correspondant aux filtres sélectionnés sont affichés.",
     rinks: "Patinoires",
     reportRink: "Signaler un problème",
     amenities: "Commodités",

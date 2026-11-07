@@ -1,7 +1,6 @@
 "use client";
 
 import { Fragment, useCallback, useEffect, useRef, useState, useSyncExternalStore } from "react";
-import { createPortal } from "react-dom";
 import { useTranslation } from "react-i18next";
 import type { InfoItem, Rink, Venue } from "@/types/venue";
 import type { Program, ProgramType } from "@/types/schedule";
@@ -24,6 +23,10 @@ import {
   DrawerDescription,
   DrawerTitle,
 } from "@/components/ui/drawer";
+import {
+  Alert,
+  AlertDescription,
+} from "@/components/ui/alert";
 import {
   distanceKm,
   formatEventDate,
@@ -48,6 +51,7 @@ import { normalizeLocale } from "@/i18n/config";
 import {
   IconAlertCircle,
   IconCheck,
+  IconInfoCircle,
   IconShare2,
   IconSnowflake,
   IconStar,
@@ -77,14 +81,6 @@ function useGeoSchemeSupported() {
   return useSyncExternalStore(
     () => () => {},
     () => GEO_SCHEME_SUPPORTED.test(navigator.userAgent),
-    () => false
-  );
-}
-
-function useIsClient() {
-  return useSyncExternalStore(
-    () => () => {},
-    () => true,
     () => false
   );
 }
@@ -356,6 +352,25 @@ function FavouriteButton({
   );
 }
 
+function FilteredProgramsAlert({ onShowAll }: { onShowAll: () => void }) {
+  const { t } = useTranslation();
+  return (
+    <Alert variant="info">
+      <IconInfoCircle />
+      <AlertDescription>
+        {t("venue.filteredAlertDescription")}{" "}
+        <button
+          type="button"
+          onClick={onShowAll}
+          className="font-medium underline underline-offset-3 hover:text-blue-950 dark:hover:text-blue-50"
+        >
+          {t("venue.showAllPrograms")}
+        </button>
+      </AlertDescription>
+    </Alert>
+  );
+}
+
 export function VenueDetailModal({
   slug,
   onClose,
@@ -381,12 +396,9 @@ export function VenueDetailModal({
   const [reportsSlug, setReportsSlug] = useState(slug);
   const [, setNowTick] = useState(0);
   const [filterActive, setFilterActive] = useState(true);
-  const [scheduleVisible, setScheduleVisible] = useState(false);
   const bodyRef = useRef<HTMLDivElement>(null);
-  const scheduleRef = useRef<HTMLDivElement>(null);
   const openedRef = useRef(false);
   const isDesktop = useIsDesktop();
-  const isClient = useIsClient();
 
   if (reportsSlug !== slug) {
     setReportsSlug(slug);
@@ -447,18 +459,6 @@ export function VenueDetailModal({
     const id = setInterval(() => setNowTick((t) => t + 1), 60_000);
     return () => clearInterval(id);
   }, []);
-
-  useEffect(() => {
-    const root = bodyRef.current;
-    const target = scheduleRef.current;
-    if (!root || !target) return;
-    const observer = new IntersectionObserver(
-      ([entry]) => setScheduleVisible(entry.isIntersecting),
-      { root }
-    );
-    observer.observe(target);
-    return () => observer.disconnect();
-  }, [venue]);
 
   if (error) {
     return (
@@ -539,14 +539,11 @@ export function VenueDetailModal({
         )
       : null;
 
-  const showFloating = hasFilterCriteria && filterActive && scheduleVisible && isClient;
-
   return (
     <Panel
       isDesktop={isDesktop}
       onClose={onClose}
       bodyRef={bodyRef}
-      disablePointerDismissal={showFloating}
       header={
         <header className="flex items-start justify-between gap-3 px-5 py-4">
           <div>
@@ -593,23 +590,7 @@ export function VenueDetailModal({
             </div>
           ) : null}
 
-          {showFloating
-            ? createPortal(
-                <div className="pointer-events-none fixed left-1/2 bottom-[calc(var(--safe-bottom,0px)+1rem)] z-[1400] -translate-x-1/2">
-                  <Button
-                    variant="secondary"
-                    size="lg"
-                    className="pointer-events-auto h-10 rounded-full px-5 text-sm shadow-lg"
-                    onClick={() => setFilterActive(false)}
-                  >
-                    {t("venue.showAllPrograms")}
-                  </Button>
-                </div>,
-                document.body
-              )
-            : null}
-
-          <div ref={scheduleRef} className="flex flex-col">
+          <div className="flex flex-col">
             <div className="sticky top-0 z-30 flex h-12 items-center justify-between gap-3 bg-popover px-5">
               <h3 className="text-sm font-semibold text-black dark:text-zinc-50">
                 {t("venue.schedule")}
@@ -626,6 +607,11 @@ export function VenueDetailModal({
             </div>
 
             <div className="flex flex-col gap-3 px-5 md:gap-5">
+              {hasFilterCriteria && filterActive ? (
+                <div className="pt-3">
+                  <FilteredProgramsAlert onShowAll={() => setFilterActive(false)} />
+                </div>
+              ) : null}
               {view === "day" ? (
                 <div className="pt-3">
                   <ListView
