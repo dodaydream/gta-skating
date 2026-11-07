@@ -1,0 +1,38 @@
+{
+  "name": "McCormick Arena",
+  "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=3490",
+  "timezone": "America/Toronto",
+  "address": "179 Brock Ave, Toronto, ON",
+  "coordinates": {
+    "lat": 43.647219,
+    "lon": -79.434101
+  },
+  "rinks": [
+    {
+      "name": "Ice Rink",
+      "type": "North American / NHL"
+    }
+  ],
+  "amenities": [
+    "dressing_rooms",
+    "lockers"
+  ],
+  "info": [
+    {
+      "key": "operator",
+      "value": "City of Toronto"
+    },
+    {
+      "key": "phone",
+      "value": "416-392-0647"
+    },
+    {
+      "key": "website",
+      "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=3490"
+    }
+  ],
+  "schedule": {
+    "updatedAt": "2026-11-07T16:20:03.462Z",
+    "programs": []
+  }
+}

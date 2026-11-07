@@ -1,0 +1,1661 @@
+{
+  "name": "McCowan District Park",
+  "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=1500",
+  "timezone": "America/Toronto",
+  "address": "150 Mccowan Rd, Toronto, ON",
+  "coordinates": {
+    "lat": 43.733195,
+    "lon": -79.236554
+  },
+  "rinks": [
+    {
+      "name": "Outdoor Rink",
+      "type": "Outdoor (non-standard)"
+    }
+  ],
+  "info": [
+    {
+      "key": "operator",
+      "value": "City of Toronto"
+    },
+    {
+      "key": "website",
+      "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=1500"
+    }
+  ],
+  "schedule": {
+    "updatedAt": "2026-11-07T16:20:03.462Z",
+    "programs": [
+      {
+        "id": "3849301a-2c6a-4061-a489-fe1bc4632c87",
+        "refId": "177353|2026-11-28|10:00",
+        "start": "2026-11-28T10:00",
+        "end": "2026-11-28T22:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "ac4d94e4-f2e6-465e-b610-6321f2ad27de",
+        "refId": "177338|2026-11-28|11:00",
+        "start": "2026-11-28T11:00",
+        "end": "2026-11-28T12:00",
+        "name": "Shinny: Early Years with Caregiver",
+        "type": "Pickup Hockey",
+        "notes": "0 - 5 years",
+        "ticket": 0
+      },
+      {
+        "id": "7faa100c-7690-4b57-a978-b483a2a5085d",
+        "refId": "177337|2026-11-28|12:00",
+        "start": "2026-11-28T12:00",
+        "end": "2026-11-28T13:00",
+        "name": "Shinny: Child with Caregiver",
+        "type": "Pickup Hockey",
+        "notes": "6 - 12 years",
+        "ticket": 0
+      },
+      {
+        "id": "ea255602-f0b2-4d75-bce8-8dc495993e1c",
+        "refId": "177332|2026-11-28|13:00",
+        "start": "2026-11-28T13:00",
+        "end": "2026-11-28T15:00",
+        "name": "Shinny: Child",
+        "type": "Pickup Hockey",
+        "notes": "6 - 12 years",
+        "ticket": 0
+      },
+      {
+        "id": "4900f13d-988f-4fc5-af6b-674efc824b14",
+        "refId": "177334|2026-11-28|15:00",
+        "start": "2026-11-28T15:00",
+        "end": "2026-11-28T18:00",
+        "name": "Shinny",
+        "type": "Pickup Hockey",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "57042ea1-6c15-40a8-8108-597c34ab0252",
+        "refId": "177336|2026-11-28|18:00",
+        "start": "2026-11-28T18:00",
+        "end": "2026-11-28T20:00",
+        "name": "Shinny: Youth",
+        "type": "Pickup Hockey",
+        "notes": "13 - 18 years",
+        "ticket": 0
+      },
+      {
+        "id": "e481eeb6-fbe1-4fcb-b7bd-e80e58d9cb6a",
+        "refId": "177353|2026-11-29|10:00",
+        "start": "2026-11-29T10:00",
+        "end": "2026-11-29T22:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "f50eac94-c0a5-4039-977c-8e9cd7b2c670",
+        "refId": "177338|2026-11-29|12:00",
+        "start": "2026-11-29T12:00",
+        "end": "2026-11-29T13:00",
+        "name": "Shinny: Early Years with Caregiver",
+        "type": "Pickup Hockey",
+        "notes": "0 - 5 years",
+        "ticket": 0
+      },
+      {
+        "id": "ec0011a3-ea40-4917-ac08-7fd8a29f01b9",
+        "refId": "177337|2026-11-29|13:00",
+        "start": "2026-11-29T13:00",
+        "end": "2026-11-29T14:00",
+        "name": "Shinny: Child with Caregiver",
+        "type": "Pickup Hockey",
+        "notes": "6 - 12 years",
+        "ticket": 0
+      },
+      {
+        "id": "893ee81d-cfde-4c54-96a4-9c35cb712933",
+        "refId": "177332|2026-11-29|14:00",
+        "start": "2026-11-29T14:00",
+        "end": "2026-11-29T16:00",
+        "name": "Shinny: Child",
+        "type": "Pickup Hockey",
+        "notes": "6 - 12 years",
+        "ticket": 0
+      },
+      {
+        "id": "49e03c69-79eb-4bd8-b90f-e4c6e3a24722",
+        "refId": "177334|2026-11-29|16:00",
+        "start": "2026-11-29T16:00",
+        "end": "2026-11-29T18:00",
+        "name": "Shinny",
+        "type": "Pickup Hockey",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "1f5bed83-45ff-4945-8e78-6f04d3e2e8c3",
+        "refId": "177336|2026-11-29|18:00",
+        "start": "2026-11-29T18:00",
+        "end": "2026-11-29T20:00",
+        "name": "Shinny: Youth",
+        "type": "Pickup Hockey",
+        "notes": "13 - 18 years",
+        "ticket": 0
+      },
+      {
+        "id": "139886da-ba7d-4ebf-951a-98f9c9b9fa78",
+        "refId": "177341|2026-11-29|20:00",
+        "start": "2026-11-29T20:00",
+        "end": "2026-11-29T22:00",
+        "name": "Shinny: Adult",
+        "type": "Pickup Hockey",
+        "notes": "19 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "2fc91391-1aa6-46af-84bd-a6ec224d5468",
+        "refId": "177328|2026-11-30|10:00",
+        "start": "2026-11-30T10:00",
+        "end": "2026-11-30T16:00",
+        "name": "Shinny (Unsupervised)",
+        "type": "Pickup Hockey",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "2536a1f4-fc64-4af5-85ec-804737c3831a",
+        "refId": "177356|2026-11-30|10:00",
+        "start": "2026-11-30T10:00",
+        "end": "2026-11-30T16:00",
+        "name": "Leisure Skate (Unsupervised)",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "0f63cc6c-a901-48f5-ac7a-db2bcda6b341",
+        "refId": "177332|2026-11-30|16:00",
+        "start": "2026-11-30T16:00",
+        "end": "2026-11-30T17:30",
+        "name": "Shinny: Child",
+        "type": "Pickup Hockey",
+        "notes": "6 - 12 years",
+        "ticket": 0
+      },
+      {
+        "id": "f1d44249-1e08-4080-845d-05e915d45cb9",
+        "refId": "177353|2026-11-30|16:00",
+        "start": "2026-11-30T16:00",
+        "end": "2026-11-30T21:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "8f986025-44dc-4e70-93a8-056ce1691c26",
+        "refId": "177334|2026-11-30|17:30",
+        "start": "2026-11-30T17:30",
+        "end": "2026-11-30T18:30",
+        "name": "Shinny",
+        "type": "Pickup Hockey",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "baf19798-af92-463c-9407-a4caac21b3ac",
+        "refId": "177336|2026-11-30|18:30",
+        "start": "2026-11-30T18:30",
+        "end": "2026-11-30T20:00",
+        "name": "Shinny: Youth",
+        "type": "Pickup Hockey",
+        "notes": "13 - 18 years",
+        "ticket": 0
+      },
+      {
+        "id": "01f0dd01-1663-4195-abf6-621ac96c4bc9",
+        "refId": "177341|2026-11-30|20:00",
+        "start": "2026-11-30T20:00",
+        "end": "2026-11-30T21:00",
+        "name": "Shinny: Adult",
+        "type": "Pickup Hockey",
+        "notes": "19 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "89edc95e-965c-4d8d-b75c-f361853066db",
+        "refId": "177342|2026-11-30|21:00",
+        "start": "2026-11-30T21:00",
+        "end": "2026-11-30T22:00",
+        "name": "Shinny: Adult (Unsupervised)",
+        "type": "Pickup Hockey",
+        "notes": "19 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "b0010551-047e-46a2-b719-21cc6b69ebd9",
+        "refId": "177356|2026-11-30|21:00",
+        "start": "2026-11-30T21:00",
+        "end": "2026-11-30T22:00",
+        "name": "Leisure Skate (Unsupervised)",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "27d8c2cf-9679-4488-8afb-76047165d8f7",
+        "refId": "177328|2026-12-01|10:00",
+        "start": "2026-12-01T10:00",
+        "end": "2026-12-01T16:00",
+        "name": "Shinny (Unsupervised)",
+        "type": "Pickup Hockey",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "20191931-b985-4f13-a274-0a24538551cd",
+        "refId": "177356|2026-12-01|10:00",
+        "start": "2026-12-01T10:00",
+        "end": "2026-12-01T16:00",
+        "name": "Leisure Skate (Unsupervised)",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "37eeb858-49b2-4d36-83c6-3e9439926f3f",
+        "refId": "177332|2026-12-01|16:00",
+        "start": "2026-12-01T16:00",
+        "end": "2026-12-01T17:30",
+        "name": "Shinny: Child",
+        "type": "Pickup Hockey",
+        "notes": "6 - 12 years",
+        "ticket": 0
+      },
+      {
+        "id": "efc55cb3-ba60-4ace-bc0d-2a025a1e7386",
+        "refId": "177353|2026-12-01|16:00",
+        "start": "2026-12-01T16:00",
+        "end": "2026-12-01T21:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "34de5b4d-e9ff-4260-9813-d6538d9789f6",
+        "refId": "177334|2026-12-01|17:30",
+        "start": "2026-12-01T17:30",
+        "end": "2026-12-01T18:30",
+        "name": "Shinny",
+        "type": "Pickup Hockey",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "973a1658-33a2-4368-8e78-1050ffee8d88",
+        "refId": "177336|2026-12-01|18:30",
+        "start": "2026-12-01T18:30",
+        "end": "2026-12-01T20:00",
+        "name": "Shinny: Youth",
+        "type": "Pickup Hockey",
+        "notes": "13 - 18 years",
+        "ticket": 0
+      },
+      {
+        "id": "f3c79f95-b286-4d5d-8d4b-77360a8f9a24",
+        "refId": "177341|2026-12-01|20:00",
+        "start": "2026-12-01T20:00",
+        "end": "2026-12-01T21:00",
+        "name": "Shinny: Adult",
+        "type": "Pickup Hockey",
+        "notes": "19 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "6fa891c5-1481-44d7-aeeb-2a96470ccde1",
+        "refId": "177342|2026-12-01|21:00",
+        "start": "2026-12-01T21:00",
+        "end": "2026-12-01T22:00",
+        "name": "Shinny: Adult (Unsupervised)",
+        "type": "Pickup Hockey",
+        "notes": "19 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "775a4b69-cd8a-4761-9281-785287d16c04",
+        "refId": "177356|2026-12-01|21:00",
+        "start": "2026-12-01T21:00",
+        "end": "2026-12-01T22:00",
+        "name": "Leisure Skate (Unsupervised)",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "95670af7-c87d-45ff-a16a-479d65126c6c",
+        "refId": "177328|2026-12-02|10:00",
+        "start": "2026-12-02T10:00",
+        "end": "2026-12-02T16:00",
+        "name": "Shinny (Unsupervised)",
+        "type": "Pickup Hockey",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "ecaf5633-3e69-4862-8e63-30f1b158d48a",
+        "refId": "177356|2026-12-02|10:00",
+        "start": "2026-12-02T10:00",
+        "end": "2026-12-02T16:00",
+        "name": "Leisure Skate (Unsupervised)",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "33c4b039-6c46-4899-92b6-24f4e34b73a2",
+        "refId": "177332|2026-12-02|16:00",
+        "start": "2026-12-02T16:00",
+        "end": "2026-12-02T17:30",
+        "name": "Shinny: Child",
+        "type": "Pickup Hockey",
+        "notes": "6 - 12 years",
+        "ticket": 0
+      },
+      {
+        "id": "6412cd5e-a5d7-4fef-9c51-120c5f9a9bb4",
+        "refId": "177353|2026-12-02|16:00",
+        "start": "2026-12-02T16:00",
+        "end": "2026-12-02T21:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "cbcc866f-f1de-4c94-aef0-5bdcfc5fd7f0",
+        "refId": "177334|2026-12-02|17:30",
+        "start": "2026-12-02T17:30",
+        "end": "2026-12-02T18:30",
+        "name": "Shinny",
+        "type": "Pickup Hockey",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "004e5350-0ebc-4321-8619-3c6cd2a044c6",
+        "refId": "177336|2026-12-02|18:30",
+        "start": "2026-12-02T18:30",
+        "end": "2026-12-02T20:00",
+        "name": "Shinny: Youth",
+        "type": "Pickup Hockey",
+        "notes": "13 - 18 years",
+        "ticket": 0
+      },
+      {
+        "id": "8a2c6466-866f-4b89-a29c-a6809318943c",
+        "refId": "177341|2026-12-02|20:00",
+        "start": "2026-12-02T20:00",
+        "end": "2026-12-02T21:00",
+        "name": "Shinny: Adult",
+        "type": "Pickup Hockey",
+        "notes": "19 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "ad3a4912-a184-418e-86d1-eb10faa4ee15",
+        "refId": "177342|2026-12-02|21:00",
+        "start": "2026-12-02T21:00",
+        "end": "2026-12-02T22:00",
+        "name": "Shinny: Adult (Unsupervised)",
+        "type": "Pickup Hockey",
+        "notes": "19 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "a755bb28-f2cb-48f5-964e-eef355040231",
+        "refId": "177356|2026-12-02|21:00",
+        "start": "2026-12-02T21:00",
+        "end": "2026-12-02T22:00",
+        "name": "Leisure Skate (Unsupervised)",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "8380a735-27d3-4c03-b8f4-11133f7a022f",
+        "refId": "177328|2026-12-03|10:00",
+        "start": "2026-12-03T10:00",
+        "end": "2026-12-03T16:00",
+        "name": "Shinny (Unsupervised)",
+        "type": "Pickup Hockey",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "2db3c01a-1bcf-4f71-9949-c2a1524f5417",
+        "refId": "177356|2026-12-03|10:00",
+        "start": "2026-12-03T10:00",
+        "end": "2026-12-03T16:00",
+        "name": "Leisure Skate (Unsupervised)",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "04c66c25-b8d5-4f6a-b6de-eaef634d9f34",
+        "refId": "177332|2026-12-03|16:00",
+        "start": "2026-12-03T16:00",
+        "end": "2026-12-03T17:30",
+        "name": "Shinny: Child",
+        "type": "Pickup Hockey",
+        "notes": "6 - 12 years",
+        "ticket": 0
+      },
+      {
+        "id": "a0053e55-c1c6-4f8f-b11e-f310c2087ae8",
+        "refId": "177353|2026-12-03|16:00",
+        "start": "2026-12-03T16:00",
+        "end": "2026-12-03T21:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "838a3ec3-d0b5-4efe-91d1-1b9b391f2b66",
+        "refId": "177334|2026-12-03|17:30",
+        "start": "2026-12-03T17:30",
+        "end": "2026-12-03T18:30",
+        "name": "Shinny",
+        "type": "Pickup Hockey",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "8dc29313-5c3b-42c8-bdb0-b189e2483cb5",
+        "refId": "177336|2026-12-03|18:30",
+        "start": "2026-12-03T18:30",
+        "end": "2026-12-03T20:00",
+        "name": "Shinny: Youth",
+        "type": "Pickup Hockey",
+        "notes": "13 - 18 years",
+        "ticket": 0
+      },
+      {
+        "id": "a548340e-cb17-4699-882d-754a47720bc4",
+        "refId": "177341|2026-12-03|20:00",
+        "start": "2026-12-03T20:00",
+        "end": "2026-12-03T21:00",
+        "name": "Shinny: Adult",
+        "type": "Pickup Hockey",
+        "notes": "19 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "9da517ff-d60a-4d3c-a609-ff47e3215529",
+        "refId": "177342|2026-12-03|21:00",
+        "start": "2026-12-03T21:00",
+        "end": "2026-12-03T22:00",
+        "name": "Shinny: Adult (Unsupervised)",
+        "type": "Pickup Hockey",
+        "notes": "19 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "dd3ae295-2936-4515-84f0-d0f1eea779b0",
+        "refId": "177356|2026-12-03|21:00",
+        "start": "2026-12-03T21:00",
+        "end": "2026-12-03T22:00",
+        "name": "Leisure Skate (Unsupervised)",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "d611958d-a618-48b7-9653-4634cf864b7a",
+        "refId": "177328|2026-12-04|10:00",
+        "start": "2026-12-04T10:00",
+        "end": "2026-12-04T16:00",
+        "name": "Shinny (Unsupervised)",
+        "type": "Pickup Hockey",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "ecb0081f-aea9-429d-917e-e7c3d1ab75df",
+        "refId": "177356|2026-12-04|10:00",
+        "start": "2026-12-04T10:00",
+        "end": "2026-12-04T16:00",
+        "name": "Leisure Skate (Unsupervised)",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "357d51e5-d212-4227-ac45-fac623960f00",
+        "refId": "177332|2026-12-04|16:00",
+        "start": "2026-12-04T16:00",
+        "end": "2026-12-04T17:30",
+        "name": "Shinny: Child",
+        "type": "Pickup Hockey",
+        "notes": "6 - 12 years",
+        "ticket": 0
+      },
+      {
+        "id": "2486bc7a-f275-4e2e-8074-4c9faad6abc2",
+        "refId": "177353|2026-12-04|16:00",
+        "start": "2026-12-04T16:00",
+        "end": "2026-12-04T22:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "ea77c89d-6ce4-47e3-bef8-0498a15ca8bf",
+        "refId": "177334|2026-12-04|17:30",
+        "start": "2026-12-04T17:30",
+        "end": "2026-12-04T18:30",
+        "name": "Shinny",
+        "type": "Pickup Hockey",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "ac989ee4-041e-4ea8-8c36-81bc8c203ef1",
+        "refId": "177336|2026-12-04|18:30",
+        "start": "2026-12-04T18:30",
+        "end": "2026-12-04T20:00",
+        "name": "Shinny: Youth",
+        "type": "Pickup Hockey",
+        "notes": "13 - 18 years",
+        "ticket": 0
+      },
+      {
+        "id": "ec194f61-21c2-4071-843a-b4348764388c",
+        "refId": "177348|2026-12-04|20:00",
+        "start": "2026-12-04T20:00",
+        "end": "2026-12-04T22:00",
+        "name": "Pick Up Hockey: Adults",
+        "type": "Pickup Hockey",
+        "notes": "19 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "a5f8dbd4-03db-471d-b83f-ab9aae579e53",
+        "refId": "177353|2026-12-05|10:00",
+        "start": "2026-12-05T10:00",
+        "end": "2026-12-05T22:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "6f8cafbd-df2b-4255-a073-3f5724f94232",
+        "refId": "177338|2026-12-05|11:00",
+        "start": "2026-12-05T11:00",
+        "end": "2026-12-05T12:00",
+        "name": "Shinny: Early Years with Caregiver",
+        "type": "Pickup Hockey",
+        "notes": "0 - 5 years",
+        "ticket": 0
+      },
+      {
+        "id": "fb3a2afc-16e2-4c43-be0c-252c2a167ef8",
+        "refId": "177337|2026-12-05|12:00",
+        "start": "2026-12-05T12:00",
+        "end": "2026-12-05T13:00",
+        "name": "Shinny: Child with Caregiver",
+        "type": "Pickup Hockey",
+        "notes": "6 - 12 years",
+        "ticket": 0
+      },
+      {
+        "id": "c20b6ad8-1729-403e-b0e4-7742bce02444",
+        "refId": "177332|2026-12-05|13:00",
+        "start": "2026-12-05T13:00",
+        "end": "2026-12-05T15:00",
+        "name": "Shinny: Child",
+        "type": "Pickup Hockey",
+        "notes": "6 - 12 years",
+        "ticket": 0
+      },
+      {
+        "id": "1397e196-b08b-4e4d-8a9c-79e2a6e280d4",
+        "refId": "177334|2026-12-05|15:00",
+        "start": "2026-12-05T15:00",
+        "end": "2026-12-05T18:00",
+        "name": "Shinny",
+        "type": "Pickup Hockey",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "0a91fe12-03a1-4e3d-aa6e-7ab5106e6b37",
+        "refId": "177336|2026-12-05|18:00",
+        "start": "2026-12-05T18:00",
+        "end": "2026-12-05T20:00",
+        "name": "Shinny: Youth",
+        "type": "Pickup Hockey",
+        "notes": "13 - 18 years",
+        "ticket": 0
+      },
+      {
+        "id": "050caeec-c7a4-409c-922d-bf2325290c00",
+        "refId": "177348|2026-12-05|20:00",
+        "start": "2026-12-05T20:00",
+        "end": "2026-12-05T22:00",
+        "name": "Pick Up Hockey: Adults",
+        "type": "Pickup Hockey",
+        "notes": "19 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "e2965043-6fe6-4f53-ae6f-446b16d275ee",
+        "refId": "177353|2026-12-06|10:00",
+        "start": "2026-12-06T10:00",
+        "end": "2026-12-06T22:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "a3cc7c40-0ea9-4021-a610-ba715a6427a7",
+        "refId": "177338|2026-12-06|12:00",
+        "start": "2026-12-06T12:00",
+        "end": "2026-12-06T13:00",
+        "name": "Shinny: Early Years with Caregiver",
+        "type": "Pickup Hockey",
+        "notes": "0 - 5 years",
+        "ticket": 0
+      },
+      {
+        "id": "573a9bbc-7bcb-48e7-9c01-f9c01d8878ae",
+        "refId": "177337|2026-12-06|13:00",
+        "start": "2026-12-06T13:00",
+        "end": "2026-12-06T14:00",
+        "name": "Shinny: Child with Caregiver",
+        "type": "Pickup Hockey",
+        "notes": "6 - 12 years",
+        "ticket": 0
+      },
+      {
+        "id": "059a1def-8a08-4f5c-8c75-95890d562132",
+        "refId": "177332|2026-12-06|14:00",
+        "start": "2026-12-06T14:00",
+        "end": "2026-12-06T16:00",
+        "name": "Shinny: Child",
+        "type": "Pickup Hockey",
+        "notes": "6 - 12 years",
+        "ticket": 0
+      },
+      {
+        "id": "34d35a5f-eb0d-44a1-9e39-3d05aeca4375",
+        "refId": "177334|2026-12-06|16:00",
+        "start": "2026-12-06T16:00",
+        "end": "2026-12-06T18:00",
+        "name": "Shinny",
+        "type": "Pickup Hockey",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "ea4d8efe-ddfa-4618-9091-ee9c1cdc67b8",
+        "refId": "177336|2026-12-06|18:00",
+        "start": "2026-12-06T18:00",
+        "end": "2026-12-06T20:00",
+        "name": "Shinny: Youth",
+        "type": "Pickup Hockey",
+        "notes": "13 - 18 years",
+        "ticket": 0
+      },
+      {
+        "id": "9dd13d79-2d82-4a32-8982-89f582428e3b",
+        "refId": "177341|2026-12-06|20:00",
+        "start": "2026-12-06T20:00",
+        "end": "2026-12-06T22:00",
+        "name": "Shinny: Adult",
+        "type": "Pickup Hockey",
+        "notes": "19 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "11867c80-9324-481f-b1b9-375da3cc47ed",
+        "refId": "177328|2026-12-07|10:00",
+        "start": "2026-12-07T10:00",
+        "end": "2026-12-07T16:00",
+        "name": "Shinny (Unsupervised)",
+        "type": "Pickup Hockey",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "7c18f941-29aa-471a-bed5-9d9ec987c0c4",
+        "refId": "177356|2026-12-07|10:00",
+        "start": "2026-12-07T10:00",
+        "end": "2026-12-07T16:00",
+        "name": "Leisure Skate (Unsupervised)",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "023ee41a-b938-4749-95bd-8970d10ec0e8",
+        "refId": "177332|2026-12-07|16:00",
+        "start": "2026-12-07T16:00",
+        "end": "2026-12-07T17:30",
+        "name": "Shinny: Child",
+        "type": "Pickup Hockey",
+        "notes": "6 - 12 years",
+        "ticket": 0
+      },
+      {
+        "id": "41aa119b-2cd7-4881-bcda-8a071b000010",
+        "refId": "177353|2026-12-07|16:00",
+        "start": "2026-12-07T16:00",
+        "end": "2026-12-07T21:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "4e200cba-0eaa-4991-8865-9ebcfa59e556",
+        "refId": "177334|2026-12-07|17:30",
+        "start": "2026-12-07T17:30",
+        "end": "2026-12-07T18:30",
+        "name": "Shinny",
+        "type": "Pickup Hockey",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "90d65b2f-52ad-4735-a28f-8a82a6cd1daf",
+        "refId": "177336|2026-12-07|18:30",
+        "start": "2026-12-07T18:30",
+        "end": "2026-12-07T20:00",
+        "name": "Shinny: Youth",
+        "type": "Pickup Hockey",
+        "notes": "13 - 18 years",
+        "ticket": 0
+      },
+      {
+        "id": "e42946de-058c-4962-ba05-0fa1be233ed1",
+        "refId": "177341|2026-12-07|20:00",
+        "start": "2026-12-07T20:00",
+        "end": "2026-12-07T21:00",
+        "name": "Shinny: Adult",
+        "type": "Pickup Hockey",
+        "notes": "19 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "229e65e1-7ce4-411f-afa2-6a4e3e2cc4e4",
+        "refId": "177342|2026-12-07|21:00",
+        "start": "2026-12-07T21:00",
+        "end": "2026-12-07T22:00",
+        "name": "Shinny: Adult (Unsupervised)",
+        "type": "Pickup Hockey",
+        "notes": "19 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "d2f44e8a-e1a1-475f-b00f-c772d1df21a0",
+        "refId": "177356|2026-12-07|21:00",
+        "start": "2026-12-07T21:00",
+        "end": "2026-12-07T22:00",
+        "name": "Leisure Skate (Unsupervised)",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "88ff535e-d61c-45d5-b22d-9013df73e88a",
+        "refId": "177328|2026-12-08|10:00",
+        "start": "2026-12-08T10:00",
+        "end": "2026-12-08T16:00",
+        "name": "Shinny (Unsupervised)",
+        "type": "Pickup Hockey",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "509941f7-a0d5-4bf7-a407-8aad49a874e9",
+        "refId": "177356|2026-12-08|10:00",
+        "start": "2026-12-08T10:00",
+        "end": "2026-12-08T16:00",
+        "name": "Leisure Skate (Unsupervised)",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "6e95c1cf-c5f2-4f52-bc06-906d72ecf461",
+        "refId": "177332|2026-12-08|16:00",
+        "start": "2026-12-08T16:00",
+        "end": "2026-12-08T17:30",
+        "name": "Shinny: Child",
+        "type": "Pickup Hockey",
+        "notes": "6 - 12 years",
+        "ticket": 0
+      },
+      {
+        "id": "c234e1c4-db22-4e09-81e0-d987afda3362",
+        "refId": "177353|2026-12-08|16:00",
+        "start": "2026-12-08T16:00",
+        "end": "2026-12-08T21:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "158a227c-d04c-4178-abad-387ee7a9a650",
+        "refId": "177334|2026-12-08|17:30",
+        "start": "2026-12-08T17:30",
+        "end": "2026-12-08T18:30",
+        "name": "Shinny",
+        "type": "Pickup Hockey",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "1ff6d0f8-cc2f-40ac-9192-6d756fe76c97",
+        "refId": "177336|2026-12-08|18:30",
+        "start": "2026-12-08T18:30",
+        "end": "2026-12-08T20:00",
+        "name": "Shinny: Youth",
+        "type": "Pickup Hockey",
+        "notes": "13 - 18 years",
+        "ticket": 0
+      },
+      {
+        "id": "72700499-944d-403f-8e81-26a318cd7d8b",
+        "refId": "177341|2026-12-08|20:00",
+        "start": "2026-12-08T20:00",
+        "end": "2026-12-08T21:00",
+        "name": "Shinny: Adult",
+        "type": "Pickup Hockey",
+        "notes": "19 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "1ba97e2b-0a9c-48e5-9421-b36b98bc934d",
+        "refId": "177342|2026-12-08|21:00",
+        "start": "2026-12-08T21:00",
+        "end": "2026-12-08T22:00",
+        "name": "Shinny: Adult (Unsupervised)",
+        "type": "Pickup Hockey",
+        "notes": "19 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "86310da4-1a89-4511-9938-c60629807df2",
+        "refId": "177356|2026-12-08|21:00",
+        "start": "2026-12-08T21:00",
+        "end": "2026-12-08T22:00",
+        "name": "Leisure Skate (Unsupervised)",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "e0fc7059-e4d8-411a-be9b-8f98c0230916",
+        "refId": "177328|2026-12-09|10:00",
+        "start": "2026-12-09T10:00",
+        "end": "2026-12-09T16:00",
+        "name": "Shinny (Unsupervised)",
+        "type": "Pickup Hockey",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "fa5f2fd5-4d8b-4fac-a1aa-91ca079150de",
+        "refId": "177356|2026-12-09|10:00",
+        "start": "2026-12-09T10:00",
+        "end": "2026-12-09T16:00",
+        "name": "Leisure Skate (Unsupervised)",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "c582381c-7a16-48be-bde4-27e98d3ba9cd",
+        "refId": "177332|2026-12-09|16:00",
+        "start": "2026-12-09T16:00",
+        "end": "2026-12-09T17:30",
+        "name": "Shinny: Child",
+        "type": "Pickup Hockey",
+        "notes": "6 - 12 years",
+        "ticket": 0
+      },
+      {
+        "id": "5e3fa328-3a40-4bbc-9e3e-7ca5d981b019",
+        "refId": "177353|2026-12-09|16:00",
+        "start": "2026-12-09T16:00",
+        "end": "2026-12-09T21:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "1d8c34c8-2f33-432d-9ddf-5f4f0791fe65",
+        "refId": "177334|2026-12-09|17:30",
+        "start": "2026-12-09T17:30",
+        "end": "2026-12-09T18:30",
+        "name": "Shinny",
+        "type": "Pickup Hockey",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "172577b7-0351-4323-b325-7b8971860bcb",
+        "refId": "177336|2026-12-09|18:30",
+        "start": "2026-12-09T18:30",
+        "end": "2026-12-09T20:00",
+        "name": "Shinny: Youth",
+        "type": "Pickup Hockey",
+        "notes": "13 - 18 years",
+        "ticket": 0
+      },
+      {
+        "id": "91caa091-205b-4936-b874-f34db9a0d6ff",
+        "refId": "177341|2026-12-09|20:00",
+        "start": "2026-12-09T20:00",
+        "end": "2026-12-09T21:00",
+        "name": "Shinny: Adult",
+        "type": "Pickup Hockey",
+        "notes": "19 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "c03482ac-3e08-4a7c-97ef-6329592f10c1",
+        "refId": "177342|2026-12-09|21:00",
+        "start": "2026-12-09T21:00",
+        "end": "2026-12-09T22:00",
+        "name": "Shinny: Adult (Unsupervised)",
+        "type": "Pickup Hockey",
+        "notes": "19 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "af1df986-a74c-4698-a58f-76086bc7d2b8",
+        "refId": "177356|2026-12-09|21:00",
+        "start": "2026-12-09T21:00",
+        "end": "2026-12-09T22:00",
+        "name": "Leisure Skate (Unsupervised)",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "32d63932-1ea3-4304-834a-0a6cf9118ee2",
+        "refId": "177328|2026-12-10|10:00",
+        "start": "2026-12-10T10:00",
+        "end": "2026-12-10T16:00",
+        "name": "Shinny (Unsupervised)",
+        "type": "Pickup Hockey",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "2e3acca2-6230-4542-a362-34447028bab7",
+        "refId": "177356|2026-12-10|10:00",
+        "start": "2026-12-10T10:00",
+        "end": "2026-12-10T16:00",
+        "name": "Leisure Skate (Unsupervised)",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "33cc2a57-2c17-4452-b25f-bd7fe2c2b4d3",
+        "refId": "177332|2026-12-10|16:00",
+        "start": "2026-12-10T16:00",
+        "end": "2026-12-10T17:30",
+        "name": "Shinny: Child",
+        "type": "Pickup Hockey",
+        "notes": "6 - 12 years",
+        "ticket": 0
+      },
+      {
+        "id": "4aa4f018-cf0b-4750-8f80-ccfe016f746d",
+        "refId": "177353|2026-12-10|16:00",
+        "start": "2026-12-10T16:00",
+        "end": "2026-12-10T21:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "6002247b-6222-4076-9794-7c6aef48e1f6",
+        "refId": "177334|2026-12-10|17:30",
+        "start": "2026-12-10T17:30",
+        "end": "2026-12-10T18:30",
+        "name": "Shinny",
+        "type": "Pickup Hockey",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "d47fde54-3130-4736-80c9-cda98ed47cc8",
+        "refId": "177336|2026-12-10|18:30",
+        "start": "2026-12-10T18:30",
+        "end": "2026-12-10T20:00",
+        "name": "Shinny: Youth",
+        "type": "Pickup Hockey",
+        "notes": "13 - 18 years",
+        "ticket": 0
+      },
+      {
+        "id": "361851f9-abb7-4094-8349-e4e634d641e5",
+        "refId": "177341|2026-12-10|20:00",
+        "start": "2026-12-10T20:00",
+        "end": "2026-12-10T21:00",
+        "name": "Shinny: Adult",
+        "type": "Pickup Hockey",
+        "notes": "19 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "087718b7-e4d2-4db8-8872-b83d13c76a44",
+        "refId": "177342|2026-12-10|21:00",
+        "start": "2026-12-10T21:00",
+        "end": "2026-12-10T22:00",
+        "name": "Shinny: Adult (Unsupervised)",
+        "type": "Pickup Hockey",
+        "notes": "19 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "843c8a12-98f9-42a6-914a-410520d01fae",
+        "refId": "177356|2026-12-10|21:00",
+        "start": "2026-12-10T21:00",
+        "end": "2026-12-10T22:00",
+        "name": "Leisure Skate (Unsupervised)",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "2670fe95-b647-4fc6-8b9a-ac3b6bf70d1c",
+        "refId": "177328|2026-12-11|10:00",
+        "start": "2026-12-11T10:00",
+        "end": "2026-12-11T16:00",
+        "name": "Shinny (Unsupervised)",
+        "type": "Pickup Hockey",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "e67a90f1-863c-40f4-875d-95c56521b846",
+        "refId": "177356|2026-12-11|10:00",
+        "start": "2026-12-11T10:00",
+        "end": "2026-12-11T16:00",
+        "name": "Leisure Skate (Unsupervised)",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "710beece-21f7-44f4-b8e5-c6a03bd564ce",
+        "refId": "177332|2026-12-11|16:00",
+        "start": "2026-12-11T16:00",
+        "end": "2026-12-11T17:30",
+        "name": "Shinny: Child",
+        "type": "Pickup Hockey",
+        "notes": "6 - 12 years",
+        "ticket": 0
+      },
+      {
+        "id": "25bc8d0f-7146-4031-9678-b4b1a285402e",
+        "refId": "177353|2026-12-11|16:00",
+        "start": "2026-12-11T16:00",
+        "end": "2026-12-11T22:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "dbce8b67-48fb-49bd-a28a-7476b5d3b74e",
+        "refId": "177334|2026-12-11|17:30",
+        "start": "2026-12-11T17:30",
+        "end": "2026-12-11T18:30",
+        "name": "Shinny",
+        "type": "Pickup Hockey",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "c6a00629-64f3-4336-840c-1a232b10fc02",
+        "refId": "177336|2026-12-11|18:30",
+        "start": "2026-12-11T18:30",
+        "end": "2026-12-11T20:00",
+        "name": "Shinny: Youth",
+        "type": "Pickup Hockey",
+        "notes": "13 - 18 years",
+        "ticket": 0
+      },
+      {
+        "id": "ce875e1b-5e9e-45b2-8f05-92337fe91128",
+        "refId": "177348|2026-12-11|20:00",
+        "start": "2026-12-11T20:00",
+        "end": "2026-12-11T22:00",
+        "name": "Pick Up Hockey: Adults",
+        "type": "Pickup Hockey",
+        "notes": "19 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "775674f4-eadb-4716-afdf-0116e50248ed",
+        "refId": "177353|2026-12-12|10:00",
+        "start": "2026-12-12T10:00",
+        "end": "2026-12-12T22:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "a001f29d-abee-4fc6-98a6-b17fb420747e",
+        "refId": "177338|2026-12-12|11:00",
+        "start": "2026-12-12T11:00",
+        "end": "2026-12-12T12:00",
+        "name": "Shinny: Early Years with Caregiver",
+        "type": "Pickup Hockey",
+        "notes": "0 - 5 years",
+        "ticket": 0
+      },
+      {
+        "id": "28bd9288-9543-4ebb-9cfa-ad908ac2c066",
+        "refId": "177337|2026-12-12|12:00",
+        "start": "2026-12-12T12:00",
+        "end": "2026-12-12T13:00",
+        "name": "Shinny: Child with Caregiver",
+        "type": "Pickup Hockey",
+        "notes": "6 - 12 years",
+        "ticket": 0
+      },
+      {
+        "id": "902b2b20-8f22-47d0-90f4-22baf83414f6",
+        "refId": "177332|2026-12-12|13:00",
+        "start": "2026-12-12T13:00",
+        "end": "2026-12-12T15:00",
+        "name": "Shinny: Child",
+        "type": "Pickup Hockey",
+        "notes": "6 - 12 years",
+        "ticket": 0
+      },
+      {
+        "id": "1a975515-de7d-49f0-b50f-207790e12271",
+        "refId": "177334|2026-12-12|15:00",
+        "start": "2026-12-12T15:00",
+        "end": "2026-12-12T18:00",
+        "name": "Shinny",
+        "type": "Pickup Hockey",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "741e1a84-3406-441a-af06-acdf743df926",
+        "refId": "177336|2026-12-12|18:00",
+        "start": "2026-12-12T18:00",
+        "end": "2026-12-12T20:00",
+        "name": "Shinny: Youth",
+        "type": "Pickup Hockey",
+        "notes": "13 - 18 years",
+        "ticket": 0
+      },
+      {
+        "id": "e68c991f-e16b-4476-adeb-bd662e34e05d",
+        "refId": "177348|2026-12-12|20:00",
+        "start": "2026-12-12T20:00",
+        "end": "2026-12-12T22:00",
+        "name": "Pick Up Hockey: Adults",
+        "type": "Pickup Hockey",
+        "notes": "19 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "1e5ddcc9-b77a-4f7b-81ba-206508075ca2",
+        "refId": "177353|2026-12-13|10:00",
+        "start": "2026-12-13T10:00",
+        "end": "2026-12-13T22:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "396e8402-4c12-42e3-9109-52b9bfff430c",
+        "refId": "177338|2026-12-13|12:00",
+        "start": "2026-12-13T12:00",
+        "end": "2026-12-13T13:00",
+        "name": "Shinny: Early Years with Caregiver",
+        "type": "Pickup Hockey",
+        "notes": "0 - 5 years",
+        "ticket": 0
+      },
+      {
+        "id": "31d36901-03d3-476b-965b-cb54fb5ef2bf",
+        "refId": "177337|2026-12-13|13:00",
+        "start": "2026-12-13T13:00",
+        "end": "2026-12-13T14:00",
+        "name": "Shinny: Child with Caregiver",
+        "type": "Pickup Hockey",
+        "notes": "6 - 12 years",
+        "ticket": 0
+      },
+      {
+        "id": "bc5b5462-b52b-43bd-a43f-c17e72063f56",
+        "refId": "177332|2026-12-13|14:00",
+        "start": "2026-12-13T14:00",
+        "end": "2026-12-13T16:00",
+        "name": "Shinny: Child",
+        "type": "Pickup Hockey",
+        "notes": "6 - 12 years",
+        "ticket": 0
+      },
+      {
+        "id": "bc7e56f2-206d-4932-93a7-4e909726ba73",
+        "refId": "177334|2026-12-13|16:00",
+        "start": "2026-12-13T16:00",
+        "end": "2026-12-13T18:00",
+        "name": "Shinny",
+        "type": "Pickup Hockey",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "931a76f2-41fa-47c9-90b3-15405b2c63ee",
+        "refId": "177336|2026-12-13|18:00",
+        "start": "2026-12-13T18:00",
+        "end": "2026-12-13T20:00",
+        "name": "Shinny: Youth",
+        "type": "Pickup Hockey",
+        "notes": "13 - 18 years",
+        "ticket": 0
+      },
+      {
+        "id": "b79dcad1-231c-463a-a546-07a25e54a916",
+        "refId": "177341|2026-12-13|20:00",
+        "start": "2026-12-13T20:00",
+        "end": "2026-12-13T22:00",
+        "name": "Shinny: Adult",
+        "type": "Pickup Hockey",
+        "notes": "19 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "c6df7884-ebbf-49a9-86fb-bb9e06423ca2",
+        "refId": "177328|2026-12-14|10:00",
+        "start": "2026-12-14T10:00",
+        "end": "2026-12-14T16:00",
+        "name": "Shinny (Unsupervised)",
+        "type": "Pickup Hockey",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "3fd5185a-c526-40af-a3e6-5cfccb8f73f5",
+        "refId": "177356|2026-12-14|10:00",
+        "start": "2026-12-14T10:00",
+        "end": "2026-12-14T16:00",
+        "name": "Leisure Skate (Unsupervised)",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "ce4cc0fc-3e3f-46f9-82aa-ef8909c2308b",
+        "refId": "177332|2026-12-14|16:00",
+        "start": "2026-12-14T16:00",
+        "end": "2026-12-14T17:30",
+        "name": "Shinny: Child",
+        "type": "Pickup Hockey",
+        "notes": "6 - 12 years",
+        "ticket": 0
+      },
+      {
+        "id": "464fa3ec-4909-4b38-ab1d-eb51546e5aea",
+        "refId": "177353|2026-12-14|16:00",
+        "start": "2026-12-14T16:00",
+        "end": "2026-12-14T21:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "ef6fe5a7-3ed4-4465-a974-278889c9a9ed",
+        "refId": "177334|2026-12-14|17:30",
+        "start": "2026-12-14T17:30",
+        "end": "2026-12-14T18:30",
+        "name": "Shinny",
+        "type": "Pickup Hockey",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "da9d4f38-78a7-4f25-8a52-eacb00a06c47",
+        "refId": "177336|2026-12-14|18:30",
+        "start": "2026-12-14T18:30",
+        "end": "2026-12-14T20:00",
+        "name": "Shinny: Youth",
+        "type": "Pickup Hockey",
+        "notes": "13 - 18 years",
+        "ticket": 0
+      },
+      {
+        "id": "a2a04bbf-e07c-4246-83f0-f490f09d5660",
+        "refId": "177341|2026-12-14|20:00",
+        "start": "2026-12-14T20:00",
+        "end": "2026-12-14T21:00",
+        "name": "Shinny: Adult",
+        "type": "Pickup Hockey",
+        "notes": "19 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "0a5b15ba-aaa9-4648-8505-7d90faa1c7a8",
+        "refId": "177342|2026-12-14|21:00",
+        "start": "2026-12-14T21:00",
+        "end": "2026-12-14T22:00",
+        "name": "Shinny: Adult (Unsupervised)",
+        "type": "Pickup Hockey",
+        "notes": "19 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "8e523205-d2c7-48e0-b12f-a7b71524afd2",
+        "refId": "177356|2026-12-14|21:00",
+        "start": "2026-12-14T21:00",
+        "end": "2026-12-14T22:00",
+        "name": "Leisure Skate (Unsupervised)",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "fd8c249a-d7b4-446c-a055-09d4dbc9e8fd",
+        "refId": "177328|2026-12-15|10:00",
+        "start": "2026-12-15T10:00",
+        "end": "2026-12-15T16:00",
+        "name": "Shinny (Unsupervised)",
+        "type": "Pickup Hockey",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "4599d46d-27d8-4554-b6f7-2b7e700259ba",
+        "refId": "177356|2026-12-15|10:00",
+        "start": "2026-12-15T10:00",
+        "end": "2026-12-15T16:00",
+        "name": "Leisure Skate (Unsupervised)",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "d779d906-57c8-4f52-903f-5506db02e894",
+        "refId": "177332|2026-12-15|16:00",
+        "start": "2026-12-15T16:00",
+        "end": "2026-12-15T17:30",
+        "name": "Shinny: Child",
+        "type": "Pickup Hockey",
+        "notes": "6 - 12 years",
+        "ticket": 0
+      },
+      {
+        "id": "d573e3d2-422b-4bb2-ac73-5bdf59d6b15b",
+        "refId": "177353|2026-12-15|16:00",
+        "start": "2026-12-15T16:00",
+        "end": "2026-12-15T21:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "776dddb1-c141-4baa-83d5-3dc57a35fc3b",
+        "refId": "177334|2026-12-15|17:30",
+        "start": "2026-12-15T17:30",
+        "end": "2026-12-15T18:30",
+        "name": "Shinny",
+        "type": "Pickup Hockey",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "5e524be9-688c-494e-ab1a-71ab6add1793",
+        "refId": "177336|2026-12-15|18:30",
+        "start": "2026-12-15T18:30",
+        "end": "2026-12-15T20:00",
+        "name": "Shinny: Youth",
+        "type": "Pickup Hockey",
+        "notes": "13 - 18 years",
+        "ticket": 0
+      },
+      {
+        "id": "a6d6ef2a-3981-4fef-a84e-6fbf01a291e1",
+        "refId": "177341|2026-12-15|20:00",
+        "start": "2026-12-15T20:00",
+        "end": "2026-12-15T21:00",
+        "name": "Shinny: Adult",
+        "type": "Pickup Hockey",
+        "notes": "19 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "7937cfab-ef31-472a-9658-0587720606e6",
+        "refId": "177342|2026-12-15|21:00",
+        "start": "2026-12-15T21:00",
+        "end": "2026-12-15T22:00",
+        "name": "Shinny: Adult (Unsupervised)",
+        "type": "Pickup Hockey",
+        "notes": "19 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "f983ba2e-ac20-45fa-a450-7e9ec33cb929",
+        "refId": "177356|2026-12-15|21:00",
+        "start": "2026-12-15T21:00",
+        "end": "2026-12-15T22:00",
+        "name": "Leisure Skate (Unsupervised)",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "68895c78-2118-48b8-958c-5f00c5ba9f67",
+        "refId": "177328|2026-12-16|10:00",
+        "start": "2026-12-16T10:00",
+        "end": "2026-12-16T16:00",
+        "name": "Shinny (Unsupervised)",
+        "type": "Pickup Hockey",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "a94b35c3-a72c-42c4-b5cd-19721d13bdf3",
+        "refId": "177356|2026-12-16|10:00",
+        "start": "2026-12-16T10:00",
+        "end": "2026-12-16T16:00",
+        "name": "Leisure Skate (Unsupervised)",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "eef11a6a-6d3a-483b-9c1b-e15186320e04",
+        "refId": "177332|2026-12-16|16:00",
+        "start": "2026-12-16T16:00",
+        "end": "2026-12-16T17:30",
+        "name": "Shinny: Child",
+        "type": "Pickup Hockey",
+        "notes": "6 - 12 years",
+        "ticket": 0
+      },
+      {
+        "id": "3c08ae06-1160-401a-b38f-1b9ae49ed890",
+        "refId": "177353|2026-12-16|16:00",
+        "start": "2026-12-16T16:00",
+        "end": "2026-12-16T21:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "3445756e-660c-4295-9b92-be1323941f36",
+        "refId": "177334|2026-12-16|17:30",
+        "start": "2026-12-16T17:30",
+        "end": "2026-12-16T18:30",
+        "name": "Shinny",
+        "type": "Pickup Hockey",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "e6554771-8746-44bd-9456-16a4df4a2ecb",
+        "refId": "177336|2026-12-16|18:30",
+        "start": "2026-12-16T18:30",
+        "end": "2026-12-16T20:00",
+        "name": "Shinny: Youth",
+        "type": "Pickup Hockey",
+        "notes": "13 - 18 years",
+        "ticket": 0
+      },
+      {
+        "id": "1e5bba1b-0ec6-42cb-971e-0bb0a01bda12",
+        "refId": "177341|2026-12-16|20:00",
+        "start": "2026-12-16T20:00",
+        "end": "2026-12-16T21:00",
+        "name": "Shinny: Adult",
+        "type": "Pickup Hockey",
+        "notes": "19 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "df84fcde-c938-4842-91b8-b943bef91bd2",
+        "refId": "177342|2026-12-16|21:00",
+        "start": "2026-12-16T21:00",
+        "end": "2026-12-16T22:00",
+        "name": "Shinny: Adult (Unsupervised)",
+        "type": "Pickup Hockey",
+        "notes": "19 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "95a7ac5a-33a1-45af-a7ee-23a07ad00b47",
+        "refId": "177356|2026-12-16|21:00",
+        "start": "2026-12-16T21:00",
+        "end": "2026-12-16T22:00",
+        "name": "Leisure Skate (Unsupervised)",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "4b14e0c9-f605-4574-beae-bf5f7809a1c5",
+        "refId": "177328|2026-12-17|10:00",
+        "start": "2026-12-17T10:00",
+        "end": "2026-12-17T16:00",
+        "name": "Shinny (Unsupervised)",
+        "type": "Pickup Hockey",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "18cd5b7c-00c7-4b69-b160-ed728f9023c4",
+        "refId": "177356|2026-12-17|10:00",
+        "start": "2026-12-17T10:00",
+        "end": "2026-12-17T16:00",
+        "name": "Leisure Skate (Unsupervised)",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "966738c3-ca98-45af-ac9c-db98e813ce29",
+        "refId": "177332|2026-12-17|16:00",
+        "start": "2026-12-17T16:00",
+        "end": "2026-12-17T17:30",
+        "name": "Shinny: Child",
+        "type": "Pickup Hockey",
+        "notes": "6 - 12 years",
+        "ticket": 0
+      },
+      {
+        "id": "41b03fec-5794-4dbb-a9f8-f44a413f7d75",
+        "refId": "177353|2026-12-17|16:00",
+        "start": "2026-12-17T16:00",
+        "end": "2026-12-17T21:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "f2597413-83b3-4ee9-8c97-b0a69c175e65",
+        "refId": "177334|2026-12-17|17:30",
+        "start": "2026-12-17T17:30",
+        "end": "2026-12-17T18:30",
+        "name": "Shinny",
+        "type": "Pickup Hockey",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "9dda29fd-4245-491d-9e85-36f2a03ae8c2",
+        "refId": "177336|2026-12-17|18:30",
+        "start": "2026-12-17T18:30",
+        "end": "2026-12-17T20:00",
+        "name": "Shinny: Youth",
+        "type": "Pickup Hockey",
+        "notes": "13 - 18 years",
+        "ticket": 0
+      },
+      {
+        "id": "d429d68c-3ec9-4854-ad21-4a694b124ce8",
+        "refId": "177341|2026-12-17|20:00",
+        "start": "2026-12-17T20:00",
+        "end": "2026-12-17T21:00",
+        "name": "Shinny: Adult",
+        "type": "Pickup Hockey",
+        "notes": "19 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "8fefd3c7-c41d-4fa5-a5ce-9739898c36b6",
+        "refId": "177342|2026-12-17|21:00",
+        "start": "2026-12-17T21:00",
+        "end": "2026-12-17T22:00",
+        "name": "Shinny: Adult (Unsupervised)",
+        "type": "Pickup Hockey",
+        "notes": "19 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "c67fadb8-b54f-4427-b3ab-d368e7e2a340",
+        "refId": "177356|2026-12-17|21:00",
+        "start": "2026-12-17T21:00",
+        "end": "2026-12-17T22:00",
+        "name": "Leisure Skate (Unsupervised)",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      }
+    ]
+  }
+}

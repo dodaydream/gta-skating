@@ -84,6 +84,8 @@ export interface RawProgram {
 
 export interface Program {
   id: string;
+  /** External id from the source (e.g. Toronto's Course_ID + date + start). */
+  refId?: string;
   start: string; // ISO datetime
   end: string; // ISO datetime
   name: string;

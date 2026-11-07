@@ -33,19 +33,11 @@
     }
   ],
   "schedule": {
-    "updatedAt": "2026-11-05T03:58:17.885Z",
+    "updatedAt": "2026-11-07T16:20:03.460Z",
     "programs": [
       {
-        "id": "edbf0e2e-e848-4d1a-87a7-97e76afd69cd",
-        "start": "2026-11-06T18:00",
-        "end": "2026-11-06T20:00",
-        "name": "Leisure Skate",
-        "type": "Public Skate",
-        "notes": "0 years and over",
-        "ticket": 0
-      },
-      {
-        "id": "55322ec0-0e4e-4a20-8b48-11a230d545d9",
+        "id": "6d9837aa-aae7-41bb-9440-ecb8565a35f3",
+        "refId": "178340|2026-11-07|19:15",
         "start": "2026-11-07T19:15",
         "end": "2026-11-07T21:00",
         "name": "Leisure Skate",
@@ -54,7 +46,8 @@
         "ticket": 0
       },
       {
-        "id": "f06b27ee-4bf1-48aa-9258-af0110d9b932",
+        "id": "b521a3b4-bc7e-4f5e-b0e1-e4e4a5c7e500",
+        "refId": "178341|2026-11-08|13:15",
         "start": "2026-11-08T13:15",
         "end": "2026-11-08T14:15",
         "name": "Leisure Skate: Early Years with Caregiver",
@@ -63,9 +56,210 @@
         "ticket": 0
       },
       {
-        "id": "da95587d-6364-41bd-b12a-1093585dddb9",
+        "id": "6d29d947-b8ec-4bf4-bd76-11303b924b95",
+        "refId": "178340|2026-11-08|14:15",
         "start": "2026-11-08T14:15",
         "end": "2026-11-08T16:15",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "9e3af8f3-601c-499f-b905-09b8cb723f92",
+        "refId": "178340|2026-11-13|18:00",
+        "start": "2026-11-13T18:00",
+        "end": "2026-11-13T20:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "a8844285-7013-4ffe-aa8a-1fc0b55242c2",
+        "refId": "178340|2026-11-14|19:15",
+        "start": "2026-11-14T19:15",
+        "end": "2026-11-14T21:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "d2f0fa04-5d81-4c32-afe4-cf8bd6869583",
+        "refId": "178341|2026-11-15|13:15",
+        "start": "2026-11-15T13:15",
+        "end": "2026-11-15T14:15",
+        "name": "Leisure Skate: Early Years with Caregiver",
+        "type": "Public Skate",
+        "notes": "0 - 5 years",
+        "ticket": 0
+      },
+      {
+        "id": "7270f179-f2e1-42fa-8a07-580484854e8c",
+        "refId": "178340|2026-11-15|14:15",
+        "start": "2026-11-15T14:15",
+        "end": "2026-11-15T16:15",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "5842d2f9-7b66-41d8-9d2c-4811d0d42ad4",
+        "refId": "178340|2026-11-20|18:00",
+        "start": "2026-11-20T18:00",
+        "end": "2026-11-20T20:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "d1410418-23a3-488f-9097-84f016dac148",
+        "refId": "178340|2026-11-21|19:15",
+        "start": "2026-11-21T19:15",
+        "end": "2026-11-21T21:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "a2505b24-a97e-45ce-a1ac-ec6528d86b74",
+        "refId": "178341|2026-11-22|13:15",
+        "start": "2026-11-22T13:15",
+        "end": "2026-11-22T14:15",
+        "name": "Leisure Skate: Early Years with Caregiver",
+        "type": "Public Skate",
+        "notes": "0 - 5 years",
+        "ticket": 0
+      },
+      {
+        "id": "630c742c-10dc-44dc-85ab-cfa91b2aa140",
+        "refId": "178340|2026-11-22|14:15",
+        "start": "2026-11-22T14:15",
+        "end": "2026-11-22T16:15",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "4f003c90-6a75-4acb-ad58-f9eb749402b6",
+        "refId": "178340|2026-11-27|18:00",
+        "start": "2026-11-27T18:00",
+        "end": "2026-11-27T20:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "0bb7a098-a6dc-4a7f-8d5a-b769bb3761fa",
+        "refId": "178340|2026-11-28|19:15",
+        "start": "2026-11-28T19:15",
+        "end": "2026-11-28T21:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "d5507c56-1abd-4b1a-9cc3-d85b18b0d1e7",
+        "refId": "178341|2026-11-29|13:15",
+        "start": "2026-11-29T13:15",
+        "end": "2026-11-29T14:15",
+        "name": "Leisure Skate: Early Years with Caregiver",
+        "type": "Public Skate",
+        "notes": "0 - 5 years",
+        "ticket": 0
+      },
+      {
+        "id": "6cc244bc-f5c3-4a73-b294-25bad992779f",
+        "refId": "178340|2026-11-29|14:15",
+        "start": "2026-11-29T14:15",
+        "end": "2026-11-29T16:15",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "21b36e14-3533-4f21-8a03-4b6910639fce",
+        "refId": "178340|2026-12-04|18:00",
+        "start": "2026-12-04T18:00",
+        "end": "2026-12-04T20:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "3aa75db5-0d93-4815-9954-1881de2ceaa4",
+        "refId": "178340|2026-12-05|19:15",
+        "start": "2026-12-05T19:15",
+        "end": "2026-12-05T21:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "8c5e5884-a096-43f5-aaab-d0a2be1348b6",
+        "refId": "178341|2026-12-06|13:15",
+        "start": "2026-12-06T13:15",
+        "end": "2026-12-06T14:15",
+        "name": "Leisure Skate: Early Years with Caregiver",
+        "type": "Public Skate",
+        "notes": "0 - 5 years",
+        "ticket": 0
+      },
+      {
+        "id": "2aa3f980-845e-4806-a829-78ae5697c949",
+        "refId": "178340|2026-12-06|14:15",
+        "start": "2026-12-06T14:15",
+        "end": "2026-12-06T16:15",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "f47ba090-cc4c-485b-9e2c-88c2230b84a5",
+        "refId": "178340|2026-12-11|18:00",
+        "start": "2026-12-11T18:00",
+        "end": "2026-12-11T20:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "89902caa-31df-4a16-b6c1-5ceed7212e20",
+        "refId": "178340|2026-12-12|19:15",
+        "start": "2026-12-12T19:15",
+        "end": "2026-12-12T21:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "2720adf2-0cb2-4294-a699-fcee649d10a4",
+        "refId": "178341|2026-12-13|13:15",
+        "start": "2026-12-13T13:15",
+        "end": "2026-12-13T14:15",
+        "name": "Leisure Skate: Early Years with Caregiver",
+        "type": "Public Skate",
+        "notes": "0 - 5 years",
+        "ticket": 0
+      },
+      {
+        "id": "417c9158-3bc5-4910-9e42-3d0d3d8a51de",
+        "refId": "178340|2026-12-13|14:15",
+        "start": "2026-12-13T14:15",
+        "end": "2026-12-13T16:15",
         "name": "Leisure Skate",
         "type": "Public Skate",
         "notes": "0 years and over",

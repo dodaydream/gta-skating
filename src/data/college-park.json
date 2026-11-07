@@ -1,0 +1,231 @@
+{
+  "name": "College Park",
+  "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=223",
+  "timezone": "America/Toronto",
+  "address": "420 Yonge St, Toronto, ON",
+  "coordinates": {
+    "lat": 43.659914,
+    "lon": -79.383825
+  },
+  "rinks": [
+    {
+      "name": "Outdoor Rink",
+      "type": "Outdoor (non-standard)"
+    }
+  ],
+  "info": [
+    {
+      "key": "operator",
+      "value": "City of Toronto"
+    },
+    {
+      "key": "website",
+      "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=223"
+    }
+  ],
+  "schedule": {
+    "updatedAt": "2026-11-07T16:20:03.451Z",
+    "programs": [
+      {
+        "id": "8f40818e-77db-4bab-a6f7-7a58416c2f87",
+        "refId": "190191|2026-11-28|10:00",
+        "start": "2026-11-28T10:00",
+        "end": "2026-11-28T22:00",
+        "name": "Leisure Skate (Unsupervised)",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "2e56d078-7ea9-4dab-9dc5-d1900767d9e7",
+        "refId": "190191|2026-11-29|10:00",
+        "start": "2026-11-29T10:00",
+        "end": "2026-11-29T22:00",
+        "name": "Leisure Skate (Unsupervised)",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "838eb46d-dc68-4af8-a472-5c512b7eef92",
+        "refId": "190191|2026-11-30|10:00",
+        "start": "2026-11-30T10:00",
+        "end": "2026-11-30T22:00",
+        "name": "Leisure Skate (Unsupervised)",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "a42e267c-ee64-472f-91ae-dbff747c92d7",
+        "refId": "190191|2026-12-01|10:00",
+        "start": "2026-12-01T10:00",
+        "end": "2026-12-01T22:00",
+        "name": "Leisure Skate (Unsupervised)",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "ed484f07-7850-4b7a-9c63-2d1421c6c712",
+        "refId": "190191|2026-12-02|10:00",
+        "start": "2026-12-02T10:00",
+        "end": "2026-12-02T22:00",
+        "name": "Leisure Skate (Unsupervised)",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "9d89e5d9-f701-4c8a-ad05-fd19dfb3a9eb",
+        "refId": "190191|2026-12-03|10:00",
+        "start": "2026-12-03T10:00",
+        "end": "2026-12-03T22:00",
+        "name": "Leisure Skate (Unsupervised)",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "5fc1718c-6c02-46c9-9ec1-5238572bb572",
+        "refId": "190191|2026-12-04|10:00",
+        "start": "2026-12-04T10:00",
+        "end": "2026-12-04T22:00",
+        "name": "Leisure Skate (Unsupervised)",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "1b4fac8f-47f5-433e-956f-c39a6c90f131",
+        "refId": "190191|2026-12-05|10:00",
+        "start": "2026-12-05T10:00",
+        "end": "2026-12-05T22:00",
+        "name": "Leisure Skate (Unsupervised)",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "b227a572-00c2-448e-a38a-6aeff43456d2",
+        "refId": "190191|2026-12-06|10:00",
+        "start": "2026-12-06T10:00",
+        "end": "2026-12-06T22:00",
+        "name": "Leisure Skate (Unsupervised)",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "8f185d63-da7e-4bcd-8e6f-e08619b7a19d",
+        "refId": "190191|2026-12-07|10:00",
+        "start": "2026-12-07T10:00",
+        "end": "2026-12-07T22:00",
+        "name": "Leisure Skate (Unsupervised)",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "ed11760b-227d-4a09-8386-bfc0e60eb06e",
+        "refId": "190191|2026-12-08|10:00",
+        "start": "2026-12-08T10:00",
+        "end": "2026-12-08T22:00",
+        "name": "Leisure Skate (Unsupervised)",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "5ca28fd2-bc23-4b7b-9cd2-ba3db28b3878",
+        "refId": "190191|2026-12-09|10:00",
+        "start": "2026-12-09T10:00",
+        "end": "2026-12-09T22:00",
+        "name": "Leisure Skate (Unsupervised)",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "22efed67-c344-4345-b13b-8cc4a7372c5c",
+        "refId": "190191|2026-12-10|10:00",
+        "start": "2026-12-10T10:00",
+        "end": "2026-12-10T22:00",
+        "name": "Leisure Skate (Unsupervised)",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "99098ed2-623e-48b0-a2f6-980448b4910d",
+        "refId": "190191|2026-12-11|10:00",
+        "start": "2026-12-11T10:00",
+        "end": "2026-12-11T22:00",
+        "name": "Leisure Skate (Unsupervised)",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "069a8f8c-96c2-4e49-94a0-e71827cd3224",
+        "refId": "190191|2026-12-12|10:00",
+        "start": "2026-12-12T10:00",
+        "end": "2026-12-12T22:00",
+        "name": "Leisure Skate (Unsupervised)",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "973079a4-5b6f-4288-aad0-24048297cfcc",
+        "refId": "190191|2026-12-13|10:00",
+        "start": "2026-12-13T10:00",
+        "end": "2026-12-13T22:00",
+        "name": "Leisure Skate (Unsupervised)",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "2224faec-7984-44b9-adaa-123e8ec020cd",
+        "refId": "190191|2026-12-14|10:00",
+        "start": "2026-12-14T10:00",
+        "end": "2026-12-14T22:00",
+        "name": "Leisure Skate (Unsupervised)",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "5edc7666-13b0-4306-af43-29d951febac8",
+        "refId": "190191|2026-12-15|10:00",
+        "start": "2026-12-15T10:00",
+        "end": "2026-12-15T22:00",
+        "name": "Leisure Skate (Unsupervised)",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "adec21e8-070c-45a8-ae0b-311e2b2aba42",
+        "refId": "190191|2026-12-16|10:00",
+        "start": "2026-12-16T10:00",
+        "end": "2026-12-16T22:00",
+        "name": "Leisure Skate (Unsupervised)",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "f8e85ddb-f81f-4fa9-a9a0-2195b5bf0416",
+        "refId": "190191|2026-12-17|10:00",
+        "start": "2026-12-17T10:00",
+        "end": "2026-12-17T22:00",
+        "name": "Leisure Skate (Unsupervised)",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      }
+    ]
+  }
+}

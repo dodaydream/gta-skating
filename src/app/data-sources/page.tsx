@@ -27,8 +27,9 @@ const SOURCES: {
   },
   {
     name: "City of Toronto",
-    href: "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/",
-    title: "Parks & Recreation Facility Listings – City of Toronto",
+    href: "https://open.toronto.ca/dataset/registered-programs-and-drop-in-courses-offering/",
+    title:
+      "Registered Programs and Drop In Courses Offering – City of Toronto Open Data",
   },
   {
     name: "City of Markham",

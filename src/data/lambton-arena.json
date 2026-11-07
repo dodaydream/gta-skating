@@ -2,30 +2,94 @@
   "name": "Lambton Arena",
   "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=479",
   "timezone": "America/Toronto",
-  "rinks": [
-    { "name": "Ice Rink", "type": "North American / NHL" }
-  ],
-  "amenities": ["wifi", "dressing_rooms", "lockers"],
-  "info": [
-    { "key": "operator", "value": "City of Toronto" },
-    { "key": "phone", "value": "416-394-2735" },
-    {
-      "key": "website",
-      "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=479"
-    }
-  ],
   "address": "4100 Dundas St W, Toronto, ON",
   "coordinates": {
     "lat": 43.664913,
     "lon": -79.50588
   },
+  "rinks": [
+    {
+      "name": "Ice Rink",
+      "type": "North American / NHL"
+    }
+  ],
+  "amenities": [
+    "wifi",
+    "dressing_rooms",
+    "lockers"
+  ],
+  "info": [
+    {
+      "key": "operator",
+      "value": "City of Toronto"
+    },
+    {
+      "key": "phone",
+      "value": "416-394-2735"
+    },
+    {
+      "key": "website",
+      "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=479"
+    }
+  ],
   "schedule": {
-    "updatedAt": "2026-11-02T06:09:05.138Z",
+    "updatedAt": "2026-11-07T16:20:03.460Z",
     "programs": [
       {
-        "id": "4d535909-0061-4e26-92b0-eb50f024ba21",
-        "start": "2026-11-03T17:45",
-        "end": "2026-11-03T20:15",
+        "id": "0f3e527f-3931-4455-b1bd-e218568c22e3",
+        "refId": "182506|2026-11-10|17:45",
+        "start": "2026-11-10T17:45",
+        "end": "2026-11-10T20:15",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "4ce18e1c-e945-46c3-b47d-e5ad9b24c96c",
+        "refId": "182506|2026-11-17|17:45",
+        "start": "2026-11-17T17:45",
+        "end": "2026-11-17T20:15",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "538f5402-3828-47ab-8aef-3b5829fb5540",
+        "refId": "182506|2026-11-24|17:45",
+        "start": "2026-11-24T17:45",
+        "end": "2026-11-24T20:15",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "ec124311-d39a-4a42-99e7-0a87e0d95398",
+        "refId": "182506|2026-12-01|17:45",
+        "start": "2026-12-01T17:45",
+        "end": "2026-12-01T20:15",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "6ad8ecc1-7365-466b-b847-361ca08bc57a",
+        "refId": "182506|2026-12-08|17:45",
+        "start": "2026-12-08T17:45",
+        "end": "2026-12-08T20:15",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "26d20ac3-fb87-4082-ba0a-60394d527ea7",
+        "refId": "182506|2026-12-15|17:45",
+        "start": "2026-12-15T17:45",
+        "end": "2026-12-15T20:15",
         "name": "Leisure Skate",
         "type": "Public Skate",
         "notes": "0 years and over",

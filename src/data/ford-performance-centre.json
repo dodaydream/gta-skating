@@ -1,0 +1,42 @@
+{
+  "name": "Ford Performance Centre",
+  "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=3782",
+  "timezone": "America/Toronto",
+  "address": "400 Kipling Ave, Toronto, ON",
+  "coordinates": {
+    "lat": 43.602865,
+    "lon": -79.519916
+  },
+  "rinks": [
+    {
+      "name": "Ice Rink",
+      "type": "North American / NHL"
+    }
+  ],
+  "amenities": [
+    "dressing_rooms",
+    "spectator_seating",
+    "snack_bar",
+    "skate_sharpening",
+    "equipment_gear_purchase",
+    "lockers"
+  ],
+  "info": [
+    {
+      "key": "operator",
+      "value": "City of Toronto"
+    },
+    {
+      "key": "phone",
+      "value": "416-251-5219"
+    },
+    {
+      "key": "website",
+      "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=3782"
+    }
+  ],
+  "schedule": {
+    "updatedAt": "2026-11-07T16:20:03.454Z",
+    "programs": []
+  }
+}

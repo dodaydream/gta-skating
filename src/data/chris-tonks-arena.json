@@ -2,39 +2,154 @@
   "name": "Chris Tonks Arena",
   "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=476",
   "timezone": "America/Toronto",
-  "rinks": [
-    { "name": "Ice Rink", "type": "North American / NHL" }
-  ],
-  "amenities": ["wifi", "dressing_rooms", "lockers"],
-  "info": [
-    { "key": "operator", "value": "City of Toronto" },
-    { "key": "phone", "value": "416-394-2733" },
-    {
-      "key": "website",
-      "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=476"
-    }
-  ],
   "address": "95 Black Creek Dr, Toronto, ON",
   "coordinates": {
     "lat": 43.68702,
     "lon": -79.48157
   },
+  "rinks": [
+    {
+      "name": "Ice Rink",
+      "type": "North American / NHL"
+    }
+  ],
+  "amenities": [
+    "wifi",
+    "dressing_rooms",
+    "lockers"
+  ],
+  "info": [
+    {
+      "key": "operator",
+      "value": "City of Toronto"
+    },
+    {
+      "key": "phone",
+      "value": "416-394-2733"
+    },
+    {
+      "key": "website",
+      "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=476"
+    }
+  ],
   "schedule": {
-    "updatedAt": "2026-11-02T06:09:02.816Z",
+    "updatedAt": "2026-11-07T16:20:03.450Z",
     "programs": [
       {
-        "id": "5daf69bc-4208-4698-95de-ca5b47390dc0",
-        "start": "2026-11-02T17:00",
-        "end": "2026-11-02T18:30",
+        "id": "ded0bdc2-fce3-418e-9f8f-9bb30438aabe",
+        "refId": "181095|2026-11-09|17:00",
+        "start": "2026-11-09T17:00",
+        "end": "2026-11-09T18:30",
         "name": "Shinny: Child with Caregiver",
         "type": "Pickup Hockey",
         "notes": "8 - 12 years",
         "ticket": 0
       },
       {
-        "id": "2e664368-613e-4e60-8f4d-6f7a404d2f83",
-        "start": "2026-11-02T18:30",
-        "end": "2026-11-02T20:00",
+        "id": "1dab1537-afc6-4942-9d81-844c27555e71",
+        "refId": "181096|2026-11-09|18:30",
+        "start": "2026-11-09T18:30",
+        "end": "2026-11-09T20:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "3baac119-47c5-4eaf-b7ab-368f4d27566b",
+        "refId": "181095|2026-11-16|17:00",
+        "start": "2026-11-16T17:00",
+        "end": "2026-11-16T18:30",
+        "name": "Shinny: Child with Caregiver",
+        "type": "Pickup Hockey",
+        "notes": "8 - 12 years",
+        "ticket": 0
+      },
+      {
+        "id": "e8588bcc-c76c-4556-914c-f2a071bed04f",
+        "refId": "181096|2026-11-16|18:30",
+        "start": "2026-11-16T18:30",
+        "end": "2026-11-16T20:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "555197f0-a5e7-4811-80ba-445ed19d4b2d",
+        "refId": "181095|2026-11-23|17:00",
+        "start": "2026-11-23T17:00",
+        "end": "2026-11-23T18:30",
+        "name": "Shinny: Child with Caregiver",
+        "type": "Pickup Hockey",
+        "notes": "8 - 12 years",
+        "ticket": 0
+      },
+      {
+        "id": "8e90a88f-7fd4-4d40-9dce-05eeec11eed7",
+        "refId": "181096|2026-11-23|18:30",
+        "start": "2026-11-23T18:30",
+        "end": "2026-11-23T20:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "0130a1f6-7860-4845-8e96-7413060e5844",
+        "refId": "181095|2026-11-30|17:00",
+        "start": "2026-11-30T17:00",
+        "end": "2026-11-30T18:30",
+        "name": "Shinny: Child with Caregiver",
+        "type": "Pickup Hockey",
+        "notes": "8 - 12 years",
+        "ticket": 0
+      },
+      {
+        "id": "e8824045-3dcf-4816-86a1-eea937529215",
+        "refId": "181096|2026-11-30|18:30",
+        "start": "2026-11-30T18:30",
+        "end": "2026-11-30T20:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "09f1a245-6efd-4ca0-ac8e-1d0d86901762",
+        "refId": "181095|2026-12-07|17:00",
+        "start": "2026-12-07T17:00",
+        "end": "2026-12-07T18:30",
+        "name": "Shinny: Child with Caregiver",
+        "type": "Pickup Hockey",
+        "notes": "8 - 12 years",
+        "ticket": 0
+      },
+      {
+        "id": "8bf577f4-a7df-4bfa-8596-bdd6e7c33627",
+        "refId": "181096|2026-12-07|18:30",
+        "start": "2026-12-07T18:30",
+        "end": "2026-12-07T20:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "43a8a244-73ef-4b71-b545-5f3879ff3d06",
+        "refId": "181095|2026-12-14|17:00",
+        "start": "2026-12-14T17:00",
+        "end": "2026-12-14T18:30",
+        "name": "Shinny: Child with Caregiver",
+        "type": "Pickup Hockey",
+        "notes": "8 - 12 years",
+        "ticket": 0
+      },
+      {
+        "id": "a5d9b14a-b4b6-4b73-80d9-9abd29003834",
+        "refId": "181096|2026-12-14|18:30",
+        "start": "2026-12-14T18:30",
+        "end": "2026-12-14T20:00",
         "name": "Leisure Skate",
         "type": "Public Skate",
         "notes": "0 years and over",

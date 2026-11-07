@@ -4,18 +4,25 @@
  * Unlike scraper/bill-bolton-arena (a single-venue scraper with one meta
  * object), this scraper supports many venues at once.  The venue list lives in
  * ./meta.json as an array of entries, each tagged indoor/outdoor and carrying
- * the Toronto `locationId` used to fetch its drop-in schedule feed.
+ * the Toronto `locationId` used to match its drop-in schedule.
  *
- * Toronto publishes drop-in skate programs as dated events (not recurring
- * weekly blocks), one JSON feed per venue:
+ * Schedules come from the City of Toronto Open Data "Registered Programs and
+ * Drop In Courses Offering" dataset (package 1a5be46a-4039-48cd-a2d2-8e702abf9516),
+ * using its actively-datastored "Drop-in" resource.  A single section-filtered
+ * request returns every skating drop-in occurrence city-wide:
  *
- *   https://www.toronto.ca/data/parks/live/dropin/skate/<locationId>.json
+ *   .../datastore_search?id=<dropInResourceId>&filters={"Section":"Skate - Drop-In"}
  *
- * The feed is an array of grouped blocks; only the `r` rows hold program
- * entries (facility, category, date, time, age).  Each venue with data is
- * written to its own output file at src/data/<slug>.json (the full slug of the
- * venue name) in the shape consumed by src/data/schedules.ts.  Venues with no
- * feed (or an empty one) are skipped so we never emit an empty schedule.
+ * Each datastore row is one occurrence (`First Date` == `Last Date`), so no
+ * recurrence expansion is needed.  Rows are grouped by `Location ID` and
+ * matched to meta.json venues.  Every venue in meta.json is written to its own
+ * output file at src/data/<slug>.json (the full slug of the venue name) in the
+ * shape consumed by src/data/schedules.ts — including venues with no programs
+ * right now, so the app can show "no upcoming sessions" instead of hiding them.
+ *
+ * Freshness: the Open Data dataset refreshes weekly (~1 day behind the City's
+ * live calendar), so cancellations and closures may lag.  Unlike the previous
+ * per-venue live feed, this source also covers outdoor venues.
  *
  * Usage:  node scrape.ts
  */
@@ -33,91 +40,171 @@ const OUT_DIR = path.resolve(__dirname, "../../src/data");
 
 const TIMEZONE = "America/Toronto";
 
-/** Source feed base for drop-in skate schedules, keyed by locationId. */
-const FEED_BASE = "https://www.toronto.ca/data/parks/live/dropin/skate/";
+/** City of Toronto Open Data CKAN API and the drop-in dataset package id. */
+const API_BASE = "https://ckan0.cf.opendata.inter.prod-toronto.ca/api/3/action";
+const PKG_ID = "1a5be46a-4039-48cd-a2d2-8e702abf9516";
+
+/** The one Section we scrape out of the drop-in dataset. */
+const SECTION = "Skate - Drop-In";
+
+/** Name of the datastore resource holding drop-in occurrences. */
+const DROP_IN_RESOURCE = "Drop-in";
+
+/** CKAN page cap; the skating slice is well under this, so one page suffices. */
+const PAGE_LIMIT = 32_000;
+
+// --- Data shapes -------------------------------------------------------
+
+/** One drop-in occurrence row from the "Drop-in" datastore resource. */
+interface SkateRow {
+  "Location ID": number;
+  Course_ID: number;
+  "Course Title": string;
+  Section: string;
+  "Age Min": string;
+  "Age Max": string;
+  "Start Hour": number;
+  "Start Minute": number;
+  "End Hour": number;
+  "End Min": number;
+  "First Date": string;
+  "Last Date": string;
+  DayOftheWeek: string;
+}
+
+interface CkanResource {
+  id: string;
+  name?: string;
+  datastore_active?: boolean;
+}
+
+interface PackageShowResponse {
+  success: boolean;
+  result?: { resources?: CkanResource[] };
+}
+
+interface SearchResponse {
+  success: boolean;
+  result?: {
+    total: number;
+    records: SkateRow[];
+    _links?: { next?: string };
+  };
+}
 
 // --- Fetch -------------------------------------------------------------
 
-async function fetchJson<T>(url: string): Promise<T | null> {
+async function getJson<T>(url: string): Promise<T> {
   const res = await fetch(url, {
     headers: { "User-Agent": "gta-skating-scraper/0.1 (+local dev)" },
-    signal: AbortSignal.timeout(15_000),
+    signal: AbortSignal.timeout(30_000),
   });
-  if (!res.ok) return null; // 404 -> no schedule feed for this venue
-  const text = await res.text();
-  try {
-    return JSON.parse(text) as T;
-  } catch {
-    return null; // HTML error page or empty response
+  if (!res.ok) throw new Error(`GET ${url} -> ${res.status} ${res.statusText}`);
+  return (await res.json()) as T;
+}
+
+/** Resolve the datastore id of the dataset's active "Drop-in" resource. */
+async function findDropInResourceId(): Promise<string> {
+  const doc = await getJson<PackageShowResponse>(
+    `${API_BASE}/package_show?id=${PKG_ID}`
+  );
+  if (!doc.success) throw new Error(`package_show failed for ${PKG_ID}`);
+  const resource = doc.result?.resources?.find(
+    (r) => r.datastore_active === true && r.name === DROP_IN_RESOURCE
+  );
+  if (!resource) {
+    throw new Error(
+      `No active "${DROP_IN_RESOURCE}" resource in dataset ${PKG_ID}`
+    );
   }
+  return resource.id;
+}
+
+/** Fetch every skating drop-in occurrence, paging if the slice exceeds a page. */
+async function fetchSkatingRows(): Promise<SkateRow[]> {
+  const resourceId = await findDropInResourceId();
+  const filters = encodeURIComponent(JSON.stringify({ Section: SECTION }));
+  let url: string | null =
+    `${API_BASE}/datastore_search?id=${resourceId}` +
+    `&filters=${filters}&limit=${PAGE_LIMIT}`;
+
+  const records: SkateRow[] = [];
+  let total = Number.POSITIVE_INFINITY;
+  while (url && records.length < total) {
+    const doc: SearchResponse = await getJson<SearchResponse>(url);
+    if (!doc.success || !doc.result) {
+      throw new Error(`datastore_search failed for resource ${resourceId}`);
+    }
+    const result = doc.result;
+    total = result.total;
+    records.push(...result.records);
+    // CKAN always returns a `next` link, even past the end, so stop on `total`.
+    const next: string | undefined =
+      records.length < total ? result._links?.next : undefined;
+    url = next ? new URL(next, API_BASE).toString() : null;
+  }
+
+  if (records.length === 0) {
+    // A renamed Section would otherwise silently wipe every Toronto schedule.
+    throw new Error(`datastore_search returned 0 rows for Section "${SECTION}"`);
+  }
+  return records;
 }
 
 // --- Parse -------------------------------------------------------------
 
-interface FeedBlock {
-  ts?: string;
-  r?: FeedRow[];
+/** Today's date (YYYY-MM-DD) in the venue timezone. */
+function todayStr(): string {
+  return new Intl.DateTimeFormat("en-CA", { timeZone: TIMEZONE }).format(
+    new Date()
+  );
 }
 
-interface FeedRow {
-  f: string; // facility, e.g. "Ice Rink - 1"
-  c: string; // category, e.g. "Leisure Skate: Older Adult (Unsupervised)"
-  d: string; // date, YYYY-MM-DD
-  t: string; // time, e.g. "03:30 PM - 05:00 PM"
-  age?: string; // age range description
-}
-
-/** Convert "03:30 PM" -> "15:30" (HH:MM). */
-function toHHMM(time: string): string | null {
-  const m = time.trim().match(/^(\d{1,2}):(\d{2})\s*(AM|PM)$/i);
-  if (!m) return null;
-  let hour = Number.parseInt(m[1], 10);
-  const minute = Number.parseInt(m[2], 10);
-  const isAm = m[3].toLowerCase() === "am";
-  if (isAm && hour === 12) hour = 0;
-  if (!isAm && hour !== 12) hour += 12;
+/** Zero-padded 24-hour "HH:MM" from the dataset's numeric hour/minute. */
+function hhmm(hour: number, minute: number): string {
   return `${String(hour).padStart(2, "0")}:${String(minute).padStart(2, "0")}`;
 }
 
-/** Split "03:30 PM - 05:00 PM" -> [start, end] as HH:MM. */
-function parseTimeRange(text: string): [string, string] | null {
-  const parts = text.split(/[-–—]/);
-  if (parts.length !== 2) return null;
-  const start = toHHMM(parts[0]);
-  const end = toHHMM(parts[1]);
-  if (!start || !end) return null;
-  return [start, end];
+/**
+ * Age note from the dataset's Age Min/Max.
+ *
+ * The dataset metadata labels these as months, but for skating they are years:
+ * verified against the previous feed, where 60 -> "60 years and over" and
+ * 0 - 12 -> "0 - 12 years".  Age Max "None" means unbounded.
+ */
+function ageNotes(min: string, max: string): string | undefined {
+  if (!min || min === "None") return undefined;
+  if (!max || max === "None") return `${min} years and over`;
+  return `${min} - ${max} years`;
 }
 
-/** Stable program id from facility, category and start time. */
-function slug(facility: string, category: string, start: string): string {
-  const raw = `${facility} ${category} ${start}`
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, "-");
-  return raw.replace(/^-+|-+$/g, "").slice(0, 80);
-}
-
-/** Transform feed rows into flat programs with ISO datetime starts/ends. */
-function buildPrograms(rows: FeedRow[]): Program[] {
+/** Transform one venue's rows into flat programs with local ISO datetimes. */
+function buildPrograms(rows: SkateRow[]): Program[] {
+  const today = todayStr();
   const seen = new Set<string>();
   const programs: Program[] = [];
 
   for (const row of rows) {
-    const range = parseTimeRange(row.t);
-    if (!range) continue;
-    const program: Program = {
+    const date = row["First Date"];
+    if (date < today) continue; // drop past occurrences; the app only shows upcoming
+    const start = hhmm(row["Start Hour"], row["Start Minute"]);
+    // Each row is a single occurrence (First Date == Last Date), so key on the
+    // occurrence itself.  refId is the city's id: Course_ID + date + start.
+    const refId = `${row.Course_ID}|${date}|${start}`;
+    if (seen.has(refId)) continue;
+    seen.add(refId);
+
+    programs.push({
       id: randomUUID(),
-      start: `${row.d}T${range[0]}`,
-      end: `${row.d}T${range[1]}`,
-      name: row.c,
-      type: classifyProgram(row.c),
-      notes: row.age || undefined,
+      refId,
+      start: `${date}T${start}`,
+      end: `${date}T${hhmm(row["End Hour"], row["End Min"])}`,
+      name: row["Course Title"],
+      type: classifyProgram(row["Course Title"]),
+      notes: ageNotes(row["Age Min"], row["Age Max"]),
       // City of Toronto drop-in skating is free.
       ticket: 0,
-    };
-    if (seen.has(program.id)) continue;
-    seen.add(program.id);
-    programs.push(program);
+    });
   }
 
   return programs.sort((a, b) => a.start.localeCompare(b.start));
@@ -156,35 +243,34 @@ async function main(): Promise<void> {
     await readFile(path.join(__dirname, "meta.json"), "utf8")
   ) as VenueMetaList;
 
-  const written: string[] = [];
-  const skipped: string[] = [];
+  const rows = await fetchSkatingRows();
+  const rowsByLocation = new Map<number, SkateRow[]>();
+  for (const row of rows) {
+    const id = Number(row["Location ID"]);
+    const list = rowsByLocation.get(id);
+    if (list) list.push(row);
+    else rowsByLocation.set(id, [row]);
+  }
 
+  let totalPrograms = 0;
   for (const venue of meta.venues) {
-    const feed = await fetchJson<FeedBlock[]>(
-      `${FEED_BASE}${venue.locationId}.json`
-    );
-    const rows = (feed ?? []).flatMap((b) => b.r ?? []);
-    if (rows.length === 0) {
-      skipped.push(venue.id);
-      continue;
-    }
-    const programs = buildPrograms(rows);
+    const venueRows =
+      typeof venue.locationId === "number"
+        ? rowsByLocation.get(venue.locationId) ?? []
+        : [];
+    const programs = buildPrograms(venueRows);
+    totalPrograms += programs.length;
     const file = await writeSchedule(venue, programs);
-    written.push(venue.id);
     console.log(
-      `[${venue.id}] ${rows.length} program row(s), ` +
-        `${programs.length} program(s) -> ${path.relative(process.cwd(), file)}`
+      `[${venue.id}] ${programs.length} program(s) -> ` +
+        `${path.relative(process.cwd(), file)}`
     );
   }
 
   console.log(
-    `[toronto-ca] wrote ${written.length} venue(s): ${written.join(", ")}`
+    `[toronto-ca] wrote ${meta.venues.length} venue(s), ` +
+      `${rows.length} row(s), ${totalPrograms} program(s)`
   );
-  if (skipped.length > 0) {
-    console.log(
-      `[toronto-ca] skipped ${skipped.length} venue(s) with no data: ${skipped.join(", ")}`
-    );
-  }
 }
 
 main().catch((err: unknown) => {

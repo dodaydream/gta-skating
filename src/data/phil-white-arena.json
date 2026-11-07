@@ -33,12 +33,63 @@
     }
   ],
   "schedule": {
-    "updatedAt": "2026-11-05T03:58:18.748Z",
+    "updatedAt": "2026-11-07T16:20:03.467Z",
     "programs": [
       {
-        "id": "cbb66a7f-bf18-4a31-912c-269d24558cd4",
+        "id": "14625086-fe8a-4bff-ae27-3d75a13b33f2",
+        "refId": "185874|2026-11-08|13:15",
         "start": "2026-11-08T13:15",
         "end": "2026-11-08T15:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "6de8484f-ab83-4fbe-b793-269aebce3c3d",
+        "refId": "185874|2026-11-15|13:15",
+        "start": "2026-11-15T13:15",
+        "end": "2026-11-15T15:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "252ac3ce-e6de-4cc8-be96-b88a2cb3dac5",
+        "refId": "185874|2026-11-22|13:15",
+        "start": "2026-11-22T13:15",
+        "end": "2026-11-22T15:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "57f51782-5361-40d0-9e08-2a226945c399",
+        "refId": "185874|2026-11-29|13:15",
+        "start": "2026-11-29T13:15",
+        "end": "2026-11-29T15:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "ca69bc8a-9e51-478f-bef1-7780987508c8",
+        "refId": "185874|2026-12-06|13:15",
+        "start": "2026-12-06T13:15",
+        "end": "2026-12-06T15:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "a373863c-37ae-4664-a7c9-49b1b0ec64ef",
+        "refId": "185874|2026-12-13|13:15",
+        "start": "2026-12-13T13:15",
+        "end": "2026-12-13T15:00",
         "name": "Leisure Skate",
         "type": "Public Skate",
         "notes": "0 years and over",

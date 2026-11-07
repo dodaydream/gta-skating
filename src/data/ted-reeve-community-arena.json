@@ -1,0 +1,38 @@
+{
+  "name": "Ted Reeve Community Arena",
+  "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=3494",
+  "timezone": "America/Toronto",
+  "address": "175 Main St, Toronto, ON",
+  "coordinates": {
+    "lat": 43.684435,
+    "lon": -79.299606
+  },
+  "rinks": [
+    {
+      "name": "Ice Rink",
+      "type": "North American / NHL"
+    }
+  ],
+  "amenities": [
+    "dressing_rooms",
+    "lockers"
+  ],
+  "info": [
+    {
+      "key": "operator",
+      "value": "City of Toronto"
+    },
+    {
+      "key": "phone",
+      "value": "416-694-6893"
+    },
+    {
+      "key": "website",
+      "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=3494"
+    }
+  ],
+  "schedule": {
+    "updatedAt": "2026-11-07T16:20:03.474Z",
+    "programs": []
+  }
+}

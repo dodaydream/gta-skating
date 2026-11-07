@@ -33,10 +33,11 @@
     }
   ],
   "schedule": {
-    "updatedAt": "2026-11-05T03:58:16.632Z",
+    "updatedAt": "2026-11-07T16:20:03.451Z",
     "programs": [
       {
-        "id": "6c6e7ff5-ad1b-45e0-af41-7c487cf5e52c",
+        "id": "86d7901e-85cd-4f4d-ac70-dfb6a3bdeacd",
+        "refId": "183462|2026-11-07|19:00",
         "start": "2026-11-07T19:00",
         "end": "2026-11-07T21:30",
         "name": "Leisure Skate",
@@ -45,9 +46,170 @@
         "ticket": 0
       },
       {
-        "id": "c8e95ad0-1bba-4b7f-b632-375a17be2cb1",
+        "id": "47e6c49a-ea66-4c56-864e-27072ee141ae",
+        "refId": "183462|2026-11-08|13:00",
         "start": "2026-11-08T13:00",
         "end": "2026-11-08T15:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "3b80d4ed-b644-472a-a416-336510491aed",
+        "refId": "183462|2026-11-10|16:00",
+        "start": "2026-11-10T16:00",
+        "end": "2026-11-10T18:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "7c8d4946-72ba-4ae5-9e6b-f7a1dc99a843",
+        "refId": "183462|2026-11-14|19:00",
+        "start": "2026-11-14T19:00",
+        "end": "2026-11-14T21:30",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "01cf756a-a9c1-45c2-a5d8-de7c4d34de61",
+        "refId": "183462|2026-11-15|13:00",
+        "start": "2026-11-15T13:00",
+        "end": "2026-11-15T15:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "46ca8ec8-b643-4812-9f89-9924bd1a891a",
+        "refId": "183462|2026-11-17|16:00",
+        "start": "2026-11-17T16:00",
+        "end": "2026-11-17T18:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "2d7efd21-b224-449f-acc2-943a960df19d",
+        "refId": "183462|2026-11-21|19:00",
+        "start": "2026-11-21T19:00",
+        "end": "2026-11-21T21:30",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "6654bc43-ec89-4606-8b91-7ad83f109c4e",
+        "refId": "183462|2026-11-22|13:00",
+        "start": "2026-11-22T13:00",
+        "end": "2026-11-22T15:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "8f167068-d6c5-4934-bc3f-9a4e53c5f6cd",
+        "refId": "183462|2026-11-24|16:00",
+        "start": "2026-11-24T16:00",
+        "end": "2026-11-24T18:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "d97523b6-f0a5-4a81-a2f5-82dc065ea3f8",
+        "refId": "183462|2026-11-28|19:00",
+        "start": "2026-11-28T19:00",
+        "end": "2026-11-28T21:30",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "c7cf6948-5cce-4609-bab2-0600223d9ba1",
+        "refId": "183462|2026-11-29|13:00",
+        "start": "2026-11-29T13:00",
+        "end": "2026-11-29T15:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "b719ca1f-41c9-4622-bdea-95d5db329841",
+        "refId": "183462|2026-12-01|16:00",
+        "start": "2026-12-01T16:00",
+        "end": "2026-12-01T18:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "63a13898-d57c-4ce9-b97f-f061641c7639",
+        "refId": "183462|2026-12-05|19:00",
+        "start": "2026-12-05T19:00",
+        "end": "2026-12-05T21:30",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "f346a70a-2b91-4e19-8f91-b9218d382114",
+        "refId": "183462|2026-12-06|13:00",
+        "start": "2026-12-06T13:00",
+        "end": "2026-12-06T15:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "bfceca4a-3d14-4f1e-8a66-94cc37ff1e80",
+        "refId": "183462|2026-12-08|16:00",
+        "start": "2026-12-08T16:00",
+        "end": "2026-12-08T18:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "a465f714-13dd-495d-8ada-849acbe69ee8",
+        "refId": "183462|2026-12-12|19:00",
+        "start": "2026-12-12T19:00",
+        "end": "2026-12-12T21:30",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "ce5988e5-61fb-43de-8882-d53d0e3f596d",
+        "refId": "183462|2026-12-13|13:00",
+        "start": "2026-12-13T13:00",
+        "end": "2026-12-13T15:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "db8b97b6-53ff-4505-a4a8-045e4cc50e3a",
+        "refId": "183462|2026-12-15|16:00",
+        "start": "2026-12-15T16:00",
+        "end": "2026-12-15T18:00",
         "name": "Leisure Skate",
         "type": "Public Skate",
         "notes": "0 years and over",

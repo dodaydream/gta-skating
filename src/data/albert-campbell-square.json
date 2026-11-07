@@ -1,0 +1,574 @@
+{
+  "name": "Albert Campbell Square",
+  "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=2155",
+  "timezone": "America/Toronto",
+  "address": "150 Borough Dr, Toronto, ON",
+  "coordinates": {
+    "lat": 43.772811,
+    "lon": -79.257241
+  },
+  "rinks": [
+    {
+      "name": "Outdoor Rink",
+      "type": "Outdoor (non-standard)"
+    }
+  ],
+  "amenities": [
+    "wifi"
+  ],
+  "info": [
+    {
+      "key": "operator",
+      "value": "City of Toronto"
+    },
+    {
+      "key": "website",
+      "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=2155"
+    }
+  ],
+  "schedule": {
+    "updatedAt": "2026-11-07T16:20:03.440Z",
+    "programs": [
+      {
+        "id": "25679fad-e2be-481d-a9d2-2c0d04f021c6",
+        "refId": "177263|2026-11-28|10:00",
+        "start": "2026-11-28T10:00",
+        "end": "2026-11-28T21:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "cd0ca75f-a112-47d1-ae6d-084c130cfd94",
+        "refId": "177265|2026-11-28|21:00",
+        "start": "2026-11-28T21:00",
+        "end": "2026-11-28T22:00",
+        "name": "Ice Breakdancing",
+        "type": "Ice Breakdancing",
+        "notes": "6 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "92e6fb37-5b21-4a09-b5b6-61d6f22115fb",
+        "refId": "177263|2026-11-29|10:00",
+        "start": "2026-11-29T10:00",
+        "end": "2026-11-29T21:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "a1cf2bcb-ed31-40dd-9c8d-0b51f8460690",
+        "refId": "177265|2026-11-29|21:00",
+        "start": "2026-11-29T21:00",
+        "end": "2026-11-29T22:00",
+        "name": "Ice Breakdancing",
+        "type": "Ice Breakdancing",
+        "notes": "6 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "83a75e6d-acc4-4aa7-a345-8e2c2e3f88de",
+        "refId": "177262|2026-11-30|10:00",
+        "start": "2026-11-30T10:00",
+        "end": "2026-11-30T16:00",
+        "name": "Leisure Skate (Unsupervised)",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "e41508df-29e0-4b6b-8688-4781417fb569",
+        "refId": "177263|2026-11-30|16:00",
+        "start": "2026-11-30T16:00",
+        "end": "2026-11-30T21:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "cbea155a-02c3-4153-b0b7-643dc6e92a3f",
+        "refId": "177265|2026-11-30|21:00",
+        "start": "2026-11-30T21:00",
+        "end": "2026-11-30T22:00",
+        "name": "Ice Breakdancing",
+        "type": "Ice Breakdancing",
+        "notes": "6 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "b929e035-1bac-4b4f-add4-4518b38d9279",
+        "refId": "177262|2026-12-01|10:00",
+        "start": "2026-12-01T10:00",
+        "end": "2026-12-01T16:00",
+        "name": "Leisure Skate (Unsupervised)",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "b42ce12b-f066-4d32-9822-d04836787e85",
+        "refId": "177263|2026-12-01|16:00",
+        "start": "2026-12-01T16:00",
+        "end": "2026-12-01T21:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "97f1b0af-4993-406b-9515-9f79fd98f096",
+        "refId": "177265|2026-12-01|21:00",
+        "start": "2026-12-01T21:00",
+        "end": "2026-12-01T22:00",
+        "name": "Ice Breakdancing",
+        "type": "Ice Breakdancing",
+        "notes": "6 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "2becf950-7490-45cd-82bf-35021d929549",
+        "refId": "177262|2026-12-02|10:00",
+        "start": "2026-12-02T10:00",
+        "end": "2026-12-02T16:00",
+        "name": "Leisure Skate (Unsupervised)",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "5d2a8beb-99ca-403a-8597-42a3d8720ce8",
+        "refId": "177263|2026-12-02|16:00",
+        "start": "2026-12-02T16:00",
+        "end": "2026-12-02T21:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "fee6c8af-9492-4d98-addf-860769ccf6cc",
+        "refId": "177265|2026-12-02|21:00",
+        "start": "2026-12-02T21:00",
+        "end": "2026-12-02T22:00",
+        "name": "Ice Breakdancing",
+        "type": "Ice Breakdancing",
+        "notes": "6 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "c2abe1f3-aafc-4e0e-aded-ff346d8b02b3",
+        "refId": "177262|2026-12-03|10:00",
+        "start": "2026-12-03T10:00",
+        "end": "2026-12-03T16:00",
+        "name": "Leisure Skate (Unsupervised)",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "f9775627-fb49-4a25-93f6-ec465631e623",
+        "refId": "177263|2026-12-03|16:00",
+        "start": "2026-12-03T16:00",
+        "end": "2026-12-03T21:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "d7627ec8-ab1f-46fb-adcb-13d4f9a926fe",
+        "refId": "177265|2026-12-03|21:00",
+        "start": "2026-12-03T21:00",
+        "end": "2026-12-03T22:00",
+        "name": "Ice Breakdancing",
+        "type": "Ice Breakdancing",
+        "notes": "6 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "1cbaa3b6-2349-4015-86b3-97b990fb33a8",
+        "refId": "177262|2026-12-04|10:00",
+        "start": "2026-12-04T10:00",
+        "end": "2026-12-04T16:00",
+        "name": "Leisure Skate (Unsupervised)",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "cbc92a06-1e50-4edb-bb7f-510addcd79b0",
+        "refId": "177263|2026-12-04|16:00",
+        "start": "2026-12-04T16:00",
+        "end": "2026-12-04T21:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "8db2211c-6c38-4646-9b88-6fd61a72f53d",
+        "refId": "177265|2026-12-04|21:00",
+        "start": "2026-12-04T21:00",
+        "end": "2026-12-04T22:00",
+        "name": "Ice Breakdancing",
+        "type": "Ice Breakdancing",
+        "notes": "6 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "65e0ac25-b112-4a2c-8dec-bf86e3e1df89",
+        "refId": "177263|2026-12-05|10:00",
+        "start": "2026-12-05T10:00",
+        "end": "2026-12-05T21:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "8fa3cc71-36fa-466e-8633-b8cb7556991a",
+        "refId": "177265|2026-12-05|21:00",
+        "start": "2026-12-05T21:00",
+        "end": "2026-12-05T22:00",
+        "name": "Ice Breakdancing",
+        "type": "Ice Breakdancing",
+        "notes": "6 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "1a81a844-2a42-4722-9f88-c85e755e0362",
+        "refId": "177263|2026-12-06|10:00",
+        "start": "2026-12-06T10:00",
+        "end": "2026-12-06T21:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "e77eba04-8ce4-412f-a64e-9f54b8069858",
+        "refId": "177265|2026-12-06|21:00",
+        "start": "2026-12-06T21:00",
+        "end": "2026-12-06T22:00",
+        "name": "Ice Breakdancing",
+        "type": "Ice Breakdancing",
+        "notes": "6 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "7d6dfb1a-a557-4d7b-b09b-11bfb11dbf27",
+        "refId": "177262|2026-12-07|10:00",
+        "start": "2026-12-07T10:00",
+        "end": "2026-12-07T16:00",
+        "name": "Leisure Skate (Unsupervised)",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "a86937f7-0e6c-48ef-bc58-b8f2c626909e",
+        "refId": "177263|2026-12-07|16:00",
+        "start": "2026-12-07T16:00",
+        "end": "2026-12-07T21:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "1f2e8649-b424-4b0e-a8d2-84a4b555f933",
+        "refId": "177265|2026-12-07|21:00",
+        "start": "2026-12-07T21:00",
+        "end": "2026-12-07T22:00",
+        "name": "Ice Breakdancing",
+        "type": "Ice Breakdancing",
+        "notes": "6 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "f3699d15-667a-400e-b260-94005738f3a8",
+        "refId": "177262|2026-12-08|10:00",
+        "start": "2026-12-08T10:00",
+        "end": "2026-12-08T16:00",
+        "name": "Leisure Skate (Unsupervised)",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "580e699c-28e2-4d64-bbf2-d8b55500e8ab",
+        "refId": "177263|2026-12-08|16:00",
+        "start": "2026-12-08T16:00",
+        "end": "2026-12-08T21:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "b680c2be-2c52-4f4f-959c-69d1f454ee7c",
+        "refId": "177265|2026-12-08|21:00",
+        "start": "2026-12-08T21:00",
+        "end": "2026-12-08T22:00",
+        "name": "Ice Breakdancing",
+        "type": "Ice Breakdancing",
+        "notes": "6 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "4f008e6e-b148-4408-8d96-50181515608c",
+        "refId": "177262|2026-12-09|10:00",
+        "start": "2026-12-09T10:00",
+        "end": "2026-12-09T16:00",
+        "name": "Leisure Skate (Unsupervised)",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "9b0f1eab-3e6d-40ea-a900-36c2d8a489c7",
+        "refId": "177263|2026-12-09|16:00",
+        "start": "2026-12-09T16:00",
+        "end": "2026-12-09T21:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "bb45c15f-2bd8-461e-914b-018b76f4b6b3",
+        "refId": "177265|2026-12-09|21:00",
+        "start": "2026-12-09T21:00",
+        "end": "2026-12-09T22:00",
+        "name": "Ice Breakdancing",
+        "type": "Ice Breakdancing",
+        "notes": "6 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "71c2fccd-edbf-4b3c-8bd5-991262b03f87",
+        "refId": "177262|2026-12-10|10:00",
+        "start": "2026-12-10T10:00",
+        "end": "2026-12-10T16:00",
+        "name": "Leisure Skate (Unsupervised)",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "f481f927-ee95-42f3-a85e-1fa7c8c7fa33",
+        "refId": "177263|2026-12-10|16:00",
+        "start": "2026-12-10T16:00",
+        "end": "2026-12-10T21:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "d7461c30-a3e1-4e63-abbe-53db34a7aece",
+        "refId": "177265|2026-12-10|21:00",
+        "start": "2026-12-10T21:00",
+        "end": "2026-12-10T22:00",
+        "name": "Ice Breakdancing",
+        "type": "Ice Breakdancing",
+        "notes": "6 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "a52a42bc-a443-4b56-b224-74dfc0b776d5",
+        "refId": "177262|2026-12-11|10:00",
+        "start": "2026-12-11T10:00",
+        "end": "2026-12-11T16:00",
+        "name": "Leisure Skate (Unsupervised)",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "a4cf758d-bb4b-47dc-b535-2c4b3e4f36ee",
+        "refId": "177263|2026-12-11|16:00",
+        "start": "2026-12-11T16:00",
+        "end": "2026-12-11T21:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "1e665afc-739f-4c18-b1ed-bffb96a2a1bd",
+        "refId": "177265|2026-12-11|21:00",
+        "start": "2026-12-11T21:00",
+        "end": "2026-12-11T22:00",
+        "name": "Ice Breakdancing",
+        "type": "Ice Breakdancing",
+        "notes": "6 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "23432632-eca7-4489-86ba-3e9c76b322e4",
+        "refId": "177263|2026-12-12|10:00",
+        "start": "2026-12-12T10:00",
+        "end": "2026-12-12T21:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "1e72f7fe-42c4-49a0-9724-0ca1c34a8799",
+        "refId": "177265|2026-12-12|21:00",
+        "start": "2026-12-12T21:00",
+        "end": "2026-12-12T22:00",
+        "name": "Ice Breakdancing",
+        "type": "Ice Breakdancing",
+        "notes": "6 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "bb013b67-5690-41c6-ab61-35af227dea83",
+        "refId": "177263|2026-12-13|10:00",
+        "start": "2026-12-13T10:00",
+        "end": "2026-12-13T21:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "93fd939f-8840-43e5-bb6e-8d1626e7ba1b",
+        "refId": "177265|2026-12-13|21:00",
+        "start": "2026-12-13T21:00",
+        "end": "2026-12-13T22:00",
+        "name": "Ice Breakdancing",
+        "type": "Ice Breakdancing",
+        "notes": "6 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "4a9803d5-a298-4d11-a240-c1289f3e3e49",
+        "refId": "177262|2026-12-14|10:00",
+        "start": "2026-12-14T10:00",
+        "end": "2026-12-14T16:00",
+        "name": "Leisure Skate (Unsupervised)",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "fb90e798-1d3a-4226-bfa5-428dc1b55883",
+        "refId": "177263|2026-12-14|16:00",
+        "start": "2026-12-14T16:00",
+        "end": "2026-12-14T21:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "ce3fe80f-dade-4b39-9c73-cc6458aa505d",
+        "refId": "177265|2026-12-14|21:00",
+        "start": "2026-12-14T21:00",
+        "end": "2026-12-14T22:00",
+        "name": "Ice Breakdancing",
+        "type": "Ice Breakdancing",
+        "notes": "6 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "0671314a-51cc-42bd-997c-aa6ca7d74d14",
+        "refId": "177262|2026-12-15|10:00",
+        "start": "2026-12-15T10:00",
+        "end": "2026-12-15T16:00",
+        "name": "Leisure Skate (Unsupervised)",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "6b317288-fcb2-491e-8bf1-6e2aea38aed3",
+        "refId": "177263|2026-12-15|16:00",
+        "start": "2026-12-15T16:00",
+        "end": "2026-12-15T21:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "9d027a46-de80-40d0-8a0a-862840eb135a",
+        "refId": "177265|2026-12-15|21:00",
+        "start": "2026-12-15T21:00",
+        "end": "2026-12-15T22:00",
+        "name": "Ice Breakdancing",
+        "type": "Ice Breakdancing",
+        "notes": "6 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "91dc8ae2-638e-4ce8-898c-e121980bc218",
+        "refId": "177262|2026-12-16|10:00",
+        "start": "2026-12-16T10:00",
+        "end": "2026-12-16T16:00",
+        "name": "Leisure Skate (Unsupervised)",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "48dfe87e-dcb2-43d1-bece-83183503bace",
+        "refId": "177263|2026-12-16|16:00",
+        "start": "2026-12-16T16:00",
+        "end": "2026-12-16T21:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "2141b894-c21e-4c1f-87db-bd9025bbbbb9",
+        "refId": "177265|2026-12-16|21:00",
+        "start": "2026-12-16T21:00",
+        "end": "2026-12-16T22:00",
+        "name": "Ice Breakdancing",
+        "type": "Ice Breakdancing",
+        "notes": "6 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "13fbb44e-0f8c-4ab9-be92-9ad3ca0845b9",
+        "refId": "177262|2026-12-17|10:00",
+        "start": "2026-12-17T10:00",
+        "end": "2026-12-17T16:00",
+        "name": "Leisure Skate (Unsupervised)",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "27a7aba3-cfa7-40ed-b4e4-b64bfae89b63",
+        "refId": "177263|2026-12-17|16:00",
+        "start": "2026-12-17T16:00",
+        "end": "2026-12-17T21:00",
+        "name": "Leisure Skate",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "e8aefa5f-f288-4da1-9ccb-cd3cf63ebab9",
+        "refId": "177265|2026-12-17|21:00",
+        "start": "2026-12-17T21:00",
+        "end": "2026-12-17T22:00",
+        "name": "Ice Breakdancing",
+        "type": "Ice Breakdancing",
+        "notes": "6 years and over",
+        "ticket": 0
+      }
+    ]
+  }
+}

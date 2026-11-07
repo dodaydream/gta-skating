@@ -37,24 +37,186 @@
     }
   ],
   "schedule": {
-    "updatedAt": "2026-11-05T03:58:16.564Z",
+    "updatedAt": "2026-11-07T16:20:03.451Z",
     "programs": [
       {
-        "id": "34d5af1a-a2f2-4304-9018-357738e868f9",
-        "start": "2026-11-05T10:00",
-        "end": "2026-11-05T12:00",
+        "id": "81e9f498-8ee3-4b85-b2cf-1a39cd4b3e24",
+        "refId": "175743|2026-11-08|15:30",
+        "start": "2026-11-08T15:30",
+        "end": "2026-11-08T17:00",
+        "name": "Adapted Leisure Skate with Family",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "0570b747-70eb-4ac8-a0b8-1f6f8644bb69",
+        "refId": "175740|2026-11-10|10:00",
+        "start": "2026-11-10T10:00",
+        "end": "2026-11-10T12:00",
         "name": "Leisure Skate: Older Adult (Unsupervised)",
         "type": "Public Skate",
         "notes": "60 years and over",
         "ticket": 0
       },
       {
-        "id": "149362ea-aef1-40c1-8fc9-ab026b55f6dc",
-        "start": "2026-11-08T15:30",
-        "end": "2026-11-08T17:00",
+        "id": "36483462-de0a-4dff-bce6-0d5a5b653d57",
+        "refId": "175740|2026-11-12|10:00",
+        "start": "2026-11-12T10:00",
+        "end": "2026-11-12T12:00",
+        "name": "Leisure Skate: Older Adult (Unsupervised)",
+        "type": "Public Skate",
+        "notes": "60 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "0af92f21-f29e-4c9a-a47e-80e35674e032",
+        "refId": "175743|2026-11-15|15:30",
+        "start": "2026-11-15T15:30",
+        "end": "2026-11-15T17:00",
         "name": "Adapted Leisure Skate with Family",
         "type": "Public Skate",
         "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "fac842dd-c4cf-4ae7-8fe1-9b4fca82cb40",
+        "refId": "175740|2026-11-17|10:00",
+        "start": "2026-11-17T10:00",
+        "end": "2026-11-17T12:00",
+        "name": "Leisure Skate: Older Adult (Unsupervised)",
+        "type": "Public Skate",
+        "notes": "60 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "2b7b1c5f-1e79-415e-8460-df469b40bd0c",
+        "refId": "175740|2026-11-19|10:00",
+        "start": "2026-11-19T10:00",
+        "end": "2026-11-19T12:00",
+        "name": "Leisure Skate: Older Adult (Unsupervised)",
+        "type": "Public Skate",
+        "notes": "60 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "d1d614ad-332e-44be-8460-e12f2242c750",
+        "refId": "175743|2026-11-22|15:30",
+        "start": "2026-11-22T15:30",
+        "end": "2026-11-22T17:00",
+        "name": "Adapted Leisure Skate with Family",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "a290e45e-b5db-4974-93b8-153a55cb3589",
+        "refId": "175740|2026-11-24|10:00",
+        "start": "2026-11-24T10:00",
+        "end": "2026-11-24T12:00",
+        "name": "Leisure Skate: Older Adult (Unsupervised)",
+        "type": "Public Skate",
+        "notes": "60 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "81da6df5-e7aa-4fe1-a444-e3a673be88d6",
+        "refId": "175740|2026-11-26|10:00",
+        "start": "2026-11-26T10:00",
+        "end": "2026-11-26T12:00",
+        "name": "Leisure Skate: Older Adult (Unsupervised)",
+        "type": "Public Skate",
+        "notes": "60 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "0ca98fb3-6a10-4569-a7b1-c16885776194",
+        "refId": "175743|2026-11-29|15:30",
+        "start": "2026-11-29T15:30",
+        "end": "2026-11-29T17:00",
+        "name": "Adapted Leisure Skate with Family",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "d9fd76e1-8934-4549-8222-ed128cb0f160",
+        "refId": "175740|2026-12-01|10:00",
+        "start": "2026-12-01T10:00",
+        "end": "2026-12-01T12:00",
+        "name": "Leisure Skate: Older Adult (Unsupervised)",
+        "type": "Public Skate",
+        "notes": "60 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "813e4102-b2ae-4f2f-84aa-b7dd94335c88",
+        "refId": "175740|2026-12-03|10:00",
+        "start": "2026-12-03T10:00",
+        "end": "2026-12-03T12:00",
+        "name": "Leisure Skate: Older Adult (Unsupervised)",
+        "type": "Public Skate",
+        "notes": "60 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "ad71e993-4990-4e17-9d77-0c1ddcdc8163",
+        "refId": "175743|2026-12-06|15:30",
+        "start": "2026-12-06T15:30",
+        "end": "2026-12-06T17:00",
+        "name": "Adapted Leisure Skate with Family",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "743186b4-8f6f-4c87-bc7b-ec580505b35a",
+        "refId": "175740|2026-12-08|10:00",
+        "start": "2026-12-08T10:00",
+        "end": "2026-12-08T12:00",
+        "name": "Leisure Skate: Older Adult (Unsupervised)",
+        "type": "Public Skate",
+        "notes": "60 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "864fe86f-d079-45ef-a4c3-f85917f693fd",
+        "refId": "175740|2026-12-10|10:00",
+        "start": "2026-12-10T10:00",
+        "end": "2026-12-10T12:00",
+        "name": "Leisure Skate: Older Adult (Unsupervised)",
+        "type": "Public Skate",
+        "notes": "60 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "f95e2bf8-b228-48c6-b158-6cf735dc8786",
+        "refId": "175743|2026-12-13|15:30",
+        "start": "2026-12-13T15:30",
+        "end": "2026-12-13T17:00",
+        "name": "Adapted Leisure Skate with Family",
+        "type": "Public Skate",
+        "notes": "0 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "39b0c252-0c6d-46cf-a530-ca9ae15db15f",
+        "refId": "175740|2026-12-15|10:00",
+        "start": "2026-12-15T10:00",
+        "end": "2026-12-15T12:00",
+        "name": "Leisure Skate: Older Adult (Unsupervised)",
+        "type": "Public Skate",
+        "notes": "60 years and over",
+        "ticket": 0
+      },
+      {
+        "id": "2ca2e315-4f29-4676-8da9-861b449d8bd8",
+        "refId": "175740|2026-12-17|10:00",
+        "start": "2026-12-17T10:00",
+        "end": "2026-12-17T12:00",
+        "name": "Leisure Skate: Older Adult (Unsupervised)",
+        "type": "Public Skate",
+        "notes": "60 years and over",
         "ticket": 0
       }
     ]

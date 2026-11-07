@@ -1,0 +1,38 @@
+{
+  "name": "William H. Bolton Arena",
+  "url": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=3495",
+  "timezone": "America/Toronto",
+  "address": "40 Rossmore Rd, Toronto, ON",
+  "coordinates": {
+    "lat": 43.671227,
+    "lon": -79.415168
+  },
+  "rinks": [
+    {
+      "name": "Ice Rink",
+      "type": "North American / NHL"
+    }
+  ],
+  "amenities": [
+    "dressing_rooms",
+    "lockers"
+  ],
+  "info": [
+    {
+      "key": "operator",
+      "value": "City of Toronto"
+    },
+    {
+      "key": "phone",
+      "value": "416-392-0088"
+    },
+    {
+      "key": "website",
+      "value": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=3495"
+    }
+  ],
+  "schedule": {
+    "updatedAt": "2026-11-07T16:20:03.478Z",
+    "programs": []
+  }
+}
