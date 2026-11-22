@@ -1,12 +1,12 @@
-import SkatingApp from "@/components/SkatingApp";
 import type { Metadata } from "next";
-import { getSlugForVenue, getVenueBySlug, venues } from "@/data/schedules";
+import { getVenueBySlug, venueSlugParams } from "@/data/schedules";
 import { VenueSeoContent } from "@/components/seo/VenueSeoContent";
 import { VenueStructuredData } from "@/components/seo/VenueStructuredData";
 import { localizedAlternates } from "@/lib/site";
 
+// Shared with the `@modal/venue/[slug]` slot so both declare the same params.
 export function generateStaticParams() {
-  return venues.map((venue) => ({ slug: getSlugForVenue(venue.name) }));
+  return venueSlugParams();
 }
 
 export async function generateMetadata({
@@ -55,7 +55,6 @@ export default async function VenuePage({
           <VenueStructuredData venue={venue} slug={slug} locale={lang} />
         </>
       ) : null}
-      <SkatingApp initialSlug={slug} />
     </>
   );
 }

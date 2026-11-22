@@ -374,19 +374,14 @@ function FilteredProgramsAlert({ onShowAll }: { onShowAll: () => void }) {
   );
 }
 
-export function VenueDetailModal({
-  slug,
-  onClose,
-}: {
-  slug: string;
-  onClose: () => void;
-}) {
+export function VenueDetailModal({ slug }: { slug: string }) {
   const { t, i18n } = useTranslation();
   const {
     userLocation,
     fromDate: filterFrom,
     toDate: filterTo,
     types: filterTypes,
+    closeDetail: onClose,
   } = useSkatingAppData();
   const locale = normalizeLocale(i18n.resolvedLanguage);
   const [venue, setVenue] = useState<Venue | null>(null);
@@ -394,18 +389,11 @@ export function VenueDetailModal({
   const [view, setView] = useState<"day" | "week">("day");
   const [reports, setReports] = useState<BusyReport[]>([]);
   const [reportsLoading, setReportsLoading] = useState(FIREBASE_CONFIGURED);
-  const [reportsSlug, setReportsSlug] = useState(slug);
   const [, setNowTick] = useState(0);
   const [filterActive, setFilterActive] = useState(true);
   const bodyRef = useRef<HTMLDivElement>(null);
   const openedRef = useRef(false);
   const isDesktop = useIsDesktop();
-
-  if (reportsSlug !== slug) {
-    setReportsSlug(slug);
-    setReports([]);
-    setReportsLoading(FIREBASE_CONFIGURED);
-  }
 
   useEffect(() => {
     let cancelled = false;

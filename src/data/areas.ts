@@ -169,6 +169,15 @@ export function getAreaBySlug(slug: string): Area | undefined {
   return bySlug.get(slug);
 }
 
+/**
+ * The `generateStaticParams` entries for the area route. Shared by
+ * `areas/[area]/page.tsx` and the `@modal/areas/[area]` slot, which must
+ * declare identical params (a divergence silently drops pages from the export).
+ */
+export function areaSlugParams(): { area: string }[] {
+  return areas.map((area) => ({ area: area.slug }));
+}
+
 const KM_PER_DEGREE_LAT = 111.32;
 
 /**

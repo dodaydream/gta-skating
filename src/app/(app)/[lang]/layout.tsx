@@ -7,6 +7,7 @@ import { fontClassName } from "@/lib/fonts";
 import { ThemeScript } from "@/components/ThemeScript";
 import { ThemeSync } from "@/components/ThemeSync";
 import { SiteScripts } from "@/components/SiteScripts";
+import { SkatingShell } from "@/components/SkatingShell";
 import "../../globals.css";
 
 export const metadata = rootMetadata;
@@ -23,11 +24,17 @@ export const dynamicParams = false;
 /**
  * Root layout for the localized app. `[lang]` is a root parameter, so the
  * locale is available here and the `<html lang>`/`dir` are server-rendered.
+ *
+ * The persistent skating shell (provider + map + sidebar + filters) lives here
+ * so it stays mounted across navigation; the page content (`children`, the
+ * `sr-only` SEO markup) and the `@modal` slot render inside it.
  */
 export default async function LocaleRootLayout({
   children,
+  modal,
 }: {
   children: ReactNode;
+  modal: ReactNode;
 }) {
   const locale = normalizeLocale(await lang());
   return (
@@ -40,7 +47,9 @@ export default async function LocaleRootLayout({
       <body className="flex h-full flex-col overflow-hidden">
         <ThemeScript />
         <ThemeSync />
-        <LocaleProvider locale={locale}>{children}</LocaleProvider>
+        <LocaleProvider locale={locale}>
+          <SkatingShell modal={modal}>{children}</SkatingShell>
+        </LocaleProvider>
         <SiteScripts />
       </body>
     </html>

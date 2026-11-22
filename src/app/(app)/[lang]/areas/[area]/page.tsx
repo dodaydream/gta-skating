@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import SkatingApp from "@/components/SkatingApp";
 import { AreaSeoContent } from "@/components/seo/AreaSeoContent";
 import { AreaStructuredData } from "@/components/seo/AreaStructuredData";
-import { areas, getAreaBySlug } from "@/data/areas";
+import { areaSlugParams, getAreaBySlug } from "@/data/areas";
 import { getNearbyVenues } from "@/data/area-venues";
 import { localizedAlternates, SITE_URL } from "@/lib/site";
 
+// Shared with the `@modal/areas/[area]` slot so both declare the same params.
 export function generateStaticParams() {
-  return areas.map((area) => ({ area: area.slug }));
+  return areaSlugParams();
 }
 
 export async function generateMetadata({
@@ -55,7 +55,6 @@ export default async function AreaPage({
     <>
       <AreaSeoContent area={area} locale={lang} />
       <AreaStructuredData area={area} locale={lang} />
-      <SkatingApp area={area} />
     </>
   );
 }

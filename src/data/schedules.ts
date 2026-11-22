@@ -82,3 +82,13 @@ export function getVenueBySlug(slug: string): Venue | undefined {
 export function getSlugForVenue(name: string): string {
   return slugify(name);
 }
+
+/**
+ * The `generateStaticParams` entries for the venue route. Shared by
+ * `venue/[slug]/page.tsx` and the `@modal/venue/[slug]` slot: a slot that
+ * declares different params silently drops every real venue page from the
+ * static export, so both must call this same helper.
+ */
+export function venueSlugParams(): { slug: string }[] {
+  return venues.map((venue) => ({ slug: getSlugForVenue(venue.name) }));
+}

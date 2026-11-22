@@ -11,10 +11,11 @@ import {
   type MutableRefObject,
   type ReactNode,
 } from "react";
+import { useParams, useRouter } from "next/navigation";
 import type { RinkEnvironment, Venue, VenueDisplay } from "@/types/venue";
 import type { MapBounds } from "@/types/map";
 import type { Coordinates, ProgramItem, ProgramType } from "@/types/schedule";
-import { getAreaBounds } from "@/data/areas";
+import { getAreaBounds, getAreaBySlug } from "@/data/areas";
 import { fetchPrograms } from "@/api/programs";
 import { trackEvent } from "@/lib/analytics";
 import { useFavorites } from "@/lib/favorites";
@@ -34,8 +35,6 @@ export type SkatingArea = {
   radiusKm: number;
 };
 
-const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
-
 function nowLocalISO(): string {
   const now = new Date();
   const y = now.getFullYear();
@@ -51,16 +50,8 @@ function todayRange(): [string, string] {
   return [now, `${now.slice(0, 10)}T23:59`];
 }
 
-function getSlugFromPath(locale: string): string | null {
-  const prefix = `${BASE_PATH}/${locale}/venue/`;
-  const { pathname } = window.location;
-  if (!pathname.startsWith(prefix)) return null;
-  const slug = pathname.slice(prefix.length);
-  return slug ? decodeURIComponent(slug) : null;
-}
-
-function pushUrl(locale: string, path: string) {
-  window.history.pushState(null, "", `${BASE_PATH}/${locale}${path}`);
+function useStringParam(value: string | string[] | undefined): string | undefined {
+  return typeof value === "string" ? value : undefined;
 }
 
 export type SkatingAppData = {
@@ -85,7 +76,6 @@ export type SkatingAppData = {
   hideEmpty: boolean;
 
   // Selection & map scope
-  selectedIndex: number | null;
   visibleIndex: number | null;
   detailSlug: string | null;
   focusVenue: Coordinates | null;
@@ -109,7 +99,6 @@ export type SkatingAppData = {
   onSelect: (index: number) => void;
   openVenue: (venue: Venue) => void;
   closeDetail: () => void;
-  focusVenueSlug: (slug: string) => void;
   onBoundsChange: (bounds: MapBounds, userInitiated: boolean) => void;
 };
 
@@ -132,33 +121,35 @@ export function useUserLocation(): Coordinates | null {
 }
 
 export function SkatingAppDataProvider({
-  initialSlug,
-  area,
   children,
 }: {
-  initialSlug?: string;
-  area?: SkatingArea;
   children: ReactNode;
 }) {
   const locale = useLocale();
+  const router = useRouter();
+  const params = useParams<{ slug?: string; area?: string }>();
   const locateRef = useRef<(() => void) | null>(null);
+
+  // The open venue and the scoped area are derived from the URL: the shell
+  // (and this provider) is mounted from `[lang]/layout.tsx`, so these params
+  // update as the user navigates without remounting the map or the list.
+  const detailSlug = useStringParam(params.slug) ?? null;
+  const areaSlug = useStringParam(params.area);
+  const area = useMemo(
+    () => (areaSlug ? getAreaBySlug(areaSlug) : undefined),
+    [areaSlug]
+  );
+
+  // Set when a venue is opened from within the app (list/map). Distinguishes an
+  // in-app open — which closes with `router.back()` — from a deep link, which
+  // closes by pushing the unscoped home route.
+  const openedInAppRef = useRef(false);
 
   const [fromDate, setFromDateState] = useState("");
   const [toDate, setToDateState] = useState("");
   const [items, setItems] = useState<ProgramItem[]>([]);
   const [venues, setVenues] = useState<Venue[]>([]);
   const [loading, setLoading] = useState(true);
-  const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
-  const [detailSlug, setDetailSlug] = useState<string | null>(
-    initialSlug ?? null
-  );
-  const [focusVenue, setFocusVenue] = useState<Coordinates | null>(() => {
-    if (!initialSlug) return null;
-    const coords = getVenueBySlug(initialSlug)?.coordinates;
-    return coords && isFinite(coords.lat) && isFinite(coords.lon)
-      ? { lat: coords.lat, lon: coords.lon }
-      : null;
-  });
 
   const favorites = useFavorites();
 
@@ -185,41 +176,29 @@ export function SkatingAppDataProvider({
     () => (area ? getAreaBounds(area) : null),
     [area]
   );
-  const [mapBounds, setMapBounds] = useState<MapBounds | null>(fitBounds);
-  // An area page is scoped to its initial bounds only. Once the user changes the
-  // map range (pan/zoom) we drop the area scope: the sidebar heading reverts to
-  // the generic title and the URL returns to the root.
-  const [areaCleared, setAreaCleared] = useState(false);
-  const activeArea = areaCleared ? undefined : area;
+  const [mapBounds, setMapBounds] = useState<MapBounds | null>(() => fitBounds);
+  // An area page is scoped to its initial bounds only. Re-scope `mapBounds`
+  // whenever an area param appears (e.g. a soft navigation into an area page);
+  // it is deliberately not reapplied when the area param clears after a pan.
+  const [syncedFitBounds, setSyncedFitBounds] = useState(fitBounds);
+  if (fitBounds !== syncedFitBounds) {
+    setSyncedFitBounds(fitBounds);
+    if (fitBounds) setMapBounds(fitBounds);
+  }
+  const activeArea = area;
 
   const [userLocation, setUserLocation] = useState<Coordinates | null>(null);
   const hasSetDate = useRef(false);
 
-  const focusVenueSlug = useCallback((slug: string) => {
-    const coords = getVenueBySlug(slug)?.coordinates;
-    if (!coords || !isFinite(coords.lat) || !isFinite(coords.lon)) return;
-    setFocusVenue({ lat: coords.lat, lon: coords.lon });
-  }, []);
-
-  // A venue opened via the URL becomes the map's focus point (initialSlug is
-  // handled by the lazy focusVenue initializer above).
-  useEffect(() => {
-    const onPopState = () => {
-      const slug = getSlugFromPath(locale);
-      if (slug) {
-        const venue = getVenueBySlug(slug);
-        if (venue) {
-          setDetailSlug(slug);
-          focusVenueSlug(slug);
-        }
-      } else {
-        setDetailSlug(null);
-        setSelectedIndex(null);
-      }
-    };
-    window.addEventListener("popstate", onPopState);
-    return () => window.removeEventListener("popstate", onPopState);
-  }, [focusVenueSlug, locale]);
+  // A venue opened via the URL (deep link or navigation) becomes the map's
+  // focus point.
+  const focusVenue = useMemo<Coordinates | null>(() => {
+    if (!detailSlug) return null;
+    const coords = getVenueBySlug(detailSlug)?.coordinates;
+    return coords && isFinite(coords.lat) && isFinite(coords.lon)
+      ? { lat: coords.lat, lon: coords.lon }
+      : null;
+  }, [detailSlug]);
 
   useEffect(() => {
     if (hasSetDate.current) return;
@@ -355,63 +334,60 @@ export function SkatingAppDataProvider({
 
   // An area page is scoped to its initial bounds only. Once the user changes the
   // map range (pan/zoom), hand off to the unscoped app at the root route so the
-  // sidebar title and list reflect the new, wider scope. The URL is updated in
-  // place rather than via the router, so the map and drawer are not remounted.
+  // sidebar title and list reflect the new, wider scope.
   const onBoundsChange = useCallback(
     (bounds: MapBounds, userInitiated: boolean) => {
       setMapBounds(bounds);
       if (area && userInitiated) {
-        setAreaCleared(true);
-        window.history.replaceState(null, "", `${BASE_PATH}/${locale}`);
+        router.replace(`/${locale}`);
       }
     },
-    [area, locale]
-  );
-
-  const onSelect = useCallback(
-    (index: number) => {
-      const next = selectedIndex === index ? null : index;
-      setSelectedIndex(next);
-      const venue = next === null ? null : venues[next];
-      const slug = venue ? getSlugForVenue(venue.name) : null;
-      if (slug) {
-        pushUrl(locale, `/venue/${slug}`);
-        setDetailSlug(slug);
-      } else {
-        pushUrl(locale, "");
-        setDetailSlug(null);
-      }
-    },
-    [venues, selectedIndex, locale]
+    [area, locale, router]
   );
 
   const openVenue = useCallback(
     (venue: Venue) => {
       const slug = getSlugForVenue(venue.name);
       if (!slug) return;
-      pushUrl(locale, `/venue/${slug}`);
-      setDetailSlug(slug);
-      const index = venues.findIndex((v) => v.name === venue.name);
-      setSelectedIndex(index >= 0 ? index : null);
+      openedInAppRef.current = true;
+      router.push(`/${locale}/venue/${slug}`);
     },
-    [venues, locale]
+    [locale, router]
   );
 
   const closeDetail = useCallback(() => {
-    pushUrl(locale, "");
-    setDetailSlug(null);
-    setSelectedIndex(null);
-  }, [locale]);
+    // An in-app open has a previous history entry to return to; a deep link
+    // does not, so fall back to the unscoped home map for the current locale.
+    if (openedInAppRef.current) {
+      router.back();
+    } else {
+      router.push(`/${locale}`);
+    }
+  }, [locale, router]);
 
-  // Selected pin: the current selection, or (once the list loads) the venue
-  // opened via the URL so its pin shows as selected.
+  const onSelect = useCallback(
+    (index: number) => {
+      const venue = venues[index];
+      if (!venue) return;
+      const slug = getSlugForVenue(venue.name);
+      // Clicking the already-open venue's pin closes its detail.
+      if (slug && slug === detailSlug) {
+        closeDetail();
+      } else {
+        openVenue(venue);
+      }
+    },
+    [venues, detailSlug, closeDetail, openVenue]
+  );
+
+  // The venue whose pin is selected: the one open in the detail view.
   const visibleIndex = useMemo(() => {
-    if (!detailSlug) return selectedIndex;
+    if (!detailSlug) return null;
     const venue = getVenueBySlug(detailSlug);
-    if (!venue) return selectedIndex;
+    if (!venue) return null;
     const index = venues.findIndex((v) => v.name === venue.name);
-    return index >= 0 ? index : selectedIndex;
-  }, [detailSlug, venues, selectedIndex]);
+    return index >= 0 ? index : null;
+  }, [detailSlug, venues]);
 
   // When the favourites-only filter is active the map scales to fit every
   // favourite venue, regardless of the current date/program filters. Area pages
@@ -445,7 +421,6 @@ export function SkatingAppDataProvider({
       venueDisplay,
       favoritesOnly,
       hideEmpty,
-      selectedIndex,
       visibleIndex,
       detailSlug,
       focusVenue,
@@ -465,7 +440,6 @@ export function SkatingAppDataProvider({
       onSelect,
       openVenue,
       closeDetail,
-      focusVenueSlug,
       onBoundsChange,
     }),
     [
@@ -483,7 +457,6 @@ export function SkatingAppDataProvider({
       venueDisplay,
       favoritesOnly,
       hideEmpty,
-      selectedIndex,
       visibleIndex,
       detailSlug,
       focusVenue,
@@ -502,7 +475,6 @@ export function SkatingAppDataProvider({
       onSelect,
       openVenue,
       closeDetail,
-      focusVenueSlug,
       onBoundsChange,
     ]
   );

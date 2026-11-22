@@ -1,20 +1,25 @@
 "use client";
 
 import dynamic from "next/dynamic";
+import type { ReactNode } from "react";
 import { FilterBar } from "@/components/filters/FilterBar";
 import { ScheduleSidebar } from "@/components/ScheduleSidebar";
-import { VenueDetailModal } from "@/components/schedule/VenueDetailModal";
 import {
   SkatingAppDataProvider,
   useSkatingAppData,
-  type SkatingArea,
 } from "@/components/SkatingAppDataProvider";
 
 const VenueMap = dynamic(() => import("@/components/map/VenueMap"), {
   ssr: false,
 });
 
-function SkatingAppContent() {
+function SkatingShellInner({
+  children,
+  modal,
+}: {
+  children: ReactNode;
+  modal: ReactNode;
+}) {
   const {
     venues,
     visibleIndex,
@@ -25,8 +30,6 @@ function SkatingAppContent() {
     locateRef,
     onSelect,
     onBoundsChange,
-    detailSlug,
-    closeDetail,
   } = useSkatingAppData();
 
   return (
@@ -54,27 +57,28 @@ function SkatingAppContent() {
         <ScheduleSidebar />
       </div>
 
-      {detailSlug ? (
-        <VenueDetailModal
-          key={detailSlug}
-          slug={detailSlug}
-          onClose={closeDetail}
-        />
-      ) : null}
+      {children}
+      {modal}
     </div>
   );
 }
 
-export default function SkatingApp({
-  initialSlug,
-  area,
+/**
+ * The persistent skating app shell: shared data provider, map, sidebar, and
+ * filter bar. Rendered from `[lang]/layout.tsx` so it stays mounted across
+ * navigation, with the page content (`children`) and the `@modal` slot rendered
+ * inside it so both can read the shared context.
+ */
+export function SkatingShell({
+  children,
+  modal,
 }: {
-  initialSlug?: string;
-  area?: SkatingArea;
+  children: ReactNode;
+  modal: ReactNode;
 }) {
   return (
-    <SkatingAppDataProvider initialSlug={initialSlug} area={area}>
-      <SkatingAppContent />
+    <SkatingAppDataProvider>
+      <SkatingShellInner modal={modal}>{children}</SkatingShellInner>
     </SkatingAppDataProvider>
   );
 }
