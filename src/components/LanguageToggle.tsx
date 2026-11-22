@@ -5,14 +5,7 @@ import { cn } from "cn";
 import { useLocale, useSetLocale } from "@/i18n/LocaleProvider";
 import { LOCALE_STORAGE_KEY, SUPPORTED_LOCALES, type Locale } from "@/i18n/locales";
 
-export function LanguageToggle({
-  className,
-  onSelect,
-}: {
-  className?: string;
-  /** Called after the locale is switched (e.g. to dismiss a settings panel). */
-  onSelect?: () => void;
-}) {
+export function LanguageToggle({ className }: { className?: string }) {
   const { t } = useTranslation();
   const current = useLocale();
   const setLocale = useSetLocale();
@@ -32,7 +25,6 @@ export function LanguageToggle({
     const rest = pathname.replace(/^\/[^/]+/, "");
     window.history.replaceState(null, "", `/${locale}${rest}${search}${hash}`);
     setLocale(locale);
-    onSelect?.();
   };
 
   return (
