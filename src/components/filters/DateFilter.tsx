@@ -10,15 +10,8 @@ import { Button } from "@/components/ui/button";
 import { DateRangePicker } from "@/components/ui/date-picker";
 import { normalizeLocale, type Locale } from "@/i18n/locales";
 import { dayjsLocale, formatTime } from "@/lib/schedule";
+import { useSkatingAppData } from "@/components/SkatingAppDataProvider";
 import { IconCalendarWeek, IconCalendar } from "@tabler/icons-react";
-
-interface DateFilterProps {
-  from: string;
-  to: string;
-  onFromChange: (v: string) => void;
-  onToChange: (v: string) => void;
-  onClear: () => void;
-}
 
 /**
  * Longest selectable date range: one week (7 days inclusive).
@@ -86,14 +79,15 @@ function displayLabel(
   return t("filters.anytime");
 }
 
-export function DateFilter({
-  from,
-  to,
-  onFromChange,
-  onToChange,
-  onClear,
-}: DateFilterProps) {
+export function DateFilter() {
   const { t, i18n } = useTranslation();
+  const {
+    fromDate: from,
+    toDate: to,
+    setFromDate: onFromChange,
+    setToDate: onToChange,
+    resetDateRange: onClear,
+  } = useSkatingAppData();
   const locale = normalizeLocale(i18n.resolvedLanguage);
   const [open, setOpen] = useState(false);
   const [now, setNow] = useState<Date | null>(null);

@@ -6,6 +6,7 @@ import { useTranslation } from "react-i18next";
 import { cn } from "cn";
 import { ProgramType } from "@/types/schedule";
 import type { RinkEnvironment } from "@/types/venue";
+import { useSkatingAppData } from "@/components/SkatingAppDataProvider";
 import { AMENITIES } from "@/lib/amenities";
 import { Button } from "@/components/ui/button";
 import {
@@ -68,19 +69,6 @@ function useIsDesktop() {
   return useSyncExternalStore(subscribeDesktop, getDesktopSnapshot, () => true);
 }
 
-interface FilterDrawerProps {
-  types: ProgramType[];
-  onTypesChange: (types: ProgramType[]) => void;
-  rinkTypes: RinkEnvironment[];
-  onRinkTypesChange: (rinkTypes: RinkEnvironment[]) => void;
-  amenities: string[];
-  onAmenitiesChange: (amenities: string[]) => void;
-  sortBy: "time" | "distance";
-  onSortChange: (sortBy: "time" | "distance") => void;
-  hasLocation: boolean;
-  className?: string;
-}
-
 function FilterSection({
   title,
   defaultOpen = true,
@@ -111,19 +99,20 @@ function FilterSection({
   );
 }
 
-export function FilterDrawer({
-  types,
-  onTypesChange,
-  rinkTypes,
-  onRinkTypesChange,
-  amenities,
-  onAmenitiesChange,
-  sortBy,
-  onSortChange,
-  hasLocation,
-  className = "",
-}: FilterDrawerProps) {
+export function FilterDrawer({ className = "" }: { className?: string }) {
   const { t } = useTranslation();
+  const {
+    types,
+    setTypes: onTypesChange,
+    rinkTypes,
+    setRinkTypes: onRinkTypesChange,
+    amenities,
+    setAmenities: onAmenitiesChange,
+    sortBy,
+    setSortBy: onSortChange,
+    userLocation,
+  } = useSkatingAppData();
+  const hasLocation = !!userLocation;
   const [open, setOpen] = useState(false);
   const isDesktop = useIsDesktop();
   const count = types.length + rinkTypes.length + amenities.length;

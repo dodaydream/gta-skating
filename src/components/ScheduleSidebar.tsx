@@ -3,10 +3,10 @@
 import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
-import type { Venue } from "@/types/venue";
 import type { ProgramItem } from "@/types/schedule";
 import { ProgramList } from "@/components/ProgramList/ProgramList";
 import { UserAvatarButton, UserCentre } from "@/components/UserCentre";
+import { useSkatingAppData } from "@/components/SkatingAppDataProvider";
 import { distanceKm } from "@/lib/schedule";
 import {
   Drawer,
@@ -14,17 +14,6 @@ import {
   DrawerDescription,
   DrawerTitle,
 } from "@/components/ui/drawer";
-
-type ScheduleSidebarProps = {
-  loading: boolean;
-  items: ProgramItem[];
-  userLocation?: { lat: number; lon: number } | null;
-  onSelectVenue: (venue: Venue) => void;
-  detailOpen: boolean;
-  sortBy: "time" | "distance";
-  /** Overrides the default heading, e.g. "Skating near Davenport". */
-  title?: string;
-};
 
 const DESKTOP_QUERY = "(min-width: 1024px)";
 const MIN_SNAP = 0.5;
@@ -141,16 +130,22 @@ function useIsDesktop() {
   return isDesktop;
 }
 
-export function ScheduleSidebar({
-  loading,
-  items,
-  userLocation,
-  onSelectVenue,
-  detailOpen,
-  sortBy,
-  title,
-}: ScheduleSidebarProps) {
+export function ScheduleSidebar() {
   const { t } = useTranslation();
+  const {
+    loading,
+    items,
+    userLocation,
+    sortBy,
+    detailSlug,
+    activeArea,
+    openVenue: onSelectVenue,
+  } = useSkatingAppData();
+  // Overrides the default heading, e.g. "Skating near Davenport".
+  const title = activeArea
+    ? t("sidebar.titleArea", { area: activeArea.name })
+    : undefined;
+  const detailOpen = detailSlug !== null;
   const [open, setOpen] = useState(true);
   const [userCentreOpen, setUserCentreOpen] = useState(false);
   const isDesktop = useIsDesktop();
@@ -195,7 +190,6 @@ export function ScheduleSidebar({
           <ProgramList
             items={sortedItems}
             loading={loading}
-            userLocation={userLocation}
             onSelectVenue={onSelectVenue}
             className="flex min-h-0 flex-1 flex-col"
             listClassName="flex flex-1 flex-col gap-2"
@@ -239,7 +233,6 @@ export function ScheduleSidebar({
             <ProgramList
               items={sortedItems}
               loading={loading}
-              userLocation={userLocation}
               onSelectVenue={onSelectVenue}
             />
             <ScheduleFooter />

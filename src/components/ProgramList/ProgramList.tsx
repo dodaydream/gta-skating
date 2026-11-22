@@ -17,7 +17,6 @@ import { IconSnowflake } from "@tabler/icons-react";
 type ProgramListProps = {
   loading: boolean;
   items: ProgramItem[];
-  userLocation?: { lat: number; lon: number } | null;
   onSelectVenue: (venue: Venue) => void;
   className?: string;
   listClassName?: string;
@@ -26,7 +25,6 @@ type ProgramListProps = {
 export function ProgramList({
   loading,
   items,
-  userLocation,
   onSelectVenue,
   className = "",
   listClassName = "flex flex-col gap-2 my-1",
@@ -55,7 +53,6 @@ export function ProgramList({
               key={item.id}
               program={item}
               onSelect={() => onSelectVenue(item.venue)}
-              userLocation={userLocation}
             />
           ))
         )}

@@ -3,7 +3,7 @@
 import { Fragment, useCallback, useEffect, useRef, useState, useSyncExternalStore } from "react";
 import { useTranslation } from "react-i18next";
 import type { InfoItem, Rink, Venue } from "@/types/venue";
-import type { Program, ProgramType } from "@/types/schedule";
+import type { Program } from "@/types/schedule";
 import type { BusyReport } from "@/types/feedback";
 import { fetchVenueDetails } from "@/api/venues";
 import { getVenueBySlug } from "@/data/venue-meta";
@@ -49,6 +49,7 @@ import { amenityIcon } from "@/lib/amenities";
 import { SITE_REPO } from "@/lib/site";
 import { normalizeLocale } from "@/i18n/locales";
 import { useLocale } from "@/i18n/LocaleProvider";
+import { useSkatingAppData } from "@/components/SkatingAppDataProvider";
 import {
   IconAlertCircle,
   IconCheck,
@@ -376,19 +377,17 @@ function FilteredProgramsAlert({ onShowAll }: { onShowAll: () => void }) {
 export function VenueDetailModal({
   slug,
   onClose,
-  userLocation,
-  filterFrom,
-  filterTo,
-  filterTypes,
 }: {
   slug: string;
   onClose: () => void;
-  userLocation?: { lat: number; lon: number } | null;
-  filterFrom?: string;
-  filterTo?: string;
-  filterTypes?: ProgramType[];
 }) {
   const { t, i18n } = useTranslation();
+  const {
+    userLocation,
+    fromDate: filterFrom,
+    toDate: filterTo,
+    types: filterTypes,
+  } = useSkatingAppData();
   const locale = normalizeLocale(i18n.resolvedLanguage);
   const [venue, setVenue] = useState<Venue | null>(null);
   const [error, setError] = useState(false);

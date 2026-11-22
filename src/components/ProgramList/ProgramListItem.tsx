@@ -9,18 +9,18 @@ import {
   getTodayInVenueTime,
 } from "@/lib/schedule";
 import { normalizeLocale } from "@/i18n/locales";
+import { useUserLocation } from "@/components/SkatingAppDataProvider";
 import { TicketBadge } from "@/components/schedule/TicketBadge";
 
 export function ProgramListItem({
   program,
   onSelect,
-  userLocation,
 }: {
   program: ProgramItem;
   onSelect: () => void;
-  userLocation?: { lat: number; lon: number } | null;
 }) {
   const { t, i18n } = useTranslation();
+  const userLocation = useUserLocation();
   const locale = normalizeLocale(i18n.resolvedLanguage);
   const venue = program.venue;
   const programDate = program.start.slice(0, 10);

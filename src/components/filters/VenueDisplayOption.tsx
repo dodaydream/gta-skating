@@ -2,17 +2,13 @@
 
 import { useTranslation } from "react-i18next";
 import type { VenueDisplay } from "@/types/venue";
+import { useSkatingAppData } from "@/components/SkatingAppDataProvider";
 import { Button } from "@/components/ui/button";
 import {
   IconEyeFilled,
   IconEyeOff,
   IconStarFilled,
 } from "@tabler/icons-react";
-
-interface VenueDisplayOptionProps {
-  venueDisplay: VenueDisplay;
-  onVenueDisplayChange: (venueDisplay: VenueDisplay) => void;
-}
 
 const VENUE_DISPLAY_OPTIONS: { value: VenueDisplay; labelKey: string }[] = [
   { value: "favorites", labelKey: "filters.favoritesOnly" },
@@ -30,11 +26,12 @@ function VenueDisplayIcon({ value }: { value: VenueDisplay }) {
   return <IconEyeFilled className="size-4 text-blue-500" />;
 }
 
-export function VenueDisplayOption({
-  venueDisplay,
-  onVenueDisplayChange,
-}: VenueDisplayOptionProps) {
+export function VenueDisplayOption() {
   const { t } = useTranslation();
+  const {
+    venueDisplay,
+    setVenueDisplay: onVenueDisplayChange,
+  } = useSkatingAppData();
 
   const venueDisplayIndex = VENUE_DISPLAY_OPTIONS.findIndex(
     (option) => option.value === venueDisplay

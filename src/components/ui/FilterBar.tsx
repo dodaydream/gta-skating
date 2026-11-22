@@ -1,20 +1,17 @@
 "use client";
 
-import type { ReactNode } from "react";
 import { cn } from "cn";
+import { DateFilter } from "@/components/filters/DateFilter";
+import { FilterDrawer } from "@/components/filters/FilterDrawer";
+import { LocateButton } from "@/components/filters/LocateButton";
+import { VenueDisplayOption } from "@/components/filters/VenueDisplayOption";
 
 /**
  * Horizontal control bar for the map overlay. On mobile the controls can
  * exceed the viewport width, so the bar scrolls horizontally instead of
  * wrapping; on desktop everything fits and scrolling is disabled.
  */
-export function FilterBar({
-  children,
-  className,
-}: {
-  children: ReactNode;
-  className?: string;
-}) {
+export function FilterBar({ className }: { className?: string }) {
   return (
     <div
       className={cn(
@@ -23,7 +20,10 @@ export function FilterBar({
         className
       )}
     >
-      {children}
+      <LocateButton />
+      <DateFilter />
+      <FilterDrawer />
+      <VenueDisplayOption />
     </div>
   );
 }
