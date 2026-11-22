@@ -46,7 +46,7 @@ function SkatingShellInner({
             fitTo={favoriteFitPoints}
           />
 
-          <div className="absolute left-0 right-0 top-3 z-40 pl-[calc(var(--safe-left)_+_0.75rem)] pr-[calc(var(--safe-right)_+_0.75rem)] lg:top-6 lg:pl-[calc(var(--safe-left)_+_1.5rem)] lg:pr-[calc(var(--safe-right)_+_1.5rem)]">
+          <div className="absolute left-0 right-0 top-3 z-40 pl-[calc(var(--spacing)*1.5)] pr-[calc(var(--spacing)*1.5)] lg:top-6 lg:pl-[calc(var(--safe-left)_+_1.5rem)] lg:pr-[calc(var(--safe-right)_+_1.5rem)]">
             <AppBar />
           </div>
         </div>

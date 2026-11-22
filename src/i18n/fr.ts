@@ -27,6 +27,12 @@ const fr: Messages = {
     title: "Programmes de patinage",
     programsFound_one: "{{count}} programme trouvé",
     programsFound_other: "{{count}} programmes trouvés",
+    search: "Rechercher un lieu",
+    back: "Retour",
+    searchVenues: "Rechercher un lieu",
+    clearSearch: "Effacer la recherche",
+    noVenueMatches: "Aucun lieu trouvé",
+    noVenueMatchesHint: "Essayez un autre nom.",
     disclaimer:
       "Les horaires, les prix et d’autres renseignements peuvent être inexacts ou périmés — vérifiez toujours le site Web du lieu avant de vous déplacer.",
     privacy: "Politique de confidentialité",

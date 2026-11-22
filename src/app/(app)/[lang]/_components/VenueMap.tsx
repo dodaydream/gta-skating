@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { createPortal } from "react-dom";
 import * as maplibregl from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
 
@@ -12,6 +13,7 @@ if (typeof window !== "undefined") {
 import type { Venue } from "@/types/venue";
 import type { MapBounds } from "@/types/map";
 import { trackEvent } from "@/lib/analytics";
+import { LocateButton } from "./LocateButton";
 
 interface VenueMapProps {
   venues: Venue[];
@@ -362,6 +364,11 @@ export default function VenueMap({
   const appliedStyleRef = useRef<string | null>(null);
   const [dark, setDark] = useState(() => isDarkMode());
   const [mapReady, setMapReady] = useState(false);
+  // The map's own bottom-left control container, into which the locator button
+  // is portalled so it inherits MapLibre's control positioning.
+  const [locateContainer, setLocateContainer] = useState<HTMLElement | null>(
+    null,
+  );
 
   const venuesRef = useRef(venues);
   venuesRef.current = venues;
@@ -425,6 +432,12 @@ export default function VenueMap({
       map.addControl(new ZoomControl(), "top-right");
       map.addControl(new AttributionControl(), "bottom-right");
       map.addControl(new ScaleLegend(), "bottom-right");
+
+      setLocateContainer(
+        map
+          .getContainer()
+          .querySelector<HTMLElement>(".maplibregl-ctrl-bottom-left"),
+      );
 
       // The style references sprite images that may be absent; register a
       // resolver that substitutes a transparent 1x1 image. MapLibre awaits the
@@ -526,6 +539,7 @@ export default function VenueMap({
       userMarkerRef.current = null;
       centeredOnUserRef.current = false;
       locateRef.current = null;
+      setLocateContainer(null);
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
@@ -636,9 +650,18 @@ export default function VenueMap({
   }, [fitTo, mapReady]);
 
   return (
-    <div
-      ref={containerRef}
-      className="h-full w-full"
-    />
+    <>
+      <div
+        ref={containerRef}
+        className="h-full w-full"
+      />
+      {locateContainer &&
+        createPortal(
+          <div className="maplibregl-ctrl">
+            <LocateButton />
+          </div>,
+          locateContainer,
+        )}
+    </>
   );
 }

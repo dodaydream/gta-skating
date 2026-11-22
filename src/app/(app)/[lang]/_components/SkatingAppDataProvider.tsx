@@ -84,6 +84,7 @@ export type SkatingAppData = {
   // Actions
   onSelect: (index: number) => void;
   openVenue: (venue: Venue) => void;
+  openVenueBySlug: (slug: string) => void;
   closeDetail: () => void;
   openUser: () => void;
   closeUser: () => void;
@@ -316,6 +317,15 @@ export function SkatingAppDataProvider({
     [locale, router]
   );
 
+  const openVenueBySlug = useCallback(
+    (slug: string) => {
+      if (!slug) return;
+      openedInAppRef.current = true;
+      router.push(`/${locale}/venue/${slug}`);
+    },
+    [locale, router]
+  );
+
   const closeDetail = useCallback(() => {
     // An in-app open has a previous history entry to return to; a deep link
     // does not, so fall back to the unscoped home map for the current locale.
@@ -411,6 +421,7 @@ export function SkatingAppDataProvider({
       setVenueDisplay,
       onSelect,
       openVenue,
+      openVenueBySlug,
       closeDetail,
       openUser,
       closeUser,
@@ -446,6 +457,7 @@ export function SkatingAppDataProvider({
       setVenueDisplay,
       onSelect,
       openVenue,
+      openVenueBySlug,
       closeDetail,
       openUser,
       closeUser,

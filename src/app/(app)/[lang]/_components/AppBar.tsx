@@ -3,8 +3,8 @@
 import { cn } from "cn";
 import { DateFilter } from "./Filter/DateFilter";
 import { ProgramFilter } from "./Filter/ProgramFilter";
-import { LocateButton } from "./LocateButton";
 import { VenueDisplayOption } from "./VenueDisplayOption";
+import { VenueSearch } from "./VenueSearch";
 
 /**
  * Horizontal control bar for the map overlay. On mobile the controls can
@@ -20,7 +20,7 @@ export function AppBar({ className }: { className?: string }) {
         className
       )}
     >
-      <LocateButton />
+      <VenueSearch />
       <DateFilter />
       <ProgramFilter />
       <VenueDisplayOption />

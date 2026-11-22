@@ -195,6 +195,12 @@
       max(var(--drawer-min-height, 0px), var(--drawer-height, 0px)) + 0.5rem
     );
   }
+
+  /* Reset MapLibre's own control margins; the container offsets are the only
+     inset. */
+  .maplibregl-control-container .maplibregl-ctrl-bottom-left > .maplibregl-ctrl {
+    margin: 0;
+  }
 }
 
 .maplibregl-control-container .maplibregl-ctrl-top-right {
@@ -208,7 +214,7 @@
 }
 
 .maplibregl-control-container .maplibregl-ctrl-bottom-right {
-  right: calc(var(--safe-right) + 0.75rem);
+  right: calc(var(--spacing) * 1.5);
   /* Stack the scale (above) and the credit (below). */
   display: flex;
   flex-direction: column;
@@ -235,7 +241,7 @@
 }
 
 .maplibregl-control-container .maplibregl-ctrl-bottom-left {
-  left: var(--safe-left);
+  left: calc(var(--spacing) * 1.5);
 }
 
 /* Desktop: unify map-control insets with the app's 1.5rem padding so the

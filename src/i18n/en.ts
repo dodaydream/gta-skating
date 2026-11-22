@@ -24,6 +24,12 @@ const en = {
     title: "Skating Programs",
     programsFound_one: "{{count}} program found",
     programsFound_other: "{{count}} programs found",
+    search: "Search venues",
+    back: "Back",
+    searchVenues: "Search venues",
+    clearSearch: "Clear search",
+    noVenueMatches: "No venues found",
+    noVenueMatchesHint: "Try a different name.",
     disclaimer:
       "Times, prices, and other details may be inaccurate or out of date — always check the venue’s website before you go.",
     privacy: "Privacy Policy",
