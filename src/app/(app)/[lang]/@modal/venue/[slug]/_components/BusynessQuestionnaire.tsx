@@ -1,10 +1,10 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import type { BusyLevel } from "@/types/feedback";
 import type { Program } from "@/types/schedule";
-import { submitReport } from "@/api/busyness";
+import { hasReported, submitReport } from "@/api/busyness";
 import { minutesUntilEnd } from "@/lib/schedule";
 import { trackEvent } from "@/lib/analytics";
 import { cn } from "cn";
@@ -36,11 +36,13 @@ function errorKeyFor(error: unknown): string {
  * point-in-time report for the venue's current hour.
  */
 export function BusynessQuestionnaire({
+  venueId,
   venueSlug,
   timezone,
   program,
   onSubmitted,
 }: {
+  venueId: string;
   venueSlug: string;
   timezone: string;
   program?: Program | null;
@@ -50,23 +52,74 @@ export function BusynessQuestionnaire({
   const [selected, setSelected] = useState<BusyLevel | null>(null);
   const [status, setStatus] = useState<Status>("idle");
   const [errorKey, setErrorKey] = useState<string | null>(null);
+  const [result, setResult] = useState<{ key: string; rated: boolean } | null>(
+    null
+  );
 
   const busy = status === "submitting" || status === "submitted";
+  const key = program
+    ? [venueId, program.type, program.start, program.end].join("|")
+    : null;
+  // `result` is keyed so a stale check never hides the form for a new program.
+  const checking = key !== null && result?.key !== key;
+  const rated = key !== null && result?.key === key && result.rated;
+
+  // Hide the questionnaire when the reporter has already rated this program.
+  useEffect(() => {
+    if (!key || !program) return;
+    let cancelled = false;
+    hasReported({
+      venueId,
+      programType: program.type,
+      programStartAt: program.start,
+      programEndsAt: program.end,
+    })
+      .then((exists) => {
+        if (!cancelled) setResult({ key, rated: exists });
+      })
+      .catch(() => {
+        if (!cancelled) setResult({ key, rated: false });
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [key, venueId, program]);
 
   async function handleSubmit() {
-    if (selected === null || busy) return;
+    if (selected === null || busy || !program) return;
     setStatus("submitting");
     setErrorKey(null);
     try {
-      await submitReport(venueSlug, selected, timezone);
+      await submitReport({
+        venueId,
+        busy: selected,
+        programType: program.type,
+        programStartAt: program.start,
+        programEndsAt: program.end,
+      });
       setStatus("submitted");
-      trackEvent("busyness_report", { venue: venueSlug, busy: selected });
+      if (key) setResult({ key, rated: true });
+      trackEvent("busyness_report", {
+        venue: venueSlug,
+        busy: selected,
+        type: program.type,
+      });
       onSubmitted?.();
     } catch (error) {
       console.error("busyness_report_failed", error);
       setErrorKey(errorKeyFor(error));
       setStatus("error");
     }
+  }
+
+  if (checking) return null;
+
+  if (rated) {
+    return (
+      <section className="rounded-xl border border-black/[.08] bg-white p-3 text-sm text-zinc-500 dark:border-white/[.145] dark:bg-zinc-950 dark:text-zinc-400">
+        {t("busy.alreadyRated")}
+      </section>
+    );
   }
 
   return (
@@ -130,7 +183,7 @@ export function BusynessQuestionnaire({
             <button
               type="button"
               onClick={handleSubmit}
-              disabled={selected === null || busy}
+              disabled={selected === null || busy || !program}
               className="w-full rounded-full bg-black px-3 py-1 text-xs font-semibold text-white transition-opacity disabled:opacity-40 dark:bg-zinc-50 dark:text-black lg:ml-auto lg:w-auto"
             >
               {status === "submitting"

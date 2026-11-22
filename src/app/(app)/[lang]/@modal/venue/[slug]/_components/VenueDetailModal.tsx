@@ -394,6 +394,7 @@ export function VenueDetailModal({ slug }: { slug: string }) {
   const bodyRef = useRef<HTMLDivElement>(null);
   const openedRef = useRef(false);
   const isDesktop = useIsDesktop();
+  const venueId = getVenueBySlug(slug)?.id ?? slug;
 
   useEffect(() => {
     let cancelled = false;
@@ -421,15 +422,15 @@ export function VenueDetailModal({ slug }: { slug: string }) {
 
   const reloadReports = useCallback(() => {
     if (!FIREBASE_CONFIGURED) return;
-    loadVenueReports(slug)
+    loadVenueReports(venueId)
       .then(setReports)
       .catch(() => {});
-  }, [slug]);
+  }, [venueId]);
 
   useEffect(() => {
     if (!FIREBASE_CONFIGURED) return;
     let cancelled = false;
-    loadVenueReports(slug)
+    loadVenueReports(venueId)
       .then((data) => {
         if (!cancelled) setReports(data);
       })
@@ -442,7 +443,7 @@ export function VenueDetailModal({ slug }: { slug: string }) {
     return () => {
       cancelled = true;
     };
-  }, [slug]);
+  }, [venueId]);
 
   useEffect(() => {
     const id = setInterval(() => setNowTick((t) => t + 1), 60_000);
@@ -571,6 +572,7 @@ export function VenueDetailModal({ slug }: { slug: string }) {
           {currentProgram ? (
             <div className="px-5">
               <BusynessQuestionnaire
+                venueId={venueId}
                 venueSlug={slug}
                 timezone={venue.timezone}
                 program={currentProgram}

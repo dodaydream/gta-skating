@@ -5,10 +5,18 @@ service cloud.firestore {
       allow read: if true;
       allow create: if request.auth != null
         && request.auth.uid == request.resource.data.uid
-        && request.resource.data.venueSlug is string
-        && request.resource.data.venueSlug.size() < 100
         && request.resource.data.busy is number
         && request.resource.data.busy >= 1 && request.resource.data.busy <= 3
+        && request.resource.data.programType is string
+        && request.resource.data.programType.size() < 100
+        && request.resource.data.programType in [
+          'Public Skate', 'Pickup Hockey', 'Figure Skating',
+          'Stick and Puck', 'Ringette', 'Ice Breakdancing'
+        ]
+        && request.resource.data.programStartAt is string
+        && request.resource.data.programStartAt.size() < 50
+        && request.resource.data.programEndsAt is string
+        && request.resource.data.programEndsAt.size() < 50
         && request.resource.data.reportedAt == request.time; // serverTimestamp only
       allow update, delete: if false;
     }

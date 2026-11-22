@@ -1,25 +1,24 @@
-import type { BusyLevel, BusyReport } from "@/types/feedback";
+import {
+  LEGACY_PROGRAM_TYPE,
+  type BusyLevel,
+  type BusyReport,
+} from "@/types/feedback";
+import type { ProgramType } from "@/types/schedule";
 import {
   ensureAnonymousAuth,
   getFirebaseApp,
   isFirebaseConfigured,
 } from "@/lib/firebase";
-import dayjs from "dayjs";
-import utc from "dayjs/plugin/utc";
-import timezonePlugin from "dayjs/plugin/timezone";
-
-dayjs.extend(utc);
-dayjs.extend(timezonePlugin);
 
 const COLLECTION = "busyReports";
 
 /**
  * Load every busyness report for a venue. Reads go straight to Firestore,
- * scoped to the venue slug; sorting is done client-side to avoid needing a
+ * scoped to the venue id; sorting is done client-side to avoid needing a
  * composite index.
  */
 export async function loadVenueReports(
-  venueSlug: string
+  venueId: string
 ): Promise<BusyReport[]> {
   if (!isFirebaseConfigured()) return [];
 
@@ -30,20 +29,25 @@ export async function loadVenueReports(
 
   const db = getFirestore(app);
   const snapshot = await getDocs(
-    query(collection(db, COLLECTION), where("venueSlug", "==", venueSlug))
+    query(collection(db, COLLECTION), where("venueId", "==", venueId))
   );
 
   const reports: BusyReport[] = snapshot.docs.map((doc) => {
     const data = doc.data();
     const reportedAt = data.reportedAt as { toDate?: () => Date } | undefined;
     return {
-      venueSlug: data.venueSlug as string,
+      venueId: data.venueId as string,
       reportedAt:
         reportedAt && typeof reportedAt.toDate === "function"
           ? reportedAt.toDate().toISOString()
           : new Date(0).toISOString(),
       busy: data.busy as BusyLevel,
       uid: data.uid as string | undefined,
+      // Reports written before the field existed backfill to Public Skate.
+      programType:
+        (data.programType as ProgramType | undefined) ?? LEGACY_PROGRAM_TYPE,
+      programStartAt: data.programStartAt as string | undefined,
+      programEndsAt: data.programEndsAt as string | undefined,
     };
   });
 
@@ -51,16 +55,66 @@ export async function loadVenueReports(
   return reports;
 }
 
+export interface ReportKey {
+  venueId: string;
+  programType: ProgramType;
+  /** Venue-local program window, "YYYY-MM-DDTHH:mm" (matches Program.start/end). */
+  programStartAt: string;
+  programEndsAt: string;
+}
+
+export interface SubmitReportInput extends ReportKey {
+  busy: BusyLevel;
+}
+
+/** Lowercase hex SHA-256 of the input; used as a deterministic document id. */
+async function sha256Hex(input: string): Promise<string> {
+  const digest = await crypto.subtle.digest(
+    "SHA-256",
+    new TextEncoder().encode(input)
+  );
+  return Array.from(new Uint8Array(digest), (b) =>
+    b.toString(16).padStart(2, "0")
+  ).join("");
+}
+
+/** Deterministic report id: one document per (reporter, program). */
+function reportId(uid: string, key: ReportKey): Promise<string> {
+  return sha256Hex(
+    [uid, key.venueId, key.programType, key.programStartAt, key.programEndsAt].join(
+      "|"
+    )
+  );
+}
+
+/** Whether the signed-in (anonymous) reporter has already rated this program. */
+export async function hasReported(key: ReportKey): Promise<boolean> {
+  if (!isFirebaseConfigured()) return false;
+
+  const auth = await ensureAnonymousAuth();
+  const uid = auth.currentUser?.uid;
+  if (!uid) return false;
+
+  const app = await getFirebaseApp();
+  const { getFirestore, doc, getDoc } = await import("firebase/firestore");
+  const db = getFirestore(app);
+  const snap = await getDoc(doc(db, COLLECTION, await reportId(uid, key)));
+  return snap.exists();
+}
+
 /**
- * Write a single busyness observation for the current hour. Signs in
- * anonymously on first use; the doc ID caps a user to one report per venue per
- * hour (venue-local time).
+ * Write a single busyness observation for a program. Signs in anonymously on
+ * first use. The document id hashes the reporter and the program, so a reporter
+ * can submit at most one report per program: a repeat collides with the existing
+ * document, which the rules reject by forbidding updates.
  */
-export async function submitReport(
-  venueSlug: string,
-  busy: BusyLevel,
-  timezone: string
-): Promise<void> {
+export async function submitReport({
+  venueId,
+  busy,
+  programType,
+  programStartAt,
+  programEndsAt,
+}: SubmitReportInput): Promise<void> {
   if (!isFirebaseConfigured()) {
     throw new Error("Firebase is not configured");
   }
@@ -77,12 +131,19 @@ export async function submitReport(
   );
 
   const db = getFirestore(app);
-  const hour = dayjs().tz(timezone).format("YYYYMMDDHH");
-  const id = `${venueSlug}_${uid}_${hour}`;
+  const id = await reportId(uid, {
+    venueId,
+    programType,
+    programStartAt,
+    programEndsAt,
+  });
 
   await setDoc(doc(db, COLLECTION, id), {
-    venueSlug,
+    venueId,
     busy,
+    programType,
+    programStartAt,
+    programEndsAt,
     uid,
     reportedAt: serverTimestamp(),
   });

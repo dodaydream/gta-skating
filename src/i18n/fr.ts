@@ -147,6 +147,7 @@ const fr: Messages = {
     sending: "Envoi…",
     submitted: "Envoyé",
     anonymous: "Les évaluations sont anonymes et partagées publiquement.",
+    alreadyRated: "Vous avez déjà évalué cette séance.",
     usually_one: "Habituellement {{label}} · {{count}} signalement",
     usually_other: "Habituellement {{label}} · {{count}} signalements",
     errorNetwork:
