@@ -24,6 +24,7 @@ const nextConfig: NextConfig = {
   // `global-not-found.tsx` renders the 404 for unmatched URLs (out/404.html).
   experimental: {
     globalNotFound: true,
+    agentUpgrade: "security",
   },
   basePath,
   env: {
