@@ -41,8 +41,8 @@ import { Button } from "@/components/ui/button";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { WeekView } from "@/components/schedule/WeekView";
 import { TicketBadge } from "@/components/schedule/TicketBadge";
-import { BusyBadge } from "@/components/schedule/BusyBadge";
-import { BusynessInput } from "@/components/schedule/BusynessInput";
+import { BusynessBadge } from "@/components/schedule/BusynessBadge";
+import { BusynessQuestionnaire } from "@/components/schedule/BusynessQuestionnaire";
 import { trackEvent } from "@/lib/analytics";
 import { toggleFavorite, useFavorites } from "@/lib/favorites";
 import { amenityIcon } from "@/lib/amenities";
@@ -583,7 +583,7 @@ export function VenueDetailModal({
 
           {currentProgram ? (
             <div className="px-5">
-              <BusynessInput
+              <BusynessQuestionnaire
                 venueSlug={slug}
                 timezone={venue.timezone}
                 program={currentProgram}
@@ -928,7 +928,7 @@ function VenueDetailSkeleton() {
   );
 }
 
-function BusyBadgeSlot({
+function BusynessBadgeSlot({
   reports,
   reportsLoading,
   program,
@@ -955,7 +955,7 @@ function BusyBadgeSlot({
   const prediction = predictBusy(reports, program, timezone);
   if (!prediction) return null;
   return (
-    <BusyBadge
+    <BusynessBadge
       busy={prediction.busy}
       n={prediction.n}
       className={className}
@@ -1013,7 +1013,7 @@ function TodayCards({
                   </span>
                   <div className="flex items-center gap-2 empty:hidden">
                     <TicketBadge ticket={program.ticket} />
-                    <BusyBadgeSlot
+                    <BusynessBadgeSlot
                       reports={reports}
                       reportsLoading={reportsLoading}
                       program={program}
@@ -1077,7 +1077,7 @@ function ListView({
                   </span>
                   <TicketBadge ticket={program.ticket} />
                   {isDesktop ? (
-                    <BusyBadgeSlot
+                    <BusynessBadgeSlot
                       reports={reports}
                       reportsLoading={reportsLoading}
                       program={program}
@@ -1092,7 +1092,7 @@ function ListView({
                   </div>
                 ) : null}
                 {isDesktop ? null : (
-                  <BusyBadgeSlot
+                  <BusynessBadgeSlot
                     reports={reports}
                     reportsLoading={reportsLoading}
                     program={program}

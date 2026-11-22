@@ -13,7 +13,7 @@ import { DateFilter } from "@/components/filters/DateFilter";
 import { FilterDrawer } from "@/components/filters/FilterDrawer";
 import { VenueDisplayOption } from "@/components/filters/VenueDisplayOption";
 import { FilterBar } from "@/components/ui/FilterBar";
-import { ScheduleSidebar } from "@/components/ui/ScheduleSidebar";
+import { ScheduleSidebar } from "@/components/ScheduleSidebar";
 import { VenueDetailModal } from "@/components/schedule/VenueDetailModal";
 import { fetchPrograms } from "@/api/programs";
 import { trackEvent } from "@/lib/analytics";

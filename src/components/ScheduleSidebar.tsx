@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useTranslation } from "react-i18next";
 import type { Venue } from "@/types/venue";
 import type { ProgramItem } from "@/types/schedule";
-import { ProgramList } from "@/components/schedule/ProgramList";
+import { ProgramList } from "@/components/ProgramList/ProgramList";
 import { UserAvatarButton, UserCentre } from "@/components/UserCentre";
 import { distanceKm } from "@/lib/schedule";
 import {

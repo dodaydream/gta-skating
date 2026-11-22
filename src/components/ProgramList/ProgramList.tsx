@@ -3,8 +3,8 @@
 import type { Venue } from "@/types/venue";
 import type { ProgramItem } from "@/types/schedule";
 import { useTranslation } from "react-i18next";
-import { ProgramListItem } from "@/components/schedule/ProgramListItem";
-import { ScheduleSkeleton } from "@/components/ui/ScheduleSkeleton";
+import { ProgramListItem } from "@/components/ProgramList/ProgramListItem";
+import { ScheduleSkeleton } from "@/components/ScheduleSkeleton";
 import {
   Empty,
   EmptyDescription,

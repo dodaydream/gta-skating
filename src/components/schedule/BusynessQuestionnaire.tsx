@@ -35,7 +35,7 @@ function errorKeyFor(error: unknown): string {
  * "How busy is it right now?" control. Signs in anonymously and writes a single
  * point-in-time report for the venue's current hour.
  */
-export function BusynessInput({
+export function BusynessQuestionnaire({
   venueSlug,
   timezone,
   program,

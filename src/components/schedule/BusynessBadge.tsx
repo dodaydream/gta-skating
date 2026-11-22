@@ -19,7 +19,7 @@ const DOT_ACTIVE: Record<number, string> = {
  * Busyness indicator for a program card: three dots filled to the rounded
  * average, a text label, and the number of underlying reports.
  */
-export function BusyBadge({
+export function BusynessBadge({
   busy,
   n,
   className,
