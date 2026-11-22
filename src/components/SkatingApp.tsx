@@ -1,7 +1,7 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import { FilterBar } from "@/components/ui/FilterBar";
+import { FilterBar } from "@/components/filters/FilterBar";
 import { ScheduleSidebar } from "@/components/ScheduleSidebar";
 import { VenueDetailModal } from "@/components/schedule/VenueDetailModal";
 import {
