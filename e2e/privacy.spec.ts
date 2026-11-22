@@ -10,7 +10,7 @@ test.describe("privacy policy", () => {
       page.getByRole("heading", { name: "Privacy Policy", level: 1 })
     ).toBeVisible();
     await expect(page.getByText(/Last updated:/)).toBeVisible();
-    await expect(page.getByText("Advertising and third-party vendors")).toBeVisible();
+    await expect(page.getByText("Cookies and similar technologies")).toBeVisible();
 
     await page.getByRole("link", { name: "← Back to the schedule" }).first().click();
 

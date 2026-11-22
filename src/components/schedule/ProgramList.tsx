@@ -4,7 +4,6 @@ import type { Venue } from "@/types/venue";
 import type { ProgramItem } from "@/types/schedule";
 import { useTranslation } from "react-i18next";
 import { ProgramListItem } from "@/components/schedule/ProgramListItem";
-import { AdUnit } from "@/components/ads/AdUnit";
 import { ScheduleSkeleton } from "@/components/ui/ScheduleSkeleton";
 import {
   Empty,
@@ -61,8 +60,6 @@ export function ProgramList({
           ))
         )}
       </div>
-
-      <AdUnit className="mt-3" />
     </div>
   );
 }

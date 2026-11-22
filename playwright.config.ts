@@ -36,10 +36,8 @@ export default defineConfig({
     reuseExistingServer: !process.env.CI,
     timeout: 180_000,
     env: {
-      // Keep third-party analytics/ad scripts out of the test run.
+      // Keep third-party analytics scripts out of the test run.
       NEXT_PUBLIC_GA_ID: "",
-      NEXT_PUBLIC_ADSENSE_CLIENT: "",
-      NEXT_PUBLIC_ADSENSE_SLOT: "",
     },
   },
 });

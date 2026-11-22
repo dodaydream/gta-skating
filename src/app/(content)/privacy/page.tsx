@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Privacy Policy — GTA Skating Schedule",
   description:
-    "How the GTA Skating Schedule collects, uses and shares information, including cookies, analytics, location and advertising.",
+    "How the GTA Skating Schedule collects, uses and shares information, including cookies, analytics and location.",
   alternates: { canonical: "/privacy" },
 };
 
@@ -89,10 +89,6 @@ export default function PrivacyPage() {
               shown to other visitors. They are tied only to a randomly
               generated, non-identifying browser identifier.
             </li>
-            <li>
-              The Site displays advertising served by Google AdSense and other
-              third-party vendors, which may use cookies as described below.
-            </li>
           </ul>
         </Section>
 
@@ -167,7 +163,7 @@ export default function PrivacyPage() {
           <p>
             We and third parties may place and read cookies on your browser, and
             may use web beacons, IP addresses, or other identifiers, as a result
-            of analytics and ad serving on the Site. These include:
+            of analytics on the Site. These include:
           </p>
           <ul className="list-disc pl-5">
             <li>
@@ -176,13 +172,6 @@ export default function PrivacyPage() {
               </span>{" "}
               set by Google Analytics (for example <code>_ga</code> and{" "}
               <code>_ga_*</code>) to distinguish users and measure usage.
-            </li>
-            <li>
-              <span className="font-medium text-black dark:text-zinc-100">
-                Advertising cookies
-              </span>{" "}
-              set by Google and other third-party vendors to serve and measure
-              the ads shown on the Site, as described below.
             </li>
           </ul>
           <p>
@@ -199,53 +188,8 @@ export default function PrivacyPage() {
               To measure usage and understand which features are used, so we can
               prioritise improvements.
             </li>
-            <li>To display advertising on the Site.</li>
             <li>To detect and prevent abuse, and to comply with the law.</li>
           </ul>
-        </Section>
-
-        <Section id="advertising" title="Advertising and third-party vendors">
-          <p>
-            The Site displays advertising served by Google AdSense and other
-            third-party vendors. Third-party vendors, including Google, use
-            cookies to serve ads based on your prior visits to this Site or to
-            other websites. Google&rsquo;s use of advertising cookies enables it
-            and its partners to serve ads to you based on your visits to this
-            and/or other sites on the Internet.
-          </p>
-          <p>
-            You may opt out of personalised advertising by visiting{" "}
-            <a
-              className="font-medium text-blue-600 hover:underline dark:text-blue-400"
-              href="https://adssettings.google.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Google Ads Settings
-            </a>
-            , or opt out of some third-party vendors&rsquo; use of cookies for
-            personalised advertising by visiting{" "}
-            <a
-              className="font-medium text-blue-600 hover:underline dark:text-blue-400"
-              href="https://www.aboutads.info/choices/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              www.aboutads.info
-            </a>{" "}
-            or{" "}
-            <a
-              className="font-medium text-blue-600 hover:underline dark:text-blue-400"
-              href="https://www.youronlinechoices.eu/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              www.youronlinechoices.eu
-            </a>
-            . Where required by law (for example in the EEA, the UK, and
-            Switzerland), we ask for your consent before using non-essential
-            cookies or personalising ads.
-          </p>
         </Section>
 
         <Section id="sharing" title="How information is shared">
@@ -258,8 +202,7 @@ export default function PrivacyPage() {
               <span className="font-medium text-black dark:text-zinc-100">
                 Google
               </span>{" "}
-              — for analytics and, where enabled, advertising, in accordance
-              with{" "}
+              — for analytics, in accordance with{" "}
               <a
                 className="font-medium text-blue-600 hover:underline dark:text-blue-400"
                 href="https://policies.google.com/privacy"
@@ -320,8 +263,8 @@ export default function PrivacyPage() {
             Depending on where you live, you may have the right to access,
             correct, or delete personal information, to object to or restrict
             certain processing, and to withdraw consent. Because we do not hold
-            personal information ourselves, requests relating to analytics and
-            advertising data should be directed to Google using the links above.
+            personal information ourselves, requests relating to analytics data
+            should be directed to Google using the links above.
             Busyness ratings carry no name or contact details, so deletion
             requests are handled on a best-effort basis through the project
             repository issue tracker linked in the Contact section. You always
@@ -334,8 +277,7 @@ export default function PrivacyPage() {
           <p>
             The Site is intended for a general audience and is not directed at
             children under 13 (or under 16 in some regions). We do not knowingly
-            collect personal information from children, and we do not use
-            interest-based advertising to target users known to be under 13. If
+            collect personal information from children. If
             you believe a child has provided information through the Site,
             please contact us so we can address it.
           </p>

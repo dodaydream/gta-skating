@@ -53,7 +53,7 @@ const FAQ_JSONLD = {
       name: "Is GTA Skating free to use?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes. The site is free, requires no account, and does not ask for your name or email. It is supported by advertising.",
+        text: "Yes. The site is free, requires no account, and does not ask for your name or email.",
       },
     },
     {
@@ -125,7 +125,7 @@ const FAQ_JSONLD = {
       name: "How is my privacy handled?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "The site has no accounts or contact forms. It uses Google Analytics and displays advertising, and stores anonymous busyness ratings. See the Privacy Policy for full details.",
+        text: "The site has no accounts or contact forms. It uses Google Analytics and stores anonymous busyness ratings. See the Privacy Policy for full details.",
       },
     },
   ],
@@ -266,7 +266,7 @@ export default function FaqPage() {
           <Answer>
             <p>
               Yes. The site is free, requires no account, and does not ask for
-              your name or email. It is supported by advertising.
+              your name or email.
             </p>
           </Answer>
         </section>
@@ -419,7 +419,7 @@ export default function FaqPage() {
           <Answer>
             <p>
               The site has no accounts or contact forms. It uses Google Analytics
-              and displays advertising, and stores anonymous busyness ratings.
+              and stores anonymous busyness ratings.
               See the <DocLink href="/privacy">Privacy Policy</DocLink> for full
               details.
             </p>

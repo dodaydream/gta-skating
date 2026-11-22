@@ -11,8 +11,6 @@ const ogImage = {
   type: "image/png",
 };
 
-const adsenseClient = process.env.NEXT_PUBLIC_ADSENSE_CLIENT;
-
 /**
  * Site-wide metadata shared by both root layouts (the localized app and the
  * English content pages). Route-level `generateMetadata` overrides the parts
@@ -25,7 +23,6 @@ export const rootMetadata: Metadata = {
   manifest: "/manifest.json",
   other: {
     "apple-mobile-web-app-capable": "yes",
-    ...(adsenseClient ? { "google-adsense-account": adsenseClient } : {}),
   },
   appleWebApp: {
     capable: true,

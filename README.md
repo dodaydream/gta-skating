@@ -134,13 +134,8 @@ Actions → Variables) for deployments, or in `.env.local` for local builds.
 | Variable                     | Purpose                                                            |
 | ---------------------------- | ------------------------------------------------------------------ |
 | `NEXT_PUBLIC_GA_ID`          | Google Analytics 4 measurement ID; unset disables analytics.       |
-| `NEXT_PUBLIC_ADSENSE_CLIENT` | AdSense publisher ID; unset disables the AdSense script.           |
-| `NEXT_PUBLIC_ADSENSE_SLOT`   | AdSense ad unit slot ID for the manual unit; unset hides the unit. |
 | `NEXT_PUBLIC_BUYMEACOFFEE_URL` | Optional support link shown in the footer.                       |
 | `NEXT_PUBLIC_BASE_PATH`      | Optional base path; unset for the custom-domain root deployment.   |
-
-Only a single manual ad unit is rendered; keep **Auto ads** off in the AdSense
-dashboard so no extra ads are injected.
 
 ### Busyness reports (optional)
 

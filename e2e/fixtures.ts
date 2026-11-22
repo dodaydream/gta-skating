@@ -7,8 +7,8 @@ import { expect, test as base } from "@playwright/test";
  *   filtered by the map viewport. `src/components/map/VenueMap.tsx` already
  *   treats a failed map as non-fatal, so the rest of the app keeps working and
  *   assertions can compare against the full data set.
- * - Requests to third-party origins (map style/tiles, Google Analytics,
- *   AdSense) are aborted so the suite never depends on the network.
+ * - Requests to third-party origins (map style/tiles, Google Analytics) are
+ *   aborted so the suite never depends on the network.
  */
 export const test = base.extend({
   page: async ({ page }, provide) => {
