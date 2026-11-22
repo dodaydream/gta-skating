@@ -15,7 +15,6 @@ import { useParams, useRouter } from "next/navigation";
 import type { RinkEnvironment, Venue, VenueDisplay } from "@/types/venue";
 import type { MapBounds } from "@/types/map";
 import type { Coordinates, ProgramItem, ProgramType } from "@/types/schedule";
-import { getAreaBounds, getAreaBySlug } from "@/data/areas";
 import { fetchPrograms } from "@/api/programs";
 import { trackEvent } from "@/lib/analytics";
 import { useFavorites } from "@/lib/favorites";
@@ -23,17 +22,6 @@ import { getVenueBySlug, getSlugForVenue } from "@/data/venue-meta";
 import { useLocale } from "@/i18n/LocaleProvider";
 
 export type SortBy = "time" | "distance";
-
-/**
- * The `area` a landing page is scoped to. Set only by the
- * `/[lang]/areas/[area]` page; it seeds the map bounds (and the initial list
- * filter) and overrides the sidebar heading.
- */
-export type SkatingArea = {
-  name: string;
-  center: Coordinates;
-  radiusKm: number;
-};
 
 function nowLocalISO(): string {
   const now = new Date();
@@ -80,8 +68,6 @@ export type SkatingAppData = {
   detailSlug: string | null;
   focusVenue: Coordinates | null;
   mapBounds: MapBounds | null;
-  activeArea: SkatingArea | undefined;
-  fitBounds: MapBounds | null;
   favoriteFitPoints: [number, number][] | null;
   locateRef: MutableRefObject<(() => void) | null>;
 
@@ -99,7 +85,7 @@ export type SkatingAppData = {
   onSelect: (index: number) => void;
   openVenue: (venue: Venue) => void;
   closeDetail: () => void;
-  onBoundsChange: (bounds: MapBounds, userInitiated: boolean) => void;
+  onBoundsChange: (bounds: MapBounds) => void;
 };
 
 const SkatingAppDataContext = createContext<SkatingAppData | null>(null);
@@ -127,18 +113,13 @@ export function SkatingAppDataProvider({
 }) {
   const locale = useLocale();
   const router = useRouter();
-  const params = useParams<{ slug?: string; area?: string }>();
+  const params = useParams<{ slug?: string }>();
   const locateRef = useRef<(() => void) | null>(null);
 
-  // The open venue and the scoped area are derived from the URL: the shell
-  // (and this provider) is mounted from `[lang]/layout.tsx`, so these params
-  // update as the user navigates without remounting the map or the list.
+  // The open venue is derived from the URL: the shell (and this provider) is
+  // mounted from `[lang]/layout.tsx`, so this param updates as the user
+  // navigates without remounting the map or the list.
   const detailSlug = useStringParam(params.slug) ?? null;
-  const areaSlug = useStringParam(params.area);
-  const area = useMemo(
-    () => (areaSlug ? getAreaBySlug(areaSlug) : undefined),
-    [areaSlug]
-  );
 
   // Set when a venue is opened from within the app (list/map). Distinguishes an
   // in-app open — which closes with `router.back()` — from a deep link, which
@@ -168,24 +149,7 @@ export function SkatingAppDataProvider({
   const [amenities, setAmenitiesState] = useState<string[]>([]);
   const [sortBy, setSortByState] = useState<SortBy>("time");
 
-  // The area page's fit bounds. The initial map scope reuses this value (rather
-  // than computing its own) so the first fetch is already scoped; the map then
-  // frames the same bounds (see VenueMap) and every later pan/zoom updates
-  // `mapBounds` through the normal flow.
-  const fitBounds = useMemo(
-    () => (area ? getAreaBounds(area) : null),
-    [area]
-  );
-  const [mapBounds, setMapBounds] = useState<MapBounds | null>(() => fitBounds);
-  // An area page is scoped to its initial bounds only. Re-scope `mapBounds`
-  // whenever an area param appears (e.g. a soft navigation into an area page);
-  // it is deliberately not reapplied when the area param clears after a pan.
-  const [syncedFitBounds, setSyncedFitBounds] = useState(fitBounds);
-  if (fitBounds !== syncedFitBounds) {
-    setSyncedFitBounds(fitBounds);
-    if (fitBounds) setMapBounds(fitBounds);
-  }
-  const activeArea = area;
+  const [mapBounds, setMapBounds] = useState<MapBounds | null>(null);
 
   const [userLocation, setUserLocation] = useState<Coordinates | null>(null);
   const hasSetDate = useRef(false);
@@ -332,18 +296,10 @@ export function SkatingAppDataProvider({
     trackEvent("venue_display_change", { mode: next });
   }, []);
 
-  // An area page is scoped to its initial bounds only. Once the user changes the
-  // map range (pan/zoom), hand off to the unscoped app at the root route so the
-  // sidebar title and list reflect the new, wider scope.
-  const onBoundsChange = useCallback(
-    (bounds: MapBounds, userInitiated: boolean) => {
-      setMapBounds(bounds);
-      if (area && userInitiated) {
-        router.replace(`/${locale}`);
-      }
-    },
-    [area, locale, router]
-  );
+  // Keep the map/list scope in sync with the viewport.
+  const onBoundsChange = useCallback((bounds: MapBounds) => {
+    setMapBounds(bounds);
+  }, []);
 
   const openVenue = useCallback(
     (venue: Venue) => {
@@ -390,11 +346,9 @@ export function SkatingAppDataProvider({
   }, [detailSlug, venues]);
 
   // When the favourites-only filter is active the map scales to fit every
-  // favourite venue, regardless of the current date/program filters. Area pages
-  // suppress this: fitting every favourite could move the camera away from the
-  // area.
+  // favourite venue, regardless of the current date/program filters.
   const favoriteFitPoints = useMemo<[number, number][] | null>(() => {
-    if (area || !favoritesOnly) return null;
+    if (!favoritesOnly) return null;
     const points: [number, number][] = [];
     for (const slug of favorites) {
       const coords = getVenueBySlug(slug)?.coordinates;
@@ -403,7 +357,7 @@ export function SkatingAppDataProvider({
       }
     }
     return points.length > 0 ? points : null;
-  }, [area, favoritesOnly, favorites]);
+  }, [favoritesOnly, favorites]);
 
   const value = useMemo<SkatingAppData>(
     () => ({
@@ -425,8 +379,6 @@ export function SkatingAppDataProvider({
       detailSlug,
       focusVenue,
       mapBounds,
-      activeArea,
-      fitBounds,
       favoriteFitPoints,
       locateRef,
       setFromDate,
@@ -461,8 +413,6 @@ export function SkatingAppDataProvider({
       detailSlug,
       focusVenue,
       mapBounds,
-      activeArea,
-      fitBounds,
       favoriteFitPoints,
       setFromDate,
       setToDate,

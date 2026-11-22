@@ -25,7 +25,6 @@ function SkatingShellInner({
     visibleIndex,
     userLocation,
     focusVenue,
-    fitBounds,
     favoriteFitPoints,
     locateRef,
     onSelect,
@@ -44,7 +43,6 @@ function SkatingShellInner({
             userLocation={userLocation}
             locateRef={locateRef}
             focusVenue={focusVenue}
-            fitBounds={fitBounds}
             fitTo={favoriteFitPoints}
           />
 
@@ -66,8 +64,8 @@ function SkatingShellInner({
 /**
  * The persistent skating app shell: shared data provider, map, sidebar, and
  * filter bar. Rendered from `[lang]/layout.tsx` so it stays mounted across
- * navigation, with the page content (`children`) and the `@modal` slot rendered
- * inside it so both can read the shared context.
+ * navigation, with the route content (`children` = home, `modal` = venue detail)
+ * rendered inside it so both can read the shared context.
  */
 export function SkatingShell({
   children,

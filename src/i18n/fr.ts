@@ -25,7 +25,6 @@ const fr: Messages = {
   },
   sidebar: {
     title: "Programmes de patinage",
-    titleArea: "Patinage près de {{area}}",
     programsFound_one: "{{count}} programme trouvé",
     programsFound_other: "{{count}} programmes trouvés",
     disclaimer:

@@ -110,28 +110,6 @@ test.describe("venue detail", () => {
     await expect(page).toHaveURL(/\/en\/venue\/[^/]+$/);
     await expect(dialog).toBeVisible();
   });
-
-  test("closing a venue opened from an area returns to the area", async ({
-    page,
-  }) => {
-    const venues = loadVenues();
-    await freezeToDay(page, densestDay(venues));
-    await page.goto("/en/areas/downtown-toronto");
-
-    const firstProgram = sidebar(page)
-      .locator('[data-slot="program-item"]')
-      .first();
-    await expect(firstProgram).toBeVisible();
-    await firstProgram.click();
-    await expect(page).toHaveURL(/\/en\/venue\/[^/]+$/);
-
-    const dialog = page.locator('[data-slot="dialog-content"]');
-    await expect(dialog).toBeVisible();
-
-    await dialog.getByRole("button", { name: "Close" }).click();
-    await expect(page).toHaveURL(/\/en\/areas\/downtown-toronto$/);
-    await expect(dialog).toBeHidden();
-  });
 });
 
 test.describe("venue detail (android)", () => {

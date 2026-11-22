@@ -138,13 +138,8 @@ export function ScheduleSidebar() {
     userLocation,
     sortBy,
     detailSlug,
-    activeArea,
     openVenue: onSelectVenue,
   } = useSkatingAppData();
-  // Overrides the default heading, e.g. "Skating near Davenport".
-  const title = activeArea
-    ? t("sidebar.titleArea", { area: activeArea.name })
-    : undefined;
   const detailOpen = detailSlug !== null;
   const [open, setOpen] = useState(true);
   const [userCentreOpen, setUserCentreOpen] = useState(false);
@@ -176,7 +171,7 @@ export function ScheduleSidebar() {
           <div className="mb-4 flex items-start justify-between gap-2">
             <div className="flex flex-col">
               <h1 className="text-xl font-semibold tracking-tight text-black dark:text-zinc-50">
-                {title ?? t("sidebar.title")}
+                  {t("sidebar.title")}
               </h1>
               <span className="text-sm text-zinc-500 dark:text-zinc-400">
                 {programCount}
@@ -217,7 +212,7 @@ export function ScheduleSidebar() {
             <div className="flex items-start justify-between gap-2 px-4 pb-3 pt-4">
               <div className="flex flex-col">
                 <DrawerTitle className="text-xl font-semibold tracking-tight">
-                  {title ?? t("sidebar.title")}
+                {t("sidebar.title")}
                 </DrawerTitle>
                 <DrawerDescription className="text-left text-sm">
                   {programCount}

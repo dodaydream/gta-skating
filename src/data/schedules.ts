@@ -84,10 +84,9 @@ export function getSlugForVenue(name: string): string {
 }
 
 /**
- * The `generateStaticParams` entries for the venue route. Shared by
- * `venue/[slug]/page.tsx` and the `@modal/venue/[slug]` slot: a slot that
- * declares different params silently drops every real venue page from the
- * static export, so both must call this same helper.
+ * The `generateStaticParams` entries for the venue route, owned by the
+ * `@modal/venue/[slug]` slot (which is the page for `/[lang]/venue/[slug]`).
+ * Centralised so the slot and the per-venue `opengraph-image` share one source.
  */
 export function venueSlugParams(): { slug: string }[] {
   return venues.map((venue) => ({ slug: getSlugForVenue(venue.name) }));

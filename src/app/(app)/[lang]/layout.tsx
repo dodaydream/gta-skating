@@ -26,8 +26,10 @@ export const dynamicParams = false;
  * locale is available here and the `<html lang>`/`dir` are server-rendered.
  *
  * The persistent skating shell (provider + map + sidebar + filters) lives here
- * so it stays mounted across navigation; the page content (`children`, the
- * `sr-only` SEO markup) and the `@modal` slot render inside it.
+ * so it stays mounted across navigation. The route content is passed into it
+ * through parallel-route slots: `children` (home) and `@modal` (the venue detail
+ * view). Only the active route's slot renders content; the other renders
+ * `default.tsx`/a null route.
  */
 export default async function LocaleRootLayout({
   children,
