@@ -85,6 +85,8 @@ export type SkatingAppData = {
   onSelect: (index: number) => void;
   openVenue: (venue: Venue) => void;
   closeDetail: () => void;
+  openUser: () => void;
+  closeUser: () => void;
   onBoundsChange: (bounds: MapBounds) => void;
 };
 
@@ -125,6 +127,9 @@ export function SkatingAppDataProvider({
   // in-app open — which closes with `router.back()` — from a deep link, which
   // closes by pushing the unscoped home route.
   const openedInAppRef = useRef(false);
+
+  // Same distinction for the user centre modal route.
+  const openedUserRef = useRef(false);
 
   const [fromDate, setFromDateState] = useState("");
   const [toDate, setToDateState] = useState("");
@@ -321,6 +326,21 @@ export function SkatingAppDataProvider({
     }
   }, [locale, router]);
 
+  const openUser = useCallback(() => {
+    openedUserRef.current = true;
+    router.push(`/${locale}/user`);
+  }, [locale, router]);
+
+  const closeUser = useCallback(() => {
+    // Mirror `closeDetail`: an in-app open returns via history, a deep link
+    // falls back to the unscoped home map for the current locale.
+    if (openedUserRef.current) {
+      router.back();
+    } else {
+      router.push(`/${locale}`);
+    }
+  }, [locale, router]);
+
   const onSelect = useCallback(
     (index: number) => {
       const venue = venues[index];
@@ -392,6 +412,8 @@ export function SkatingAppDataProvider({
       onSelect,
       openVenue,
       closeDetail,
+      openUser,
+      closeUser,
       onBoundsChange,
     }),
     [
@@ -425,6 +447,8 @@ export function SkatingAppDataProvider({
       onSelect,
       openVenue,
       closeDetail,
+      openUser,
+      closeUser,
       onBoundsChange,
     ]
   );

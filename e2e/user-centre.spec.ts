@@ -17,6 +17,7 @@ test.describe("user centre", () => {
     const avatar = page.getByRole("button", { name: "Open user centre" });
     await expect(avatar).toBeVisible();
     await avatar.click();
+    await expect(page).toHaveURL(/\/en\/user$/);
 
     const dialog = page.getByRole("dialog");
     await expect(dialog).toBeVisible();
@@ -28,6 +29,7 @@ test.describe("user centre", () => {
     // The backdrop covers the page; clicking anywhere dismisses the user centre.
     await page.mouse.click(5, 5);
     await expect(dialog).toHaveCount(0);
+    await expect(page).toHaveURL(/\/en$/);
   });
 
   test("lists and manages favourite venues", async ({ page }) => {

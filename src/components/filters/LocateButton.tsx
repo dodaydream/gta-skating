@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 import { IconLocation } from "@tabler/icons-react";
 import { Button } from "@/components/ui/button";
 import { trackEvent } from "@/lib/analytics";
-import { useSkatingAppData } from "@/components/SkatingAppDataProvider";
+import { useSkatingAppData } from "@/app/(app)/[lang]/_components/SkatingAppDataProvider";
 
 export function LocateButton() {
   const { t } = useTranslation();

@@ -16,8 +16,9 @@ import {
   DrawerDescription,
   DrawerTitle,
 } from "@/components/ui/drawer";
-import { LanguageToggle } from "@/components/LanguageToggle";
-import { ThemeToggle } from "@/components/ThemeToggle";
+import { LanguageToggle } from "./LanguageToggle";
+import { ThemeToggle } from "./ThemeToggle";
+import { useSkatingAppData } from "@/app/(app)/[lang]/_components/SkatingAppDataProvider";
 import { useLocale } from "@/i18n/LocaleProvider";
 import { getVenueBySlug } from "@/data/venue-meta";
 import { toggleFavorite, useFavorites } from "@/lib/favorites";
@@ -247,25 +248,18 @@ function SettingsSection() {
   );
 }
 
-export function UserCentre({
-  open,
-  onClose,
-}: {
-  open: boolean;
-  onClose: () => void;
-}) {
+export function UserCentre() {
   const { t } = useTranslation();
+  const { closeUser } = useSkatingAppData();
   const isDesktop = useIsDesktop();
 
-  if (!open) return null;
-
   return (
-    <Panel isDesktop={isDesktop} onClose={onClose}>
+    <Panel isDesktop={isDesktop} onClose={closeUser}>
       <div className="sticky top-0 z-30 flex h-12 shrink-0 items-center justify-between gap-3 bg-popover px-5">
         <PanelTitle isDesktop={isDesktop} className="text-base">
           {t("user.title")}
         </PanelTitle>
-        <CloseButton onClick={onClose} />
+        <CloseButton onClick={closeUser} />
       </div>
       <PanelDescription isDesktop={isDesktop} className="sr-only">
         {t("user.description")}

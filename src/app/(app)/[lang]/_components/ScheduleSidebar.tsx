@@ -2,11 +2,12 @@
 
 import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useTranslation } from "react-i18next";
 import type { ProgramItem } from "@/types/schedule";
 import { ProgramList } from "@/components/ProgramList/ProgramList";
-import { UserAvatarButton, UserCentre } from "@/components/UserCentre";
-import { useSkatingAppData } from "@/components/SkatingAppDataProvider";
+import { UserAvatarButton } from "../@modal/user/_components/UserCentre";
+import { useSkatingAppData } from "./SkatingAppDataProvider";
 import { distanceKm } from "@/lib/schedule";
 import {
   Drawer,
@@ -132,6 +133,7 @@ function useIsDesktop() {
 
 export function ScheduleSidebar() {
   const { t } = useTranslation();
+  const pathname = usePathname();
   const {
     loading,
     items,
@@ -139,10 +141,11 @@ export function ScheduleSidebar() {
     sortBy,
     detailSlug,
     openVenue: onSelectVenue,
+    openUser,
   } = useSkatingAppData();
   const detailOpen = detailSlug !== null;
+  const userCentreOpen = pathname.endsWith("/user");
   const [open, setOpen] = useState(true);
-  const [userCentreOpen, setUserCentreOpen] = useState(false);
   const isDesktop = useIsDesktop();
   const snapPoints = useSnapPoints();
 
@@ -178,7 +181,7 @@ export function ScheduleSidebar() {
               </span>
             </div>
             <div className="flex items-center gap-2">
-              <UserAvatarButton onClick={() => setUserCentreOpen(true)} />
+              <UserAvatarButton onClick={openUser} />
             </div>
           </div>
 
@@ -219,7 +222,7 @@ export function ScheduleSidebar() {
                 </DrawerDescription>
               </div>
               <div className="flex items-center gap-2">
-                <UserAvatarButton onClick={() => setUserCentreOpen(true)} />
+                <UserAvatarButton onClick={openUser} />
               </div>
             </div>
           }
@@ -234,11 +237,6 @@ export function ScheduleSidebar() {
           </div>
         </DrawerContent>
       </Drawer>
-
-      <UserCentre
-        open={userCentreOpen}
-        onClose={() => setUserCentreOpen(false)}
-      />
     </>
   );
 }

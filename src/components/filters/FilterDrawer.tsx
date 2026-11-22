@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 import { cn } from "cn";
 import { ProgramType } from "@/types/schedule";
 import type { RinkEnvironment } from "@/types/venue";
-import { useSkatingAppData } from "@/components/SkatingAppDataProvider";
+import { useSkatingAppData } from "@/app/(app)/[lang]/_components/SkatingAppDataProvider";
 import { AMENITIES } from "@/lib/amenities";
 import { Button } from "@/components/ui/button";
 import {

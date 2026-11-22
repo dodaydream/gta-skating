@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import { getVenueBySlug, venueSlugParams } from "@/data/schedules";
-import { VenueDetailModal } from "@/components/schedule/VenueDetailModal";
+import { VenueDetailModal } from "./_components/VenueDetailModal";
 import { VenueSeoContent } from "@/components/seo/VenueSeoContent";
 import { VenueStructuredData } from "@/components/seo/VenueStructuredData";
 import { localizedAlternates } from "@/lib/site";

@@ -4,7 +4,7 @@ import { expect, test as base } from "@playwright/test";
  * Test fixture that makes the page hermetic and deterministic:
  *
  * - WebGL is disabled, so the MapLibre map is skipped and the schedule is not
- *   filtered by the map viewport. `src/components/map/VenueMap.tsx` already
+ *   filtered by the map viewport. `src/app/(app)/[lang]/_components/VenueMap.tsx` already
  *   treats a failed map as non-fatal, so the rest of the app keeps working and
  *   assertions can compare against the full data set.
  * - Requests to third-party origins (map style/tiles, Google Analytics) are

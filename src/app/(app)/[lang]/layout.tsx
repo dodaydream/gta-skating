@@ -7,7 +7,7 @@ import { fontClassName } from "@/lib/fonts";
 import { ThemeScript } from "@/components/ThemeScript";
 import { ThemeSync } from "@/components/ThemeSync";
 import { SiteScripts } from "@/components/SiteScripts";
-import { SkatingShell } from "@/components/SkatingShell";
+import { SkatingShell } from "./_components/SkatingShell";
 import "../../globals.css";
 
 export const metadata = rootMetadata;

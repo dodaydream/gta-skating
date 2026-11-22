@@ -9,8 +9,8 @@ import {
   getTodayInVenueTime,
 } from "@/lib/schedule";
 import { normalizeLocale } from "@/i18n/locales";
-import { useUserLocation } from "@/components/SkatingAppDataProvider";
-import { TicketBadge } from "@/components/schedule/TicketBadge";
+import { useUserLocation } from "@/app/(app)/[lang]/_components/SkatingAppDataProvider";
+import { TicketBadge } from "@/app/(app)/[lang]/@modal/venue/[slug]/_components/TicketBadge";
 
 export function ProgramListItem({
   program,

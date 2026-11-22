@@ -4,7 +4,7 @@ import type { Venue } from "@/types/venue";
 import type { ProgramItem } from "@/types/schedule";
 import { useTranslation } from "react-i18next";
 import { ProgramListItem } from "@/components/ProgramList/ProgramListItem";
-import { ScheduleSkeleton } from "@/components/ScheduleSkeleton";
+import { ScheduleSkeleton } from "@/app/(app)/[lang]/_components/ScheduleSkeleton";
 import {
   Empty,
   EmptyDescription,

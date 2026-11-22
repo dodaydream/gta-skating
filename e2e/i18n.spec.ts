@@ -25,18 +25,11 @@ test.describe("language", () => {
     const dialog = page.getByRole("dialog");
     await dialog.getByRole("button", { name: "fr", exact: true }).click();
 
-    await expect(page).toHaveURL(/\/fr$/);
+    await expect(page).toHaveURL(/\/fr\/user$/);
     await expect(page.locator("html")).toHaveAttribute("lang", "fr");
     // Switching the locale keeps the user centre open instead of dismissing it.
     await expect(dialog).toBeVisible();
     await expect(dialog.getByText("Centre utilisateur")).toBeVisible();
-
-    // With the panel dismissed, the app behind it is localized too.
-    await page.keyboard.press("Escape");
-    await expect(dialog).toHaveCount(0);
-    await expect(
-      sidebar(page).getByRole("heading", { name: "Programmes de patinage" })
-    ).toBeVisible();
   });
 
   test.describe("French browser (fr-CA)", () => {

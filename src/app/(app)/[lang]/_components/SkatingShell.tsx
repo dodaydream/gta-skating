@@ -3,13 +3,13 @@
 import dynamic from "next/dynamic";
 import type { ReactNode } from "react";
 import { FilterBar } from "@/components/filters/FilterBar";
-import { ScheduleSidebar } from "@/components/ScheduleSidebar";
+import { ScheduleSidebar } from "./ScheduleSidebar";
 import {
   SkatingAppDataProvider,
   useSkatingAppData,
-} from "@/components/SkatingAppDataProvider";
+} from "./SkatingAppDataProvider";
 
-const VenueMap = dynamic(() => import("@/components/map/VenueMap"), {
+const VenueMap = dynamic(() => import("./VenueMap"), {
   ssr: false,
 });
 

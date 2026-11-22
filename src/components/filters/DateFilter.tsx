@@ -10,7 +10,7 @@ import { Button } from "@/components/ui/button";
 import { DateRangePicker } from "@/components/ui/date-picker";
 import { normalizeLocale, type Locale } from "@/i18n/locales";
 import { dayjsLocale, formatTime } from "@/lib/schedule";
-import { useSkatingAppData } from "@/components/SkatingAppDataProvider";
+import { useSkatingAppData } from "@/app/(app)/[lang]/_components/SkatingAppDataProvider";
 import { IconCalendarWeek, IconCalendar } from "@tabler/icons-react";
 
 /**

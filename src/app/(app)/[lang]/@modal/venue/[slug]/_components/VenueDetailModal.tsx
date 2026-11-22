@@ -39,17 +39,17 @@ import {
 } from "@/lib/schedule";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { WeekView } from "@/components/schedule/WeekView";
-import { TicketBadge } from "@/components/schedule/TicketBadge";
-import { BusynessBadge } from "@/components/schedule/BusynessBadge";
-import { BusynessQuestionnaire } from "@/components/schedule/BusynessQuestionnaire";
+import { WeekView } from "./WeekView";
+import { TicketBadge } from "./TicketBadge";
+import { BusynessBadge } from "./BusynessBadge";
+import { BusynessQuestionnaire } from "./BusynessQuestionnaire";
 import { trackEvent } from "@/lib/analytics";
 import { toggleFavorite, useFavorites } from "@/lib/favorites";
 import { amenityIcon } from "@/lib/amenities";
 import { SITE_REPO } from "@/lib/site";
 import { normalizeLocale } from "@/i18n/locales";
 import { useLocale } from "@/i18n/LocaleProvider";
-import { useSkatingAppData } from "@/components/SkatingAppDataProvider";
+import { useSkatingAppData } from "@/app/(app)/[lang]/_components/SkatingAppDataProvider";
 import {
   IconAlertCircle,
   IconCheck,

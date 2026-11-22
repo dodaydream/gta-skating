@@ -2,7 +2,7 @@
 
 import { useTranslation } from "react-i18next";
 import type { VenueDisplay } from "@/types/venue";
-import { useSkatingAppData } from "@/components/SkatingAppDataProvider";
+import { useSkatingAppData } from "@/app/(app)/[lang]/_components/SkatingAppDataProvider";
 import { Button } from "@/components/ui/button";
 import {
   IconEyeFilled,
