@@ -99,7 +99,7 @@ function FilterSection({
   );
 }
 
-export function FilterDrawer({ className = "" }: { className?: string }) {
+export function ProgramFilter({ className = "" }: { className?: string }) {
   const { t } = useTranslation();
   const {
     types,

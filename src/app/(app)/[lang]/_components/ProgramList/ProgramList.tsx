@@ -3,8 +3,8 @@
 import type { Venue } from "@/types/venue";
 import type { ProgramItem } from "@/types/schedule";
 import { useTranslation } from "react-i18next";
-import { ProgramListItem } from "@/components/ProgramList/ProgramListItem";
-import { ScheduleSkeleton } from "@/app/(app)/[lang]/_components/ScheduleSkeleton";
+import { ProgramListItem } from "./ProgramListItem";
+import { ProgramListSkeleton } from "./ProgramListSkeleton";
 import {
   Empty,
   EmptyDescription,
@@ -34,7 +34,7 @@ export function ProgramList({
     <div className={className}>
       <div className={listClassName}>
         {loading ? (
-          <ScheduleSkeleton />
+          <ProgramListSkeleton />
         ) : items.length === 0 ? (
           <Empty className="my-6">
             <EmptyHeader>

@@ -1,4 +1,4 @@
-export function ScheduleSkeleton() {
+export function ProgramListSkeleton() {
   return (
     <div className="flex flex-col gap-4" aria-hidden="true">
       {[0, 1].map((i) => (

@@ -2,7 +2,7 @@
 
 import dynamic from "next/dynamic";
 import type { ReactNode } from "react";
-import { FilterBar } from "@/components/filters/FilterBar";
+import { AppBar } from "./AppBar";
 import { ScheduleSidebar } from "./ScheduleSidebar";
 import {
   SkatingAppDataProvider,
@@ -47,7 +47,7 @@ function SkatingShellInner({
           />
 
           <div className="absolute left-0 right-0 top-3 z-40 pl-[calc(var(--safe-left)_+_0.75rem)] pr-[calc(var(--safe-right)_+_0.75rem)] lg:top-6 lg:pl-[calc(var(--safe-left)_+_1.5rem)] lg:pr-[calc(var(--safe-right)_+_1.5rem)]">
-            <FilterBar />
+            <AppBar />
           </div>
           <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-transparent" />
         </div>

@@ -5,7 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useTranslation } from "react-i18next";
 import type { ProgramItem } from "@/types/schedule";
-import { ProgramList } from "@/components/ProgramList/ProgramList";
+import { ProgramList } from "./ProgramList/ProgramList";
 import { UserAvatarButton } from "../@modal/user/_components/UserCentre";
 import { useSkatingAppData } from "./SkatingAppDataProvider";
 import { distanceKm } from "@/lib/schedule";

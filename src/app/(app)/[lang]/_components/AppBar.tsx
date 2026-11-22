@@ -1,17 +1,17 @@
 "use client";
 
 import { cn } from "cn";
-import { DateFilter } from "@/components/filters/DateFilter";
-import { FilterDrawer } from "@/components/filters/FilterDrawer";
-import { LocateButton } from "@/components/filters/LocateButton";
-import { VenueDisplayOption } from "@/components/filters/VenueDisplayOption";
+import { DateFilter } from "./Filter/DateFilter";
+import { ProgramFilter } from "./Filter/ProgramFilter";
+import { LocateButton } from "./LocateButton";
+import { VenueDisplayOption } from "./VenueDisplayOption";
 
 /**
  * Horizontal control bar for the map overlay. On mobile the controls can
  * exceed the viewport width, so the bar scrolls horizontally instead of
  * wrapping; on desktop everything fits and scrolling is disabled.
  */
-export function FilterBar({ className }: { className?: string }) {
+export function AppBar({ className }: { className?: string }) {
   return (
     <div
       className={cn(
@@ -22,7 +22,7 @@ export function FilterBar({ className }: { className?: string }) {
     >
       <LocateButton />
       <DateFilter />
-      <FilterDrawer />
+      <ProgramFilter />
       <VenueDisplayOption />
     </div>
   );
