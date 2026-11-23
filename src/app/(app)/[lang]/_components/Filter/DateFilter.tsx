@@ -208,7 +208,7 @@ export function DateFilter() {
       open={open}
       onOpenChange={setOpen}
       max={MAX_RANGE_DAYS - 1}
-      variant="secondary"
+      variant="outline"
       size="lg"
       className="shadow-xs min-w-0 flex-1 md:flex-none"
       trigger={

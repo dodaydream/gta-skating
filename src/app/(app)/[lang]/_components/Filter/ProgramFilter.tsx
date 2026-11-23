@@ -256,7 +256,7 @@ export function ProgramFilter({ className = "" }: { className?: string }) {
     return (
       <>
         <Button
-          variant="secondary"
+          variant="outline"
           size="icon-lg"
           className={`shadow-xs ${className}`}
           aria-label={t("filters.title")}
@@ -282,7 +282,7 @@ export function ProgramFilter({ className = "" }: { className?: string }) {
   return (
     <>
       <Button
-        variant="secondary"
+        variant="outline"
         size="icon-lg"
         className={`shadow-xs ${className}`}
         aria-label={t("filters.title")}

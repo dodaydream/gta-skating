@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 
-export const DESKTOP_QUERY = "(min-width: 1024px)";
+export const DESKTOP_QUERY = "(min-width: 768px)";
 
 /**
  * Tracks whether the viewport matches the app's desktop breakpoint. Returns

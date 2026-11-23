@@ -41,7 +41,7 @@ export function VenueDisplayOption() {
 
   return (
     <Button
-      variant="secondary"
+      variant="outline"
       size="icon-lg"
       className="shadow-xs"
       data-slot="venue-display"

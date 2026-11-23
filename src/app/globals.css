@@ -6,6 +6,7 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
+  --breakpoint-lg: 768px;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
@@ -141,7 +142,7 @@
   }
 }
 
-@media (max-width: 1023.98px) {
+@media (max-width: 767.98px) {
   /* Zoom in/out is desktop-only; mobile uses pinch gestures. */
   .maplibregl-control-container
     .maplibregl-ctrl-top-right
@@ -208,7 +209,7 @@
 
 /* Desktop: unify map-control insets with the app's 1.5rem padding so the
    top/bottom controls line up with the sidebar title and footer. */
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .maplibregl-control-container .maplibregl-ctrl-top-right {
     top: 1.5rem;
     right: calc(var(--safe-right) + 1.5rem);
@@ -231,6 +232,38 @@
   .maplibregl-control-container .maplibregl-ctrl-bottom-right > .maplibregl-ctrl {
     margin: 0;
   }
+}
+
+/* MapLibre's generic control-button hover paints a translucent black that
+   outranks our themed button styles, washing these controls out on hover.
+   Restore the outline variant's hover fill so they match the other map buttons. */
+.maplibregl-control-container
+  .maplibregl-ctrl:is([data-slot="locate"], [data-slot="zoom-control"])
+  button:not(:disabled):hover {
+  background-color: var(--color-muted);
+  color: var(--color-foreground);
+}
+
+/* Over the map, the outline controls need an opaque surface: the outline
+   variant's translucent dark fill reads as transparent against map tiles. */
+.dark [data-slot="map-overlay"] button,
+.dark
+  .maplibregl-control-container
+  .maplibregl-ctrl[data-slot="locate"]
+  > [data-slot="button"],
+.dark
+  .maplibregl-control-container
+  .maplibregl-ctrl[data-slot="zoom-control"] {
+  background-color: var(--color-card);
+}
+
+.dark [data-slot="map-overlay"] button:hover,
+.dark
+  .maplibregl-control-container
+  .maplibregl-ctrl:is([data-slot="locate"], [data-slot="zoom-control"])
+  button:not(:disabled):hover {
+  background-color: var(--color-muted);
+  color: var(--color-foreground);
 }
 
 

@@ -13,6 +13,7 @@ import { VenueSearch } from "./VenueSearch";
 export function AppBar({ className }: { className?: string }) {
   return (
     <div
+      data-slot="map-overlay"
       className={cn(
         "pointer-events-auto flex flex-wrap items-center gap-1.5 lg:w-fit lg:gap-2 [&>*]:shrink-0",
         className

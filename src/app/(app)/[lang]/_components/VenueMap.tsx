@@ -36,7 +36,7 @@ const DARK_STYLE = "https://tiles.openfreemap.org/styles/dark";
 const DEFAULT_ZOOM = 12;
 const TORONTO: [number, number] = [-79.390531, 43.725518];
 
-const DESKTOP_WIDTH = 1024;
+const DESKTOP_WIDTH = 768;
 
 // Height (in map-canvas pixels) of the strip left visible above the bottom
 // drawer. The canvas already matches the dynamic viewport (`100dvh`, since the
@@ -314,12 +314,12 @@ class ZoomControl implements maplibregl.IControl {
     const container = document.createElement("div");
     container.dataset.slot = "zoom-control";
     container.className =
-      "maplibregl-ctrl inline-flex flex-col overflow-hidden rounded-lg border border-border bg-background text-foreground shadow-sm";
+      "maplibregl-ctrl inline-flex flex-col overflow-hidden rounded-lg border border-border bg-background text-foreground shadow-xs dark:border-input dark:bg-input/30";
     container.innerHTML = `
       <button type="button" data-slot="zoom-in" aria-label="${this.labels.zoomIn}" title="${this.labels.zoomIn}" class="${ZOOM_BUTTON_CLASS}">
         ${ZOOM_ICON}<path d="M5 12h14"/><path d="M12 5v14"/></svg>
       </button>
-      <button type="button" data-slot="zoom-out" aria-label="${this.labels.zoomOut}" title="${this.labels.zoomOut}" class="${ZOOM_BUTTON_CLASS} border-t border-border">
+      <button type="button" data-slot="zoom-out" aria-label="${this.labels.zoomOut}" title="${this.labels.zoomOut}" class="${ZOOM_BUTTON_CLASS} border-t border-border dark:border-input">
         ${ZOOM_ICON}<path d="M5 12h14"/></svg>
       </button>
     `;
@@ -705,7 +705,7 @@ export default function VenueMap({
       />
       {locateContainer &&
         createPortal(
-          <div className="maplibregl-ctrl">
+          <div className="maplibregl-ctrl" data-slot="locate">
             <LocateButton />
           </div>,
           locateContainer,

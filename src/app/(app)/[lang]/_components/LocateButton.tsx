@@ -12,7 +12,7 @@ export function LocateButton() {
 
   return (
     <Button
-      variant="secondary"
+      variant="outline"
       size="icon-lg"
       className="shadow-xs"
       onClick={() => {
@@ -22,7 +22,7 @@ export function LocateButton() {
       aria-label={t("filters.locate")}
       title={t("filters.locate")}
     >
-      <IconLocation className="size-4" aria-hidden />
+      <IconLocation />
     </Button>
   );
 }

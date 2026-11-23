@@ -84,7 +84,7 @@ export function VenueSearch() {
   return (
     <>
       <Button
-        variant="secondary"
+        variant="outline"
         size="icon-lg"
         className="shadow-xs"
         aria-label={t("sidebar.search")}
