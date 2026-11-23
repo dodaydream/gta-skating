@@ -20,6 +20,17 @@ import { IconCalendarWeek, IconCalendar } from "@tabler/icons-react";
  */
 const MAX_RANGE_DAYS = 7;
 
+/**
+ * One-click time presets. Each applies to the currently selected date(s), or to
+ * today when no date has been picked, replacing both the from and to times.
+ */
+const QUICK_PERIODS = [
+  { key: "allDay", from: "00:00", to: "23:59" },
+  { key: "morning", from: "06:00", to: "12:00" },
+  { key: "afternoon", from: "12:00", to: "17:00" },
+  { key: "evening", from: "17:00", to: "23:59" },
+] as const;
+
 function parseDate(value: string): Date | undefined {
   if (!value) return undefined;
   const d = new Date(value);
@@ -43,18 +54,31 @@ function toLocalDateStr(d: Date): string {
   return `${y}-${m}-${day}`;
 }
 
-function formatDateTime(
+function formatDate(
   value: string,
   now: Date | null,
   t: TFunction,
   locale: Locale
 ): string {
   const d = dayjs(value).locale(dayjsLocale(locale));
-  const time = formatTime(value);
   const isToday =
     !!now && d.format("YYYY-MM-DD") === dayjs(now).format("YYYY-MM-DD");
+  if (isToday) return t("filters.today");
+  return d.format(locale === "fr" ? "D MMM" : "MMM D");
+}
+
+function formatDateTime(
+  value: string,
+  now: Date | null,
+  t: TFunction,
+  locale: Locale
+): string {
+  const time = formatTime(value);
+  const isToday =
+    !!now &&
+    dayjs(value).format("YYYY-MM-DD") === dayjs(now).format("YYYY-MM-DD");
   if (isToday) return `${t("filters.today")} ${time}`;
-  return `${d.format(locale === "fr" ? "D MMM" : "MMM D")}, ${time}`;
+  return `${formatDate(value, now, t, locale)}, ${time}`;
 }
 
 function displayLabel(
@@ -66,8 +90,17 @@ function displayLabel(
 ): string {
   if (from && to && dayjs(from).isSame(dayjs(to), "day"))
     return `${formatDateTime(from, now, t, locale)} - ${formatTime(to)}`;
-  if (from && to)
-    return `${formatDateTime(from, now, t, locale)} - ${formatDateTime(to, now, t, locale)}`;
+  if (from && to) {
+    const fromD = dayjs(from);
+    const toD = dayjs(to);
+    const fromIsToday =
+      !!now && fromD.format("YYYY-MM-DD") === dayjs(now).format("YYYY-MM-DD");
+    const toLabel =
+      !fromIsToday && fromD.isSame(toD, "month")
+        ? toD.format("D")
+        : formatDate(to, now, t, locale);
+    return `${formatDate(from, now, t, locale)} - ${toLabel}, ${formatTime(from)} - ${formatTime(to)}`;
+  }
   if (from)
     return t("filters.fromDate", {
       value: formatDateTime(from, now, t, locale),
@@ -118,7 +151,11 @@ export function DateFilter() {
     setFromTimeTouched(false);
   }, [from, to]);
 
-  const commit = (range: DateRange | undefined, fromTime: string, toTime: string) => {
+  const commit = (
+    range: DateRange | undefined,
+    fromTime: string,
+    toTime: string
+  ) => {
     if (!range || !range.from) {
       onClear();
       return;
@@ -139,9 +176,30 @@ export function DateFilter() {
     setOpen(false);
   };
 
+  const applyQuickPeriod = (fromTime: string, toTime: string) => {
+    setPendingFromTime(fromTime);
+    setPendingToTime(toTime);
+    setFromTimeTouched(true);
+  };
+
   const handleSelect = (range: DateRange | undefined) => {
     setPendingRange(range);
   };
+
+  const pendingFrom = pendingRange?.from;
+  const pendingTo = pendingRange?.to ?? pendingFrom;
+  const pendingLabel = displayLabel(
+    pendingFrom ? `${toLocalDateStr(pendingFrom)}T${pendingFromTime}` : "",
+    pendingTo ? `${toLocalDateStr(pendingTo)}T${pendingToTime}` : "",
+    now,
+    t,
+    locale
+  );
+
+  const activePeriod = QUICK_PERIODS.find(
+    (period) =>
+      period.from === pendingFromTime && period.to === pendingToTime
+  )?.key;
 
   return (
     <DateRangePicker
@@ -168,61 +226,79 @@ export function DateFilter() {
           )}
         </>
       }
-      drawerTitle={displayLabel(from, to, now, t, locale)}
+      drawerTitle={pendingLabel}
     >
-      <div className="flex items-center gap-2 border-t px-3 py-2">
-        <div className="flex flex-1 items-center gap-1">
+      <div className="space-y-3 border-t px-3 py-3">
+        <div
+          role="group"
+          aria-label={t("filters.timeOfDay")}
+          className="flex gap-2"
+        >
+          {QUICK_PERIODS.map((period) => {
+            const isActive = activePeriod === period.key;
+            return (
+              <Button
+                key={period.key}
+                variant={isActive ? "secondary" : "outline"}
+                size="lg"
+                className="flex-1 px-2"
+                aria-pressed={isActive}
+                onClick={() => applyQuickPeriod(period.from, period.to)}
+              >
+                {t(`filters.${period.key}`)}
+              </Button>
+            );
+          })}
+        </div>
+        <div className="grid grid-cols-2 gap-2">
           <label
             htmlFor={fromTimeId}
-            className="w-8 shrink-0 text-[11px] text-muted-foreground"
+            className="flex flex-col gap-1 text-[11px] text-muted-foreground"
           >
             {t("filters.from")}
+            <input
+              id={fromTimeId}
+              type="time"
+              value={pendingFromTime}
+              onChange={(e) => {
+                setPendingFromTime(e.target.value);
+                setFromTimeTouched(true);
+              }}
+              className="h-9 w-full rounded-md border border-input bg-background px-2 text-sm"
+            />
           </label>
-          <input
-            id={fromTimeId}
-            type="time"
-            value={pendingFromTime}
-            onChange={(e) => {
-              setPendingFromTime(e.target.value);
-              setFromTimeTouched(true);
-            }}
-            className="w-full rounded-md border border-input bg-background px-2 py-1 text-xs"
-          />
-        </div>
-        <div className="flex flex-1 items-center gap-1">
           <label
             htmlFor={toTimeId}
-            className="w-4 shrink-0 text-[11px] text-muted-foreground"
+            className="flex flex-col gap-1 text-[11px] text-muted-foreground"
           >
             {t("filters.to")}
+            <input
+              id={toTimeId}
+              type="time"
+              value={pendingToTime}
+              onChange={(e) => setPendingToTime(e.target.value)}
+              className="h-9 w-full rounded-md border border-input bg-background px-2 text-sm"
+            />
           </label>
-          <input
-            id={toTimeId}
-            type="time"
-            value={pendingToTime}
-            onChange={(e) => setPendingToTime(e.target.value)}
-            className="w-full rounded-md border border-input bg-background px-2 py-1 text-xs"
-          />
         </div>
       </div>
-
-      <div className="flex gap-2 border-t px-3 py-2 lg:justify-start">
+      <div className="flex items-center gap-2 border-t px-3 py-2">
         <Button
           variant="outline"
           size="lg"
-          className="flex-1 lg:flex-none lg:size-sm"
+          className="px-3"
           onClick={() => {
             const now = todayLocalISO();
             const fromDate = new Date();
             commit({ from: fromDate, to: fromDate }, now.slice(11, 16), "23:59");
           }}
         >
-          {t("filters.today")}
+          {t("filters.upcoming")}
         </Button>
         <Button
           variant="default"
           size="lg"
-          className="flex-1 lg:flex-none lg:ml-auto"
+          className="ml-auto px-4"
           onClick={() => commit(pendingRange, pendingFromTime, pendingToTime)}
         >
           {t("filters.ok")}
