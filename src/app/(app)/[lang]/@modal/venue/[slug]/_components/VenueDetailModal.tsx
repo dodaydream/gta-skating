@@ -11,6 +11,7 @@ import { loadVenueReports } from "@/api/busyness";
 import { isFirebaseConfigured } from "@/lib/firebase";
 import { predictBusy } from "@/lib/feedback";
 import { cn } from "cn";
+import { useIsDesktop } from "@/hooks/useIsDesktop";
 import {
   Dialog,
   DialogContent,
@@ -29,6 +30,7 @@ import {
 } from "@/components/ui/alert";
 import {
   distanceKm,
+  formatDistance,
   formatEventDate,
   formatHumanDate,
   formatTimeRange,
@@ -68,8 +70,6 @@ import {
   EmptyMedia,
   EmptyTitle,
 } from "@/components/ui/empty";
-
-const DESKTOP_QUERY = "(min-width: 1024px)";
 
 const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
@@ -121,23 +121,6 @@ function MapLink({
         : t("programs.viewOnGoogleMaps")}
     </a>
   );
-}
-
-function useIsDesktop() {
-  const [isDesktop, setIsDesktop] = useState(() =>
-    typeof window === "undefined"
-      ? true
-      : window.matchMedia(DESKTOP_QUERY).matches
-  );
-
-  useEffect(() => {
-    const mq = window.matchMedia(DESKTOP_QUERY);
-    const onChange = () => setIsDesktop(mq.matches);
-    mq.addEventListener("change", onChange);
-    return () => mq.removeEventListener("change", onChange);
-  }, []);
-
-  return isDesktop;
 }
 
 function Panel({
@@ -245,7 +228,7 @@ function CloseButton({
       onClick={onClick}
       aria-label={t("close")}
       className={cn(
-        "rounded-lg p-1.5 text-zinc-500 transition-colors hover:bg-zinc-100 hover:text-black dark:hover:bg-zinc-800 dark:hover:text-zinc-50",
+        "rounded-lg p-1.5 text-zinc-500 transition-colors hover:bg-muted hover:text-foreground",
         className
       )}
     >
@@ -302,7 +285,7 @@ function ShareButton({
       aria-label={copied ? t("venue.shareCopied") : t("venue.share")}
       title={t("venue.share")}
       className={cn(
-        "rounded-lg p-1.5 text-zinc-500 transition-colors hover:bg-zinc-100 hover:text-black dark:hover:bg-zinc-800 dark:hover:text-zinc-50",
+        "rounded-lg p-1.5 text-zinc-500 transition-colors hover:bg-muted hover:text-foreground",
         className
       )}
     >
@@ -342,7 +325,7 @@ function FavouriteButton({
         "rounded-lg p-1.5 transition-colors hover:bg-zinc-100 dark:hover:bg-zinc-800",
         favorite
           ? "text-amber-500 hover:text-amber-600 dark:hover:text-amber-400"
-          : "text-zinc-500 hover:text-black dark:hover:text-zinc-50",
+          : "text-zinc-500 hover:text-foreground",
         className
       )}
     >
@@ -365,7 +348,7 @@ function FilteredProgramsAlert({ onShowAll }: { onShowAll: () => void }) {
         <button
           type="button"
           onClick={onShowAll}
-          className="font-medium underline underline-offset-3 hover:text-blue-950 dark:hover:text-blue-50"
+          className="font-medium underline underline-offset-3 hover:text-brand"
         >
           {t("venue.showAllPrograms")}
         </button>
@@ -543,8 +526,8 @@ export function VenueDetailModal({ slug }: { slug: string }) {
             <PanelDescription isDesktop={isDesktop}>
               {venue.address}
               {distance !== null ? (
-                <span className="ml-2 text-zinc-400">
-                  · {distance < 10 ? distance.toFixed(1) : Math.round(distance)} km
+                <span className="ml-2 text-muted-foreground">
+                  · {formatDistance(distance)}
                 </span>
               ) : null}
             </PanelDescription>
@@ -583,7 +566,7 @@ export function VenueDetailModal({ slug }: { slug: string }) {
 
           <div className="flex flex-col">
             <div className="sticky top-0 z-30 flex h-12 items-center justify-between gap-3 bg-popover px-5">
-              <h3 className="text-sm font-semibold text-black dark:text-zinc-50">
+              <h3 className="text-sm font-semibold text-foreground">
                 {t("venue.schedule")}
               </h3>
               <Tabs
@@ -658,15 +641,15 @@ export function VenueDetailModal({ slug }: { slug: string }) {
 
       <VenueInfoSection info={venue.info} />
 
-      <footer className="flex flex-col gap-2 border-t border-black/[.06] px-5 py-3 text-xs text-zinc-500 dark:border-white/[.08] dark:text-zinc-400">
-        <p className="text-center text-zinc-400 md:text-left">
+      <footer className="flex flex-col gap-2 border-t border-border px-5 py-3 text-xs text-muted-foreground">
+        <p className="text-center text-muted-foreground md:text-left">
           {t("venue.disclaimer")}
         </p>
         <div className="flex flex-col items-center gap-2 md:flex-row md:justify-between md:gap-3">
           <span className="flex items-center gap-3">
             {venue.url ? (
               <a
-                className="font-medium text-blue-600 hover:underline dark:text-blue-400"
+                className="font-medium text-brand hover:underline"
                 href={venue.url}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -676,14 +659,14 @@ export function VenueDetailModal({ slug }: { slug: string }) {
             ) : null}
             {venue.coordinates ? (
               <MapLink
-                className="font-medium text-blue-600 hover:underline dark:text-blue-400"
+                className="font-medium text-brand hover:underline"
                 name={venue.name}
                 coordinates={venue.coordinates}
                 address={venue.address}
               />
             ) : null}
           </span>
-          <span className="text-center text-zinc-400 md:text-right">
+          <span className="text-center text-muted-foreground md:text-right">
             {t("programs.updated", { date: updated })}
           </span>
         </div>
@@ -707,14 +690,14 @@ function RinksSection({
   return (
     <section className="flex flex-col">
       <div className="sticky top-0 z-30 flex items-center justify-between gap-3 bg-popover px-5 py-2">
-        <h3 className="text-sm font-semibold text-black dark:text-zinc-50">
+        <h3 className="text-sm font-semibold text-foreground">
           {t("venue.rinks")}
         </h3>
         <a
           href={reportUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex shrink-0 items-center gap-1 text-xs font-medium text-zinc-500 hover:text-black hover:underline dark:text-zinc-400 dark:hover:text-zinc-50"
+          className="flex shrink-0 items-center gap-1 text-xs font-medium text-muted-foreground hover:text-foreground hover:underline"
         >
           <IconAlertCircle className="h-3.5 w-3.5" />
           {t("venue.reportRink")}
@@ -724,12 +707,12 @@ function RinksSection({
         {rinks.map((rink) => (
           <li
             key={rink.name}
-            className="flex items-center gap-1.5 rounded-full border border-black/[.08] bg-white px-2.5 py-1 text-xs dark:border-white/[.145] dark:bg-zinc-950"
+            className="flex items-center gap-1.5 rounded-full border border-border bg-card px-2.5 py-1 text-xs"
           >
-            <span className="font-medium text-black dark:text-zinc-50">
+            <span className="font-medium text-foreground">
               {rink.name}
             </span>
-            <span className="text-zinc-500 dark:text-zinc-400">{rink.type}</span>
+            <span className="text-muted-foreground">{rink.type}</span>
           </li>
         ))}
       </ul>
@@ -786,13 +769,13 @@ function VenueInfoSection({ info }: { info?: InfoItem[] }) {
   };
   return (
     <section className="px-5 pt-4">
-      <h3 className="text-sm font-semibold text-black dark:text-zinc-50">
+      <h3 className="text-sm font-semibold text-foreground">
         {t("venue.info")}
       </h3>
       <dl className="mt-2 grid grid-cols-[auto_1fr] gap-x-4 gap-y-2 text-xs">
         {info.map((item) => (
           <Fragment key={item.key}>
-            <dt className="text-zinc-500 dark:text-zinc-400">
+            <dt className="text-muted-foreground">
               {INFO_LABELS[item.key]
                 ? t(INFO_LABELS[item.key])
                 : humanizeKey(item.key)}
@@ -813,7 +796,7 @@ function AmenitiesSection({ amenities }: { amenities?: string[] }) {
   return (
     <section className="flex flex-col">
       <div className="sticky top-0 z-30 flex items-center justify-between gap-3 bg-popover px-5 py-2">
-        <h3 className="text-sm font-semibold text-black dark:text-zinc-50">
+        <h3 className="text-sm font-semibold text-foreground">
           {t("venue.amenities")}
         </h3>
       </div>
@@ -822,7 +805,7 @@ function AmenitiesSection({ amenities }: { amenities?: string[] }) {
           const Icon = amenityIcon(amenity);
           return (
             <li key={amenity} className="flex items-center gap-1.5">
-              <Icon className="h-3.5 w-3.5 shrink-0 text-zinc-500 dark:text-zinc-400" />
+              <Icon className="h-3.5 w-3.5 shrink-0 text-muted-foreground" />
               {t(`amenities.${amenity}`)}
             </li>
           );
@@ -884,7 +867,7 @@ function VenueDetailSkeleton() {
           {[0, 1, 2].map((i) => (
             <div
               key={i}
-              className="flex w-56 shrink-0 flex-col gap-2 rounded-xl border border-black/[.08] p-3 dark:border-white/[.145]"
+              className="flex w-56 shrink-0 flex-col gap-2 rounded-xl border border-border p-3"
             >
               <div className="h-4 w-28 animate-pulse rounded bg-black/[.08] dark:bg-white/[.1]" />
               <div className="h-3.5 w-full animate-pulse rounded bg-black/[.06] dark:bg-white/[.08]" />
@@ -977,27 +960,27 @@ function TodayCards({
               key={`${program.id}-${program.start}`}
               className={`flex w-56 shrink-0 flex-col overflow-hidden rounded-xl border p-3 ${
                 isCurrent
-                  ? "border-blue-300 bg-blue-50/70 dark:border-blue-800 dark:bg-blue-950/40"
-                  : "border-black/[.08] bg-white dark:border-white/[.145] dark:bg-zinc-950"
+                  ? "border-brand/30 bg-brand/10 dark:border-brand/40 dark:bg-brand/15"
+                  : "border-border bg-card"
               }`}
             >
               <div className="flex items-baseline gap-2">
                 <h3
                   className={`min-w-0 truncate text-xs font-semibold ${
                     isCurrent
-                      ? "text-blue-700 dark:text-blue-300"
+                      ? "text-brand"
                       : "text-zinc-700 dark:text-zinc-300"
                   }`}
                 >
                   {formatHumanDate(programDate, timezone, locale)}
                 </h3>
-                <span className="ml-auto shrink-0 font-mono text-xs tabular-nums text-zinc-500 dark:text-zinc-400">
+                <span className="ml-auto shrink-0 font-mono text-xs tabular-nums text-muted-foreground">
                   {formatTimeRange(program.start, program.end)}
                 </span>
               </div>
-              <ul className="flex flex-col divide-y divide-black/[.06] dark:divide-white/[.08]">
+              <ul className="flex flex-col divide-y divide-border">
                 <li className="flex flex-col gap-1 py-1.5">
-                  <span className="truncate text-sm text-black dark:text-zinc-50">
+                  <span className="truncate text-sm text-foreground">
                     {program.name}
                   </span>
                   <div className="flex items-center gap-2 empty:hidden">
@@ -1049,19 +1032,19 @@ function ListView({
             <h3 className="text-sm font-semibold text-zinc-700 dark:text-zinc-300">
               {formatEventDate(date, timezone, locale)}
             </h3>
-            <span className="flex-1 border-t border-dashed border-black/[.08] dark:border-white/[.1]" />
+            <span className="flex-1 border-t border-dashed border-border" />
           </div>
-          <ul className="flex flex-col divide-y divide-black/[.06] dark:divide-white/[.08]">
+          <ul className="flex flex-col divide-y divide-border">
             {datePrograms.map((program) => (
               <li
                 key={`${program.id}-${program.start}`}
                 className="flex flex-col gap-1 py-2"
               >
                 <div className="flex flex-wrap items-baseline gap-3">
-                  <span className="font-mono text-sm tabular-nums text-zinc-500 dark:text-zinc-400">
+                  <span className="font-mono text-sm tabular-nums text-muted-foreground">
                     {formatTimeRange(program.start, program.end)}
                   </span>
-                  <span className="text-black dark:text-zinc-50">
+                  <span className="text-foreground">
                     {program.name}
                   </span>
                   <TicketBadge ticket={program.ticket} />
@@ -1076,7 +1059,7 @@ function ListView({
                   ) : null}
                 </div>
                 {program.notes ? (
-                  <div className="w-full text-sm text-zinc-500 dark:text-zinc-400">
+                  <div className="w-full text-sm text-muted-foreground">
                     {program.notes}
                   </div>
                 ) : null}

@@ -93,6 +93,14 @@ function fitPadding(map: maplibregl.Map): maplibregl.PaddingOptions {
   return { top, bottom: 48, left: horizontal, right: horizontal };
 }
 
+function cssToken(name: string, fallback: string): string {
+  if (typeof document === "undefined") return fallback;
+  const value = getComputedStyle(document.documentElement)
+    .getPropertyValue(name)
+    .trim();
+  return value || fallback;
+}
+
 function createMarkerElement(
   selected: boolean,
   hasPrograms: boolean,
@@ -100,13 +108,18 @@ function createMarkerElement(
 ): HTMLDivElement {
   const el = document.createElement("div");
   const pinSize = selected ? 32 : 20;
+  const color = selected
+    ? cssToken("--brand", "#2563eb")
+    : hasPrograms
+      ? cssToken("--success", "#22c55e")
+      : cssToken("--destructive", "#ef4444");
   el.style.cssText = selected
     ? "display:flex;flex-direction:column;align-items:center;gap:8px;"
     : "";
   el.innerHTML = `<div style="
     width:${pinSize}px;height:${pinSize}px;
     border-radius:50% 50% 50% 0;transform:rotate(-45deg);
-    background:${selected ? "#2563eb" : hasPrograms ? "#22c55e" : "#ef4444"};
+    background:${color};
     border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.4);cursor:pointer;
     transition:width .2s,height .2s;
     animation:${selected ? "arena-pin-pop .2s ease-out" : "none"};
@@ -115,6 +128,24 @@ function createMarkerElement(
     color:#fff;text-align:center;max-width:160px;
     text-shadow:0 1px 2px rgba(0,0,0,.6);
   ">${name}</span>` : ""}`;
+  el.tabIndex = 0;
+  el.setAttribute("role", "button");
+  el.setAttribute("aria-label", name);
+  el.style.outline = "none";
+  el.style.borderRadius = "9999px";
+  const setRing = (on: boolean) => {
+    el.style.boxShadow = on
+      ? "0 0 0 3px color-mix(in srgb, var(--brand, #2563eb) 45%, transparent)"
+      : "";
+  };
+  el.addEventListener("focus", () => setRing(true));
+  el.addEventListener("blur", () => setRing(false));
+  el.addEventListener("keydown", (event) => {
+    if (event.key === "Enter" || event.key === " ") {
+      event.preventDefault();
+      el.click();
+    }
+  });
   return el;
 }
 
@@ -123,7 +154,7 @@ function createUserDotElement(): HTMLDivElement {
   el.style.cssText = "position:relative;width:20px;height:20px;";
   el.innerHTML = `
     <span style="position:absolute;inset:0;border-radius:9999px;background:#fff;box-shadow:0 1px 4px rgba(0,0,0,.4);"></span>
-    <span style="position:absolute;left:50%;top:50%;width:16px;height:16px;transform:translate(-50%,-50%);border-radius:9999px;background:#2563eb;"></span>`;
+    <span style="position:absolute;left:50%;top:50%;width:16px;height:16px;transform:translate(-50%,-50%);border-radius:9999px;background:${cssToken("--brand", "#2563eb")};"></span>`;
   return el;
 }
 
@@ -248,7 +279,7 @@ class AttributionControl implements maplibregl.IControl {
       "maplibregl-ctrl inline-flex flex-wrap items-center gap-x-1 text-[8px] leading-tight text-zinc-700 lg:text-[10px] [text-shadow:0_1px_2px_rgba(255,255,255,0.9)] dark:text-zinc-200 dark:[text-shadow:none]";
     container.innerHTML =
       `<a href="https://maplibre.org" target="_blank" rel="noopener noreferrer" class="${ATTRIBUTION_LINK_CLASS}">MapLibre</a>` +
-      `<span class="text-zinc-400 dark:text-zinc-500" aria-hidden="true">|</span>` +
+      `<span class="text-muted-foreground" aria-hidden="true">|</span>` +
       `<a href="https://openfreemap.org" target="_blank" rel="noopener noreferrer" class="${ATTRIBUTION_LINK_CLASS}">OpenFreeMap</a>` +
       `<a href="https://openmaptiles.org" target="_blank" rel="noopener noreferrer" class="${ATTRIBUTION_LINK_CLASS}">© OpenMapTiles</a>` +
       `<a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer" class="${ATTRIBUTION_LINK_CLASS}">Data from OpenStreetMap</a>`;

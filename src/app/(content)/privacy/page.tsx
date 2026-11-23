@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { SITE_REPO } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Privacy Policy — GTA Skating Schedule",
@@ -9,8 +10,6 @@ export const metadata: Metadata = {
 };
 
 const LAST_UPDATED = "2 November 2026";
-
-const REPO_URL = "https://github.com/dodaydream/gta-skating";
 
 function Section({
   id,
@@ -23,7 +22,7 @@ function Section({
 }) {
   return (
     <section id={id} className="scroll-mt-6">
-      <h2 className="text-lg font-semibold tracking-tight text-black dark:text-zinc-50">
+      <h2 className="text-lg font-semibold tracking-tight text-foreground">
         {title}
       </h2>
       <div className="mt-2 flex flex-col gap-3 text-sm leading-6 text-zinc-700 dark:text-zinc-300">
@@ -37,17 +36,17 @@ export default function PrivacyPage() {
   return (
     <main className="min-h-0 flex-1 overflow-y-auto bg-zinc-50 dark:bg-black">
       <div className="mx-auto flex w-full max-w-3xl flex-col gap-8 px-6 py-10">
-        <header className="flex flex-col gap-3 border-b border-black/[.08] pb-6 dark:border-white/[.145]">
+        <header className="flex flex-col gap-3 border-b border-border pb-6">
           <Link
             href="/"
-            className="text-sm font-medium text-blue-600 hover:underline dark:text-blue-400"
+            className="text-sm font-medium text-brand hover:underline"
           >
             ← Back to the schedule
           </Link>
           <h1 className="text-2xl font-semibold tracking-tight text-black sm:text-3xl dark:text-zinc-50">
             Privacy Policy
           </h1>
-          <p className="text-sm text-zinc-500 dark:text-zinc-400">
+          <p className="text-sm text-muted-foreground">
             Last updated: {LAST_UPDATED}
           </p>
         </header>
@@ -93,7 +92,7 @@ export default function PrivacyPage() {
         </Section>
 
         <Section id="collect" title="Information we collect">
-          <h3 className="font-medium text-black dark:text-zinc-100">
+          <h3 className="font-medium text-foreground">
             Information you provide
           </h3>
           <p>
@@ -106,7 +105,7 @@ export default function PrivacyPage() {
             your name or contact details.
           </p>
 
-          <h3 className="font-medium text-black dark:text-zinc-100">
+          <h3 className="font-medium text-foreground">
             Information collected automatically
           </h3>
           <p>
@@ -115,7 +114,7 @@ export default function PrivacyPage() {
           </p>
           <ul className="list-disc pl-5">
             <li>
-              <span className="font-medium text-black dark:text-zinc-100">
+              <span className="font-medium text-foreground">
                 Usage and analytics data.
               </span>{" "}
               Through Google Analytics 4 we collect information such as the
@@ -127,7 +126,7 @@ export default function PrivacyPage() {
               you, and a randomly generated identifier stored in a cookie.
             </li>
             <li>
-              <span className="font-medium text-black dark:text-zinc-100">
+              <span className="font-medium text-foreground">
                 Device location.
               </span>{" "}
               With your permission, the Site requests your device&rsquo;s
@@ -139,7 +138,7 @@ export default function PrivacyPage() {
               browser settings; the Site continues to work without it.
             </li>
             <li>
-              <span className="font-medium text-black dark:text-zinc-100">
+              <span className="font-medium text-foreground">
                 Anonymous identifier.
               </span>{" "}
               If you submit a busyness rating, Firebase Authentication creates a
@@ -150,7 +149,7 @@ export default function PrivacyPage() {
               precise location.
             </li>
             <li>
-              <span className="font-medium text-black dark:text-zinc-100">
+              <span className="font-medium text-foreground">
                 Cookies, web beacons, IP addresses and other identifiers.
               </span>{" "}
               We and third parties use these technologies as described in the
@@ -167,7 +166,7 @@ export default function PrivacyPage() {
           </p>
           <ul className="list-disc pl-5">
             <li>
-              <span className="font-medium text-black dark:text-zinc-100">
+              <span className="font-medium text-foreground">
                 Analytics cookies
               </span>{" "}
               set by Google Analytics (for example <code>_ga</code> and{" "}
@@ -199,12 +198,12 @@ export default function PrivacyPage() {
           </p>
           <ul className="list-disc pl-5">
             <li>
-              <span className="font-medium text-black dark:text-zinc-100">
+              <span className="font-medium text-foreground">
                 Google
               </span>{" "}
               — for analytics, in accordance with{" "}
               <a
-                className="font-medium text-blue-600 hover:underline dark:text-blue-400"
+                className="font-medium text-brand hover:underline"
                 href="https://policies.google.com/privacy"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -214,13 +213,13 @@ export default function PrivacyPage() {
               .
             </li>
             <li>
-              <span className="font-medium text-black dark:text-zinc-100">
+              <span className="font-medium text-foreground">
                 Firebase and Google Cloud
               </span>{" "}
               — anonymous busyness ratings are stored in Google Cloud Firestore,
               a service operated by Google. This processing is governed by{" "}
               <a
-                className="font-medium text-blue-600 hover:underline dark:text-blue-400"
+                className="font-medium text-brand hover:underline"
                 href="https://policies.google.com/privacy"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -230,7 +229,7 @@ export default function PrivacyPage() {
               .
             </li>
             <li>
-              <span className="font-medium text-black dark:text-zinc-100">
+              <span className="font-medium text-foreground">
                 Our hosting and map providers
               </span>{" "}
               — the Site is hosted on GitHub Pages and map tiles are loaded from
@@ -239,7 +238,7 @@ export default function PrivacyPage() {
               and its map.
             </li>
             <li>
-              <span className="font-medium text-black dark:text-zinc-100">
+              <span className="font-medium text-foreground">
                 Legal requirements
               </span>{" "}
               — where required to comply with the law or protect rights and
@@ -316,8 +315,8 @@ export default function PrivacyPage() {
             For questions about this policy, or to report a concern, please open
             an issue on the project repository at{" "}
             <a
-              className="font-medium text-blue-600 hover:underline dark:text-blue-400"
-              href={REPO_URL}
+              className="font-medium text-brand hover:underline"
+              href={SITE_REPO}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -332,7 +331,7 @@ export default function PrivacyPage() {
             To learn how Google uses data when you use our partners&rsquo; sites
             or apps, see{" "}
             <a
-              className="font-medium text-blue-600 hover:underline dark:text-blue-400"
+              className="font-medium text-brand hover:underline"
               href="https://www.google.com/policies/privacy/partners/"
               target="_blank"
               rel="noopener noreferrer"
@@ -341,7 +340,7 @@ export default function PrivacyPage() {
             </a>
             . You can also opt out of Google Analytics with the{" "}
             <a
-              className="font-medium text-blue-600 hover:underline dark:text-blue-400"
+              className="font-medium text-brand hover:underline"
               href="https://tools.google.com/dlpage/gaoptout"
               target="_blank"
               rel="noopener noreferrer"
@@ -352,10 +351,10 @@ export default function PrivacyPage() {
           </p>
         </Section>
 
-        <footer className="border-t border-black/[.08] pt-6 text-sm text-zinc-500 dark:border-white/[.145] dark:text-zinc-400">
+        <footer className="border-t border-border pt-6 text-sm text-muted-foreground">
           <Link
             href="/"
-            className="font-medium text-blue-600 hover:underline dark:text-blue-400"
+            className="font-medium text-brand hover:underline"
           >
             ← Back to the schedule
           </Link>

@@ -173,3 +173,7 @@ export function distanceKm(
     Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) * Math.sin(dLon / 2) ** 2;
   return 2 * R * Math.asin(Math.sqrt(a));
 }
+
+export function formatDistance(km: number): string {
+  return `${km < 10 ? km.toFixed(1) : Math.round(km)} km`;
+}

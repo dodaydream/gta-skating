@@ -162,7 +162,7 @@ export function DateFilter() {
             {displayLabel(from, to, now, t, locale)}
           </span>
           {active && (
-            <span className="ml-0.5 size-1.5 shrink-0 rounded-full bg-blue-500" />
+            <span className="ml-0.5 size-1.5 shrink-0 rounded-full bg-brand" />
           )}
         </>
       }

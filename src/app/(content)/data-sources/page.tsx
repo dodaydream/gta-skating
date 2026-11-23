@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { SITE_REPO } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Data Sources — GTA Skating Schedule",
@@ -7,8 +8,6 @@ export const metadata: Metadata = {
     "Where the GTA Skating Schedule collects its skating and arena schedule data, how it is refreshed, and how to verify it.",
   alternates: { canonical: "/data-sources" },
 };
-
-const REPO_URL = "https://github.com/dodaydream/gta-skating";
 
 const SOURCES: {
   name: string;
@@ -120,7 +119,7 @@ function Section({
 }) {
   return (
     <section id={id} className="scroll-mt-6">
-      <h2 className="text-lg font-semibold tracking-tight text-black dark:text-zinc-50">
+      <h2 className="text-lg font-semibold tracking-tight text-foreground">
         {title}
       </h2>
       <div className="mt-2 flex flex-col gap-3 text-sm leading-6 text-zinc-700 dark:text-zinc-300">
@@ -133,7 +132,7 @@ function Section({
 function SourceLink({ name, href }: { name: string; href: string }) {
   return (
     <a
-      className="font-medium text-blue-600 hover:underline dark:text-blue-400"
+      className="font-medium text-brand hover:underline"
       href={href}
       target="_blank"
       rel="noopener noreferrer"
@@ -147,10 +146,10 @@ export default function DataSourcesPage() {
   return (
     <main className="min-h-0 flex-1 overflow-y-auto bg-zinc-50 dark:bg-black">
       <div className="mx-auto flex w-full max-w-3xl flex-col gap-8 px-6 py-10">
-        <header className="flex flex-col gap-3 border-b border-black/[.08] pb-6 dark:border-white/[.145]">
+        <header className="flex flex-col gap-3 border-b border-border pb-6">
           <Link
             href="/"
-            className="text-sm font-medium text-blue-600 hover:underline dark:text-blue-400"
+            className="text-sm font-medium text-brand hover:underline"
           >
             ← Back to the schedule
           </Link>
@@ -229,17 +228,17 @@ export default function DataSourcesPage() {
             Please open an issue on the project repository at{" "}
             <SourceLink
               name="github.com/dodaydream/gta-skating"
-              href={REPO_URL}
+              href={SITE_REPO}
             />
             , including the arena and, if possible, a link to the correct
             schedule.
           </p>
         </Section>
 
-        <footer className="border-t border-black/[.08] pt-6 text-sm text-zinc-500 dark:border-white/[.145] dark:text-zinc-400">
+        <footer className="border-t border-border pt-6 text-sm text-muted-foreground">
           <Link
             href="/"
-            className="font-medium text-blue-600 hover:underline dark:text-blue-400"
+            className="font-medium text-brand hover:underline"
           >
             ← Back to the schedule
           </Link>

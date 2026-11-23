@@ -116,19 +116,19 @@ export function BusynessQuestionnaire({
 
   if (rated) {
     return (
-      <section className="rounded-xl border border-black/[.08] bg-white p-3 text-sm text-zinc-500 dark:border-white/[.145] dark:bg-zinc-950 dark:text-zinc-400">
+      <section className="rounded-xl border border-border bg-card p-3 text-sm text-muted-foreground">
         {t("busy.alreadyRated")}
       </section>
     );
   }
 
   return (
-    <section className="flex flex-col gap-2 rounded-xl border border-black/[.08] bg-white p-3 dark:border-white/[.145] dark:bg-zinc-950">
+    <section className="flex flex-col gap-2 rounded-xl border border-border bg-card p-3">
       <div className="flex flex-col gap-2 lg:flex-row lg:items-start lg:justify-between">
         {program ? (
           <div className="flex min-w-0 flex-col gap-0.5">
             <div className="mb-2 flex flex-wrap items-center gap-1">
-              <span className="w-fit rounded-full bg-blue-600 px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-white">
+              <span className="w-fit rounded-full bg-brand px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-brand-foreground">
                 {t("busy.inProgress")}
               </span>
               <span className="w-fit rounded-full bg-zinc-100 px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-zinc-600 dark:bg-zinc-800 dark:text-zinc-300">
@@ -137,7 +137,7 @@ export function BusynessQuestionnaire({
                 })}
               </span>
             </div>
-            <span className="truncate text-sm font-medium text-black dark:text-zinc-50">
+            <span className="truncate text-sm font-medium text-foreground">
               {program.name}
             </span>
           </div>
@@ -145,7 +145,7 @@ export function BusynessQuestionnaire({
 
         <div className="flex flex-col gap-2">
           <div className="mb-1 flex items-center justify-between gap-2">
-            <h3 className="text-sm font-medium text-black dark:text-zinc-50">
+            <h3 className="text-sm font-medium text-foreground">
               {t("busy.question")}
             </h3>
             {status === "submitted" ? (
@@ -171,8 +171,8 @@ export function BusynessQuestionnaire({
                   className={cn(
                     "flex-1 rounded-full border px-3 py-1 text-xs font-medium transition-colors disabled:opacity-60 lg:flex-none",
                     active
-                      ? "border-blue-600 bg-blue-600 text-white"
-                      : "border-black/[.12] text-zinc-700 hover:bg-zinc-100 dark:border-white/[.2] dark:text-zinc-200 dark:hover:bg-zinc-800"
+                      ? "border-brand bg-brand text-brand-foreground"
+                      : "border-border text-muted-foreground hover:bg-muted"
                   )}
                 >
                   {t(option.labelKey)}
@@ -199,7 +199,7 @@ export function BusynessQuestionnaire({
               {errorKey ? t(errorKey) : t("busy.errorGeneric")}
             </p>
           ) : (
-            <p className="text-xs text-zinc-500 dark:text-zinc-400">
+            <p className="text-xs text-muted-foreground">
               {t("busy.anonymous")}
             </p>
           )}

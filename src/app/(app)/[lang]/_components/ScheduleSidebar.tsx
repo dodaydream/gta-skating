@@ -3,12 +3,14 @@
 import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useIsDesktop } from "@/hooks/useIsDesktop";
 import { useTranslation } from "react-i18next";
 import type { ProgramItem } from "@/types/schedule";
 import { ProgramList } from "./ProgramList/ProgramList";
 import { UserAvatarButton } from "../@modal/user/_components/UserCentre";
 import { useSkatingAppData } from "./SkatingAppDataProvider";
 import { distanceKm } from "@/lib/schedule";
+import { SITE_REPO } from "@/lib/site";
 import {
   Drawer,
   DrawerContent,
@@ -16,7 +18,6 @@ import {
   DrawerTitle,
 } from "@/components/ui/drawer";
 
-const DESKTOP_QUERY = "(min-width: 1024px)";
 const MIN_SNAP = 0.5;
 
 // The max snap point leaves the floating top bar + margin visible, i.e. the
@@ -49,19 +50,18 @@ function useSnapPoints(): number[] {
 
   return snapPoints;
 }
-const REPO_URL = "https://github.com/dodaydream/gta-skating";
 const SUPPORT_URL = process.env.NEXT_PUBLIC_BUYMEACOFFEE_URL;
 
 function ScheduleFooter() {
   const { t } = useTranslation();
   return (
-    <footer className="py-2.5 text-[11px] leading-4 text-zinc-400 dark:text-zinc-500">
+    <footer className="py-2.5 text-xs leading-4 text-muted-foreground">
       <p className="mb-3">{t("sidebar.disclaimer")}</p>
       <p className="mb-1">© {new Date().getFullYear()} GTA Skating</p>
       <div className="flex flex-wrap items-center gap-x-2 gap-y-1">
         <Link
           href="/privacy"
-          className="whitespace-nowrap hover:text-blue-600 dark:hover:text-blue-400"
+          className="whitespace-nowrap hover:text-brand"
         >
           {t("sidebar.privacy")}
         </Link>
@@ -70,7 +70,7 @@ function ScheduleFooter() {
         </span>
         <Link
           href="/data-sources"
-          className="whitespace-nowrap hover:text-blue-600 dark:hover:text-blue-400"
+          className="whitespace-nowrap hover:text-brand"
         >
           {t("sidebar.dataSources")}
         </Link>
@@ -79,7 +79,7 @@ function ScheduleFooter() {
         </span>
         <Link
           href="/faq"
-          className="whitespace-nowrap hover:text-blue-600 dark:hover:text-blue-400"
+          className="whitespace-nowrap hover:text-brand"
         >
           {t("sidebar.faq")}
         </Link>
@@ -102,33 +102,16 @@ function ScheduleFooter() {
           </>
         ) : null}
         <a
-          href={REPO_URL}
+          href={SITE_REPO}
           target="_blank"
           rel="noopener noreferrer"
-          className="whitespace-nowrap hover:text-blue-600 dark:hover:text-blue-400"
+          className="whitespace-nowrap hover:text-brand"
         >
           GitHub
         </a>
       </div>
     </footer>
   );
-}
-
-function useIsDesktop() {
-  const [isDesktop, setIsDesktop] = useState(() =>
-    typeof window === "undefined"
-      ? true
-      : window.matchMedia(DESKTOP_QUERY).matches
-  );
-
-  useEffect(() => {
-    const mq = window.matchMedia(DESKTOP_QUERY);
-    const onChange = () => setIsDesktop(mq.matches);
-    mq.addEventListener("change", onChange);
-    return () => mq.removeEventListener("change", onChange);
-  }, []);
-
-  return isDesktop;
 }
 
 export function ScheduleSidebar() {
@@ -169,14 +152,14 @@ export function ScheduleSidebar() {
   return (
     <>
       {/* Desktop static sidebar */}
-      <aside className="hidden flex-col border-t border-black/[.08] bg-card dark:border-white/[.145] lg:static lg:flex lg:w-96 lg:shrink-0 lg:border-t-0">
+      <aside className="hidden flex-col border-t border-border bg-card lg:static lg:flex lg:w-96 lg:shrink-0 lg:border-t-0">
         <div className="flex min-h-0 flex-1 flex-col overflow-y-auto p-6">
           <div className="mb-4 flex items-start justify-between gap-2">
             <div className="flex flex-col">
-              <h1 className="text-xl font-semibold tracking-tight text-black dark:text-zinc-50">
+              <h1 className="text-xl font-semibold tracking-tight text-foreground">
                   {t("sidebar.title")}
               </h1>
-              <span className="text-sm text-zinc-500 dark:text-zinc-400">
+              <span className="text-sm text-muted-foreground">
                 {programCount}
               </span>
             </div>
@@ -210,7 +193,7 @@ export function ScheduleSidebar() {
         showSwipeHandle
       >
         <DrawerContent
-          className="border-black/[.08] pb-[calc(var(--drawer-snap-point-offset,0px)+var(--drawer-swipe-movement-y,0px))] dark:border-white/[.145] lg:hidden"
+          className="border-border pb-[calc(var(--drawer-snap-point-offset,0px)+var(--drawer-swipe-movement-y,0px))] lg:hidden"
           header={
             <div className="flex items-start justify-between gap-2 px-4 pb-3 pt-4">
               <div className="flex flex-col">

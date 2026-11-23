@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { SITE_REPO } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "FAQ — GTA Skating Schedule",
@@ -8,7 +9,6 @@ export const metadata: Metadata = {
   alternates: { canonical: "/faq" },
 };
 
-const REPO_URL = "https://github.com/dodaydream/gta-skating";
 const TORONTO_LICENCE_URL =
   "https://www.toronto.ca/city-government/data-research-maps/open-data/open-data-licence/";
 
@@ -141,7 +141,7 @@ function DocLink({
   const external = /^https?:\/\//i.test(href);
   return (
     <a
-      className="font-medium text-blue-600 hover:underline dark:text-blue-400"
+      className="font-medium text-brand hover:underline"
       href={href}
       {...(external
         ? { target: "_blank", rel: "noopener noreferrer" }
@@ -162,7 +162,7 @@ function Question({
   return (
     <h2
       id={id}
-      className="scroll-mt-6 text-lg font-semibold tracking-tight text-black dark:text-zinc-50"
+      className="scroll-mt-6 text-lg font-semibold tracking-tight text-foreground"
     >
       {children}
     </h2>
@@ -185,10 +185,10 @@ export default function FaqPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_JSONLD) }}
       />
       <div className="mx-auto flex w-full max-w-3xl flex-col gap-8 px-6 py-10">
-        <header className="flex flex-col gap-3 border-b border-black/[.08] pb-6 dark:border-white/[.145]">
+        <header className="flex flex-col gap-3 border-b border-border pb-6">
           <Link
             href="/"
-            className="text-sm font-medium text-blue-600 hover:underline dark:text-blue-400"
+            className="text-sm font-medium text-brand hover:underline"
           >
             ← Back to the schedule
           </Link>
@@ -276,34 +276,34 @@ export default function FaqPage() {
           <Answer>
             <ul className="list-disc pl-5">
               <li>
-                <span className="font-medium text-black dark:text-zinc-100">
+                <span className="font-medium text-foreground">
                   Public Skate
                 </span>{" "}
                 — general drop-in leisure skating, open to everyone.
               </li>
               <li>
-                <span className="font-medium text-black dark:text-zinc-100">
+                <span className="font-medium text-foreground">
                   Stick and Puck
                 </span>{" "}
                 — informal practice with a stick and puck, usually without an
                 organized game.
               </li>
               <li>
-                <span className="font-medium text-black dark:text-zinc-100">
+                <span className="font-medium text-foreground">
                   Pickup Hockey
                 </span>{" "}
                 (also called shinny) — informal, non-league hockey, often with
                 full equipment.
               </li>
               <li>
-                <span className="font-medium text-black dark:text-zinc-100">
+                <span className="font-medium text-foreground">
                   Figure Skating
                 </span>{" "}
                 — sessions for practising, sometimes with rules about jumps and
                 spins.
               </li>
               <li>
-                <span className="font-medium text-black dark:text-zinc-100">
+                <span className="font-medium text-foreground">
                   Ringette
                 </span>{" "}
                 — drop-in ringette, a team sport played on ice with a straight
@@ -390,7 +390,7 @@ export default function FaqPage() {
           <Answer>
             <p>
               Open an issue on the project repository at{" "}
-              <DocLink href={REPO_URL}>github.com/dodaydream/gta-skating</DocLink>
+              <DocLink href={SITE_REPO}>github.com/dodaydream/gta-skating</DocLink>
               , including the arena and, if possible, a link to the correct
               schedule.
             </p>
@@ -426,10 +426,10 @@ export default function FaqPage() {
           </Answer>
         </section>
 
-        <footer className="border-t border-black/[.08] pt-6 text-sm text-zinc-500 dark:border-white/[.145] dark:text-zinc-400">
+        <footer className="border-t border-border pt-6 text-sm text-muted-foreground">
           <Link
             href="/"
-            className="font-medium text-blue-600 hover:underline dark:text-blue-400"
+            className="font-medium text-brand hover:underline"
           >
             ← Back to the schedule
           </Link>

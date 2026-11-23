@@ -23,7 +23,7 @@ function VenueDisplayIcon({ value }: { value: VenueDisplay }) {
   if (value === "withPrograms") {
     return <IconEyeOff className="size-4" />;
   }
-  return <IconEyeFilled className="size-4 text-blue-500" />;
+  return <IconEyeFilled className="size-4 text-brand" />;
 }
 
 export function VenueDisplayOption() {

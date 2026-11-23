@@ -35,7 +35,7 @@ export function BusynessBadge({
   return (
     <span
       className={cn(
-        "inline-flex shrink-0 items-center gap-1.5 text-[10px] font-medium text-zinc-500 dark:text-zinc-400",
+        "inline-flex shrink-0 items-center gap-1.5 text-[10px] font-medium text-muted-foreground",
         className
       )}
       aria-label={t("busy.usually", { label, count: n })}
@@ -54,7 +54,7 @@ export function BusynessBadge({
         ))}
       </span>
       <span>{label}</span>
-      <span className="text-zinc-400 dark:text-zinc-500">&middot; {n}</span>
+      <span className="text-muted-foreground">&middot; {n}</span>
     </span>
   );
 }

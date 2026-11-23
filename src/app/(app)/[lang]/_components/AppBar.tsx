@@ -7,16 +7,14 @@ import { VenueDisplayOption } from "./VenueDisplayOption";
 import { VenueSearch } from "./VenueSearch";
 
 /**
- * Horizontal control bar for the map overlay. On mobile the controls can
- * exceed the viewport width, so the bar scrolls horizontally instead of
- * wrapping; on desktop everything fits and scrolling is disabled.
+ * Horizontal control bar for the map overlay. Controls wrap onto multiple rows
+ * rather than scrolling, so every control stays visible at any width.
  */
 export function AppBar({ className }: { className?: string }) {
   return (
     <div
       className={cn(
-        "no-scrollbar pointer-events-auto flex items-center gap-1.5 overflow-x-auto overflow-y-hidden overscroll-x-contain lg:w-fit lg:gap-2 [&>*]:shrink-0",
-        "lg:overflow-x-visible lg:overflow-y-visible",
+        "pointer-events-auto flex flex-wrap items-center gap-1.5 lg:w-fit lg:gap-2 [&>*]:shrink-0",
         className
       )}
     >

@@ -1,9 +1,10 @@
 "use client";
 
-import { useState, useSyncExternalStore } from "react";
+import { useState } from "react";
 import type { ReactNode } from "react";
 import { useTranslation } from "react-i18next";
 import { cn } from "cn";
+import { useIsDesktop } from "@/hooks/useIsDesktop";
 import { ProgramType } from "@/types/schedule";
 import type { RinkEnvironment } from "@/types/venue";
 import { useSkatingAppData } from "@/app/(app)/[lang]/_components/SkatingAppDataProvider";
@@ -30,8 +31,6 @@ import {
   IconFilterFilled,
 } from "@tabler/icons-react";
 
-const DESKTOP_QUERY = "(min-width: 1024px)";
-
 const PROGRAM_TYPES = Object.values(ProgramType);
 
 /** Indoor vs outdoor, in display order. */
@@ -52,22 +51,8 @@ const PROGRAM_TYPE_KEYS: Record<ProgramType, string> = {
 };
 
 const CHIP_CLASS =
-  "rounded-full border-input gap-1.5 aria-pressed:border-blue-600 aria-pressed:bg-blue-600 aria-pressed:text-white aria-pressed:hover:bg-blue-600";
+  "rounded-full border-input gap-1.5 aria-pressed:border-brand aria-pressed:bg-brand aria-pressed:text-brand-foreground aria-pressed:hover:bg-brand";
 const CHIP_CHECK_CLASS = "hidden size-3.5 group-data-[pressed]/toggle:block";
-
-function subscribeDesktop(onChange: () => void) {
-  const mq = window.matchMedia(DESKTOP_QUERY);
-  mq.addEventListener("change", onChange);
-  return () => mq.removeEventListener("change", onChange);
-}
-
-function getDesktopSnapshot() {
-  return window.matchMedia(DESKTOP_QUERY).matches;
-}
-
-function useIsDesktop() {
-  return useSyncExternalStore(subscribeDesktop, getDesktopSnapshot, () => true);
-}
 
 function FilterSection({
   title,
@@ -222,7 +207,7 @@ export function ProgramFilter({ className = "" }: { className?: string }) {
                   {t(`amenities.${amenity}`)}
                 </span>
                 {checked ? (
-                  <IconCheck className="size-4 text-blue-500" />
+                  <IconCheck className="size-4 text-brand" />
                 ) : null}
               </Toggle>
             );
@@ -256,9 +241,9 @@ export function ProgramFilter({ className = "" }: { className?: string }) {
 
   const trigger = active ? (
     <span className="relative">
-      <IconFilterFilled className="size-4 text-blue-500" />
+      <IconFilterFilled className="size-4 text-brand" />
       {count > 0 ? (
-        <span className="absolute -right-1 -top-1 flex size-3.5 items-center justify-center rounded-full bg-blue-500 text-[9px] font-medium text-white">
+        <span className="absolute -right-1 -top-1 flex size-3.5 items-center justify-center rounded-full bg-brand text-[9px] font-medium text-brand-foreground">
           {count}
         </span>
       ) : null}

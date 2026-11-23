@@ -4,7 +4,7 @@ export function ProgramListSkeleton() {
       {[0, 1].map((i) => (
         <div
           key={i}
-          className="rounded-lg border border-black/[.08] bg-white dark:border-white/[.145] dark:bg-zinc-950"
+          className="rounded-lg border border-border bg-card"
         >
           <div className="px-5 py-4">
             <div className="mb-2 h-5 w-44 animate-pulse rounded bg-black/[.08] dark:bg-white/[.1]" />

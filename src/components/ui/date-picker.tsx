@@ -1,6 +1,7 @@
 "use client";
 
-import { useSyncExternalStore, type ReactNode } from "react";
+import { type ReactNode } from "react";
+import { useIsDesktop } from "@/hooks/useIsDesktop";
 import { format } from "date-fns";
 import { useTranslation } from "react-i18next";
 import type { DateRange } from "react-day-picker";
@@ -20,22 +21,6 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover";
-
-const DESKTOP_QUERY = "(min-width: 1024px)";
-
-function subscribeDesktop(onChange: () => void) {
-  const mq = window.matchMedia(DESKTOP_QUERY);
-  mq.addEventListener("change", onChange);
-  return () => mq.removeEventListener("change", onChange);
-}
-
-function getDesktopSnapshot() {
-  return window.matchMedia(DESKTOP_QUERY).matches;
-}
-
-function useIsDesktop() {
-  return useSyncExternalStore(subscribeDesktop, getDesktopSnapshot, () => true);
-}
 
 interface DateRangePickerProps {
 value?: DateRange;

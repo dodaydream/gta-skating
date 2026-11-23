@@ -2,20 +2,20 @@
 
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
+import { SITE_REPO } from "@/lib/site";
 
-const REPO_URL = "https://github.com/dodaydream/gta-skating";
 const SUPPORT_URL = process.env.NEXT_PUBLIC_BUYMEACOFFEE_URL;
 
 /** Copyright line and footer links for standalone pages. */
 export function SiteFooter() {
   const { t } = useTranslation();
   return (
-    <footer className="flex flex-col gap-2 border-t border-black/[.08] pt-6 text-sm text-zinc-500 dark:border-white/[.145] dark:text-zinc-400">
+    <footer className="flex flex-col gap-2 border-t border-border pt-6 text-sm text-muted-foreground">
       <p>© {new Date().getFullYear()} GTA Skating</p>
       <div className="flex flex-wrap items-center gap-x-2 gap-y-1">
         <Link
           href="/privacy"
-          className="whitespace-nowrap hover:text-blue-600 dark:hover:text-blue-400"
+          className="whitespace-nowrap hover:text-brand"
         >
           {t("sidebar.privacy")}
         </Link>
@@ -24,7 +24,7 @@ export function SiteFooter() {
         </span>
         <Link
           href="/data-sources"
-          className="whitespace-nowrap hover:text-blue-600 dark:hover:text-blue-400"
+          className="whitespace-nowrap hover:text-brand"
         >
           {t("sidebar.dataSources")}
         </Link>
@@ -33,7 +33,7 @@ export function SiteFooter() {
         </span>
         <Link
           href="/faq"
-          className="whitespace-nowrap hover:text-blue-600 dark:hover:text-blue-400"
+          className="whitespace-nowrap hover:text-brand"
         >
           {t("sidebar.faq")}
         </Link>
@@ -56,10 +56,10 @@ export function SiteFooter() {
           </>
         ) : null}
         <a
-          href={REPO_URL}
+          href={SITE_REPO}
           target="_blank"
           rel="noopener noreferrer"
-          className="whitespace-nowrap hover:text-blue-600 dark:hover:text-blue-400"
+          className="whitespace-nowrap hover:text-brand"
         >
           GitHub
         </a>

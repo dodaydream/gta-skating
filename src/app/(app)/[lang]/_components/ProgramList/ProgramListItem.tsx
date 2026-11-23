@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import type { ProgramItem } from "@/types/schedule";
 import {
   distanceKm,
+  formatDistance,
   formatHumanDate,
   formatTimeRange,
   getTodayInVenueTime,
@@ -44,9 +45,9 @@ export function ProgramListItem({
       type="button"
       data-slot="program-item"
       onClick={onSelect}
-      className="flex flex-col gap-1 rounded-xl border border-black/[.08] bg-white px-4 py-3 text-left transition-colors hover:bg-zinc-50 dark:border-white/[.145] dark:bg-zinc-950 dark:hover:bg-zinc-900"
+      className="flex flex-col gap-1 rounded-xl border border-border bg-card px-4 py-3 text-left transition-colors hover:bg-muted outline-none focus-visible:border-ring focus-visible:ring-2 focus-visible:ring-ring/50"
     >
-      <div className="flex items-center justify-between gap-3 text-xs tabular-nums text-zinc-500 dark:text-zinc-400">
+      <div className="flex items-center justify-between gap-3 text-xs tabular-nums text-muted-foreground">
         <span className="font-mono">
           {isToday
             ? `${t("programs.today")}·${formatTimeRange(program.start, program.end)}`
@@ -54,17 +55,17 @@ export function ProgramListItem({
         </span>
       </div>
       <div className="flex items-baseline justify-between gap-3">
-        <span className="min-w-0 truncate text-sm font-medium text-black dark:text-zinc-50">
+        <span className="min-w-0 truncate text-sm font-medium text-foreground">
           {program.name}
         </span>
         <TicketBadge ticket={program.ticket} />
       </div>
-      <div className="flex items-center justify-between gap-3 text-xs text-zinc-500 dark:text-zinc-400">
+      <div className="flex items-center justify-between gap-3 text-xs text-muted-foreground">
         <span className="min-w-0 truncate">
           {venue.name}&nbsp;·
           {distance !== null && (
-            <span className="ml-1 text-zinc-400">
-              {distance < 10 ? distance.toFixed(1) : Math.round(distance)} km
+            <span className="ml-1 text-muted-foreground">
+              {formatDistance(distance)}
             </span>
           )}
         </span>

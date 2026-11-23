@@ -255,7 +255,7 @@ export function WeekView({
           type="button"
           onClick={() => setWeekOffset((o) => o - 1)}
           aria-label={t("week.previous")}
-          className="rounded-lg p-1.5 text-zinc-500 transition-colors hover:bg-zinc-100 hover:text-black dark:hover:bg-zinc-800 dark:hover:text-zinc-50"
+          className="rounded-lg p-1.5 text-zinc-500 transition-colors hover:bg-muted hover:text-foreground"
         >
           <IconChevronLeft className="h-4 w-4" />
         </button>
@@ -268,7 +268,7 @@ export function WeekView({
             <button
               type="button"
               onClick={() => setWeekOffset(0)}
-              className="rounded-md px-2 py-0.5 text-xs font-medium text-blue-600 hover:underline dark:text-blue-400"
+              className="rounded-md px-2 py-0.5 text-xs font-medium text-brand hover:underline"
             >
               {t("week.thisWeek")}
             </button>
@@ -279,7 +279,7 @@ export function WeekView({
           type="button"
           onClick={() => setWeekOffset((o) => o + 1)}
           aria-label={t("week.next")}
-          className="rounded-lg p-1.5 text-zinc-500 transition-colors hover:bg-zinc-100 hover:text-black dark:hover:bg-zinc-800 dark:hover:text-zinc-50"
+          className="rounded-lg p-1.5 text-zinc-500 transition-colors hover:bg-muted hover:text-foreground"
         >
           <IconChevronRight className="h-4 w-4" />
         </button>
@@ -287,15 +287,15 @@ export function WeekView({
 
       <div className="week-calendar min-w-0">
         <div className="week-calendar__header grid grid-cols-subgrid col-span-full">
-          <div className="border-b border-black/[.08] dark:border-white/[.1]" />
+          <div className="border-b border-border" />
           {columns.map((col) => (
             <div
               key={col.key}
-              className="border-b border-black/[.08] px-1 pb-2 text-center text-xs font-medium text-zinc-700 dark:border-white/[.1] dark:text-zinc-300"
+              className="border-b border-border px-1 pb-2 text-center text-xs font-medium text-muted-foreground"
             >
               {dayjs(`${col.date}T00:00`).locale(dayjsLocale(locale)).format("ddd")}
               <br />
-              <span className="text-[10px] text-zinc-400 dark:text-zinc-500">
+              <span className="text-[10px] text-muted-foreground">
                 {dayjs(`${col.date}T00:00`)
                   .locale(dayjsLocale(locale))
                   .format(SHORT_DATE_FORMAT[locale])}
@@ -309,7 +309,7 @@ export function WeekView({
             {hourPositions.map(({ hour, pct }) => (
               <div
                 key={hour}
-                className="absolute right-2 text-[10px] text-zinc-400 dark:text-zinc-500 -translate-y-1/2"
+                className="absolute right-2 text-[10px] text-muted-foreground -translate-y-1/2"
                 style={{ top: `${pct}%` }}
               >
                 {formatHourLabel(hour)}
@@ -344,7 +344,7 @@ export function WeekView({
                 return (
                   <div
                     key={p.id}
-                    className="absolute flex flex-col overflow-hidden rounded-md border border-black/[.06] bg-white px-1 py-0.5 text-[11px] leading-tight dark:border-white/[.08] dark:bg-zinc-950"
+                    className="absolute flex flex-col overflow-hidden rounded-md border border-border bg-card px-1 py-0.5 text-[11px] leading-tight"
                     style={{
                       top: `${topPct}%`,
                       height: `${heightPct}%`,
@@ -352,7 +352,7 @@ export function WeekView({
                       width: `calc(${width}% - 1px)`,
                     }}
                   >
-                    <div className="truncate tabular-nums text-zinc-500 dark:text-zinc-400">
+                    <div className="truncate tabular-nums text-muted-foreground">
                       {formatTimeRange(p.start, p.end)}
                     </div>
                     <div className="min-h-0 flex-1">

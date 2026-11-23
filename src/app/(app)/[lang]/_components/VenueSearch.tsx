@@ -13,7 +13,7 @@ import {
 } from "@tabler/icons-react";
 import type { VenueMeta } from "@/types/venue";
 import { venueMeta, getSlugForVenue } from "@/data/venue-meta";
-import { distanceKm } from "@/lib/schedule";
+import { distanceKm, formatDistance } from "@/lib/schedule";
 import { toggleFavorite } from "@/lib/favorites";
 import { trackEvent } from "@/lib/analytics";
 import { Button } from "@/components/ui/button";
@@ -38,10 +38,6 @@ const fuse = new Fuse(venueMeta, {
   threshold: 0.4,
   ignoreLocation: true,
 });
-
-function formatDistance(km: number): string {
-  return `${km < 10 ? km.toFixed(1) : Math.round(km)} km`;
-}
 
 /**
  * Search button (top bar) that opens a full-screen overlay for finding a venue
@@ -173,7 +169,7 @@ export function VenueSearch() {
                         <button
                           type="button"
                           onClick={() => select(venue)}
-                          className="flex min-w-0 flex-1 flex-col gap-0.5 px-3 py-2 text-left"
+                          className="flex min-w-0 flex-1 flex-col gap-0.5 rounded-lg px-3 py-2 text-left outline-none focus-visible:border-ring focus-visible:ring-2 focus-visible:ring-ring/50"
                         >
                           <span className="truncate text-sm font-medium text-foreground">
                             {venue.name}
