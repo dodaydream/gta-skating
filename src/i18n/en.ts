@@ -150,7 +150,7 @@ const en = {
     sending: "Sending…",
     submitted: "Submitted",
     anonymous: "Ratings are anonymous and shared publicly.",
-    alreadyRated: "You've already rated this session.",
+    thanksForContributing: "Thanks for contributing!",
     usually_one: "Usually {{label}} · {{count}} report",
     usually_other: "Usually {{label}} · {{count}} reports",
     errorNetwork:

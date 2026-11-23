@@ -114,10 +114,12 @@ export function BusynessQuestionnaire({
 
   if (checking) return null;
 
-  if (rated) {
+  if (rated && status !== "submitted") return null;
+
+  if (status === "submitted") {
     return (
       <section className="rounded-xl border border-border bg-card p-3 text-sm text-muted-foreground">
-        {t("busy.alreadyRated")}
+        {t("busy.thanksForContributing")}
       </section>
     );
   }
@@ -148,14 +150,6 @@ export function BusynessQuestionnaire({
             <h3 className="text-sm font-medium text-foreground">
               {t("busy.question")}
             </h3>
-            {status === "submitted" ? (
-              <span
-                role="status"
-                className="text-xs font-medium text-emerald-600 dark:text-emerald-400"
-              >
-                {t("busy.thanks")}
-              </span>
-            ) : null}
           </div>
 
           <div className="flex flex-wrap items-center gap-2">
@@ -189,11 +183,7 @@ export function BusynessQuestionnaire({
               disabled={selected === null || busy || !program}
               className="w-full rounded-full bg-black px-3 py-1 text-xs font-semibold text-white transition-opacity disabled:opacity-40 dark:bg-zinc-50 dark:text-black lg:ml-auto lg:w-auto"
             >
-              {status === "submitting"
-                ? t("busy.sending")
-                : status === "submitted"
-                  ? t("busy.submitted")
-                  : t("busy.submit")}
+              {status === "submitting" ? t("busy.sending") : t("busy.submit")}
             </button>
           </div>
 
