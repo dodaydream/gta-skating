@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useId, useState } from "react";
 import dayjs from "dayjs";
 import "dayjs/locale/fr-ca";
 import type { TFunction } from "i18next";
@@ -92,6 +92,8 @@ export function DateFilter() {
   const [open, setOpen] = useState(false);
   const [now, setNow] = useState<Date | null>(null);
   const active = Boolean(from || to);
+  const fromTimeId = useId();
+  const toTimeId = useId();
 
   const fromDate = parseDate(from);
   const toDate = parseDate(to);
@@ -170,28 +172,36 @@ export function DateFilter() {
     >
       <div className="flex items-center gap-2 border-t px-3 py-2">
         <div className="flex flex-1 items-center gap-1">
-          <label className="w-8 shrink-0 text-[11px] text-muted-foreground">
+          <label
+            htmlFor={fromTimeId}
+            className="w-8 shrink-0 text-[11px] text-muted-foreground"
+          >
             {t("filters.from")}
           </label>
           <input
+            id={fromTimeId}
             type="time"
             value={pendingFromTime}
             onChange={(e) => {
               setPendingFromTime(e.target.value);
               setFromTimeTouched(true);
             }}
-            className="w-full rounded-md border border-input bg-background px-2 py-1 text-xs [color-scheme:dark]"
+            className="w-full rounded-md border border-input bg-background px-2 py-1 text-xs"
           />
         </div>
         <div className="flex flex-1 items-center gap-1">
-          <label className="w-4 shrink-0 text-[11px] text-muted-foreground">
+          <label
+            htmlFor={toTimeId}
+            className="w-4 shrink-0 text-[11px] text-muted-foreground"
+          >
             {t("filters.to")}
           </label>
           <input
+            id={toTimeId}
             type="time"
             value={pendingToTime}
             onChange={(e) => setPendingToTime(e.target.value)}
-            className="w-full rounded-md border border-input bg-background px-2 py-1 text-xs [color-scheme:dark]"
+            className="w-full rounded-md border border-input bg-background px-2 py-1 text-xs"
           />
         </div>
       </div>

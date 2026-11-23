@@ -149,7 +149,10 @@ export function BusynessQuestionnaire({
               {t("busy.question")}
             </h3>
             {status === "submitted" ? (
-              <span className="text-xs font-medium text-emerald-600 dark:text-emerald-400">
+              <span
+                role="status"
+                className="text-xs font-medium text-emerald-600 dark:text-emerald-400"
+              >
                 {t("busy.thanks")}
               </span>
             ) : null}
@@ -195,7 +198,10 @@ export function BusynessQuestionnaire({
           </div>
 
           {status === "error" ? (
-            <p className="text-xs text-red-600 dark:text-red-400">
+            <p
+              role="alert"
+              className="text-xs text-red-600 dark:text-red-400"
+            >
               {errorKey ? t(errorKey) : t("busy.errorGeneric")}
             </p>
           ) : (

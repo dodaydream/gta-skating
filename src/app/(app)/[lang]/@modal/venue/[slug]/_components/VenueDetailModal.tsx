@@ -614,7 +614,7 @@ export function VenueDetailModal({ slug }: { slug: string }) {
             <Empty className="my-6">
               <EmptyHeader>
                 <EmptyMedia variant="icon">
-                  <IconSnowflake />
+                  <IconSnowflake aria-hidden />
                 </EmptyMedia>
                 <EmptyTitle>{t("venue.emptyProgramsTitle")}</EmptyTitle>
                 <EmptyDescription>

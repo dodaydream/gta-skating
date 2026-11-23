@@ -106,6 +106,9 @@ export function VenueSearch() {
           className="top-0 left-0 right-0 bottom-0 translate-x-0 translate-y-0 flex h-dvh max-w-none flex-col gap-0 rounded-none p-0"
         >
           <DialogTitle className="sr-only">{t("sidebar.search")}</DialogTitle>
+          <div role="status" className="sr-only">
+            {t("a11y.venueResultCount", { count: results.length })}
+          </div>
 
           <div className="flex items-center gap-2 border-b p-3">
             <Button
@@ -150,7 +153,7 @@ export function VenueSearch() {
               <Empty className="my-6">
                 <EmptyHeader>
                   <EmptyMedia variant="icon">
-                    <IconSearch />
+                    <IconSearch aria-hidden />
                   </EmptyMedia>
                   <EmptyTitle>{t("sidebar.noVenueMatches")}</EmptyTitle>
                   <EmptyDescription>

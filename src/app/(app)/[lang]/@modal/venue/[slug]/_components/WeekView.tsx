@@ -285,7 +285,34 @@ export function WeekView({
         </button>
       </div>
 
-      <div className="week-calendar min-w-0">
+      <div className="sr-only">
+        <h4>{label}</h4>
+        {columns.some((col) => col.programs.length > 0) ? (
+          <ul>
+            {columns
+              .filter((col) => col.programs.length > 0)
+              .map((col) => (
+                <li key={col.key}>
+                  {dayjs(`${col.date}T00:00`)
+                    .locale(dayjsLocale(locale))
+                    .format(locale === "fr" ? "dddd D MMMM" : "dddd, MMMM D")}
+                  <ul>
+                    {col.programs.map(({ program: p }) => (
+                      <li key={`${p.id}-${p.start}`}>
+                        {p.name},{" "}
+                        {formatTimeRange(p.start, p.end)}
+                      </li>
+                    ))}
+                  </ul>
+                </li>
+              ))}
+          </ul>
+        ) : (
+          <p>{t("programs.noneUpcoming")}</p>
+        )}
+      </div>
+
+      <div className="week-calendar min-w-0" aria-hidden="true">
         <div className="week-calendar__header grid grid-cols-subgrid col-span-full">
           <div className="border-b border-border" />
           {columns.map((col) => (

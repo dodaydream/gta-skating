@@ -175,6 +175,15 @@ const fr: Messages = {
     hours: "{{count}} h",
     hoursMinutes: "{{hours}} h {{minutes}}",
   },
+  a11y: {
+    skipToResults: "Aller aux résultats",
+    map: "Carte des lieux de patinage",
+    results: "Programmes de patinage",
+    zoomIn: "Zoom avant",
+    zoomOut: "Zoom arrière",
+    venueResultCount_one: "{{count}} lieu",
+    venueResultCount_other: "{{count}} lieux",
+  },
   close: "Fermer",
 };
 

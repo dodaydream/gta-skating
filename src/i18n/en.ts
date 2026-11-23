@@ -172,6 +172,15 @@ const en = {
     hours: "{{count}}h",
     hoursMinutes: "{{hours}}h {{minutes}}m",
   },
+  a11y: {
+    skipToResults: "Skip to results",
+    map: "Map of skating venues",
+    results: "Skating programs",
+    zoomIn: "Zoom in",
+    zoomOut: "Zoom out",
+    venueResultCount_one: "{{count}} venue",
+    venueResultCount_other: "{{count}} venues",
+  },
   close: "Close",
 };
 

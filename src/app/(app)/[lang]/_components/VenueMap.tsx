@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import * as maplibregl from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
+import { useTranslation } from "react-i18next";
 
 if (typeof window !== "undefined") {
   const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
@@ -81,6 +82,19 @@ function isMobileViewport(): boolean {
   return typeof window !== "undefined" && window.innerWidth < DESKTOP_WIDTH;
 }
 
+/** Whether the user has asked for reduced motion, so camera moves jump instead. */
+function prefersReducedMotion(): boolean {
+  return (
+    typeof window !== "undefined" &&
+    window.matchMedia?.("(prefers-reduced-motion: reduce)").matches === true
+  );
+}
+
+/** Camera animation duration, collapsed to 0 when reduced motion is requested. */
+function animationDuration(ms: number): number {
+  return prefersReducedMotion() ? 0 : ms;
+}
+
 // Padding used when fitting the camera to a set of venues: keep markers clear
 // of the floating filter bar at the top and, on mobile, of the list drawer at
 // the bottom.
@@ -130,24 +144,10 @@ function createMarkerElement(
     color:#fff;text-align:center;max-width:160px;
     text-shadow:0 1px 2px rgba(0,0,0,.6);
   ">${name}</span>` : ""}`;
-  el.tabIndex = 0;
-  el.setAttribute("role", "button");
-  el.setAttribute("aria-label", name);
-  el.style.outline = "none";
-  el.style.borderRadius = "9999px";
-  const setRing = (on: boolean) => {
-    el.style.boxShadow = on
-      ? "0 0 0 3px color-mix(in srgb, var(--brand, #2563eb) 45%, transparent)"
-      : "";
-  };
-  el.addEventListener("focus", () => setRing(true));
-  el.addEventListener("blur", () => setRing(false));
-  el.addEventListener("keydown", (event) => {
-    if (event.key === "Enter" || event.key === " ") {
-      event.preventDefault();
-      el.click();
-    }
-  });
+  // Markers are decorative duplicates of the accessible program list, so they
+  // are hidden from assistive tech and don't add a tab stop per venue. Pointer
+  // clicks still open the venue.
+  el.setAttribute("aria-hidden", "true");
   return el;
 }
 
@@ -302,6 +302,8 @@ class ZoomControl implements maplibregl.IControl {
   private zoomInButton: HTMLButtonElement | null = null;
   private zoomOutButton: HTMLButtonElement | null = null;
 
+  constructor(private readonly labels: { zoomIn: string; zoomOut: string }) {}
+
   getDefaultPosition(): maplibregl.ControlPosition {
     return "top-right";
   }
@@ -314,10 +316,10 @@ class ZoomControl implements maplibregl.IControl {
     container.className =
       "maplibregl-ctrl inline-flex flex-col overflow-hidden rounded-lg border border-border bg-background text-foreground shadow-sm";
     container.innerHTML = `
-      <button type="button" data-slot="zoom-in" aria-label="Zoom in" title="Zoom in" class="${ZOOM_BUTTON_CLASS}">
+      <button type="button" data-slot="zoom-in" aria-label="${this.labels.zoomIn}" title="${this.labels.zoomIn}" class="${ZOOM_BUTTON_CLASS}">
         ${ZOOM_ICON}<path d="M5 12h14"/><path d="M12 5v14"/></svg>
       </button>
-      <button type="button" data-slot="zoom-out" aria-label="Zoom out" title="Zoom out" class="${ZOOM_BUTTON_CLASS} border-t border-border">
+      <button type="button" data-slot="zoom-out" aria-label="${this.labels.zoomOut}" title="${this.labels.zoomOut}" class="${ZOOM_BUTTON_CLASS} border-t border-border">
         ${ZOOM_ICON}<path d="M5 12h14"/></svg>
       </button>
     `;
@@ -387,6 +389,17 @@ export default function VenueMap({
   focusVenue,
   fitTo,
 }: VenueMapProps) {
+  const { t } = useTranslation();
+  const zoomLabelsRef = useRef({
+    zoomIn: t("a11y.zoomIn"),
+    zoomOut: t("a11y.zoomOut"),
+  });
+  useEffect(() => {
+    zoomLabelsRef.current = {
+      zoomIn: t("a11y.zoomIn"),
+      zoomOut: t("a11y.zoomOut"),
+    };
+  }, [t]);
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<maplibregl.Map | null>(null);
   const markersRef = useRef<maplibregl.Marker[]>([]);
@@ -462,7 +475,7 @@ export default function VenueMap({
       });
       appliedStyleRef.current = initialStyle;
 
-      map.addControl(new ZoomControl(), "top-right");
+      map.addControl(new ZoomControl(zoomLabelsRef.current), "top-right");
       map.addControl(new AttributionControl(), "bottom-right");
       map.addControl(new ScaleLegend(), "bottom-right");
 
@@ -507,6 +520,7 @@ export default function VenueMap({
           map.flyTo({
             center: offsetForDrawer(map, center),
             zoom: DEFAULT_ZOOM,
+            duration: animationDuration(1000),
           });
         },
         () => {},
@@ -647,6 +661,7 @@ export default function VenueMap({
     map.flyTo({
       center: offsetForDrawer(map, [lon, lat]),
       zoom: DEFAULT_ZOOM,
+      duration: animationDuration(1000),
     });
   }, [focusVenue, mapReady]);
 
@@ -669,7 +684,7 @@ export default function VenueMap({
       map.easeTo({
         center: offsetForDrawer(map, fitTo[0]),
         zoom: DEFAULT_ZOOM,
-        duration: 600,
+        duration: animationDuration(600),
       });
       return;
     }
@@ -678,7 +693,7 @@ export default function VenueMap({
     map.fitBounds(bounds, {
       padding: fitPadding(map),
       maxZoom: DEFAULT_ZOOM,
-      duration: 800,
+      duration: animationDuration(800),
     });
   }, [fitTo, mapReady]);
 

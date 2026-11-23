@@ -159,14 +159,26 @@ export function ScheduleSidebar() {
   return (
     <>
       {/* Desktop static sidebar */}
-      <aside className="hidden flex-col border-t border-border bg-card lg:static lg:flex lg:w-96 lg:shrink-0 lg:border-t-0">
-        <div className="flex min-h-0 flex-1 flex-col overflow-y-auto p-6">
+      <aside
+        aria-label={t("sidebar.title")}
+        className="hidden flex-col border-t border-border bg-card lg:static lg:flex lg:w-96 lg:shrink-0 lg:border-t-0"
+      >
+        <div
+          id="main-results"
+          role="region"
+          aria-label={t("a11y.results")}
+          aria-busy={loading}
+          className="flex min-h-0 flex-1 flex-col overflow-y-auto p-6"
+        >
           <div className="mb-4 flex items-start justify-between gap-2">
             <div className="flex flex-col">
               <h1 className="text-xl font-semibold tracking-tight text-foreground">
                   {t("sidebar.title")}
               </h1>
-              <span className="text-sm text-muted-foreground">
+              <span
+                role="status"
+                className="text-sm text-muted-foreground"
+              >
                 {programCount}
               </span>
             </div>
@@ -204,11 +216,14 @@ export function ScheduleSidebar() {
           header={
             <div className="flex items-start justify-between gap-2 px-4 pb-3 pt-4">
               <div className="flex flex-col">
-                <DrawerTitle className="text-xl font-semibold tracking-tight">
+                <DrawerTitle
+                  render={<h1 />}
+                  className="text-xl font-semibold tracking-tight"
+                >
                 {t("sidebar.title")}
                 </DrawerTitle>
                 <DrawerDescription className="text-left text-sm">
-                  {programCount}
+                  <span role="status">{programCount}</span>
                 </DrawerDescription>
               </div>
               <div className="flex items-center gap-2">
@@ -217,7 +232,10 @@ export function ScheduleSidebar() {
             </div>
           }
         >
-          <div className="min-h-0 flex-1 overflow-y-auto px-4 pb-6 group-data-[at-max-height=false]/drawer-popup:overflow-hidden">
+          <div
+            aria-busy={loading}
+            className="min-h-0 flex-1 overflow-y-auto px-4 pb-6 group-data-[at-max-height=false]/drawer-popup:overflow-hidden"
+          >
             <ProgramList
               items={sortedItems}
               loading={loading}

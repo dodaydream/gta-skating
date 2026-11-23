@@ -19,9 +19,10 @@ export function LocateButton() {
         trackEvent("locate_me");
         locateRef.current?.();
       }}
+      aria-label={t("filters.locate")}
       title={t("filters.locate")}
     >
-      <IconLocation className="size-4" />
+      <IconLocation className="size-4" aria-hidden />
     </Button>
   );
 }

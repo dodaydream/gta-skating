@@ -39,7 +39,7 @@ export function ProgramList({
           <Empty className="my-6">
             <EmptyHeader>
               <EmptyMedia variant="icon">
-                <IconSnowflake />
+                <IconSnowflake aria-hidden />
               </EmptyMedia>
               <EmptyTitle>{t("programs.emptyTitle")}</EmptyTitle>
               <EmptyDescription>

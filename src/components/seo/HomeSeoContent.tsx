@@ -10,9 +10,9 @@ import { SITE_DESCRIPTION } from "@/lib/site";
 export function HomeSeoContent({ locale }: { locale: string }) {
   return (
     <section className="sr-only">
-      <h1>GTA Skating Schedules</h1>
+      <h2>GTA Skating Schedules</h2>
       <p>{SITE_DESCRIPTION}</p>
-      <h2>Skating venues across the Greater Toronto Area</h2>
+      <h3>Skating venues across the Greater Toronto Area</h3>
       <ul>
         {venues.map((venue) => (
           <li key={venue.name}>

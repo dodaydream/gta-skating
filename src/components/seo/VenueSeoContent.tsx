@@ -24,7 +24,7 @@ export function VenueSeoContent({
 
   return (
     <section className="sr-only">
-      <h1>{venue.name} Skating Schedule</h1>
+      <h2>{venue.name} Skating Schedule</h2>
       <p>
         {venue.name} is located at {venue.address}. Upcoming drop-in skating
         programs include {types.join(", ")}.
