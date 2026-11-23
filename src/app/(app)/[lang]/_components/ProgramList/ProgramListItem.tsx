@@ -12,6 +12,13 @@ import {
 import { normalizeLocale } from "@/i18n/locales";
 import { useUserLocation } from "@/app/(app)/[lang]/_components/SkatingAppDataProvider";
 import { TicketBadge } from "@/app/(app)/[lang]/@modal/venue/[slug]/_components/TicketBadge";
+import {
+  Item,
+  ItemContent,
+  ItemFooter,
+  ItemHeader,
+  ItemTitle,
+} from "@/components/ui/item";
 
 export function ProgramListItem({
   program,
@@ -41,35 +48,35 @@ export function ProgramListItem({
     : null;
 
   return (
-    <button
-      type="button"
+    <Item
       data-slot="program-item"
-      onClick={onSelect}
-      className="flex flex-col gap-1 rounded-xl border border-border bg-card px-4 py-3 text-left transition-colors hover:bg-muted outline-none focus-visible:border-ring focus-visible:ring-2 focus-visible:ring-ring/50"
+      variant="outline"
+      render={<button type="button" onClick={onSelect} />}
+      className="gap-x-3 gap-y-1 rounded-xl bg-card px-4 py-3 text-left hover:bg-muted"
     >
-      <div className="flex items-center justify-between gap-3 text-xs tabular-nums text-muted-foreground">
-        <span className="font-mono">
+      <ItemHeader className="text-xs tabular-nums text-muted-foreground">
+        <span>
           {isToday
-            ? `${t("programs.today")}·${formatTimeRange(program.start, program.end)}`
-            : `${formatHumanDate(program.start, program.venue.timezone, locale)}·${formatTimeRange(program.start, program.end)}`}
-        </span>
-      </div>
-      <div className="flex items-baseline justify-between gap-3">
-        <span className="min-w-0 truncate text-sm font-medium text-foreground">
-          {program.name}
+            ? `${t("programs.today")} · ${formatTimeRange(program.start, program.end)}`
+            : `${formatHumanDate(program.start, program.venue.timezone, locale)} · ${formatTimeRange(program.start, program.end)}`}
         </span>
         <TicketBadge ticket={program.ticket} />
-      </div>
-      <div className="flex items-center justify-between gap-3 text-xs text-muted-foreground">
-        <span className="min-w-0 truncate">
-          {venue.name}&nbsp;·
+      </ItemHeader>
+      <ItemContent className="min-w-0">
+        <ItemTitle className="w-full min-w-0 truncate text-foreground">
+          {program.name}
+        </ItemTitle>
+      </ItemContent>
+      <ItemFooter className="text-xs text-muted-foreground">
+        <span className="min-w-0 flex-1 truncate">
+          {venue.name}&nbsp;·&nbsp;
           {distance !== null && (
-            <span className="ml-1 text-muted-foreground">
+            <span className="text-muted-foreground">
               {formatDistance(distance)}
             </span>
           )}
         </span>
-      </div>
-    </button>
+      </ItemFooter>
+    </Item>
   );
 }
