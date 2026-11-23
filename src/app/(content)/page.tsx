@@ -1,3 +1,7 @@
+"use client";
+
+import { useEffect, useSyncExternalStore } from "react";
+import { useRouter } from "next/navigation";
 import {
   DEFAULT_LOCALE,
   LOCALE_STORAGE_KEY,
@@ -20,12 +24,60 @@ function redirectScript(): string {
   )}}location.replace("/"+locale+location.search+location.hash)})();`;
 }
 
+/** Locale name supported by the app, derived from a BCP-47 tag, or `null`. */
+function matchLocale(tag: string | null): string | null {
+  const base = String(tag ?? "").toLowerCase().split(/[-_]/)[0];
+  return (SUPPORTED_LOCALES as readonly string[]).includes(base) ? base : null;
+}
+
+/** The stored or browser-preferred locale, resolved in the browser. */
+function preferredLocale(): string {
+  let stored: string | null = null;
+  try {
+    stored = matchLocale(localStorage.getItem(LOCALE_STORAGE_KEY));
+  } catch {
+    stored = null;
+  }
+  if (stored) return stored;
+  for (const tag of navigator.languages ?? [navigator.language]) {
+    const match = matchLocale(tag);
+    if (match) return match;
+  }
+  return DEFAULT_LOCALE;
+}
+
+const subscribe = () => () => {};
+const getServerSnapshot = () => null;
+const getClientSnapshot = () => true;
+
 /**
  * The locale-prefixed app lives at `/{lang}`, so the bare root has no page of
  * its own. Static export has no server to redirect, so this sends visitors to
  * their stored or browser-preferred locale on the client.
+ *
+ * The inline script is emitted while server-rendering (the server snapshot is
+ * `null`, so it lands in the initial HTML and runs before paint, avoiding a
+ * flash). It is intentionally not re-rendered on the client: React refuses to
+ * execute scripts created during client rendering, which would drop the
+ * redirect on a client-side navigation to `/`. There the mount effect below
+ * performs the same redirect instead.
  */
 export default function RootRedirect() {
+  const router = useRouter();
+  const isClient = useSyncExternalStore(
+    subscribe,
+    getClientSnapshot,
+    getServerSnapshot
+  );
+
+  useEffect(() => {
+    router.replace(
+      `/${preferredLocale()}${window.location.search}${window.location.hash}`
+    );
+  }, [router]);
+
+  if (isClient) return null;
+
   return (
     <>
       <script dangerouslySetInnerHTML={{ __html: redirectScript() }} />
