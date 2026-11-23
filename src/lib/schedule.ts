@@ -109,7 +109,7 @@ const BROWSER_HOUR12 = (() => {
 })();
 
 export function formatTimeRange(start: string, end: string): string {
-  return `${formatTime(start)}\u2013${formatTime(end)}`;
+  return `${formatTime(start)} - ${formatTime(end)}`;
 }
 
 /**
