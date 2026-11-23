@@ -1,7 +1,7 @@
 import {
-  LEGACY_PROGRAM_TYPE,
+  type BusyAggregate,
+  type BusyAggregateBuckets,
   type BusyLevel,
-  type BusyReport,
 } from "@/types/feedback";
 import type { ProgramType } from "@/types/schedule";
 import {
@@ -11,48 +11,34 @@ import {
 } from "@/lib/firebase";
 
 const COLLECTION = "busyReports";
+const AGGREGATE_COLLECTION = "busyAggregates";
 
 /**
- * Load every busyness report for a venue. Reads go straight to Firestore,
- * scoped to the venue id; sorting is done client-side to avoid needing a
- * composite index.
+ * Load the pre-aggregated busyness for a venue. The scheduled Cloud Function
+ * maintains one `busyAggregates/{venueId}` document, so a modal open costs a
+ * single read instead of scanning every report. Returns `null` when no
+ * aggregate exists yet (no reports, or the function has not run).
  */
-export async function loadVenueReports(
+export async function loadVenueAggregate(
   venueId: string
-): Promise<BusyReport[]> {
-  if (!isFirebaseConfigured()) return [];
+): Promise<BusyAggregate | null> {
+  if (!isFirebaseConfigured()) return null;
 
   const app = await getFirebaseApp();
-  const { getFirestore, collection, query, where, getDocs } = await import(
-    "firebase/firestore"
-  );
-
+  const { getFirestore, doc, getDoc } = await import("firebase/firestore");
   const db = getFirestore(app);
-  const snapshot = await getDocs(
-    query(collection(db, COLLECTION), where("venueId", "==", venueId))
-  );
+  const snapshot = await getDoc(doc(db, AGGREGATE_COLLECTION, venueId));
+  if (!snapshot.exists()) return null;
 
-  const reports: BusyReport[] = snapshot.docs.map((doc) => {
-    const data = doc.data();
-    const reportedAt = data.reportedAt as { toDate?: () => Date } | undefined;
-    return {
-      venueId: data.venueId as string,
-      reportedAt:
-        reportedAt && typeof reportedAt.toDate === "function"
-          ? reportedAt.toDate().toISOString()
-          : new Date(0).toISOString(),
-      busy: data.busy as BusyLevel,
-      uid: data.uid as string | undefined,
-      // Reports written before the field existed backfill to Public Skate.
-      programType:
-        (data.programType as ProgramType | undefined) ?? LEGACY_PROGRAM_TYPE,
-      programStartAt: data.programStartAt as string | undefined,
-      programEndsAt: data.programEndsAt as string | undefined,
-    };
-  });
-
-  reports.sort((a, b) => b.reportedAt.localeCompare(a.reportedAt));
-  return reports;
+  const data = snapshot.data();
+  const updatedAt = data.updatedAt as { toDate?: () => Date } | undefined;
+  return {
+    buckets: (data.buckets as BusyAggregateBuckets | undefined) ?? {},
+    updatedAt:
+      updatedAt && typeof updatedAt.toDate === "function"
+        ? updatedAt.toDate().toISOString()
+        : undefined,
+  };
 }
 
 export interface ReportKey {

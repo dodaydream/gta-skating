@@ -2,7 +2,12 @@ rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
     match /busyReports/{reportId} {
-      allow read: if true;
+      // Only the reporter may read their own report, used to detect a duplicate
+      // submission. Enumeration is disabled so reports and their uid stay
+      // private; `resource == null` covers a reporter's not-yet-created doc.
+      allow get: if request.auth != null
+        && (resource == null || resource.data.uid == request.auth.uid);
+      allow list: if false;
       allow create: if request.auth != null
         && request.auth.uid == request.resource.data.uid
         && request.resource.data.busy is number
@@ -19,6 +24,18 @@ service cloud.firestore {
         && request.resource.data.programEndsAt.size() < 50
         && request.resource.data.reportedAt == request.time; // serverTimestamp only
       allow update, delete: if false;
+    }
+
+    // Pre-aggregated busyness, written only by the Cloud Function (the admin SDK
+    // bypasses rules) and read publicly by the client.
+    match /busyAggregates/{venueId} {
+      allow read: if true;
+      allow write: if false;
+    }
+
+    // Aggregation watermark; the Cloud Function only.
+    match /busyAggregateState/{doc} {
+      allow read, write: if false;
     }
   }
 }

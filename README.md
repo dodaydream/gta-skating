@@ -25,8 +25,10 @@ export) deployed to GitHub Pages at [gtaskating.com](https://gtaskating.com).
 - **Filters** — filter by date range and program type; sort by soonest or
   nearest.
 - **Favourites** — saved in the browser, with a favourites-only map view.
-- **Busyness reports** — anonymous "how busy is it" ratings, averaged once a
-  session has enough reports (optional; requires Firebase).
+- **Busyness reports** — anonymous "how busy is it" ratings. A scheduled Cloud
+  Function pre-aggregates them per venue every 15 minutes, and the client reads
+  one aggregate document per venue instead of the raw reports (optional;
+  requires Firebase).
 - **Bilingual UI** — English and French, served under locale-prefixed routes
   (`/en`, `/fr`).
 
@@ -75,6 +77,7 @@ src/
   i18n/         # locale config, LocaleProvider, and en.ts / fr.ts message catalogues
   lib/          # theme, favourites, analytics, feedback, firebase, schedule helpers
   types/        # shared TypeScript types
+functions/      # scheduled Cloud Function that aggregates busyness reports
 scraper/        # one folder per source, each with a scrape.ts entry
   index.ts            # runs every scraper, then build-client-data
   build-client-data.ts
@@ -116,6 +119,33 @@ touches and joined to that metadata after loading. A venue whose scraper fails
 is retained from the previously committed artifacts, so one broken scraper never
 drops a venue.
 
+## Busyness aggregation
+
+Anonymous reports are written to `busyReports` from the client. To keep reads
+cheap, a scheduled Cloud Function (`functions/`) runs every 15 minutes, reads
+only the reports newer than a stored watermark, and folds them into one
+`busyAggregates/{venueId}` document of `(programType, day-of-week,
+minute-of-day)` tallies. The venue modal reads that single document per open and
+never scans raw reports.
+
+Deploy the function manually (requires the Blaze plan and the Firestore region
+pinned in `functions/src/index.ts`):
+
+```bash
+npm --prefix functions install
+firebase deploy --only functions
+```
+
+Seed the aggregates from existing reports once, before the client switches over
+(dry-run by default; needs a service account, as below):
+
+```bash
+node --env-file=.env.local scripts/backfill-busy-aggregates.mjs --apply
+```
+
+The scheduled function is the ongoing aggregator; the backfill only sets the
+initial state and watermark.
+
 ## Data sources and licensing
 
 Schedules are aggregated from the public pages and open data feeds published by
@@ -148,6 +178,13 @@ following to enable them:
 - `NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET`
 - `NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID`
 - `NEXT_PUBLIC_FIREBASE_APP_ID`
+
+The one-time aggregate backfill also needs admin credentials in the environment
+(see [Busyness aggregation](#busyness-aggregation)):
+
+- `FIREBASE_PROJECT_ID` (falls back to `NEXT_PUBLIC_FIREBASE_PROJECT_ID`)
+- `GOOGLE_APPLICATION_CREDENTIALS` (path to a service-account JSON) or
+  `FIREBASE_SERVICE_ACCOUNT` (the JSON itself)
 
 ## Deploy on GitHub Pages
 

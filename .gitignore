@@ -12,6 +12,8 @@
 
 # this project uses yarn; ignore npm's lockfile
 package-lock.json
+# ...except the separate functions package, which Cloud Build installs with npm
+!functions/package-lock.json
 
 # testing
 /coverage

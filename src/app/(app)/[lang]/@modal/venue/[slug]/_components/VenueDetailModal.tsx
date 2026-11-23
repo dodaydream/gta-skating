@@ -4,10 +4,10 @@ import { Fragment, useCallback, useEffect, useRef, useState, useSyncExternalStor
 import { useTranslation } from "react-i18next";
 import type { InfoItem, Rink, Venue } from "@/types/venue";
 import type { Program } from "@/types/schedule";
-import type { BusyReport } from "@/types/feedback";
+import type { BusyAggregate } from "@/types/feedback";
 import { fetchVenueDetails } from "@/api/venues";
 import { getVenueBySlug } from "@/data/venue-meta";
-import { loadVenueReports } from "@/api/busyness";
+import { loadVenueAggregate } from "@/api/busyness";
 import { isFirebaseConfigured } from "@/lib/firebase";
 import { predictBusy } from "@/lib/feedback";
 import { cn } from "cn";
@@ -371,8 +371,8 @@ export function VenueDetailModal({ slug }: { slug: string }) {
   const [venue, setVenue] = useState<Venue | null>(null);
   const [error, setError] = useState(false);
   const [view, setView] = useState<"day" | "week">("day");
-  const [reports, setReports] = useState<BusyReport[]>([]);
-  const [reportsLoading, setReportsLoading] = useState(FIREBASE_CONFIGURED);
+  const [aggregate, setAggregate] = useState<BusyAggregate | null>(null);
+  const [aggregateLoading, setAggregateLoading] = useState(FIREBASE_CONFIGURED);
   const [, setNowTick] = useState(0);
   const [filterActive, setFilterActive] = useState(true);
   const bodyRef = useRef<HTMLDivElement>(null);
@@ -404,25 +404,25 @@ export function VenueDetailModal({ slug }: { slug: string }) {
     };
   }, [slug, filterFrom, filterTo]);
 
-  const reloadReports = useCallback(() => {
+  const reloadAggregate = useCallback(() => {
     if (!FIREBASE_CONFIGURED) return;
-    loadVenueReports(venueId)
-      .then(setReports)
+    loadVenueAggregate(venueId)
+      .then(setAggregate)
       .catch(() => {});
   }, [venueId]);
 
   useEffect(() => {
     if (!FIREBASE_CONFIGURED) return;
     let cancelled = false;
-    loadVenueReports(venueId)
+    loadVenueAggregate(venueId)
       .then((data) => {
-        if (!cancelled) setReports(data);
+        if (!cancelled) setAggregate(data);
       })
       .catch(() => {
-        if (!cancelled) setReports([]);
+        if (!cancelled) setAggregate(null);
       })
       .finally(() => {
-        if (!cancelled) setReportsLoading(false);
+        if (!cancelled) setAggregateLoading(false);
       });
     return () => {
       cancelled = true;
@@ -546,8 +546,8 @@ export function VenueDetailModal({ slug }: { slug: string }) {
           <TodayCards
             programs={programs}
             timezone={venue.timezone}
-            reports={reports}
-            reportsLoading={reportsLoading}
+            aggregate={aggregate}
+            aggregateLoading={aggregateLoading}
           />
 
           <RinksSection venueName={venue.name} rinks={venue.rinks} />
@@ -560,7 +560,7 @@ export function VenueDetailModal({ slug }: { slug: string }) {
                 venueSlug={slug}
                 timezone={venue.timezone}
                 program={currentProgram}
-                onSubmitted={reloadReports}
+                onSubmitted={reloadAggregate}
               />
             </div>
           ) : null}
@@ -592,8 +592,8 @@ export function VenueDetailModal({ slug }: { slug: string }) {
                   <ListView
                     programs={programs}
                     timezone={venue.timezone}
-                    reports={reports}
-                    reportsLoading={reportsLoading}
+                    aggregate={aggregate}
+                    aggregateLoading={aggregateLoading}
                     isDesktop={isDesktop}
                   />
                 </div>
@@ -902,19 +902,17 @@ function VenueDetailSkeleton() {
 }
 
 function BusynessBadgeSlot({
-  reports,
-  reportsLoading,
+  aggregate,
+  aggregateLoading,
   program,
-  timezone,
   className,
 }: {
-  reports: BusyReport[];
-  reportsLoading: boolean;
+  aggregate: BusyAggregate | null;
+  aggregateLoading: boolean;
   program: Program;
-  timezone: string;
   className?: string;
 }) {
-  if (reportsLoading) {
+  if (aggregateLoading) {
     return (
       <span
         aria-hidden="true"
@@ -925,7 +923,7 @@ function BusynessBadgeSlot({
       />
     );
   }
-  const prediction = predictBusy(reports, program, timezone);
+  const prediction = predictBusy(aggregate, program);
   if (!prediction) return null;
   return (
     <BusynessBadge
@@ -939,13 +937,13 @@ function BusynessBadgeSlot({
 function TodayCards({
   programs,
   timezone,
-  reports,
-  reportsLoading,
+  aggregate,
+  aggregateLoading,
 }: {
   programs: Program[];
   timezone: string;
-  reports: BusyReport[];
-  reportsLoading: boolean;
+  aggregate: BusyAggregate | null;
+  aggregateLoading: boolean;
 }) {
   const { i18n } = useTranslation();
   const locale = normalizeLocale(i18n.resolvedLanguage);
@@ -987,10 +985,9 @@ function TodayCards({
                   <div className="flex items-center gap-2 empty:hidden">
                     <TicketBadge ticket={program.ticket} />
                     <BusynessBadgeSlot
-                      reports={reports}
-                      reportsLoading={reportsLoading}
+                      aggregate={aggregate}
+                      aggregateLoading={aggregateLoading}
                       program={program}
-                      timezone={timezone}
                     />
                   </div>
                 </li>
@@ -1006,14 +1003,14 @@ function TodayCards({
 function ListView({
   programs,
   timezone,
-  reports,
-  reportsLoading,
+  aggregate,
+  aggregateLoading,
   isDesktop,
 }: {
   programs: Program[];
   timezone: string;
-  reports: BusyReport[];
-  reportsLoading: boolean;
+  aggregate: BusyAggregate | null;
+  aggregateLoading: boolean;
   isDesktop: boolean;
 }) {
   const { i18n } = useTranslation();
@@ -1051,10 +1048,9 @@ function ListView({
                   <TicketBadge ticket={program.ticket} />
                   {isDesktop ? (
                     <BusynessBadgeSlot
-                      reports={reports}
-                      reportsLoading={reportsLoading}
+                      aggregate={aggregate}
+                      aggregateLoading={aggregateLoading}
                       program={program}
-                      timezone={timezone}
                       className="ml-auto"
                     />
                   ) : null}
@@ -1066,10 +1062,9 @@ function ListView({
                 ) : null}
                 {isDesktop ? null : (
                   <BusynessBadgeSlot
-                    reports={reports}
-                    reportsLoading={reportsLoading}
+                    aggregate={aggregate}
+                    aggregateLoading={aggregateLoading}
                     program={program}
-                    timezone={timezone}
                   />
                 )}
               </li>

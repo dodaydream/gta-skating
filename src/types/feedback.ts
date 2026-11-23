@@ -19,3 +19,25 @@ export interface BusyReport {
   programStartAt?: string;
   programEndsAt?: string;
 }
+
+/** Tally for one (programType, day-of-week, minute-of-day) bucket. */
+export interface BusyBucket {
+  s: number; // sum of busy levels
+  n: number; // number of reports
+}
+
+/** Sparse aggregate: `buckets[programType][dow][minute] = { s, n }`. */
+export type BusyAggregateBuckets = Record<
+  string,
+  Record<string, Record<string, BusyBucket>>
+>;
+
+/**
+ * Pre-aggregated busyness for a venue, maintained by the scheduled Cloud
+ * Function and read directly by the client. Keyed by program type so a report
+ * for one activity does not influence another.
+ */
+export interface BusyAggregate {
+  buckets: BusyAggregateBuckets;
+  updatedAt?: string; // ISO, converted from Firestore Timestamp
+}
