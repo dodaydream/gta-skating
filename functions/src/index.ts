@@ -60,13 +60,23 @@ export const aggregateBusyness = onSchedule(
         const venueId = data.venueId;
         const key = bucketKeyFor(data);
         if (typeof venueId === "string" && key) {
-          const base = `buckets.${key.programType}.${key.slot.dow}.${key.slot.minute}`;
           const ref = db.collection(AGGREGATE_COLLECTION).doc(venueId);
+          // Write a nested map (not a dotted field path) so the client can read
+          // buckets[programType][dow][minute]. `set` with merge deep-merges maps,
+          // so sibling buckets are preserved while these values increment.
           batch.set(
             ref,
             {
-              [`${base}.s`]: FieldValue.increment(Number(data.busy) || 0),
-              [`${base}.n`]: FieldValue.increment(1),
+              buckets: {
+                [key.programType]: {
+                  [key.slot.dow]: {
+                    [key.slot.minute]: {
+                      s: FieldValue.increment(Number(data.busy) || 0),
+                      n: FieldValue.increment(1),
+                    },
+                  },
+                },
+              },
               updatedAt: FieldValue.serverTimestamp(),
             },
             { merge: true }
