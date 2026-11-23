@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 import Fuse from "fuse.js";
 import { cn } from "cn";
 import {
-  IconArrowLeft,
+  IconChevronLeft,
   IconSearch,
   IconStar,
   IconStarFilled,
@@ -110,16 +110,16 @@ export function VenueSearch() {
             {t("a11y.venueResultCount", { count: results.length })}
           </div>
 
-          <div className="flex items-center gap-2 border-b p-3">
-            <Button
-              variant="ghost"
-              size="icon-sm"
+          <div className="flex items-center gap-2 border-b p-2.5">
+            <button
+              type="button"
               aria-label={t("sidebar.back")}
               onClick={() => setOpen(false)}
+              className="-ml-1 flex h-9 w-9 shrink-0 items-center justify-center rounded-lg text-foreground outline-none transition-colors hover:bg-muted focus-visible:ring-2 focus-visible:ring-ring/50"
             >
-              <IconArrowLeft />
-            </Button>
-            <InputGroup className="flex-1">
+              <IconChevronLeft className="size-6" />
+            </button>
+            <InputGroup className="h-9 flex-1 border-0 bg-muted shadow-none has-[[data-slot=input-group-control]:focus-visible]:border-0 has-[[data-slot=input-group-control]:focus-visible]:ring-0 dark:bg-input/30">
               <InputGroupAddon align="inline-start">
                 <IconSearch aria-hidden />
               </InputGroupAddon>
