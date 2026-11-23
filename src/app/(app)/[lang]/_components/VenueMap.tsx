@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
+import { IconMinus, IconPlus } from "@tabler/icons-react";
 import * as maplibregl from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
 import { useTranslation } from "react-i18next";
@@ -294,80 +295,86 @@ class AttributionControl implements maplibregl.IControl {
 const ZOOM_BUTTON_CLASS =
   "flex size-8 items-center justify-center text-foreground transition-colors hover:bg-muted disabled:pointer-events-none disabled:opacity-40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:ring-inset";
 
-const ZOOM_ICON = `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-4" aria-hidden="true">`;
+const ZOOM_ICON_CLASS = "size-4";
 
-class ZoomControl implements maplibregl.IControl {
-  private map: maplibregl.Map | null = null;
+// A MapLibre control whose only job is to reserve a positioned container in the
+// top-right control corner. The buttons themselves are rendered by React and
+// portalled into this container, so no separate React root is involved.
+class ZoomControlContainer implements maplibregl.IControl {
   private container: HTMLDivElement | null = null;
-  private zoomInButton: HTMLButtonElement | null = null;
-  private zoomOutButton: HTMLButtonElement | null = null;
-
-  constructor(private readonly labels: { zoomIn: string; zoomOut: string }) {}
 
   getDefaultPosition(): maplibregl.ControlPosition {
     return "top-right";
   }
 
-  onAdd(map: maplibregl.Map): HTMLElement {
-    this.map = map;
-
+  onAdd(): HTMLElement {
     const container = document.createElement("div");
     container.dataset.slot = "zoom-control";
     container.className =
       "maplibregl-ctrl inline-flex flex-col overflow-hidden rounded-lg border border-border bg-background text-foreground shadow-xs dark:border-input dark:bg-input/30";
-    container.innerHTML = `
-      <button type="button" data-slot="zoom-in" aria-label="${this.labels.zoomIn}" title="${this.labels.zoomIn}" class="${ZOOM_BUTTON_CLASS}">
-        ${ZOOM_ICON}<path d="M5 12h14"/><path d="M12 5v14"/></svg>
-      </button>
-      <button type="button" data-slot="zoom-out" aria-label="${this.labels.zoomOut}" title="${this.labels.zoomOut}" class="${ZOOM_BUTTON_CLASS} border-t border-border dark:border-input">
-        ${ZOOM_ICON}<path d="M5 12h14"/></svg>
-      </button>
-    `;
-
-    this.zoomInButton = container.querySelector<HTMLButtonElement>(
-      '[data-slot="zoom-in"]',
-    );
-    this.zoomOutButton = container.querySelector<HTMLButtonElement>(
-      '[data-slot="zoom-out"]',
-    );
-
-    this.zoomInButton?.addEventListener("click", this.handleZoomIn);
-    this.zoomOutButton?.addEventListener("click", this.handleZoomOut);
-
-    map.on("zoom", this.update);
-    this.update();
-
     this.container = container;
     return container;
   }
 
   onRemove(): void {
-    const map = this.map;
-    if (map) map.off("zoom", this.update);
-    this.zoomInButton?.removeEventListener("click", this.handleZoomIn);
-    this.zoomOutButton?.removeEventListener("click", this.handleZoomOut);
     this.container?.remove();
     this.container = null;
-    this.zoomInButton = null;
-    this.zoomOutButton = null;
-    this.map = null;
   }
 
-  private handleZoomIn = (): void => {
-    this.map?.zoomIn();
-  };
+  getContainer(): HTMLDivElement | null {
+    return this.container;
+  }
+}
 
-  private handleZoomOut = (): void => {
-    this.map?.zoomOut();
-  };
+function ZoomControl({
+  container,
+  map,
+}: {
+  container: HTMLElement;
+  map: maplibregl.Map;
+}) {
+  const { t } = useTranslation();
+  const [canZoomIn, setCanZoomIn] = useState(() => map.getZoom() < map.getMaxZoom());
+  const [canZoomOut, setCanZoomOut] = useState(() => map.getZoom() > map.getMinZoom());
 
-  private update = (): void => {
-    const map = this.map;
-    if (!map) return;
-    const zoom = map.getZoom();
-    if (this.zoomInButton) this.zoomInButton.disabled = zoom >= map.getMaxZoom();
-    if (this.zoomOutButton) this.zoomOutButton.disabled = zoom <= map.getMinZoom();
-  };
+  useEffect(() => {
+    const update = () => {
+      const zoom = map.getZoom();
+      setCanZoomIn(zoom < map.getMaxZoom());
+      setCanZoomOut(zoom > map.getMinZoom());
+    };
+    update();
+    map.on("zoom", update);
+    return () => {
+      map.off("zoom", update);
+    };
+  }, [map]);
+
+  return createPortal(
+    <>
+      <button
+        type="button"
+        aria-label={t("a11y.zoomIn")}
+        title={t("a11y.zoomIn")}
+        disabled={!canZoomIn}
+        className={ZOOM_BUTTON_CLASS}
+        onClick={() => map.zoomIn()}
+      >
+        <IconPlus className={ZOOM_ICON_CLASS} aria-hidden="true" />
+      </button>
+      <button
+        type="button"
+        aria-label={t("a11y.zoomOut")}
+        title={t("a11y.zoomOut")}
+        disabled={!canZoomOut}
+        className={`${ZOOM_BUTTON_CLASS} border-t border-border dark:border-input`}
+        onClick={() => map.zoomOut()}
+      >
+        <IconMinus className={ZOOM_ICON_CLASS} aria-hidden="true" />
+      </button>
+    </>,
+    container,
+  );
 }
 
 function isDarkMode(): boolean {
@@ -389,17 +396,6 @@ export default function VenueMap({
   focusVenue,
   fitTo,
 }: VenueMapProps) {
-  const { t } = useTranslation();
-  const zoomLabelsRef = useRef({
-    zoomIn: t("a11y.zoomIn"),
-    zoomOut: t("a11y.zoomOut"),
-  });
-  useEffect(() => {
-    zoomLabelsRef.current = {
-      zoomIn: t("a11y.zoomIn"),
-      zoomOut: t("a11y.zoomOut"),
-    };
-  }, [t]);
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<maplibregl.Map | null>(null);
   const markersRef = useRef<maplibregl.Marker[]>([]);
@@ -410,11 +406,14 @@ export default function VenueMap({
   const appliedStyleRef = useRef<string | null>(null);
   const [dark, setDark] = useState(() => isDarkMode());
   const [mapReady, setMapReady] = useState(false);
-  // The map's own bottom-left control container, into which the locator button
-  // is portalled so it inherits MapLibre's control positioning.
+  // MapLibre's own control containers, into which React content is portalled so
+  // it inherits MapLibre's control positioning: the locator button (bottom-left)
+  // and the zoom control (top-right).
   const [locateContainer, setLocateContainer] = useState<HTMLElement | null>(
     null,
   );
+  const [zoomContainer, setZoomContainer] = useState<HTMLElement | null>(null);
+  const [mapInstance, setMapInstance] = useState<maplibregl.Map | null>(null);
 
   const venuesRef = useRef(venues);
   venuesRef.current = venues;
@@ -475,7 +474,8 @@ export default function VenueMap({
       });
       appliedStyleRef.current = initialStyle;
 
-      map.addControl(new ZoomControl(zoomLabelsRef.current), "top-right");
+      const zoomControl = new ZoomControlContainer();
+      map.addControl(zoomControl, "top-right");
       map.addControl(new AttributionControl(), "bottom-right");
       map.addControl(new ScaleLegend(), "bottom-right");
 
@@ -484,6 +484,7 @@ export default function VenueMap({
           .getContainer()
           .querySelector<HTMLElement>(".maplibregl-ctrl-bottom-left"),
       );
+      setZoomContainer(zoomControl.getContainer());
 
       // The style references sprite images that may be absent; register a
       // resolver that substitutes a transparent 1x1 image. MapLibre awaits the
@@ -576,6 +577,7 @@ export default function VenueMap({
     });
 
     mapRef.current = map;
+    setMapInstance(map);
 
     return () => {
       if (boundsTrackTimerRef.current) clearTimeout(boundsTrackTimerRef.current);
@@ -587,6 +589,8 @@ export default function VenueMap({
       centeredOnUserRef.current = false;
       locateRef.current = null;
       setLocateContainer(null);
+      setZoomContainer(null);
+      setMapInstance(null);
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
@@ -710,6 +714,9 @@ export default function VenueMap({
           </div>,
           locateContainer,
         )}
+      {zoomContainer && mapInstance && (
+        <ZoomControl container={zoomContainer} map={mapInstance} />
+      )}
     </>
   );
 }
