@@ -36,7 +36,7 @@ export function ProgramList({
         {loading ? (
           <ProgramListSkeleton />
         ) : items.length === 0 ? (
-          <Empty className="my-6">
+          <Empty>
             <EmptyHeader>
               <EmptyMedia variant="icon">
                 <IconSnowflake aria-hidden />

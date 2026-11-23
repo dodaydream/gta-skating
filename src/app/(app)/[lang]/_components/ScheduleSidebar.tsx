@@ -59,11 +59,10 @@ function useSnapPoints(): number[] {
 }
 const SUPPORT_URL = process.env.NEXT_PUBLIC_BUYMEACOFFEE_URL;
 
-function ScheduleFooter() {
+function ScheduleCredit() {
   const { t } = useTranslation();
   return (
-    <footer className="py-2.5 text-xs leading-4 text-muted-foreground">
-      <p className="mb-3">{t("sidebar.disclaimer")}</p>
+    <>
       <p className="mb-1">© {new Date().getFullYear()} GTA Skating</p>
       <div className="flex flex-wrap items-center gap-x-2 gap-y-1">
         <Link
@@ -117,6 +116,26 @@ function ScheduleFooter() {
           GitHub
         </a>
       </div>
+    </>
+  );
+}
+
+function ScheduleFooter({
+  showDisclaimer = true,
+  showCredit = true,
+}: {
+  showDisclaimer?: boolean;
+  showCredit?: boolean;
+}) {
+  const { t } = useTranslation();
+  return (
+    <footer className="pt-2.5 text-xs leading-4 text-muted-foreground">
+      {showDisclaimer ? (
+        <p className={showCredit ? "mb-3" : undefined}>
+          {t("sidebar.disclaimer")}
+        </p>
+      ) : null}
+      {showCredit ? <ScheduleCredit /> : null}
     </footer>
   );
 }
@@ -155,6 +174,7 @@ export function ScheduleSidebar() {
   }, [items, sortBy, userLocation]);
 
   const programCount = t("sidebar.programsFound", { count: items.length });
+  const hasPrograms = items.length > 0;
 
   return (
     <>
@@ -196,7 +216,7 @@ export function ScheduleSidebar() {
           />
         </div>
         <div className="shrink-0 bg-card px-6 pb-5">
-          <ScheduleFooter />
+          <ScheduleFooter showDisclaimer={hasPrograms} />
         </div>
       </aside>
 
@@ -235,15 +255,35 @@ export function ScheduleSidebar() {
         >
           <div
             aria-busy={loading}
-            className="min-h-0 flex-1 overflow-y-auto px-4 pb-6 group-data-[at-max-height=false]/drawer-popup:overflow-hidden"
+            className="flex min-h-0 flex-1 flex-col overflow-y-auto px-4 group-data-[at-max-height=false]/drawer-popup:overflow-hidden"
           >
             <ProgramList
               items={sortedItems}
               loading={loading}
               onSelectVenue={onSelectVenue}
+              className={
+                hasPrograms
+                  ? "flex flex-col group-data-[at-max-height=true]/drawer-popup:flex-1"
+                  : "flex flex-1 flex-col"
+              }
+              listClassName="flex flex-1 flex-col gap-2"
             />
-            <ScheduleFooter />
+            {hasPrograms ? (
+              <div className="hidden shrink-0 pb-5 group-data-[at-max-height=true]/drawer-popup:block">
+                <ScheduleFooter />
+              </div>
+            ) : null}
           </div>
+          {hasPrograms ? (
+            <div className="hidden shrink-0 px-4 pb-5 group-data-[at-max-height=false]/drawer-popup:block">
+              <ScheduleFooter showCredit={false} />
+            </div>
+          ) : null}
+          {!hasPrograms ? (
+            <div className="hidden shrink-0 px-4 pb-5 group-data-[at-max-height=true]/drawer-popup:block">
+              <ScheduleFooter showDisclaimer={false} />
+            </div>
+          ) : null}
         </DrawerContent>
       </Drawer>
     </>
