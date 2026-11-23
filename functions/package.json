@@ -10,7 +10,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "firebase-admin": "^12.7.0",
+    "firebase-admin": "^14.5.1",
     "firebase-functions": "^6.0.0"
   },
   "devDependencies": {
