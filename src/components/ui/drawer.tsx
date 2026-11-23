@@ -49,7 +49,7 @@ function Drawer({
   React.useEffect(() => {
     const root = document.documentElement
     const fraction = detent ?? (snapPoints?.[0] as number | undefined) ?? 0.5
-    root.style.setProperty("--drawer-height", `${Math.round(fraction * 100)}lvh`)
+    root.style.setProperty("--drawer-height", `${Math.round(fraction * 100)}dvh`)
     return () => {
       root.style.removeProperty("--drawer-height")
     }
@@ -64,7 +64,7 @@ function Drawer({
     const minFraction = (snapPoints?.[0] as number | undefined) ?? 0.5
     root.style.setProperty(
       "--drawer-min-height",
-      `${Math.round(minFraction * 100)}lvh`
+      `${Math.round(minFraction * 100)}dvh`
     )
     return () => {
       root.style.removeProperty("--drawer-min-height")

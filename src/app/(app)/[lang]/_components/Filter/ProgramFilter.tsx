@@ -282,7 +282,7 @@ export function ProgramFilter({ className = "" }: { className?: string }) {
         </Button>
 
         <Dialog open={open} onOpenChange={setOpen}>
-          <DialogContent className="max-h-[85vh] max-w-md grid-rows-[auto_minmax(0,1fr)_auto] p-0">
+          <DialogContent className="max-h-[85dvh] max-w-md grid-rows-[auto_minmax(0,1fr)_auto] p-0">
             <DialogHeader className="px-4 pt-4">
               <DialogTitle>{t("filters.title")}</DialogTitle>
             </DialogHeader>
@@ -309,7 +309,7 @@ export function ProgramFilter({ className = "" }: { className?: string }) {
 
       <Drawer open={open} onOpenChange={setOpen} swipeDirection="down" showSwipeHandle>
         <DrawerContent
-          className="lg:hidden [--drawer-height:80vh]"
+          className="lg:hidden [--drawer-height:80dvh]"
           header={
             <div className="px-4 pb-2 pt-1">
               <DrawerTitle className="text-base">
