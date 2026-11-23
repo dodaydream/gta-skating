@@ -38,13 +38,15 @@ const TORONTO: [number, number] = [-79.390531, 43.725518];
 const DESKTOP_WIDTH = 1024;
 
 // Height (in map-canvas pixels) of the strip left visible above the bottom
-// drawer. On mobile the list drawer snaps to half the viewport, so the visible
-// map height is the top 50dvh.
+// drawer. The canvas already matches the dynamic viewport (`100dvh`, since the
+// shell is `h-dvh`), so deriving this from the canvas keeps it in the same
+// coordinate space as the dvh-based drawer instead of `window.innerHeight`.
 function visibleMapHeight(map: maplibregl.Map): number {
+  const height = map.getCanvas().clientHeight;
   if (isMobileViewport()) {
-    return Math.max(1, window.innerHeight * 0.5);
+    return Math.max(1, height * 0.5);
   }
-  return map.getCanvas().clientHeight;
+  return height;
 }
 
 // Returns the map center to use so that `lngLat` renders in the middle of the

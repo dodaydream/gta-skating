@@ -10,6 +10,7 @@ import { ProgramList } from "./ProgramList/ProgramList";
 import { UserAvatarButton } from "../@modal/user/_components/UserCentre";
 import { useSkatingAppData } from "./SkatingAppDataProvider";
 import { distanceKm } from "@/lib/schedule";
+import { viewportHeightPx } from "@/lib/viewport";
 import { SITE_REPO } from "@/lib/site";
 import {
   Drawer,
@@ -37,15 +38,21 @@ function useSnapPoints(): number[] {
         return match[2] === "px" ? value : value * rootFont;
       };
       const reserved = toPx("--topbar-height") + toPx("--topbar-margin");
+      const viewportHeight = viewportHeightPx();
+      if (viewportHeight <= 0) return;
       const max = Math.min(
         1,
-        Math.max(MIN_SNAP, (window.innerHeight - reserved) / window.innerHeight)
+        Math.max(MIN_SNAP, (viewportHeight - reserved) / viewportHeight)
       );
       setSnapPoints([MIN_SNAP, Number(max.toFixed(4))]);
     };
     compute();
     window.addEventListener("resize", compute);
-    return () => window.removeEventListener("resize", compute);
+    window.visualViewport?.addEventListener("resize", compute);
+    return () => {
+      window.removeEventListener("resize", compute);
+      window.visualViewport?.removeEventListener("resize", compute);
+    };
   }, []);
 
   return snapPoints;

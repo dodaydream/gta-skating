@@ -32,7 +32,7 @@ function SkatingShellInner({
   } = useSkatingAppData();
 
   return (
-    <div className="flex h-screen flex-col bg-zinc-50 font-sans dark:bg-black">
+    <div className="flex h-dvh flex-col bg-zinc-50 font-sans dark:bg-black">
       <div className="flex flex-1 flex-col overflow-hidden lg:flex-row">
         <div className="relative flex-1 shrink-0 overflow-hidden lg:h-auto lg:flex-1">
           <VenueMap
