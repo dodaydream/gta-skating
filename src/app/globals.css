@@ -213,10 +213,10 @@
 
   .maplibregl-control-container .maplibregl-ctrl-bottom-right,
   .maplibregl-control-container .maplibregl-ctrl-bottom-left {
-    /* Keep the controls above the drawer: never below its smallest snap height,
-       and follow it upward when expanded past that. */
+    /* Anchor the controls to the drawer's resting (smallest snap) height so
+       they stay put when the drawer expands, instead of tracking it upward. */
     bottom: calc(
-      max(var(--drawer-min-height, 0px), var(--drawer-height, 0px)) + 0.5rem
+      var(--drawer-min-height, var(--drawer-height, 0px)) + 0.5rem
     );
   }
 
