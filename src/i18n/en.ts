@@ -31,7 +31,7 @@ const en = {
     noVenueMatches: "No venues found",
     noVenueMatchesHint: "Try a different name.",
     disclaimer:
-      "Times, prices, and other details may be inaccurate or out of date — always check the venue’s website before you go.",
+      "Times, prices, and other details may be inaccurate or out of date. Always check the venue’s website before you go.",
     privacy: "Privacy Policy",
     dataSources: "Data Sources",
     faq: "FAQ",
@@ -114,7 +114,7 @@ const en = {
     shareText: "Skating schedule for {{name}}",
     shareCopied: "Link copied",
     disclaimer:
-      "Times, prices, and other details may be inaccurate or out of date — always check the venue’s website before you go.",
+      "Times, prices, and other details may be inaccurate or out of date. Always check the venue’s website before you go.",
   },
   amenities: {
     skate_rentals: "Skate rentals",

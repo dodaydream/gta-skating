@@ -34,7 +34,7 @@ const fr: Messages = {
     noVenueMatches: "Aucun lieu trouvé",
     noVenueMatchesHint: "Essayez un autre nom.",
     disclaimer:
-      "Les horaires, les prix et d’autres renseignements peuvent être inexacts ou périmés — vérifiez toujours le site Web du lieu avant de vous déplacer.",
+      "Les horaires, les prix et d’autres renseignements peuvent être inexacts ou périmés. Vérifiez toujours le site Web du lieu avant de vous déplacer.",
     privacy: "Politique de confidentialité",
     dataSources: "Sources des données",
     faq: "FAQ",
@@ -117,7 +117,7 @@ const fr: Messages = {
     shareText: "Horaire de patinage pour {{name}}",
     shareCopied: "Lien copié",
     disclaimer:
-      "Les horaires, les prix et d’autres renseignements peuvent être inexacts ou périmés — vérifiez toujours le site Web du lieu avant de vous déplacer.",
+      "Les horaires, les prix et d’autres renseignements peuvent être inexacts ou périmés. Vérifiez toujours le site Web du lieu avant de vous déplacer.",
   },
   amenities: {
     skate_rentals: "Location de patins",
