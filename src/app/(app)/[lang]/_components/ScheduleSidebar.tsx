@@ -208,6 +208,7 @@ export function ScheduleSidebar() {
         swipeDirection="down"
         snapToSequentialPoints
         snapPoints={snapPoints}
+        affectsDrawerHeight
         onOpenChange={(_nextOpen, eventDetails) => eventDetails.cancel()}
         showSwipeHandle
       >

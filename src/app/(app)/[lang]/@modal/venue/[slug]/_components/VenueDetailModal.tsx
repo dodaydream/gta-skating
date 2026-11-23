@@ -171,6 +171,7 @@ function Panel({
       showSwipeHandle
       snapToSequentialPoints
       snapPoints={SNAP_POINTS}
+      affectsDrawerHeight
       disablePointerDismissal={disablePointerDismissal}
       onOpenChange={(open) => !open && onClose()}
     >

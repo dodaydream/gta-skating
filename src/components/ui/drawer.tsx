@@ -29,10 +29,16 @@ function Drawer({
   showSwipeHandle = false,
   snapPoints,
   swipeDirection = "down",
+  affectsDrawerHeight = false,
   onSnapPointChange,
   ...props
 }: DrawerPrimitive.Root.Props & {
   showSwipeHandle?: boolean
+  // Whether this drawer publishes its snap detent to the global
+  // `--drawer-height` / `--drawer-min-height` CSS variables. Only the bottom
+  // sheets that sit over the map (the venue drawer and the program list drawer)
+  // should, so other drawers can't move map overlays or re-clamp the map.
+  affectsDrawerHeight?: boolean
 }) {
   const hasSnapPoints = snapPoints != null && snapPoints.length > 0
   const [detent, setDetent] = React.useState<number | null>(null)
@@ -47,19 +53,20 @@ function Drawer({
   )
 
   React.useEffect(() => {
+    if (!affectsDrawerHeight) return
     const root = document.documentElement
     const fraction = detent ?? (snapPoints?.[0] as number | undefined) ?? 0.5
     root.style.setProperty("--drawer-height", `${Math.round(fraction * 100)}dvh`)
     return () => {
       root.style.removeProperty("--drawer-height")
     }
-  }, [detent, snapPoints])
+  }, [affectsDrawerHeight, detent, snapPoints])
 
   // Stable height of the drawer's smallest snap point. Overlays that should not
   // follow the drawer as it is resized (e.g. the map controls) position against
   // this instead of the live `--drawer-height`.
   React.useEffect(() => {
-    if (!hasSnapPoints) return
+    if (!affectsDrawerHeight || !hasSnapPoints) return
     const root = document.documentElement
     const minFraction = (snapPoints?.[0] as number | undefined) ?? 0.5
     root.style.setProperty(
@@ -69,7 +76,7 @@ function Drawer({
     return () => {
       root.style.removeProperty("--drawer-min-height")
     }
-  }, [hasSnapPoints, snapPoints])
+  }, [affectsDrawerHeight, hasSnapPoints, snapPoints])
 
   return (
     <DrawerContext.Provider value={contextValue}>
